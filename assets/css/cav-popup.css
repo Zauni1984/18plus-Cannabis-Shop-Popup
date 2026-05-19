@@ -1,0 +1,283 @@
+/*!
+ * Cannabis Age Verifier – Frontend Popup
+ * (c) BlockSocial UG (haftungsbeschränkt) – Lizensiert unter GPL v2 or later.
+ */
+.cav-root *,
+.cav-root *::before,
+.cav-root *::after { box-sizing: border-box; }
+
+.cav-root {
+	position: fixed;
+	inset: 0;
+	z-index: 2147483647;
+	display: grid;
+	place-items: center;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	color: #f3fbef;
+	line-height: 1.55;
+	-webkit-font-smoothing: antialiased;
+	contain: layout style;
+}
+
+.cav-backdrop {
+	position: absolute;
+	inset: 0;
+	background:
+		radial-gradient(ellipse at 20% 10%, rgba(26,166,84,.35), transparent 55%),
+		radial-gradient(ellipse at 80% 90%, rgba(10,125,58,.40), transparent 60%),
+		linear-gradient(135deg, rgba(8,18,12,var(--cav-bg-opacity,.78)) 0%, rgba(2,8,5,var(--cav-bg-opacity,.78)) 100%);
+	backdrop-filter: blur(14px) saturate(140%);
+	-webkit-backdrop-filter: blur(14px) saturate(140%);
+	overflow: hidden;
+}
+
+.cav-orb {
+	position: absolute;
+	border-radius: 50%;
+	filter: blur(60px);
+	opacity: .55;
+	will-change: transform;
+}
+.cav-orb--1 { width: 420px; height: 420px; left: -120px; top: -120px; background: var(--cav-accent, #1aa654); }
+.cav-orb--2 { width: 340px; height: 340px; right: -100px; bottom: -100px; background: var(--cav-accent-2, #0a7d3a); }
+.cav-orb--3 { width: 260px; height: 260px; left: 50%; top: 50%; transform: translate(-50%,-50%); background: #2bcf6e; opacity: .25; }
+
+.cav-anim .cav-orb--1 { animation: cav-float-a 14s ease-in-out infinite alternate; }
+.cav-anim .cav-orb--2 { animation: cav-float-b 18s ease-in-out infinite alternate; }
+.cav-anim .cav-orb--3 { animation: cav-pulse 6s ease-in-out infinite; }
+
+@keyframes cav-float-a { from { transform: translate(0,0); } to { transform: translate(60px, 40px); } }
+@keyframes cav-float-b { from { transform: translate(0,0); } to { transform: translate(-50px, -30px); } }
+@keyframes cav-pulse  { 0%,100% { transform: translate(-50%,-50%) scale(1); } 50% { transform: translate(-50%,-50%) scale(1.15); } }
+
+.cav-card {
+	position: relative;
+	width: min(480px, calc(100vw - 32px));
+	padding: 36px 32px 24px;
+	border-radius: 22px;
+	background: linear-gradient(165deg, rgba(20,38,28,.95) 0%, rgba(8,18,12,.95) 100%);
+	border: 1px solid rgba(255,255,255,.08);
+	box-shadow:
+		0 30px 80px rgba(0,0,0,.55),
+		0 0 0 1px rgba(26,166,84,.18) inset,
+		0 0 60px rgba(26,166,84,.10);
+	text-align: center;
+	overflow: hidden;
+}
+.cav-card::before {
+	content: "";
+	position: absolute;
+	inset: -1px;
+	border-radius: inherit;
+	padding: 1px;
+	background: linear-gradient(135deg, var(--cav-accent,#1aa654) 0%, transparent 40%, var(--cav-accent-2,#0a7d3a) 100%);
+	-webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+	-webkit-mask-composite: xor;
+	mask-composite: exclude;
+	pointer-events: none;
+	opacity: .55;
+}
+
+.cav-anim .cav-card { animation: cav-pop-in .55s cubic-bezier(.2,.9,.2,1.1) both; }
+@keyframes cav-pop-in {
+	from { opacity: 0; transform: translateY(14px) scale(.96); }
+	to   { opacity: 1; transform: none; }
+}
+
+.cav-logo { display: block; margin: 0 auto 8px; height: auto; max-width: 160px; }
+.cav-logo--default { width: 56px; height: 56px; }
+
+.cav-badge {
+	position: absolute;
+	top: 18px;
+	right: 18px;
+	padding: 6px 12px;
+	border-radius: 999px;
+	background: linear-gradient(135deg, var(--cav-accent, #1aa654), var(--cav-accent-2, #0a7d3a));
+	color: #fff;
+	font-weight: 800;
+	font-size: 13px;
+	letter-spacing: .04em;
+	box-shadow: 0 4px 14px rgba(26,166,84,.45);
+}
+
+.cav-headline {
+	margin: 6px 0 8px;
+	font-size: clamp(20px, 2.4vw, 26px);
+	font-weight: 800;
+	letter-spacing: -.01em;
+	color: #fff;
+}
+
+.cav-subline {
+	margin: 0 0 18px;
+	color: rgba(243,251,239,.78);
+	font-size: 14.5px;
+}
+
+.cav-form { display: flex; flex-direction: column; gap: 12px; }
+
+.cav-dob {
+	border: 0;
+	margin: 0 0 4px;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1.4fr;
+	gap: 10px;
+}
+.cav-field {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	text-align: left;
+}
+.cav-field span {
+	font-size: 11.5px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: .08em;
+	color: rgba(243,251,239,.55);
+	padding-left: 4px;
+}
+.cav-field input {
+	width: 100%;
+	padding: 12px 12px;
+	border-radius: 12px;
+	border: 1px solid rgba(255,255,255,.10);
+	background: rgba(255,255,255,.05);
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	text-align: center;
+	transition: border-color .18s, background .18s, box-shadow .18s;
+	appearance: textfield;
+	-moz-appearance: textfield;
+}
+.cav-field input::-webkit-outer-spin-button,
+.cav-field input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.cav-field input:focus {
+	outline: none;
+	border-color: var(--cav-accent, #1aa654);
+	background: rgba(26,166,84,.10);
+	box-shadow: 0 0 0 3px rgba(26,166,84,.25);
+}
+.cav-field input::placeholder { color: rgba(243,251,239,.30); font-weight: 500; }
+
+.cav-error {
+	min-height: 1.1em;
+	font-size: 13px;
+	color: #ff8b8b;
+	margin: 2px 0;
+	font-weight: 600;
+}
+
+.cav-btn {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	padding: 14px 18px;
+	border-radius: 14px;
+	border: 0;
+	font-size: 15px;
+	font-weight: 700;
+	cursor: pointer;
+	text-decoration: none;
+	transition: transform .15s, box-shadow .2s, background .2s, opacity .15s;
+	width: 100%;
+}
+.cav-btn--primary {
+	background: linear-gradient(135deg, var(--cav-accent, #1aa654), var(--cav-accent-2, #0a7d3a));
+	color: #fff;
+	box-shadow: 0 10px 30px rgba(26,166,84,.35), 0 0 0 1px rgba(255,255,255,.08) inset;
+}
+.cav-btn--primary:hover { transform: translateY(-1px); box-shadow: 0 14px 38px rgba(26,166,84,.45); }
+.cav-btn--primary:active { transform: translateY(0); }
+.cav-btn--primary:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+.cav-btn--ghost {
+	background: transparent;
+	color: rgba(243,251,239,.75);
+	border: 1px solid rgba(255,255,255,.10);
+}
+.cav-btn--ghost:hover { background: rgba(255,255,255,.05); color: #fff; }
+
+.cav-btn[aria-busy="true"] { pointer-events: none; opacity: .8; }
+.cav-btn[aria-busy="true"] .cav-btn-label { opacity: 0; }
+.cav-spinner {
+	position: absolute;
+	width: 18px; height: 18px;
+	border-radius: 50%;
+	border: 2.5px solid rgba(255,255,255,.45);
+	border-top-color: #fff;
+	animation: cav-spin .8s linear infinite;
+	opacity: 0;
+}
+.cav-btn[aria-busy="true"] .cav-spinner { opacity: 1; }
+@keyframes cav-spin { to { transform: rotate(360deg); } }
+
+.cav-legal {
+	margin: 16px 0 8px;
+	font-size: 11.5px;
+	color: rgba(243,251,239,.55);
+	line-height: 1.55;
+}
+.cav-legal a { color: rgba(243,251,239,.85); }
+
+.cav-meta {
+	display: flex;
+	gap: 14px;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 6px 0 0;
+	padding: 10px 0 0;
+	list-style: none;
+	font-size: 11.5px;
+	color: rgba(243,251,239,.45);
+	border-top: 1px solid rgba(255,255,255,.06);
+}
+.cav-meta a { color: rgba(243,251,239,.7); text-decoration: none; }
+.cav-meta a:hover { color: #fff; text-decoration: underline; }
+.cav-meta-brand { margin-left: auto; }
+
+.cav-blocked-message {
+	padding: 16px;
+	border-radius: 14px;
+	background: rgba(255,80,80,.10);
+	border: 1px solid rgba(255,80,80,.25);
+	color: #ffd0d0;
+	text-align: left;
+	margin-bottom: 8px;
+}
+.cav-blocked-message strong { color: #fff; }
+
+.screen-reader-text {
+	position: absolute !important;
+	clip: rect(1px,1px,1px,1px);
+	width: 1px; height: 1px; overflow: hidden;
+}
+
+/* When popup is mounted, suppress body scroll */
+html.cav-locked, html.cav-locked body { overflow: hidden !important; height: 100% !important; }
+
+/* Respect user motion preferences */
+@media (prefers-reduced-motion: reduce) {
+	.cav-anim .cav-card,
+	.cav-anim .cav-orb--1,
+	.cav-anim .cav-orb--2,
+	.cav-anim .cav-orb--3,
+	.cav-spinner { animation: none !important; }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+	.cav-card { padding: 28px 22px 18px; border-radius: 18px; }
+	.cav-dob { grid-template-columns: 1fr 1fr 1.4fr; gap: 8px; }
+	.cav-meta { font-size: 11px; }
+}
+
+/* High contrast / forced colors */
+@media (forced-colors: active) {
+	.cav-card { background: Canvas; color: CanvasText; border: 1px solid CanvasText; }
+	.cav-btn--primary { background: Highlight; color: HighlightText; }
+}
