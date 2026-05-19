@@ -22,6 +22,48 @@ final class CAV_Frontend {
 		add_action( 'init', array( $this, 'maybe_clear_cookies' ), 1 );
 		add_action( 'admin_bar_menu', array( $this, 'admin_bar' ), 80 );
 		add_filter( 'language_attributes', array( $this, 'html_class' ), 10, 1 );
+		add_filter( 'script_loader_tag', array( $this, 'mark_script_no_optimize' ), 10, 2 );
+		add_filter( 'rocket_delay_js_exclusions', array( $this, 'rocket_exclude' ) );
+		add_filter( 'rocket_exclude_js', array( $this, 'rocket_exclude' ) );
+		add_filter( 'autoptimize_filter_js_exclude', array( $this, 'autoptimize_exclude' ), 10, 1 );
+		add_filter( 'wpfc_js_minify_excluded_files', array( $this, 'wpfc_exclude' ) );
+		add_filter( 'litespeed_optm_js_defer_exc', array( $this, 'rocket_exclude' ) );
+	}
+
+	/**
+	 * Stamp our main popup script with attributes that every major
+	 * optimizer/cache plugin recognises as "do not touch".
+	 */
+	public function mark_script_no_optimize( $tag, $handle ) {
+		if ( 'cav-popup' !== $handle ) {
+			return $tag;
+		}
+		if ( false !== strpos( $tag, 'data-cfasync' ) ) {
+			return $tag;
+		}
+		return str_replace(
+			'<script ',
+			'<script data-cfasync="false" data-no-optimize="1" data-no-defer="1" data-no-minify="1" data-no-async="1" data-wpfc-render="false" ',
+			$tag
+		);
+	}
+
+	public function rocket_exclude( $exclusions ) {
+		$exclusions   = is_array( $exclusions ) ? $exclusions : array();
+		$exclusions[] = 'cav-popup';
+		$exclusions[] = '/cannabis-age-verifier/';
+		return $exclusions;
+	}
+
+	public function autoptimize_exclude( $exclude ) {
+		$additions = 'cav-popup, cannabis-age-verifier';
+		return ( '' === (string) $exclude ) ? $additions : $exclude . ', ' . $additions;
+	}
+
+	public function wpfc_exclude( $exclusions ) {
+		$exclusions   = is_array( $exclusions ) ? $exclusions : array();
+		$exclusions[] = 'cav-popup';
+		return $exclusions;
 	}
 
 	/**
@@ -256,8 +298,8 @@ final class CAV_Frontend {
 		$flag     = CAV_COOKIE_FLAG;
 
 		echo "<style id=\"cav-anti-flash\">"
+			// Lock scroll while popup is on – removed via .cav-verified once JS confirms verification.
 			. "html.cav-popup-on,html.cav-popup-on body{overflow:hidden!important;height:100%!important}"
-			. "html.cav-verified #cav-root{display:none!important}"
 			. "html.cav-verified,html.cav-verified body{overflow:auto!important;height:auto!important}"
 			. "</style>\n";
 
@@ -271,11 +313,19 @@ final class CAV_Frontend {
 			. "var v=m?m[1]:'';"
 			. "if(v==='1'){h.classList.add('cav-verified');h.classList.remove('cav-popup-on');return;}"
 			. "if(v==='0'){window.location.replace('" . esc_js( $redirect ) . "');return;}"
-			// Reparent popup to <body> as soon as the DOM is ready – the
-			// theme may wrap wp_footer in a transformed container, which
-			// turns our position:fixed overlay into a contained frame.
-			. "function r(){var n=document.getElementById('cav-root');if(n&&n.parentNode!==document.body){document.body.appendChild(n);}}"
-			. "if(document.readyState!=='loading'){r();}else{document.addEventListener('DOMContentLoaded',r,{once:true});}"
+			// Open the dialog as soon as it's parsed. Reparent to <body>
+			// first so dialog elevation into the top layer isn't itself
+			// constrained by some odd ancestor.
+			. "function open(){var n=document.getElementById('cav-root');if(!n)return;if(n.parentNode!==document.body){document.body.appendChild(n);}"
+			. "if(typeof n.showModal==='function'){if(!n.open){try{n.showModal();}catch(e){n.setAttribute('open','');}}"
+			. "n.addEventListener('cancel',function(e){e.preventDefault();},{once:false});}"
+			. "else{n.setAttribute('open','');}}"
+			. "if(document.readyState!=='loading'){open();}else{document.addEventListener('DOMContentLoaded',open,{once:true});}"
+			// Defensive submit guard: if a cache plugin delays the main
+			// popup JS (WP Rocket "Delay JS Execution" etc.) the form
+			// would otherwise submit natively on Enter / click → full
+			// page reload loop. Block that until the real handler is in.
+			. "document.addEventListener('submit',function(e){if(e.target&&e.target.id==='cav-form'){e.preventDefault();}},true);"
 			. "})();</script>\n";
 	}
 

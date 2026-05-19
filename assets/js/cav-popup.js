@@ -15,14 +15,34 @@
 	if (!root) { return; }
 
 	var html = document.documentElement;
+	var isDialog = (typeof root.showModal === 'function');
 
-	// Defensive reparent: themes occasionally wrap wp_footer in a div that
-	// has `transform` / `filter` / `perspective` / `will-change`. Any of
-	// those creates a new containing block and breaks position:fixed,
-	// causing the popup to appear inside a "frame" rather than as a true
-	// viewport overlay. Moving the node to <body> guarantees fullscreen.
+	// Defensive reparent + open: themes occasionally wrap wp_footer in
+	// a transformed/filtered container which breaks position:fixed for
+	// non-dialog fallbacks. Even for the real <dialog>, reparenting to
+	// <body> avoids quirks where some browsers refuse to elevate a
+	// dialog nested too deeply.
 	if (root.parentNode !== document.body) {
 		document.body.appendChild(root);
+	}
+
+	function ensureOpen() {
+		if (isDialog) {
+			if (!root.open) { try { root.showModal(); } catch (e) { root.setAttribute('open', ''); } }
+		} else {
+			root.setAttribute('open', '');
+		}
+	}
+	function closeDialog() {
+		if (isDialog && typeof root.close === 'function' && root.open) {
+			try { root.close(); } catch (e) { /* noop */ }
+		}
+		root.removeAttribute('open');
+	}
+
+	// Prevent the visitor from dismissing the modal via Esc / browser UI.
+	if (isDialog) {
+		root.addEventListener('cancel', function (e) { e.preventDefault(); });
 	}
 
 	// Defense in depth: also read the companion cookie here in case the
@@ -37,9 +57,10 @@
 	var flag = readFlag();
 
 	if (flag === '1') {
-		// Already verified as adult. Hide and remove from DOM.
+		// Already verified as adult. Close + remove dialog.
 		html.classList.add('cav-verified');
 		html.classList.remove('cav-popup-on');
+		closeDialog();
 		if (root.parentNode) { root.parentNode.removeChild(root); }
 		return;
 	}
@@ -50,9 +71,9 @@
 		return;
 	}
 
-	// No verdict yet. Popup is already visible (default state) – just
-	// make sure the scroll-lock class is present in case the anti-flash
-	// bootstrap got stripped by an aggressive optimization plugin.
+	// No verdict yet. Make sure the dialog is open (idempotent with
+	// the anti-flash bootstrap) and scroll is locked.
+	ensureOpen();
 	if (data.blockScroll) { html.classList.add('cav-popup-on'); }
 
 	var form       = document.getElementById('cav-form');
@@ -91,6 +112,7 @@
 		setTimeout(function () {
 			html.classList.remove('cav-popup-on');
 			html.classList.add('cav-verified');
+			closeDialog();
 			if (root.parentNode) { root.parentNode.removeChild(root); }
 		}, 360);
 	}

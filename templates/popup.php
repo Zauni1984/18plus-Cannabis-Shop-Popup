@@ -20,10 +20,8 @@ $animations = ! empty( $opts['enable_animations'] );
 $mode       = $opts['verification_mode'];
 $min_age    = (int) $opts['min_age'];
 ?>
-<div id="cav-root"
+<dialog id="cav-root"
 	class="cav-root<?php echo $animations ? ' cav-anim' : ''; ?>"
-	role="dialog"
-	aria-modal="true"
 	aria-labelledby="cav-headline"
 	aria-describedby="cav-subline"
 	data-min-age="<?php echo esc_attr( $min_age ); ?>"
@@ -128,5 +126,5 @@ $min_age    = (int) $opts['min_age'];
 			</li>
 		</ul>
 	</div>
-</div>
+</dialog>
 
