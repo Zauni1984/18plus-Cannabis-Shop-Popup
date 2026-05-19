@@ -19,15 +19,62 @@ final class CAV_Frontend {
 		add_action( 'wp_footer', array( $this, 'render_popup' ), 5 );
 		add_action( 'rest_api_init', array( $this, 'register_routes' ) );
 		add_action( 'wp_head', array( $this, 'preload_critical' ), 1 );
+		add_action( 'wp_head', array( $this, 'inline_popup_css' ), 999 );
 		add_action( 'init', array( $this, 'maybe_clear_cookies' ), 1 );
 		add_action( 'admin_bar_menu', array( $this, 'admin_bar' ), 80 );
 		add_filter( 'language_attributes', array( $this, 'html_class' ), 10, 1 );
 		add_filter( 'script_loader_tag', array( $this, 'mark_script_no_optimize' ), 10, 2 );
+		add_filter( 'style_loader_tag', array( $this, 'mark_style_no_optimize' ), 10, 2 );
 		add_filter( 'rocket_delay_js_exclusions', array( $this, 'rocket_exclude' ) );
 		add_filter( 'rocket_exclude_js', array( $this, 'rocket_exclude' ) );
+		add_filter( 'rocket_exclude_css', array( $this, 'rocket_exclude' ) );
+		add_filter( 'rocket_rucss_inline_content_exclusions', array( $this, 'rocket_exclude' ) );
+		add_filter( 'rocket_rucss_safelist', array( $this, 'rucss_safelist' ) );
 		add_filter( 'autoptimize_filter_js_exclude', array( $this, 'autoptimize_exclude' ), 10, 1 );
+		add_filter( 'autoptimize_filter_css_exclude', array( $this, 'autoptimize_exclude' ), 10, 1 );
 		add_filter( 'wpfc_js_minify_excluded_files', array( $this, 'wpfc_exclude' ) );
 		add_filter( 'litespeed_optm_js_defer_exc', array( $this, 'rocket_exclude' ) );
+		add_filter( 'litespeed_ucss_exc', array( $this, 'rucss_safelist' ) );
+		add_filter( 'perfmatters_rucss_excluded_selectors', array( $this, 'rucss_safelist' ) );
+	}
+
+	public function mark_style_no_optimize( $tag, $handle ) {
+		if ( 'cav-popup' !== $handle ) {
+			return $tag;
+		}
+		if ( false !== strpos( $tag, 'data-cfasync' ) ) {
+			return $tag;
+		}
+		return str_replace(
+			'<link ',
+			'<link data-cfasync="false" data-no-optimize="1" data-no-minify="1" ',
+			$tag
+		);
+	}
+
+	public function rucss_safelist( $list ) {
+		$list   = is_array( $list ) ? $list : array();
+		$list[] = '#cav-root';
+		$list[] = '.cav-root';
+		$list[] = '.cav-card';
+		$list[] = '.cav-backdrop';
+		$list[] = '.cav-orb';
+		$list[] = '.cav-headline';
+		$list[] = '.cav-subline';
+		$list[] = '.cav-dob';
+		$list[] = '.cav-field';
+		$list[] = '.cav-btn';
+		$list[] = '.cav-legal';
+		$list[] = '.cav-meta';
+		$list[] = '.cav-badge';
+		$list[] = '.cav-spinner';
+		$list[] = '.cav-error';
+		$list[] = '.cav-anim';
+		$list[] = '.cav-form';
+		$list[] = '.cav-logo';
+		$list[] = '.cav-popup-on';
+		$list[] = '.cav-verified';
+		return $list;
 	}
 
 	/**
@@ -288,45 +335,79 @@ final class CAV_Frontend {
 			return;
 		}
 
-		// Cache-safe AND cache-plugin-safe (WP Rocket "Delay JS" etc.):
-		// The popup is *visible* by default and body scroll is locked.
-		// Inline JS runs synchronously on parse — if it gets delayed by
-		// any plugin, the worst case is a verified visitor briefly sees
-		// the popup until JS catches up. Unverified visitors are always
-		// gated, regardless of JS state.
 		$redirect = esc_url( CAV_Settings::get( 'redirect_url' ) );
 		$flag     = CAV_COOKIE_FLAG;
 
 		echo "<style id=\"cav-anti-flash\">"
-			// Lock scroll while popup is on – removed via .cav-verified once JS confirms verification.
 			. "html.cav-popup-on,html.cav-popup-on body{overflow:hidden!important;height:100%!important}"
 			. "html.cav-verified,html.cav-verified body{overflow:auto!important;height:auto!important}"
 			. "</style>\n";
 
-		// data-cfasync / data-no-optimize / data-no-defer tell common
-		// cache/optimization plugins (Cloudflare Rocket Loader, Autoptimize,
-		// WP Rocket Delay JS, SG Optimizer combine JS, …) to leave this
-		// bootstrap alone so it executes synchronously.
 		echo "<script id=\"cav-anti-flash-js\" data-cfasync=\"false\" data-no-optimize=\"1\" data-no-defer=\"1\" data-no-minify=\"1\">"
 			. "(function(){var h=document.documentElement;h.classList.add('cav-popup-on');"
 			. "var m=document.cookie.match(/(?:^|;\\s*)" . esc_js( $flag ) . "=([^;]+)/);"
 			. "var v=m?m[1]:'';"
 			. "if(v==='1'){h.classList.add('cav-verified');h.classList.remove('cav-popup-on');return;}"
 			. "if(v==='0'){window.location.replace('" . esc_js( $redirect ) . "');return;}"
-			// Open the dialog as soon as it's parsed. Reparent to <body>
-			// first so dialog elevation into the top layer isn't itself
-			// constrained by some odd ancestor.
 			. "function open(){var n=document.getElementById('cav-root');if(!n)return;if(n.parentNode!==document.body){document.body.appendChild(n);}"
 			. "if(typeof n.showModal==='function'){if(!n.open){try{n.showModal();}catch(e){n.setAttribute('open','');}}"
 			. "n.addEventListener('cancel',function(e){e.preventDefault();},{once:false});}"
 			. "else{n.setAttribute('open','');}}"
 			. "if(document.readyState!=='loading'){open();}else{document.addEventListener('DOMContentLoaded',open,{once:true});}"
-			// Defensive submit guard: if a cache plugin delays the main
-			// popup JS (WP Rocket "Delay JS Execution" etc.) the form
-			// would otherwise submit natively on Enter / click → full
-			// page reload loop. Block that until the real handler is in.
 			. "document.addEventListener('submit',function(e){if(e.target&&e.target.id==='cav-form'){e.preventDefault();}},true);"
 			. "})();</script>\n";
+	}
+
+	/**
+	 * Late wp_head output: full popup CSS inline so it wins the cascade
+	 * over any theme/plugin rule and so RUCSS-style "Remove Unused CSS"
+	 * optimizers cannot strip our design.
+	 */
+	public function inline_popup_css() {
+		if ( ! $this->should_show() ) {
+			return;
+		}
+		$popup_css = $this->get_popup_css();
+		if ( '' === $popup_css ) {
+			return;
+		}
+		echo "<style id=\"cav-popup-css\" data-cfasync=\"false\" data-no-optimize=\"1\" data-no-minify=\"1\">"
+			. $popup_css // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static plugin asset, no user input.
+			. "</style>\n";
+	}
+
+	/**
+	 * Read + lightly-minify the popup stylesheet for inline output.
+	 * Result is cached per-request via static variable.
+	 */
+	private function get_popup_css() {
+		static $cache = null;
+		if ( null !== $cache ) {
+			return $cache;
+		}
+
+		$file = CAV_PLUGIN_DIR . 'assets/css/cav-popup.css';
+		if ( ! is_readable( $file ) ) {
+			$cache = '';
+			return $cache;
+		}
+
+		$css = @file_get_contents( $file ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
+		if ( false === $css ) {
+			$cache = '';
+			return $cache;
+		}
+
+		// Strip /* */ comments.
+		$css = preg_replace( '!/\*[^*]*\*+([^/][^*]*\*+)*/!', '', $css );
+		// Collapse whitespace.
+		$css = preg_replace( '/\s+/', ' ', $css );
+		// Tighten around CSS punctuation.
+		$css = preg_replace( '/\s*([{}:;,>~])\s*/', '$1', $css );
+		$css = preg_replace( '/;\}/', '}', $css );
+
+		$cache = trim( (string) $css );
+		return $cache;
 	}
 
 	public function enqueue() {
