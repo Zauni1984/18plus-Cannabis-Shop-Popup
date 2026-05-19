@@ -19,6 +19,29 @@ final class CAV_Admin {
 		add_filter( 'plugin_action_links_' . CAV_PLUGIN_BASENAME, array( $this, 'action_links' ) );
 		add_action( 'admin_notices', array( $this, 'license_notice' ) );
 		add_action( 'admin_post_cav_reset_settings', array( $this, 'handle_reset' ) );
+		add_action( 'admin_post_cav_flush_cache', array( $this, 'handle_flush_cache' ) );
+	}
+
+	public function handle_flush_cache() {
+		if ( ! current_user_can( 'manage_options' ) ) {
+			wp_die( esc_html__( 'Keine Berechtigung.', 'cannabis-age-verifier' ), 403 );
+		}
+
+		check_admin_referer( 'cav_flush_cache' );
+
+		CAV_Cache::flush();
+
+		$redirect = add_query_arg(
+			array(
+				'page'         => self::MENU_SLUG,
+				'cav-flushed'  => '1',
+				'_wpnonce_ack' => wp_create_nonce( 'cav_flush_ack' ),
+			),
+			admin_url( 'admin.php' )
+		);
+
+		wp_safe_redirect( $redirect );
+		exit;
 	}
 
 	public function handle_reset() {
@@ -51,6 +74,9 @@ final class CAV_Admin {
 		}
 
 		update_option( CAV_OPTION_KEY, $merged, false );
+
+		/** Notify cache integration so stale snapshots get invalidated. */
+		do_action( 'cav_after_reset', $scope, $tab );
 
 		$redirect = add_query_arg(
 			array(
@@ -224,6 +250,17 @@ final class CAV_Admin {
 					</li>
 				</ul>
 
+				<h3><?php esc_html_e( 'Caches', 'cannabis-age-verifier' ); ?></h3>
+				<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" class="cav-cache-form">
+					<input type="hidden" name="action" value="cav_flush_cache">
+					<?php wp_nonce_field( 'cav_flush_cache' ); ?>
+					<button type="submit" class="button button-secondary cav-cache-btn">
+						<span class="dashicons dashicons-update" aria-hidden="true"></span>
+						<?php esc_html_e( 'Page-Caches jetzt leeren', 'cannabis-age-verifier' ); ?>
+					</button>
+					<small><?php esc_html_e( 'WP Rocket, W3 Total Cache, LiteSpeed, WP Super Cache, SG Optimizer, Cache Enabler, Autoptimize, Breeze, WP Fastest Cache, Hummingbird, Swift Performance und Object-Cache (Redis/Memcached) werden automatisch erkannt.', 'cannabis-age-verifier' ); ?></small>
+				</form>
+
 				<h3><?php esc_html_e( 'Werkseinstellungen', 'cannabis-age-verifier' ); ?></h3>
 				<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" class="cav-reset-form cav-reset-form--all" data-cav-reset-all>
 					<input type="hidden" name="action" value="cav_reset_settings">
@@ -265,6 +302,14 @@ final class CAV_Admin {
 				? __( 'Lizenz gespeichert.', 'cannabis-age-verifier' )
 				: __( 'Einstellungen erfolgreich gespeichert.', 'cannabis-age-verifier' );
 			$this->print_branded_notice( $message );
+		}
+
+		// Cache-flush confirmation.
+		if ( ! empty( $_GET['cav-flushed'] ) && ! empty( $_GET['_wpnonce_ack'] ) ) {
+			$nonce = sanitize_text_field( wp_unslash( $_GET['_wpnonce_ack'] ) );
+			if ( wp_verify_nonce( $nonce, 'cav_flush_ack' ) ) {
+				$this->print_branded_notice( __( 'Caches wurden geleert (WP Rocket, W3TC, LiteSpeed, WP Super Cache, SG Optimizer, Cache Enabler, Autoptimize, Breeze, WPFC, Hummingbird, Swift, Object Cache).', 'cannabis-age-verifier' ) );
+			}
 		}
 
 		// Reset confirmation.

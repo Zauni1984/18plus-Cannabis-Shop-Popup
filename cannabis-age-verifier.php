@@ -3,7 +3,7 @@
  * Plugin Name:       Cannabis Age Verifier – 18+ Popup für WooCommerce
  * Plugin URI:        https://blocksocial.eu/plugins/cannabis-age-verifier
  * Description:       Professionelles, DSGVO-konformes 18+ Altersverifikations-Popup für WooCommerce-Cannabis-Shops. Blockiert Minderjährige vollständig und leitet zur Aufklärungsseite des Bundesgesundheitsministeriums weiter.
- * Version:           1.0.1
+ * Version:           1.0.2
  * Requires at least: 6.0
  * Tested up to:      6.7
  * Requires PHP:      7.4
@@ -29,7 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'CAV_VERSION', '1.0.1' );
+define( 'CAV_VERSION', '1.0.2' );
 define( 'CAV_PLUGIN_FILE', __FILE__ );
 define( 'CAV_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'CAV_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
@@ -55,6 +55,7 @@ if ( ! defined( 'CAV_VENDOR_DOMAINS' ) ) {
 require_once CAV_PLUGIN_DIR . 'includes/class-cav-security.php';
 require_once CAV_PLUGIN_DIR . 'includes/class-cav-license.php';
 require_once CAV_PLUGIN_DIR . 'includes/class-cav-settings.php';
+require_once CAV_PLUGIN_DIR . 'includes/class-cav-cache.php';
 require_once CAV_PLUGIN_DIR . 'includes/class-cav-admin.php';
 require_once CAV_PLUGIN_DIR . 'includes/class-cav-frontend.php';
 require_once CAV_PLUGIN_DIR . 'includes/class-cav-plugin.php';

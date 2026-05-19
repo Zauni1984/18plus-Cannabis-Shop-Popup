@@ -162,6 +162,27 @@
 	line-height: 1.45;
 }
 
+.cav-admin .cav-cache-form {
+	margin-bottom: 14px;
+	padding: 12px 14px;
+	background: #f0f7fa;
+	border: 1px solid #cfe1ea;
+	border-radius: 10px;
+}
+.cav-admin .cav-cache-btn {
+	display: inline-flex !important;
+	align-items: center;
+	gap: 6px;
+}
+.cav-admin .cav-cache-btn .dashicons { font-size: 16px; width: 16px; height: 16px; }
+.cav-admin .cav-cache-form small {
+	display: block;
+	margin-top: 6px;
+	color: #5a7a85;
+	font-size: 11.5px;
+	line-height: 1.5;
+}
+
 /* Saved notice */
 .cav-admin .cav-saved-notice {
 	border-left-color: #1aa654 !important;

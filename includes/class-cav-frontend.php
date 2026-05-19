@@ -19,6 +19,78 @@ final class CAV_Frontend {
 		add_action( 'wp_footer', array( $this, 'render_popup' ), 5 );
 		add_action( 'rest_api_init', array( $this, 'register_routes' ) );
 		add_action( 'wp_head', array( $this, 'preload_critical' ), 1 );
+		add_action( 'init', array( $this, 'maybe_clear_cookies' ), 1 );
+		add_action( 'admin_bar_menu', array( $this, 'admin_bar' ), 80 );
+		add_filter( 'language_attributes', array( $this, 'html_class' ), 10, 1 );
+	}
+
+	/**
+	 * Pre-stamp the <html> element with cav-popup-on so the popup is
+	 * gated even if the inline anti-flash JS is stripped/delayed by an
+	 * aggressive optimization plugin. The companion JS removes the class
+	 * for verified visitors.
+	 */
+	public function html_class( $attrs ) {
+		if ( ! $this->should_show() ) {
+			return $attrs;
+		}
+		if ( preg_match( '/\sclass="([^"]*)"/', $attrs ) ) {
+			return preg_replace( '/(\sclass=")([^"]*)(")/', '$1$2 cav-popup-on$3', $attrs, 1 );
+		}
+		return $attrs . ' class="cav-popup-on"';
+	}
+
+	/**
+	 * Admin-only convenience: append ?cav-reset-cookie=1 (with nonce) to
+	 * delete the verification cookies and re-trigger the popup. Useful
+	 * for testing on a domain where 30-day cookies make iterating hard.
+	 */
+	public function maybe_clear_cookies() {
+		if ( empty( $_GET['cav-reset-cookie'] ) || ! is_user_logged_in() || ! current_user_can( 'manage_options' ) ) {
+			return;
+		}
+
+		$nonce = isset( $_GET['_wpnonce'] ) ? sanitize_text_field( wp_unslash( $_GET['_wpnonce'] ) ) : '';
+		if ( ! wp_verify_nonce( $nonce, 'cav_clear_cookies' ) ) {
+			return;
+		}
+
+		$secure = is_ssl();
+		$path   = COOKIEPATH ? COOKIEPATH : '/';
+		$domain = COOKIE_DOMAIN ? COOKIE_DOMAIN : '';
+		$past   = time() - HOUR_IN_SECONDS;
+
+		if ( PHP_VERSION_ID >= 70300 ) {
+			$base = array( 'expires' => $past, 'path' => $path, 'domain' => $domain, 'secure' => $secure, 'samesite' => 'Lax' );
+			setcookie( CAV_COOKIE_NAME, '', array_merge( $base, array( 'httponly' => true ) ) );
+			setcookie( CAV_COOKIE_FLAG, '', array_merge( $base, array( 'httponly' => false ) ) );
+		} else {
+			setcookie( CAV_COOKIE_NAME, '', $past, $path . '; samesite=Lax', $domain, $secure, true );
+			setcookie( CAV_COOKIE_FLAG, '', $past, $path . '; samesite=Lax', $domain, $secure, false );
+		}
+
+		// Also clear from current request so should_show() doesn't see them.
+		unset( $_COOKIE[ CAV_COOKIE_NAME ], $_COOKIE[ CAV_COOKIE_FLAG ] );
+
+		wp_safe_redirect( remove_query_arg( array( 'cav-reset-cookie', '_wpnonce' ) ) );
+		exit;
+	}
+
+	public function admin_bar( $bar ) {
+		if ( ! current_user_can( 'manage_options' ) || is_admin() || ! is_admin_bar_showing() ) {
+			return;
+		}
+
+		$bar->add_node(
+			array(
+				'id'    => 'cav-clear-cookies',
+				'title' => '<span class="ab-icon dashicons dashicons-shield-alt" style="top:2px"></span>' . esc_html__( 'Age-Popup zurücksetzen', 'cannabis-age-verifier' ),
+				'href'  => wp_nonce_url( add_query_arg( 'cav-reset-cookie', '1' ), 'cav_clear_cookies' ),
+				'meta'  => array(
+					'title' => __( 'Löscht den Altersverifikations-Cookie, damit das Popup auf dieser Seite erneut erscheint.', 'cannabis-age-verifier' ),
+				),
+			)
+		);
 	}
 
 	/**
@@ -113,38 +185,51 @@ final class CAV_Frontend {
 
 	private function is_bot() {
 		if ( empty( $_SERVER['HTTP_USER_AGENT'] ) ) {
-			// No UA – likely a tool/script. Don't block server-to-server fetches.
-			return true;
+			// No UA. Real browsers always send one; this is almost
+			// certainly a script. Return false so we err on the side of
+			// SHOWING the popup to anything claiming to be human.
+			return false;
 		}
 
 		$ua = strtolower( wp_unslash( (string) $_SERVER['HTTP_USER_AGENT'] ) );
 
+		// Substring matches (no generic 'bot'/'spider' etc. – those would
+		// false-positive on real consumer devices, e.g. Cubot phones whose
+		// UA contains "CUBOT KingKong …").
 		$patterns = array(
-			// Generic
-			'bot', 'crawler', 'spider', 'crawling', 'http-client', 'curl/', 'wget/', 'python-requests',
-			'go-http-client', 'okhttp', 'java/', 'libwww-perl', 'guzzlehttp', 'axios/',
-			// Search engines
-			'googlebot', 'bingbot', 'slurp', 'duckduckbot', 'baiduspider', 'yandex',
+			// HTTP clients used for server-to-server crawling.
+			'curl/', 'wget/', 'python-requests', 'go-http-client', 'libwww-perl',
+			'guzzlehttp/', 'axios/', 'okhttp/', 'apache-httpclient', 'java-http-client',
+			// Search engines.
+			'googlebot', 'bingbot', 'duckduckbot', 'baiduspider', 'yandex',
 			'sogou', 'exabot', 'facebot', 'ia_archiver', 'applebot', 'mojeekbot',
-			'petalbot', 'seznambot', 'qwantify', 'msnbot',
-			// SEO/monitoring
+			'petalbot', 'seznambot', 'qwantify', 'msnbot', 'adsbot-google',
+			'mediapartners-google', 'google-inspectiontool',
+			// SEO/monitoring.
 			'ahrefsbot', 'semrushbot', 'mj12bot', 'dotbot', 'rogerbot', 'screaming frog',
 			'pingdom', 'uptimerobot', 'gtmetrix', 'lighthouse', 'pagespeed', 'chrome-lighthouse',
-			'siteimprove', 'serpstatbot', 'sitebulb', 'detectify', 'qualys',
-			// Social previews
+			'siteimprove', 'serpstatbot', 'sitebulb', 'detectify', 'qualys', 'datadog',
+			// Social previews.
 			'facebookexternalhit', 'twitterbot', 'linkedinbot', 'whatsapp', 'telegrambot',
 			'discordbot', 'slackbot', 'pinterest', 'redditbot', 'embedly', 'iframely', 'skypeuripreview',
-			// Feed readers / affiliate aggregators
+			'tumblr', 'vkshare',
+			// Feed readers / affiliate aggregators.
 			'feedly', 'feedfetcher', 'feedburner', 'feedreader', 'inoreader', 'newsblur',
 			'theoldreader', 'flipboard', 'apple-pubsub', 'feedwrangler', 'feedbin',
 			'awin', 'tradedoubler', 'commissionjunction', 'cj-affiliate', 'rakutenmarketing',
-			'shopstyle', 'skimlinks', 'webgains', 'partnerize',
+			'shopstyle', 'skimlinks', 'webgains', 'partnerize', 'admitad',
 		);
 
 		foreach ( $patterns as $p ) {
 			if ( false !== strpos( $ua, $p ) ) {
 				return true;
 			}
+		}
+
+		// Word-boundary check for the broad terms so e.g. "CUBOT" is NOT
+		// flagged as a bot but "compatible; SomeBot/1.0" is.
+		if ( preg_match( '/(^|[\s;\/\(])(bot|crawler|spider|crawling)[\s\/;\)]/', $ua ) ) {
+			return true;
 		}
 
 		/**
@@ -161,23 +246,32 @@ final class CAV_Frontend {
 			return;
 		}
 
-		// Inline critical CSS + cookie-aware bootstrap.
-		// - Hides #cav-root by default so verified visitors never see a flash.
-		// - .cav-active reveals the popup; .cav-locked freezes body scroll.
-		// - The IIFE reads the *JS-readable* companion cookie set after a
-		//   successful adult verification. On '1' the popup stays hidden;
-		//   on '0' (minor) the visitor is redirected synchronously, even
-		//   from a fully cached page.
+		// Cache-safe AND cache-plugin-safe (WP Rocket "Delay JS" etc.):
+		// The popup is *visible* by default and body scroll is locked.
+		// Inline JS runs synchronously on parse — if it gets delayed by
+		// any plugin, the worst case is a verified visitor briefly sees
+		// the popup until JS catches up. Unverified visitors are always
+		// gated, regardless of JS state.
 		$redirect = esc_url( CAV_Settings::get( 'redirect_url' ) );
 		$flag     = CAV_COOKIE_FLAG;
 
 		echo "<style id=\"cav-anti-flash\">"
-			. "#cav-root{display:none}"
-			. "html.cav-active #cav-root{display:grid}"
-			. "html.cav-locked,html.cav-locked body{overflow:hidden!important;height:100%!important}"
+			. "html.cav-popup-on,html.cav-popup-on body{overflow:hidden!important;height:100%!important}"
+			. "html.cav-verified #cav-root{display:none!important}"
+			. "html.cav-verified,html.cav-verified body{overflow:auto!important;height:auto!important}"
 			. "</style>\n";
 
-		echo "<script id=\"cav-anti-flash-js\">(function(){var m=document.cookie.match(/(?:^|;\\s*)" . esc_js( $flag ) . "=([^;]+)/);var v=m?m[1]:'';if(v==='1'){return;}if(v==='0'){window.location.replace('" . esc_js( $redirect ) . "');return;}document.documentElement.classList.add('cav-active','cav-locked');})();</script>\n";
+		// data-cfasync / data-no-optimize / data-no-defer tell common
+		// cache/optimization plugins (Cloudflare Rocket Loader, Autoptimize,
+		// WP Rocket Delay JS, SG Optimizer combine JS, …) to leave this
+		// bootstrap alone so it executes synchronously.
+		echo "<script id=\"cav-anti-flash-js\" data-cfasync=\"false\" data-no-optimize=\"1\" data-no-defer=\"1\" data-no-minify=\"1\">"
+			. "(function(){var h=document.documentElement;h.classList.add('cav-popup-on');"
+			. "var m=document.cookie.match(/(?:^|;\\s*)" . esc_js( $flag ) . "=([^;]+)/);"
+			. "var v=m?m[1]:'';"
+			. "if(v==='1'){h.classList.add('cav-verified');h.classList.remove('cav-popup-on');return;}"
+			. "if(v==='0'){window.location.replace('" . esc_js( $redirect ) . "');return;}"
+			. "})();</script>\n";
 	}
 
 	public function enqueue() {

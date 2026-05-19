@@ -28,9 +28,9 @@
 	var flag = readFlag();
 
 	if (flag === '1') {
-		// Already verified as adult. Remove popup from DOM so nothing
-		// remains in the rendered page for verified visitors.
-		html.classList.remove('cav-active', 'cav-locked');
+		// Already verified as adult. Hide and remove from DOM.
+		html.classList.add('cav-verified');
+		html.classList.remove('cav-popup-on');
 		if (root.parentNode) { root.parentNode.removeChild(root); }
 		return;
 	}
@@ -41,9 +41,10 @@
 		return;
 	}
 
-	// No verdict yet → activate the popup (idempotent with anti-flash).
-	html.classList.add('cav-active');
-	if (data.blockScroll) { html.classList.add('cav-locked'); }
+	// No verdict yet. Popup is already visible (default state) – just
+	// make sure the scroll-lock class is present in case the anti-flash
+	// bootstrap got stripped by an aggressive optimization plugin.
+	if (data.blockScroll) { html.classList.add('cav-popup-on'); }
 
 	var form       = document.getElementById('cav-form');
 	var errorEl    = document.getElementById('cav-error');
@@ -79,7 +80,8 @@
 		root.style.transition = 'opacity .35s ease';
 		root.style.opacity = '0';
 		setTimeout(function () {
-			html.classList.remove('cav-active', 'cav-locked');
+			html.classList.remove('cav-popup-on');
+			html.classList.add('cav-verified');
 			if (root.parentNode) { root.parentNode.removeChild(root); }
 		}, 360);
 	}

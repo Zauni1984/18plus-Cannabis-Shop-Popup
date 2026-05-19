@@ -273,7 +273,10 @@
 }
 
 /* When popup is mounted, suppress body scroll */
-html.cav-locked, html.cav-locked body { overflow: hidden !important; height: 100% !important; }
+/* Scroll-lock while the popup is on; restored once the visitor is verified. */
+html.cav-popup-on, html.cav-popup-on body { overflow: hidden !important; height: 100% !important; }
+html.cav-verified #cav-root { display: none !important; }
+html.cav-verified, html.cav-verified body { overflow: auto !important; height: auto !important; }
 
 /* Respect user motion preferences */
 @media (prefers-reduced-motion: reduce) {
