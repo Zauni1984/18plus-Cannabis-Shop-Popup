@@ -159,12 +159,19 @@ dialog#cav-root:not([open]) { display: none !important; }
 	font-size: 14.5px;
 }
 
-.cav-form { display: flex; flex-direction: column; gap: 12px; }
+.cav-form { display: flex; flex-direction: column; gap: 12px; width: 100%; min-width: 0; }
 
 .cav-dob {
 	border: 0;
 	margin: 0 0 4px;
 	padding: 0;
+	/* <fieldset> has min-width: min-content by default in every browser
+	   and shrinks to its content rather than filling the flex parent,
+	   which left the DOB inputs clustered on the left. The two lines
+	   below force the fieldset to behave like a normal block. */
+	min-width: 0;
+	width: 100%;
+	box-sizing: border-box;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1.4fr;
 	gap: 10px;
