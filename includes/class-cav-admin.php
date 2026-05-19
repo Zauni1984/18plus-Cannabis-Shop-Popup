@@ -138,6 +138,7 @@ final class CAV_Admin {
 			<?php else : ?>
 				<form method="post" action="options.php" class="cav-form">
 					<?php settings_fields( 'cav_settings_group' ); ?>
+					<input type="hidden" name="<?php echo esc_attr( CAV_OPTION_KEY ); ?>[_tab]" value="<?php echo esc_attr( $tab ); ?>">
 					<?php $this->render_tab( $tab, $opts ); ?>
 					<?php submit_button( __( 'Einstellungen speichern', 'cannabis-age-verifier' ) ); ?>
 				</form>
