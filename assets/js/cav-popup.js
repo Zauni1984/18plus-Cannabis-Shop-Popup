@@ -16,6 +16,15 @@
 
 	var html = document.documentElement;
 
+	// Defensive reparent: themes occasionally wrap wp_footer in a div that
+	// has `transform` / `filter` / `perspective` / `will-change`. Any of
+	// those creates a new containing block and breaks position:fixed,
+	// causing the popup to appear inside a "frame" rather than as a true
+	// viewport overlay. Moving the node to <body> guarantees fullscreen.
+	if (root.parentNode !== document.body) {
+		document.body.appendChild(root);
+	}
+
 	// Defense in depth: also read the companion cookie here in case the
 	// anti-flash bootstrap was stripped by some plugin / minifier.
 	function readFlag() {

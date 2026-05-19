@@ -271,6 +271,11 @@ final class CAV_Frontend {
 			. "var v=m?m[1]:'';"
 			. "if(v==='1'){h.classList.add('cav-verified');h.classList.remove('cav-popup-on');return;}"
 			. "if(v==='0'){window.location.replace('" . esc_js( $redirect ) . "');return;}"
+			// Reparent popup to <body> as soon as the DOM is ready – the
+			// theme may wrap wp_footer in a transformed container, which
+			// turns our position:fixed overlay into a contained frame.
+			. "function r(){var n=document.getElementById('cav-root');if(n&&n.parentNode!==document.body){document.body.appendChild(n);}}"
+			. "if(document.readyState!=='loading'){r();}else{document.addEventListener('DOMContentLoaded',r,{once:true});}"
 			. "})();</script>\n";
 	}
 

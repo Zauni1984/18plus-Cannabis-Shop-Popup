@@ -6,13 +6,22 @@
 .cav-root *::before,
 .cav-root *::after { box-sizing: border-box; }
 
-.cav-root {
-	position: fixed;
-	inset: 0;
-	/* dvh = dynamic viewport, contracts when the on-screen keyboard appears
-	   on iOS/Android, so the popup stays fully visible above it. */
-	height: 100dvh;
-	z-index: 2147483647;
+/* !important throughout: themes routinely declare `*{position:relative}`
+   or wrap wp_footer in a transformed container, which would otherwise
+   break position:fixed (popup ends up framed instead of fullscreen). */
+#cav-root.cav-root {
+	position: fixed !important;
+	top: 0 !important;
+	right: 0 !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	width: 100vw !important;
+	width: 100dvw !important;
+	height: 100vh !important;
+	height: 100dvh !important;
+	margin: 0 !important;
+	transform: none !important;
+	z-index: 2147483647 !important;
 	display: grid;
 	place-items: center;
 	padding: 16px;
@@ -23,8 +32,8 @@
 	color: #f3fbef;
 	line-height: 1.55;
 	-webkit-font-smoothing: antialiased;
+	isolation: isolate;
 	contain: layout style;
-	/* Avoid iOS double-tap zoom inside the modal. */
 	touch-action: manipulation;
 }
 
