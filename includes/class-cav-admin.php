@@ -124,6 +124,8 @@ final class CAV_Admin {
 				<?php esc_html_e( 'DSGVO-konformes 18+ Popup für WooCommerce-Cannabis-Shops · BlockSocial UG (haftungsbeschränkt)', 'cannabis-age-verifier' ); ?>
 			</p>
 
+			<?php $this->render_save_notice(); ?>
+
 			<h2 class="nav-tab-wrapper">
 				<a href="?page=<?php echo esc_attr( self::MENU_SLUG ); ?>&tab=general" class="nav-tab <?php echo 'general' === $tab ? 'nav-tab-active' : ''; ?>"><?php esc_html_e( 'Allgemein', 'cannabis-age-verifier' ); ?></a>
 				<a href="?page=<?php echo esc_attr( self::MENU_SLUG ); ?>&tab=design" class="nav-tab <?php echo 'design' === $tab ? 'nav-tab-active' : ''; ?>"><?php esc_html_e( 'Design', 'cannabis-age-verifier' ); ?></a>
@@ -164,6 +166,30 @@ final class CAV_Admin {
 			</aside>
 		</div>
 		<?php
+	}
+
+	private function render_save_notice() {
+		// `settings_errors` from Settings API (success + validation errors).
+		// We pass an empty slug so messages registered for either option are shown.
+		settings_errors( 'cav_settings_group' );
+		settings_errors( 'cav_license_group' );
+
+		// WordPress also adds ?settings-updated=true via options.php redirect.
+		// Render our own branded confirmation in addition to the default one.
+		if ( ! empty( $_GET['settings-updated'] ) && 'true' === $_GET['settings-updated'] ) {
+			$tab     = isset( $_GET['tab'] ) ? sanitize_key( wp_unslash( $_GET['tab'] ) ) : 'general';
+			$message = ( 'license' === $tab )
+				? __( 'Lizenz gespeichert.', 'cannabis-age-verifier' )
+				: __( 'Einstellungen erfolgreich gespeichert.', 'cannabis-age-verifier' );
+			?>
+			<div class="notice notice-success is-dismissible cav-saved-notice" role="status">
+				<p>
+					<span class="cav-saved-icon" aria-hidden="true">✓</span>
+					<strong><?php echo esc_html( $message ); ?></strong>
+				</p>
+			</div>
+			<?php
+		}
 	}
 
 	private function render_tab( $tab, $opts ) {

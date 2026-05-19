@@ -111,3 +111,30 @@
 .cav-custom-age-wrap label { font-weight: 600; margin-right: 6px; }
 
 .cav-license-form { max-width: 720px; }
+
+/* Saved notice */
+.cav-admin .cav-saved-notice {
+	border-left-color: #1aa654 !important;
+	background: #f3fbef;
+	animation: cav-saved-in .35s cubic-bezier(.2,.9,.2,1.1) both;
+}
+.cav-admin .cav-saved-notice p { display: flex; align-items: center; gap: 10px; }
+.cav-admin .cav-saved-icon {
+	display: inline-grid;
+	place-items: center;
+	width: 22px; height: 22px;
+	border-radius: 50%;
+	background: linear-gradient(135deg, #1aa654, #0a7d3a);
+	color: #fff;
+	font-weight: 800;
+	font-size: 13px;
+	box-shadow: 0 2px 6px rgba(26,166,84,.35);
+	flex-shrink: 0;
+}
+@keyframes cav-saved-in {
+	from { opacity: 0; transform: translateY(-6px); }
+	to   { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+	.cav-admin .cav-saved-notice { animation: none; }
+}
