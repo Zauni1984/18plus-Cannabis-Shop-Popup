@@ -28,6 +28,10 @@ final class CAV_Frontend {
 	 * the popup is *visible* is decided client-side from a JS-readable
 	 * companion cookie. This way a page can be fully cached and still
 	 * gate every fresh visitor on their first page load.
+	 *
+	 * Skips: admin, AJAX/REST, feeds, robots.txt, sitemaps, 404, known
+	 * search-engine and social/preview bots, affiliate feed readers. This
+	 * keeps SEO indexing intact and lets partners pull feeds.
 	 */
 	public function should_show() {
 		if ( ! CAV_License::is_active() ) {
@@ -40,7 +44,21 @@ final class CAV_Frontend {
 			return false;
 		}
 
-		if ( is_admin() || ( defined( 'DOING_AJAX' ) && DOING_AJAX ) ) {
+		if ( is_admin()
+			|| wp_doing_ajax()
+			|| ( defined( 'REST_REQUEST' ) && REST_REQUEST )
+			|| ( defined( 'XMLRPC_REQUEST' ) && XMLRPC_REQUEST )
+			|| ( defined( 'WP_CLI' ) && WP_CLI ) ) {
+			return false;
+		}
+
+		// XML feeds, robots.txt, sitemaps – never inject the popup there.
+		if ( is_feed() || is_robots() || $this->is_sitemap_request() ) {
+			return false;
+		}
+
+		// Search-engine crawlers and feed readers / preview bots.
+		if ( $this->is_bot() ) {
 			return false;
 		}
 
@@ -69,7 +87,73 @@ final class CAV_Frontend {
 			}
 		}
 
-		return true;
+		/**
+		 * Allow third parties (affiliate plugins, custom integrations, …)
+		 * to whitelist specific requests from the age popup.
+		 *
+		 * @param bool  $show True to render the popup, false to suppress.
+		 * @param array $opts Current plugin settings.
+		 */
+		return (bool) apply_filters( 'cav_should_show_popup', true, $opts );
+	}
+
+	private function is_sitemap_request() {
+		if ( ! empty( $_GET['sitemap'] ) || ! empty( $_GET['sitemap-stylesheet'] ) ) {
+			return true;
+		}
+
+		$uri = isset( $_SERVER['REQUEST_URI'] ) ? wp_unslash( $_SERVER['REQUEST_URI'] ) : '';
+		if ( '' === $uri ) {
+			return false;
+		}
+
+		// Core WP sitemaps + Yoast/Rank Math/AIOSEO conventions.
+		return (bool) preg_match( '#(/wp-sitemap[^/]*\.xml|/sitemap[_-]?index?\.xml|/[a-z0-9_-]+-sitemap\.xml|/sitemap\.xsl|/sitemap\.xml)$#i', $uri );
+	}
+
+	private function is_bot() {
+		if ( empty( $_SERVER['HTTP_USER_AGENT'] ) ) {
+			// No UA – likely a tool/script. Don't block server-to-server fetches.
+			return true;
+		}
+
+		$ua = strtolower( wp_unslash( (string) $_SERVER['HTTP_USER_AGENT'] ) );
+
+		$patterns = array(
+			// Generic
+			'bot', 'crawler', 'spider', 'crawling', 'http-client', 'curl/', 'wget/', 'python-requests',
+			'go-http-client', 'okhttp', 'java/', 'libwww-perl', 'guzzlehttp', 'axios/',
+			// Search engines
+			'googlebot', 'bingbot', 'slurp', 'duckduckbot', 'baiduspider', 'yandex',
+			'sogou', 'exabot', 'facebot', 'ia_archiver', 'applebot', 'mojeekbot',
+			'petalbot', 'seznambot', 'qwantify', 'msnbot',
+			// SEO/monitoring
+			'ahrefsbot', 'semrushbot', 'mj12bot', 'dotbot', 'rogerbot', 'screaming frog',
+			'pingdom', 'uptimerobot', 'gtmetrix', 'lighthouse', 'pagespeed', 'chrome-lighthouse',
+			'siteimprove', 'serpstatbot', 'sitebulb', 'detectify', 'qualys',
+			// Social previews
+			'facebookexternalhit', 'twitterbot', 'linkedinbot', 'whatsapp', 'telegrambot',
+			'discordbot', 'slackbot', 'pinterest', 'redditbot', 'embedly', 'iframely', 'skypeuripreview',
+			// Feed readers / affiliate aggregators
+			'feedly', 'feedfetcher', 'feedburner', 'feedreader', 'inoreader', 'newsblur',
+			'theoldreader', 'flipboard', 'apple-pubsub', 'feedwrangler', 'feedbin',
+			'awin', 'tradedoubler', 'commissionjunction', 'cj-affiliate', 'rakutenmarketing',
+			'shopstyle', 'skimlinks', 'webgains', 'partnerize',
+		);
+
+		foreach ( $patterns as $p ) {
+			if ( false !== strpos( $ua, $p ) ) {
+				return true;
+			}
+		}
+
+		/**
+		 * Allow site owners to flag additional user-agents as bot.
+		 *
+		 * @param bool   $is_bot
+		 * @param string $ua
+		 */
+		return (bool) apply_filters( 'cav_is_bot', false, $ua );
 	}
 
 	public function preload_critical() {
@@ -166,10 +250,11 @@ final class CAV_Frontend {
 	}
 
 	public function rest_verify( WP_REST_Request $request ) {
-		$nonce = $request->get_header( 'X-WP-Nonce' );
-		if ( ! wp_verify_nonce( $nonce, 'wp_rest' ) ) {
-			return new WP_Error( 'cav_bad_nonce', __( 'Ungültiger Sicherheitsschlüssel.', 'cannabis-age-verifier' ), array( 'status' => 403 ) );
-		}
+		// Note: no wp_verify_nonce() check here. The endpoint is intentionally
+		// public — it accepts a self-declared DOB and only sets a soft cookie.
+		// A stale nonce (e.g. from a fully cached page after the 12 h tick)
+		// would otherwise lock out legitimate visitors. Abuse protection comes
+		// from the per-IP rate-limit below + SameSite=Lax cookie + HMAC sig.
 
 		if ( ! $this->check_rate_limit() ) {
 			return new WP_Error( 'cav_rate_limited', __( 'Zu viele Versuche.', 'cannabis-age-verifier' ), array( 'status' => 429 ) );
