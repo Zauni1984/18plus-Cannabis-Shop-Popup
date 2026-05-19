@@ -18,7 +18,7 @@ final class CAV_Settings {
 			'min_age'              => 18,
 			'verification_mode'    => 'dob', // 'dob' | 'confirm'
 			'cookie_lifetime_days' => 30,
-			'scope'                => 'shop', // 'shop' | 'site'
+			'scope'                => 'site', // 'shop' | 'site' (default: site, damit Popup auf der allerersten Seite erscheint)
 			'redirect_url'         => 'https://www.bundesgesundheitsministerium.de/service/gesetze-und-verordnungen/detail/cannabisgesetz',
 			'remember_minor_hours' => 24,
 			'headline'             => __( 'Bist Du mindestens 18 Jahre alt?', 'cannabis-age-verifier' ),

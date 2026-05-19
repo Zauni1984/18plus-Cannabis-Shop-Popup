@@ -21,6 +21,14 @@ final class CAV_Frontend {
 		add_action( 'wp_head', array( $this, 'preload_critical' ), 1 );
 	}
 
+	/**
+	 * Should the popup HTML be present on this page?
+	 *
+	 * Intentionally cache-safe: the cookie is NOT consulted here. Whether
+	 * the popup is *visible* is decided client-side from a JS-readable
+	 * companion cookie. This way a page can be fully cached and still
+	 * gate every fresh visitor on their first page load.
+	 */
 	public function should_show() {
 		if ( ! CAV_License::is_active() ) {
 			return false;
@@ -61,59 +69,31 @@ final class CAV_Frontend {
 			}
 		}
 
-		if ( $this->has_valid_cookie() ) {
-			return false;
-		}
-
 		return true;
-	}
-
-	public function has_valid_cookie() {
-		if ( empty( $_COOKIE[ CAV_COOKIE_NAME ] ) ) {
-			return false;
-		}
-
-		$raw  = wp_unslash( $_COOKIE[ CAV_COOKIE_NAME ] );
-		$data = CAV_Security::parse_cookie_token( $raw );
-
-		if ( ! $data || 'adult' !== $data['age_band'] ) {
-			return false;
-		}
-
-		$opts        = CAV_Settings::get_all();
-		$max_age_sec = (int) $opts['cookie_lifetime_days'] * DAY_IN_SECONDS;
-
-		if ( $data['issued_at'] + $max_age_sec < time() ) {
-			return false;
-		}
-
-		return true;
-	}
-
-	public function has_minor_cookie() {
-		if ( empty( $_COOKIE[ CAV_COOKIE_NAME ] ) ) {
-			return false;
-		}
-
-		$data = CAV_Security::parse_cookie_token( wp_unslash( $_COOKIE[ CAV_COOKIE_NAME ] ) );
-
-		if ( ! $data || 'minor' !== $data['age_band'] ) {
-			return false;
-		}
-
-		$opts      = CAV_Settings::get_all();
-		$max_age_s = (int) $opts['remember_minor_hours'] * HOUR_IN_SECONDS;
-
-		return $data['issued_at'] + $max_age_s >= time();
 	}
 
 	public function preload_critical() {
 		if ( ! $this->should_show() ) {
 			return;
 		}
-		// Inline a tiny anti-flash style so the page never renders before the popup mounts.
-		echo "<style id=\"cav-anti-flash\">html.cav-loading body{overflow:hidden!important}html.cav-loading body::before{content:'';position:fixed;inset:0;background:#0c1611;z-index:2147483646;opacity:.98}</style>\n";
-		echo "<script id=\"cav-anti-flash-js\">document.documentElement.classList.add('cav-loading');</script>\n";
+
+		// Inline critical CSS + cookie-aware bootstrap.
+		// - Hides #cav-root by default so verified visitors never see a flash.
+		// - .cav-active reveals the popup; .cav-locked freezes body scroll.
+		// - The IIFE reads the *JS-readable* companion cookie set after a
+		//   successful adult verification. On '1' the popup stays hidden;
+		//   on '0' (minor) the visitor is redirected synchronously, even
+		//   from a fully cached page.
+		$redirect = esc_url( CAV_Settings::get( 'redirect_url' ) );
+		$flag     = CAV_COOKIE_FLAG;
+
+		echo "<style id=\"cav-anti-flash\">"
+			. "#cav-root{display:none}"
+			. "html.cav-active #cav-root{display:grid}"
+			. "html.cav-locked,html.cav-locked body{overflow:hidden!important;height:100%!important}"
+			. "</style>\n";
+
+		echo "<script id=\"cav-anti-flash-js\">(function(){var m=document.cookie.match(/(?:^|;\\s*)" . esc_js( $flag ) . "=([^;]+)/);var v=m?m[1]:'';if(v==='1'){return;}if(v==='0'){window.location.replace('" . esc_js( $redirect ) . "');return;}document.documentElement.classList.add('cav-active','cav-locked');})();</script>\n";
 	}
 
 	public function enqueue() {
@@ -142,19 +122,20 @@ final class CAV_Frontend {
 			'cav-popup',
 			'CAV_DATA',
 			array(
-				'restUrl'        => esc_url_raw( rest_url( self::REST_NAMESPACE . '/verify' ) ),
-				'nonce'          => wp_create_nonce( 'wp_rest' ),
-				'redirectUrl'    => esc_url_raw( $opts['redirect_url'] ),
-				'minAge'         => (int) $opts['min_age'],
-				'mode'           => $opts['verification_mode'],
-				'blockScroll'    => (bool) $opts['block_scroll'],
-				'animations'     => (bool) $opts['enable_animations'],
-				'i18n'           => array(
-					'invalidDate'      => __( 'Bitte ein gültiges Geburtsdatum eingeben.', 'cannabis-age-verifier' ),
-					'tooYoung'         => __( 'Du musst mindestens %d Jahre alt sein, um diesen Shop zu besuchen.', 'cannabis-age-verifier' ),
-					'networkError'     => __( 'Verbindungsfehler. Bitte erneut versuchen.', 'cannabis-age-verifier' ),
-					'rateLimited'      => __( 'Zu viele Versuche. Bitte später erneut versuchen.', 'cannabis-age-verifier' ),
-					'verifying'        => __( 'Prüfe …', 'cannabis-age-verifier' ),
+				'restUrl'     => esc_url_raw( rest_url( self::REST_NAMESPACE . '/verify' ) ),
+				'nonce'       => wp_create_nonce( 'wp_rest' ),
+				'redirectUrl' => esc_url_raw( $opts['redirect_url'] ),
+				'minAge'      => (int) $opts['min_age'],
+				'mode'        => $opts['verification_mode'],
+				'blockScroll' => (bool) $opts['block_scroll'],
+				'animations'  => (bool) $opts['enable_animations'],
+				'flagCookie'  => CAV_COOKIE_FLAG,
+				'i18n'        => array(
+					'invalidDate'  => __( 'Bitte ein gültiges Geburtsdatum eingeben.', 'cannabis-age-verifier' ),
+					'tooYoung'     => __( 'Du musst mindestens %d Jahre alt sein, um diesen Shop zu besuchen.', 'cannabis-age-verifier' ),
+					'networkError' => __( 'Verbindungsfehler. Bitte erneut versuchen.', 'cannabis-age-verifier' ),
+					'rateLimited'  => __( 'Zu viele Versuche. Bitte später erneut versuchen.', 'cannabis-age-verifier' ),
+					'verifying'    => __( 'Prüfe …', 'cannabis-age-verifier' ),
 				),
 			)
 		);
@@ -170,22 +151,14 @@ final class CAV_Frontend {
 					'callback'            => array( $this, 'rest_verify' ),
 					'permission_callback' => '__return_true',
 					'args'                => array(
-						'mode' => array(
+						'mode'    => array(
 							'required'          => true,
 							'sanitize_callback' => 'sanitize_key',
 						),
-						'year' => array(
-							'sanitize_callback' => 'absint',
-						),
-						'month' => array(
-							'sanitize_callback' => 'absint',
-						),
-						'day' => array(
-							'sanitize_callback' => 'absint',
-						),
-						'confirm' => array(
-							'sanitize_callback' => 'sanitize_key',
-						),
+						'year'    => array( 'sanitize_callback' => 'absint' ),
+						'month'   => array( 'sanitize_callback' => 'absint' ),
+						'day'     => array( 'sanitize_callback' => 'absint' ),
+						'confirm' => array( 'sanitize_callback' => 'sanitize_key' ),
 					),
 				),
 			)
@@ -193,7 +166,6 @@ final class CAV_Frontend {
 	}
 
 	public function rest_verify( WP_REST_Request $request ) {
-		// Nonce check via REST cookie auth.
 		$nonce = $request->get_header( 'X-WP-Nonce' );
 		if ( ! wp_verify_nonce( $nonce, 'wp_rest' ) ) {
 			return new WP_Error( 'cav_bad_nonce', __( 'Ungültiger Sicherheitsschlüssel.', 'cannabis-age-verifier' ), array( 'status' => 403 ) );
@@ -203,9 +175,9 @@ final class CAV_Frontend {
 			return new WP_Error( 'cav_rate_limited', __( 'Zu viele Versuche.', 'cannabis-age-verifier' ), array( 'status' => 429 ) );
 		}
 
-		$opts    = CAV_Settings::get_all();
-		$min_age = (int) $opts['min_age'];
-		$mode    = $request->get_param( 'mode' );
+		$opts     = CAV_Settings::get_all();
+		$min_age  = (int) $opts['min_age'];
+		$mode     = $request->get_param( 'mode' );
 		$is_adult = false;
 
 		if ( 'dob' === $mode ) {
@@ -214,15 +186,12 @@ final class CAV_Frontend {
 				(int) $request->get_param( 'month' ),
 				(int) $request->get_param( 'day' )
 			);
-
 			if ( $age < 0 ) {
 				return new WP_Error( 'cav_invalid_date', __( 'Ungültiges Datum.', 'cannabis-age-verifier' ), array( 'status' => 400 ) );
 			}
-
 			$is_adult = ( $age >= $min_age );
 		} elseif ( 'confirm' === $mode ) {
-			$confirm  = $request->get_param( 'confirm' );
-			$is_adult = ( 'yes' === $confirm );
+			$is_adult = ( 'yes' === $request->get_param( 'confirm' ) );
 		} else {
 			return new WP_Error( 'cav_invalid_mode', __( 'Ungültiger Modus.', 'cannabis-age-verifier' ), array( 'status' => 400 ) );
 		}
@@ -234,45 +203,39 @@ final class CAV_Frontend {
 			? (int) $opts['cookie_lifetime_days'] * DAY_IN_SECONDS
 			: (int) $opts['remember_minor_hours'] * HOUR_IN_SECONDS;
 
-		$this->set_cookie( $token, $issued + $lifetime );
+		$this->set_cookies( $token, $issued + $lifetime, $is_adult );
 
-		$response = array(
-			'verified' => $is_adult,
-			'redirect' => $is_adult ? '' : $opts['redirect_url'],
+		return rest_ensure_response(
+			array(
+				'verified' => $is_adult,
+				'redirect' => $is_adult ? '' : $opts['redirect_url'],
+			)
 		);
-
-		return rest_ensure_response( $response );
 	}
 
-	private function set_cookie( $value, $expires ) {
-		$secure   = is_ssl();
-		$samesite = 'Lax';
-		$path     = COOKIEPATH ? COOKIEPATH : '/';
-		$domain   = COOKIE_DOMAIN ? COOKIE_DOMAIN : '';
+	private function set_cookies( $token, $expires, $is_adult ) {
+		$secure = is_ssl();
+		$path   = COOKIEPATH ? COOKIEPATH : '/';
+		$domain = COOKIE_DOMAIN ? COOKIE_DOMAIN : '';
+		$flag   = $is_adult ? '1' : '0';
 
 		if ( PHP_VERSION_ID >= 70300 ) {
-			setcookie(
-				CAV_COOKIE_NAME,
-				$value,
-				array(
-					'expires'  => $expires,
-					'path'     => $path,
-					'domain'   => $domain,
-					'secure'   => $secure,
-					'httponly' => true,
-					'samesite' => $samesite,
-				)
+			$base = array(
+				'expires'  => $expires,
+				'path'     => $path,
+				'domain'   => $domain,
+				'secure'   => $secure,
+				'samesite' => 'Lax',
 			);
+
+			// Signed, server-trusted cookie (HttpOnly).
+			setcookie( CAV_COOKIE_NAME, $token, array_merge( $base, array( 'httponly' => true ) ) );
+
+			// JS-readable companion flag – no sensitive data, just '1' or '0'.
+			setcookie( CAV_COOKIE_FLAG, $flag, array_merge( $base, array( 'httponly' => false ) ) );
 		} else {
-			setcookie(
-				CAV_COOKIE_NAME,
-				$value,
-				$expires,
-				$path . '; samesite=' . $samesite,
-				$domain,
-				$secure,
-				true
-			);
+			setcookie( CAV_COOKIE_NAME, $token, $expires, $path . '; samesite=Lax', $domain, $secure, true );
+			setcookie( CAV_COOKIE_FLAG, $flag, $expires, $path . '; samesite=Lax', $domain, $secure, false );
 		}
 	}
 
@@ -294,12 +257,11 @@ final class CAV_Frontend {
 			return;
 		}
 
-		$opts        = CAV_Settings::get_all();
-		$bg          = max( 30, min( 100, (int) $opts['background_opacity'] ) ) / 100;
-		$accent      = CAV_Security::sanitize_hex_color( $opts['accent_color'], '#1aa654' );
-		$accent2     = CAV_Security::sanitize_hex_color( $opts['accent_color_2'], '#0a7d3a' );
-		$is_minor    = $this->has_minor_cookie();
-		$tpl         = CAV_PLUGIN_DIR . 'templates/popup.php';
+		$opts    = CAV_Settings::get_all();
+		$bg      = max( 30, min( 100, (int) $opts['background_opacity'] ) ) / 100;
+		$accent  = CAV_Security::sanitize_hex_color( $opts['accent_color'], '#1aa654' );
+		$accent2 = CAV_Security::sanitize_hex_color( $opts['accent_color_2'], '#0a7d3a' );
+		$tpl     = CAV_PLUGIN_DIR . 'templates/popup.php';
 
 		if ( file_exists( $tpl ) ) {
 			include $tpl;

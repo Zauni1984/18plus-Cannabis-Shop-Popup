@@ -1,13 +1,13 @@
 <?php
 /**
- * Popup template – purely escaped output.
+ * Popup template – purely escaped output. Cache-safe: identical for every
+ * visitor. Visibility is decided client-side from the companion cookie.
  *
  * Vars in scope:
- *  $opts     array  Settings
- *  $bg       float  0-1 background opacity
- *  $accent   string Hex color
- *  $accent2  string Hex color
- *  $is_minor bool
+ *  $opts    array  Settings
+ *  $bg      float  0-1 background opacity
+ *  $accent  string Hex color
+ *  $accent2 string Hex color
  *
  * @package CannabisAgeVerifier
  */
@@ -21,7 +21,7 @@ $mode       = $opts['verification_mode'];
 $min_age    = (int) $opts['min_age'];
 ?>
 <div id="cav-root"
-	class="cav-root<?php echo $animations ? ' cav-anim' : ''; ?><?php echo $is_minor ? ' cav-blocked' : ''; ?>"
+	class="cav-root<?php echo $animations ? ' cav-anim' : ''; ?>"
 	role="dialog"
 	aria-modal="true"
 	aria-labelledby="cav-headline"
@@ -59,21 +59,7 @@ $min_age    = (int) $opts['min_age'];
 			<?php echo wp_kses_post( $opts['subline'] ); ?>
 		</p>
 
-		<?php if ( $is_minor ) : ?>
-			<div class="cav-blocked-message" role="alert">
-				<strong><?php esc_html_e( 'Zugang verweigert', 'cannabis-age-verifier' ); ?></strong>
-				<p><?php
-					printf(
-						/* translators: %d: minimum age */
-						esc_html__( 'Aufgrund einer früheren Eingabe konnte das Mindestalter von %d Jahren nicht bestätigt werden. Der Zugang ist temporär blockiert.', 'cannabis-age-verifier' ),
-						(int) $min_age
-					);
-				?></p>
-				<a class="cav-btn cav-btn--ghost" href="<?php echo esc_url( $opts['redirect_url'] ); ?>" rel="noopener nofollow">
-					<?php esc_html_e( 'Zur Aufklärung', 'cannabis-age-verifier' ); ?>
-				</a>
-			</div>
-		<?php elseif ( 'dob' === $mode ) : ?>
+		<?php if ( 'dob' === $mode ) : ?>
 			<form id="cav-form" class="cav-form" novalidate>
 				<fieldset class="cav-dob">
 					<legend class="screen-reader-text"><?php esc_html_e( 'Geburtsdatum', 'cannabis-age-verifier' ); ?></legend>
@@ -143,4 +129,4 @@ $min_age    = (int) $opts['min_age'];
 		</ul>
 	</div>
 </div>
-<script id="cav-cleanup">document.documentElement.classList.remove('cav-loading');</script>
+

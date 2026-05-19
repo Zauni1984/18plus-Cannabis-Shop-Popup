@@ -361,10 +361,11 @@ final class CAV_Admin {
 			<tr>
 				<th scope="row"><?php esc_html_e( 'Anzeigebereich', 'cannabis-age-verifier' ); ?></th>
 				<td>
-					<label><input type="radio" name="<?php echo esc_attr( CAV_OPTION_KEY ); ?>[scope]" value="shop" <?php checked( 'shop', $opts['scope'] ); ?>>
-						<?php esc_html_e( 'Nur WooCommerce-Seiten (Shop, Produkt, Kategorie, Warenkorb, Kasse)', 'cannabis-age-verifier' ); ?></label><br>
 					<label><input type="radio" name="<?php echo esc_attr( CAV_OPTION_KEY ); ?>[scope]" value="site" <?php checked( 'site', $opts['scope'] ); ?>>
-						<?php esc_html_e( 'Gesamte Website', 'cannabis-age-verifier' ); ?></label>
+						<?php esc_html_e( 'Gesamte Website (empfohlen – Popup erscheint auf der allerersten Seite)', 'cannabis-age-verifier' ); ?></label><br>
+					<label><input type="radio" name="<?php echo esc_attr( CAV_OPTION_KEY ); ?>[scope]" value="shop" <?php checked( 'shop', $opts['scope'] ); ?>>
+						<?php esc_html_e( 'Nur WooCommerce-Seiten (Shop, Produkt, Kategorie, Warenkorb, Kasse)', 'cannabis-age-verifier' ); ?></label>
+					<p class="description"><?php esc_html_e( 'Bei „Nur WooCommerce-Seiten" zeigt sich das Popup erst, sobald der Besucher eine Shop-Seite öffnet. Eine Cannabis-konforme Absicherung gegen Minderjährige verlangt in der Regel die gesamte Website.', 'cannabis-age-verifier' ); ?></p>
 				</td>
 			</tr>
 			<tr>

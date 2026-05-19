@@ -1,7 +1,7 @@
 /*!
  * Cannabis Age Verifier – Frontend Popup
  * (c) BlockSocial UG (haftungsbeschränkt)
- * Vanilla JS, no dependencies. ~3kb gzipped.
+ * Vanilla JS, no dependencies. ~3kb gzipped. Cache-safe.
  */
 (function () {
 	'use strict';
@@ -15,15 +15,42 @@
 	if (!root) { return; }
 
 	var html = document.documentElement;
-	if (data.blockScroll) { html.classList.add('cav-locked'); }
-	html.classList.remove('cav-loading');
 
-	var form     = document.getElementById('cav-form');
-	var errorEl  = document.getElementById('cav-error');
-	var submitBtn = root.querySelector('[data-cav-submit]');
+	// Defense in depth: also read the companion cookie here in case the
+	// anti-flash bootstrap was stripped by some plugin / minifier.
+	function readFlag() {
+		var name = (data.flagCookie || 'cav_age_verified_js').replace(/[^a-zA-Z0-9_]/g, '');
+		var re = new RegExp('(?:^|;\\s*)' + name + '=([^;]+)');
+		var m = document.cookie.match(re);
+		return m ? decodeURIComponent(m[1]) : '';
+	}
+
+	var flag = readFlag();
+
+	if (flag === '1') {
+		// Already verified as adult. Remove popup from DOM so nothing
+		// remains in the rendered page for verified visitors.
+		html.classList.remove('cav-active', 'cav-locked');
+		if (root.parentNode) { root.parentNode.removeChild(root); }
+		return;
+	}
+
+	if (flag === '0') {
+		// Recent minor verdict. Hard-redirect synchronously.
+		window.location.replace(data.redirectUrl);
+		return;
+	}
+
+	// No verdict yet → activate the popup (idempotent with anti-flash).
+	html.classList.add('cav-active');
+	if (data.blockScroll) { html.classList.add('cav-locked'); }
+
+	var form       = document.getElementById('cav-form');
+	var errorEl    = document.getElementById('cav-error');
+	var submitBtn  = root.querySelector('[data-cav-submit]');
 	var declineBtn = root.querySelector('[data-cav-decline]');
-	var yesBtn   = root.querySelector('[data-cav-confirm-yes]');
-	var noBtn    = root.querySelector('[data-cav-confirm-no]');
+	var yesBtn     = root.querySelector('[data-cav-confirm-yes]');
+	var noBtn      = root.querySelector('[data-cav-confirm-no]');
 
 	function setError(msg) {
 		if (!errorEl) { return; }
@@ -46,6 +73,15 @@
 		for (var i = 0; i < inputs.length; i++) {
 			if (!inputs[i].value) { inputs[i].focus(); return; }
 		}
+	}
+
+	function dismissPopup() {
+		root.style.transition = 'opacity .35s ease';
+		root.style.opacity = '0';
+		setTimeout(function () {
+			html.classList.remove('cav-active', 'cav-locked');
+			if (root.parentNode) { root.parentNode.removeChild(root); }
+		}, 360);
 	}
 
 	function postVerify(payload, btn) {
@@ -75,24 +111,13 @@
 				throw new Error(r.body && r.body.message ? r.body.message : 'http');
 			}
 			if (r.body.verified) {
-				// Smooth fade-out before allowing the page to be used.
-				root.style.transition = 'opacity .35s ease';
-				root.style.opacity = '0';
-				setTimeout(function () {
-					html.classList.remove('cav-locked');
-					root.parentNode && root.parentNode.removeChild(root);
-				}, 360);
+				dismissPopup();
 			} else {
-				// Hard redirect to education page.
 				window.location.replace(r.body.redirect || data.redirectUrl);
 			}
 		}).catch(function (err) {
 			clearTimeout(timeout);
-			if (err && err.message === 'rate') {
-				setError(data.i18n.rateLimited);
-			} else {
-				setError(data.i18n.networkError);
-			}
+			setError(err && err.message === 'rate' ? data.i18n.rateLimited : data.i18n.networkError);
 		}).then(function () {
 			setBusy(btn, false);
 		});
@@ -125,14 +150,6 @@
 		return true;
 	}
 
-	function calcAge(dob) {
-		var today = new Date();
-		var age = today.getUTCFullYear() - dob.year;
-		var m = (today.getUTCMonth() + 1) - dob.month;
-		if (m < 0 || (m === 0 && today.getUTCDate() < dob.day)) { age--; }
-		return age;
-	}
-
 	if (data.mode === 'dob' && form) {
 		form.addEventListener('submit', function (ev) {
 			ev.preventDefault();
@@ -142,15 +159,9 @@
 				focusFirstInvalid();
 				return;
 			}
-			// Cheap client-side prefilter; server is the source of truth.
-			if (calcAge(dob) < data.minAge) {
-				postVerify({ mode: 'dob', day: dob.day, month: dob.month, year: dob.year }, submitBtn);
-				return;
-			}
 			postVerify({ mode: 'dob', day: dob.day, month: dob.month, year: dob.year }, submitBtn);
 		});
 
-		// Auto-tab between fields for fast UX
 		var inputs = form.querySelectorAll('input[type="number"]');
 		for (var i = 0; i < inputs.length; i++) {
 			(function (idx, el) {
@@ -175,7 +186,6 @@
 		if (noBtn)  { noBtn.addEventListener('click',  function () { postVerify({ mode: 'confirm', confirm: 'no'  }, noBtn);  }); }
 	}
 
-	// Trap focus inside the modal for accessibility
 	function trapFocus(ev) {
 		if (ev.key !== 'Tab') { return; }
 		var focusable = root.querySelectorAll('input, button, a[href]');
@@ -190,7 +200,6 @@
 	}
 	root.addEventListener('keydown', trapFocus);
 
-	// Initial focus on the first input.
 	var firstInput = root.querySelector('input, button');
 	if (firstInput) { try { firstInput.focus({ preventScroll: true }); } catch (e) { firstInput.focus(); } }
 })();
