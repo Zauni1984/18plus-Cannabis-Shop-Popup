@@ -18,6 +18,52 @@ final class CAV_Admin {
 		add_action( 'admin_init', array( $this, 'register_settings' ) );
 		add_filter( 'plugin_action_links_' . CAV_PLUGIN_BASENAME, array( $this, 'action_links' ) );
 		add_action( 'admin_notices', array( $this, 'license_notice' ) );
+		add_action( 'admin_post_cav_reset_settings', array( $this, 'handle_reset' ) );
+	}
+
+	public function handle_reset() {
+		if ( ! current_user_can( 'manage_options' ) ) {
+			wp_die( esc_html__( 'Keine Berechtigung.', 'cannabis-age-verifier' ), 403 );
+		}
+
+		check_admin_referer( 'cav_reset_settings' );
+
+		$scope = isset( $_POST['scope'] ) ? sanitize_key( wp_unslash( $_POST['scope'] ) ) : 'all';
+		$tab   = isset( $_POST['tab'] ) ? sanitize_key( wp_unslash( $_POST['tab'] ) ) : 'general';
+		$map   = CAV_Settings::tab_fields();
+
+		$defaults = CAV_Settings::defaults();
+		$current  = get_option( CAV_OPTION_KEY, array() );
+		if ( ! is_array( $current ) ) {
+			$current = array();
+		}
+		$merged = wp_parse_args( $current, $defaults );
+
+		if ( 'tab' === $scope && isset( $map[ $tab ] ) ) {
+			foreach ( $map[ $tab ] as $field ) {
+				if ( array_key_exists( $field, $defaults ) ) {
+					$merged[ $field ] = $defaults[ $field ];
+				}
+			}
+		} else {
+			$merged = $defaults;
+			$tab    = 'general';
+		}
+
+		update_option( CAV_OPTION_KEY, $merged, false );
+
+		$redirect = add_query_arg(
+			array(
+				'page'         => self::MENU_SLUG,
+				'tab'          => $tab,
+				'cav-reset'    => 'tab' === $scope ? 'tab' : 'all',
+				'_wpnonce_ack' => wp_create_nonce( 'cav_reset_ack' ),
+			),
+			admin_url( 'admin.php' )
+		);
+
+		wp_safe_redirect( $redirect );
+		exit;
 	}
 
 	public function action_links( $links ) {
@@ -140,7 +186,23 @@ final class CAV_Admin {
 					<?php settings_fields( 'cav_settings_group' ); ?>
 					<input type="hidden" name="<?php echo esc_attr( CAV_OPTION_KEY ); ?>[_tab]" value="<?php echo esc_attr( $tab ); ?>">
 					<?php $this->render_tab( $tab, $opts ); ?>
-					<?php submit_button( __( 'Einstellungen speichern', 'cannabis-age-verifier' ) ); ?>
+					<p class="submit cav-form-actions">
+						<?php submit_button( __( 'Einstellungen speichern', 'cannabis-age-verifier' ), 'primary', 'submit', false ); ?>
+					</p>
+				</form>
+
+				<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" class="cav-reset-form" data-cav-reset="<?php echo esc_attr( $this->tab_label( $tab ) ); ?>">
+					<input type="hidden" name="action" value="cav_reset_settings">
+					<input type="hidden" name="scope" value="tab">
+					<input type="hidden" name="tab" value="<?php echo esc_attr( $tab ); ?>">
+					<?php wp_nonce_field( 'cav_reset_settings' ); ?>
+					<button type="submit" class="button button-secondary cav-reset-btn">
+						<span class="dashicons dashicons-image-rotate" aria-hidden="true"></span>
+						<?php
+						/* translators: %s: tab label */
+						printf( esc_html__( 'Diesen Tab (%s) auf Standardwerte zurücksetzen', 'cannabis-age-verifier' ), esc_html( $this->tab_label( $tab ) ) );
+						?>
+					</button>
 				</form>
 			<?php endif; ?>
 
@@ -162,6 +224,18 @@ final class CAV_Admin {
 					</li>
 				</ul>
 
+				<h3><?php esc_html_e( 'Werkseinstellungen', 'cannabis-age-verifier' ); ?></h3>
+				<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" class="cav-reset-form cav-reset-form--all" data-cav-reset-all>
+					<input type="hidden" name="action" value="cav_reset_settings">
+					<input type="hidden" name="scope" value="all">
+					<?php wp_nonce_field( 'cav_reset_settings' ); ?>
+					<button type="submit" class="button button-link-delete cav-reset-all">
+						<span class="dashicons dashicons-trash" aria-hidden="true"></span>
+						<?php esc_html_e( 'Alle Einstellungen zurücksetzen', 'cannabis-age-verifier' ); ?>
+					</button>
+					<small><?php esc_html_e( 'Setzt sämtliche Tabs auf die Werkseinstellungen zurück. Die Lizenz bleibt unverändert.', 'cannabis-age-verifier' ); ?></small>
+				</form>
+
 				<h3><?php esc_html_e( 'Support', 'cannabis-age-verifier' ); ?></h3>
 				<p>info@blocksocial.eu<br>BlockSocial UG (haftungsbeschränkt)<br>Kratzmühlstraße 14<br>92339 Beilngries</p>
 			</aside>
@@ -169,28 +243,57 @@ final class CAV_Admin {
 		<?php
 	}
 
+	private function tab_label( $tab ) {
+		$labels = array(
+			'general' => __( 'Allgemein', 'cannabis-age-verifier' ),
+			'design'  => __( 'Design', 'cannabis-age-verifier' ),
+			'legal'   => __( 'Rechtliches & DSGVO', 'cannabis-age-verifier' ),
+			'license' => __( 'Lizenz', 'cannabis-age-verifier' ),
+		);
+		return isset( $labels[ $tab ] ) ? $labels[ $tab ] : ucfirst( $tab );
+	}
+
 	private function render_save_notice() {
 		// `settings_errors` from Settings API (success + validation errors).
-		// We pass an empty slug so messages registered for either option are shown.
 		settings_errors( 'cav_settings_group' );
 		settings_errors( 'cav_license_group' );
 
-		// WordPress also adds ?settings-updated=true via options.php redirect.
-		// Render our own branded confirmation in addition to the default one.
+		// Settings saved (options.php redirect).
 		if ( ! empty( $_GET['settings-updated'] ) && 'true' === $_GET['settings-updated'] ) {
 			$tab     = isset( $_GET['tab'] ) ? sanitize_key( wp_unslash( $_GET['tab'] ) ) : 'general';
 			$message = ( 'license' === $tab )
 				? __( 'Lizenz gespeichert.', 'cannabis-age-verifier' )
 				: __( 'Einstellungen erfolgreich gespeichert.', 'cannabis-age-verifier' );
-			?>
-			<div class="notice notice-success is-dismissible cav-saved-notice" role="status">
-				<p>
-					<span class="cav-saved-icon" aria-hidden="true">✓</span>
-					<strong><?php echo esc_html( $message ); ?></strong>
-				</p>
-			</div>
-			<?php
+			$this->print_branded_notice( $message );
 		}
+
+		// Reset confirmation.
+		if ( ! empty( $_GET['cav-reset'] ) && ! empty( $_GET['_wpnonce_ack'] ) ) {
+			$nonce = sanitize_text_field( wp_unslash( $_GET['_wpnonce_ack'] ) );
+			if ( wp_verify_nonce( $nonce, 'cav_reset_ack' ) ) {
+				$scope   = sanitize_key( wp_unslash( $_GET['cav-reset'] ) );
+				$tab     = isset( $_GET['tab'] ) ? sanitize_key( wp_unslash( $_GET['tab'] ) ) : 'general';
+				$message = ( 'all' === $scope )
+					? __( 'Alle Einstellungen wurden auf Werkseinstellungen zurückgesetzt.', 'cannabis-age-verifier' )
+					: sprintf(
+						/* translators: %s: tab label */
+						__( 'Tab „%s" wurde auf Standardwerte zurückgesetzt.', 'cannabis-age-verifier' ),
+						$this->tab_label( $tab )
+					);
+				$this->print_branded_notice( $message );
+			}
+		}
+	}
+
+	private function print_branded_notice( $message ) {
+		?>
+		<div class="notice notice-success is-dismissible cav-saved-notice" role="status">
+			<p>
+				<span class="cav-saved-icon" aria-hidden="true">✓</span>
+				<strong><?php echo esc_html( $message ); ?></strong>
+			</p>
+		</div>
+		<?php
 	}
 
 	private function render_tab( $tab, $opts ) {

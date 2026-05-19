@@ -31,4 +31,27 @@
 
 	presets.addEventListener('change', syncCustom);
 	syncCustom();
+
+	// Confirm before per-tab reset.
+	var tabResetForms = document.querySelectorAll('[data-cav-reset]');
+	for (var i = 0; i < tabResetForms.length; i++) {
+		(function (form) {
+			form.addEventListener('submit', function (ev) {
+				var label = form.getAttribute('data-cav-reset') || '';
+				var msg = 'Diesen Tab (' + label + ') wirklich auf Standardwerte zurücksetzen? Alle dort eingegebenen Werte gehen verloren.';
+				if (!window.confirm(msg)) {
+					ev.preventDefault();
+				}
+			});
+		})(tabResetForms[i]);
+	}
+
+	// Confirm before global reset.
+	var allReset = document.querySelector('[data-cav-reset-all]');
+	if (allReset) {
+		allReset.addEventListener('submit', function (ev) {
+			var msg = 'ALLE Einstellungen wirklich auf Werkseinstellungen zurücksetzen? Dies betrifft sämtliche Tabs (Lizenz bleibt erhalten).';
+			if (!window.confirm(msg)) { ev.preventDefault(); }
+		});
+	}
 })();
