@@ -1,0 +1,14 @@
+{
+	"name": "zauni/wc-professional-catalog",
+	"description": "Professional product catalog for WooCommerce with PDF export, flipbook viewer and print-ready layout.",
+	"type": "wordpress-plugin",
+	"license": "GPL-2.0-or-later",
+	"require": {
+		"php": ">=7.4",
+		"dompdf/dompdf": "^3.0"
+	},
+	"config": {
+		"optimize-autoloader": true,
+		"sort-packages": true
+	}
+}
