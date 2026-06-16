@@ -17,12 +17,6 @@ $unit_price = WCPC_Price::get_unit_price( $product );
 $brand      = WCPC_Catalog::get_brand_label( $product );
 $image      = $product->get_image( 'medium', array( 'class' => 'wcpc-card__image' ) );
 $link       = get_permalink( $product->get_id() );
-$cart_link  = add_query_arg(
-	array(
-		'add-to-cart' => $product->get_id(),
-	),
-	wc_get_checkout_url() ? wc_get_cart_url() : home_url( '/' )
-);
 ?>
 <article class="wcpc-card">
 	<a class="wcpc-card__media" href="<?php echo esc_url( $link ); ?>">

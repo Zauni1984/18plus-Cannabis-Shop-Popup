@@ -111,13 +111,15 @@ class WCPC_Catalog {
 	 * @param array $args Query args.
 	 */
 	public static function render_flipbook_page( $args = array() ) {
-		$settings = WCPC_Plugin::get_settings();
-		$content  = self::render_flipbook( $args );
 		WCPC_Assets::enqueue_frontend();
+		$content = self::render_flipbook( $args );
 
 		get_header();
 		echo '<div class="wcpc-endpoint-wrap">';
-		echo wp_kses_post( $content );
+		// $content is built from internal templates; every dynamic value is escaped
+		// at the source (esc_html/esc_attr/esc_url/wc_price). wp_kses_post would strip
+		// the data-* attributes the flipbook JS relies on.
+		echo $content; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- pre-escaped template.
 		echo '</div>';
 		get_footer();
 	}
@@ -217,7 +219,7 @@ class WCPC_Catalog {
 			}
 			$terms = get_the_terms( $product->get_id(), $tax );
 			if ( is_array( $terms ) && ! empty( $terms ) ) {
-				return esc_html( $terms[0]->name );
+				return (string) $terms[0]->name;
 			}
 		}
 		return '';
@@ -231,35 +233,60 @@ class WCPC_Catalog {
 	 */
 	public static function build_css_variables( $settings ) {
 		$vars = array(
-			'--wcpc-color-primary'   => $settings['color_primary'],
-			'--wcpc-color-secondary' => $settings['color_secondary'],
-			'--wcpc-color-accent'    => $settings['color_accent'],
-			'--wcpc-color-bg'        => $settings['color_bg'],
-			'--wcpc-color-text'      => $settings['color_text'],
-			'--wcpc-color-muted'     => $settings['color_muted'],
-			'--wcpc-price-color'     => $settings['price_color'],
+			'--wcpc-color-primary'   => self::safe_color( $settings['color_primary'] ),
+			'--wcpc-color-secondary' => self::safe_color( $settings['color_secondary'] ),
+			'--wcpc-color-accent'    => self::safe_color( $settings['color_accent'] ),
+			'--wcpc-color-bg'        => self::safe_color( $settings['color_bg'] ),
+			'--wcpc-color-text'      => self::safe_color( $settings['color_text'] ),
+			'--wcpc-color-muted'     => self::safe_color( $settings['color_muted'] ),
+			'--wcpc-price-color'     => self::safe_color( $settings['price_color'] ),
 
-			'--wcpc-font-title'      => $settings['font_family_title'],
+			'--wcpc-font-title'      => self::safe_css_word( $settings['font_family_title'] ),
 			'--wcpc-size-title'      => (int) $settings['font_size_title'] . 'px',
-			'--wcpc-weight-title'    => $settings['font_weight_title'],
-			'--wcpc-style-title'     => $settings['font_style_title'],
+			'--wcpc-weight-title'    => self::safe_css_word( $settings['font_weight_title'] ),
+			'--wcpc-style-title'     => self::safe_css_word( $settings['font_style_title'] ),
 
-			'--wcpc-font-body'       => $settings['font_family_body'],
+			'--wcpc-font-body'       => self::safe_css_word( $settings['font_family_body'] ),
 			'--wcpc-size-body'       => (int) $settings['font_size_body'] . 'px',
-			'--wcpc-weight-body'     => $settings['font_weight_body'],
-			'--wcpc-style-body'      => $settings['font_style_body'],
+			'--wcpc-weight-body'     => self::safe_css_word( $settings['font_weight_body'] ),
+			'--wcpc-style-body'      => self::safe_css_word( $settings['font_style_body'] ),
 
-			'--wcpc-font-price'      => $settings['font_family_price'],
+			'--wcpc-font-price'      => self::safe_css_word( $settings['font_family_price'] ),
 			'--wcpc-size-price'      => (int) $settings['font_size_price'] . 'px',
-			'--wcpc-weight-price'    => $settings['font_weight_price'],
-			'--wcpc-style-price'     => $settings['font_style_price'],
+			'--wcpc-weight-price'    => self::safe_css_word( $settings['font_weight_price'] ),
+			'--wcpc-style-price'     => self::safe_css_word( $settings['font_style_price'] ),
 		);
 
 		$css = ':root, .wcpc-catalog, .wcpc-pdf{';
 		foreach ( $vars as $k => $v ) {
-			$css .= esc_html( $k ) . ':' . esc_html( $v ) . ';';
+			$css .= $k . ':' . $v . ';';
 		}
 		$css .= '}';
 		return $css;
+	}
+
+	/**
+	 * Restrict a value to characters legal in a hex color (defense-in-depth on top of
+	 * the admin sanitizer in WCPC_Admin::sanitize_color()).
+	 *
+	 * @param string $val Stored color value.
+	 * @return string
+	 */
+	private static function safe_color( $val ) {
+		return preg_match( '/^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/', (string) $val ) ? $val : '#000000';
+	}
+
+	/**
+	 * Strip a value down to characters that are legal in a CSS identifier / font name.
+	 * Used only as a fallback - the admin form ships these via <select> with a
+	 * whitelist - but we never want stored text to leak control characters into the
+	 * stylesheet (no semicolons, braces, angle brackets, quotes).
+	 *
+	 * @param string $val Stored value.
+	 * @return string
+	 */
+	private static function safe_css_word( $val ) {
+		$clean = preg_replace( '/[^A-Za-z0-9 _\-]/', '', (string) $val );
+		return '' === $clean ? 'Helvetica' : $clean;
 	}
 }

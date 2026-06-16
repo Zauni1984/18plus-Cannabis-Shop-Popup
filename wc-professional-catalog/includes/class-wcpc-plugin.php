@@ -221,9 +221,15 @@ class WCPC_Plugin {
 		$filter = get_query_var( 'wcpc_filter' );
 		$term   = get_query_var( 'wcpc_term' );
 
-		$args = array();
-		if ( $filter && $term ) {
+		$args            = array();
+		$allowed_filters = array( 'brand', 'category', 'tag' );
+		if ( $filter && $term && in_array( $filter, $allowed_filters, true ) ) {
 			$args[ $filter ] = sanitize_title( $term );
+		}
+
+		$allowed_views = array( 'pdf', 'print', 'flipbook' );
+		if ( ! in_array( $view, $allowed_views, true ) ) {
+			return;
 		}
 
 		switch ( $view ) {
