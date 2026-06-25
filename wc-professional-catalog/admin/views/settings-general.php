@@ -27,6 +27,13 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 		<td><input type="number" min="1" max="40" id="wcpc_products_per_page" name="wcpc[products_per_page]" value="<?php echo (int) $settings['products_per_page']; ?>" /></td>
 	</tr>
 	<tr>
+		<th><label for="wcpc_max_products"><?php esc_html_e( 'Maximalanzahl Produkte', 'wc-professional-catalog' ); ?></label></th>
+		<td>
+			<input type="number" min="1" max="1000" id="wcpc_max_products" name="wcpc[max_products]" value="<?php echo (int) $settings['max_products']; ?>" />
+			<p class="description"><?php esc_html_e( 'Harte Obergrenze für die Anzahl der Produkte, die in Online-Katalog, PDF und Druckansicht geladen werden. Schützt vor "kritischer Fehler" durch zu viel Arbeitsspeicher bei großen Shops. 100 ist ein guter Startwert. Bei wenigen, leichten Produkten kann man auf 300–500 erhöhen.', 'wc-professional-catalog' ); ?></p>
+		</td>
+	</tr>
+	<tr>
 		<th><?php esc_html_e( 'Anzeigen', 'wc-professional-catalog' ); ?></th>
 		<td>
 			<label><input type="checkbox" name="wcpc[show_brand_filter]" value="1" <?php checked( $settings['show_brand_filter'], 1 ); ?> /> <?php esc_html_e( 'Marken-Filter', 'wc-professional-catalog' ); ?></label><br/>

@@ -154,6 +154,7 @@ class WCPC_Admin {
 		return array(
 			'columns',
 			'products_per_page',
+			'max_products',
 			'logo_id',
 			'cover_image_id',
 			'font_size_title',

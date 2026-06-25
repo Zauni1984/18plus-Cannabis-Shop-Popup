@@ -28,6 +28,7 @@ class WCPC_Plugin {
 		'layout'              => 'grid',          // grid | flipbook | list.
 		'columns'             => 3,
 		'products_per_page'   => 12,
+		'max_products'        => 100,             // Hard cap to prevent OOM when limit=-1.
 		'show_brand_filter'   => 1,
 		'show_category_filter'=> 1,
 		'show_tag_filter'     => 1,

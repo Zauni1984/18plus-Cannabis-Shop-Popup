@@ -38,8 +38,16 @@ class WCPC_Catalog {
 		);
 		$args = wp_parse_args( $args, $defaults );
 
+		$requested_limit = (int) $args['limit'];
+		$hard_cap        = max( 1, (int) WCPC_Plugin::get_setting( 'max_products', 100 ) );
+		// Translate "all" (-1 / 0) into the hard cap so massive catalogs do not
+		// blow PHP's memory_limit when rendering the flipbook / PDF.
+		if ( $requested_limit <= 0 || $requested_limit > $hard_cap ) {
+			$requested_limit = $hard_cap;
+		}
+
 		$query_args = array(
-			'limit'   => (int) $args['limit'],
+			'limit'   => $requested_limit,
 			'status'  => $args['status'],
 			'orderby' => $args['orderby'],
 			'order'   => $args['order'],

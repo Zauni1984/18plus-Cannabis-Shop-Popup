@@ -28,7 +28,9 @@ $img_size_setting = isset( $settings['image_size_online'] ) ? (string) $settings
 $img_size         = '' !== $img_size_setting ? $img_size_setting : 'medium';
 
 $main_img = (int) $product->get_image_id();
-$full_url = $main_img ? (string) wp_get_attachment_image_url( $main_img, 'full' ) : '';
+// wp_get_attachment_url is lighter than wp_get_attachment_image_url(..., 'full')
+// because it skips per-size metadata lookups - matters with the OOM cap raised.
+$full_url = $main_img ? (string) wp_get_attachment_url( $main_img ) : '';
 
 $image_attrs = array( 'class' => 'wcpc-card__image' );
 $image       = (string) $product->get_image( $img_size, $image_attrs );
@@ -73,7 +75,7 @@ $buy_label     = isset( $settings['buy_button_text'] ) ? (string) $settings['buy
 		<div class="wcpc-card__gallery">
 			<?php foreach ( $gallery_ids as $gid ) :
 				$thumb_url = (string) wp_get_attachment_image_url( (int) $gid, 'thumbnail' );
-				$big_url   = (string) wp_get_attachment_image_url( (int) $gid, 'full' );
+				$big_url   = (string) wp_get_attachment_url( (int) $gid );
 				if ( '' === $thumb_url ) {
 					continue;
 				}
