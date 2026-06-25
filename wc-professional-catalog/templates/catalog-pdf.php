@@ -130,6 +130,11 @@ table.wcpc-pdf-grid td {
 .wcpc-pdf-item a.img-link, .wcpc-pdf-item .title a { text-decoration: none; color: inherit; }
 .wcpc-pdf-item .pdf-gallery { margin-top: 3px; display: block; }
 .wcpc-pdf-item .pdf-gallery img { display: inline-block; width: 22px; height: 22px; object-fit: cover; margin-right: 2px; border: 1px solid #e8e8e8; border-radius: 2px; }
+
+.wcpc-pdf-header .section { display: inline-block; margin-left: 10px; font-size: 10px; color: <?php echo esc_html( $settings['color_muted'] ); ?>; letter-spacing: 1px; text-transform: uppercase; }
+.wcpc-pdf-section-banner { text-align: center; padding: 12px 0 16px; margin-bottom: 14px; border-bottom: 2px solid <?php echo esc_html( $settings['color_primary'] ); ?>; }
+.wcpc-pdf-section-banner .eyebrow { font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: <?php echo esc_html( $settings['color_accent'] ); ?>; margin-bottom: 4px; }
+.wcpc-pdf-section-banner .title { font-family: <?php echo esc_html( $settings['font_family_title'] ); ?>, Helvetica, Arial, sans-serif; font-size: 20px; font-weight: <?php echo esc_html( $settings['font_weight_title'] ); ?>; color: <?php echo esc_html( $settings['color_secondary'] ); ?>; margin: 0; }
 </style>
 </head>
 <body class="wcpc-pdf">
@@ -150,79 +155,55 @@ table.wcpc-pdf-grid td {
 </section>
 
 <?php
-// ----- Batched render loop -----
-// Same safety net as the flipbook: memory pressure check, duplicate-batch
-// detection, hard iteration cap.
-$batch_size = (int) apply_filters( 'wcpc_batch_size', max( $per_pdf_page * 2, 30 ) );
-$cursor     = 1;
-$page_index = 0;
-$carry      = array();
-$seen_ids   = array();
-$truncated  = false;
+// ----- Section-based render loop -----
+// Top level Main category A-Z, then each subcategory A-Z, then products
+// pre-sorted by Brand A-Z / Name A-Z (the SQL inside collect_sections()).
+// Each subcategory starts on a new PDF page with a banner header.
+$sections     = WCPC_Catalog::collect_sections();
+$page_index   = 0;
+$truncated    = false;
+$rendered_ids = 0;
+$total_products = 0;
+foreach ( $sections as $s ) {
+	$total_products += count( $s['ids'] );
+}
+// Re-compute total_pages now that we know real section pages.
+$total_pages = 0;
+foreach ( $sections as $s ) {
+	$total_pages += (int) ceil( count( $s['ids'] ) / max( 1, $per_pdf_page ) );
+}
+$total_pages = max( 1, $total_pages );
 
-while ( $cursor <= 1000 ) {
-	if ( WCPC_Catalog::memory_pressure() ) {
-		$truncated = true;
-		break;
-	}
+foreach ( $sections as $section ) {
+	$section_main = $section['main'];
+	$section_sub  = $section['sub'];
+	$section_ids  = $section['ids'];
+	$is_first     = true;
 
-	$batch = WCPC_Catalog::batch( $args, $cursor, $batch_size );
-
-	if ( empty( $batch ) ) {
-		if ( ! empty( $carry ) ) {
-			$page_products = $carry;
-			$carry         = array();
-			$page_index++;
-			include WCPC_PLUGIN_DIR . 'templates/parts/pdf-page.php';
-			unset( $page_products );
+	for ( $offset = 0; $offset < count( $section_ids ); $offset += $per_pdf_page ) {
+		if ( WCPC_Catalog::memory_pressure() ) {
+			$truncated = true;
+			break 2;
 		}
-		break;
-	}
 
-	$batch_ids = array();
-	foreach ( $batch as $p ) {
-		if ( $p instanceof WC_Product ) {
-			$batch_ids[] = (int) $p->get_id();
+		$page_products = WCPC_Catalog::batch_by_ids( $section_ids, $offset, $per_pdf_page );
+		if ( empty( $page_products ) ) {
+			break;
 		}
-	}
-	$fresh_ids = array_diff( $batch_ids, $seen_ids );
-	if ( empty( $fresh_ids ) ) {
-		$truncated = true;
-		if ( ! empty( $carry ) ) {
-			$page_products = $carry;
-			$carry         = array();
-			$page_index++;
-			include WCPC_PLUGIN_DIR . 'templates/parts/pdf-page.php';
-			unset( $page_products );
-		}
-		break;
-	}
-	foreach ( $batch_ids as $id ) {
-		$seen_ids[ $id ] = true;
-	}
-
-	$combined = array_merge( $carry, $batch );
-	$carry    = array();
-	unset( $batch, $batch_ids, $fresh_ids );
-
-	while ( count( $combined ) >= $per_pdf_page ) {
-		$page_products = array_splice( $combined, 0, $per_pdf_page );
 		$page_index++;
+		$show_banner = $is_first;
 		include WCPC_PLUGIN_DIR . 'templates/parts/pdf-page.php';
+		$rendered_ids += count( $page_products );
+		$is_first      = false;
 		unset( $page_products );
-	}
 
-	$carry = $combined;
-	unset( $combined );
-
-	$cursor++;
-	if ( $cursor % 3 === 0 ) {
-		WCPC_Catalog::free_batch_memory();
+		if ( ( $page_index % 4 ) === 0 ) {
+			WCPC_Catalog::free_batch_memory();
+		}
 	}
 }
 
 if ( $truncated ) {
-	$rendered = count( $seen_ids );
 	?>
 	<section class="wcpc-pdf-page">
 		<div class="wcpc-pdf-header">
@@ -233,9 +214,9 @@ if ( $truncated ) {
 			<?php
 			printf(
 				/* translators: 1: rendered count, 2: total */
-				esc_html__( '%1$d von %2$d Produkten enthalten.', 'wc-professional-catalog' ),
-				(int) $rendered,
-				(int) $total
+				esc_html__( '%1$d von %2$d Produkten enthalten - Memory-Limit erreicht.', 'wc-professional-catalog' ),
+				(int) $rendered_ids,
+				(int) $total_products
 			);
 			?>
 		</p>

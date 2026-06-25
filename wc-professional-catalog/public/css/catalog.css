@@ -205,6 +205,36 @@
 
 .wcpc-endpoint-wrap { max-width: 1200px; margin: 30px auto; padding: 0 16px; }
 
+/* Section banner shown on the first page of every category section */
+.wcpc-section-banner {
+	text-align: center;
+	padding: 14px 0 18px;
+	margin: 0 0 16px;
+	border-bottom: 2px solid var(--wcpc-color-primary, #1f7a3a);
+}
+.wcpc-section-banner__eyebrow {
+	font-size: 11px;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	color: var(--wcpc-color-accent, #d4af37);
+	margin-bottom: 4px;
+}
+.wcpc-section-banner__title {
+	font-family: var(--wcpc-font-title, Helvetica), sans-serif;
+	font-size: calc(var(--wcpc-size-title, 18px) * 1.5);
+	font-weight: var(--wcpc-weight-title, 700);
+	color: var(--wcpc-color-secondary, #0c2d18);
+	margin: 0;
+	line-height: 1.1;
+}
+.wcpc-flipbook__pagesection {
+	flex: 1; text-align: center;
+	color: var(--wcpc-color-muted, #777);
+	font-size: 11px;
+	letter-spacing: 1.2px;
+	text-transform: uppercase;
+}
+
 /* Cover image (full-bleed) on flipbook / print cover */
 .wcpc-cover--has-image {
 	position: relative;

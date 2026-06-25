@@ -33,3 +33,9 @@
 .wcpc-print-cover__subtitle { color: var(--wcpc-color-muted, #777); }
 .wcpc-print-cover__date { color: var(--wcpc-color-muted, #aaa); font-size: 12px; }
 .wcpc-print-footer { margin-top: 30px; padding-top: 12px; border-top: 1px solid #ddd; text-align: center; color: var(--wcpc-color-muted, #777); font-size: 11px; }
+.wcpc-print-section { margin-bottom: 28px; break-inside: avoid-page; }
+.wcpc-print-section + .wcpc-print-section { margin-top: 28px; }
+@media print {
+	.wcpc-print-section { page-break-before: always; }
+	.wcpc-print-section:first-of-type { page-break-before: auto; }
+}

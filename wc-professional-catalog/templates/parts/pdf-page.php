@@ -17,12 +17,23 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
+
+$section_main = isset( $section_main ) ? (string) $section_main : '';
+$section_sub  = isset( $section_sub ) ? (string) $section_sub : '';
+$show_banner  = isset( $show_banner ) ? (bool) $show_banner : false;
+$section_path = $section_main;
+if ( '' !== $section_sub ) {
+	$section_path = '' === $section_main ? $section_sub : $section_main . ' / ' . $section_sub;
+}
 ?>
 <section class="wcpc-pdf-page">
 	<div class="wcpc-pdf-header">
 		<div class="l">
 			<?php if ( ! empty( $logo_url ) ) : ?>
 				<img src="<?php echo esc_url( $logo_url ); ?>" alt="" />
+			<?php endif; ?>
+			<?php if ( '' !== $section_path ) : ?>
+				<span class="section"><?php echo esc_html( $section_path ); ?></span>
 			<?php endif; ?>
 		</div>
 		<div class="r">
@@ -36,6 +47,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 			?>
 		</div>
 	</div>
+	<?php if ( $show_banner && '' !== $section_path ) : ?>
+		<div class="wcpc-pdf-section-banner">
+			<?php if ( '' !== $section_main ) : ?>
+				<div class="eyebrow"><?php echo esc_html( $section_main ); ?></div>
+			<?php endif; ?>
+			<?php if ( '' !== $section_sub ) : ?>
+				<h2 class="title"><?php echo esc_html( $section_sub ); ?></h2>
+			<?php elseif ( '' !== $section_main ) : ?>
+				<h2 class="title"><?php echo esc_html( $section_main ); ?></h2>
+			<?php endif; ?>
+		</div>
+	<?php endif; ?>
 	<table class="wcpc-pdf-grid">
 		<?php
 		$chunked = array_chunk( $page_products, max( 1, (int) $columns ) );

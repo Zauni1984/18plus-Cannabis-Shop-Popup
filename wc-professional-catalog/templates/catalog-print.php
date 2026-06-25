@@ -52,14 +52,53 @@ $css_vars  = WCPC_Catalog::build_css_variables( $settings );
 </header>
 
 <main class="wcpc-catalog wcpc-catalog--print">
-	<div class="wcpc-grid" style="--wcpc-grid-cols: <?php echo (int) $columns; ?>">
-		<?php foreach ( $products as $product ) :
-			if ( ! $product instanceof WC_Product ) {
-				continue;
-			}
-			include WCPC_PLUGIN_DIR . 'templates/product-card.php';
-		endforeach; ?>
-	</div>
+	<?php
+	// Section-based render (Hauptkategorie -> Unterkategorie -> Marke -> Name).
+	$sections   = WCPC_Catalog::collect_sections();
+	$batch_size = max( 20, (int) $columns * 6 );
+
+	if ( empty( $sections ) ) {
+		?>
+		<p class="wcpc-empty"><?php esc_html_e( 'Keine Produkte gefunden.', 'wc-professional-catalog' ); ?></p>
+		<?php
+	}
+
+	foreach ( $sections as $section ) :
+		?>
+		<div class="wcpc-print-section">
+			<div class="wcpc-section-banner">
+				<?php if ( '' !== $section['main'] ) : ?>
+					<div class="wcpc-section-banner__eyebrow"><?php echo esc_html( $section['main'] ); ?></div>
+				<?php endif; ?>
+				<?php if ( '' !== $section['sub'] ) : ?>
+					<h2 class="wcpc-section-banner__title"><?php echo esc_html( $section['sub'] ); ?></h2>
+				<?php elseif ( '' !== $section['main'] ) : ?>
+					<h2 class="wcpc-section-banner__title"><?php echo esc_html( $section['main'] ); ?></h2>
+				<?php endif; ?>
+			</div>
+			<div class="wcpc-grid" style="--wcpc-grid-cols: <?php echo (int) $columns; ?>">
+				<?php
+				$section_ids = $section['ids'];
+				for ( $offset = 0; $offset < count( $section_ids ); $offset += $batch_size ) {
+					if ( WCPC_Catalog::memory_pressure() ) {
+						break 2;
+					}
+					$page_products = WCPC_Catalog::batch_by_ids( $section_ids, $offset, $batch_size );
+					foreach ( $page_products as $product ) {
+						if ( ! $product instanceof WC_Product ) {
+							continue;
+						}
+						include WCPC_PLUGIN_DIR . 'templates/product-card.php';
+					}
+					unset( $page_products );
+					if ( ( $offset / $batch_size ) % 3 === 0 ) {
+						WCPC_Catalog::free_batch_memory();
+					}
+				}
+				?>
+			</div>
+		</div>
+	<?php endforeach; ?>
 </main>
 
 <?php if ( ! empty( $settings['footer_text'] ) ) : ?>

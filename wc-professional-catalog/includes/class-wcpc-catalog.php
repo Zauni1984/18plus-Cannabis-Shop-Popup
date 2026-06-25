@@ -111,6 +111,226 @@ class WCPC_Catalog {
 	}
 
 	/**
+	 * Build the ordered "section plan" for the catalog: a flat list of sections
+	 * (one per leaf product category), each with the product IDs already sorted
+	 * by Brand A-Z, then Product Name A-Z.
+	 *
+	 * Order at the top level: main categories A-Z. Inside a main category:
+	 *  1. The main category's "own" products (those NOT in any subcategory).
+	 *  2. Each subcategory A-Z, with its products.
+	 *
+	 * Returns an array of:
+	 *   [ 'main' => string, 'sub' => string, 'cat_id' => int, 'cat_slug' => string,
+	 *     'ids' => int[] ]
+	 *
+	 * @return array
+	 */
+	public static function collect_sections() {
+		$sections = array();
+
+		$default_cat_id = (int) get_option( 'default_product_cat' );
+		$main_cats      = get_terms(
+			array(
+				'taxonomy'   => 'product_cat',
+				'parent'     => 0,
+				'orderby'    => 'name',
+				'order'      => 'ASC',
+				'hide_empty' => true,
+				'exclude'    => $default_cat_id ? array( $default_cat_id ) : array(),
+			)
+		);
+
+		if ( is_wp_error( $main_cats ) || ! is_array( $main_cats ) ) {
+			return array();
+		}
+
+		foreach ( $main_cats as $main ) {
+			$subs = get_terms(
+				array(
+					'taxonomy'   => 'product_cat',
+					'parent'     => (int) $main->term_id,
+					'orderby'    => 'name',
+					'order'      => 'ASC',
+					'hide_empty' => true,
+				)
+			);
+			if ( is_wp_error( $subs ) ) {
+				$subs = array();
+			}
+
+			// (1) Main-category-only products (skip those that also live in a subcat).
+			$direct_ids = self::products_in_category_ordered( (int) $main->term_id, ! empty( $subs ) );
+			if ( $direct_ids ) {
+				$sections[] = array(
+					'main'     => (string) $main->name,
+					'sub'      => '',
+					'cat_id'   => (int) $main->term_id,
+					'cat_slug' => (string) $main->slug,
+					'ids'      => $direct_ids,
+				);
+			}
+
+			// (2) Each subcategory's products.
+			foreach ( $subs as $sub ) {
+				$sub_ids = self::products_in_category_ordered( (int) $sub->term_id, false );
+				if ( $sub_ids ) {
+					$sections[] = array(
+						'main'     => (string) $main->name,
+						'sub'      => (string) $sub->name,
+						'cat_id'   => (int) $sub->term_id,
+						'cat_slug' => (string) $sub->slug,
+						'ids'      => $sub_ids,
+					);
+				}
+			}
+		}
+
+		return $sections;
+	}
+
+	/**
+	 * Return the product IDs in a category, sorted by Brand A-Z then Name A-Z.
+	 *
+	 * One SQL hop per category — joins to the brand taxonomy when available
+	 * (product_brand / pwb-brand / pa_brand). Products without a brand sort
+	 * to the top of the alphabet ('').
+	 *
+	 * @param int  $cat_id          Term ID of the product category.
+	 * @param bool $exclude_subcats When true, products that are also in any
+	 *                              child of $cat_id are excluded (used so a
+	 *                              product never appears twice — once under
+	 *                              its main category and once under its
+	 *                              subcategory).
+	 * @return int[]
+	 */
+	private static function products_in_category_ordered( $cat_id, $exclude_subcats ) {
+		global $wpdb;
+
+		$brand_tax = '';
+		foreach ( array( 'product_brand', 'pwb-brand', 'pa_brand' ) as $t ) {
+			if ( taxonomy_exists( $t ) ) {
+				$brand_tax = $t;
+				break;
+			}
+		}
+
+		$exclude_sql = '';
+		if ( $exclude_subcats ) {
+			$sub_ids = get_terms(
+				array(
+					'taxonomy'   => 'product_cat',
+					'parent'     => (int) $cat_id,
+					'fields'     => 'ids',
+					'hide_empty' => false,
+				)
+			);
+			if ( ! is_wp_error( $sub_ids ) && is_array( $sub_ids ) && ! empty( $sub_ids ) ) {
+				$sub_ids      = array_map( 'intval', $sub_ids );
+				$placeholders = implode( ',', array_fill( 0, count( $sub_ids ), '%d' ) );
+				// phpcs:ignore WordPress.DB.PreparedSQLPlaceholders.UnfinishedPrepare
+				$exclude_sql = $wpdb->prepare(
+					"AND p.ID NOT IN (
+						SELECT tr2.object_id FROM {$wpdb->term_relationships} tr2
+						INNER JOIN {$wpdb->term_taxonomy} tt2 ON tt2.term_taxonomy_id = tr2.term_taxonomy_id
+						WHERE tt2.taxonomy = 'product_cat' AND tt2.term_id IN ( $placeholders )
+					)",
+					$sub_ids
+				);
+			}
+		}
+
+		if ( $brand_tax ) {
+			$sql = $wpdb->prepare(
+				"SELECT p.ID, MIN(COALESCE(bt.name, '')) AS brand_name
+				FROM {$wpdb->posts} p
+				INNER JOIN {$wpdb->term_relationships} tr ON tr.object_id = p.ID
+				INNER JOIN {$wpdb->term_taxonomy} tt ON tt.term_taxonomy_id = tr.term_taxonomy_id
+				LEFT JOIN {$wpdb->term_relationships} btr ON btr.object_id = p.ID
+				LEFT JOIN {$wpdb->term_taxonomy} btt ON btt.term_taxonomy_id = btr.term_taxonomy_id AND btt.taxonomy = %s
+				LEFT JOIN {$wpdb->terms} bt ON bt.term_id = btt.term_id
+				WHERE p.post_type = 'product'
+				AND p.post_status = 'publish'
+				AND tt.taxonomy = 'product_cat'
+				AND tt.term_id = %d
+				$exclude_sql
+				GROUP BY p.ID, p.post_title
+				ORDER BY brand_name ASC, p.post_title ASC",
+				$brand_tax,
+				(int) $cat_id
+			);
+		} else {
+			$sql = $wpdb->prepare(
+				"SELECT p.ID
+				FROM {$wpdb->posts} p
+				INNER JOIN {$wpdb->term_relationships} tr ON tr.object_id = p.ID
+				INNER JOIN {$wpdb->term_taxonomy} tt ON tt.term_taxonomy_id = tr.term_taxonomy_id
+				WHERE p.post_type = 'product'
+				AND p.post_status = 'publish'
+				AND tt.taxonomy = 'product_cat'
+				AND tt.term_id = %d
+				$exclude_sql
+				GROUP BY p.ID, p.post_title
+				ORDER BY p.post_title ASC",
+				(int) $cat_id
+			);
+		}
+
+		// phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared,WordPress.DB.DirectDatabaseQuery
+		$rows = $wpdb->get_results( $sql );
+		if ( ! is_array( $rows ) || empty( $rows ) ) {
+			return array();
+		}
+
+		$ids = array();
+		foreach ( $rows as $r ) {
+			$ids[] = (int) $r->ID;
+		}
+		return $ids;
+	}
+
+	/**
+	 * Fetch WC_Product objects for a fixed-order ID slice. Used by the
+	 * section-batched renderer so the brand/name ordering is preserved.
+	 *
+	 * @param int[] $ids    Ordered list of IDs.
+	 * @param int   $offset Starting offset.
+	 * @param int   $limit  Max number to fetch.
+	 * @return WC_Product[]
+	 */
+	public static function batch_by_ids( $ids, $offset = 0, $limit = 30 ) {
+		$slice = array_slice( $ids, (int) $offset, (int) $limit );
+		if ( empty( $slice ) ) {
+			return array();
+		}
+		$products = wc_get_products(
+			array(
+				'include' => $slice,
+				'orderby' => 'include',
+				'limit'   => count( $slice ),
+				'return'  => 'objects',
+			)
+		);
+		if ( ! is_array( $products ) ) {
+			return array();
+		}
+		// wc_get_products with orderby=include usually preserves order, but some
+		// hosts have seen it lost in custom data stores - re-index defensively.
+		$by_id = array();
+		foreach ( $products as $p ) {
+			if ( $p instanceof WC_Product ) {
+				$by_id[ (int) $p->get_id() ] = $p;
+			}
+		}
+		$ordered = array();
+		foreach ( $slice as $id ) {
+			if ( isset( $by_id[ (int) $id ] ) ) {
+				$ordered[] = $by_id[ (int) $id ];
+			}
+		}
+		return $ordered;
+	}
+
+	/**
 	 * Free per-batch caches between iterations to keep memory bounded.
 	 */
 	public static function free_batch_memory() {
@@ -233,9 +453,6 @@ class WCPC_Catalog {
 		$per_page = isset( $args['per_page'] ) && (int) $args['per_page'] > 0
 			? (int) $args['per_page']
 			: (int) $settings['products_per_page'];
-
-		// Light count so the toolbar shows total pages without loading objects.
-		$total = self::count( $args );
 
 		ob_start();
 		include WCPC_PLUGIN_DIR . 'templates/catalog-flipbook.php';
@@ -374,7 +591,6 @@ class WCPC_Catalog {
 		self::install_fatal_logger( 'print' );
 
 		try {
-			$products = self::query( $args );
 			include WCPC_PLUGIN_DIR . 'templates/catalog-print.php';
 		} catch ( \Throwable $e ) {
 			self::log_throwable( 'print', $e );

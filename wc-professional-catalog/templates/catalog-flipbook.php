@@ -1,15 +1,21 @@
 <?php
 /**
- * Flipbook (online catalog) - rendered by shortcode and the /flipbook/ endpoint.
+ * Flipbook (online catalog) - section-by-section rendering.
  *
- * Streams products in batches so memory stays bounded by the per-batch size
- * regardless of catalog size.
+ * Top-level grouping: Main category A-Z. Inside each main category:
+ * its own products first (if any sit directly under it), then each
+ * subcategory A-Z. Products within a section are pre-sorted by
+ * Brand A-Z, then Name A-Z by the SQL in WCPC_Catalog::collect_sections().
+ *
+ * Each section gets a big banner on its first page; subsequent pages of
+ * the same section carry the small section label in the page header so
+ * the reader always knows where they are.
+ *
+ * Expects in scope:
+ *   - $settings (array)
+ *   - $per_page (int)
  *
  * @package WCProfessionalCatalog
- * @var array $args      Original filter args (carries over to batch()).
- * @var int   $per_page  Products per flipbook page.
- * @var int   $total     Total matching products (already counted).
- * @var array $settings
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -19,22 +25,24 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( ! isset( $settings ) || ! is_array( $settings ) ) {
 	$settings = WCPC_Plugin::get_settings();
 }
-if ( ! isset( $args ) || ! is_array( $args ) ) {
-	$args = array();
-}
 if ( ! isset( $per_page ) || (int) $per_page <= 0 ) {
 	$per_page = max( 1, (int) ( $settings['products_per_page'] ?? 12 ) );
 }
-if ( ! isset( $total ) ) {
-	$total = WCPC_Catalog::count( $args );
+
+$sections = WCPC_Catalog::collect_sections();
+
+// Pre-calculate total product pages so the toolbar can show "X / Y" correctly.
+$total_product_pages = 0;
+$total_products      = 0;
+foreach ( $sections as $s ) {
+	$pages_for_section    = (int) ceil( count( $s['ids'] ) / max( 1, $per_page ) );
+	$total_product_pages += $pages_for_section;
+	$total_products      += count( $s['ids'] );
 }
-$total       = (int) $total;
-$total_pages = max( 1, (int) ceil( $total / max( 1, $per_page ) ) );
+$total_pages = max( 1, $total_product_pages );
 
 $logo_url  = ! empty( $settings['logo_id'] ) ? (string) wp_get_attachment_image_url( (int) $settings['logo_id'], 'medium' ) : '';
 $cover_url = ! empty( $settings['cover_image_id'] ) ? (string) wp_get_attachment_image_url( (int) $settings['cover_image_id'], 'large' ) : '';
-
-$batch_size = (int) apply_filters( 'wcpc_batch_size', max( $per_page * 2, 30 ) );
 ?>
 <section class="wcpc-catalog wcpc-flipbook" aria-label="<?php esc_attr_e( 'Online-Katalog', 'wc-professional-catalog' ); ?>">
 	<div class="wcpc-flipbook__toolbar">
@@ -63,88 +71,42 @@ $batch_size = (int) apply_filters( 'wcpc_batch_size', max( $per_page * 2, 30 ) )
 			</article>
 
 			<?php
-			// ----- Batched render loop -----
-			// Peak memory stays bounded by $batch_size WC_Product objects regardless
-			// of catalog size. Three safety checks keep this loop from ever wedging:
-			//   (a) duplicate batch detection - if wc_get_products' pagination breaks
-			//       on this install, we stop instead of looping forever.
-			//   (b) memory pressure - we stop at 75% of memory_limit and emit a notice.
-			//   (c) hard 1000-iteration cap as a last resort.
-			$cursor       = 1;
 			$page_index   = 0;
-			$carry        = array();
-			$seen_ids     = array();
 			$truncated    = false;
-			$truncated_by = '';
+			$rendered_ids = 0;
 
-			while ( $cursor <= 1000 ) {
-				if ( WCPC_Catalog::memory_pressure() ) {
-					$truncated    = true;
-					$truncated_by = 'memory';
-					break;
-				}
+			foreach ( $sections as $section_i => $section ) {
+				$section_main = $section['main'];
+				$section_sub  = $section['sub'];
+				$section_ids  = $section['ids'];
+				$is_first     = true;
 
-				$batch = WCPC_Catalog::batch( $args, $cursor, $batch_size );
-
-				if ( empty( $batch ) ) {
-					if ( ! empty( $carry ) ) {
-						$page_products = $carry;
-						$carry         = array();
-						$page_index++;
-						include WCPC_PLUGIN_DIR . 'templates/parts/flipbook-page.php';
-						unset( $page_products );
+				for ( $offset = 0; $offset < count( $section_ids ); $offset += $per_page ) {
+					if ( WCPC_Catalog::memory_pressure() ) {
+						$truncated = true;
+						break 2;
 					}
-					break;
-				}
 
-				// (a) Duplicate detection: if every product in this batch was already
-				// rendered, pagination is wedged and continuing would be an infinite
-				// loop. Bail out and flush whatever carry we have.
-				$batch_ids = array();
-				foreach ( $batch as $p ) {
-					if ( $p instanceof WC_Product ) {
-						$batch_ids[] = (int) $p->get_id();
+					$page_products = WCPC_Catalog::batch_by_ids( $section_ids, $offset, $per_page );
+					if ( empty( $page_products ) ) {
+						break;
 					}
-				}
-				$fresh_ids = array_diff( $batch_ids, $seen_ids );
-				if ( empty( $fresh_ids ) ) {
-					$truncated    = true;
-					$truncated_by = 'duplicate-batch';
-					if ( ! empty( $carry ) ) {
-						$page_products = $carry;
-						$carry         = array();
-						$page_index++;
-						include WCPC_PLUGIN_DIR . 'templates/parts/flipbook-page.php';
-						unset( $page_products );
-					}
-					break;
-				}
-				foreach ( $batch_ids as $id ) {
-					$seen_ids[ $id ] = true;
-				}
 
-				$combined = array_merge( $carry, $batch );
-				$carry    = array();
-				unset( $batch, $batch_ids, $fresh_ids );
-
-				while ( count( $combined ) >= $per_page ) {
-					$page_products = array_splice( $combined, 0, $per_page );
 					$page_index++;
+					$show_banner = $is_first;
 					include WCPC_PLUGIN_DIR . 'templates/parts/flipbook-page.php';
+					$rendered_ids += count( $page_products );
+					$is_first      = false;
+
 					unset( $page_products );
-				}
 
-				$carry = $combined;
-				unset( $combined );
-
-				$cursor++;
-				if ( $cursor % 3 === 0 ) {
-					WCPC_Catalog::free_batch_memory();
+					if ( ( $page_index % 4 ) === 0 ) {
+						WCPC_Catalog::free_batch_memory();
+					}
 				}
 			}
 
 			if ( $truncated ) {
-				$rendered = count( $seen_ids );
 				?>
 				<article class="wcpc-flipbook__page" data-page="<?php echo (int) ( $page_index + 1 ); ?>">
 					<div class="wcpc-truncated" style="text-align:center;padding:60px 20px;color:var(--wcpc-color-muted,#777);">
@@ -152,16 +114,13 @@ $batch_size = (int) apply_filters( 'wcpc_batch_size', max( $per_page * 2, 30 ) )
 						<p>
 							<?php
 							printf(
-								/* translators: 1: rendered count, 2: expected total */
-								esc_html__( '%1$d von %2$d Produkten wurden gerendert. Bitte einen kleineren Filter wählen oder den Server-Speicher erhöhen.', 'wc-professional-catalog' ),
-								(int) $rendered,
-								(int) $total
+								/* translators: 1: rendered count, 2: total */
+								esc_html__( '%1$d von %2$d Produkten wurden geladen. Memory-Limit auf dem Server erreicht.', 'wc-professional-catalog' ),
+								(int) $rendered_ids,
+								(int) $total_products
 							);
 							?>
 						</p>
-						<?php if ( defined( 'WP_DEBUG' ) && WP_DEBUG ) : ?>
-							<p style="font-size:11px;opacity:.6"><?php echo esc_html( 'Abbruchgrund: ' . $truncated_by ); ?></p>
-						<?php endif; ?>
 					</div>
 				</article>
 				<?php

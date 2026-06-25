@@ -3,7 +3,7 @@
  * Plugin Name: WC Professional Catalog
  * Plugin URI:  https://example.com/wc-professional-catalog
  * Description: Professioneller Produktkatalog für WooCommerce mit Online-Flipbook, PDF-Export, Druckansicht, Marken-/Kategorie-/Tag-Filter, brutto/netto Preisen, Grundpreis-Berechnung und voller Design-Steuerung.
- * Version:     1.0.6
+ * Version:     1.0.7
  * Author:      Zauni Digital
  * Text Domain: wc-professional-catalog
  * Domain Path: /languages
@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'WCPC_VERSION', '1.0.6' );
+define( 'WCPC_VERSION', '1.0.7' );
 define( 'WCPC_PLUGIN_FILE', __FILE__ );
 define( 'WCPC_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'WCPC_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
