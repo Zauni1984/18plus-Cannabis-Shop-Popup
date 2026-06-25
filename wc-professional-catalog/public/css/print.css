@@ -1,0 +1,41 @@
+/* Print styles for the wcpc-catalog grid + standalone print page. */
+@media print {
+	body, .wcpc-catalog, .wcpc-print-body { background: #fff !important; color: #000 !important; }
+	.wcpc-catalog-buttons, .wcpc-flipbook__toolbar, header.site-header, footer.site-footer,
+	#wpadminbar, .menu, nav { display: none !important; }
+	.wcpc-card, .wcpc-flipbook__page { break-inside: avoid; box-shadow: none !important; border: 1px solid #ddd !important; }
+	.wcpc-flipbook__pages { box-shadow: none !important; min-height: auto !important; }
+	.wcpc-flipbook__page {
+		position: static !important;
+		transform: none !important;
+		opacity: 1 !important;
+		page-break-after: always;
+	}
+	a { color: #000 !important; text-decoration: none !important; }
+}
+
+/* The standalone print page (loaded via /wc-catalog/print/) uses these all the time. */
+.wcpc-print-body { background: #fff; margin: 20mm; font-family: var(--wcpc-font-body, Helvetica), sans-serif; }
+.wcpc-print-cover { text-align: center; padding: 40px 0 60px; border-bottom: 2px solid var(--wcpc-color-primary, #1f7a3a); margin-bottom: 30px; }
+.wcpc-print-cover--has-image { position: relative; padding: 80px 20px; background-size: cover; background-position: center; color: #fff; }
+.wcpc-print-cover--has-image .wcpc-print-cover__scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.2) 0%, rgba(0,0,0,.6) 100%); }
+.wcpc-print-cover--has-image .wcpc-print-cover__inner { position: relative; z-index: 1; }
+.wcpc-print-cover--has-image .wcpc-print-cover__title { color: #fff; }
+.wcpc-print-cover--has-image .wcpc-print-cover__subtitle,
+.wcpc-print-cover--has-image .wcpc-print-cover__date { color: rgba(255,255,255,.85); }
+.wcpc-print-cover__logo { max-width: 240px; max-height: 140px; margin-bottom: 20px; }
+.wcpc-print-cover__title {
+	font-family: var(--wcpc-font-title, Helvetica), sans-serif;
+	font-size: 36px;
+	color: var(--wcpc-color-primary, #1f7a3a);
+	margin: 0;
+}
+.wcpc-print-cover__subtitle { color: var(--wcpc-color-muted, #777); }
+.wcpc-print-cover__date { color: var(--wcpc-color-muted, #aaa); font-size: 12px; }
+.wcpc-print-footer { margin-top: 30px; padding-top: 12px; border-top: 1px solid #ddd; text-align: center; color: var(--wcpc-color-muted, #777); font-size: 11px; }
+.wcpc-print-section { margin-bottom: 28px; break-inside: avoid-page; }
+.wcpc-print-section + .wcpc-print-section { margin-top: 28px; }
+@media print {
+	.wcpc-print-section { page-break-before: always; }
+	.wcpc-print-section:first-of-type { page-break-before: auto; }
+}
