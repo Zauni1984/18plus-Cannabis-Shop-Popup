@@ -52,6 +52,7 @@ class WCPC_Admin {
 			'typo'      => __( 'Typografie', 'wc-professional-catalog' ),
 			'pdf'       => __( 'PDF / Druck', 'wc-professional-catalog' ),
 			'shortcuts' => __( 'Shortcodes', 'wc-professional-catalog' ),
+			'diag'      => __( 'Diagnose', 'wc-professional-catalog' ),
 		);
 		$active   = isset( $_GET['tab'] ) ? sanitize_key( wp_unslash( $_GET['tab'] ) ) : 'general'; // phpcs:ignore WordPress.Security.NonceVerification.Recommended
 		if ( ! isset( $tabs[ $active ] ) ) {

@@ -50,20 +50,32 @@ class WCPC_PDF {
 	 * @param array $args Query args.
 	 */
 	public static function stream_catalog( $args = array() ) {
-		$html     = self::build_html( $args );
-		$settings = WCPC_Plugin::get_settings();
-		$filename = sanitize_file_name( 'katalog-' . gmdate( 'Y-m-d' ) . '.pdf' );
+		WCPC_Catalog::install_fatal_logger( 'pdf' );
 
-		if ( self::is_dompdf_available() ) {
-			self::stream_dompdf( $html, $filename, $settings );
-			return;
+		try {
+			$html     = self::build_html( $args );
+			$settings = WCPC_Plugin::get_settings();
+			$filename = sanitize_file_name( 'katalog-' . gmdate( 'Y-m-d' ) . '.pdf' );
+
+			if ( self::is_dompdf_available() ) {
+				self::stream_dompdf( $html, $filename, $settings );
+				return;
+			}
+
+			// Fallback: serve a printable HTML page with auto-print JS.
+			nocache_headers();
+			header( 'Content-Type: text/html; charset=' . get_bloginfo( 'charset' ) );
+			echo $html; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- pre-escaped template.
+			echo "<script>window.addEventListener('load',function(){setTimeout(function(){window.print();},250);});</script>";
+		} catch ( \Throwable $e ) {
+			WCPC_Catalog::log_throwable( 'pdf', $e );
+			nocache_headers();
+			header( 'Content-Type: text/html; charset=' . get_bloginfo( 'charset' ) );
+			status_header( 500 );
+			echo '<!doctype html><html><head><meta charset="utf-8"><title>Katalog Fehler</title></head><body>';
+			echo WCPC_Catalog::error_html( $e ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- self-escaping.
+			echo '</body></html>';
 		}
-
-		// Fallback: serve a printable HTML page with auto-print JS.
-		nocache_headers();
-		header( 'Content-Type: text/html; charset=' . get_bloginfo( 'charset' ) );
-		echo $html; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- pre-escaped template.
-		echo "<script>window.addEventListener('load',function(){setTimeout(function(){window.print();},250);});</script>";
 	}
 
 	/**

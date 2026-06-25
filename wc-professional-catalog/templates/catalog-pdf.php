@@ -151,18 +151,24 @@ table.wcpc-pdf-grid td {
 
 <?php
 // ----- Batched render loop -----
-// Peak memory stays bounded by $batch_size WC_Product objects regardless
-// of how many products the shop has.
+// Same safety net as the flipbook: memory pressure check, duplicate-batch
+// detection, hard iteration cap.
 $batch_size = (int) apply_filters( 'wcpc_batch_size', max( $per_pdf_page * 2, 30 ) );
 $cursor     = 1;
 $page_index = 0;
 $carry      = array();
+$seen_ids   = array();
+$truncated  = false;
 
 while ( $cursor <= 1000 ) {
+	if ( WCPC_Catalog::memory_pressure() ) {
+		$truncated = true;
+		break;
+	}
+
 	$batch = WCPC_Catalog::batch( $args, $cursor, $batch_size );
 
 	if ( empty( $batch ) ) {
-		// No more new products: emit the final partial page if any leftover.
 		if ( ! empty( $carry ) ) {
 			$page_products = $carry;
 			$carry         = array();
@@ -173,9 +179,31 @@ while ( $cursor <= 1000 ) {
 		break;
 	}
 
+	$batch_ids = array();
+	foreach ( $batch as $p ) {
+		if ( $p instanceof WC_Product ) {
+			$batch_ids[] = (int) $p->get_id();
+		}
+	}
+	$fresh_ids = array_diff( $batch_ids, $seen_ids );
+	if ( empty( $fresh_ids ) ) {
+		$truncated = true;
+		if ( ! empty( $carry ) ) {
+			$page_products = $carry;
+			$carry         = array();
+			$page_index++;
+			include WCPC_PLUGIN_DIR . 'templates/parts/pdf-page.php';
+			unset( $page_products );
+		}
+		break;
+	}
+	foreach ( $batch_ids as $id ) {
+		$seen_ids[ $id ] = true;
+	}
+
 	$combined = array_merge( $carry, $batch );
 	$carry    = array();
-	unset( $batch );
+	unset( $batch, $batch_ids, $fresh_ids );
 
 	while ( count( $combined ) >= $per_pdf_page ) {
 		$page_products = array_splice( $combined, 0, $per_pdf_page );
@@ -191,6 +219,28 @@ while ( $cursor <= 1000 ) {
 	if ( $cursor % 3 === 0 ) {
 		WCPC_Catalog::free_batch_memory();
 	}
+}
+
+if ( $truncated ) {
+	$rendered = count( $seen_ids );
+	?>
+	<section class="wcpc-pdf-page">
+		<div class="wcpc-pdf-header">
+			<div class="l"></div>
+			<div class="r"><?php esc_html_e( 'Katalog gekürzt', 'wc-professional-catalog' ); ?></div>
+		</div>
+		<p style="text-align:center;padding:40px;color:#777;font-size:11px;">
+			<?php
+			printf(
+				/* translators: 1: rendered count, 2: total */
+				esc_html__( '%1$d von %2$d Produkten enthalten.', 'wc-professional-catalog' ),
+				(int) $rendered,
+				(int) $total
+			);
+			?>
+		</p>
+	</section>
+	<?php
 }
 ?>
 

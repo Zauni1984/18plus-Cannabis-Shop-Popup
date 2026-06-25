@@ -114,12 +114,52 @@ class WCPC_Catalog {
 	 * Free per-batch caches between iterations to keep memory bounded.
 	 */
 	public static function free_batch_memory() {
-		if ( function_exists( 'wp_cache_flush_runtime_cache' ) ) {
-			wp_cache_flush_runtime_cache();
-		}
 		if ( function_exists( 'gc_collect_cycles' ) ) {
 			gc_collect_cycles();
 		}
+		// wp_cache_flush_runtime_cache() can be aggressive with some object cache
+		// drop-ins (Redis, Memcached), so we only call it on the default cache
+		// to stay on the safe side.
+		if ( function_exists( 'wp_cache_flush_runtime_cache' ) && ! wp_using_ext_object_cache() ) {
+			wp_cache_flush_runtime_cache();
+		}
+	}
+
+	/**
+	 * Resolve php.ini's memory_limit as bytes (-1/empty -> 0 meaning "unlimited").
+	 *
+	 * @return int
+	 */
+	public static function memory_limit_bytes() {
+		$raw = ini_get( 'memory_limit' );
+		if ( false === $raw || '' === $raw || '-1' === (string) $raw ) {
+			return 0;
+		}
+		$raw = trim( (string) $raw );
+		$num = (int) $raw;
+		$unit = strtoupper( substr( $raw, -1 ) );
+		switch ( $unit ) {
+			case 'G':
+				return $num * 1024 * 1024 * 1024;
+			case 'M':
+				return $num * 1024 * 1024;
+			case 'K':
+				return $num * 1024;
+		}
+		return $num;
+	}
+
+	/**
+	 * Has the current request consumed more memory than is safe to keep rendering?
+	 *
+	 * @return bool
+	 */
+	public static function memory_pressure() {
+		$limit = self::memory_limit_bytes();
+		if ( 0 === $limit ) {
+			return false;
+		}
+		return memory_get_usage( true ) > (int) ( $limit * 0.75 );
 	}
 
 	/**
@@ -217,20 +257,103 @@ class WCPC_Catalog {
 			$wp_query->is_404 = false;
 		}
 
-		// Defer the enqueue to the proper hook so wp_add_inline_style finds a
-		// registered handle (register_frontend runs on wp_enqueue_scripts).
+		self::install_fatal_logger( 'flipbook' );
+
 		add_action( 'wp_enqueue_scripts', array( 'WCPC_Assets', 'enqueue_frontend' ), 20 );
 
-		$content = self::render_flipbook( $args );
+		try {
+			$content = self::render_flipbook( $args );
+		} catch ( \Throwable $e ) {
+			self::log_throwable( 'flipbook', $e );
+			$content = self::error_html( $e );
+		}
 
 		get_header();
 		echo '<div class="wcpc-endpoint-wrap">';
-		// $content is built from internal templates; every dynamic value is escaped
-		// at the source (esc_html/esc_attr/esc_url/wc_price). wp_kses_post would strip
-		// the data-* attributes the flipbook JS relies on.
-		echo $content; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- pre-escaped template.
+		echo $content; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- pre-escaped template / error_html is self-escaping.
 		echo '</div>';
 		get_footer();
+	}
+
+	/**
+	 * Catch PHP fatals (memory exhausted, etc.) that bubble past WP's handler
+	 * and write a tagged line to debug.log so the cause is discoverable. The
+	 * cost is one register_shutdown_function per request - cheap.
+	 *
+	 * @param string $context Surface tag (flipbook / pdf / print).
+	 */
+	public static function install_fatal_logger( $context ) {
+		static $installed = array();
+		if ( isset( $installed[ $context ] ) ) {
+			return;
+		}
+		$installed[ $context ] = true;
+
+		register_shutdown_function(
+			function () use ( $context ) {
+				$e = error_get_last();
+				if ( ! $e ) {
+					return;
+				}
+				$fatal_types = array( E_ERROR, E_PARSE, E_COMPILE_ERROR, E_CORE_ERROR, E_RECOVERABLE_ERROR );
+				if ( ! in_array( (int) $e['type'], $fatal_types, true ) ) {
+					return;
+				}
+				error_log(
+					sprintf(
+						'[WCPC %s] FATAL: %s in %s:%d (peak %s MB / limit %s)',
+						$context,
+						$e['message'],
+						$e['file'],
+						$e['line'],
+						round( memory_get_peak_usage( true ) / 1024 / 1024, 1 ),
+						ini_get( 'memory_limit' )
+					)
+				);
+			}
+		);
+	}
+
+	/**
+	 * Log a Throwable with the WCPC tag.
+	 *
+	 * @param string     $context Surface tag.
+	 * @param \Throwable $e       Throwable to log.
+	 */
+	public static function log_throwable( $context, \Throwable $e ) {
+		error_log(
+			sprintf(
+				"[WCPC %s] %s: %s in %s:%d\n%s",
+				$context,
+				get_class( $e ),
+				$e->getMessage(),
+				$e->getFile(),
+				$e->getLine(),
+				$e->getTraceAsString()
+			)
+		);
+	}
+
+	/**
+	 * Friendly fallback HTML when rendering throws. Shows the exception details
+	 * only when WP_DEBUG is on.
+	 *
+	 * @param \Throwable $e Throwable.
+	 * @return string
+	 */
+	public static function error_html( \Throwable $e ) {
+		$debug = ( defined( 'WP_DEBUG' ) && WP_DEBUG );
+		ob_start();
+		?>
+		<div class="wcpc-error" style="padding:24px;background:#fff3f3;border:1px solid #f0baba;border-radius:8px;color:#7d1f1f;max-width:760px;margin:30px auto;">
+			<h2 style="margin-top:0;color:#7d1f1f;"><?php esc_html_e( 'Der Katalog konnte gerade nicht geladen werden.', 'wc-professional-catalog' ); ?></h2>
+			<p><?php esc_html_e( 'Bitte versuche es in ein paar Sekunden noch einmal. Der Administrator wurde benachrichtigt.', 'wc-professional-catalog' ); ?></p>
+			<?php if ( $debug ) : ?>
+				<pre style="white-space:pre-wrap;font-size:12px;background:#fff;padding:12px;border:1px solid #ddd;color:#333;"><?php echo esc_html( get_class( $e ) . ': ' . $e->getMessage() . "\n" . $e->getTraceAsString() ); ?></pre>
+			<?php endif; ?>
+		</div>
+		<?php
+		return (string) ob_get_clean();
 	}
 
 	/**
@@ -239,7 +362,6 @@ class WCPC_Catalog {
 	 * @param array $args Query args.
 	 */
 	public static function render_print_page( $args = array() ) {
-		$products = self::query( $args );
 		$settings = WCPC_Plugin::get_settings();
 		$columns  = isset( $args['columns'] ) && (int) $args['columns'] > 0
 			? (int) $args['columns']
@@ -249,7 +371,15 @@ class WCPC_Catalog {
 		nocache_headers();
 		header( 'Content-Type: text/html; charset=' . get_bloginfo( 'charset' ) );
 
-		include WCPC_PLUGIN_DIR . 'templates/catalog-print.php';
+		self::install_fatal_logger( 'print' );
+
+		try {
+			$products = self::query( $args );
+			include WCPC_PLUGIN_DIR . 'templates/catalog-print.php';
+		} catch ( \Throwable $e ) {
+			self::log_throwable( 'print', $e );
+			echo self::error_html( $e ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- self-escaping.
+		}
 	}
 
 	/**
