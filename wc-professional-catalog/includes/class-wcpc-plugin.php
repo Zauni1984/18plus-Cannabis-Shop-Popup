@@ -118,11 +118,54 @@ class WCPC_Plugin {
 		add_action( 'template_redirect', array( $this, 'maybe_handle_endpoint' ) );
 
 		add_action( 'admin_notices', array( $this, 'maybe_show_dependency_notice' ) );
+		add_action( 'admin_init', array( $this, 'maybe_run_upgrade' ), 5 );
 
 		// Boot subsystems.
 		WCPC_Assets::init();
 		WCPC_Shortcode::init();
 		WCPC_Admin::init();
+		if ( class_exists( 'WCPC_PDF_Job' ) ) {
+			WCPC_PDF_Job::init();
+		}
+		if ( class_exists( 'WCPC_PDF_Ajax' ) ) {
+			WCPC_PDF_Ajax::init();
+		}
+	}
+
+	/**
+	 * One-shot upgrade tasks. Runs once per WCPC_VERSION change.
+	 */
+	public function maybe_run_upgrade() {
+		$current = get_option( 'wcpc_version', '' );
+		if ( WCPC_VERSION === $current ) {
+			return;
+		}
+
+		// Repair the cross-tab-wipe bug from v1.0.2 - v1.0.4: when ALL of the
+		// display toggles in the General tab are 0/missing, that almost never
+		// reflects an explicit choice (the user would have left at least one
+		// on) - it is the wipe. Restore those to defaults.
+		$saved = get_option( WCPC_OPTION_KEY, array() );
+		if ( ! is_array( $saved ) ) {
+			$saved = array();
+		}
+		$repair_keys = array( 'show_sku', 'show_short_desc', 'show_price_gross', 'show_price_net', 'show_unit_price', 'enable_buy_link' );
+		$any_on      = false;
+		foreach ( $repair_keys as $k ) {
+			if ( ! empty( $saved[ $k ] ) ) {
+				$any_on = true;
+				break;
+			}
+		}
+		if ( ! $any_on ) {
+			foreach ( $repair_keys as $k ) {
+				$saved[ $k ] = (int) self::$defaults[ $k ];
+			}
+			update_option( WCPC_OPTION_KEY, $saved );
+			set_transient( 'wcpc_repair_notice', 1, HOUR_IN_SECONDS );
+		}
+
+		update_option( 'wcpc_version', WCPC_VERSION );
 	}
 
 	/**
@@ -279,6 +322,12 @@ class WCPC_Plugin {
 				esc_html__( 'PDF-Export läuft im Fallback-Modus (HTML zum Drucken). Für native PDFs bitte im Plugin-Ordner %s ausführen.', 'wc-professional-catalog' ),
 				'<code>composer require dompdf/dompdf</code>'
 			);
+			echo '</p></div>';
+		}
+		if ( get_transient( 'wcpc_repair_notice' ) ) {
+			delete_transient( 'wcpc_repair_notice' );
+			echo '<div class="notice notice-success is-dismissible"><p><strong>WC Professional Catalog:</strong> ';
+			esc_html_e( 'Anzeige-Einstellungen (Preise, Beschreibung, Artikelnummer, Kauf-Button) wurden aus einem früheren Bug repariert und auf Standard zurückgesetzt.', 'wc-professional-catalog' );
 			echo '</p></div>';
 		}
 	}

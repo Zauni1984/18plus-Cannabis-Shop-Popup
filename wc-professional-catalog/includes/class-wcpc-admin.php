@@ -51,6 +51,7 @@ class WCPC_Admin {
 			'images'    => __( 'Bilder', 'wc-professional-catalog' ),
 			'typo'      => __( 'Typografie', 'wc-professional-catalog' ),
 			'pdf'       => __( 'PDF / Druck', 'wc-professional-catalog' ),
+			'generator' => __( 'PDF-Generator', 'wc-professional-catalog' ),
 			'shortcuts' => __( 'Shortcodes', 'wc-professional-catalog' ),
 			'diag'      => __( 'Diagnose', 'wc-professional-catalog' ),
 		);

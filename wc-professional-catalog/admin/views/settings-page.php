@@ -32,6 +32,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 		include WCPC_PLUGIN_DIR . 'admin/views/settings-shortcuts.php';
 	elseif ( 'diag' === $active ) :
 		include WCPC_PLUGIN_DIR . 'admin/views/settings-diagnostic.php';
+	elseif ( 'generator' === $active ) :
+		include WCPC_PLUGIN_DIR . 'admin/views/settings-pdf-generator.php';
 	else : ?>
 		<form action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" method="post" class="wcpc-form">
 			<?php wp_nonce_field( 'wcpc_save_settings' ); ?>

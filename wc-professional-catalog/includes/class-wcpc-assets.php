@@ -80,5 +80,12 @@ class WCPC_Assets {
 			WCPC_VERSION,
 			true
 		);
+		wp_enqueue_script(
+			'wcpc-pdf-generator',
+			WCPC_PLUGIN_URL . 'admin/js/pdf-generator.js',
+			array( 'jquery' ),
+			WCPC_VERSION,
+			true
+		);
 	}
 }

@@ -4,3 +4,32 @@
 .wcpc-logo-picker img { background:#fafafa; padding:6px; border:1px solid #ddd; }
 .wcpc-shortcuts code { background:#f6f7f7; padding:2px 6px; border-radius:3px; }
 .wcpc-shortcuts table { max-width: 920px; }
+
+/* PDF Generator */
+.wcpc-pdf-generator { max-width: 1100px; }
+.wcpc-pdf-progress {
+	background: #fff; border: 1px solid #ddd; border-radius: 6px;
+	padding: 16px 18px; margin: 12px 0 24px; max-width: 760px;
+}
+.wcpc-pdf-progress__label {
+	display: flex; justify-content: space-between; align-items: baseline;
+	font-weight: 600; color: #1f7a3a;
+}
+.wcpc-pdf-progress__counts { color: #555; font-weight: 500; font-size: 13px; }
+.wcpc-pdf-progress__section { font-size: 12px; color: #777; margin: 6px 0 10px; min-height: 16px; }
+.wcpc-pdf-progress__bar { height: 18px; background: #eef; border-radius: 9px; overflow: hidden; }
+.wcpc-pdf-progress__fill {
+	height: 100%; background: linear-gradient(90deg,#1f7a3a,#2c9a4a);
+	width: 0%; transition: width .4s ease;
+	color: #fff; text-align: right; font-size: 11px; padding: 0 6px; line-height: 18px;
+}
+.wcpc-pdf-progress__error { margin-top: 10px; padding: 8px; background: #fff3f3; border: 1px solid #f0baba; color: #7d1f1f; font-size: 12px; border-radius: 4px; }
+
+.wcpc-pdf-list { max-width: 1100px; }
+.wcpc-pdf-status { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
+.wcpc-pdf-status--queued     { background: #fef3c7; color: #92400e; }
+.wcpc-pdf-status--processing { background: #dbeafe; color: #1e3a8a; }
+.wcpc-pdf-status--finalizing { background: #ddd6fe; color: #4c1d95; }
+.wcpc-pdf-status--done       { background: #d1fae5; color: #065f46; }
+.wcpc-pdf-status--error      { background: #fee2e2; color: #991b1b; }
+.wcpc-pdf-status--cancelled  { background: #e5e7eb; color: #374151; }
