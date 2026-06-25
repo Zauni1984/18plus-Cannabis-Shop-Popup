@@ -67,15 +67,14 @@ class WCPC_Admin {
 		check_admin_referer( 'wcpc_save_settings' );
 
 		$input = isset( $_POST['wcpc'] ) ? wp_unslash( $_POST['wcpc'] ) : array(); // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
-		$clean = self::sanitize_settings( $input );
+		$tab   = isset( $_POST['_wcpc_tab'] ) ? sanitize_key( wp_unslash( $_POST['_wcpc_tab'] ) ) : 'general';
+		$clean = self::sanitize_settings( $input, $tab );
 
 		$existing = get_option( WCPC_OPTION_KEY, array() );
 		if ( ! is_array( $existing ) ) {
 			$existing = array();
 		}
 		update_option( WCPC_OPTION_KEY, array_merge( $existing, $clean ) );
-
-		$tab = isset( $_POST['_wcpc_tab'] ) ? sanitize_key( wp_unslash( $_POST['_wcpc_tab'] ) ) : 'general';
 		wp_safe_redirect( add_query_arg(
 			array(
 				'page'    => 'wcpc-settings',
@@ -87,13 +86,20 @@ class WCPC_Admin {
 		exit;
 	}
 
-	public static function sanitize_settings( $input ) {
-		$defaults = WCPC_Plugin::get_defaults();
-		$out      = array();
+	public static function sanitize_settings( $input, $tab = '' ) {
+		$defaults          = WCPC_Plugin::get_defaults();
+		$out               = array();
+		$tab_checkboxes    = self::tab_checkbox_scope();
+		$scoped_checkboxes = ( $tab && isset( $tab_checkboxes[ $tab ] ) )
+			? $tab_checkboxes[ $tab ]
+			: array(); // No tab = no auto-zero (safer default).
+
 		foreach ( $defaults as $key => $default ) {
 			if ( ! isset( $input[ $key ] ) ) {
-				// Checkboxes default to 0 when missing.
-				if ( in_array( $key, self::checkbox_keys(), true ) ) {
+				// Only auto-zero checkboxes that BELONG to the saved tab.
+				// Other tabs' checkboxes are simply skipped, so their previously
+				// saved value is preserved by the array_merge in handle_save().
+				if ( in_array( $key, $scoped_checkboxes, true ) ) {
 					$out[ $key ] = 0;
 				}
 				continue;
@@ -118,6 +124,39 @@ class WCPC_Admin {
 			$out[ $key ] = sanitize_text_field( $value );
 		}
 		return $out;
+	}
+
+	/**
+	 * Maps each settings tab to the checkbox keys that live on that tab's form.
+	 * Saving a tab only resets THESE checkboxes when their input is missing,
+	 * so toggling a single tab cannot wipe checkboxes from other tabs.
+	 *
+	 * @return array<string, string[]>
+	 */
+	private static function tab_checkbox_scope() {
+		return array(
+			'general' => array(
+				'show_brand_filter',
+				'show_category_filter',
+				'show_tag_filter',
+				'show_sku',
+				'show_short_desc',
+				'show_price_gross',
+				'show_price_net',
+				'show_unit_price',
+				'enable_buy_link',
+			),
+			'design'  => array(),
+			'images'  => array(
+				'show_gallery',
+				'enable_lightbox',
+				'pdf_show_gallery',
+			),
+			'typo'    => array(),
+			'pdf'     => array(
+				'pdf_show_qr',
+			),
+		);
 	}
 
 	private static function checkbox_keys() {

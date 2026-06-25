@@ -2,12 +2,17 @@
 /**
  * PDF catalog template (also reused as the fallback printable HTML).
  *
- * Kept lean and table/CSS-friendly so Dompdf renders it cleanly.
+ * Renders the catalog by streaming products in batches so peak memory
+ * stays bounded by the batch size, even on shops with thousands of
+ * products.
+ *
+ * Expects in scope:
+ *   - $args     Filter args (forwarded to WCPC_Catalog::batch())
+ *   - $settings (array)
+ *   - $columns  (int)
+ *   - $total    (int)        Pre-counted total products
  *
  * @package WCProfessionalCatalog
- * @var WC_Product[][] $pages
- * @var array          $settings
- * @var int            $columns
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -17,18 +22,32 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( ! isset( $settings ) || ! is_array( $settings ) ) {
 	$settings = WCPC_Plugin::get_settings();
 }
-if ( ! isset( $pages ) || ! is_array( $pages ) ) {
-	$pages = array();
+if ( ! isset( $args ) || ! is_array( $args ) ) {
+	$args = array();
 }
 if ( ! isset( $columns ) || (int) $columns <= 0 ) {
 	$columns = isset( $settings['pdf_columns'] ) ? max( 1, (int) $settings['pdf_columns'] ) : 3;
 }
+$per_pdf_page = max( 1, (int) ( $settings['pdf_per_page'] ?? 9 ) );
+if ( ! isset( $total ) ) {
+	$total = WCPC_Catalog::count( $args );
+}
+$total       = (int) $total;
+$total_pages = max( 1, (int) ceil( $total / $per_pdf_page ) );
+
 $logo_url      = ! empty( $settings['logo_id'] ) ? (string) wp_get_attachment_image_url( (int) $settings['logo_id'], 'large' ) : '';
 $cover_url_pdf = ! empty( $settings['cover_image_id'] ) ? (string) wp_get_attachment_image_url( (int) $settings['cover_image_id'], 'large' ) : '';
 $pdf_img_size  = isset( $settings['image_size_pdf'] ) && $settings['image_size_pdf'] ? (string) $settings['image_size_pdf'] : 'medium';
 $margin        = isset( $settings['pdf_margin'] ) ? max( 0, (int) $settings['pdf_margin'] ) : 12;
+$page_size     = isset( $settings['pdf_page_size'] ) ? strtoupper( (string) $settings['pdf_page_size'] ) : 'A4';
 
-$page_size = isset( $settings['pdf_page_size'] ) ? strtoupper( (string) $settings['pdf_page_size'] ) : 'A4';
+$dense          = ( (int) $columns >= 3 );
+$title_size_pdf = $dense ? max( 9, min( 13, (int) $settings['font_size_title'] - 4 ) ) : (int) $settings['font_size_title'];
+$body_size_pdf  = $dense ? max( 8, min( 10, (int) $settings['font_size_body'] ) ) : (int) $settings['font_size_body'];
+$price_size_pdf = $dense ? max( 10, min( 13, (int) $settings['font_size_price'] - 1 ) ) : (int) $settings['font_size_price'];
+$img_max_h      = $dense ? 70 : 110;
+$cell_pad       = $dense ? 5 : 8;
+$cell_gap       = $dense ? 4 : 6;
 ?>
 <!doctype html>
 <html>
@@ -72,17 +91,6 @@ body {
 .wcpc-pdf-header img { max-height: 28px; }
 .wcpc-pdf-footer { position: fixed; bottom: -8mm; left: 0; right: 0; text-align: center; color: <?php echo esc_html( $settings['color_muted'] ); ?>; font-size: 9px; }
 
-<?php
-// Scale the card font sizes down a bit for dense layouts (3+ columns) so 9
-// products comfortably fit on A4 portrait.
-$dense          = ( (int) $columns >= 3 );
-$title_size_pdf = $dense ? max( 9, min( 13, (int) $settings['font_size_title'] - 4 ) ) : (int) $settings['font_size_title'];
-$body_size_pdf  = $dense ? max( 8, min( 10, (int) $settings['font_size_body'] ) ) : (int) $settings['font_size_body'];
-$price_size_pdf = $dense ? max( 10, min( 13, (int) $settings['font_size_price'] - 1 ) ) : (int) $settings['font_size_price'];
-$img_max_h      = $dense ? 70 : 110;
-$cell_pad       = $dense ? 5 : 8;
-$cell_gap       = $dense ? 4 : 6;
-?>
 table.wcpc-pdf-grid { width: 100%; border-collapse: separate; border-spacing: <?php echo (int) $cell_gap; ?>px; }
 table.wcpc-pdf-grid td {
 	width: <?php echo (int) ( 100 / max( 1, (int) $columns ) ); ?>%;
@@ -141,100 +149,50 @@ table.wcpc-pdf-grid td {
 	</div>
 </section>
 
-<?php $page_count = count( $pages ); ?>
-<?php foreach ( $pages as $i => $page_products ) : ?>
-	<section class="wcpc-pdf-page">
-		<div class="wcpc-pdf-header">
-			<div class="l">
-				<?php if ( $logo_url ) : ?>
-					<img src="<?php echo esc_url( $logo_url ); ?>" alt="" />
-				<?php endif; ?>
-			</div>
-			<div class="r">
-				<?php
-				printf(
-					/* translators: 1: current page, 2: total pages */
-					esc_html__( 'Seite %1$d von %2$d', 'wc-professional-catalog' ),
-					(int) ( $i + 1 ),
-					(int) $page_count
-				);
-				?>
-			</div>
-		</div>
-		<table class="wcpc-pdf-grid">
-			<?php
-			$chunked = array_chunk( $page_products, max( 1, (int) $columns ) );
-			foreach ( $chunked as $row ) : ?>
-				<tr>
-				<?php
-				foreach ( $row as $product ) :
-					if ( ! $product instanceof WC_Product ) { continue; }
-					$prices     = WCPC_Price::get_prices( $product );
-					$unit_price = WCPC_Price::get_unit_price( $product );
-					$brand      = WCPC_Catalog::get_brand_label( $product );
-					$image      = wp_get_attachment_image_url( $product->get_image_id(), $pdf_img_size );
-					$short      = wp_strip_all_tags( $product->get_short_description() );
-					$link       = get_permalink( $product->get_id() );
-					$pdf_gallery = ( ! empty( $settings['pdf_show_gallery'] ) ) ? $product->get_gallery_image_ids() : array();
-					if ( $pdf_gallery ) {
-						$pdf_gallery = array_slice( $pdf_gallery, 0, max( 1, (int) $settings['pdf_gallery_count'] ) );
-					}
-					?>
-					<td>
-						<div class="wcpc-pdf-item">
-							<?php if ( $image ) : ?>
-								<a class="img-link" href="<?php echo esc_url( $link ); ?>">
-									<img src="<?php echo esc_url( $image ); ?>" alt="" />
-								</a>
-							<?php endif; ?>
-							<?php if ( $brand ) : ?>
-								<div class="brand"><?php echo esc_html( $brand ); ?></div>
-							<?php endif; ?>
-							<div class="title">
-								<a href="<?php echo esc_url( $link ); ?>"><?php echo esc_html( $product->get_name() ); ?></a>
-							</div>
-							<?php if ( $pdf_gallery ) : ?>
-								<div class="pdf-gallery">
-									<?php foreach ( $pdf_gallery as $gid ) :
-										$thumb = wp_get_attachment_image_url( $gid, 'thumbnail' );
-										if ( ! $thumb ) { continue; } ?>
-										<img src="<?php echo esc_url( $thumb ); ?>" alt="" />
-									<?php endforeach; ?>
-								</div>
-							<?php endif; ?>
-							<?php if ( ! empty( $settings['show_sku'] ) && $product->get_sku() ) : ?>
-								<div class="sku">Art.-Nr.: <?php echo esc_html( $product->get_sku() ); ?></div>
-							<?php endif; ?>
-							<?php if ( ! empty( $settings['show_short_desc'] ) && '' !== $short ) : ?>
-								<div class="desc"><?php echo esc_html( wp_trim_words( $short, 22, '…' ) ); ?></div>
-							<?php endif; ?>
-							<?php if ( ! empty( $settings['show_price_gross'] ) ) : ?>
-								<div class="price"><?php echo $prices['gross']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- wc_price. ?> <small><?php esc_html_e( 'inkl. MwSt.', 'wc-professional-catalog' ); ?></small></div>
-							<?php endif; ?>
-							<?php if ( ! empty( $settings['show_price_net'] ) ) : ?>
-								<div class="price"><small><?php echo $prices['net']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- wc_price. ?> <?php esc_html_e( 'netto', 'wc-professional-catalog' ); ?></small></div>
-							<?php endif; ?>
-							<?php if ( ! empty( $settings['show_unit_price'] ) && $unit_price ) : ?>
-								<div class="unit"><?php echo $unit_price; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- wc_price. ?></div>
-							<?php endif; ?>
-							<?php if ( ! empty( $settings['enable_buy_link'] ) ) : ?>
-								<a class="buy" href="<?php echo esc_url( $link ); ?>"><?php echo esc_html( $settings['buy_button_text'] ); ?></a>
-							<?php endif; ?>
-						</div>
-					</td>
-				<?php endforeach; ?>
-				<?php
-				// Pad remaining columns to keep the grid aligned.
-				$pad = (int) $columns - count( $row );
-				for ( $p = 0; $p < $pad; $p++ ) {
-					echo '<td></td>';
-				}
-				?>
-				</tr>
-			<?php endforeach; ?>
-		</table>
-	</section>
-<?php endforeach; ?>
+<?php
+// ----- Batched render loop -----
+// Peak memory stays bounded by $batch_size WC_Product objects regardless
+// of how many products the shop has.
+$batch_size = (int) apply_filters( 'wcpc_batch_size', max( $per_pdf_page * 2, 30 ) );
+$cursor     = 1;
+$page_index = 0;
+$carry      = array();
+
+while ( $cursor <= 1000 ) {
+	$batch = WCPC_Catalog::batch( $args, $cursor, $batch_size );
+
+	if ( empty( $batch ) ) {
+		// No more new products: emit the final partial page if any leftover.
+		if ( ! empty( $carry ) ) {
+			$page_products = $carry;
+			$carry         = array();
+			$page_index++;
+			include WCPC_PLUGIN_DIR . 'templates/parts/pdf-page.php';
+			unset( $page_products );
+		}
+		break;
+	}
+
+	$combined = array_merge( $carry, $batch );
+	$carry    = array();
+	unset( $batch );
+
+	while ( count( $combined ) >= $per_pdf_page ) {
+		$page_products = array_splice( $combined, 0, $per_pdf_page );
+		$page_index++;
+		include WCPC_PLUGIN_DIR . 'templates/parts/pdf-page.php';
+		unset( $page_products );
+	}
+
+	$carry = $combined;
+	unset( $combined );
+
+	$cursor++;
+	if ( $cursor % 3 === 0 ) {
+		WCPC_Catalog::free_batch_memory();
+	}
+}
+?>
 
 <?php if ( ! empty( $settings['footer_text'] ) ) : ?>
 	<div class="wcpc-pdf-footer"><?php echo esc_html( $settings['footer_text'] ); ?></div>

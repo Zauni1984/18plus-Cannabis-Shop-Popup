@@ -29,8 +29,8 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 	<tr>
 		<th><label for="wcpc_max_products"><?php esc_html_e( 'Maximalanzahl Produkte', 'wc-professional-catalog' ); ?></label></th>
 		<td>
-			<input type="number" min="1" max="1000" id="wcpc_max_products" name="wcpc[max_products]" value="<?php echo (int) $settings['max_products']; ?>" />
-			<p class="description"><?php esc_html_e( 'Harte Obergrenze für die Anzahl der Produkte, die in Online-Katalog, PDF und Druckansicht geladen werden. Schützt vor "kritischer Fehler" durch zu viel Arbeitsspeicher bei großen Shops. 100 ist ein guter Startwert. Bei wenigen, leichten Produkten kann man auf 300–500 erhöhen.', 'wc-professional-catalog' ); ?></p>
+			<input type="number" min="0" max="100000" id="wcpc_max_products" name="wcpc[max_products]" value="<?php echo (int) $settings['max_products']; ?>" />
+			<p class="description"><?php esc_html_e( '0 = alle Produkte (Standard). Der Katalog wird intern in Batches gerendert, daher ist der Speicher unabhängig von der Anzahl. Falls du den Katalog absichtlich auf z. B. 50 Produkte begrenzen willst, hier setzen.', 'wc-professional-catalog' ); ?></p>
 		</td>
 	</tr>
 	<tr>

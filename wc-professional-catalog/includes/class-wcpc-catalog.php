@@ -25,8 +25,13 @@ class WCPC_Catalog {
 	 * }
 	 * @return WC_Product[]
 	 */
-	public static function query( $args = array() ) {
-		$defaults = array(
+	/**
+	 * Default query args.
+	 *
+	 * @return array
+	 */
+	private static function query_defaults() {
+		return array(
 			'category' => '',
 			'tag'      => '',
 			'brand'    => '',
@@ -36,43 +41,127 @@ class WCPC_Catalog {
 			'order'    => 'ASC',
 			'status'   => 'publish',
 		);
-		$args = wp_parse_args( $args, $defaults );
+	}
 
-		$requested_limit = (int) $args['limit'];
-		$hard_cap        = max( 1, (int) WCPC_Plugin::get_setting( 'max_products', 100 ) );
-		// Translate "all" (-1 / 0) into the hard cap so massive catalogs do not
-		// blow PHP's memory_limit when rendering the flipbook / PDF.
-		if ( $requested_limit <= 0 || $requested_limit > $hard_cap ) {
-			$requested_limit = $hard_cap;
-		}
-
+	/**
+	 * Build the wc_get_products() argument array, EXCLUDING limit/page/return,
+	 * so the caller can pick between a one-shot query and a batched query.
+	 *
+	 * @param array $args Filter args.
+	 * @return array
+	 */
+	private static function build_query_args( $args ) {
 		$query_args = array(
-			'limit'   => $requested_limit,
 			'status'  => $args['status'],
 			'orderby' => $args['orderby'],
 			'order'   => $args['order'],
-			'return'  => 'objects',
 		);
-
 		if ( ! empty( $args['ids'] ) ) {
 			$query_args['include'] = wp_parse_id_list( $args['ids'] );
 		}
-
 		if ( ! empty( $args['category'] ) ) {
 			$query_args['category'] = self::split_terms( $args['category'] );
 		}
-
 		if ( ! empty( $args['tag'] ) ) {
 			$query_args['tag'] = self::split_terms( $args['tag'] );
 		}
-
 		if ( ! empty( $args['brand'] ) ) {
 			$query_args['tax_query'] = self::build_brand_tax_query( $args['brand'] );
 		}
+		return $query_args;
+	}
+
+	/**
+	 * Light-weight count of matching products. Uses wc_get_products with
+	 * paginate=true + return=ids so no full WC_Product objects are loaded.
+	 *
+	 * @param array $args Filter args.
+	 * @return int
+	 */
+	public static function count( $args = array() ) {
+		$args       = wp_parse_args( $args, self::query_defaults() );
+		$query_args = self::build_query_args( $args );
+		$query_args['limit']    = 1;
+		$query_args['page']     = 1;
+		$query_args['return']   = 'ids';
+		$query_args['paginate'] = true;
+
+		$result = wc_get_products( $query_args );
+		return ( is_object( $result ) && isset( $result->total ) ) ? (int) $result->total : 0;
+	}
+
+	/**
+	 * Fetch a single batch of products. Used by the batched render loop so
+	 * peak memory stays bounded by $per_page, not by the total catalog size.
+	 *
+	 * @param array $args     Filter args.
+	 * @param int   $page     1-based page index.
+	 * @param int   $per_page Products per batch.
+	 * @return WC_Product[]
+	 */
+	public static function batch( $args = array(), $page = 1, $per_page = 30 ) {
+		$args       = wp_parse_args( $args, self::query_defaults() );
+		$query_args = self::build_query_args( $args );
+		$query_args['limit']  = max( 1, (int) $per_page );
+		$query_args['page']   = max( 1, (int) $page );
+		$query_args['return'] = 'objects';
 
 		$products = wc_get_products( $query_args );
-
 		return is_array( $products ) ? $products : array();
+	}
+
+	/**
+	 * Free per-batch caches between iterations to keep memory bounded.
+	 */
+	public static function free_batch_memory() {
+		if ( function_exists( 'wp_cache_flush_runtime_cache' ) ) {
+			wp_cache_flush_runtime_cache();
+		}
+		if ( function_exists( 'gc_collect_cycles' ) ) {
+			gc_collect_cycles();
+		}
+	}
+
+	/**
+	 * Legacy one-shot query - still used by the grid template for small
+	 * catalogs and by direct shortcode callers that pass an explicit limit.
+	 * Falls back to a batched fetch when the result would exceed the
+	 * per-batch threshold, to avoid loading thousands of objects at once.
+	 *
+	 * @param array $args See query_defaults().
+	 * @return WC_Product[]
+	 */
+	public static function query( $args = array() ) {
+		$args = wp_parse_args( $args, self::query_defaults() );
+
+		$requested_limit = (int) $args['limit'];
+		$max_setting     = (int) WCPC_Plugin::get_setting( 'max_products', 0 );
+		// max_products = 0 means "no cap" - we still page internally so memory
+		// never blows up regardless of catalog size.
+		$cap = $max_setting > 0 ? $max_setting : PHP_INT_MAX;
+		if ( $requested_limit <= 0 || $requested_limit > $cap ) {
+			$requested_limit = $cap;
+		}
+
+		$batch_size = (int) apply_filters( 'wcpc_batch_size', 30 );
+		$out        = array();
+		$page       = 1;
+		while ( count( $out ) < $requested_limit ) {
+			$remaining = $requested_limit - count( $out );
+			$take      = min( $batch_size, $remaining );
+			$batch     = self::batch( $args, $page, $take );
+			if ( empty( $batch ) ) {
+				break;
+			}
+			foreach ( $batch as $p ) {
+				$out[] = $p;
+			}
+			$page++;
+			if ( $page % 3 === 0 ) {
+				self::free_batch_memory();
+			}
+		}
+		return $out;
 	}
 
 	/**
@@ -100,13 +189,13 @@ class WCPC_Catalog {
 	 * @return string
 	 */
 	public static function render_flipbook( $args = array() ) {
-		$products = self::query( $args );
 		$settings = WCPC_Plugin::get_settings();
 		$per_page = isset( $args['per_page'] ) && (int) $args['per_page'] > 0
 			? (int) $args['per_page']
 			: (int) $settings['products_per_page'];
 
-		$pages = array_chunk( $products, max( 1, $per_page ) );
+		// Light count so the toolbar shows total pages without loading objects.
+		$total = self::count( $args );
 
 		ob_start();
 		include WCPC_PLUGIN_DIR . 'templates/catalog-flipbook.php';
