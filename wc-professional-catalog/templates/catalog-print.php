@@ -12,8 +12,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-$logo_url  = ! empty( $settings['logo_id'] ) ? wp_get_attachment_image_url( $settings['logo_id'], 'medium' ) : '';
-$cover_url = ! empty( $settings['cover_image_id'] ) ? wp_get_attachment_image_url( $settings['cover_image_id'], 'large' ) : '';
+if ( ! isset( $settings ) || ! is_array( $settings ) ) {
+	$settings = WCPC_Plugin::get_settings();
+}
+if ( ! isset( $products ) || ! is_array( $products ) ) {
+	$products = array();
+}
+if ( ! isset( $columns ) || (int) $columns <= 0 ) {
+	$columns = isset( $settings['pdf_columns'] ) ? max( 1, (int) $settings['pdf_columns'] ) : 3;
+}
+$logo_url  = ! empty( $settings['logo_id'] ) ? (string) wp_get_attachment_image_url( (int) $settings['logo_id'], 'medium' ) : '';
+$cover_url = ! empty( $settings['cover_image_id'] ) ? (string) wp_get_attachment_image_url( (int) $settings['cover_image_id'], 'large' ) : '';
 $css_vars  = WCPC_Catalog::build_css_variables( $settings );
 ?>
 <!doctype html>

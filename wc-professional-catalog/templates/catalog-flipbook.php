@@ -12,8 +12,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-$logo_url  = ! empty( $settings['logo_id'] ) ? wp_get_attachment_image_url( $settings['logo_id'], 'medium' ) : '';
-$cover_url = ! empty( $settings['cover_image_id'] ) ? wp_get_attachment_image_url( $settings['cover_image_id'], 'large' ) : '';
+if ( ! isset( $settings ) || ! is_array( $settings ) ) {
+	$settings = WCPC_Plugin::get_settings();
+}
+if ( ! isset( $pages ) || ! is_array( $pages ) ) {
+	$pages = array();
+}
+$logo_url  = ! empty( $settings['logo_id'] ) ? (string) wp_get_attachment_image_url( (int) $settings['logo_id'], 'medium' ) : '';
+$cover_url = ! empty( $settings['cover_image_id'] ) ? (string) wp_get_attachment_image_url( (int) $settings['cover_image_id'], 'large' ) : '';
 ?>
 <section class="wcpc-catalog wcpc-flipbook" aria-label="<?php esc_attr_e( 'Online-Katalog', 'wc-professional-catalog' ); ?>">
 	<div class="wcpc-flipbook__toolbar">

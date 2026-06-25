@@ -111,7 +111,19 @@ class WCPC_Catalog {
 	 * @param array $args Query args.
 	 */
 	public static function render_flipbook_page( $args = array() ) {
-		WCPC_Assets::enqueue_frontend();
+		// Force a 200 OK + no caching so the theme does not treat this as a 404
+		// page (rewrite resolves to no real post, which would otherwise be 404).
+		status_header( 200 );
+		nocache_headers();
+		global $wp_query;
+		if ( $wp_query ) {
+			$wp_query->is_404 = false;
+		}
+
+		// Defer the enqueue to the proper hook so wp_add_inline_style finds a
+		// registered handle (register_frontend runs on wp_enqueue_scripts).
+		add_action( 'wp_enqueue_scripts', array( 'WCPC_Assets', 'enqueue_frontend' ), 20 );
+
 		$content = self::render_flipbook( $args );
 
 		get_header();
@@ -134,8 +146,9 @@ class WCPC_Catalog {
 		$settings = WCPC_Plugin::get_settings();
 		$columns  = isset( $args['columns'] ) && (int) $args['columns'] > 0
 			? (int) $args['columns']
-			: (int) $settings['pdf_columns'];
+			: max( 1, (int) ( $settings['pdf_columns'] ?? 3 ) );
 
+		status_header( 200 );
 		nocache_headers();
 		header( 'Content-Type: text/html; charset=' . get_bloginfo( 'charset' ) );
 

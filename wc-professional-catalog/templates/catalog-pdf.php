@@ -14,12 +14,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-$logo_url      = ! empty( $settings['logo_id'] ) ? wp_get_attachment_image_url( $settings['logo_id'], 'large' ) : '';
-$cover_url_pdf = ! empty( $settings['cover_image_id'] ) ? wp_get_attachment_image_url( $settings['cover_image_id'], 'large' ) : '';
-$pdf_img_size  = $settings['image_size_pdf'] ?: 'medium';
-$margin        = (int) $settings['pdf_margin'];
+if ( ! isset( $settings ) || ! is_array( $settings ) ) {
+	$settings = WCPC_Plugin::get_settings();
+}
+if ( ! isset( $pages ) || ! is_array( $pages ) ) {
+	$pages = array();
+}
+if ( ! isset( $columns ) || (int) $columns <= 0 ) {
+	$columns = isset( $settings['pdf_columns'] ) ? max( 1, (int) $settings['pdf_columns'] ) : 3;
+}
+$logo_url      = ! empty( $settings['logo_id'] ) ? (string) wp_get_attachment_image_url( (int) $settings['logo_id'], 'large' ) : '';
+$cover_url_pdf = ! empty( $settings['cover_image_id'] ) ? (string) wp_get_attachment_image_url( (int) $settings['cover_image_id'], 'large' ) : '';
+$pdf_img_size  = isset( $settings['image_size_pdf'] ) && $settings['image_size_pdf'] ? (string) $settings['image_size_pdf'] : 'medium';
+$margin        = isset( $settings['pdf_margin'] ) ? max( 0, (int) $settings['pdf_margin'] ) : 12;
 
-$page_size = strtoupper( $settings['pdf_page_size'] );
+$page_size = isset( $settings['pdf_page_size'] ) ? strtoupper( (string) $settings['pdf_page_size'] ) : 'A4';
 ?>
 <!doctype html>
 <html>
