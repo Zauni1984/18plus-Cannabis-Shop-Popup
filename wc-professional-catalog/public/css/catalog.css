@@ -108,7 +108,7 @@
 .wcpc-flipbook__pageinfo { font-weight: 600; color: var(--wcpc-color-muted, #777); }
 .wcpc-flipbook__stage { perspective: 2200px; overflow: hidden; }
 .wcpc-flipbook__pages {
-	position: relative; min-height: 720px;
+	position: relative; min-height: clamp(560px, 85vh, 1000px);
 	background: var(--wcpc-color-bg, #fff);
 	border-radius: 6px;
 	box-shadow: 0 18px 60px rgba(0,0,0,.18);
@@ -128,10 +128,25 @@
 .wcpc-flipbook__page.is-active { transform: rotateY(0); opacity: 1; pointer-events: auto; }
 .wcpc-flipbook__page.is-prev   { transform: rotateY(-180deg); opacity: 0; }
 .wcpc-flipbook__page.is-next   { transform: rotateY(0); opacity: 0; }
-.wcpc-flipbook__pageheader { display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid var(--wcpc-color-primary, #1f7a3a); padding-bottom: 10px; margin-bottom: 18px; }
+.wcpc-flipbook__pageheader { flex: 0 0 auto; display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid var(--wcpc-color-primary, #1f7a3a); padding-bottom: 10px; margin-bottom: 18px; }
 .wcpc-flipbook__pagelogo { max-height: 36px; }
 .wcpc-flipbook__pagenum { color: var(--wcpc-color-muted, #777); font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
-.wcpc-flipbook__pagefooter { margin-top: auto; padding-top: 10px; border-top: 1px solid #eee; color: var(--wcpc-color-muted, #777); font-size: 12px; }
+.wcpc-flipbook__pagefooter { flex: 0 0 auto; margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; color: var(--wcpc-color-muted, #777); font-size: 12px; }
+
+/* Make the product grid inside a flipbook page scrollable so all cards
+   stay reachable when the content is taller than the page container. */
+.wcpc-flipbook__page > .wcpc-grid {
+	flex: 1 1 auto;
+	min-height: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+	align-content: start;
+	padding-right: 6px; /* leave room for the scrollbar */
+	scrollbar-width: thin;
+}
+.wcpc-flipbook__page > .wcpc-grid::-webkit-scrollbar { width: 8px; }
+.wcpc-flipbook__page > .wcpc-grid::-webkit-scrollbar-thumb { background: rgba(0,0,0,.18); border-radius: 4px; }
+.wcpc-flipbook__page > .wcpc-cover { flex: 1 1 auto; overflow-y: auto; }
 
 .wcpc-cover { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; text-align: center; gap: 14px; padding: 60px 20px; }
 .wcpc-cover__logo { max-width: 240px; max-height: 140px; }
@@ -146,7 +161,7 @@
 
 @media (max-width: 760px) {
 	.wcpc-flipbook__page { padding: 16px; }
-	.wcpc-flipbook__pages { min-height: 580px; }
+	.wcpc-flipbook__pages { min-height: clamp(480px, 80vh, 800px); }
 }
 
 .wcpc-endpoint-wrap { max-width: 1200px; margin: 30px auto; padding: 0 16px; }

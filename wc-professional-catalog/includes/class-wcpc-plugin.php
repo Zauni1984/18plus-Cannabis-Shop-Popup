@@ -75,9 +75,9 @@ class WCPC_Plugin {
 		// PDF.
 		'pdf_page_size'       => 'A4',
 		'pdf_orientation'     => 'portrait',
-		'pdf_columns'         => 2,
-		'pdf_per_page'        => 4,
-		'pdf_margin'          => 15,
+		'pdf_columns'         => 3,
+		'pdf_per_page'        => 9,
+		'pdf_margin'          => 12,
 		'pdf_show_qr'         => 1,
 
 		// Unit / base price.

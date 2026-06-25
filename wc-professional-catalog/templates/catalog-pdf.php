@@ -56,40 +56,54 @@ body {
 .wcpc-pdf-header img { max-height: 28px; }
 .wcpc-pdf-footer { position: fixed; bottom: -8mm; left: 0; right: 0; text-align: center; color: <?php echo esc_html( $settings['color_muted'] ); ?>; font-size: 9px; }
 
-table.wcpc-pdf-grid { width: 100%; border-collapse: separate; border-spacing: 6px; }
+<?php
+// Scale the card font sizes down a bit for dense layouts (3+ columns) so 9
+// products comfortably fit on A4 portrait.
+$dense          = ( (int) $columns >= 3 );
+$title_size_pdf = $dense ? max( 9, min( 13, (int) $settings['font_size_title'] - 4 ) ) : (int) $settings['font_size_title'];
+$body_size_pdf  = $dense ? max( 8, min( 10, (int) $settings['font_size_body'] ) ) : (int) $settings['font_size_body'];
+$price_size_pdf = $dense ? max( 10, min( 13, (int) $settings['font_size_price'] - 1 ) ) : (int) $settings['font_size_price'];
+$img_max_h      = $dense ? 70 : 110;
+$cell_pad       = $dense ? 5 : 8;
+$cell_gap       = $dense ? 4 : 6;
+?>
+table.wcpc-pdf-grid { width: 100%; border-collapse: separate; border-spacing: <?php echo (int) $cell_gap; ?>px; }
 table.wcpc-pdf-grid td {
 	width: <?php echo (int) ( 100 / max( 1, (int) $columns ) ); ?>%;
 	vertical-align: top;
 	background: #fff;
 	border: 1px solid #e8e8e8;
-	padding: 8px;
+	padding: <?php echo (int) $cell_pad; ?>px;
 }
-.wcpc-pdf-item img { max-width: 100%; max-height: 110px; display: block; margin: 0 auto 6px; }
+.wcpc-pdf-item img { max-width: 100%; max-height: <?php echo (int) $img_max_h; ?>px; display: block; margin: 0 auto 4px; }
 .wcpc-pdf-item .brand {
 	color: <?php echo esc_html( $settings['color_accent'] ); ?>;
-	font-size: 10px;
+	font-size: 9px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
 .wcpc-pdf-item .title {
 	font-family: <?php echo esc_html( $settings['font_family_title'] ); ?>, Helvetica, Arial, sans-serif;
-	font-size: <?php echo (int) $settings['font_size_title']; ?>px;
+	font-size: <?php echo (int) $title_size_pdf; ?>px;
 	font-weight: <?php echo esc_html( $settings['font_weight_title'] ); ?>;
 	font-style: <?php echo esc_html( $settings['font_style_title'] ); ?>;
 	color: <?php echo esc_html( $settings['color_secondary'] ); ?>;
-	margin: 4px 0 4px;
+	margin: 2px 0 3px;
+	line-height: 1.15;
 }
-.wcpc-pdf-item .sku { color: <?php echo esc_html( $settings['color_muted'] ); ?>; font-size: 10px; margin-bottom: 4px; }
-.wcpc-pdf-item .desc { font-size: <?php echo (int) $settings['font_size_body']; ?>px; line-height: 1.35; margin: 4px 0 8px; }
+.wcpc-pdf-item .sku { color: <?php echo esc_html( $settings['color_muted'] ); ?>; font-size: 9px; margin-bottom: 3px; }
+.wcpc-pdf-item .desc { font-size: <?php echo (int) $body_size_pdf; ?>px; line-height: 1.3; margin: 2px 0 4px; }
 .wcpc-pdf-item .price {
 	font-family: <?php echo esc_html( $settings['font_family_price'] ); ?>, Helvetica, Arial, sans-serif;
-	font-size: <?php echo (int) $settings['font_size_price']; ?>px;
+	font-size: <?php echo (int) $price_size_pdf; ?>px;
 	font-weight: <?php echo esc_html( $settings['font_weight_price'] ); ?>;
 	color: <?php echo esc_html( $settings['price_color'] ); ?>;
+	line-height: 1.2;
 }
-.wcpc-pdf-item .price small { color: <?php echo esc_html( $settings['color_muted'] ); ?>; font-weight: 400; }
-.wcpc-pdf-item .unit { font-size: 10px; color: <?php echo esc_html( $settings['color_muted'] ); ?>; margin-top: 2px; }
-.wcpc-pdf-item .buy { display: inline-block; margin-top: 6px; padding: 4px 8px; background: <?php echo esc_html( $settings['color_primary'] ); ?>; color: #fff; text-decoration: none; font-size: 10px; border-radius: 3px; }
+.wcpc-pdf-item .price small { color: <?php echo esc_html( $settings['color_muted'] ); ?>; font-weight: 400; font-size: 9px; }
+.wcpc-pdf-item .unit { font-size: 9px; color: <?php echo esc_html( $settings['color_muted'] ); ?>; margin-top: 1px; }
+.wcpc-pdf-item .buy { display: inline-block; margin-top: 4px; padding: 3px 6px; background: <?php echo esc_html( $settings['color_primary'] ); ?>; color: #fff; text-decoration: none; font-size: 9px; border-radius: 3px; }
+.wcpc-pdf-item a.img-link, .wcpc-pdf-item .title a { text-decoration: none; color: inherit; }
 </style>
 </head>
 <body class="wcpc-pdf">
@@ -143,12 +157,16 @@ table.wcpc-pdf-grid td {
 					<td>
 						<div class="wcpc-pdf-item">
 							<?php if ( $image ) : ?>
-								<img src="<?php echo esc_url( $image ); ?>" alt="" />
+								<a class="img-link" href="<?php echo esc_url( $link ); ?>">
+									<img src="<?php echo esc_url( $image ); ?>" alt="" />
+								</a>
 							<?php endif; ?>
 							<?php if ( $brand ) : ?>
 								<div class="brand"><?php echo esc_html( $brand ); ?></div>
 							<?php endif; ?>
-							<div class="title"><?php echo esc_html( $product->get_name() ); ?></div>
+							<div class="title">
+								<a href="<?php echo esc_url( $link ); ?>"><?php echo esc_html( $product->get_name() ); ?></a>
+							</div>
 							<?php if ( ! empty( $settings['show_sku'] ) && $product->get_sku() ) : ?>
 								<div class="sku">Art.-Nr.: <?php echo esc_html( $product->get_sku() ); ?></div>
 							<?php endif; ?>
