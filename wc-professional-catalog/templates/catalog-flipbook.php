@@ -12,7 +12,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-$logo_url = ! empty( $settings['logo_id'] ) ? wp_get_attachment_image_url( $settings['logo_id'], 'medium' ) : '';
+$logo_url  = ! empty( $settings['logo_id'] ) ? wp_get_attachment_image_url( $settings['logo_id'], 'medium' ) : '';
+$cover_url = ! empty( $settings['cover_image_id'] ) ? wp_get_attachment_image_url( $settings['cover_image_id'], 'large' ) : '';
 ?>
 <section class="wcpc-catalog wcpc-flipbook" aria-label="<?php esc_attr_e( 'Online-Katalog', 'wc-professional-catalog' ); ?>">
 	<div class="wcpc-flipbook__toolbar">
@@ -27,7 +28,10 @@ $logo_url = ! empty( $settings['logo_id'] ) ? wp_get_attachment_image_url( $sett
 		<div class="wcpc-flipbook__pages">
 
 			<article class="wcpc-flipbook__page wcpc-flipbook__page--cover is-active" data-page="0">
-				<div class="wcpc-cover">
+				<div class="wcpc-cover<?php echo $cover_url ? ' wcpc-cover--has-image' : ''; ?>"
+					<?php if ( $cover_url ) : ?>
+						style="background-image:url('<?php echo esc_url( $cover_url ); ?>');"
+					<?php endif; ?>>
 					<?php if ( $logo_url ) : ?>
 						<img class="wcpc-cover__logo" src="<?php echo esc_url( $logo_url ); ?>" alt="" />
 					<?php endif; ?>

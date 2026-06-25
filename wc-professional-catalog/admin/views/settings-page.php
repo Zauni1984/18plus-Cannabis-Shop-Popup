@@ -41,6 +41,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 				case 'design':
 					include WCPC_PLUGIN_DIR . 'admin/views/settings-design.php';
 					break;
+				case 'images':
+					include WCPC_PLUGIN_DIR . 'admin/views/settings-images.php';
+					break;
 				case 'typo':
 					include WCPC_PLUGIN_DIR . 'admin/views/settings-typography.php';
 					break;

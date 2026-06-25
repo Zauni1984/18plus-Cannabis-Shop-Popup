@@ -17,6 +17,12 @@
 /* The standalone print page (loaded via /wc-catalog/print/) uses these all the time. */
 .wcpc-print-body { background: #fff; margin: 20mm; font-family: var(--wcpc-font-body, Helvetica), sans-serif; }
 .wcpc-print-cover { text-align: center; padding: 40px 0 60px; border-bottom: 2px solid var(--wcpc-color-primary, #1f7a3a); margin-bottom: 30px; }
+.wcpc-print-cover--has-image { position: relative; padding: 80px 20px; background-size: cover; background-position: center; color: #fff; }
+.wcpc-print-cover--has-image .wcpc-print-cover__scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.2) 0%, rgba(0,0,0,.6) 100%); }
+.wcpc-print-cover--has-image .wcpc-print-cover__inner { position: relative; z-index: 1; }
+.wcpc-print-cover--has-image .wcpc-print-cover__title { color: #fff; }
+.wcpc-print-cover--has-image .wcpc-print-cover__subtitle,
+.wcpc-print-cover--has-image .wcpc-print-cover__date { color: rgba(255,255,255,.85); }
 .wcpc-print-cover__logo { max-width: 240px; max-height: 140px; margin-bottom: 20px; }
 .wcpc-print-cover__title {
 	font-family: var(--wcpc-font-title, Helvetica), sans-serif;

@@ -41,9 +41,23 @@ class WCPC_Plugin {
 
 		// Branding.
 		'logo_id'             => 0,
+		'cover_image_id'      => 0,
 		'cover_title'         => 'Produktkatalog',
 		'cover_subtitle'      => '',
 		'footer_text'         => '',
+
+		// Images.
+		'image_size_online'   => 'medium',
+		'image_size_pdf'      => 'medium',
+		'image_aspect'        => '4-3',     // 4-3 | 1-1 | 16-9 | natural
+		'image_style'         => 'flat',    // flat | rounded | circle | shadow
+		'image_position'      => 'top',     // top | left
+		'show_gallery'        => 0,
+		'gallery_count'       => 3,
+		'enable_lightbox'     => 1,
+		'pdf_show_gallery'    => 0,
+		'pdf_gallery_count'   => 2,
+		'pdf_image_quality'   => 85,
 
 		// Colors.
 		'color_primary'       => '#1f7a3a',

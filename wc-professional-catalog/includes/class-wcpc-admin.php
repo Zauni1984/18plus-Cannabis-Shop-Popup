@@ -48,6 +48,7 @@ class WCPC_Admin {
 		$tabs     = array(
 			'general'   => __( 'Allgemein', 'wc-professional-catalog' ),
 			'design'    => __( 'Design & Farben', 'wc-professional-catalog' ),
+			'images'    => __( 'Bilder', 'wc-professional-catalog' ),
 			'typo'      => __( 'Typografie', 'wc-professional-catalog' ),
 			'pdf'       => __( 'PDF / Druck', 'wc-professional-catalog' ),
 			'shortcuts' => __( 'Shortcodes', 'wc-professional-catalog' ),
@@ -131,6 +132,9 @@ class WCPC_Admin {
 			'show_unit_price',
 			'enable_buy_link',
 			'pdf_show_qr',
+			'show_gallery',
+			'enable_lightbox',
+			'pdf_show_gallery',
 		);
 	}
 
@@ -151,6 +155,7 @@ class WCPC_Admin {
 			'columns',
 			'products_per_page',
 			'logo_id',
+			'cover_image_id',
 			'font_size_title',
 			'font_size_body',
 			'font_size_price',
@@ -160,6 +165,9 @@ class WCPC_Admin {
 			'reference_volume_ml',
 			'reference_weight_g',
 			'tax_rate_fallback',
+			'gallery_count',
+			'pdf_gallery_count',
+			'pdf_image_quality',
 		);
 	}
 

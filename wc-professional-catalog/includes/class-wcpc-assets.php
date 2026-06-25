@@ -37,6 +37,13 @@ class WCPC_Assets {
 			WCPC_VERSION,
 			true
 		);
+		wp_register_script(
+			'wcpc-lightbox',
+			WCPC_PLUGIN_URL . 'public/js/lightbox.js',
+			array(),
+			WCPC_VERSION,
+			true
+		);
 	}
 
 	public static function enqueue_frontend() {
@@ -44,7 +51,11 @@ class WCPC_Assets {
 		wp_enqueue_style( 'wcpc-print' );
 		wp_enqueue_script( 'wcpc-flipbook' );
 
-		$settings   = WCPC_Plugin::get_settings();
+		$settings = WCPC_Plugin::get_settings();
+		if ( ! empty( $settings['enable_lightbox'] ) ) {
+			wp_enqueue_script( 'wcpc-lightbox' );
+		}
+
 		$inline_css = WCPC_Catalog::build_css_variables( $settings );
 		wp_add_inline_style( 'wcpc-catalog', $inline_css );
 	}
