@@ -43,6 +43,9 @@ class WCIS_Plugin {
 		// Sync-Engine (Hooks für Bestandsänderungen + Cron-Queue).
 		WCIS_Sync_Engine::init();
 
+		// Periodischer Abgleich (Reconciliation).
+		WCIS_Reconcile::init();
+
 		// REST-Routen.
 		add_action( 'rest_api_init', array( 'WCIS_REST_Controller', 'register_routes' ) );
 
@@ -66,6 +69,12 @@ class WCIS_Plugin {
 			'interval' => 60,
 			'display'  => __( 'Jede Minute (WC Inventory Sync)', 'wc-inventory-sync' ),
 		);
+		if ( ! isset( $schedules['wcis_six_hours'] ) ) {
+			$schedules['wcis_six_hours'] = array(
+				'interval' => 6 * HOUR_IN_SECONDS,
+				'display'  => __( 'Alle 6 Stunden (WC Inventory Sync)', 'wc-inventory-sync' ),
+			);
+		}
 		return $schedules;
 	}
 

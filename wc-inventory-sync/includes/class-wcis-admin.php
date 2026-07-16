@@ -50,6 +50,7 @@ class WCIS_Admin {
 		add_action( 'admin_post_wcis_push_config', array( $this, 'handle_push_config' ) );
 		add_action( 'admin_post_wcis_retry_queue', array( $this, 'handle_retry_queue' ) );
 		add_action( 'admin_post_wcis_clear_log', array( $this, 'handle_clear_log' ) );
+		add_action( 'admin_post_wcis_reconcile_now', array( $this, 'handle_reconcile_now' ) );
 
 		add_action( 'wp_ajax_wcis_test_connection', array( $this, 'ajax_test_connection' ) );
 		add_action( 'wp_ajax_wcis_fullsync_start', array( $this, 'ajax_fullsync_start' ) );
@@ -161,11 +162,42 @@ class WCIS_Admin {
 			'log_level'      => ( isset( $_POST['log_level'] ) && 'error' === $_POST['log_level'] ) ? 'error' : 'info',
 			'batch_size'     => isset( $_POST['batch_size'] ) ? max( 1, min( 500, (int) $_POST['batch_size'] ) ) : 50,
 			'http_timeout'   => isset( $_POST['http_timeout'] ) ? max( 5, min( 60, (int) $_POST['http_timeout'] ) ) : 20,
+			'reconcile_interval' => $this->clean_choice( isset( $_POST['reconcile_interval'] ) ? $_POST['reconcile_interval'] : '', array( 'off', 'hourly', 'sixhourly', 'daily' ), 'hourly' ),
+			'reconcile_strategy' => $this->clean_choice( isset( $_POST['reconcile_strategy'] ) ? $_POST['reconcile_strategy'] : '', array( 'lowest', 'local' ), 'lowest' ),
 			'shops'          => $shops,
 		);
 
 		WCIS_Settings::update( $values );
+
+		// Abgleich-Zeitplan an die (ggf. geänderte) Einstellung anpassen.
+		WCIS_Reconcile::reschedule();
+
 		$this->redirect_back( 'saved' );
+	}
+
+	/**
+	 * Validiert eine Auswahl gegen eine Whitelist.
+	 *
+	 * @param string $value    Wert.
+	 * @param array  $allowed  Erlaubte Werte.
+	 * @param string $fallback Standard.
+	 * @return string
+	 */
+	protected function clean_choice( $value, array $allowed, $fallback ) {
+		$value = sanitize_key( wp_unslash( $value ) );
+		return in_array( $value, $allowed, true ) ? $value : $fallback;
+	}
+
+	/**
+	 * Führt den Abgleich sofort aus.
+	 */
+	public function handle_reconcile_now() {
+		$this->require_cap();
+		check_admin_referer( 'wcis_reconcile_now' );
+
+		$stats = WCIS_Reconcile::run();
+		set_transient( 'wcis_reconcile_result', $stats, 120 );
+		$this->redirect_back( 'reconciled' );
 	}
 
 	/**

@@ -21,6 +21,7 @@ Das Plugin liegt im Ordner [`wc-inventory-sync/`](wc-inventory-sync).
 | Zuordnung per SKU | Matching ausschließlich über **SKU** – funktioniert auch für Variationen |
 | Einfache + variable Produkte | Einfache Produkte und Variationen (eigene SKUs) werden erfasst |
 | Nur in einem Shop vorhandene Produkte | Werden beim Empfänger **ignoriert** (SKU nicht gefunden → übersprungen) |
+| Nachreichen bei kurzem Ausfall | **Retry-Queue** (Minuten-Cron) + **periodischer Abgleich** (stündlich/6h/täglich), der Drift erkennt und Korrekturen nachreicht |
 
 ## Funktionsweise
 
@@ -67,6 +68,23 @@ Das Plugin wird auf **jedem** beteiligten Shop installiert:
    übrigen Shops.
 
 Ab jetzt läuft die laufende Synchronisation automatisch bei jedem Verkauf.
+
+## Automatischer Abgleich (Reconciliation)
+
+Über die Retry-Queue hinaus prüft der **Hauptshop** periodisch (einstellbar: stündlich /
+alle 6 h / täglich) die Bestände aller Shops und **reicht Korrekturen nach**, falls ein Shop
+zwischenzeitlich nicht erreichbar war und eine Änderung verpasst hat.
+
+- **Ablauf:** Der Hauptshop ruft von jedem Shop den Bestand ab (`GET /inventory`, per SKU),
+  vergleicht und verteilt Korrekturen. Nicht erreichbare Shops landen in der Retry-Queue und
+  werden später automatisch nachgezogen.
+- **Konflikt-Strategie:**
+  - **Niedrigster Bestand gewinnt** (Standard) – schützt vor Überverkauf: verpasste Verkäufe
+    werden sicher nachgezogen.
+  - **Hauptshop maßgeblich** – der Wert des Hauptshops wird verteilt.
+- **Manuell:** Button „Jetzt abgleichen" unter *Aktionen* startet den Abgleich sofort.
+- **Voraussetzung:** aktiver WordPress-Cron (WP-Cron). Nach einem **Wareneingang/Restock**
+  im Hauptshop die „Voll-Synchronisation" nutzen, um erhöhte Bestände zu verteilen.
 
 ## Hauptshop wechseln
 

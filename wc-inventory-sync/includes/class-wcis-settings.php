@@ -45,6 +45,11 @@ class WCIS_Settings {
 			'log_level'      => 'info', // info | error
 			'batch_size'     => 50,    // Artikel pro Sync-Batch (1–500).
 			'http_timeout'   => 20,    // Timeout je Anfrage in Sekunden (5–60).
+			// Periodischer Abgleich: off | hourly | sixhourly | daily.
+			'reconcile_interval' => 'hourly',
+			// Strategie: 'lowest' (niedrigster Bestand gewinnt, kein Überverkauf)
+			// oder 'local' (Hauptshop ist maßgeblich).
+			'reconcile_strategy' => 'lowest',
 		);
 	}
 

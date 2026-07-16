@@ -55,6 +55,9 @@ class WCIS_Install {
 			wp_schedule_event( time() + 3600, 'daily', 'wcis_daily_cleanup' );
 		}
 
+		// Cron: periodischer Abgleich gemäß Einstellungen.
+		WCIS_Reconcile::reschedule();
+
 		flush_rewrite_rules();
 	}
 
@@ -64,6 +67,7 @@ class WCIS_Install {
 	public static function deactivate() {
 		wp_clear_scheduled_hook( 'wcis_process_queue' );
 		wp_clear_scheduled_hook( 'wcis_daily_cleanup' );
+		wp_clear_scheduled_hook( 'wcis_reconcile' );
 		flush_rewrite_rules();
 	}
 

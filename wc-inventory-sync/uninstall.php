@@ -17,10 +17,12 @@ delete_option( 'wcis_fullsync_job' );
 delete_transient( 'wcis_fullsync_result' );
 delete_transient( 'wcis_pushconfig_result' );
 delete_transient( 'wcis_fullsync_items' );
+delete_transient( 'wcis_reconcile_result' );
 
 // Cron-Events entfernen.
 wp_clear_scheduled_hook( 'wcis_process_queue' );
 wp_clear_scheduled_hook( 'wcis_daily_cleanup' );
+wp_clear_scheduled_hook( 'wcis_reconcile' );
 
 // Tabellen entfernen.
 global $wpdb;

@@ -49,6 +49,7 @@ foreach ( (array) $s['shops'] as $wcis_shop ) {
 		'config_pushed'  => array( 'updated', __( 'Konfiguration an die Shops verteilt.', 'wc-inventory-sync' ) ),
 		'queue_retried'  => array( 'updated', __( 'Warteschlange wird erneut verarbeitet.', 'wc-inventory-sync' ) ),
 		'log_cleared'    => array( 'updated', __( 'Protokoll geleert.', 'wc-inventory-sync' ) ),
+		'reconciled'     => array( 'updated', __( 'Abgleich ausgeführt.', 'wc-inventory-sync' ) ),
 	);
 	if ( isset( $wcis_messages[ $wcis_notice ] ) ) {
 		$wcis_m = $wcis_messages[ $wcis_notice ];
@@ -79,6 +80,24 @@ foreach ( (array) $s['shops'] as $wcis_shop ) {
 				);
 			}
 		}
+		if ( 'reconciled' === $wcis_notice ) {
+			$wcis_r = get_transient( 'wcis_reconcile_result' );
+			if ( is_array( $wcis_r ) ) {
+				printf(
+					'<div class="notice notice-info"><p>%s</p></div>',
+					esc_html( sprintf(
+						/* translators: 1: peers, 2: skus, 3: drift, 4: corrected, 5: queued, 6: unreachable */
+						__( 'Abgleich: %1$d Shop(s) geprüft, %2$d SKUs, %3$d Abweichungen, %4$d korrigiert, %5$d nachzureichen (Warteschlange), %6$d nicht erreichbar.', 'wc-inventory-sync' ),
+						$wcis_r['checked_peers'],
+						$wcis_r['skus_checked'],
+						$wcis_r['drift'],
+						$wcis_r['corrected'],
+						$wcis_r['queued'],
+						$wcis_r['unreachable']
+					) )
+				);
+			}
+		}
 	}
 	?>
 
@@ -93,6 +112,19 @@ foreach ( (array) $s['shops'] as $wcis_shop ) {
 		<span class="wcis-badge <?php echo $wcis_counts['failed'] > 0 ? 'wcis-off' : ''; ?>">
 			<?php echo esc_html( sprintf( __( 'Warteschlange: %1$d offen, %2$d fehlgeschlagen', 'wc-inventory-sync' ), $wcis_counts['pending'], $wcis_counts['failed'] ) ); ?>
 		</span>
+		<?php
+		$wcis_next = wp_next_scheduled( 'wcis_reconcile' );
+		if ( 'off' === $s['reconcile_interval'] || ! $wcis_next ) {
+			$wcis_recon_txt = __( 'Abgleich: aus', 'wc-inventory-sync' );
+		} else {
+			$wcis_recon_txt = sprintf(
+				/* translators: %s: human time diff */
+				__( 'Nächster Abgleich: in %s', 'wc-inventory-sync' ),
+				human_time_diff( time(), $wcis_next )
+			);
+		}
+		?>
+		<span class="wcis-badge"><?php echo esc_html( $wcis_recon_txt ); ?></span>
 	</div>
 
 	<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
@@ -219,6 +251,41 @@ foreach ( (array) $s['shops'] as $wcis_shop ) {
 			</tr>
 		</table>
 
+		<h2 class="title"><?php esc_html_e( '5. Automatischer Abgleich', 'wc-inventory-sync' ); ?></h2>
+		<p class="description">
+			<?php esc_html_e( 'Periodischer Konsistenz-Check: erkennt Bestands-Abweichungen zwischen den Shops und reicht Korrekturen nach – z. B. wenn ein Shop kurz nicht erreichbar war. Wird vom Hauptshop koordiniert.', 'wc-inventory-sync' ); ?>
+		</p>
+		<table class="form-table" role="presentation">
+			<tr>
+				<th scope="row"><label for="wcis-reconcile-interval"><?php esc_html_e( 'Abgleich-Intervall', 'wc-inventory-sync' ); ?></label></th>
+				<td>
+					<select name="reconcile_interval" id="wcis-reconcile-interval">
+						<option value="off" <?php selected( $s['reconcile_interval'], 'off' ); ?>><?php esc_html_e( 'Aus', 'wc-inventory-sync' ); ?></option>
+						<option value="hourly" <?php selected( $s['reconcile_interval'], 'hourly' ); ?>><?php esc_html_e( 'Stündlich', 'wc-inventory-sync' ); ?></option>
+						<option value="sixhourly" <?php selected( $s['reconcile_interval'], 'sixhourly' ); ?>><?php esc_html_e( 'Alle 6 Stunden', 'wc-inventory-sync' ); ?></option>
+						<option value="daily" <?php selected( $s['reconcile_interval'], 'daily' ); ?>><?php esc_html_e( 'Täglich', 'wc-inventory-sync' ); ?></option>
+					</select>
+					<p class="description"><?php esc_html_e( 'Läuft nur auf dem Hauptshop. Voraussetzung: WordPress-Cron (WP-Cron) ist aktiv.', 'wc-inventory-sync' ); ?></p>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row"><?php esc_html_e( 'Konflikt-Strategie', 'wc-inventory-sync' ); ?></th>
+				<td>
+					<fieldset>
+						<label>
+							<input type="radio" name="reconcile_strategy" value="lowest" <?php checked( $s['reconcile_strategy'], 'lowest' ); ?> />
+							<?php esc_html_e( 'Niedrigster Bestand gewinnt (empfohlen – schützt vor Überverkauf)', 'wc-inventory-sync' ); ?>
+						</label><br />
+						<label>
+							<input type="radio" name="reconcile_strategy" value="local" <?php checked( $s['reconcile_strategy'], 'local' ); ?> />
+							<?php esc_html_e( 'Hauptshop ist maßgeblich (Wert des Hauptshops wird verteilt)', 'wc-inventory-sync' ); ?>
+						</label>
+						<p class="description"><?php esc_html_e( 'Bei „Niedrigster gewinnt" werden verpasste Verkäufe sicher nachgezogen. Nach einem Wareneingang/Restock im Hauptshop nutze „Voll-Synchronisation", um erhöhte Bestände zu verteilen.', 'wc-inventory-sync' ); ?></p>
+					</fieldset>
+				</td>
+			</tr>
+		</table>
+
 		<p class="submit">
 			<button type="submit" class="button button-primary"><?php esc_html_e( 'Einstellungen speichern', 'wc-inventory-sync' ); ?></button>
 		</p>
@@ -226,7 +293,7 @@ foreach ( (array) $s['shops'] as $wcis_shop ) {
 
 	<hr />
 
-	<h2 class="title"><?php esc_html_e( '5. Aktionen', 'wc-inventory-sync' ); ?></h2>
+	<h2 class="title"><?php esc_html_e( '6. Aktionen', 'wc-inventory-sync' ); ?></h2>
 	<div class="wcis-actions">
 		<?php
 		$wcis_job     = WCIS_Fullsync::state();
@@ -272,6 +339,15 @@ foreach ( (array) $s['shops'] as $wcis_shop ) {
 		</form>
 
 		<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" class="wcis-action-form">
+			<input type="hidden" name="action" value="wcis_reconcile_now" />
+			<?php wp_nonce_field( 'wcis_reconcile_now' ); ?>
+			<button type="submit" class="button button-secondary">
+				<?php esc_html_e( 'Jetzt abgleichen', 'wc-inventory-sync' ); ?>
+			</button>
+			<span class="description"><?php esc_html_e( 'Vergleicht die Bestände mit allen Shops und korrigiert Abweichungen sofort. Nicht erreichbare Shops werden in die Warteschlange gelegt.', 'wc-inventory-sync' ); ?></span>
+		</form>
+
+		<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" class="wcis-action-form">
 			<input type="hidden" name="action" value="wcis_retry_queue" />
 			<?php wp_nonce_field( 'wcis_retry_queue' ); ?>
 			<button type="submit" class="button">
@@ -280,7 +356,7 @@ foreach ( (array) $s['shops'] as $wcis_shop ) {
 		</form>
 	</div>
 
-	<h2 class="title"><?php esc_html_e( '6. Protokoll', 'wc-inventory-sync' ); ?></h2>
+	<h2 class="title"><?php esc_html_e( '7. Protokoll', 'wc-inventory-sync' ); ?></h2>
 	<?php $wcis_logs = WCIS_Logger::recent( 60 ); ?>
 	<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" style="margin-bottom:8px;">
 		<input type="hidden" name="action" value="wcis_clear_log" />

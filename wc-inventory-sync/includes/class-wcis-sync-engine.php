@@ -359,6 +359,34 @@ class WCIS_Sync_Engine {
 	}
 
 	/**
+	 * Setzt den lokalen Bestand eines Produkts per SKU – ohne erneutes Broadcasten
+	 * (für den Abgleich, wenn dieser Shop selbst korrigiert werden muss).
+	 *
+	 * @param string $sku   SKU.
+	 * @param int    $stock Neuer Bestand.
+	 * @return bool Erfolg.
+	 */
+	public static function set_local_stock( $sku, $stock ) {
+		$product_id = wc_get_product_id_by_sku( $sku );
+		if ( ! $product_id ) {
+			return false;
+		}
+		$product = wc_get_product( $product_id );
+		if ( ! $product ) {
+			return false;
+		}
+
+		self::$suppress = true;
+		$product->set_manage_stock( true );
+		$product->set_stock_quantity( wc_stock_amount( $stock ) );
+		$product->update_meta_data( '_wcis_synced_at', time() );
+		$product->save();
+		self::$suppress = false;
+
+		return true;
+	}
+
+	/**
 	 * Sammelt alle synchronisierbaren Artikel dieses Shops (einfache Produkte
 	 * und Variationen mit SKU).
 	 *

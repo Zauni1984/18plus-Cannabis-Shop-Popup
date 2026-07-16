@@ -6,7 +6,7 @@ Tested up to: 6.6
 Requires PHP: 7.4
 WC requires at least: 5.0
 WC tested up to: 9.9
-Stable tag: 1.1.0
+Stable tag: 1.2.0
 License: MIT
 License URI: https://opensource.org/licenses/MIT
 
@@ -37,6 +37,12 @@ Shops übertragen (Zuordnung per SKU).
 5. Verbindung testen und anschließend im Hauptshop die erste Voll-Synchronisation starten.
 
 == Changelog ==
+
+= 1.2.0 =
+* Automatischer Abgleich (Reconciliation): periodischer Konsistenz-Check (stündlich/6h/täglich), der Bestands-Abweichungen zwischen den Shops erkennt und Korrekturen nachreicht – ideal, wenn ein Shop kurz nicht erreichbar war.
+* Konflikt-Strategie wählbar: „Niedrigster Bestand gewinnt" (schützt vor Überverkauf) oder „Hauptshop maßgeblich".
+* Nicht erreichbare Shops beim Abgleich landen in der Retry-Queue und werden später automatisch nachgezogen.
+* Manueller „Jetzt abgleichen"-Button und Statusanzeige des nächsten Abgleichs.
 
 = 1.1.0 =
 * Voll-Synchronisation als abbruchsicherer Hintergrund-Job mit Prozent-Fortschrittsbalken (Live-Anzeige, kein PHP-Timeout).
