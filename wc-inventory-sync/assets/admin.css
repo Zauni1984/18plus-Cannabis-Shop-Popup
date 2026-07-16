@@ -1,0 +1,43 @@
+/* WC Inventory Sync – Admin-Styles */
+.wcis-wrap .title { margin-top: 2em; }
+
+.wcis-status-bar {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin: 16px 0 24px;
+}
+.wcis-badge {
+	display: inline-block;
+	padding: 4px 10px;
+	border-radius: 12px;
+	background: #f0f0f1;
+	border: 1px solid #dcdcde;
+	font-size: 12px;
+	font-weight: 600;
+	color: #1d2327;
+}
+.wcis-badge.wcis-on     { background: #edfaef; border-color: #a7e0b0; color: #1a7f37; }
+.wcis-badge.wcis-off    { background: #fcf0f1; border-color: #f0a8ad; color: #b32d2e; }
+.wcis-badge.wcis-master { background: #eef4ff; border-color: #a7c4e0; color: #135e96; }
+.wcis-badge.wcis-spoke  { background: #f6f7f7; border-color: #dcdcde; color: #50575e; }
+
+.wcis-shops { max-width: 900px; margin-top: 8px; }
+.wcis-shops th, .wcis-shops td { padding: 8px 10px; vertical-align: middle; }
+.wcis-shops .wcis-col-action { width: 200px; }
+.wcis-shops .regular-text { width: 100%; }
+
+.wcis-test-result { display: inline-block; margin-left: 6px; font-size: 12px; }
+.wcis-test-result.ok  { color: #1a7f37; }
+.wcis-test-result.err { color: #b32d2e; }
+
+.button-link-delete.wcis-remove-shop { color: #b32d2e; cursor: pointer; }
+
+.wcis-actions { display: flex; flex-direction: column; gap: 12px; margin: 12px 0 24px; }
+.wcis-action-form { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.wcis-action-form .description { max-width: 640px; }
+
+.wcis-log { max-width: 1100px; }
+.wcis-lvl { display: inline-block; padding: 1px 6px; border-radius: 8px; font-size: 11px; font-weight: 600; }
+.wcis-lvl-info  { background: #eef4ff; color: #135e96; }
+.wcis-lvl-error { background: #fcf0f1; color: #b32d2e; }

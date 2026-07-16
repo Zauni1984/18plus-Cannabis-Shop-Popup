@@ -1,0 +1,112 @@
+# WC Inventory Sync – Lagerbestand-Synchronisation für mehrere WooCommerce-Shops
+
+Ein WordPress/WooCommerce-Plugin, das die **Lagerbestände mehrerer Shops in nahezu Echtzeit
+synchronisiert**. Verkauft ein Shop einen Artikel, wird der neue Bestand sofort an alle
+übrigen Shops übertragen.
+
+> Beispiel: Shop A hat 5 Stück von Produkt B. Shop A verkauft 2 → alle verbundenen Shops
+> zeigen kurz darauf **3** verbleibende Stück an.
+
+Das Plugin liegt im Ordner [`wc-inventory-sync/`](wc-inventory-sync).
+
+## Kernfunktionen
+
+| Anforderung | Umsetzung |
+|---|---|
+| Shops über API/gängige Methode koppeln | WooCommerce-/eigene **REST-API** mit **HMAC-SHA256-signierten** Anfragen und gemeinsamem Netzwerk-Secret |
+| Hauptshop wählbar | **Master-Auswahl** im Backend; startet die erste Voll-Synchronisation |
+| 3 oder mehr Shops | Beliebig viele Shops im „Hub & Spoke"-Verbund |
+| Hauptshop später änderbar | Master jederzeit umstellbar + „Konfiguration an alle Shops verteilen" |
+| Echtzeit nach Verkauf | Push bei jeder Bestandsänderung (Hook `woocommerce_*_set_stock`) am Request-Ende via `fastcgi_finish_request()` |
+| Zuordnung per SKU | Matching ausschließlich über **SKU** – funktioniert auch für Variationen |
+| Einfache + variable Produkte | Einfache Produkte und Variationen (eigene SKUs) werden erfasst |
+| Nur in einem Shop vorhandene Produkte | Werden beim Empfänger **ignoriert** (SKU nicht gefunden → übersprungen) |
+
+## Funktionsweise
+
+```
+                 ┌──────────────┐   Bestellung: 5 → 3
+                 │   Shop A      │──────────────┐
+                 │ (Hauptshop)   │              │  signierter POST /wp-json/wc-inventory-sync/v1/stock
+                 └──────────────┘              │  { sku: "B", stock: 3 }
+                        ▲                        ▼
+        signierter Push │              ┌──────────────┐   ┌──────────────┐
+                        └──────────────│   Shop B      │   │   Shop C      │
+                                       │ setzt B = 3   │   │ setzt B = 3   │
+                                       └──────────────┘   └──────────────┘
+```
+
+1. **Erkennung:** Ändert sich ein Bestand (Verkauf, Storno, manuelle Anpassung), feuert der
+   WooCommerce-Hook `woocommerce_product_set_stock` / `woocommerce_variation_set_stock`.
+2. **Versand:** Am Ende der Anfrage (nach Auslieferung der Seite an den Kunden) sendet das
+   Plugin den **absoluten neuen Bestand** signiert an alle Peer-Shops.
+3. **Anwendung:** Der Empfänger sucht das Produkt per **SKU**, setzt den Bestand und
+   verhindert per Sperre eine Rück-Synchronisation (keine Endlosschleife).
+4. **Zuverlässigkeit:** Fehlgeschlagene Zustellungen landen in einer **Retry-Queue**, die
+   ein Minuten-Cron erneut abarbeitet.
+
+Es werden **absolute Werte** übertragen (nicht Deltas) – dadurch ist das System
+selbstheilend: geht eine Nachricht verloren, korrigiert die nächste Änderung den Bestand.
+
+## Installation
+
+Das Plugin wird auf **jedem** beteiligten Shop installiert:
+
+1. Ordner `wc-inventory-sync/` nach `wp-content/plugins/` kopieren.
+2. Plugin unter *Plugins* aktivieren (legt DB-Tabellen und Cron-Jobs an).
+3. **Hauptshop einrichten:** *WooCommerce → Lagerbestand-Sync*
+   - „Netzwerk-Secret" **neu erzeugen** und kopieren.
+   - Alle Shop-URLs unter „Verbundene Shops" eintragen.
+   - Unter „Hauptshop (Master)" diesen Shop wählen.
+   - Speichern.
+4. **Weitere Shops einrichten:** dasselbe Netzwerk-Secret eintragen, dieselben Shop-URLs
+   hinterlegen, denselben Hauptshop wählen. (Alternativ im Hauptshop „Konfiguration an alle
+   Shops verteilen" nutzen.)
+5. Pro Shop **„Verbindung testen"** klicken – es sollte „Verbunden mit …" erscheinen.
+6. Im Hauptshop **„Erste Voll-Synchronisation starten"** – überträgt alle Bestände an die
+   übrigen Shops.
+
+Ab jetzt läuft die laufende Synchronisation automatisch bei jedem Verkauf.
+
+## Hauptshop wechseln
+
+1. In einem Shop unter „Hauptshop (Master)" den neuen Shop auswählen und speichern.
+2. „Konfiguration an alle Shops verteilen" klicken – die Auswahl wird an alle Peers übernommen.
+3. Optional im neuen Hauptshop „Erste Voll-Synchronisation starten", um ihn als Quelle zu setzen.
+
+## Voraussetzungen
+
+- WordPress 5.8+, WooCommerce 5.0+, PHP 7.4+
+- Alle Produkte, die synchronisiert werden sollen, benötigen in **allen** Shops **dieselbe SKU**.
+- Die Shops müssen sich gegenseitig per HTTPS über die REST-API erreichen können.
+
+## Sicherheit
+
+- Jede Anfrage wird mit **HMAC-SHA256** über das gemeinsame Netzwerk-Secret signiert.
+- Zeitstempel-Prüfung (±5 Min.) als Replay-Schutz.
+- REST-Endpunkte lehnen Anfragen ohne gültige Signatur ab (HTTP 401).
+
+## Dateien
+
+```
+wc-inventory-sync/
+├── wc-inventory-sync.php          # Bootstrap, Konstanten, HPOS-Kompatibilität
+├── uninstall.php                  # Aufräumen bei Deinstallation
+├── readme.txt                     # WordPress-Plugin-Readme
+├── includes/
+│   ├── class-wcis-plugin.php      # Zentrale Klasse (Wiring)
+│   ├── class-wcis-install.php     # Tabellen & Cron
+│   ├── class-wcis-settings.php    # Optionen & Helfer
+│   ├── class-wcis-sync-engine.php # Kern: Erkennung, Verteilung, Anwendung
+│   ├── class-wcis-client.php      # Signierte HTTP-Requests
+│   ├── class-wcis-rest-controller.php # REST-Endpunkte (Empfang)
+│   ├── class-wcis-queue.php       # Retry-Queue
+│   ├── class-wcis-logger.php      # Protokoll
+│   ├── class-wcis-admin.php       # Backend & AJAX
+│   └── views/settings-page.php    # Einstellungsseite
+└── assets/                        # admin.css, admin.js
+```
+
+## Lizenz
+
+MIT – siehe [LICENSE](LICENSE).
