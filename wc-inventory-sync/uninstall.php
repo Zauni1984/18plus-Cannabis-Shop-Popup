@@ -11,10 +11,12 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 
 // Optionen entfernen.
 delete_option( 'wcis_settings' );
+delete_option( 'wcis_fullsync_job' );
 
 // Transients entfernen.
 delete_transient( 'wcis_fullsync_result' );
 delete_transient( 'wcis_pushconfig_result' );
+delete_transient( 'wcis_fullsync_items' );
 
 // Cron-Events entfernen.
 wp_clear_scheduled_hook( 'wcis_process_queue' );

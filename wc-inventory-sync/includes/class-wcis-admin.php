@@ -52,6 +52,9 @@ class WCIS_Admin {
 		add_action( 'admin_post_wcis_clear_log', array( $this, 'handle_clear_log' ) );
 
 		add_action( 'wp_ajax_wcis_test_connection', array( $this, 'ajax_test_connection' ) );
+		add_action( 'wp_ajax_wcis_fullsync_start', array( $this, 'ajax_fullsync_start' ) );
+		add_action( 'wp_ajax_wcis_fullsync_tick', array( $this, 'ajax_fullsync_tick' ) );
+		add_action( 'wp_ajax_wcis_fullsync_cancel', array( $this, 'ajax_fullsync_cancel' ) );
 	}
 
 	/**
@@ -86,8 +89,17 @@ class WCIS_Admin {
 				'ajaxUrl' => admin_url( 'admin-ajax.php' ),
 				'nonce'   => wp_create_nonce( 'wcis_ajax' ),
 				'i18n'    => array(
-					'testing'   => __( 'Teste …', 'wc-inventory-sync' ),
+					'testing'     => __( 'Teste …', 'wc-inventory-sync' ),
 					'confirmFull' => __( 'Voll-Synchronisation vom Hauptshop an alle Shops starten? Dies überschreibt die Bestände der anderen Shops mit den Werten dieses Shops (Zuordnung per SKU).', 'wc-inventory-sync' ),
+					'starting'    => __( 'Starte …', 'wc-inventory-sync' ),
+					'syncing'     => __( 'Synchronisiere', 'wc-inventory-sync' ),
+					'toShop'      => __( 'an', 'wc-inventory-sync' ),
+					'done'        => __( 'Fertig', 'wc-inventory-sync' ),
+					'cancelled'   => __( 'Abgebrochen', 'wc-inventory-sync' ),
+					'itemsUnit'   => __( 'Artikel', 'wc-inventory-sync' ),
+					'batchesSent' => __( 'Batches gesendet', 'wc-inventory-sync' ),
+					'failedUnit'  => __( 'fehlgeschlagen', 'wc-inventory-sync' ),
+					'genericError' => __( 'Fehler', 'wc-inventory-sync' ),
 				),
 			)
 		);
@@ -147,6 +159,8 @@ class WCIS_Admin {
 			'this_shop_url'  => isset( $_POST['this_shop_url'] ) ? untrailingslashit( esc_url_raw( wp_unslash( $_POST['this_shop_url'] ) ) ) : home_url(),
 			'master_url'     => isset( $_POST['master_url'] ) ? untrailingslashit( esc_url_raw( wp_unslash( $_POST['master_url'] ) ) ) : '',
 			'log_level'      => ( isset( $_POST['log_level'] ) && 'error' === $_POST['log_level'] ) ? 'error' : 'info',
+			'batch_size'     => isset( $_POST['batch_size'] ) ? max( 1, min( 500, (int) $_POST['batch_size'] ) ) : 50,
+			'http_timeout'   => isset( $_POST['http_timeout'] ) ? max( 5, min( 60, (int) $_POST['http_timeout'] ) ) : 20,
 			'shops'          => $shops,
 		);
 
@@ -258,6 +272,51 @@ class WCIS_Admin {
 				),
 			)
 		);
+	}
+
+	/**
+	 * Gemeinsame Prüfung für die Fullsync-AJAX-Endpunkte.
+	 */
+	protected function check_ajax() {
+		check_ajax_referer( 'wcis_ajax', 'nonce' );
+		if ( ! current_user_can( 'manage_woocommerce' ) ) {
+			wp_send_json_error( array( 'message' => __( 'Keine Berechtigung.', 'wc-inventory-sync' ) ) );
+		}
+	}
+
+	/**
+	 * AJAX: startet den Voll-Sync-Job.
+	 */
+	public function ajax_fullsync_start() {
+		$this->check_ajax();
+		$batch = isset( $_POST['batch_size'] ) ? (int) $_POST['batch_size'] : 0;
+
+		$job = WCIS_Fullsync::start( $batch );
+		if ( is_wp_error( $job ) ) {
+			wp_send_json_error( array( 'message' => $job->get_error_message() ) );
+		}
+		wp_send_json_success( WCIS_Fullsync::to_response( $job ) );
+	}
+
+	/**
+	 * AJAX: verarbeitet den nächsten Abschnitt des Jobs.
+	 */
+	public function ajax_fullsync_tick() {
+		$this->check_ajax();
+		$job = WCIS_Fullsync::tick();
+		if ( is_wp_error( $job ) ) {
+			wp_send_json_error( array( 'message' => $job->get_error_message() ) );
+		}
+		wp_send_json_success( WCIS_Fullsync::to_response( $job ) );
+	}
+
+	/**
+	 * AJAX: bricht den laufenden Job ab.
+	 */
+	public function ajax_fullsync_cancel() {
+		$this->check_ajax();
+		WCIS_Fullsync::cancel();
+		wp_send_json_success( WCIS_Fullsync::to_response( WCIS_Fullsync::state() ) );
 	}
 
 	// -------------------------------------------------------------------------

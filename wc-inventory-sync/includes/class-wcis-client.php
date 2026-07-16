@@ -15,6 +15,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 class WCIS_Client {
 
 	/**
+	 * Liefert das konfigurierte HTTP-Timeout (5–60 Sekunden).
+	 *
+	 * @return int
+	 */
+	public static function timeout() {
+		$t = (int) WCIS_Settings::get( 'http_timeout', 20 );
+		return max( 5, min( 60, $t ) );
+	}
+
+	/**
 	 * Erzeugt die Signatur-Header für einen Request.
 	 *
 	 * Signatur = HMAC-SHA256( secret, timestamp . "." . body ).
@@ -81,10 +91,10 @@ class WCIS_Client {
 		$response = wp_remote_post(
 			$url,
 			array(
-				'headers'  => self::sign_headers( $body ),
-				'body'     => $body,
-				'timeout'  => $blocking ? 15 : 0.01,
-				'blocking' => $blocking,
+				'headers'   => self::sign_headers( $body ),
+				'body'      => $body,
+				'timeout'   => $blocking ? self::timeout() : 0.01,
+				'blocking'  => $blocking,
 				'sslverify' => apply_filters( 'wcis_sslverify', true ),
 			)
 		);
@@ -114,7 +124,7 @@ class WCIS_Client {
 			$url,
 			array(
 				'headers'   => self::sign_headers( $body ),
-				'timeout'   => 15,
+				'timeout'   => self::timeout(),
 				'sslverify' => apply_filters( 'wcis_sslverify', true ),
 			)
 		);

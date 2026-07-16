@@ -6,7 +6,7 @@ Tested up to: 6.6
 Requires PHP: 7.4
 WC requires at least: 5.0
 WC tested up to: 9.9
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 License: MIT
 License URI: https://opensource.org/licenses/MIT
 
@@ -37,6 +37,11 @@ Shops übertragen (Zuordnung per SKU).
 5. Verbindung testen und anschließend im Hauptshop die erste Voll-Synchronisation starten.
 
 == Changelog ==
+
+= 1.1.0 =
+* Voll-Synchronisation als abbruchsicherer Hintergrund-Job mit Prozent-Fortschrittsbalken (Live-Anzeige, kein PHP-Timeout).
+* Einstellbare Batchgröße (1–500) und HTTP-Timeout (5–60 s).
+* Nicht erreichbare Shops werden beim Voll-Sync übersprungen (kein Blockieren).
 
 = 1.0.0 =
 * Erste Version.

@@ -37,6 +37,31 @@
 .wcis-action-form { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
 .wcis-action-form .description { max-width: 640px; }
 
+.wcis-fullsync { margin-bottom: 8px; }
+.wcis-progress-wrap { max-width: 640px; margin-top: 12px; }
+.wcis-progress-bar {
+	width: 100%;
+	height: 24px;
+	background: #f0f0f1;
+	border: 1px solid #dcdcde;
+	border-radius: 12px;
+	overflow: hidden;
+}
+.wcis-progress-fill {
+	height: 100%;
+	width: 0;
+	background: linear-gradient( 90deg, #2271b1, #135e96 );
+	color: #fff;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 24px;
+	text-align: center;
+	transition: width .3s ease;
+	min-width: 2em;
+	white-space: nowrap;
+}
+.wcis-progress-text { margin: 8px 0 0; font-size: 13px; color: #50575e; }
+
 .wcis-log { max-width: 1100px; }
 .wcis-lvl { display: inline-block; padding: 1px 6px; border-radius: 8px; font-size: 11px; font-weight: 600; }
 .wcis-lvl-info  { background: #eef4ff; color: #135e96; }

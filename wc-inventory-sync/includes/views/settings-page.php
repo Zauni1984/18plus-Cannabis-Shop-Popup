@@ -128,6 +128,21 @@ foreach ( (array) $s['shops'] as $wcis_shop ) {
 					</select>
 				</td>
 			</tr>
+			<tr>
+				<th scope="row"><label for="wcis-batch-size"><?php esc_html_e( 'Batchgröße', 'wc-inventory-sync' ); ?></label></th>
+				<td>
+					<input type="number" id="wcis-batch-size" name="batch_size" class="small-text" min="1" max="500" value="<?php echo esc_attr( (int) $s['batch_size'] ); ?>" />
+					<?php esc_html_e( 'Artikel pro Sync-Anfrage (1–500).', 'wc-inventory-sync' ); ?>
+					<p class="description"><?php esc_html_e( 'Kleiner = schonender/timeout-sicherer, größer = schneller. Empfehlung: 50–100.', 'wc-inventory-sync' ); ?></p>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row"><label for="wcis-http-timeout"><?php esc_html_e( 'HTTP-Timeout', 'wc-inventory-sync' ); ?></label></th>
+				<td>
+					<input type="number" id="wcis-http-timeout" name="http_timeout" class="small-text" min="5" max="60" value="<?php echo esc_attr( (int) $s['http_timeout'] ); ?>" />
+					<?php esc_html_e( 'Sekunden je Anfrage (5–60).', 'wc-inventory-sync' ); ?>
+				</td>
+			</tr>
 		</table>
 
 		<h2 class="title"><?php esc_html_e( '2. Netzwerk-Verbindung', 'wc-inventory-sync' ); ?></h2>
@@ -213,14 +228,39 @@ foreach ( (array) $s['shops'] as $wcis_shop ) {
 
 	<h2 class="title"><?php esc_html_e( '5. Aktionen', 'wc-inventory-sync' ); ?></h2>
 	<div class="wcis-actions">
-		<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" class="wcis-action-form">
-			<input type="hidden" name="action" value="wcis_full_sync" />
-			<?php wp_nonce_field( 'wcis_full_sync' ); ?>
-			<button type="submit" class="button button-secondary" id="wcis-full-sync">
-				<?php esc_html_e( 'Erste Voll-Synchronisation starten (von diesem Shop)', 'wc-inventory-sync' ); ?>
-			</button>
-			<span class="description"><?php esc_html_e( 'Sendet den gesamten Bestand dieses Shops an alle verbundenen Shops. Idealerweise vom Hauptshop ausführen.', 'wc-inventory-sync' ); ?></span>
-		</form>
+		<?php
+		$wcis_job     = WCIS_Fullsync::state();
+		$wcis_running = $wcis_job && 'running' === $wcis_job['status'];
+		$wcis_pct     = WCIS_Fullsync::percent( $wcis_job );
+		?>
+		<div class="wcis-fullsync">
+			<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" class="wcis-action-form" id="wcis-fullsync-form">
+				<input type="hidden" name="action" value="wcis_full_sync" />
+				<?php wp_nonce_field( 'wcis_full_sync' ); ?>
+				<button type="submit" class="button button-secondary" id="wcis-full-sync">
+					<?php esc_html_e( 'Erste Voll-Synchronisation starten (von diesem Shop)', 'wc-inventory-sync' ); ?>
+				</button>
+				<button type="button" class="button" id="wcis-full-sync-cancel" style="display:none;">
+					<?php esc_html_e( 'Abbrechen', 'wc-inventory-sync' ); ?>
+				</button>
+				<span class="description"><?php esc_html_e( 'Sendet den gesamten Bestand dieses Shops an alle verbundenen Shops. Idealerweise vom Hauptshop ausführen.', 'wc-inventory-sync' ); ?></span>
+			</form>
+
+			<div id="wcis-progress-wrap" class="wcis-progress-wrap" style="<?php echo $wcis_running ? '' : 'display:none;'; ?>">
+				<div class="wcis-progress-bar">
+					<div class="wcis-progress-fill" id="wcis-progress-fill" style="width:<?php echo esc_attr( $wcis_pct ); ?>%;">
+						<span id="wcis-progress-label"><?php echo esc_html( $wcis_pct . '%' ); ?></span>
+					</div>
+				</div>
+				<p class="wcis-progress-text" id="wcis-progress-text">
+					<?php
+					if ( $wcis_running ) {
+						echo esc_html( sprintf( __( 'Läuft … %d %% – bitte diese Seite geöffnet lassen.', 'wc-inventory-sync' ), $wcis_pct ) );
+					}
+					?>
+				</p>
+			</div>
+		</div>
 
 		<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" class="wcis-action-form">
 			<input type="hidden" name="action" value="wcis_push_config" />

@@ -43,6 +43,8 @@ class WCIS_Settings {
 			// Bei fehlender SKU oder nicht vorhandenem Produkt still ignorieren.
 			'sync_status'    => true,  // Auch Lagerstatus (in/out of stock) mitsenden.
 			'log_level'      => 'info', // info | error
+			'batch_size'     => 50,    // Artikel pro Sync-Batch (1–500).
+			'http_timeout'   => 20,    // Timeout je Anfrage in Sekunden (5–60).
 		);
 	}
 
