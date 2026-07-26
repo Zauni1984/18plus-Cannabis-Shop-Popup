@@ -57,6 +57,16 @@ class WCIS_REST_Controller {
 				'permission_callback' => array( __CLASS__, 'check_signature' ),
 			)
 		);
+
+		register_rest_route(
+			WCIS_REST_NS,
+			'/product',
+			array(
+				'methods'             => 'POST',
+				'callback'            => array( __CLASS__, 'receive_product' ),
+				'permission_callback' => array( __CLASS__, 'check_signature' ),
+			)
+		);
 	}
 
 	/**
@@ -167,6 +177,35 @@ class WCIS_REST_Controller {
 		WCIS_Logger::info( 'Netzwerk-Konfiguration vom Master übernommen.', 'inbound', $update );
 
 		return new WP_REST_Response( array( 'ok' => true ), 200 );
+	}
+
+	/**
+	 * Empfängt ein Produkt und legt es an bzw. aktualisiert es (per SKU).
+	 *
+	 * @param WP_REST_Request $request Request.
+	 * @return WP_REST_Response
+	 */
+	public static function receive_product( $request ) {
+		$params  = $request->get_json_params();
+		$product = isset( $params['product'] ) && is_array( $params['product'] ) ? $params['product'] : array();
+		$source  = isset( $params['source'] ) ? esc_url_raw( $params['source'] ) : '';
+
+		if ( empty( $product ) ) {
+			return new WP_REST_Response( array( 'ok' => false, 'result' => 'skipped' ), 200 );
+		}
+
+		if ( ! WCIS_Settings::get( 'product_sync_enabled', false ) ) {
+			return new WP_REST_Response( array( 'ok' => true, 'result' => 'skipped', 'reason' => 'disabled' ), 200 );
+		}
+
+		$result = WCIS_Product_Sync::apply_product( $product );
+
+		WCIS_Logger::info(
+			sprintf( 'Produkt von %s empfangen (SKU %s): %s.', $source ? $source : 'unbekannt', isset( $product['sku'] ) ? $product['sku'] : '?', $result ),
+			'inbound'
+		);
+
+		return new WP_REST_Response( array( 'ok' => true, 'result' => $result ), 200 );
 	}
 
 	/**

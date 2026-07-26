@@ -37,6 +37,9 @@ class WCIS_Plugin {
 	 * Initialisiert Hooks und Komponenten.
 	 */
 	public function init() {
+		// DB-Schema bei Versionswechsel aktualisieren.
+		WCIS_Install::maybe_upgrade();
+
 		// Eigenes Cron-Intervall (jede Minute) registrieren.
 		add_filter( 'cron_schedules', array( $this, 'add_cron_schedule' ) );
 
@@ -45,6 +48,9 @@ class WCIS_Plugin {
 
 		// Periodischer Abgleich (Reconciliation).
 		WCIS_Reconcile::init();
+
+		// Optionaler Produkt-Sync (neue Produkte 1:1 übertragen).
+		WCIS_Product_Sync::init();
 
 		// REST-Routen.
 		add_action( 'rest_api_init', array( 'WCIS_REST_Controller', 'register_routes' ) );

@@ -59,123 +59,157 @@
 			} );
 		} );
 
-		// --- Voll-Synchronisation mit Fortschrittsbalken (AJAX) ---
-		var $form = $( '#wcis-fullsync-form' );
-		var $btn = $( '#wcis-full-sync' );
-		var $cancel = $( '#wcis-full-sync-cancel' );
-		var $wrap = $( '#wcis-progress-wrap' );
-		var $fill = $( '#wcis-progress-fill' );
-		var $label = $( '#wcis-progress-label' );
-		var $text = $( '#wcis-progress-text' );
-		var polling = false;
+		// --- Wiederverwendbarer Fortschritts-Runner (AJAX-Ticks) ---
+		function makeRunner( cfg ) {
+			var $btn = $( cfg.btn );
+			var $cancel = $( cfg.cancel );
+			var $wrap = $( cfg.wrap );
+			var $fill = $( cfg.fill );
+			var $label = $( cfg.label );
+			var $text = $( cfg.text );
+			var polling = false;
 
-		function setBar( pct ) {
-			$fill.css( 'width', pct + '%' );
-			$label.text( pct + '%' );
-		}
-
-		function renderStatus( d ) {
-			setBar( d.percent );
-			var msg;
-			if ( d.status === 'running' ) {
-				msg = WCIS.i18n.syncing + ' ' + d.percent + '% – ' +
-					( d.current_peer ? ( WCIS.i18n.toShop + ' ' + d.current_peer + ' ' ) : '' ) +
-					'(' + d.sent + ' ' + WCIS.i18n.batchesSent +
-					( d.failed ? ', ' + d.failed + ' ' + WCIS.i18n.failedUnit : '' ) + ')';
-			} else if ( d.status === 'done' ) {
-				msg = '✓ ' + WCIS.i18n.done + ': ' + d.total_items + ' ' + WCIS.i18n.itemsUnit +
-					', ' + d.sent + ' ' + WCIS.i18n.batchesSent +
-					( d.failed ? ', ' + d.failed + ' ' + WCIS.i18n.failedUnit : '' ) + '.';
-			} else if ( d.status === 'cancelled' ) {
-				msg = WCIS.i18n.cancelled + '.';
-			} else {
-				msg = '';
+			function setBar( pct ) {
+				$fill.css( 'width', pct + '%' );
+				$label.text( pct + '%' );
 			}
-			$text.text( msg );
-		}
 
-		function finish() {
-			polling = false;
-			$btn.prop( 'disabled', false );
-			$cancel.hide();
-		}
-
-		function tick() {
-			if ( ! polling ) {
-				return;
+			function render( d ) {
+				setBar( d.percent );
+				$text.text( cfg.message( d ) );
 			}
-			$.post( WCIS.ajaxUrl, { action: 'wcis_fullsync_tick', nonce: WCIS.nonce } )
-				.done( function ( resp ) {
-					if ( ! resp || ! resp.success ) {
-						$text.text( '✗ ' + ( resp && resp.data ? resp.data.message : WCIS.i18n.genericError ) );
-						finish();
-						return;
-					}
-					renderStatus( resp.data );
-					if ( resp.data.status === 'running' ) {
-						setTimeout( tick, 300 );
-					} else {
-						finish();
-					}
-				} )
-				.fail( function () {
-					// Netzwerk-Hänger: kurz warten und erneut versuchen.
-					setTimeout( tick, 1500 );
-				} );
-		}
 
-		function startPolling() {
-			polling = true;
-			$btn.prop( 'disabled', true );
-			$cancel.show();
-			$wrap.show();
-			tick();
-		}
-
-		// Start per Formular-Submit (JS übernimmt, Fallback = synchron ohne JS).
-		$form.on( 'submit', function ( e ) {
-			e.preventDefault();
-			if ( ! window.confirm( WCIS.i18n.confirmFull ) ) {
-				return;
+			function finish() {
+				polling = false;
+				$btn.prop( 'disabled', false );
+				$cancel.hide();
 			}
-			$btn.prop( 'disabled', true );
-			$wrap.show();
-			setBar( 0 );
-			$text.text( WCIS.i18n.starting );
 
-			var batch = $( '#wcis-batch-size' ).val();
-			$.post( WCIS.ajaxUrl, { action: 'wcis_fullsync_start', nonce: WCIS.nonce, batch_size: batch } )
-				.done( function ( resp ) {
-					if ( ! resp || ! resp.success ) {
-						$text.text( '✗ ' + ( resp && resp.data ? resp.data.message : WCIS.i18n.genericError ) );
+			function tick() {
+				if ( ! polling ) {
+					return;
+				}
+				$.post( WCIS.ajaxUrl, { action: cfg.tickAction, nonce: WCIS.nonce } )
+					.done( function ( resp ) {
+						if ( ! resp || ! resp.success ) {
+							$text.text( '✗ ' + ( resp && resp.data ? resp.data.message : WCIS.i18n.genericError ) );
+							finish();
+							return;
+						}
+						render( resp.data );
+						if ( resp.data.status === 'running' ) {
+							setTimeout( tick, 300 );
+						} else {
+							finish();
+						}
+					} )
+					.fail( function () {
+						setTimeout( tick, 1500 );
+					} );
+			}
+
+			function startPolling() {
+				polling = true;
+				$btn.prop( 'disabled', true );
+				$cancel.show();
+				$wrap.show();
+				tick();
+			}
+
+			$( cfg.form ).on( 'submit', function ( e ) {
+				e.preventDefault();
+				if ( ! window.confirm( cfg.confirm ) ) {
+					return;
+				}
+				$btn.prop( 'disabled', true );
+				$wrap.show();
+				setBar( 0 );
+				$text.text( WCIS.i18n.starting );
+
+				var data = { action: cfg.startAction, nonce: WCIS.nonce };
+				if ( cfg.extra ) {
+					data = $.extend( data, cfg.extra() );
+				}
+				$.post( WCIS.ajaxUrl, data )
+					.done( function ( resp ) {
+						if ( ! resp || ! resp.success ) {
+							$text.text( '✗ ' + ( resp && resp.data ? resp.data.message : WCIS.i18n.genericError ) );
+							$btn.prop( 'disabled', false );
+							return;
+						}
+						render( resp.data );
+						if ( resp.data.status === 'running' ) {
+							startPolling();
+						} else {
+							$btn.prop( 'disabled', false );
+						}
+					} )
+					.fail( function () {
+						$text.text( '✗ ' + WCIS.i18n.genericError );
 						$btn.prop( 'disabled', false );
-						return;
-					}
-					renderStatus( resp.data );
-					if ( resp.data.status === 'running' ) {
-						startPolling();
-					} else {
-						$btn.prop( 'disabled', false );
-					}
-				} )
-				.fail( function () {
-					$text.text( '✗ ' + WCIS.i18n.genericError );
-					$btn.prop( 'disabled', false );
-				} );
+					} );
+			} );
+
+			$cancel.on( 'click', function () {
+				$.post( WCIS.ajaxUrl, { action: cfg.cancelAction, nonce: WCIS.nonce } )
+					.always( function () {
+						finish();
+						$text.text( WCIS.i18n.cancelled + '.' );
+					} );
+			} );
+
+			if ( $wrap.length && $wrap.is( ':visible' ) ) {
+				startPolling();
+			}
+		}
+
+		// Bestands-Voll-Synchronisation.
+		makeRunner( {
+			form: '#wcis-fullsync-form', btn: '#wcis-full-sync', cancel: '#wcis-full-sync-cancel',
+			wrap: '#wcis-progress-wrap', fill: '#wcis-progress-fill', label: '#wcis-progress-label', text: '#wcis-progress-text',
+			startAction: 'wcis_fullsync_start', tickAction: 'wcis_fullsync_tick', cancelAction: 'wcis_fullsync_cancel',
+			confirm: WCIS.i18n.confirmFull,
+			extra: function () { return { batch_size: $( '#wcis-batch-size' ).val() }; },
+			message: function ( d ) {
+				if ( d.status === 'running' ) {
+					return WCIS.i18n.syncing + ' ' + d.percent + '% – ' +
+						( d.current_peer ? ( WCIS.i18n.toShop + ' ' + d.current_peer + ' ' ) : '' ) +
+						'(' + d.sent + ' ' + WCIS.i18n.batchesSent +
+						( d.failed ? ', ' + d.failed + ' ' + WCIS.i18n.failedUnit : '' ) + ')';
+				}
+				if ( d.status === 'done' ) {
+					return '✓ ' + WCIS.i18n.done + ': ' + d.total_items + ' ' + WCIS.i18n.itemsUnit +
+						', ' + d.sent + ' ' + WCIS.i18n.batchesSent +
+						( d.failed ? ', ' + d.failed + ' ' + WCIS.i18n.failedUnit : '' ) + '.';
+				}
+				if ( d.status === 'cancelled' ) {
+					return WCIS.i18n.cancelled + '.';
+				}
+				return '';
+			}
 		} );
 
-		// Abbrechen.
-		$cancel.on( 'click', function () {
-			$.post( WCIS.ajaxUrl, { action: 'wcis_fullsync_cancel', nonce: WCIS.nonce } )
-				.always( function () {
-					finish();
-					$text.text( WCIS.i18n.cancelled + '.' );
-				} );
+		// Produkt-Massen-Übertragung.
+		makeRunner( {
+			form: '#wcis-productsync-form', btn: '#wcis-product-sync', cancel: '#wcis-product-sync-cancel',
+			wrap: '#wcis-product-progress-wrap', fill: '#wcis-product-progress-fill', label: '#wcis-product-progress-label', text: '#wcis-product-progress-text',
+			startAction: 'wcis_productsync_start', tickAction: 'wcis_productsync_tick', cancelAction: 'wcis_productsync_cancel',
+			confirm: WCIS.i18n.confirmProducts,
+			message: function ( d ) {
+				if ( d.status === 'running' ) {
+					return WCIS.i18n.syncing + ' ' + d.percent + '% – ' + d.index + '/' + d.total + ' ' + WCIS.i18n.products +
+						' (' + d.created + ' ' + WCIS.i18n.createdUnit + ', ' + d.updated + ' ' + WCIS.i18n.updatedUnit + ')';
+				}
+				if ( d.status === 'done' ) {
+					return '✓ ' + WCIS.i18n.done + ': ' + d.created + ' ' + WCIS.i18n.createdUnit + ', ' +
+						d.updated + ' ' + WCIS.i18n.updatedUnit + ', ' + d.skipped + ' ' + WCIS.i18n.skippedUnit +
+						( d.failed ? ', ' + d.failed + ' ' + WCIS.i18n.failedUnit : '' ) + '.';
+				}
+				if ( d.status === 'cancelled' ) {
+					return WCIS.i18n.cancelled + '.';
+				}
+				return '';
+			}
 		} );
-
-		// Laufenden Job nach Seiten-Reload automatisch fortsetzen.
-		if ( $wrap.length && $wrap.is( ':visible' ) ) {
-			startPolling();
-		}
 	} );
 } )( jQuery );

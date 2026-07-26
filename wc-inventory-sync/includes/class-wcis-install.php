@@ -40,6 +40,7 @@ class WCIS_Install {
 	 */
 	public static function activate() {
 		self::create_tables();
+		update_option( 'wcis_db_version', WCIS_VERSION );
 
 		// Standard-Einstellungen anlegen, falls noch nicht vorhanden.
 		if ( false === get_option( WCIS_OPT, false ) ) {
@@ -72,6 +73,20 @@ class WCIS_Install {
 	}
 
 	/**
+	 * Führt bei Versionswechsel nötige DB-Upgrades aus (z. B. neue Spalten).
+	 * Wird bei jedem Laden geprüft, ist aber nur bei Versionswechsel aktiv.
+	 */
+	public static function maybe_upgrade() {
+		$installed = get_option( 'wcis_db_version', '0' );
+		if ( version_compare( $installed, WCIS_VERSION, '>=' ) ) {
+			return;
+		}
+		self::create_tables(); // dbDelta ergänzt fehlende Spalten/Indizes idempotent.
+		WCIS_Reconcile::reschedule();
+		update_option( 'wcis_db_version', WCIS_VERSION );
+	}
+
+	/**
 	 * Legt die benötigten Datenbanktabellen an.
 	 */
 	public static function create_tables() {
@@ -85,6 +100,7 @@ class WCIS_Install {
 		$sql_queue = "CREATE TABLE {$queue} (
 			id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
 			peer_url VARCHAR(255) NOT NULL DEFAULT '',
+			endpoint VARCHAR(64) NOT NULL DEFAULT '/stock',
 			payload LONGTEXT NOT NULL,
 			status VARCHAR(20) NOT NULL DEFAULT 'pending',
 			attempts SMALLINT UNSIGNED NOT NULL DEFAULT 0,

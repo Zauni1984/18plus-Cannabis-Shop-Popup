@@ -50,6 +50,11 @@ class WCIS_Settings {
 			// Strategie: 'lowest' (niedrigster Bestand gewinnt, kein Überverkauf)
 			// oder 'local' (Hauptshop ist maßgeblich).
 			'reconcile_strategy' => 'lowest',
+			// Produkt-Sync: neue Produkte 1:1 an andere Shops übertragen (optional).
+			'product_sync_enabled'         => false,
+			'product_sync_source'          => 'master', // master | any
+			'product_sync_images'          => true,     // Bilder mitübertragen.
+			'product_sync_update_existing' => false,    // vorhandene Produkte überschreiben.
 		);
 	}
 

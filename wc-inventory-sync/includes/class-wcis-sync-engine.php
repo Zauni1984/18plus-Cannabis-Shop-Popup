@@ -55,6 +55,15 @@ class WCIS_Sync_Engine {
 	}
 
 	/**
+	 * Setzt die Broadcast-Sperre (z. B. während der Produkt-Sync Produkte anlegt).
+	 *
+	 * @param bool $on true = Broadcasts unterdrücken.
+	 */
+	public static function set_suppress( $on ) {
+		self::$suppress = (bool) $on;
+	}
+
+	/**
 	 * Handler für Mengen-Änderungen.
 	 *
 	 * @param WC_Product $product Produkt-Objekt.

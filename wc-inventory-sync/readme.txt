@@ -6,7 +6,7 @@ Tested up to: 6.6
 Requires PHP: 7.4
 WC requires at least: 5.0
 WC tested up to: 9.9
-Stable tag: 1.2.0
+Stable tag: 1.3.0
 License: MIT
 License URI: https://opensource.org/licenses/MIT
 
@@ -37,6 +37,12 @@ Shops übertragen (Zuordnung per SKU).
 5. Verbindung testen und anschließend im Hauptshop die erste Voll-Synchronisation starten.
 
 == Changelog ==
+
+= 1.3.0 =
+* Optionaler Produkt-Sync: neue Produkte werden 1:1 an alle Shops übertragen (einfache und variable Produkte), inklusive Veröffentlichungsstatus (veröffentlicht/privat/Entwurf). Zuordnung per SKU.
+* Quelle wählbar (nur Hauptshop oder jeder Shop), Bilder optional mitübertragen, bestehende Produkte optional aktualisieren.
+* „Alle Produkte jetzt übertragen"-Button mit Fortschrittsbalken (chunk-basiert, kein Timeout) zum Befüllen neuer Shops.
+* Guaranteed Delivery über die Retry-Queue (nun mit Endpoint-Unterstützung); DB-Upgrade-Routine für bestehende Installationen.
 
 = 1.2.0 =
 * Automatischer Abgleich (Reconciliation): periodischer Konsistenz-Check (stündlich/6h/täglich), der Bestands-Abweichungen zwischen den Shops erkennt und Korrekturen nachreicht – ideal, wenn ein Shop kurz nicht erreichbar war.

@@ -56,6 +56,9 @@ class WCIS_Admin {
 		add_action( 'wp_ajax_wcis_fullsync_start', array( $this, 'ajax_fullsync_start' ) );
 		add_action( 'wp_ajax_wcis_fullsync_tick', array( $this, 'ajax_fullsync_tick' ) );
 		add_action( 'wp_ajax_wcis_fullsync_cancel', array( $this, 'ajax_fullsync_cancel' ) );
+		add_action( 'wp_ajax_wcis_productsync_start', array( $this, 'ajax_productsync_start' ) );
+		add_action( 'wp_ajax_wcis_productsync_tick', array( $this, 'ajax_productsync_tick' ) );
+		add_action( 'wp_ajax_wcis_productsync_cancel', array( $this, 'ajax_productsync_cancel' ) );
 	}
 
 	/**
@@ -101,6 +104,11 @@ class WCIS_Admin {
 					'batchesSent' => __( 'Batches gesendet', 'wc-inventory-sync' ),
 					'failedUnit'  => __( 'fehlgeschlagen', 'wc-inventory-sync' ),
 					'genericError' => __( 'Fehler', 'wc-inventory-sync' ),
+					'confirmProducts' => __( 'Alle einfachen und variablen Produkte (inkl. Status) an alle verbundenen Shops übertragen? Neue Produkte werden angelegt; bestehende bleiben unangetastet, sofern nicht anders eingestellt.', 'wc-inventory-sync' ),
+					'products'    => __( 'Produkte', 'wc-inventory-sync' ),
+					'createdUnit' => __( 'angelegt', 'wc-inventory-sync' ),
+					'updatedUnit' => __( 'aktualisiert', 'wc-inventory-sync' ),
+					'skippedUnit' => __( 'übersprungen', 'wc-inventory-sync' ),
 				),
 			)
 		);
@@ -164,6 +172,10 @@ class WCIS_Admin {
 			'http_timeout'   => isset( $_POST['http_timeout'] ) ? max( 5, min( 60, (int) $_POST['http_timeout'] ) ) : 20,
 			'reconcile_interval' => $this->clean_choice( isset( $_POST['reconcile_interval'] ) ? $_POST['reconcile_interval'] : '', array( 'off', 'hourly', 'sixhourly', 'daily' ), 'hourly' ),
 			'reconcile_strategy' => $this->clean_choice( isset( $_POST['reconcile_strategy'] ) ? $_POST['reconcile_strategy'] : '', array( 'lowest', 'local' ), 'lowest' ),
+			'product_sync_enabled'         => ! empty( $_POST['product_sync_enabled'] ),
+			'product_sync_source'          => $this->clean_choice( isset( $_POST['product_sync_source'] ) ? $_POST['product_sync_source'] : '', array( 'master', 'any' ), 'master' ),
+			'product_sync_images'          => ! empty( $_POST['product_sync_images'] ),
+			'product_sync_update_existing' => ! empty( $_POST['product_sync_update_existing'] ),
 			'shops'          => $shops,
 		);
 
@@ -349,6 +361,39 @@ class WCIS_Admin {
 		$this->check_ajax();
 		WCIS_Fullsync::cancel();
 		wp_send_json_success( WCIS_Fullsync::to_response( WCIS_Fullsync::state() ) );
+	}
+
+	/**
+	 * AJAX: startet die Produkt-Massen-Übertragung.
+	 */
+	public function ajax_productsync_start() {
+		$this->check_ajax();
+		$job = WCIS_Product_Sync::bulk_start();
+		if ( is_wp_error( $job ) ) {
+			wp_send_json_error( array( 'message' => $job->get_error_message() ) );
+		}
+		wp_send_json_success( WCIS_Product_Sync::bulk_to_response( $job ) );
+	}
+
+	/**
+	 * AJAX: verarbeitet den nächsten Abschnitt der Produkt-Übertragung.
+	 */
+	public function ajax_productsync_tick() {
+		$this->check_ajax();
+		$job = WCIS_Product_Sync::bulk_tick();
+		if ( is_wp_error( $job ) ) {
+			wp_send_json_error( array( 'message' => $job->get_error_message() ) );
+		}
+		wp_send_json_success( WCIS_Product_Sync::bulk_to_response( $job ) );
+	}
+
+	/**
+	 * AJAX: bricht die Produkt-Übertragung ab.
+	 */
+	public function ajax_productsync_cancel() {
+		$this->check_ajax();
+		WCIS_Product_Sync::bulk_cancel();
+		wp_send_json_success( WCIS_Product_Sync::bulk_to_response( WCIS_Product_Sync::bulk_state() ) );
 	}
 
 	// -------------------------------------------------------------------------

@@ -22,6 +22,7 @@ Das Plugin liegt im Ordner [`wc-inventory-sync/`](wc-inventory-sync).
 | Einfache + variable Produkte | Einfache Produkte und Variationen (eigene SKUs) werden erfasst |
 | Nur in einem Shop vorhandene Produkte | Werden beim Empfänger **ignoriert** (SKU nicht gefunden → übersprungen) |
 | Nachreichen bei kurzem Ausfall | **Retry-Queue** (Minuten-Cron) + **periodischer Abgleich** (stündlich/6h/täglich), der Drift erkennt und Korrekturen nachreicht |
+| Neue Produkte 1:1 übertragen *(optional)* | **Produkt-Sync**: einfache & variable Produkte inkl. **Status** (veröffentlicht/privat/Entwurf), per SKU; automatisch + Massen-Button mit Fortschritt |
 
 ## Funktionsweise
 
@@ -85,6 +86,22 @@ zwischenzeitlich nicht erreichbar war und eine Änderung verpasst hat.
 - **Manuell:** Button „Jetzt abgleichen" unter *Aktionen* startet den Abgleich sofort.
 - **Voraussetzung:** aktiver WordPress-Cron (WP-Cron). Nach einem **Wareneingang/Restock**
   im Hauptshop die „Voll-Synchronisation" nutzen, um erhöhte Bestände zu verteilen.
+
+## Produkt-Sync (neue Produkte 1:1 übertragen)
+
+Optionale Funktion (Standard **aus**), um neue Produkte automatisch an alle Shops zu verteilen.
+
+- **Unterstützt:** einfache und variable Produkte (mit Variationen), Titel, Beschreibung,
+  Preise, Kategorien/Schlagwörter, benutzerdefinierte Attribute, Bilder (optional) und den
+  **Veröffentlichungsstatus** (veröffentlicht / privat / Entwurf) – 1:1, Zuordnung per SKU.
+- **Quelle:** nur Hauptshop (empfohlen) oder jeder Shop.
+- **Bestehende Produkte:** bleiben standardmäßig unangetastet (nur der Lagerbestand wird
+  weiter synchronisiert). Optional lassen sich vorhandene Produkte inkl. Status laufend spiegeln.
+- **Erstbefüllung:** Button „Alle Produkte jetzt an alle Shops übertragen" mit
+  Fortschrittsbalken (chunk-basiert, kein Timeout).
+- **Zuverlässig:** Auslieferung über die Retry-Queue – bei kurzem Ausfall wird nachgereicht.
+- **Wichtig:** Der Produkt-Sync muss auch auf jedem **Empfänger-Shop** aktiviert sein.
+  Globale Attribut-Taxonomien werden auf dem Zielshop als produkteigene Attribute angelegt.
 
 ## Hauptshop wechseln
 

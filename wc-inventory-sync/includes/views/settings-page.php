@@ -286,6 +286,57 @@ foreach ( (array) $s['shops'] as $wcis_shop ) {
 			</tr>
 		</table>
 
+		<h2 class="title"><?php esc_html_e( '6. Produkt-Sync (neue Produkte)', 'wc-inventory-sync' ); ?></h2>
+		<p class="description">
+			<?php esc_html_e( 'Optional: Überträgt neue Produkte 1:1 an die anderen Shops (einfache und variable Produkte, inkl. Veröffentlichungsstatus). Zuordnung per SKU.', 'wc-inventory-sync' ); ?>
+		</p>
+		<table class="form-table" role="presentation">
+			<tr>
+				<th scope="row"><?php esc_html_e( 'Produkt-Sync aktiv', 'wc-inventory-sync' ); ?></th>
+				<td>
+					<label>
+						<input type="checkbox" name="product_sync_enabled" value="1" <?php checked( $s['product_sync_enabled'] ); ?> />
+						<?php esc_html_e( 'Neue Produkte automatisch an alle verbundenen Shops übertragen.', 'wc-inventory-sync' ); ?>
+					</label>
+					<p class="description"><?php esc_html_e( 'Muss auf jedem Empfänger-Shop ebenfalls aktiv sein, damit dieser Produkte annimmt.', 'wc-inventory-sync' ); ?></p>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row"><?php esc_html_e( 'Quelle', 'wc-inventory-sync' ); ?></th>
+				<td>
+					<fieldset>
+						<label>
+							<input type="radio" name="product_sync_source" value="master" <?php checked( $s['product_sync_source'], 'master' ); ?> />
+							<?php esc_html_e( 'Nur der Hauptshop überträgt neue Produkte (empfohlen)', 'wc-inventory-sync' ); ?>
+						</label><br />
+						<label>
+							<input type="radio" name="product_sync_source" value="any" <?php checked( $s['product_sync_source'], 'any' ); ?> />
+							<?php esc_html_e( 'Jeder Shop darf neue Produkte übertragen', 'wc-inventory-sync' ); ?>
+						</label>
+					</fieldset>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row"><?php esc_html_e( 'Bilder übertragen', 'wc-inventory-sync' ); ?></th>
+				<td>
+					<label>
+						<input type="checkbox" name="product_sync_images" value="1" <?php checked( $s['product_sync_images'] ); ?> />
+						<?php esc_html_e( 'Produktbilder per URL mitübertragen (nur beim Neuanlegen).', 'wc-inventory-sync' ); ?>
+					</label>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row"><?php esc_html_e( 'Bestehende Produkte', 'wc-inventory-sync' ); ?></th>
+				<td>
+					<label>
+						<input type="checkbox" name="product_sync_update_existing" value="1" <?php checked( $s['product_sync_update_existing'] ); ?> />
+						<?php esc_html_e( 'Vorhandene Produkte (gleiche SKU) mit den Quelldaten aktualisieren – inkl. Status.', 'wc-inventory-sync' ); ?>
+					</label>
+					<p class="description"><?php esc_html_e( 'Standard aus: bestehende Produkte bleiben unangetastet, nur der Lagerbestand wird weiter synchronisiert. Aktivieren, um auch Titel/Preis/Status laufend zu spiegeln.', 'wc-inventory-sync' ); ?></p>
+				</td>
+			</tr>
+		</table>
+
 		<p class="submit">
 			<button type="submit" class="button button-primary"><?php esc_html_e( 'Einstellungen speichern', 'wc-inventory-sync' ); ?></button>
 		</p>
@@ -293,7 +344,7 @@ foreach ( (array) $s['shops'] as $wcis_shop ) {
 
 	<hr />
 
-	<h2 class="title"><?php esc_html_e( '6. Aktionen', 'wc-inventory-sync' ); ?></h2>
+	<h2 class="title"><?php esc_html_e( '7. Aktionen', 'wc-inventory-sync' ); ?></h2>
 	<div class="wcis-actions">
 		<?php
 		$wcis_job     = WCIS_Fullsync::state();
@@ -356,7 +407,38 @@ foreach ( (array) $s['shops'] as $wcis_shop ) {
 		</form>
 	</div>
 
-	<h2 class="title"><?php esc_html_e( '7. Protokoll', 'wc-inventory-sync' ); ?></h2>
+	<?php $wcis_pjob = WCIS_Product_Sync::bulk_state(); ?>
+	<?php $wcis_prunning = $wcis_pjob && 'running' === $wcis_pjob['status']; ?>
+	<?php $wcis_ppct = WCIS_Product_Sync::bulk_percent( $wcis_pjob ); ?>
+	<div class="wcis-fullsync" style="margin-top:16px;">
+		<form method="post" class="wcis-action-form" id="wcis-productsync-form" onsubmit="return false;">
+			<button type="submit" class="button button-secondary" id="wcis-product-sync" <?php disabled( ! $s['product_sync_enabled'] ); ?>>
+				<?php esc_html_e( 'Alle Produkte jetzt an alle Shops übertragen', 'wc-inventory-sync' ); ?>
+			</button>
+			<button type="button" class="button" id="wcis-product-sync-cancel" style="display:none;">
+				<?php esc_html_e( 'Abbrechen', 'wc-inventory-sync' ); ?>
+			</button>
+			<span class="description">
+				<?php
+				if ( $s['product_sync_enabled'] ) {
+					esc_html_e( 'Überträgt einfache und variable Produkte 1:1 (inkl. Status). Ideal für die erste Befüllung neuer Shops.', 'wc-inventory-sync' );
+				} else {
+					esc_html_e( 'Bitte zuerst „Produkt-Sync aktiv" oben einschalten und speichern.', 'wc-inventory-sync' );
+				}
+				?>
+			</span>
+		</form>
+		<div id="wcis-product-progress-wrap" class="wcis-progress-wrap" style="<?php echo $wcis_prunning ? '' : 'display:none;'; ?>">
+			<div class="wcis-progress-bar">
+				<div class="wcis-progress-fill" id="wcis-product-progress-fill" style="width:<?php echo esc_attr( $wcis_ppct ); ?>%;">
+					<span id="wcis-product-progress-label"><?php echo esc_html( $wcis_ppct . '%' ); ?></span>
+				</div>
+			</div>
+			<p class="wcis-progress-text" id="wcis-product-progress-text"></p>
+		</div>
+	</div>
+
+	<h2 class="title"><?php esc_html_e( '8. Protokoll', 'wc-inventory-sync' ); ?></h2>
 	<?php $wcis_logs = WCIS_Logger::recent( 60 ); ?>
 	<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" style="margin-bottom:8px;">
 		<input type="hidden" name="action" value="wcis_clear_log" />

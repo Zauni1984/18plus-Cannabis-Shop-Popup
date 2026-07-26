@@ -26,7 +26,7 @@ class WCIS_Queue {
 	 * @param array  $payload  Nutzdaten.
 	 * @param string $error    Fehlermeldung.
 	 */
-	public static function add( $peer_url, array $payload, $error = '' ) {
+	public static function add( $peer_url, array $payload, $error = '', $endpoint = '/stock' ) {
 		global $wpdb;
 		$table = WCIS_Install::table( WCIS_Install::QUEUE_TABLE );
 		$now   = current_time( 'mysql', true );
@@ -35,6 +35,7 @@ class WCIS_Queue {
 			$table,
 			array(
 				'peer_url'   => untrailingslashit( $peer_url ),
+				'endpoint'   => $endpoint,
 				'payload'    => wp_json_encode( $payload ),
 				'status'     => 'pending',
 				'attempts'   => 0,
@@ -42,7 +43,7 @@ class WCIS_Queue {
 				'created_at' => $now,
 				'updated_at' => $now,
 			),
-			array( '%s', '%s', '%s', '%d', '%s', '%s', '%s' )
+			array( '%s', '%s', '%s', '%s', '%d', '%s', '%s', '%s' )
 		);
 	}
 
@@ -77,7 +78,8 @@ class WCIS_Queue {
 				continue;
 			}
 
-			$result   = WCIS_Client::post( $row['peer_url'], '/stock', $payload, true );
+			$endpoint = ! empty( $row['endpoint'] ) ? $row['endpoint'] : '/stock';
+			$result   = WCIS_Client::post( $row['peer_url'], $endpoint, $payload, true );
 			$attempts = (int) $row['attempts'] + 1;
 
 			if ( ! is_wp_error( $result ) && $result['code'] >= 200 && $result['code'] < 300 ) {
