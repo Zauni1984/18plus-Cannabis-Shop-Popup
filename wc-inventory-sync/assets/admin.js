@@ -3,34 +3,66 @@
 	'use strict';
 
 	$( function () {
+		var $app = $( '#wcis-app' );
+
+		// --- Tab-Navigation ---
+		$app.addClass( 'wcis-js' );
+		var STORE = 'wcis_active_tab';
+
+		function activateTab( id ) {
+			if ( ! id ) { return; }
+			var $item = $( '.wcis-navitem[data-tab="' + id + '"]' );
+			if ( ! $item.length ) { return; }
+			$( '.wcis-navitem' ).removeClass( 'is-active' );
+			$item.addClass( 'is-active' );
+			$( '.wcis-tab' ).removeClass( 'is-active' );
+			$( '.wcis-tab[data-tab="' + id + '"]' ).addClass( 'is-active' );
+			try { window.localStorage.setItem( STORE, id ); } catch ( e ) {}
+		}
+
+		$( '.wcis-navitem' ).on( 'click', function () {
+			activateTab( $( this ).data( 'tab' ) );
+		} );
+
+		// Zuletzt aktiven Tab wiederherstellen.
+		try {
+			var saved = window.localStorage.getItem( STORE );
+			if ( saved ) { activateTab( saved ); }
+		} catch ( e ) {}
+
+		// --- "Ungespeichert"-Indikator am Speichern-Button ---
+		var $save = $( '.wcis-save' );
+		$( '#wcis-settings-form' ).on( 'change input', 'input, select, textarea', function () {
+			$save.addClass( 'is-dirty' );
+		} );
+
 		// Neues Secret erzeugen.
 		$( '#wcis-gen-secret' ).on( 'click', function () {
-			$( '#wcis-secret' ).val( $( this ).data( 'secret' ) );
+			$( '#wcis-secret' ).val( $( this ).data( 'secret' ) ).trigger( 'change' );
 		} );
 
 		// Shop-Zeile hinzufügen.
 		$( '#wcis-add-shop' ).on( 'click', function () {
-			var $tbody = $( '#wcis-shops tbody' );
-			var $row = $tbody.find( '.wcis-shop-row' ).first().clone();
+			var $row = $( '#wcis-shops .wcis-shop-row' ).first().clone();
 			$row.find( 'input' ).val( '' );
 			$row.find( '.wcis-test-result' ).removeClass( 'ok err' ).text( '' );
-			$tbody.append( $row );
+			$( '#wcis-shops' ).append( $row );
 		} );
 
 		// Shop-Zeile entfernen.
 		$( '#wcis-shops' ).on( 'click', '.wcis-remove-shop', function () {
 			var $rows = $( '#wcis-shops .wcis-shop-row' );
 			if ( $rows.length > 1 ) {
-				$( this ).closest( 'tr' ).remove();
+				$( this ).closest( '.wcis-shop-row' ).remove();
 			} else {
-				$( this ).closest( 'tr' ).find( 'input' ).val( '' );
+				$( this ).closest( '.wcis-shop-row' ).find( 'input' ).val( '' );
 			}
 		} );
 
 		// Verbindungstest.
 		$( '#wcis-shops' ).on( 'click', '.wcis-test', function () {
 			var $btn = $( this );
-			var $row = $btn.closest( 'tr' );
+			var $row = $btn.closest( '.wcis-shop-row' );
 			var url = $row.find( '.wcis-shop-url' ).val();
 			var $result = $row.find( '.wcis-test-result' );
 

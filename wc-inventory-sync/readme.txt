@@ -6,7 +6,7 @@ Tested up to: 6.6
 Requires PHP: 7.4
 WC requires at least: 5.0
 WC tested up to: 9.9
-Stable tag: 1.5.0
+Stable tag: 1.6.0
 License: MIT
 License URI: https://opensource.org/licenses/MIT
 
@@ -37,6 +37,9 @@ Shops übertragen (Zuordnung per SKU).
 5. Verbindung testen und anschließend im Hauptshop die erste Voll-Synchronisation starten.
 
 == Changelog ==
+
+= 1.6.0 =
+* Komplett überarbeitete, moderne Admin-Oberfläche: App-Layout mit sticky Topbar (Live-Status), seitlicher Tab-Navigation (kein langes Scrollen), Karten, Toggle-Switches, Chips, animierten Fortschrittsbalken und Dark-Mode (folgt dem System-Theme). Rein CSS/JS, keine zusätzlichen Bibliotheken.
 
 = 1.5.0 =
 * Kategorie-Ausschluss: ganze Produktkategorien lassen sich vom Sync ausschließen (harter Ausschluss, gilt aus- und eingehend).
