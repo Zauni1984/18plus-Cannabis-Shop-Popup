@@ -134,6 +134,10 @@ class WCIS_Product_Sync {
 		if ( '' === $product->get_sku() ) {
 			return;
 		}
+		// Sync-Filter dieses Shops berücksichtigen.
+		if ( ! WCIS_Filter::should_sync( $product ) ) {
+			return;
+		}
 		// Pro Request nur einmal je Produkt übertragen.
 		if ( isset( self::$broadcasted[ $product->get_id() ] ) ) {
 			return;
@@ -165,38 +169,58 @@ class WCIS_Product_Sync {
 		}
 		$type = $product->is_type( 'variable' ) ? 'variable' : 'simple';
 
+		// Grunddaten (immer nötig für Zuordnung/Anlage).
 		$data = array(
-			'sku'               => $sku,
-			'type'              => $type,
-			'status'            => get_post_status( $product->get_id() ),
-			'name'              => $product->get_name(),
-			'slug'              => $product->get_slug(),
-			'description'       => $product->get_description(),
-			'short_description' => $product->get_short_description(),
-			'regular_price'     => $product->get_regular_price(),
-			'sale_price'        => $product->get_sale_price(),
-			'tax_status'        => $product->get_tax_status(),
-			'tax_class'         => $product->get_tax_class(),
-			'manage_stock'      => $product->managing_stock(),
-			'stock_quantity'    => $product->get_stock_quantity(),
-			'stock_status'      => $product->get_stock_status(),
-			'backorders'        => $product->get_backorders(),
-			'weight'            => $product->get_weight(),
-			'dimensions'        => array(
+			'sku'  => $sku,
+			'type' => $type,
+			'name' => $product->get_name(),
+			'slug' => $product->get_slug(),
+		);
+
+		// Feld-Auswahl dieses Shops berücksichtigen.
+		if ( WCIS_Filter::field_enabled( 'status' ) ) {
+			$data['status'] = get_post_status( $product->get_id() );
+		}
+		if ( WCIS_Filter::field_enabled( 'description' ) ) {
+			$data['description'] = $product->get_description();
+		}
+		if ( WCIS_Filter::field_enabled( 'short_description' ) ) {
+			$data['short_description'] = $product->get_short_description();
+		}
+		if ( WCIS_Filter::field_enabled( 'price' ) ) {
+			$data['regular_price'] = $product->get_regular_price();
+			$data['sale_price']    = $product->get_sale_price();
+			$data['tax_status']    = $product->get_tax_status();
+			$data['tax_class']     = $product->get_tax_class();
+		}
+		if ( WCIS_Filter::field_enabled( 'stock' ) ) {
+			$data['manage_stock']   = $product->managing_stock();
+			$data['stock_quantity'] = $product->get_stock_quantity();
+			$data['stock_status']   = $product->get_stock_status();
+			$data['backorders']     = $product->get_backorders();
+		}
+		if ( WCIS_Filter::field_enabled( 'dimensions' ) ) {
+			$data['weight']     = $product->get_weight();
+			$data['dimensions'] = array(
 				'length' => $product->get_length(),
 				'width'  => $product->get_width(),
 				'height' => $product->get_height(),
-			),
-			'categories'        => wp_get_post_terms( $product->get_id(), 'product_cat', array( 'fields' => 'names' ) ),
-			'tags'              => wp_get_post_terms( $product->get_id(), 'product_tag', array( 'fields' => 'names' ) ),
-			'attributes'        => self::export_attributes( $product ),
-			'images'            => WCIS_Settings::get( 'product_sync_images', true ) ? self::export_images( $product ) : array(),
-			'variations'        => array(),
-		);
-
-		if ( 'variable' === $type ) {
-			$data['variations'] = self::export_variations( $product );
+			);
 		}
+		if ( WCIS_Filter::field_enabled( 'categories' ) ) {
+			$data['categories'] = wp_get_post_terms( $product->get_id(), 'product_cat', array( 'fields' => 'names' ) );
+		}
+		if ( WCIS_Filter::field_enabled( 'tags' ) ) {
+			$data['tags'] = wp_get_post_terms( $product->get_id(), 'product_tag', array( 'fields' => 'names' ) );
+		}
+		if ( WCIS_Filter::field_enabled( 'attributes' ) ) {
+			$data['attributes'] = self::export_attributes( $product );
+		}
+		if ( WCIS_Filter::field_enabled( 'images' ) && WCIS_Settings::get( 'product_sync_images', true ) ) {
+			$data['images'] = self::export_images( $product );
+		}
+
+		$data['variations'] = ( 'variable' === $type ) ? self::export_variations( $product ) : array();
 
 		return $data;
 	}
@@ -330,6 +354,11 @@ class WCIS_Product_Sync {
 
 		$existing_id     = wc_get_product_id_by_sku( $sku );
 		$update_existing = (bool) WCIS_Settings::get( 'product_sync_update_existing', false );
+
+		// Explizit ausgeschlossene Produkte auch eingehend nicht verändern.
+		if ( $existing_id && WCIS_Filter::is_excluded( $existing_id ) ) {
+			return 'skipped';
+		}
 
 		if ( $existing_id && ! $update_existing ) {
 			return 'skipped'; // Vorhandenes Produkt nicht anfassen (nur Bestand wird separat gesynct).
@@ -681,7 +710,7 @@ class WCIS_Product_Sync {
 			$pid     = isset( $ids[ $job['index'] ] ) ? $ids[ $job['index'] ] : 0;
 			$product = $pid ? wc_get_product( $pid ) : null;
 
-			if ( $product && ( $product->is_type( 'simple' ) || $product->is_type( 'variable' ) ) ) {
+			if ( $product && ( $product->is_type( 'simple' ) || $product->is_type( 'variable' ) ) && WCIS_Filter::should_sync( $product ) ) {
 				$payload = self::build_payload( $product );
 				if ( $payload ) {
 					foreach ( $job['peers'] as $peer_url ) {

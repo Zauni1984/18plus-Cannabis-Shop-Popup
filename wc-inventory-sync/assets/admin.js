@@ -189,6 +189,11 @@
 			}
 		} );
 
+		// WooCommerce-Auswahlfelder (Kategorien/Marken/Produktsuche) initialisieren.
+		try {
+			$( document.body ).trigger( 'wc-enhanced-select-init' );
+		} catch ( e ) {}
+
 		// Produkt-Massen-Übertragung.
 		makeRunner( {
 			form: '#wcis-productsync-form', btn: '#wcis-product-sync', cancel: '#wcis-product-sync-cancel',

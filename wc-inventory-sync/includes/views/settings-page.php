@@ -335,6 +335,133 @@ foreach ( (array) $s['shops'] as $wcis_shop ) {
 					<p class="description"><?php esc_html_e( 'Standard aus: bestehende Produkte bleiben unangetastet, nur der Lagerbestand wird weiter synchronisiert. Aktivieren, um auch Titel/Preis/Status laufend zu spiegeln.', 'wc-inventory-sync' ); ?></p>
 				</td>
 			</tr>
+			<tr>
+				<th scope="row"><?php esc_html_e( 'Zu übertragende Felder', 'wc-inventory-sync' ); ?></th>
+				<td>
+					<fieldset>
+						<?php
+						$wcis_fields   = is_array( $s['product_fields'] ) ? $s['product_fields'] : array();
+						$wcis_all_flds = WCIS_Filter::product_field_labels();
+						foreach ( $wcis_all_flds as $wcis_fk => $wcis_flabel ) :
+							$wcis_forced = ( 'name' === $wcis_fk );
+							?>
+							<label style="display:inline-block; min-width:230px; margin-bottom:4px;">
+								<input type="checkbox" name="product_fields[]" value="<?php echo esc_attr( $wcis_fk ); ?>"
+									<?php checked( $wcis_forced || in_array( $wcis_fk, $wcis_fields, true ) ); ?>
+									<?php disabled( $wcis_forced ); ?> />
+								<?php echo esc_html( $wcis_flabel ); ?>
+							</label>
+						<?php endforeach; ?>
+						<?php // "name" ist Pflicht und wird immer gesendet – als Hidden absichern. ?>
+						<input type="hidden" name="product_fields[]" value="name" />
+						<p class="description"><?php esc_html_e( 'Nur die ausgewählten Felder werden beim Produkt-Sync übertragen. Beispiel: Haken bei „Preis" entfernen, damit jeder Shop eigene Preise behalten kann.', 'wc-inventory-sync' ); ?></p>
+					</fieldset>
+				</td>
+			</tr>
+		</table>
+
+		<h2 class="title"><?php esc_html_e( '7. Sync-Filter: Welche Produkte werden übertragen?', 'wc-inventory-sync' ); ?></h2>
+		<p class="description">
+			<?php esc_html_e( 'Legt fest, welche Produkte dieser Shop synchronisiert (gilt für Bestands- und Produkt-Sync). Ausgeschlossene Produkte werden nie verändert.', 'wc-inventory-sync' ); ?>
+		</p>
+		<table class="form-table" role="presentation">
+			<tr>
+				<th scope="row"><?php esc_html_e( 'Umfang', 'wc-inventory-sync' ); ?></th>
+				<td>
+					<fieldset>
+						<label>
+							<input type="radio" name="filter_mode" value="all" <?php checked( $s['filter_mode'], 'all' ); ?> />
+							<?php esc_html_e( 'Alle Produkte synchronisieren', 'wc-inventory-sync' ); ?>
+						</label><br />
+						<label>
+							<input type="radio" name="filter_mode" value="selected" <?php checked( $s['filter_mode'], 'selected' ); ?> />
+							<?php esc_html_e( 'Nur ausgewählte (nach Kategorie, Marke oder Einzelprodukt)', 'wc-inventory-sync' ); ?>
+						</label>
+					</fieldset>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row"><label for="wcis-filter-cats"><?php esc_html_e( 'Kategorien', 'wc-inventory-sync' ); ?></label></th>
+				<td>
+					<?php $wcis_selcats = array_map( 'intval', (array) $s['filter_categories'] ); ?>
+					<select id="wcis-filter-cats" name="filter_categories[]" multiple="multiple" class="wc-enhanced-select" style="min-width:400px;" data-placeholder="<?php esc_attr_e( 'Kategorien wählen …', 'wc-inventory-sync' ); ?>">
+						<?php
+						$wcis_terms = get_terms( array( 'taxonomy' => 'product_cat', 'hide_empty' => false ) );
+						if ( ! is_wp_error( $wcis_terms ) ) {
+							foreach ( $wcis_terms as $wcis_t ) {
+								printf(
+									'<option value="%d" %s>%s</option>',
+									(int) $wcis_t->term_id,
+									selected( in_array( (int) $wcis_t->term_id, $wcis_selcats, true ), true, false ),
+									esc_html( $wcis_t->name )
+								);
+							}
+						}
+						?>
+					</select>
+					<p class="description"><?php esc_html_e( 'Produkte dieser Kategorien werden synchronisiert (im Modus „Nur ausgewählte").', 'wc-inventory-sync' ); ?></p>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row"><label for="wcis-filter-brands"><?php esc_html_e( 'Marken', 'wc-inventory-sync' ); ?></label></th>
+				<td>
+					<?php
+					$wcis_btax   = WCIS_Filter::brand_taxonomy();
+					$wcis_selbr  = array_map( 'intval', (array) $s['filter_brands'] );
+					if ( $wcis_btax ) :
+						?>
+						<select id="wcis-filter-brands" name="filter_brands[]" multiple="multiple" class="wc-enhanced-select" style="min-width:400px;" data-placeholder="<?php esc_attr_e( 'Marken wählen …', 'wc-inventory-sync' ); ?>">
+							<?php
+							$wcis_bterms = get_terms( array( 'taxonomy' => $wcis_btax, 'hide_empty' => false ) );
+							if ( ! is_wp_error( $wcis_bterms ) ) {
+								foreach ( $wcis_bterms as $wcis_bt ) {
+									printf(
+										'<option value="%d" %s>%s</option>',
+										(int) $wcis_bt->term_id,
+										selected( in_array( (int) $wcis_bt->term_id, $wcis_selbr, true ), true, false ),
+										esc_html( $wcis_bt->name )
+									);
+								}
+							}
+							?>
+						</select>
+						<p class="description"><?php echo esc_html( sprintf( __( 'Erkannte Marken-Taxonomie: %s.', 'wc-inventory-sync' ), $wcis_btax ) ); ?></p>
+					<?php else : ?>
+						<p class="description"><?php esc_html_e( 'Keine Marken-Taxonomie gefunden (z. B. WooCommerce Brands / Perfect Brands). Marken-Filter ist daher nicht verfügbar.', 'wc-inventory-sync' ); ?></p>
+					<?php endif; ?>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row"><label for="wcis-filter-include"><?php esc_html_e( 'Einzelne Produkte einschließen', 'wc-inventory-sync' ); ?></label></th>
+				<td>
+					<select id="wcis-filter-include" name="filter_include_ids[]" multiple="multiple" class="wc-product-search" style="min-width:400px;" data-placeholder="<?php esc_attr_e( 'Produkte suchen …', 'wc-inventory-sync' ); ?>" data-action="woocommerce_json_search_products_and_variations">
+						<?php
+						foreach ( array_map( 'intval', (array) $s['filter_include_ids'] ) as $wcis_pid ) {
+							$wcis_p = wc_get_product( $wcis_pid );
+							if ( $wcis_p ) {
+								printf( '<option value="%d" selected>%s</option>', (int) $wcis_pid, esc_html( wp_strip_all_tags( $wcis_p->get_formatted_name() ) ) );
+							}
+						}
+						?>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row"><label for="wcis-filter-exclude"><?php esc_html_e( 'Einzelne Produkte ausschließen', 'wc-inventory-sync' ); ?></label></th>
+				<td>
+					<select id="wcis-filter-exclude" name="filter_exclude_ids[]" multiple="multiple" class="wc-product-search" style="min-width:400px;" data-placeholder="<?php esc_attr_e( 'Produkte suchen …', 'wc-inventory-sync' ); ?>" data-action="woocommerce_json_search_products_and_variations">
+						<?php
+						foreach ( array_map( 'intval', (array) $s['filter_exclude_ids'] ) as $wcis_pid ) {
+							$wcis_p = wc_get_product( $wcis_pid );
+							if ( $wcis_p ) {
+								printf( '<option value="%d" selected>%s</option>', (int) $wcis_pid, esc_html( wp_strip_all_tags( $wcis_p->get_formatted_name() ) ) );
+							}
+						}
+						?>
+					</select>
+					<p class="description"><?php esc_html_e( 'Diese Produkte werden nie synchronisiert – weder ausgehend noch eingehend (harter Ausschluss).', 'wc-inventory-sync' ); ?></p>
+				</td>
+			</tr>
 		</table>
 
 		<p class="submit">
@@ -344,7 +471,7 @@ foreach ( (array) $s['shops'] as $wcis_shop ) {
 
 	<hr />
 
-	<h2 class="title"><?php esc_html_e( '7. Aktionen', 'wc-inventory-sync' ); ?></h2>
+	<h2 class="title"><?php esc_html_e( '8. Aktionen', 'wc-inventory-sync' ); ?></h2>
 	<div class="wcis-actions">
 		<?php
 		$wcis_job     = WCIS_Fullsync::state();
@@ -438,7 +565,7 @@ foreach ( (array) $s['shops'] as $wcis_shop ) {
 		</div>
 	</div>
 
-	<h2 class="title"><?php esc_html_e( '8. Protokoll', 'wc-inventory-sync' ); ?></h2>
+	<h2 class="title"><?php esc_html_e( '9. Protokoll', 'wc-inventory-sync' ); ?></h2>
 	<?php $wcis_logs = WCIS_Logger::recent( 60 ); ?>
 	<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" style="margin-bottom:8px;">
 		<input type="hidden" name="action" value="wcis_clear_log" />

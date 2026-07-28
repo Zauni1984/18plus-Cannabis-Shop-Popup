@@ -84,8 +84,13 @@ class WCIS_Admin {
 		if ( 'woocommerce_page_' . self::SLUG !== $hook ) {
 			return;
 		}
+		// WooCommerce-Auswahlfelder (select2) für Produktsuche und Mehrfachauswahl.
+		wp_enqueue_style( 'woocommerce_admin_styles' );
+		wp_enqueue_script( 'wc-enhanced-select' );
+		wp_enqueue_script( 'select2' );
+
 		wp_enqueue_style( 'wcis-admin', WCIS_URL . 'assets/admin.css', array(), WCIS_VERSION );
-		wp_enqueue_script( 'wcis-admin', WCIS_URL . 'assets/admin.js', array( 'jquery' ), WCIS_VERSION, true );
+		wp_enqueue_script( 'wcis-admin', WCIS_URL . 'assets/admin.js', array( 'jquery', 'wc-enhanced-select' ), WCIS_VERSION, true );
 		wp_localize_script(
 			'wcis-admin',
 			'WCIS',
@@ -176,6 +181,12 @@ class WCIS_Admin {
 			'product_sync_source'          => $this->clean_choice( isset( $_POST['product_sync_source'] ) ? $_POST['product_sync_source'] : '', array( 'master', 'any' ), 'master' ),
 			'product_sync_images'          => ! empty( $_POST['product_sync_images'] ),
 			'product_sync_update_existing' => ! empty( $_POST['product_sync_update_existing'] ),
+			'filter_mode'        => $this->clean_choice( isset( $_POST['filter_mode'] ) ? $_POST['filter_mode'] : '', array( 'all', 'selected' ), 'all' ),
+			'filter_categories'  => isset( $_POST['filter_categories'] ) ? array_map( 'intval', (array) $_POST['filter_categories'] ) : array(),
+			'filter_brands'      => isset( $_POST['filter_brands'] ) ? array_map( 'intval', (array) $_POST['filter_brands'] ) : array(),
+			'filter_include_ids' => isset( $_POST['filter_include_ids'] ) ? array_map( 'intval', (array) $_POST['filter_include_ids'] ) : array(),
+			'filter_exclude_ids' => isset( $_POST['filter_exclude_ids'] ) ? array_map( 'intval', (array) $_POST['filter_exclude_ids'] ) : array(),
+			'product_fields'     => isset( $_POST['product_fields'] ) ? array_map( 'sanitize_key', (array) $_POST['product_fields'] ) : array(),
 			'shops'          => $shops,
 		);
 

@@ -23,6 +23,7 @@ Das Plugin liegt im Ordner [`wc-inventory-sync/`](wc-inventory-sync).
 | Nur in einem Shop vorhandene Produkte | Werden beim Empfänger **ignoriert** (SKU nicht gefunden → übersprungen) |
 | Nachreichen bei kurzem Ausfall | **Retry-Queue** (Minuten-Cron) + **periodischer Abgleich** (stündlich/6h/täglich), der Drift erkennt und Korrekturen nachreicht |
 | Neue Produkte 1:1 übertragen *(optional)* | **Produkt-Sync**: einfache & variable Produkte inkl. **Status** (veröffentlicht/privat/Entwurf), per SKU; automatisch + Massen-Button mit Fortschritt |
+| Auswählen, was synchronisiert wird | **Sync-Filter** pro Shop: nach Kategorie, Marke, Einzelprodukt; Ausschlussliste; **Feld-Auswahl** (z. B. Preis) für den Produkt-Sync |
 
 ## Funktionsweise
 
@@ -102,6 +103,30 @@ Optionale Funktion (Standard **aus**), um neue Produkte automatisch an alle Shop
 - **Zuverlässig:** Auslieferung über die Retry-Queue – bei kurzem Ausfall wird nachgereicht.
 - **Wichtig:** Der Produkt-Sync muss auch auf jedem **Empfänger-Shop** aktiviert sein.
   Globale Attribut-Taxonomien werden auf dem Zielshop als produkteigene Attribute angelegt.
+
+## Sync-Filter: Welche Produkte werden synchronisiert?
+
+Jeder Shop legt selbst fest, welche seiner Produkte am Sync teilnehmen (gilt für
+**Bestands- und Produkt-Sync** sowie den Abgleich):
+
+- **Umfang:** „Alle Produkte" oder „Nur ausgewählte".
+- **Nach Kategorie** – eine oder mehrere Produktkategorien.
+- **Nach Marke** – erkennt gängige Marken-Taxonomien automatisch (WooCommerce Brands,
+  Perfect Brands, YITH u. a.).
+- **Einzelne Produkte einschließen** – gezielte Produktsuche (WooCommerce-Select2).
+- **Einzelne Produkte ausschließen** – harter Ausschluss: diese Produkte werden nie
+  verändert, weder ausgehend noch eingehend.
+
+Im Modus „Nur ausgewählte" wird ein Produkt synchronisiert, sobald **mindestens ein**
+Kriterium zutrifft (Einzelauswahl **oder** Kategorie **oder** Marke).
+
+### Feld-Auswahl (welche Attribute übertragen werden)
+
+Für den Produkt-Sync lässt sich wählen, welche Felder übertragen werden: **Preis**
+(regulär & Angebot), Beschreibung, Kurzbeschreibung, Bilder, Kategorien, Schlagwörter,
+Attribute, Maße/Gewicht, Status, Lagerbestand. Beispiel: Haken bei „Preis" entfernen,
+damit jeder Shop **eigene Preise** behalten kann. Der Produktname wird zur Zuordnung
+immer mitgesendet.
 
 ## Hauptshop wechseln
 

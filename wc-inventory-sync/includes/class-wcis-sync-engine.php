@@ -75,6 +75,9 @@ class WCIS_Sync_Engine {
 		if ( ! $product instanceof WC_Product ) {
 			$product = wc_get_product( $product );
 		}
+		if ( ! WCIS_Filter::should_sync( $product ) ) {
+			return; // Produkt nicht im Sync-Umfang dieses Shops.
+		}
 		$item = self::item_from_product( $product );
 		if ( $item ) {
 			self::enqueue_local_change( $item );
@@ -101,6 +104,9 @@ class WCIS_Sync_Engine {
 		}
 		// Produkte mit Mengenverwaltung werden über on_stock_change abgedeckt.
 		if ( $product->managing_stock() ) {
+			return;
+		}
+		if ( ! WCIS_Filter::should_sync( $product ) ) {
 			return;
 		}
 		$item = self::item_from_product( $product );
@@ -274,6 +280,11 @@ class WCIS_Sync_Engine {
 			return 'ignored';
 		}
 
+		// Explizit ausgeschlossene Produkte auch eingehend nicht verändern.
+		if ( WCIS_Filter::is_excluded( $product ) ) {
+			return 'skipped';
+		}
+
 		// Reihenfolge-Schutz: veraltete Nachrichten nicht anwenden.
 		$incoming_ts = isset( $item['timestamp'] ) ? (int) $item['timestamp'] : time();
 		$last_ts     = (int) $product->get_meta( '_wcis_synced_at' );
@@ -428,6 +439,9 @@ class WCIS_Sync_Engine {
 				$product = wc_get_product( $post_id );
 				if ( ! $product ) {
 					continue;
+				}
+				if ( ! WCIS_Filter::should_sync( $product ) ) {
+					continue; // nicht im Sync-Umfang.
 				}
 				$item = self::item_from_product( $product );
 				if ( $item ) {

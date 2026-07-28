@@ -55,6 +55,14 @@ class WCIS_Settings {
 			'product_sync_source'          => 'master', // master | any
 			'product_sync_images'          => true,     // Bilder mitübertragen.
 			'product_sync_update_existing' => false,    // vorhandene Produkte überschreiben.
+			// Sync-Filter: welche Produkte werden (ausgehend) synchronisiert?
+			'filter_mode'        => 'all', // all | selected
+			'filter_categories'  => array(),
+			'filter_brands'      => array(),
+			'filter_include_ids' => array(),
+			'filter_exclude_ids' => array(),
+			// Welche Produkt-Felder werden beim Produkt-Sync übertragen? (null = alle)
+			'product_fields'     => array( 'name', 'price', 'description', 'short_description', 'images', 'categories', 'tags', 'attributes', 'dimensions', 'status', 'stock' ),
 		);
 	}
 

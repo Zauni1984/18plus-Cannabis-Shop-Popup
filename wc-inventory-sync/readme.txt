@@ -6,7 +6,7 @@ Tested up to: 6.6
 Requires PHP: 7.4
 WC requires at least: 5.0
 WC tested up to: 9.9
-Stable tag: 1.3.0
+Stable tag: 1.4.0
 License: MIT
 License URI: https://opensource.org/licenses/MIT
 
@@ -37,6 +37,11 @@ Shops übertragen (Zuordnung per SKU).
 5. Verbindung testen und anschließend im Hauptshop die erste Voll-Synchronisation starten.
 
 == Changelog ==
+
+= 1.4.0 =
+* Sync-Filter pro Shop: Auswahl, welche Produkte synchronisiert werden – nach Kategorie, nach Marke (automatische Erkennung gängiger Marken-Taxonomien) und per Einzelprodukt-Auswahl. Einzelne Produkte lassen sich hart ausschließen (gilt aus- und eingehend).
+* Feld-Auswahl für den Produkt-Sync: frei wählbar, welche Felder (z. B. Preis, Beschreibung, Bilder, Status) übertragen werden – so kann jeder Shop z. B. eigene Preise behalten.
+* Filter gilt für Bestands- und Produkt-Sync sowie für den Abgleich.
 
 = 1.3.0 =
 * Optionaler Produkt-Sync: neue Produkte werden 1:1 an alle Shops übertragen (einfache und variable Produkte), inklusive Veröffentlichungsstatus (veröffentlicht/privat/Entwurf). Zuordnung per SKU.
