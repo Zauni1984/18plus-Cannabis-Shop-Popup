@@ -189,6 +189,53 @@
 			}
 		} );
 
+		// --- Sync-Filter-Vorschau ---
+		$( '#wcis-filter-preview-btn' ).on( 'click', function () {
+			var $out = $( '#wcis-filter-preview' );
+			var $btn = $( this );
+			$btn.prop( 'disabled', true );
+			$out.show().html( '<em>' + WCIS.i18n.previewLoading + '</em>' );
+
+			var data = {
+				action: 'wcis_filter_preview',
+				nonce: WCIS.nonce,
+				filter_mode: $( 'input[name="filter_mode"]:checked' ).val(),
+				filter_categories: $( '#wcis-filter-cats' ).val() || [],
+				filter_brands: $( '#wcis-filter-brands' ).val() || [],
+				filter_include_ids: $( '#wcis-filter-include' ).val() || [],
+				filter_exclude_ids: $( '#wcis-filter-exclude' ).val() || [],
+				filter_exclude_categories: $( '#wcis-filter-excl-cats' ).val() || []
+			};
+
+			$.post( WCIS.ajaxUrl, data )
+				.done( function ( resp ) {
+					if ( ! resp || ! resp.success ) {
+						$out.html( '<span style="color:#b32d2e;">✗ ' + ( resp && resp.data ? resp.data.message : WCIS.i18n.genericError ) + '</span>' );
+						return;
+					}
+					var d = resp.data;
+					var html = '<p><strong>' + WCIS.i18n.previewHeading + ': ' + d.in_scope + ' ' + WCIS.i18n.previewOf + ' ' + d.scanned + '</strong> ' +
+						WCIS.i18n.previewScanned + ' (' + d.excluded + ' ' + WCIS.i18n.previewExcluded + ').</p>';
+					if ( d.sample && d.sample.length ) {
+						html += '<p>' + WCIS.i18n.previewSample + ':</p><ul class="wcis-preview-list">';
+						$.each( d.sample, function ( i, p ) {
+							html += '<li>' + $( '<div>' ).text( p.name ).html() + ' <code>' + $( '<div>' ).text( p.sku ).html() + '</code></li>';
+						} );
+						html += '</ul>';
+					}
+					if ( d.truncated ) {
+						html += '<p><em>' + WCIS.i18n.previewTruncated + '</em></p>';
+					}
+					$out.html( html );
+				} )
+				.fail( function () {
+					$out.html( '<span style="color:#b32d2e;">✗ ' + WCIS.i18n.genericError + '</span>' );
+				} )
+				.always( function () {
+					$btn.prop( 'disabled', false );
+				} );
+		} );
+
 		// WooCommerce-Auswahlfelder (Kategorien/Marken/Produktsuche) initialisieren.
 		try {
 			$( document.body ).trigger( 'wc-enhanced-select-init' );

@@ -20,6 +20,43 @@ if ( ! defined( 'ABSPATH' ) ) {
 class WCIS_Filter {
 
 	/**
+	 * Optionale Override-Konfiguration (für die Live-Vorschau ungespeicherter Werte).
+	 *
+	 * @var array|null
+	 */
+	protected static $overrides = null;
+
+	/**
+	 * Setzt temporäre Override-Werte (Vorschau).
+	 *
+	 * @param array $config Teilkonfiguration.
+	 */
+	public static function set_overrides( array $config ) {
+		self::$overrides = $config;
+	}
+
+	/**
+	 * Entfernt die Override-Werte.
+	 */
+	public static function clear_overrides() {
+		self::$overrides = null;
+	}
+
+	/**
+	 * Liefert einen Filter-Konfigurationswert (Override hat Vorrang).
+	 *
+	 * @param string $key     Schlüssel.
+	 * @param mixed  $default Standard.
+	 * @return mixed
+	 */
+	protected static function cfg( $key, $default = null ) {
+		if ( null !== self::$overrides && array_key_exists( $key, self::$overrides ) ) {
+			return self::$overrides[ $key ];
+		}
+		return WCIS_Settings::get( $key, $default );
+	}
+
+	/**
 	 * Alle bekannten Feld-Schlüssel des Produkt-Syncs (für die Feld-Auswahl).
 	 *
 	 * @return array key => Label.
@@ -103,28 +140,28 @@ class WCIS_Filter {
 			return false;
 		}
 
-		// Harte Ausschlussliste hat immer Vorrang.
+		// Harte Ausschlüsse (Einzelprodukt oder Kategorie) haben immer Vorrang.
 		if ( self::is_excluded( $id ) ) {
 			return false;
 		}
 
-		$mode = WCIS_Settings::get( 'filter_mode', 'all' );
+		$mode = self::cfg( 'filter_mode', 'all' );
 		if ( 'all' === $mode ) {
 			return true;
 		}
 
 		// Modus "selected": mindestens ein Kriterium muss zutreffen.
-		$include = array_map( 'intval', (array) WCIS_Settings::get( 'filter_include_ids', array() ) );
+		$include = array_map( 'intval', (array) self::cfg( 'filter_include_ids', array() ) );
 		if ( in_array( $id, $include, true ) ) {
 			return true;
 		}
 
-		$cats = array_map( 'intval', (array) WCIS_Settings::get( 'filter_categories', array() ) );
+		$cats = array_map( 'intval', (array) self::cfg( 'filter_categories', array() ) );
 		if ( ! empty( $cats ) && has_term( $cats, 'product_cat', $id ) ) {
 			return true;
 		}
 
-		$brands = array_map( 'intval', (array) WCIS_Settings::get( 'filter_brands', array() ) );
+		$brands = array_map( 'intval', (array) self::cfg( 'filter_brands', array() ) );
 		$btax   = self::brand_taxonomy();
 		if ( ! empty( $brands ) && $btax && has_term( $brands, $btax, $id ) ) {
 			return true;
@@ -144,7 +181,74 @@ class WCIS_Filter {
 		if ( ! $id ) {
 			return false;
 		}
-		$excluded = array_map( 'intval', (array) WCIS_Settings::get( 'filter_exclude_ids', array() ) );
-		return in_array( $id, $excluded, true );
+		$excluded = array_map( 'intval', (array) self::cfg( 'filter_exclude_ids', array() ) );
+		if ( in_array( $id, $excluded, true ) ) {
+			return true;
+		}
+
+		$excl_cats = array_map( 'intval', (array) self::cfg( 'filter_exclude_categories', array() ) );
+		if ( ! empty( $excl_cats ) && has_term( $excl_cats, 'product_cat', $id ) ) {
+			return true;
+		}
+
+		return false;
+	}
+
+	/**
+	 * Vorschau: zählt Produkte im Sync-Umfang und liefert eine Stichprobe.
+	 *
+	 * @param int $sample_size Anzahl Beispielprodukte.
+	 * @param int $scan_limit  Maximale Anzahl zu prüfender Produkte.
+	 * @return array
+	 */
+	public static function preview( $sample_size = 25, $scan_limit = 5000 ) {
+		$ids = get_posts(
+			array(
+				'post_type'      => 'product',
+				'post_status'    => array( 'publish', 'private', 'draft', 'pending' ),
+				'posts_per_page' => (int) $scan_limit,
+				'fields'         => 'ids',
+				'meta_query'     => array( // phpcs:ignore WordPress.DB.SlowDBQuery
+					array(
+						'key'     => '_sku',
+						'value'   => '',
+						'compare' => '!=',
+					),
+				),
+			)
+		);
+
+		$scanned  = count( $ids );
+		$in_scope = 0;
+		$excluded = 0;
+		$sample   = array();
+
+		foreach ( $ids as $pid ) {
+			$product = wc_get_product( $pid );
+			if ( ! $product || ( ! $product->is_type( 'simple' ) && ! $product->is_type( 'variable' ) ) ) {
+				continue;
+			}
+			if ( self::is_excluded( $product ) ) {
+				$excluded++;
+				continue;
+			}
+			if ( self::should_sync( $product ) ) {
+				$in_scope++;
+				if ( count( $sample ) < $sample_size ) {
+					$sample[] = array(
+						'name' => $product->get_name(),
+						'sku'  => $product->get_sku(),
+					);
+				}
+			}
+		}
+
+		return array(
+			'scanned'   => $scanned,
+			'in_scope'  => $in_scope,
+			'excluded'  => $excluded,
+			'sample'    => $sample,
+			'truncated' => $scanned >= (int) $scan_limit,
+		);
 	}
 }

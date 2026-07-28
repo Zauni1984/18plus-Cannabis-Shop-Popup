@@ -462,7 +462,35 @@ foreach ( (array) $s['shops'] as $wcis_shop ) {
 					<p class="description"><?php esc_html_e( 'Diese Produkte werden nie synchronisiert – weder ausgehend noch eingehend (harter Ausschluss).', 'wc-inventory-sync' ); ?></p>
 				</td>
 			</tr>
+			<tr>
+				<th scope="row"><label for="wcis-filter-excl-cats"><?php esc_html_e( 'Kategorien ausschließen', 'wc-inventory-sync' ); ?></label></th>
+				<td>
+					<?php $wcis_exclcats = array_map( 'intval', (array) $s['filter_exclude_categories'] ); ?>
+					<select id="wcis-filter-excl-cats" name="filter_exclude_categories[]" multiple="multiple" class="wc-enhanced-select" style="min-width:400px;" data-placeholder="<?php esc_attr_e( 'Kategorien wählen …', 'wc-inventory-sync' ); ?>">
+						<?php
+						$wcis_terms2 = get_terms( array( 'taxonomy' => 'product_cat', 'hide_empty' => false ) );
+						if ( ! is_wp_error( $wcis_terms2 ) ) {
+							foreach ( $wcis_terms2 as $wcis_t2 ) {
+								printf(
+									'<option value="%d" %s>%s</option>',
+									(int) $wcis_t2->term_id,
+									selected( in_array( (int) $wcis_t2->term_id, $wcis_exclcats, true ), true, false ),
+									esc_html( $wcis_t2->name )
+								);
+							}
+						}
+						?>
+					</select>
+					<p class="description"><?php esc_html_e( 'Produkte dieser Kategorien werden nie synchronisiert (harter Ausschluss, hat Vorrang vor allem anderen).', 'wc-inventory-sync' ); ?></p>
+				</td>
+			</tr>
 		</table>
+
+		<p>
+			<button type="button" class="button" id="wcis-filter-preview-btn"><?php esc_html_e( 'Vorschau: Umfang anzeigen', 'wc-inventory-sync' ); ?></button>
+			<span class="description"><?php esc_html_e( 'Zeigt anhand der aktuellen (auch ungespeicherten) Auswahl, wie viele Produkte in den Sync-Umfang fallen.', 'wc-inventory-sync' ); ?></span>
+		</p>
+		<div id="wcis-filter-preview" class="wcis-preview" style="display:none;"></div>
 
 		<p class="submit">
 			<button type="submit" class="button button-primary"><?php esc_html_e( 'Einstellungen speichern', 'wc-inventory-sync' ); ?></button>

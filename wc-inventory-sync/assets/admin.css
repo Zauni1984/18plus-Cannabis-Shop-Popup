@@ -62,6 +62,23 @@
 }
 .wcis-progress-text { margin: 8px 0 0; font-size: 13px; color: #50575e; }
 
+.wcis-preview {
+	max-width: 640px;
+	margin: 8px 0 16px;
+	padding: 12px 16px;
+	background: #f6f7f7;
+	border: 1px solid #dcdcde;
+	border-radius: 6px;
+}
+.wcis-preview-list {
+	margin: 4px 0 0;
+	max-height: 220px;
+	overflow: auto;
+	list-style: disc;
+	padding-left: 20px;
+}
+.wcis-preview-list code { background: #fff; padding: 0 4px; border-radius: 3px; }
+
 .wcis-log { max-width: 1100px; }
 .wcis-lvl { display: inline-block; padding: 1px 6px; border-radius: 8px; font-size: 11px; font-weight: 600; }
 .wcis-lvl-info  { background: #eef4ff; color: #135e96; }

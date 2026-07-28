@@ -6,7 +6,7 @@ Tested up to: 6.6
 Requires PHP: 7.4
 WC requires at least: 5.0
 WC tested up to: 9.9
-Stable tag: 1.4.0
+Stable tag: 1.5.0
 License: MIT
 License URI: https://opensource.org/licenses/MIT
 
@@ -37,6 +37,10 @@ Shops übertragen (Zuordnung per SKU).
 5. Verbindung testen und anschließend im Hauptshop die erste Voll-Synchronisation starten.
 
 == Changelog ==
+
+= 1.5.0 =
+* Kategorie-Ausschluss: ganze Produktkategorien lassen sich vom Sync ausschließen (harter Ausschluss, gilt aus- und eingehend).
+* Vorschau „Umfang anzeigen": zeigt anhand der aktuellen (auch ungespeicherten) Auswahl, wie viele Produkte in den Sync-Umfang fallen – inkl. Beispielliste.
 
 = 1.4.0 =
 * Sync-Filter pro Shop: Auswahl, welche Produkte synchronisiert werden – nach Kategorie, nach Marke (automatische Erkennung gängiger Marken-Taxonomien) und per Einzelprodukt-Auswahl. Einzelne Produkte lassen sich hart ausschließen (gilt aus- und eingehend).

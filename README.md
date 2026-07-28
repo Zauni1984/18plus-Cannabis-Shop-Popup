@@ -116,9 +116,16 @@ Jeder Shop legt selbst fest, welche seiner Produkte am Sync teilnehmen (gilt fü
 - **Einzelne Produkte einschließen** – gezielte Produktsuche (WooCommerce-Select2).
 - **Einzelne Produkte ausschließen** – harter Ausschluss: diese Produkte werden nie
   verändert, weder ausgehend noch eingehend.
+- **Kategorien ausschließen** – ganze Produktkategorien hart ausschließen (hat Vorrang vor
+  allen Einschluss-Kriterien).
 
 Im Modus „Nur ausgewählte" wird ein Produkt synchronisiert, sobald **mindestens ein**
-Kriterium zutrifft (Einzelauswahl **oder** Kategorie **oder** Marke).
+Kriterium zutrifft (Einzelauswahl **oder** Kategorie **oder** Marke) – sofern es nicht
+ausgeschlossen ist.
+
+**Vorschau:** Der Button „Umfang anzeigen" berechnet anhand der aktuellen (auch
+ungespeicherten) Auswahl, wie viele Produkte in den Sync-Umfang fallen, und zeigt eine
+Beispielliste.
 
 ### Feld-Auswahl (welche Attribute übertragen werden)
 

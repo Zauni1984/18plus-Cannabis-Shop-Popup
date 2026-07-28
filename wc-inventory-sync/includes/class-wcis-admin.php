@@ -59,6 +59,7 @@ class WCIS_Admin {
 		add_action( 'wp_ajax_wcis_productsync_start', array( $this, 'ajax_productsync_start' ) );
 		add_action( 'wp_ajax_wcis_productsync_tick', array( $this, 'ajax_productsync_tick' ) );
 		add_action( 'wp_ajax_wcis_productsync_cancel', array( $this, 'ajax_productsync_cancel' ) );
+		add_action( 'wp_ajax_wcis_filter_preview', array( $this, 'ajax_filter_preview' ) );
 	}
 
 	/**
@@ -114,6 +115,13 @@ class WCIS_Admin {
 					'createdUnit' => __( 'angelegt', 'wc-inventory-sync' ),
 					'updatedUnit' => __( 'aktualisiert', 'wc-inventory-sync' ),
 					'skippedUnit' => __( 'übersprungen', 'wc-inventory-sync' ),
+					'previewLoading' => __( 'Vorschau wird berechnet …', 'wc-inventory-sync' ),
+					'previewHeading' => __( 'Produkte im Sync-Umfang', 'wc-inventory-sync' ),
+					'previewOf'      => __( 'von', 'wc-inventory-sync' ),
+					'previewScanned' => __( 'geprüft', 'wc-inventory-sync' ),
+					'previewExcluded' => __( 'ausgeschlossen', 'wc-inventory-sync' ),
+					'previewSample'  => __( 'Beispiele', 'wc-inventory-sync' ),
+					'previewTruncated' => __( 'Hinweis: Es wurden nur die ersten Produkte geprüft.', 'wc-inventory-sync' ),
 				),
 			)
 		);
@@ -186,6 +194,7 @@ class WCIS_Admin {
 			'filter_brands'      => isset( $_POST['filter_brands'] ) ? array_map( 'intval', (array) $_POST['filter_brands'] ) : array(),
 			'filter_include_ids' => isset( $_POST['filter_include_ids'] ) ? array_map( 'intval', (array) $_POST['filter_include_ids'] ) : array(),
 			'filter_exclude_ids' => isset( $_POST['filter_exclude_ids'] ) ? array_map( 'intval', (array) $_POST['filter_exclude_ids'] ) : array(),
+			'filter_exclude_categories' => isset( $_POST['filter_exclude_categories'] ) ? array_map( 'intval', (array) $_POST['filter_exclude_categories'] ) : array(),
 			'product_fields'     => isset( $_POST['product_fields'] ) ? array_map( 'sanitize_key', (array) $_POST['product_fields'] ) : array(),
 			'shops'          => $shops,
 		);
@@ -405,6 +414,33 @@ class WCIS_Admin {
 		$this->check_ajax();
 		WCIS_Product_Sync::bulk_cancel();
 		wp_send_json_success( WCIS_Product_Sync::bulk_to_response( WCIS_Product_Sync::bulk_state() ) );
+	}
+
+	/**
+	 * AJAX: Vorschau des Sync-Umfangs (berücksichtigt ungespeicherte Auswahl).
+	 */
+	public function ajax_filter_preview() {
+		$this->check_ajax();
+
+		$intarr = static function ( $key ) {
+			return isset( $_POST[ $key ] ) ? array_map( 'intval', (array) wp_unslash( $_POST[ $key ] ) ) : array(); // phpcs:ignore WordPress.Security.NonceVerification
+		};
+
+		WCIS_Filter::set_overrides(
+			array(
+				'filter_mode'               => $this->clean_choice( isset( $_POST['filter_mode'] ) ? $_POST['filter_mode'] : '', array( 'all', 'selected' ), 'all' ),
+				'filter_categories'         => $intarr( 'filter_categories' ),
+				'filter_brands'             => $intarr( 'filter_brands' ),
+				'filter_include_ids'        => $intarr( 'filter_include_ids' ),
+				'filter_exclude_ids'        => $intarr( 'filter_exclude_ids' ),
+				'filter_exclude_categories' => $intarr( 'filter_exclude_categories' ),
+			)
+		);
+
+		$preview = WCIS_Filter::preview();
+		WCIS_Filter::clear_overrides();
+
+		wp_send_json_success( $preview );
 	}
 
 	// -------------------------------------------------------------------------
