@@ -1,12 +1,12 @@
 === WC Inventory Sync ===
-Contributors: stefanz
+Contributors: blocksocial
 Tags: woocommerce, inventory, stock, sync, multishop
 Requires at least: 5.8
 Tested up to: 6.6
 Requires PHP: 7.4
 WC requires at least: 5.0
 WC tested up to: 9.9
-Stable tag: 1.6.0
+Stable tag: 1.7.0
 License: MIT
 License URI: https://opensource.org/licenses/MIT
 
@@ -37,6 +37,10 @@ Shops übertragen (Zuordnung per SKU).
 5. Verbindung testen und anschließend im Hauptshop die erste Voll-Synchronisation starten.
 
 == Changelog ==
+
+= 1.7.0 =
+* Steuer-Sync: Steuerstatus und Steuerklasse werden als eigenes Feld übertragen (getrennt vom Preis) – auch für Variationen. Neue „Steuerklassen-Zuordnung" (Empfängerseite) übersetzt abweichende Slugs (z. B. „reduzierter-preis" ⇒ „reduced-rate"); unbekannte, nicht zugeordnete Slugs werden übersprungen statt fälschlich auf Standard zu fallen.
+* Produkte vom Hauptshop holen (Pull): Ein Neben-Shop kann die erste Produkt-Übernahme selbst starten und sich die Produkte des Hauptshops holen – ohne dass der Hauptshop an alle Shops verteilen muss. Chunk-basiert mit Fortschrittsbalken.
 
 = 1.6.0 =
 * Komplett überarbeitete, moderne Admin-Oberfläche: App-Layout mit sticky Topbar (Live-Status), seitlicher Tab-Navigation (kein langes Scrollen), Karten, Toggle-Switches, Chips, animierten Fortschrittsbalken und Dark-Mode (folgt dem System-Theme). Rein CSS/JS, keine zusätzlichen Bibliotheken.

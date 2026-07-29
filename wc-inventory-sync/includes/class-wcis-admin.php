@@ -59,6 +59,9 @@ class WCIS_Admin {
 		add_action( 'wp_ajax_wcis_productsync_start', array( $this, 'ajax_productsync_start' ) );
 		add_action( 'wp_ajax_wcis_productsync_tick', array( $this, 'ajax_productsync_tick' ) );
 		add_action( 'wp_ajax_wcis_productsync_cancel', array( $this, 'ajax_productsync_cancel' ) );
+		add_action( 'wp_ajax_wcis_productpull_start', array( $this, 'ajax_productpull_start' ) );
+		add_action( 'wp_ajax_wcis_productpull_tick', array( $this, 'ajax_productpull_tick' ) );
+		add_action( 'wp_ajax_wcis_productpull_cancel', array( $this, 'ajax_productpull_cancel' ) );
 		add_action( 'wp_ajax_wcis_filter_preview', array( $this, 'ajax_filter_preview' ) );
 	}
 
@@ -111,6 +114,7 @@ class WCIS_Admin {
 					'failedUnit'  => __( 'fehlgeschlagen', 'wc-inventory-sync' ),
 					'genericError' => __( 'Fehler', 'wc-inventory-sync' ),
 					'confirmProducts' => __( 'Alle einfachen und variablen Produkte (inkl. Status) an alle verbundenen Shops übertragen? Neue Produkte werden angelegt; bestehende bleiben unangetastet, sofern nicht anders eingestellt.', 'wc-inventory-sync' ),
+					'confirmPull'  => __( 'Produkte vom Hauptshop auf diesen Shop holen? Neue Produkte werden hier angelegt; bestehende bleiben unangetastet, sofern nicht anders eingestellt.', 'wc-inventory-sync' ),
 					'products'    => __( 'Produkte', 'wc-inventory-sync' ),
 					'createdUnit' => __( 'angelegt', 'wc-inventory-sync' ),
 					'updatedUnit' => __( 'aktualisiert', 'wc-inventory-sync' ),
@@ -196,6 +200,7 @@ class WCIS_Admin {
 			'filter_exclude_ids' => isset( $_POST['filter_exclude_ids'] ) ? array_map( 'intval', (array) $_POST['filter_exclude_ids'] ) : array(),
 			'filter_exclude_categories' => isset( $_POST['filter_exclude_categories'] ) ? array_map( 'intval', (array) $_POST['filter_exclude_categories'] ) : array(),
 			'product_fields'     => isset( $_POST['product_fields'] ) ? array_map( 'sanitize_key', (array) $_POST['product_fields'] ) : array(),
+			'tax_class_map'      => isset( $_POST['tax_class_map'] ) ? sanitize_textarea_field( wp_unslash( $_POST['tax_class_map'] ) ) : '',
 			'shops'          => $shops,
 		);
 
@@ -414,6 +419,39 @@ class WCIS_Admin {
 		$this->check_ajax();
 		WCIS_Product_Sync::bulk_cancel();
 		wp_send_json_success( WCIS_Product_Sync::bulk_to_response( WCIS_Product_Sync::bulk_state() ) );
+	}
+
+	/**
+	 * AJAX: startet den Produkt-Pull vom Hauptshop.
+	 */
+	public function ajax_productpull_start() {
+		$this->check_ajax();
+		$job = WCIS_Product_Sync::pull_start();
+		if ( is_wp_error( $job ) ) {
+			wp_send_json_error( array( 'message' => $job->get_error_message() ) );
+		}
+		wp_send_json_success( WCIS_Product_Sync::pull_to_response( $job ) );
+	}
+
+	/**
+	 * AJAX: verarbeitet den nächsten Abschnitt des Pull.
+	 */
+	public function ajax_productpull_tick() {
+		$this->check_ajax();
+		$job = WCIS_Product_Sync::pull_tick();
+		if ( is_wp_error( $job ) ) {
+			wp_send_json_error( array( 'message' => $job->get_error_message() ) );
+		}
+		wp_send_json_success( WCIS_Product_Sync::pull_to_response( $job ) );
+	}
+
+	/**
+	 * AJAX: bricht den Pull ab.
+	 */
+	public function ajax_productpull_cancel() {
+		$this->check_ajax();
+		WCIS_Product_Sync::pull_cancel();
+		wp_send_json_success( WCIS_Product_Sync::pull_to_response( WCIS_Product_Sync::pull_state() ) );
 	}
 
 	/**

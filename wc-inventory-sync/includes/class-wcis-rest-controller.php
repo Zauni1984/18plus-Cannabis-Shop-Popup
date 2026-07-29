@@ -67,6 +67,16 @@ class WCIS_REST_Controller {
 				'permission_callback' => array( __CLASS__, 'check_signature' ),
 			)
 		);
+
+		register_rest_route(
+			WCIS_REST_NS,
+			'/products-export',
+			array(
+				'methods'             => 'GET',
+				'callback'            => array( __CLASS__, 'export_products' ),
+				'permission_callback' => array( __CLASS__, 'check_signature' ),
+			)
+		);
 	}
 
 	/**
@@ -206,6 +216,34 @@ class WCIS_REST_Controller {
 		);
 
 		return new WP_REST_Response( array( 'ok' => true, 'result' => $result ), 200 );
+	}
+
+	/**
+	 * Liefert die Produkt-Payloads dieses Shops seitenweise (für Pull durch einen
+	 * anderen Shop, der sich die Produkte des Hauptshops selbst holt).
+	 *
+	 * @param WP_REST_Request $request Request.
+	 * @return WP_REST_Response
+	 */
+	public static function export_products( $request ) {
+		$page     = max( 1, (int) $request->get_param( 'page' ) );
+		$per_page = (int) $request->get_param( 'per_page' );
+		$per_page = $per_page > 0 ? min( 50, $per_page ) : 20;
+
+		$result = WCIS_Product_Sync::export_page( $page, $per_page );
+
+		return new WP_REST_Response(
+			array(
+				'ok'          => true,
+				'source'      => WCIS_Settings::this_url(),
+				'page'        => $page,
+				'per_page'    => $per_page,
+				'total'       => $result['total'],
+				'total_pages' => $result['total_pages'],
+				'items'       => $result['items'],
+			),
+			200
+		);
 	}
 
 	/**

@@ -355,6 +355,11 @@ $wcis_tabs = array(
 								</div>
 								<small><?php esc_html_e( 'Nur ausgewählte Felder werden übertragen. Tipp: Haken bei „Preis" entfernen, damit jeder Shop eigene Preise behält.', 'wc-inventory-sync' ); ?></small>
 							</div>
+							<div class="wcis-field">
+								<label for="wcis-taxmap"><?php esc_html_e( 'Steuerklassen-Zuordnung (Empfänger)', 'wc-inventory-sync' ); ?></label>
+								<textarea id="wcis-taxmap" name="tax_class_map" rows="3" class="code" style="width:100%; font-family:ui-monospace,Menlo,Consolas,monospace;" placeholder="reduzierter-preis=reduced-rate"><?php echo esc_textarea( $s['tax_class_map'] ); ?></textarea>
+								<small><?php esc_html_e( 'Übersetzt eingehende Steuerklassen-Slugs auf die hier vorhandenen. Eine Zuordnung pro Zeile, z. B. „reduzierter-preis=reduced-rate". Nötig, wenn zwei Shops für dieselbe Steuer (z. B. 7 %) unterschiedliche Slugs verwenden. Unbekannte, nicht zugeordnete Slugs werden übersprungen (Steuerklasse bleibt unverändert, statt auf Standard zu fallen).', 'wc-inventory-sync' ); ?></small>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -498,6 +503,33 @@ $wcis_tabs = array(
 						<div id="wcis-product-progress-wrap" class="wcis-progress-wrap" style="<?php echo $wcis_prunning ? '' : 'display:none;'; ?>">
 							<div class="wcis-progress-bar"><div class="wcis-progress-fill" id="wcis-product-progress-fill" style="width:<?php echo esc_attr( $wcis_ppct ); ?>%;"><span id="wcis-product-progress-label"><?php echo esc_html( $wcis_ppct . '%' ); ?></span></div></div>
 							<p class="wcis-progress-text" id="wcis-product-progress-text"></p>
+						</div>
+					</div>
+
+					<?php
+					$wcis_qjob     = WCIS_Product_Sync::pull_state();
+					$wcis_qrunning = $wcis_qjob && 'running' === $wcis_qjob['status'];
+					$wcis_qpct     = WCIS_Product_Sync::pull_percent( $wcis_qjob );
+					?>
+					<div class="wcis-card">
+						<div class="wcis-card-head"><h2><?php esc_html_e( 'Produkte vom Hauptshop holen (Pull)', 'wc-inventory-sync' ); ?></h2>
+							<p><?php echo esc_html( sprintf( __( 'Dieser Shop holt sich die Produkte des Hauptshops (%s) selbst – ideal für die erste Befüllung eines Neben-Shops, ohne dass der Hauptshop an alle verteilt.', 'wc-inventory-sync' ), untrailingslashit( (string) $s['master_url'] ) ) ); ?></p></div>
+						<div class="wcis-card-body">
+							<?php if ( $wcis_master ) : ?>
+								<p class="wcis-hint"><?php esc_html_e( 'Dieser Shop ist selbst der Hauptshop – nutze oben „Alle Produkte übertragen".', 'wc-inventory-sync' ); ?></p>
+							<?php else : ?>
+								<form method="post" id="wcis-productpull-form" class="wcis-actionrow" onsubmit="return false;">
+									<button type="submit" class="wcis-btn wcis-btn--primary" id="wcis-product-pull" <?php disabled( ! $s['product_sync_enabled'] ); ?>><?php esc_html_e( 'Produkte vom Hauptshop holen', 'wc-inventory-sync' ); ?></button>
+									<button type="button" class="wcis-btn wcis-btn--ghost" id="wcis-product-pull-cancel" style="display:none;"><?php esc_html_e( 'Abbrechen', 'wc-inventory-sync' ); ?></button>
+									<?php if ( ! $s['product_sync_enabled'] ) : ?>
+										<span class="wcis-hint"><?php esc_html_e( 'Zuerst „Produkt-Sync aktiv" einschalten und speichern.', 'wc-inventory-sync' ); ?></span>
+									<?php endif; ?>
+								</form>
+								<div id="wcis-pull-progress-wrap" class="wcis-progress-wrap" style="<?php echo $wcis_qrunning ? '' : 'display:none;'; ?>">
+									<div class="wcis-progress-bar"><div class="wcis-progress-fill" id="wcis-pull-progress-fill" style="width:<?php echo esc_attr( $wcis_qpct ); ?>%;"><span id="wcis-pull-progress-label"><?php echo esc_html( $wcis_qpct . '%' ); ?></span></div></div>
+									<p class="wcis-progress-text" id="wcis-pull-progress-text"></p>
+								</div>
+							<?php endif; ?>
 						</div>
 					</div>
 				</div>

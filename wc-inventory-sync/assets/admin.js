@@ -268,6 +268,29 @@
 				} );
 		} );
 
+		// Produkte vom Hauptshop holen (Pull).
+		makeRunner( {
+			form: '#wcis-productpull-form', btn: '#wcis-product-pull', cancel: '#wcis-product-pull-cancel',
+			wrap: '#wcis-pull-progress-wrap', fill: '#wcis-pull-progress-fill', label: '#wcis-pull-progress-label', text: '#wcis-pull-progress-text',
+			startAction: 'wcis_productpull_start', tickAction: 'wcis_productpull_tick', cancelAction: 'wcis_productpull_cancel',
+			confirm: WCIS.i18n.confirmPull,
+			message: function ( d ) {
+				if ( d.status === 'running' ) {
+					return WCIS.i18n.syncing + ' ' + d.percent + '% (' + d.created + ' ' + WCIS.i18n.createdUnit + ', ' + d.updated + ' ' + WCIS.i18n.updatedUnit + ')';
+				}
+				if ( d.status === 'done' ) {
+					return '✓ ' + WCIS.i18n.done + ': ' + d.created + ' ' + WCIS.i18n.createdUnit + ', ' + d.updated + ' ' + WCIS.i18n.updatedUnit + ', ' + d.skipped + ' ' + WCIS.i18n.skippedUnit + '.';
+				}
+				if ( d.status === 'error' ) {
+					return '✗ ' + ( d.message || WCIS.i18n.genericError );
+				}
+				if ( d.status === 'cancelled' ) {
+					return WCIS.i18n.cancelled + '.';
+				}
+				return '';
+			}
+		} );
+
 		// WooCommerce-Auswahlfelder (Kategorien/Marken/Produktsuche) initialisieren.
 		try {
 			$( document.body ).trigger( 'wc-enhanced-select-init' );

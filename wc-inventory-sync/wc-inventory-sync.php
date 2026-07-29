@@ -3,8 +3,9 @@
  * Plugin Name:       WC Inventory Sync
  * Plugin URI:        https://github.com/zauni1984/18plus-cannabis-shop-popup
  * Description:        Synchronisiert die Lagerbestände (Stock) mehrerer WooCommerce-Shops in nahezu Echtzeit. Zuordnung per SKU, ein wählbarer Hauptshop (Master) für die erste Voll-Synchronisation, jederzeit änderbar. Einfache und variable Produkte werden unterstützt; Produkte, die nur in einem Shop existieren, werden ignoriert.
- * Version:           1.6.0
- * Author:            Stefan Z
+ * Version:           1.7.0
+ * Author:            BlockSocial UG (haftungsbeschränkt)
+ * Author URI:        https://blocksocial.eu
  * License:           MIT
  * Text Domain:       wc-inventory-sync
  * Domain Path:       /languages
@@ -23,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 // -----------------------------------------------------------------------------
 // Konstanten
 // -----------------------------------------------------------------------------
-define( 'WCIS_VERSION', '1.6.0' );
+define( 'WCIS_VERSION', '1.7.0' );
 define( 'WCIS_FILE', __FILE__ );
 define( 'WCIS_PATH', plugin_dir_path( __FILE__ ) );
 define( 'WCIS_URL', plugin_dir_url( __FILE__ ) );

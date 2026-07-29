@@ -24,6 +24,8 @@ Das Plugin liegt im Ordner [`wc-inventory-sync/`](wc-inventory-sync).
 | Nachreichen bei kurzem Ausfall | **Retry-Queue** (Minuten-Cron) + **periodischer Abgleich** (stündlich/6h/täglich), der Drift erkennt und Korrekturen nachreicht |
 | Neue Produkte 1:1 übertragen *(optional)* | **Produkt-Sync**: einfache & variable Produkte inkl. **Status** (veröffentlicht/privat/Entwurf), per SKU; automatisch + Massen-Button mit Fortschritt |
 | Auswählen, was synchronisiert wird | **Sync-Filter** pro Shop: nach Kategorie, Marke, Einzelprodukt; Ausschlussliste; **Feld-Auswahl** (z. B. Preis) für den Produkt-Sync |
+| Steuer 1:1 übertragen | **Steuerstatus & Steuerklasse** als eigenes Feld (auch für Variationen); **Steuerklassen-Zuordnung** für abweichende Slugs zwischen Shops |
+| Erst-Sync auch vom Neben-Shop | **Pull**: ein Neben-Shop holt sich die Produkte des Hauptshops selbst – ohne dass der Hauptshop an alle verteilt |
 
 ## Funktionsweise
 
@@ -174,6 +176,32 @@ wc-inventory-sync/
 └── assets/                        # admin.css, admin.js
 ```
 
+## Steuer-Sync & Steuerklassen-Zuordnung
+
+Steuerstatus und Steuerklasse werden als **eigenes Feld** übertragen (getrennt vom Preis,
+auch für Variationen). Nutzen zwei Shops für dieselbe Steuer (z. B. 7 %) **unterschiedliche
+Steuerklassen-Slugs** (etwa `reduzierter-preis` vs. `reduced-rate`), lässt sich das per
+**Steuerklassen-Zuordnung** (Reiter „Produkt-Sync", Empfängerseite) übersetzen:
+
+```
+reduzierter-preis=reduced-rate
+```
+
+Eine Zuordnung pro Zeile. Unbekannte, nicht zugeordnete Slugs werden **übersprungen** (die
+Steuerklasse bleibt unverändert), statt fälschlich auf „Standard" (voller Satz) zu fallen.
+
+## Produkte vom Hauptshop holen (Pull)
+
+Neben dem Verteilen vom Hauptshop kann ein **Neben-Shop** die erste Produkt-Übernahme
+**selbst starten**: Reiter „Aktionen" → *„Produkte vom Hauptshop holen"*. Der Neben-Shop
+lädt die Produkte des Hauptshops seitenweise (Fortschrittsbalken) und legt sie lokal an –
+ohne dass der Hauptshop an alle Shops verteilen muss. Voraussetzung: „Produkt-Sync aktiv"
+auf dem Neben-Shop.
+
+## Autor
+
+**BlockSocial UG (haftungsbeschränkt)** — https://blocksocial.eu — info@blocksocial.eu
+
 ## Lizenz
 
-MIT – siehe [LICENSE](LICENSE).
+MIT – siehe [LICENSE](LICENSE). © 2026 BlockSocial UG (haftungsbeschränkt).

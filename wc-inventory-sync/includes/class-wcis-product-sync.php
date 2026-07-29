@@ -36,6 +36,11 @@ class WCIS_Product_Sync {
 	const IDS_TR = 'wcis_productsync_ids';
 
 	/**
+	 * Options-Schlüssel für den Pull-Job (Produkte vom Hauptshop holen).
+	 */
+	const PULL_JOB_OPT = 'wcis_productpull_job';
+
+	/**
 	 * Zeitbudget pro Tick (Sekunden).
 	 */
 	const TICK_BUDGET = 8.0;
@@ -190,8 +195,10 @@ class WCIS_Product_Sync {
 		if ( WCIS_Filter::field_enabled( 'price' ) ) {
 			$data['regular_price'] = $product->get_regular_price();
 			$data['sale_price']    = $product->get_sale_price();
-			$data['tax_status']    = $product->get_tax_status();
-			$data['tax_class']     = $product->get_tax_class();
+		}
+		if ( WCIS_Filter::field_enabled( 'tax' ) ) {
+			$data['tax_status'] = $product->get_tax_status();
+			$data['tax_class']  = $product->get_tax_class();
 		}
 		if ( WCIS_Filter::field_enabled( 'stock' ) ) {
 			$data['manage_stock']   = $product->managing_stock();
@@ -287,6 +294,8 @@ class WCIS_Product_Sync {
 				'attributes'     => $vattr,
 				'regular_price'  => $v->get_regular_price(),
 				'sale_price'     => $v->get_sale_price(),
+				'tax_status'     => $v->get_tax_status(),
+				'tax_class'      => $v->get_tax_class(),
 				'manage_stock'   => $v->managing_stock(),
 				'stock_quantity' => $v->get_stock_quantity(),
 				'stock_status'   => $v->get_stock_status(),
@@ -438,7 +447,7 @@ class WCIS_Product_Sync {
 			$product->set_tax_status( $p['tax_status'] );
 		}
 		if ( isset( $p['tax_class'] ) ) {
-			$product->set_tax_class( $p['tax_class'] );
+			self::apply_tax_class( $product, $p['tax_class'] );
 		}
 		if ( isset( $p['weight'] ) ) {
 			$product->set_weight( $p['weight'] );
@@ -506,6 +515,42 @@ class WCIS_Product_Sync {
 	 * @param int   $parent_id  Eltern-Produkt-ID.
 	 * @param array $variations Variationsliste.
 	 */
+	/**
+	 * Setzt die Steuerklasse mit optionalem Mapping und Slug-Validierung.
+	 *
+	 * Übersetzt den Quell-Slug per Zuordnung (z. B. "reduzierter-preis" =>
+	 * "reduced-rate"). Existiert der (ggf. gemappte) Slug auf diesem Shop nicht,
+	 * wird die Steuerklasse NICHT geändert – so fällt sie nicht fälschlich auf
+	 * Standard zurück.
+	 *
+	 * @param WC_Product $product Produkt/Variation.
+	 * @param string     $slug    Eingehender Steuerklassen-Slug.
+	 */
+	protected static function apply_tax_class( $product, $slug ) {
+		$slug = (string) $slug;
+		$map  = WCIS_Settings::tax_class_map();
+		if ( isset( $map[ $slug ] ) ) {
+			$slug = $map[ $slug ];
+		}
+
+		// '' = Standard ist immer gültig; andere Slugs müssen auf diesem Shop existieren.
+		$valid = array_merge( array( '' ), WC_Tax::get_tax_class_slugs() );
+		if ( in_array( $slug, $valid, true ) ) {
+			$product->set_tax_class( $slug );
+		} else {
+			WCIS_Logger::error(
+				sprintf( 'Steuerklasse „%s" existiert hier nicht (keine Zuordnung) – unverändert gelassen.', $slug ),
+				'inbound'
+			);
+		}
+	}
+
+	/**
+	 * Legt Variationen an bzw. aktualisiert sie (per SKU zugeordnet).
+	 *
+	 * @param int   $parent_id  Eltern-Produkt-ID.
+	 * @param array $variations Variationsliste.
+	 */
 	protected static function apply_variations( $parent_id, $variations ) {
 		foreach ( (array) $variations as $vp ) {
 			$vsku = isset( $vp['sku'] ) ? sanitize_text_field( $vp['sku'] ) : '';
@@ -534,6 +579,12 @@ class WCIS_Product_Sync {
 			}
 			if ( isset( $vp['sale_price'] ) ) {
 				$variation->set_sale_price( (string) $vp['sale_price'] );
+			}
+			if ( isset( $vp['tax_status'] ) ) {
+				$variation->set_tax_status( $vp['tax_status'] );
+			}
+			if ( isset( $vp['tax_class'] ) ) {
+				self::apply_tax_class( $variation, $vp['tax_class'] );
 			}
 			if ( ! empty( $vp['manage_stock'] ) ) {
 				$variation->set_manage_stock( true );
@@ -808,6 +859,225 @@ class WCIS_Product_Sync {
 			'updated' => (int) $job['updated'],
 			'skipped' => (int) $job['skipped'],
 			'failed'  => (int) $job['failed'],
+		);
+	}
+
+	// -------------------------------------------------------------------------
+	// Export (Quelle) + Pull (Empfänger holt Produkte vom Hauptshop)
+	// -------------------------------------------------------------------------
+
+	/**
+	 * Liefert eine Seite an Produkt-Payloads dieses Shops (für Pull).
+	 *
+	 * @param int $page     Seite (1-basiert).
+	 * @param int $per_page Produkte pro Seite.
+	 * @return array { items, total, total_pages }.
+	 */
+	public static function export_page( $page, $per_page ) {
+		$query = new WP_Query(
+			array(
+				'post_type'      => 'product',
+				'post_status'    => array( 'publish', 'private', 'draft', 'pending' ),
+				'posts_per_page' => (int) $per_page,
+				'paged'          => (int) $page,
+				'fields'         => 'ids',
+				'orderby'        => 'ID',
+				'order'          => 'ASC',
+				'no_found_rows'  => false,
+				'meta_query'     => array( // phpcs:ignore WordPress.DB.SlowDBQuery
+					array(
+						'key'     => '_sku',
+						'value'   => '',
+						'compare' => '!=',
+					),
+				),
+			)
+		);
+
+		$items = array();
+		foreach ( $query->posts as $pid ) {
+			$product = wc_get_product( $pid );
+			if ( ! $product || ( ! $product->is_type( 'simple' ) && ! $product->is_type( 'variable' ) ) ) {
+				continue;
+			}
+			if ( ! WCIS_Filter::should_sync( $product ) ) {
+				continue;
+			}
+			$payload = self::build_payload( $product );
+			if ( $payload ) {
+				$items[] = $payload;
+			}
+		}
+
+		return array(
+			'items'       => $items,
+			'total'       => (int) $query->found_posts,
+			'total_pages' => (int) $query->max_num_pages,
+		);
+	}
+
+	/**
+	 * Startet einen Pull: holt die Produkte des Hauptshops auf diesen Shop.
+	 *
+	 * @return array|WP_Error
+	 */
+	public static function pull_start() {
+		$master = (string) WCIS_Settings::get( 'master_url' );
+		if ( '' === $master || WCIS_Settings::normalize_url( $master ) === WCIS_Settings::normalize_url( WCIS_Settings::this_url() ) ) {
+			return new WP_Error( 'wcis_no_master', __( 'Dieser Shop ist selbst der Hauptshop – nutze „Alle Produkte übertragen".', 'wc-inventory-sync' ) );
+		}
+		if ( '' === WCIS_Settings::secret() ) {
+			return new WP_Error( 'wcis_no_secret', __( 'Kein Netzwerk-Secret gesetzt.', 'wc-inventory-sync' ) );
+		}
+		if ( ! WCIS_Settings::get( 'product_sync_enabled', false ) ) {
+			return new WP_Error( 'wcis_disabled', __( 'Produkt-Sync ist auf diesem Shop nicht aktiv – bitte zuerst einschalten.', 'wc-inventory-sync' ) );
+		}
+
+		$per_page = 20;
+		$res      = WCIS_Client::get( $master, '/products-export?page=1&per_page=' . $per_page );
+		if ( is_wp_error( $res ) || $res['code'] < 200 || $res['code'] >= 300 ) {
+			return new WP_Error( 'wcis_master_unreachable', __( 'Hauptshop nicht erreichbar oder Secret falsch.', 'wc-inventory-sync' ) );
+		}
+		$data        = json_decode( $res['body'], true );
+		$total       = ( is_array( $data ) && isset( $data['total'] ) ) ? (int) $data['total'] : 0;
+		$total_pages = ( is_array( $data ) && isset( $data['total_pages'] ) ) ? (int) $data['total_pages'] : 1;
+
+		$job = array(
+			'status'      => $total > 0 ? 'running' : 'done',
+			'master'      => untrailingslashit( $master ),
+			'per_page'    => $per_page,
+			'page'        => 1,
+			'total_pages' => max( 1, $total_pages ),
+			'total'       => $total,
+			'created'     => 0,
+			'updated'     => 0,
+			'skipped'     => 0,
+			'failed'      => 0,
+			'last_error'  => '',
+			'started_at'  => time(),
+			'updated_at'  => time(),
+		);
+		update_option( self::PULL_JOB_OPT, $job, false );
+
+		WCIS_Logger::info( sprintf( 'Produkt-Pull vom Hauptshop %s gestartet: %d Produkte.', $master, $total ), 'inbound' );
+
+		return $job;
+	}
+
+	/**
+	 * Verarbeitet den nächsten Abschnitt des Pull-Jobs.
+	 *
+	 * @return array|WP_Error
+	 */
+	public static function pull_tick() {
+		$job = get_option( self::PULL_JOB_OPT, null );
+		if ( ! is_array( $job ) ) {
+			return new WP_Error( 'wcis_no_job', __( 'Kein laufender Pull.', 'wc-inventory-sync' ) );
+		}
+		if ( 'running' !== $job['status'] ) {
+			return $job;
+		}
+
+		$start = microtime( true );
+
+		do {
+			if ( $job['page'] > $job['total_pages'] ) {
+				$job['status'] = 'done';
+				break;
+			}
+
+			$res = WCIS_Client::get( $job['master'], '/products-export?page=' . $job['page'] . '&per_page=' . $job['per_page'] );
+			if ( is_wp_error( $res ) || $res['code'] < 200 || $res['code'] >= 300 ) {
+				$job['status']     = 'error';
+				$job['last_error'] = is_wp_error( $res ) ? $res->get_error_message() : 'HTTP ' . $res['code'];
+				break;
+			}
+
+			$data  = json_decode( $res['body'], true );
+			$items = ( is_array( $data ) && isset( $data['items'] ) ) ? $data['items'] : array();
+			foreach ( $items as $payload ) {
+				$result = self::apply_product( $payload );
+				if ( isset( $job[ $result ] ) ) {
+					$job[ $result ]++;
+				}
+			}
+
+			$job['page']++;
+			if ( $job['page'] > $job['total_pages'] ) {
+				$job['status'] = 'done';
+			}
+		} while ( 'running' === $job['status'] && ( microtime( true ) - $start ) < self::TICK_BUDGET );
+
+		$job['updated_at'] = time();
+		update_option( self::PULL_JOB_OPT, $job, false );
+
+		if ( 'done' === $job['status'] ) {
+			WCIS_Logger::info(
+				sprintf( 'Produkt-Pull fertig: %d angelegt, %d aktualisiert, %d übersprungen.', $job['created'], $job['updated'], $job['skipped'] ),
+				'inbound'
+			);
+		}
+
+		return $job;
+	}
+
+	/**
+	 * Aktueller Pull-Job-Status.
+	 *
+	 * @return array|null
+	 */
+	public static function pull_state() {
+		$job = get_option( self::PULL_JOB_OPT, null );
+		return is_array( $job ) ? $job : null;
+	}
+
+	/**
+	 * Bricht den Pull ab.
+	 */
+	public static function pull_cancel() {
+		$job = self::pull_state();
+		if ( is_array( $job ) && 'running' === $job['status'] ) {
+			$job['status']     = 'cancelled';
+			$job['updated_at'] = time();
+			update_option( self::PULL_JOB_OPT, $job, false );
+		}
+	}
+
+	/**
+	 * Pull-Fortschritt in Prozent.
+	 *
+	 * @param array|null $job Job.
+	 * @return int
+	 */
+	public static function pull_percent( $job ) {
+		if ( ! is_array( $job ) || empty( $job['total_pages'] ) ) {
+			return 0;
+		}
+		if ( 'done' === $job['status'] ) {
+			return 100;
+		}
+		return (int) min( 100, floor( 100 * ( $job['page'] - 1 ) / $job['total_pages'] ) );
+	}
+
+	/**
+	 * Pull-Job für die AJAX-Ausgabe.
+	 *
+	 * @param array|null $job Job.
+	 * @return array
+	 */
+	public static function pull_to_response( $job ) {
+		if ( ! is_array( $job ) ) {
+			return array( 'status' => 'idle', 'percent' => 0 );
+		}
+		return array(
+			'status'  => $job['status'],
+			'percent' => self::pull_percent( $job ),
+			'total'   => (int) $job['total'],
+			'created' => (int) $job['created'],
+			'updated' => (int) $job['updated'],
+			'skipped' => (int) $job['skipped'],
+			'failed'  => (int) $job['failed'],
+			'message' => isset( $job['last_error'] ) ? (string) $job['last_error'] : '',
 		);
 	}
 }

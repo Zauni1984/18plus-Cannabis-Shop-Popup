@@ -65,6 +65,7 @@ class WCIS_Filter {
 		return array(
 			'name'              => __( 'Name/Titel', 'wc-inventory-sync' ),
 			'price'             => __( 'Preis (regulär & Angebot)', 'wc-inventory-sync' ),
+			'tax'               => __( 'Steuerstatus & Steuerklasse', 'wc-inventory-sync' ),
 			'description'       => __( 'Beschreibung', 'wc-inventory-sync' ),
 			'short_description' => __( 'Kurzbeschreibung', 'wc-inventory-sync' ),
 			'images'            => __( 'Bilder', 'wc-inventory-sync' ),

@@ -13,6 +13,7 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 delete_option( 'wcis_settings' );
 delete_option( 'wcis_fullsync_job' );
 delete_option( 'wcis_productsync_job' );
+delete_option( 'wcis_productpull_job' );
 delete_option( 'wcis_db_version' );
 
 // Transients entfernen.

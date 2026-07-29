@@ -63,7 +63,9 @@ class WCIS_Settings {
 			'filter_exclude_ids' => array(),
 			'filter_exclude_categories' => array(),
 			// Welche Produkt-Felder werden beim Produkt-Sync übertragen? (null = alle)
-			'product_fields'     => array( 'name', 'price', 'description', 'short_description', 'images', 'categories', 'tags', 'attributes', 'dimensions', 'status', 'stock' ),
+			'product_fields'     => array( 'name', 'price', 'tax', 'description', 'short_description', 'images', 'categories', 'tags', 'attributes', 'dimensions', 'status', 'stock' ),
+			// Steuerklassen-Zuordnung (Empfängerseite), z. B. "reduzierter-preis=reduced-rate" je Zeile.
+			'tax_class_map'      => '',
 		);
 	}
 
@@ -188,5 +190,28 @@ class WCIS_Settings {
 	 */
 	public static function generate_secret() {
 		return wp_generate_password( 48, false, false );
+	}
+
+	/**
+	 * Parst die Steuerklassen-Zuordnung in ein Array [quelle => ziel].
+	 *
+	 * Format je Zeile: "quell-slug=ziel-slug" oder "quell-slug => ziel-slug".
+	 *
+	 * @return array
+	 */
+	public static function tax_class_map() {
+		$raw = (string) self::get( 'tax_class_map', '' );
+		$map = array();
+		foreach ( preg_split( '/\r\n|\r|\n/', $raw ) as $line ) {
+			$line = trim( $line );
+			if ( '' === $line || 0 === strpos( $line, '#' ) ) {
+				continue;
+			}
+			$parts = preg_split( '/\s*(=>|=)\s*/', $line, 2 );
+			if ( count( $parts ) === 2 ) {
+				$map[ trim( $parts[0] ) ] = trim( $parts[1] );
+			}
+		}
+		return $map;
 	}
 }
