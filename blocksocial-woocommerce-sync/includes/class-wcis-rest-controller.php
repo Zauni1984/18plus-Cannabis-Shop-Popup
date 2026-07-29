@@ -2,7 +2,7 @@
 /**
  * REST-Endpunkte für eingehende Synchronisation.
  *
- * @package WC_Inventory_Sync
+ * @package BlockSocial_WooCommerce_Sync
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -87,10 +87,10 @@ class WCIS_REST_Controller {
 	 */
 	public static function check_signature( $request ) {
 		if ( ! WCIS_Settings::is_enabled() ) {
-			return new WP_Error( 'wcis_disabled', __( 'Synchronisation ist deaktiviert.', 'wc-inventory-sync' ), array( 'status' => 403 ) );
+			return new WP_Error( 'wcis_disabled', __( 'Synchronisation ist deaktiviert.', 'blocksocial-woocommerce-sync' ), array( 'status' => 403 ) );
 		}
 		if ( ! WCIS_Client::verify_request( $request ) ) {
-			return new WP_Error( 'wcis_bad_signature', __( 'Ungültige oder fehlende Signatur.', 'wc-inventory-sync' ), array( 'status' => 401 ) );
+			return new WP_Error( 'wcis_bad_signature', __( 'Ungültige oder fehlende Signatur.', 'blocksocial-woocommerce-sync' ), array( 'status' => 401 ) );
 		}
 		return true;
 	}

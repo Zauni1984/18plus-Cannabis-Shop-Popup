@@ -3,7 +3,7 @@
  * Sync-Engine: erkennt Lagerbestands-Änderungen, verteilt sie an alle Peers
  * und wendet eingehende Änderungen an. Zuordnung erfolgt ausschließlich per SKU.
  *
- * @package WC_Inventory_Sync
+ * @package BlockSocial_WooCommerce_Sync
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -336,7 +336,7 @@ class WCIS_Sync_Engine {
 		if ( empty( $peers ) ) {
 			return array(
 				'ok'    => false,
-				'error' => __( 'Keine Ziel-Shops konfiguriert.', 'wc-inventory-sync' ),
+				'error' => __( 'Keine Ziel-Shops konfiguriert.', 'blocksocial-woocommerce-sync' ),
 			);
 		}
 

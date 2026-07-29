@@ -1,20 +1,20 @@
 <?php
 /**
- * Plugin Name:       WC Inventory Sync
- * Plugin URI:        https://github.com/zauni1984/18plus-cannabis-shop-popup
- * Description:        Synchronisiert die Lagerbestände (Stock) mehrerer WooCommerce-Shops in nahezu Echtzeit. Zuordnung per SKU, ein wählbarer Hauptshop (Master) für die erste Voll-Synchronisation, jederzeit änderbar. Einfache und variable Produkte werden unterstützt; Produkte, die nur in einem Shop existieren, werden ignoriert.
- * Version:           1.7.0
+ * Plugin Name:       BlockSocial WooCommerce Sync
+ * Plugin URI:        https://github.com/Zauni1984/blocksocial-woocommerce-sync
+ * Description:        Enterprise-Grade WooCommerce-Plugin für Produkt- und Bestands-Synchronisation zwischen mehreren Shops in nahezu Echtzeit. Zuordnung per SKU, wählbarer Hauptshop (Master), Produkt-Sync inkl. Steuerklassen und Slave-Pull. Baue dein eigenes Dropshipping-/B2B-Business auf.
+ * Version:           2.0.0
  * Author:            BlockSocial UG (haftungsbeschränkt)
  * Author URI:        https://blocksocial.eu
  * License:           MIT
- * Text Domain:       wc-inventory-sync
+ * Text Domain:       blocksocial-woocommerce-sync
  * Domain Path:       /languages
  * Requires at least: 5.8
  * Requires PHP:      7.4
  * WC requires at least: 5.0
  * WC tested up to:   9.9
  *
- * @package WC_Inventory_Sync
+ * @package BlockSocial_WooCommerce_Sync
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 // -----------------------------------------------------------------------------
 // Konstanten
 // -----------------------------------------------------------------------------
-define( 'WCIS_VERSION', '1.7.0' );
+define( 'WCIS_VERSION', '2.0.0' );
 define( 'WCIS_FILE', __FILE__ );
 define( 'WCIS_PATH', plugin_dir_path( __FILE__ ) );
 define( 'WCIS_URL', plugin_dir_url( __FILE__ ) );
@@ -72,14 +72,14 @@ register_deactivation_hook( __FILE__, array( 'WCIS_Install', 'deactivate' ) );
 add_action(
 	'plugins_loaded',
 	static function () {
-		load_plugin_textdomain( 'wc-inventory-sync', false, dirname( WCIS_BASENAME ) . '/languages' );
+		load_plugin_textdomain( 'blocksocial-woocommerce-sync', false, dirname( WCIS_BASENAME ) . '/languages' );
 
 		if ( ! class_exists( 'WooCommerce' ) ) {
 			add_action(
 				'admin_notices',
 				static function () {
 					echo '<div class="notice notice-error"><p>';
-					echo esc_html__( 'WC Inventory Sync benötigt WooCommerce. Bitte WooCommerce installieren und aktivieren.', 'wc-inventory-sync' );
+					echo esc_html__( 'BlockSocial WooCommerce Sync benötigt WooCommerce. Bitte WooCommerce installieren und aktivieren.', 'blocksocial-woocommerce-sync' );
 					echo '</p></div>';
 				}
 			);

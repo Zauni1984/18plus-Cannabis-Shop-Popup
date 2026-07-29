@@ -1,22 +1,23 @@
-=== WC Inventory Sync ===
+=== BlockSocial WooCommerce Sync ===
 Contributors: blocksocial
-Tags: woocommerce, inventory, stock, sync, multishop
+Tags: woocommerce, inventory, stock, sync, multishop, dropshipping, b2b
 Requires at least: 5.8
 Tested up to: 6.6
 Requires PHP: 7.4
 WC requires at least: 5.0
 WC tested up to: 9.9
-Stable tag: 1.7.0
+Stable tag: 2.0.0
 License: MIT
 License URI: https://opensource.org/licenses/MIT
 
-Synchronisiert Lagerbestände zwischen mehreren WooCommerce-Shops in nahezu Echtzeit. Zuordnung per SKU, wählbarer und änderbarer Hauptshop.
+Enterprise-Grade WooCommerce-Plugin für Produkt- und Bestands-Synchronisation zwischen mehreren Shops in nahezu Echtzeit. Zuordnung per SKU, wählbarer Hauptshop. Baue dein eigenes Dropshipping-/B2B-Business auf.
 
 == Description ==
 
-WC Inventory Sync verbindet drei oder mehr WooCommerce-Shops zu einem Bestands-Verbund.
+BlockSocial WooCommerce Sync verbindet drei oder mehr WooCommerce-Shops zu einem Bestands- und Produkt-Verbund.
 Verkauft ein Shop einen Artikel, wird der neue Lagerbestand sofort an alle übrigen
-Shops übertragen (Zuordnung per SKU).
+Shops übertragen (Zuordnung per SKU). Neue Produkte lassen sich 1:1 verteilen – ideal für
+Dropshipping- und B2B-Netzwerke.
 
 **Funktionen**
 
@@ -24,19 +25,31 @@ Shops übertragen (Zuordnung per SKU).
 * Ein wählbarer Hauptshop (Master) für die erste Voll-Synchronisation – jederzeit änderbar.
 * Nahezu Echtzeit-Push bei jeder Bestandsänderung (Bestellung, Storno, manuelle Änderung).
 * Zuordnung per SKU – einfache und variable Produkte (über Variations-SKUs) werden unterstützt.
+* Optionaler Produkt-Sync inkl. Steuerstatus/Steuerklasse und Steuerklassen-Zuordnung.
+* Slave-Pull: Neben-Shops können sich die Produkte des Hauptshops selbst holen.
+* Automatischer Abgleich (Reconciliation) und Wiederholung fehlgeschlagener Zustellungen (Retry-Queue via Cron).
+* Sync-Filter pro Shop (Kategorie, Marke, Einzelprodukte, Feld-Auswahl) mit Umfang-Vorschau.
 * Produkte, die nur in einem Shop existieren, werden automatisch ignoriert.
-* Automatische Wiederholung fehlgeschlagener Zustellungen (Retry-Queue via Cron).
-* Verbindungstest, Protokoll und Status-Übersicht im Backend.
+* Moderne Admin-Oberfläche (App-Layout, Dark-Mode, Fortschrittsbalken), Verbindungstest und Protokoll.
 
 == Installation ==
 
-1. Ordner `wc-inventory-sync` nach `wp-content/plugins/` hochladen (auf jedem Shop).
+1. Ordner `blocksocial-woocommerce-sync` nach `wp-content/plugins/` hochladen (auf jedem Shop).
 2. Plugin in jedem Shop aktivieren.
 3. Im Hauptshop unter *WooCommerce → Lagerbestand-Sync* ein Netzwerk-Secret erzeugen.
 4. In jedem Shop dasselbe Secret eintragen, alle Shop-URLs hinterlegen und den Hauptshop wählen.
 5. Verbindung testen und anschließend im Hauptshop die erste Voll-Synchronisation starten.
 
+== Upgrade Notice ==
+
+= 2.0.0 =
+Umbenennung von „WC Inventory Sync" zu „BlockSocial WooCommerce Sync". Interne REST-Namespaces und Options-Keys bleiben kompatibel – ein Update von 1.x läuft ohne Neukonfiguration.
+
 == Changelog ==
+
+= 2.0.0 =
+* Umbenennung zu „BlockSocial WooCommerce Sync" (Ordner, Hauptdatei, Text-Domain). Interne REST-Namespaces und Options-Keys bleiben für bestehende Installationen kompatibel – ein Update von 1.x ist ohne Neukonfiguration möglich.
+* Neue Enterprise-Positionierung: Produkt- und Bestands-Sync für Dropshipping-/B2B-Netzwerke.
 
 = 1.7.0 =
 * Steuer-Sync: Steuerstatus und Steuerklasse werden als eigenes Feld übertragen (getrennt vom Preis) – auch für Variationen. Neue „Steuerklassen-Zuordnung" (Empfängerseite) übersetzt abweichende Slugs (z. B. „reduzierter-preis" ⇒ „reduced-rate"); unbekannte, nicht zugeordnete Slugs werden übersprungen statt fälschlich auf Standard zu fallen.

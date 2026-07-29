@@ -2,7 +2,7 @@
 /**
  * HTTP-Client: sendet HMAC-signierte Requests an Peer-Shops.
  *
- * @package WC_Inventory_Sync
+ * @package BlockSocial_WooCommerce_Sync
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

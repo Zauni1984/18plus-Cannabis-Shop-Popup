@@ -6,7 +6,7 @@
  * Zuordnung per SKU. Bestehende Produkte werden standardmäßig nicht verändert
  * (nur der Lagerbestand wird über den regulären Sync gepflegt).
  *
- * @package WC_Inventory_Sync
+ * @package BlockSocial_WooCommerce_Sync
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -684,10 +684,10 @@ class WCIS_Product_Sync {
 	public static function bulk_start() {
 		$peers = WCIS_Settings::get_peers();
 		if ( empty( $peers ) ) {
-			return new WP_Error( 'wcis_no_targets', __( 'Keine Ziel-Shops konfiguriert.', 'wc-inventory-sync' ) );
+			return new WP_Error( 'wcis_no_targets', __( 'Keine Ziel-Shops konfiguriert.', 'blocksocial-woocommerce-sync' ) );
 		}
 		if ( '' === WCIS_Settings::secret() ) {
-			return new WP_Error( 'wcis_no_secret', __( 'Kein Netzwerk-Secret gesetzt.', 'wc-inventory-sync' ) );
+			return new WP_Error( 'wcis_no_secret', __( 'Kein Netzwerk-Secret gesetzt.', 'blocksocial-woocommerce-sync' ) );
 		}
 
 		$ids = get_posts(
@@ -737,7 +737,7 @@ class WCIS_Product_Sync {
 	public static function bulk_tick() {
 		$job = get_option( self::JOB_OPT, null );
 		if ( ! is_array( $job ) ) {
-			return new WP_Error( 'wcis_no_job', __( 'Keine laufende Übertragung.', 'wc-inventory-sync' ) );
+			return new WP_Error( 'wcis_no_job', __( 'Keine laufende Übertragung.', 'blocksocial-woocommerce-sync' ) );
 		}
 		if ( 'running' !== $job['status'] ) {
 			return $job;
@@ -924,19 +924,19 @@ class WCIS_Product_Sync {
 	public static function pull_start() {
 		$master = (string) WCIS_Settings::get( 'master_url' );
 		if ( '' === $master || WCIS_Settings::normalize_url( $master ) === WCIS_Settings::normalize_url( WCIS_Settings::this_url() ) ) {
-			return new WP_Error( 'wcis_no_master', __( 'Dieser Shop ist selbst der Hauptshop – nutze „Alle Produkte übertragen".', 'wc-inventory-sync' ) );
+			return new WP_Error( 'wcis_no_master', __( 'Dieser Shop ist selbst der Hauptshop – nutze „Alle Produkte übertragen".', 'blocksocial-woocommerce-sync' ) );
 		}
 		if ( '' === WCIS_Settings::secret() ) {
-			return new WP_Error( 'wcis_no_secret', __( 'Kein Netzwerk-Secret gesetzt.', 'wc-inventory-sync' ) );
+			return new WP_Error( 'wcis_no_secret', __( 'Kein Netzwerk-Secret gesetzt.', 'blocksocial-woocommerce-sync' ) );
 		}
 		if ( ! WCIS_Settings::get( 'product_sync_enabled', false ) ) {
-			return new WP_Error( 'wcis_disabled', __( 'Produkt-Sync ist auf diesem Shop nicht aktiv – bitte zuerst einschalten.', 'wc-inventory-sync' ) );
+			return new WP_Error( 'wcis_disabled', __( 'Produkt-Sync ist auf diesem Shop nicht aktiv – bitte zuerst einschalten.', 'blocksocial-woocommerce-sync' ) );
 		}
 
 		$per_page = 20;
 		$res      = WCIS_Client::get( $master, '/products-export?page=1&per_page=' . $per_page );
 		if ( is_wp_error( $res ) || $res['code'] < 200 || $res['code'] >= 300 ) {
-			return new WP_Error( 'wcis_master_unreachable', __( 'Hauptshop nicht erreichbar oder Secret falsch.', 'wc-inventory-sync' ) );
+			return new WP_Error( 'wcis_master_unreachable', __( 'Hauptshop nicht erreichbar oder Secret falsch.', 'blocksocial-woocommerce-sync' ) );
 		}
 		$data        = json_decode( $res['body'], true );
 		$total       = ( is_array( $data ) && isset( $data['total'] ) ) ? (int) $data['total'] : 0;
@@ -972,7 +972,7 @@ class WCIS_Product_Sync {
 	public static function pull_tick() {
 		$job = get_option( self::PULL_JOB_OPT, null );
 		if ( ! is_array( $job ) ) {
-			return new WP_Error( 'wcis_no_job', __( 'Kein laufender Pull.', 'wc-inventory-sync' ) );
+			return new WP_Error( 'wcis_no_job', __( 'Kein laufender Pull.', 'blocksocial-woocommerce-sync' ) );
 		}
 		if ( 'running' !== $job['status'] ) {
 			return $job;

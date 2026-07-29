@@ -6,7 +6,7 @@
  * aus dem Browser. Dadurch entstehen keine PHP-Timeouts und der Fortschritt lässt
  * sich in Prozent anzeigen.
  *
- * @package WC_Inventory_Sync
+ * @package BlockSocial_WooCommerce_Sync
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -42,10 +42,10 @@ class WCIS_Fullsync {
 	public static function start( $batch_size = 0 ) {
 		$peers = WCIS_Settings::get_peers();
 		if ( empty( $peers ) ) {
-			return new WP_Error( 'wcis_no_targets', __( 'Keine Ziel-Shops konfiguriert.', 'wc-inventory-sync' ) );
+			return new WP_Error( 'wcis_no_targets', __( 'Keine Ziel-Shops konfiguriert.', 'blocksocial-woocommerce-sync' ) );
 		}
 		if ( '' === WCIS_Settings::secret() ) {
-			return new WP_Error( 'wcis_no_secret', __( 'Kein Netzwerk-Secret gesetzt.', 'wc-inventory-sync' ) );
+			return new WP_Error( 'wcis_no_secret', __( 'Kein Netzwerk-Secret gesetzt.', 'blocksocial-woocommerce-sync' ) );
 		}
 
 		$batch_size = $batch_size > 0 ? (int) $batch_size : (int) WCIS_Settings::get( 'batch_size', 50 );
@@ -97,7 +97,7 @@ class WCIS_Fullsync {
 	public static function tick() {
 		$job = get_option( self::JOB_OPT, null );
 		if ( ! is_array( $job ) ) {
-			return new WP_Error( 'wcis_no_job', __( 'Kein laufender Sync-Job.', 'wc-inventory-sync' ) );
+			return new WP_Error( 'wcis_no_job', __( 'Kein laufender Sync-Job.', 'blocksocial-woocommerce-sync' ) );
 		}
 		if ( 'running' !== $job['status'] ) {
 			return $job;

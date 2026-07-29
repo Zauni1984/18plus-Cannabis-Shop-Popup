@@ -2,7 +2,7 @@
 /**
  * Retry-Queue für fehlgeschlagene Zustellungen.
  *
- * @package WC_Inventory_Sync
+ * @package BlockSocial_WooCommerce_Sync
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

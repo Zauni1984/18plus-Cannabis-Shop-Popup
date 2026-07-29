@@ -2,7 +2,7 @@
 /**
  * Zentrale Plugin-Klasse (Singleton) – verbindet alle Komponenten.
  *
- * @package WC_Inventory_Sync
+ * @package BlockSocial_WooCommerce_Sync
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -73,12 +73,12 @@ class WCIS_Plugin {
 	public function add_cron_schedule( $schedules ) {
 		$schedules['wcis_every_minute'] = array(
 			'interval' => 60,
-			'display'  => __( 'Jede Minute (WC Inventory Sync)', 'wc-inventory-sync' ),
+			'display'  => __( 'Jede Minute (BlockSocial WooCommerce Sync)', 'blocksocial-woocommerce-sync' ),
 		);
 		if ( ! isset( $schedules['wcis_six_hours'] ) ) {
 			$schedules['wcis_six_hours'] = array(
 				'interval' => 6 * HOUR_IN_SECONDS,
-				'display'  => __( 'Alle 6 Stunden (WC Inventory Sync)', 'wc-inventory-sync' ),
+				'display'  => __( 'Alle 6 Stunden (BlockSocial WooCommerce Sync)', 'blocksocial-woocommerce-sync' ),
 			);
 		}
 		return $schedules;
@@ -91,8 +91,8 @@ class WCIS_Plugin {
 	 * @return array
 	 */
 	public function action_links( $links ) {
-		$url  = admin_url( 'admin.php?page=wc-inventory-sync' );
-		$link = '<a href="' . esc_url( $url ) . '">' . esc_html__( 'Einstellungen', 'wc-inventory-sync' ) . '</a>';
+		$url  = admin_url( 'admin.php?page=' . WCIS_Admin::SLUG );
+		$link = '<a href="' . esc_url( $url ) . '">' . esc_html__( 'Einstellungen', 'blocksocial-woocommerce-sync' ) . '</a>';
 		array_unshift( $links, $link );
 		return $links;
 	}

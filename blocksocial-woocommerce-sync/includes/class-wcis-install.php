@@ -2,7 +2,7 @@
 /**
  * Aktivierung / Deaktivierung: DB-Tabellen und Cron-Events.
  *
- * @package WC_Inventory_Sync
+ * @package BlockSocial_WooCommerce_Sync
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

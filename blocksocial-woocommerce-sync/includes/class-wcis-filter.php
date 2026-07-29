@@ -7,7 +7,7 @@
  * Der Filter gilt für ausgehende Synchronisation (was dieser Shop sendet).
  * Ausgeschlossene Produkte werden zusätzlich auch eingehend nicht verändert.
  *
- * @package WC_Inventory_Sync
+ * @package BlockSocial_WooCommerce_Sync
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -63,18 +63,18 @@ class WCIS_Filter {
 	 */
 	public static function product_field_labels() {
 		return array(
-			'name'              => __( 'Name/Titel', 'wc-inventory-sync' ),
-			'price'             => __( 'Preis (regulär & Angebot)', 'wc-inventory-sync' ),
-			'tax'               => __( 'Steuerstatus & Steuerklasse', 'wc-inventory-sync' ),
-			'description'       => __( 'Beschreibung', 'wc-inventory-sync' ),
-			'short_description' => __( 'Kurzbeschreibung', 'wc-inventory-sync' ),
-			'images'            => __( 'Bilder', 'wc-inventory-sync' ),
-			'categories'        => __( 'Kategorien', 'wc-inventory-sync' ),
-			'tags'              => __( 'Schlagwörter', 'wc-inventory-sync' ),
-			'attributes'        => __( 'Attribute', 'wc-inventory-sync' ),
-			'dimensions'        => __( 'Maße & Gewicht', 'wc-inventory-sync' ),
-			'status'            => __( 'Veröffentlichungsstatus', 'wc-inventory-sync' ),
-			'stock'             => __( 'Lagerbestand (bei Produktanlage)', 'wc-inventory-sync' ),
+			'name'              => __( 'Name/Titel', 'blocksocial-woocommerce-sync' ),
+			'price'             => __( 'Preis (regulär & Angebot)', 'blocksocial-woocommerce-sync' ),
+			'tax'               => __( 'Steuerstatus & Steuerklasse', 'blocksocial-woocommerce-sync' ),
+			'description'       => __( 'Beschreibung', 'blocksocial-woocommerce-sync' ),
+			'short_description' => __( 'Kurzbeschreibung', 'blocksocial-woocommerce-sync' ),
+			'images'            => __( 'Bilder', 'blocksocial-woocommerce-sync' ),
+			'categories'        => __( 'Kategorien', 'blocksocial-woocommerce-sync' ),
+			'tags'              => __( 'Schlagwörter', 'blocksocial-woocommerce-sync' ),
+			'attributes'        => __( 'Attribute', 'blocksocial-woocommerce-sync' ),
+			'dimensions'        => __( 'Maße & Gewicht', 'blocksocial-woocommerce-sync' ),
+			'status'            => __( 'Veröffentlichungsstatus', 'blocksocial-woocommerce-sync' ),
+			'stock'             => __( 'Lagerbestand (bei Produktanlage)', 'blocksocial-woocommerce-sync' ),
 		);
 	}
 

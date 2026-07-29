@@ -2,7 +2,7 @@
 /**
  * Einstellungen: Speicherung und Zugriffshelfer.
  *
- * @package WC_Inventory_Sync
+ * @package BlockSocial_WooCommerce_Sync
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

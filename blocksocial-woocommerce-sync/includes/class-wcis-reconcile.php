@@ -8,7 +8,7 @@
  * Der Abgleich wird vom Hauptshop (Master) koordiniert, damit nicht mehrere
  * Shops gleichzeitig widersprüchliche Korrekturen verteilen.
  *
- * @package WC_Inventory_Sync
+ * @package BlockSocial_WooCommerce_Sync
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

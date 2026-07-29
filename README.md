@@ -1,13 +1,21 @@
-# WC Inventory Sync – Lagerbestand-Synchronisation für mehrere WooCommerce-Shops
+# BlockSocial WooCommerce Sync
 
-Ein WordPress/WooCommerce-Plugin, das die **Lagerbestände mehrerer Shops in nahezu Echtzeit
-synchronisiert**. Verkauft ein Shop einen Artikel, wird der neue Bestand sofort an alle
-übrigen Shops übertragen.
+**Enterprise-Grade WooCommerce-Plugin für Produkt- und Bestands-Synchronisation.**
+Baue dein eigenes Dropshipping-/B2B-Business auf.
+
+Ein WordPress/WooCommerce-Plugin, das **Produkte und Lagerbestände mehrerer Shops in nahezu
+Echtzeit synchronisiert**. Verkauft ein Shop einen Artikel, wird der neue Bestand sofort an
+alle übrigen Shops übertragen; neue Produkte lassen sich 1:1 verteilen.
 
 > Beispiel: Shop A hat 5 Stück von Produkt B. Shop A verkauft 2 → alle verbundenen Shops
 > zeigen kurz darauf **3** verbleibende Stück an.
 
-Das Plugin liegt im Ordner [`wc-inventory-sync/`](wc-inventory-sync).
+Das Plugin liegt im Ordner [`blocksocial-woocommerce-sync/`](blocksocial-woocommerce-sync).
+
+> **Hinweis zum Update von 1.x („WC Inventory Sync"):** Ordner, Hauptdatei und Text-Domain
+> heißen ab 2.0.0 `blocksocial-woocommerce-sync`. Die internen REST-Namespaces und
+> Options-Keys bleiben unverändert – bestehende Verbünde synchronisieren nach dem Update
+> ohne Neukonfiguration weiter.
 
 ## Kernfunktionen
 
@@ -57,7 +65,7 @@ selbstheilend: geht eine Nachricht verloren, korrigiert die nächste Änderung d
 
 Das Plugin wird auf **jedem** beteiligten Shop installiert:
 
-1. Ordner `wc-inventory-sync/` nach `wp-content/plugins/` kopieren.
+1. Ordner `blocksocial-woocommerce-sync/` nach `wp-content/plugins/` kopieren.
 2. Plugin unter *Plugins* aktivieren (legt DB-Tabellen und Cron-Jobs an).
 3. **Hauptshop einrichten:** *WooCommerce → Lagerbestand-Sync*
    - „Netzwerk-Secret" **neu erzeugen** und kopieren.
@@ -158,8 +166,8 @@ immer mitgesendet.
 ## Dateien
 
 ```
-wc-inventory-sync/
-├── wc-inventory-sync.php          # Bootstrap, Konstanten, HPOS-Kompatibilität
+blocksocial-woocommerce-sync/
+├── blocksocial-woocommerce-sync.php # Bootstrap, Konstanten, HPOS-Kompatibilität
 ├── uninstall.php                  # Aufräumen bei Deinstallation
 ├── readme.txt                     # WordPress-Plugin-Readme
 ├── includes/

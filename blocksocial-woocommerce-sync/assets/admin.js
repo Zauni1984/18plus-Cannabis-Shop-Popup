@@ -1,4 +1,4 @@
-/* WC Inventory Sync – Admin-Skript */
+/* BlockSocial WooCommerce Sync – Admin-Skript */
 ( function ( $ ) {
 	'use strict';
 

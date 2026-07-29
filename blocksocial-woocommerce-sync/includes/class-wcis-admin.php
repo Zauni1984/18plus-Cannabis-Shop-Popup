@@ -2,7 +2,7 @@
 /**
  * Admin-Oberfläche: Einstellungsseite, Aktionen und AJAX-Handler.
  *
- * @package WC_Inventory_Sync
+ * @package BlockSocial_WooCommerce_Sync
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -24,7 +24,7 @@ class WCIS_Admin {
 	/**
 	 * Menü-Slug.
 	 */
-	const SLUG = 'wc-inventory-sync';
+	const SLUG = 'blocksocial-woocommerce-sync';
 
 	/**
 	 * Singleton-Instanz.
@@ -71,8 +71,8 @@ class WCIS_Admin {
 	public function add_menu() {
 		add_submenu_page(
 			'woocommerce',
-			__( 'Lagerbestand-Sync', 'wc-inventory-sync' ),
-			__( 'Lagerbestand-Sync', 'wc-inventory-sync' ),
+			__( 'Lagerbestand-Sync', 'blocksocial-woocommerce-sync' ),
+			__( 'Lagerbestand-Sync', 'blocksocial-woocommerce-sync' ),
 			'manage_woocommerce',
 			self::SLUG,
 			array( $this, 'render_page' )
@@ -102,30 +102,30 @@ class WCIS_Admin {
 				'ajaxUrl' => admin_url( 'admin-ajax.php' ),
 				'nonce'   => wp_create_nonce( 'wcis_ajax' ),
 				'i18n'    => array(
-					'testing'     => __( 'Teste …', 'wc-inventory-sync' ),
-					'confirmFull' => __( 'Voll-Synchronisation vom Hauptshop an alle Shops starten? Dies überschreibt die Bestände der anderen Shops mit den Werten dieses Shops (Zuordnung per SKU).', 'wc-inventory-sync' ),
-					'starting'    => __( 'Starte …', 'wc-inventory-sync' ),
-					'syncing'     => __( 'Synchronisiere', 'wc-inventory-sync' ),
-					'toShop'      => __( 'an', 'wc-inventory-sync' ),
-					'done'        => __( 'Fertig', 'wc-inventory-sync' ),
-					'cancelled'   => __( 'Abgebrochen', 'wc-inventory-sync' ),
-					'itemsUnit'   => __( 'Artikel', 'wc-inventory-sync' ),
-					'batchesSent' => __( 'Batches gesendet', 'wc-inventory-sync' ),
-					'failedUnit'  => __( 'fehlgeschlagen', 'wc-inventory-sync' ),
-					'genericError' => __( 'Fehler', 'wc-inventory-sync' ),
-					'confirmProducts' => __( 'Alle einfachen und variablen Produkte (inkl. Status) an alle verbundenen Shops übertragen? Neue Produkte werden angelegt; bestehende bleiben unangetastet, sofern nicht anders eingestellt.', 'wc-inventory-sync' ),
-					'confirmPull'  => __( 'Produkte vom Hauptshop auf diesen Shop holen? Neue Produkte werden hier angelegt; bestehende bleiben unangetastet, sofern nicht anders eingestellt.', 'wc-inventory-sync' ),
-					'products'    => __( 'Produkte', 'wc-inventory-sync' ),
-					'createdUnit' => __( 'angelegt', 'wc-inventory-sync' ),
-					'updatedUnit' => __( 'aktualisiert', 'wc-inventory-sync' ),
-					'skippedUnit' => __( 'übersprungen', 'wc-inventory-sync' ),
-					'previewLoading' => __( 'Vorschau wird berechnet …', 'wc-inventory-sync' ),
-					'previewHeading' => __( 'Produkte im Sync-Umfang', 'wc-inventory-sync' ),
-					'previewOf'      => __( 'von', 'wc-inventory-sync' ),
-					'previewScanned' => __( 'geprüft', 'wc-inventory-sync' ),
-					'previewExcluded' => __( 'ausgeschlossen', 'wc-inventory-sync' ),
-					'previewSample'  => __( 'Beispiele', 'wc-inventory-sync' ),
-					'previewTruncated' => __( 'Hinweis: Es wurden nur die ersten Produkte geprüft.', 'wc-inventory-sync' ),
+					'testing'     => __( 'Teste …', 'blocksocial-woocommerce-sync' ),
+					'confirmFull' => __( 'Voll-Synchronisation vom Hauptshop an alle Shops starten? Dies überschreibt die Bestände der anderen Shops mit den Werten dieses Shops (Zuordnung per SKU).', 'blocksocial-woocommerce-sync' ),
+					'starting'    => __( 'Starte …', 'blocksocial-woocommerce-sync' ),
+					'syncing'     => __( 'Synchronisiere', 'blocksocial-woocommerce-sync' ),
+					'toShop'      => __( 'an', 'blocksocial-woocommerce-sync' ),
+					'done'        => __( 'Fertig', 'blocksocial-woocommerce-sync' ),
+					'cancelled'   => __( 'Abgebrochen', 'blocksocial-woocommerce-sync' ),
+					'itemsUnit'   => __( 'Artikel', 'blocksocial-woocommerce-sync' ),
+					'batchesSent' => __( 'Batches gesendet', 'blocksocial-woocommerce-sync' ),
+					'failedUnit'  => __( 'fehlgeschlagen', 'blocksocial-woocommerce-sync' ),
+					'genericError' => __( 'Fehler', 'blocksocial-woocommerce-sync' ),
+					'confirmProducts' => __( 'Alle einfachen und variablen Produkte (inkl. Status) an alle verbundenen Shops übertragen? Neue Produkte werden angelegt; bestehende bleiben unangetastet, sofern nicht anders eingestellt.', 'blocksocial-woocommerce-sync' ),
+					'confirmPull'  => __( 'Produkte vom Hauptshop auf diesen Shop holen? Neue Produkte werden hier angelegt; bestehende bleiben unangetastet, sofern nicht anders eingestellt.', 'blocksocial-woocommerce-sync' ),
+					'products'    => __( 'Produkte', 'blocksocial-woocommerce-sync' ),
+					'createdUnit' => __( 'angelegt', 'blocksocial-woocommerce-sync' ),
+					'updatedUnit' => __( 'aktualisiert', 'blocksocial-woocommerce-sync' ),
+					'skippedUnit' => __( 'übersprungen', 'blocksocial-woocommerce-sync' ),
+					'previewLoading' => __( 'Vorschau wird berechnet …', 'blocksocial-woocommerce-sync' ),
+					'previewHeading' => __( 'Produkte im Sync-Umfang', 'blocksocial-woocommerce-sync' ),
+					'previewOf'      => __( 'von', 'blocksocial-woocommerce-sync' ),
+					'previewScanned' => __( 'geprüft', 'blocksocial-woocommerce-sync' ),
+					'previewExcluded' => __( 'ausgeschlossen', 'blocksocial-woocommerce-sync' ),
+					'previewSample'  => __( 'Beispiele', 'blocksocial-woocommerce-sync' ),
+					'previewTruncated' => __( 'Hinweis: Es wurden nur die ersten Produkte geprüft.', 'blocksocial-woocommerce-sync' ),
 				),
 			)
 		);
@@ -136,7 +136,7 @@ class WCIS_Admin {
 	 */
 	protected function require_cap() {
 		if ( ! current_user_can( 'manage_woocommerce' ) ) {
-			wp_die( esc_html__( 'Keine Berechtigung.', 'wc-inventory-sync' ) );
+			wp_die( esc_html__( 'Keine Berechtigung.', 'blocksocial-woocommerce-sync' ) );
 		}
 	}
 
@@ -307,15 +307,15 @@ class WCIS_Admin {
 	public function ajax_test_connection() {
 		check_ajax_referer( 'wcis_ajax', 'nonce' );
 		if ( ! current_user_can( 'manage_woocommerce' ) ) {
-			wp_send_json_error( array( 'message' => __( 'Keine Berechtigung.', 'wc-inventory-sync' ) ) );
+			wp_send_json_error( array( 'message' => __( 'Keine Berechtigung.', 'blocksocial-woocommerce-sync' ) ) );
 		}
 
 		$url = isset( $_POST['url'] ) ? esc_url_raw( wp_unslash( $_POST['url'] ) ) : '';
 		if ( '' === $url ) {
-			wp_send_json_error( array( 'message' => __( 'Keine URL angegeben.', 'wc-inventory-sync' ) ) );
+			wp_send_json_error( array( 'message' => __( 'Keine URL angegeben.', 'blocksocial-woocommerce-sync' ) ) );
 		}
 		if ( '' === WCIS_Settings::secret() ) {
-			wp_send_json_error( array( 'message' => __( 'Kein Netzwerk-Secret gesetzt. Bitte zuerst speichern.', 'wc-inventory-sync' ) ) );
+			wp_send_json_error( array( 'message' => __( 'Kein Netzwerk-Secret gesetzt. Bitte zuerst speichern.', 'blocksocial-woocommerce-sync' ) ) );
 		}
 
 		$res = WCIS_Client::get( $url, '/ping' );
@@ -325,8 +325,8 @@ class WCIS_Admin {
 		}
 		if ( 200 !== $res['code'] ) {
 			$msg = 401 === $res['code']
-				? __( 'Verbindung erreichbar, aber Secret stimmt nicht überein (401).', 'wc-inventory-sync' )
-				: sprintf( __( 'Fehler: HTTP %d.', 'wc-inventory-sync' ), $res['code'] );
+				? __( 'Verbindung erreichbar, aber Secret stimmt nicht überein (401).', 'blocksocial-woocommerce-sync' )
+				: sprintf( __( 'Fehler: HTTP %d.', 'blocksocial-woocommerce-sync' ), $res['code'] );
 			wp_send_json_error( array( 'message' => $msg ) );
 		}
 
@@ -335,7 +335,7 @@ class WCIS_Admin {
 			array(
 				'message' => sprintf(
 					/* translators: 1: Shop-Name, 2: Version */
-					__( 'Verbunden mit „%1$s" (Plugin v%2$s).', 'wc-inventory-sync' ),
+					__( 'Verbunden mit „%1$s" (Plugin v%2$s).', 'blocksocial-woocommerce-sync' ),
 					isset( $data['shop'] ) ? $data['shop'] : '?',
 					isset( $data['version'] ) ? $data['version'] : '?'
 				),
@@ -349,7 +349,7 @@ class WCIS_Admin {
 	protected function check_ajax() {
 		check_ajax_referer( 'wcis_ajax', 'nonce' );
 		if ( ! current_user_can( 'manage_woocommerce' ) ) {
-			wp_send_json_error( array( 'message' => __( 'Keine Berechtigung.', 'wc-inventory-sync' ) ) );
+			wp_send_json_error( array( 'message' => __( 'Keine Berechtigung.', 'blocksocial-woocommerce-sync' ) ) );
 		}
 	}
 
