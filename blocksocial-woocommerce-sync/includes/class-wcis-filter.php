@@ -222,8 +222,19 @@ class WCIS_Filter {
 
 		// 2) Ausschluss nach Kategorie anhand der mitgesendeten Kategorienamen –
 		//    funktioniert auch für Produkte, die hier noch nicht existieren.
+		//    Bevorzugt 'cat_names' (immer mitgesendet), sonst 'categories'.
 		$excl_cats = array_map( 'intval', (array) self::cfg( 'filter_exclude_categories', array() ) );
-		if ( empty( $excl_cats ) || empty( $payload['categories'] ) || ! is_array( $payload['categories'] ) ) {
+		if ( empty( $excl_cats ) ) {
+			return false;
+		}
+
+		$cats = array();
+		if ( ! empty( $payload['cat_names'] ) && is_array( $payload['cat_names'] ) ) {
+			$cats = $payload['cat_names'];
+		} elseif ( ! empty( $payload['categories'] ) && is_array( $payload['categories'] ) ) {
+			$cats = $payload['categories'];
+		}
+		if ( empty( $cats ) ) {
 			return false;
 		}
 
@@ -231,7 +242,7 @@ class WCIS_Filter {
 		if ( empty( $excl_names ) ) {
 			return false;
 		}
-		foreach ( $payload['categories'] as $cname ) {
+		foreach ( $cats as $cname ) {
 			$key = self::norm_name( $cname );
 			if ( '' !== $key && isset( $excl_names[ $key ] ) ) {
 				return true;
