@@ -374,8 +374,10 @@ class WCIS_Product_Sync {
 		$existing_id     = wc_get_product_id_by_sku( $sku );
 		$update_existing = (bool) WCIS_Settings::get( 'product_sync_update_existing', false );
 
-		// Explizit ausgeschlossene Produkte auch eingehend nicht verändern.
-		if ( $existing_id && WCIS_Filter::is_excluded( $existing_id ) ) {
+		// Explizit ausgeschlossene Produkte auch eingehend nicht anlegen/verändern.
+		// Greift auch bei NEUEN Produkten anhand der mitgesendeten Kategorien
+		// (z. B. ausgeschlossene Kategorie „Merch").
+		if ( WCIS_Filter::is_excluded_incoming( $payload ) ) {
 			return 'skipped';
 		}
 
