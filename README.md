@@ -141,7 +141,7 @@ Beispielliste.
 
 Für den Produkt-Sync lässt sich wählen, welche Felder übertragen werden: **Preis**
 (regulär & Angebot), Beschreibung, Kurzbeschreibung, Bilder, Kategorien, Schlagwörter,
-**Marken**, Attribute, **Versandklasse**, **Lieferzeit**, **Germanized-Grundpreis**, Maße/Gewicht, Status, Lagerbestand. Beispiel: Haken bei „Preis" entfernen,
+**Marken**, **Hersteller**, Attribute, **Versandklasse**, **Lieferzeit**, **Germanized-Grundpreis**, Maße/Gewicht, Status, Lagerbestand. Beispiel: Haken bei „Preis" entfernen,
 damit jeder Shop **eigene Preise** behalten kann. Der Produktname wird zur Zuordnung
 immer mitgesendet.
 
