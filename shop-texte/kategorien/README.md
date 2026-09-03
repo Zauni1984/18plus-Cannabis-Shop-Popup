@@ -35,7 +35,7 @@ parent, count).
 
 - [x] Filter (608) + Aktivkohlefilter (4550) + 6 Größen-Subkats — 7/7
 - [x] Headshop-Baum (inkl. Headshop selbst) — 25/25
-- [ ] Growshop-Baum — 0/28
+- [x] Growshop-Baum — 31/31
 - [ ] Samen-Baum — 0/6
 - [ ] Lebensmittel-Baum — 0/9
 - [ ] CBD-Baum — 0/4
