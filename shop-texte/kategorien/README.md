@@ -34,7 +34,7 @@ parent, count).
 ## Fortschritt
 
 - [x] Filter (608) + Aktivkohlefilter (4550) + 6 Größen-Subkats — 7/7
-- [ ] Headshop-Baum Rest — 0/20
+- [x] Headshop-Baum (inkl. Headshop selbst) — 25/25
 - [ ] Growshop-Baum — 0/28
 - [ ] Samen-Baum — 0/6
 - [ ] Lebensmittel-Baum — 0/9
