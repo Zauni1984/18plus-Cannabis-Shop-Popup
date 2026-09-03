@@ -16,6 +16,7 @@ FARBEN = {
       "Cellulose-Braun liegt nah an ungebleichtem Papier, der Übergang wirkt wie aus einem Stück. Wer "
       "ungebleichte Longpaper dreht, bekommt damit das ruhigste Gesamtbild der ganzen Reihe."),
   bullet="<strong>Ohne Farbpigment:</strong> Cellulose im Naturton, nichts zugesetzt.",
+  kurzlabel="Für Puristen gemacht",
   tipp=("Passt zu ungebleichtem Paper",
         "Der Naturton trifft ungebleichte Longpaper fast exakt. Bei weißem Paper setzt sich der Filter "
         "dagegen sichtbar ab — dort wirken die gefärbten Varianten bewusster gewählt.")),
@@ -29,6 +30,7 @@ FARBEN = {
       "in der mehrere Filterfarben unterwegs sind, ist Rosé außerdem der Ton, den man am sichersten "
       "wiedererkennt, ohne lange hinzusehen."),
   bullet="<strong>Zurückhaltender Ton:</strong> Warmes Altrosa, sichtbar ohne aufdringlich zu sein.",
+  kurzlabel="Der zurückhaltende Ton",
   tipp=("Bleibt farbecht",
         "Das Pigment steckt in der Cellulose, nicht als Lack darauf. Auch nach längerem Kontakt mit "
         "feuchten Lippen färbt der Filter nicht ab.")),
@@ -42,6 +44,7 @@ FARBEN = {
       "verschwimmt. Wer regelmäßig im Freien dreht oder auf Festivals unterwegs ist, spart sich damit das "
       "Drehen und Suchen des richtigen Endes."),
   bullet="<strong>Auf Distanz erkennbar:</strong> Orangerot hebt sich auch von braunem Paper deutlich ab.",
+  kurzlabel="Auch bei wenig Licht zu finden",
   tipp=("Nützlich bei wenig Licht",
         "Wenn du abends draußen bist, findest du das Mundende ohne Hinsehen. Bei naturfarbenen Filtern "
         "musst du erst tasten.")),
@@ -55,6 +58,7 @@ FARBEN = {
       "wenigsten mit anderen verwechseln lässt — praktisch, wenn mehrere Leute gleichzeitig drehen und "
       "hinterher niemand weiß, welcher Joint wem gehört."),
   bullet="<strong>Stärkster Kontrast:</strong> Tiefes Lila, auf hellem Paper sofort zu erkennen.",
+  kurzlabel="Der Ton mit dem stärksten Kontrast",
   tipp=("Zuordnung in der Runde",
         "Wenn mehrere gleichzeitig drehen, hilft eine eindeutige Farbe. Lila lässt sich mit keinem "
         "anderen Ton der Reihe verwechseln.")),
@@ -68,6 +72,7 @@ FARBEN = {
       "nicht entscheiden. Wer noch nicht weiß, welcher Ton ihm liegt, findet es über eine gemischte "
       "Packung schneller heraus als über vier einzelne."),
   bullet="<strong>Ohne feste Verteilung:</strong> Organic, Rosé, Sunset, Violet und weitere gemischt.",
+  kurzlabel="Keine Farbentscheidung nötig",
   tipp=("Farbe als Zuordnung",
         "Jeder in der Runde nimmt eine andere Farbe — danach ist klar, welcher Joint wem gehört. Das ist "
         "der eigentliche Zweck der gemischten Packung.")),
@@ -188,8 +193,7 @@ def bauen(pid, farbe, groesse):
     short = ('<p><strong>%s:</strong> Die <strong>%s</strong> sind 6-mm-Hybridfilter mit Aktivkohlegranulat '
              'und beidseitigen Cellulose-Kappen — das Granulat bleibt im Filter, der Zug bleibt gleichmäßig, '
              'eine Einbaurichtung gibt es nicht. %s %s aus deutscher Fertigung.</p>'
-             ) % (f["h2"].replace("Warum ","").replace("Wofür ","").capitalize(),
-                  name, f["p1"].split(".")[0] + ".", g["lang"])
+             ) % (f["kurzlabel"], name, f["p1"].split(".")[0] + ".", g["lang"])
     seo_desc = ("Medusafilters %s in 6 mm: Hybridfilter mit Aktivkohle und beidseitigen Cellulose-Kappen, "
                 "25 mm, ohne Einbaurichtung. %s, aus deutscher Fertigung.") % (farbe, g["lang"])
     if len(seo_desc) > 160:
