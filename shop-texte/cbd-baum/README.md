@@ -103,15 +103,23 @@ bereits sauberen Referenzfall 10855). Bei 10861 wurde zusätzlich die
 implizite Therapie-Anmutung "Gelenk-Support für Deinen Hund" aus der
 Metadescription entfernt.
 
-Die restlichen 5 Tier-CBD-Produkte (PuroCuro CBD-Pflaster 31106, Cannaline
-CBD-Pfotensalbe für Katzen 31104, Hemnia CBD in Lachsöl 31100, Enecta
-CBD-Öl für Haustiere 31093, Euphoria CBD-Öl für Katzen 31090) hatten
-ebenfalls nur die Yoast-CTA als Verstoß (H1 bereits entfernt, Metadesc
-korrigiert); der Fließtext dieser 5 Produkte wurde in dieser Sitzung nicht
-erneut vollständig gegengelesen (Content war bereits vor dieser Sitzung
-als "H1 + Body-CTA" vermerkt — die Body-CTA-Passage konnte mangels erneut
-vorliegendem Volltext in dieser Sitzung nicht sicher zielgenau entfernt
-werden und bleibt als offener Punkt für eine Folgeprüfung).
+**Nachtrag (Hauptsession, direkt im Anschluss):** Die restlichen 5
+Tier-CBD-Produkte (PuroCuro CBD-Pflaster 31106, Cannaline CBD-Pfotensalbe
+für Katzen 31104, Hemnia CBD in Lachsöl 31100, Enecta CBD-Öl für Haustiere
+31093, Euphoria CBD-Öl für Katzen 31090) wurden erneut vollständig
+gelesen und der offene Punkt geschlossen: bei allen 5 wurde der
+abschließende Body-CTA-Absatz ("Bestelle … jetzt bei Hanfjack …") per
+Regex entfernt. Bei **31106 (PuroCuro CBD-Pflaster)** zusätzlich mehrere
+Wirkversprechen neutralisiert, die über reine Produktbeschreibung
+hinausgingen: "von den Vorteilen hochwertiger Cannabinoide profitieren"
+(Einleitungssatz umformuliert), "für ein konstantes Wohlbefinden ohne
+Aufwand" → "für eine gleichmäßige CBD-Abgabe ohne Aufwand", "Dieses
+synergistische Gleichgewicht (Entourage-Effekt) verstärkt die
+Gesamtwirkung" → sachliche Aussage zur Zusammensetzung, sowie "ohne dich
+'benommen' zu machen" (impliziter Wirkungsvergleich) entfernt; die
+Kurzbeschreibung ("langanhaltende Wirkung … wohlfühlen") wurde ebenfalls
+auf "gleichmäßige CBD-Abgabe" neutralisiert. Die anderen 4 Produkte hatten
+außer der Body-CTA keine weiteren Verstöße.
 
 ### Fehlende Yoast-`meta_description` (1/55)
 
@@ -130,9 +138,6 @@ Kategorien dieses Projekts). Einziger Fix: CTA-Phrase aus der
 
 ## Nicht behoben / offene Punkte
 
-- **Body-Text der 5 Tier-CBD-Produkte 31106/31104/31100/31093/31090**
-  (siehe oben) — Yoast ist sauber, ein möglicher CTA-Absatz im Fließtext
-  wurde nicht erneut verifiziert/entfernt.
 - **Varianten (`wp_wc_get_product_variation`)** der beiden variablen
   Produkte Calitamex CBD Happies Wohlbefinden/Mobilität/Beruhigung sowie
   der Calitamex CBD-Öle (Mobilität/Beruhigung/Wohlbefinden) wurden nicht
