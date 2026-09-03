@@ -38,5 +38,5 @@ parent, count).
 - [x] Growshop-Baum — 31/31
 - [x] Samen-Baum — 6/6
 - [x] Lebensmittel-Baum — 9/9
-- [ ] CBD-Baum — 0/4
+- [x] CBD-Baum — 4/4
 - [ ] Standalone (Hanfprodukte, Pflegeprodukte, Bundles, Mystery Boxen, Merch, Angebote, Vermehrungsmaterial) — 0/8
