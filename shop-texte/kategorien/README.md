@@ -39,4 +39,11 @@ parent, count).
 - [x] Samen-Baum — 6/6
 - [x] Lebensmittel-Baum — 9/9
 - [x] CBD-Baum — 4/4
-- [ ] Standalone (Hanfprodukte, Pflegeprodukte, Bundles, Mystery Boxen, Merch, Angebote, Vermehrungsmaterial) — 0/8
+- [x] Standalone (Hanfprodukte, Pflegeprodukte, Bundles, Dr. Grow Sets, Mystery Boxen, Merch, Angebote, Vermehrungsmaterial) — 8/8
+
+## Abschluss
+
+Alle 91 aktiven Produktkategorien (von 96 gesamt, 5 mit 0 Produkten übersprungen)
+sind fertig: description (kurzer Klartext-Intro) + below_category_content
+(strukturiertes HTML mit H2/UL) + Yoast SEO (Title/Meta-Description/Focus-Keyword)
+für jede Kategorie geschrieben und live verifiziert.
