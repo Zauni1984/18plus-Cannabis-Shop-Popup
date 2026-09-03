@@ -20,4 +20,7 @@ rad.json
 *.bclicense
 *.flf
 #Test results file
-TestResults.xmlbloomtech-stock-sync.zip
+TestResults.xml
+
+# Gebautes Plugin-Paket (wird bei Bedarf neu erzeugt)
+bloomtech-stock-sync.zip
