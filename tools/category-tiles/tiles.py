@@ -147,13 +147,27 @@ def i_press():
 <rect x="36" y="51" width="28" height="12" rx="3" fill-opacity="0.5"/>
 <rect x="26" y="82" width="48" height="8" rx="3"/></g>'''
 
+def i_magnifier():
+    return f'<g fill="none" stroke="{GOLD}" stroke-width="7"><circle cx="43" cy="43" r="24"/></g>' \
+           f'<line x1="60" y1="60" x2="82" y2="82" stroke="{GOLD}" stroke-width="9" stroke-linecap="round"/>'
+def i_cap():
+    crown='M22,62 a28,28 0 0 1 56,0 z'
+    peak='M20,62 h60 a6,6 0 0 1 6,6 v4 a3,3 0 0 1 -3,3 H17 a3,3 0 0 1 -3,-3 v-4 a6,6 0 0 1 6,-6 z'
+    return f'<g fill="{GOLD}" stroke="none"><path d="{crown}"/><path d="{peak}"/><circle cx="50" cy="30" r="4" fill="{G}"/></g>'
+
+def i_poster():
+    frame='M28,16 h44 a4,4 0 0 1 4,4 v60 a4,4 0 0 1 -4,4 h-44 a4,4 0 0 1 -4,-4 v-60 a4,4 0 0 1 4,-4 z'
+    inner='M32,24 h36 v48 h-36 z'
+    return f'<g fill="{GOLD}" stroke="none"><path fill-rule="evenodd" d="{frame} {inner}"/>' \
+           f'<path d="M34,70 l11,-16 8,10 7,-11 10,17 z"/><circle cx="41" cy="34" r="4"/></g>'
+
 ICONS={
  'leaf':i_leaf,'seedling':i_seedling,'lamp':i_lamp,'bottle':i_bottle,'filter':i_filter,'drop':i_drop,'fan':i_fan,
  'tent':i_tent,'box':i_box,'sack':i_sack,'gear':i_gear,'flame':i_flame,'bug':i_bug,'pot':i_pot,'scissors':i_scissors,
  'glove':i_glove,'gauge':i_gauge,'bong':i_bong,'pipe':i_pipe,'vape':i_vape,'joint':i_joint,'papers':i_papers,
  'ashtray':i_ashtray,'jar':i_jar,'grinder':i_grinder,'tray':i_tray,'lighter':i_lighter,'tube':i_tube,'scale':i_scale,
  'paw':i_paw,'mug':i_mug,'shaker':i_shaker,'seed':i_seed,'tshirt':i_tshirt,'percent':i_percent,'mystery':i_mystery,
- 'book':i_book,'roll':i_roll,'press':i_press,
+ 'book':i_book,'roll':i_roll,'press':i_press,'magnifier':i_magnifier,'cap':i_cap,'poster':i_poster,
 }
 
 # category id -> (Display Name, icon)
@@ -184,6 +198,21 @@ CATS={
 16452:("Curing & Lagerung","jar"),16453:("Bücher","book"),16454:("Geruchsneutralisation","bottle"),
 16455:("Pflanzzubehör","pot"),16456:("Folien & Reflexion","roll"),16457:("Trimmer & Erntehelfer","scissors"),
 16458:("Zeltzubehör","tent"),16527:("Extraktion & Pressen","press"),
+# --- .de-Nachzuegler ohne Kachel (09/2026) ---
+15521:("Luftfilter","filter"),15523:("Ersatzfilter","filter"),15550:("Vapes & Pods","vape"),
+15557:("AutoPot Komplettsysteme","box"),15558:("AutoPot Töpfe & Untersetzer","pot"),
+15559:("AutoPot Verrohrung & Ventile","drop"),15560:("AutoPot Tanks & Zubehör","drop"),
+16087:("Lupen & Mikroskope","magnifier"),
+}
+
+# Kategorien, die es nur auf hanfjack.com gibt (Term-IDs von .com).
+# Dateiname bekommt das Praefix "com", damit es keine Verwechslung mit .de-IDs gibt.
+CATS_COM={
+160:("Pflege & Reinigung","bottle"),5898:("T-Shirts","tshirt"),5899:("Hoodies","tshirt"),
+5900:("Mützen","cap"),5901:("Caps","cap"),5902:("Handtücher","tshirt"),
+5903:("Becher & Tassen","mug"),5904:("Poster","poster"),5905:("Untersetzer","tray"),
+5906:("Kissen","tshirt"),5907:("Wasserflaschen","bottle"),5908:("Smartphone Cover","box"),
+6205:("CBD Vapes","vape"),
 }
 
 def icon_slot(inner,cx=400,cy=282,target=150):
@@ -252,6 +281,10 @@ if __name__=="__main__":
         idx=[]
         for cid,(name,icon) in CATS.items():
             fn=f"{cid}_{slug(name)}"
+            open(os.path.join(out,fn+".html"),"w").write(wrap(tile(name,icon)))
+            idx.append((cid,name,icon,fn))
+        for cid,(name,icon) in CATS_COM.items():
+            fn=f"com{cid}_{slug(name)}"
             open(os.path.join(out,fn+".html"),"w").write(wrap(tile(name,icon)))
             idx.append((cid,name,icon,fn))
         import json; open(os.path.join(out,"index.json"),"w").write(json.dumps(idx,ensure_ascii=False))
