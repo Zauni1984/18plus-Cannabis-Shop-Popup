@@ -134,12 +134,26 @@ def i_percent():
 def i_mystery():
     return i_box()+f'<text x="50" y="58" text-anchor="middle" dominant-baseline="central" font-family="Arial,DejaVu Sans,sans-serif" font-size="30" font-weight="800" fill="{G}">?</text>'
 
+def i_book():
+    cover='M50,30 C44,24 34,22 22,22 v50 c12,0 22,2 28,8 C56,74 66,72 78,72 V22 C66,22 56,24 50,30 Z'
+    spine='M48.5,31 h3 v49 h-3 z'
+    return f'<g fill="{GOLD}" stroke="none"><path fill-rule="evenodd" d="{cover} {spine}"/></g>'
+def i_roll():
+    sheet='M26,42 C 38,54 42,54 50,46 C 58,54 62,54 74,42 L74,86 C62,74 58,74 50,82 C42,74 38,74 26,86 Z'
+    return f'<g fill="{GOLD}" stroke="none"><path d="{sheet}" fill-opacity="0.55"/><rect x="20" y="20" width="60" height="20" rx="10"/></g><ellipse cx="30" cy="30" rx="5" ry="8" fill="{G}"/>'
+def i_press():
+    return f'''<g fill="{GOLD}" stroke="none"><rect x="46" y="8" width="8" height="13"/><polygon points="38,19 62,19 50,32"/>
+<rect x="22" y="36" width="56" height="13" rx="4"/><rect x="22" y="65" width="56" height="13" rx="4"/>
+<rect x="36" y="51" width="28" height="12" rx="3" fill-opacity="0.5"/>
+<rect x="26" y="82" width="48" height="8" rx="3"/></g>'''
+
 ICONS={
  'leaf':i_leaf,'seedling':i_seedling,'lamp':i_lamp,'bottle':i_bottle,'filter':i_filter,'drop':i_drop,'fan':i_fan,
  'tent':i_tent,'box':i_box,'sack':i_sack,'gear':i_gear,'flame':i_flame,'bug':i_bug,'pot':i_pot,'scissors':i_scissors,
  'glove':i_glove,'gauge':i_gauge,'bong':i_bong,'pipe':i_pipe,'vape':i_vape,'joint':i_joint,'papers':i_papers,
  'ashtray':i_ashtray,'jar':i_jar,'grinder':i_grinder,'tray':i_tray,'lighter':i_lighter,'tube':i_tube,'scale':i_scale,
  'paw':i_paw,'mug':i_mug,'shaker':i_shaker,'seed':i_seed,'tshirt':i_tshirt,'percent':i_percent,'mystery':i_mystery,
+ 'book':i_book,'roll':i_roll,'press':i_press,
 }
 
 # category id -> (Display Name, icon)
@@ -164,6 +178,12 @@ CATS={
 4146:("Getränke","mug"),4147:("Hanftee","mug"),4148:("Rohkost","leaf"),4149:("Gewürze","shaker"),4150:("Hanföl","drop"),
 4151:("Mehl","sack"),4152:("Hanfsamen","seed"),56:("Pflegeprodukte","jar"),11497:("Merch","tshirt"),
 11795:("Angebote","percent"),5818:("Bundles","box"),5819:("Mystery Boxen","mystery"),
+# --- neu 09/2026 ---
+16435:("Anzuchtmedien","seedling"),16436:("Zimmergewächshäuser","tent"),16437:("Stecklingszubehör","seedling"),
+16438:("Anzuchtbeleuchtung","lamp"),16439:("Hydrokultur-Anzucht","drop"),16451:("Veredeln & Extraktion","filter"),
+16452:("Curing & Lagerung","jar"),16453:("Bücher","book"),16454:("Geruchsneutralisation","bottle"),
+16455:("Pflanzzubehör","pot"),16456:("Folien & Reflexion","roll"),16457:("Trimmer & Erntehelfer","scissors"),
+16458:("Zeltzubehör","tent"),16527:("Extraktion & Pressen","press"),
 }
 
 def icon_slot(inner,cx=400,cy=282,target=150):
@@ -176,7 +196,7 @@ def title_block(title):
     elif ' ' in t:
         w=t.split(' '); best=None
         for i in range(1,len(w)):
-            l1=' '.join(w[:i]); l2=' '.join(w[i:]); sc=abs(len(l1)-len(l2))
+            l1=' '.join(w[:i]); l2=' '.join(w[i:]); sc=abs(len(l1)-len(l2))+(6 if l2.startswith('& ') or l2=='&' else 0)
             if best is None or sc<best[0]: best=(sc,l1,l2)
         lines=[best[1],best[2]]
     else: lines=[t]
@@ -203,7 +223,7 @@ def tile(title,icon):
 <text x="400" y="{suby}" text-anchor="middle" fill="{GOLD}" font-size="18" font-weight="600" letter-spacing="6">&#8226; KATEGORIE &#8226;</text>
 <text x="400" y="636" text-anchor="middle" fill="{GOLD}" font-size="23" font-weight="700" letter-spacing="9">HANFJACK</text></svg>'''
 
-def wrap(s): return f'<!doctype html><html><head><meta charset="utf-8"><style>html,body{{margin:0}}text{{font-family:Arial,"DejaVu Sans",sans-serif}}</style></head><body>{s}</body></html>'
+def wrap(s): return f'<!doctype html><html><head><meta charset="utf-8"><style>html,body{{margin:0}}svg{{display:block}}text{{font-family:Arial,"DejaVu Sans",sans-serif}}</style></head><body>{s}</body></html>'
 
 def slug(t):
     import re
