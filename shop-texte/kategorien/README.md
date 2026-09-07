@@ -1,49 +1,49 @@
-# Kategorie-Texte Rewrite (alle 91 aktiven Produktkategorien)
+# Kategorien: Beschreibungen, SEO und Kacheln
 
-## Technischer Befund (wichtig für alle weiteren Kategorien!)
+Stand: 2026-09-07
 
-Das WordPress-Standardfeld `description` einer Taxonomie-Term (geschrieben via
-`wp_update_term`) läuft durch WordPress' restriktiven KSES-Filter für Terms und
-**verliert dabei alle Block-Tags** (`<p>`, `<h2>`, `<ul>`, `<li>` usw.) – nur
-einfache Inline-Tags wie `<strong>`, `<em>`, `<a>` würden überleben, aber selbst
-die lohnen sich nicht, da ohne Absätze der Text zu einem einzigen Fließtext-Block
-verschmilzt. Bestätigt durch Vergleich Schreiben → Rücklesen (wp_get_term).
+## Kachel-Generator
 
-Das Feld `below_category_content` (Term-Meta, von einem Theme/Plugin unterhalb
-der Produktliste gerendert) hat **keine** solche Beschränkung – volles HTML
-(H2, UL/LI, P, STRONG) bleibt erhalten. Bestätigt via wp_get_term_meta.
+Die Kategoriekacheln werden **nicht** in Canva erstellt, sondern mit
+`tools/category-tiles/tiles.py` (SVG -> HTML -> Headless-Chromium-Screenshot).
+Design, Farben und Layout sind dort fest hinterlegt und duerfen nicht
+veraendert werden: einheitliches Design, nur Text und Symbol wechseln.
 
-**Strategie pro Kategorie:**
-- `description` (WC-Standardfeld, oberhalb der Produkte): 1 kurzer Absatz
-  Klartext (250–500 Zeichen), keine Tags nötig/möglich.
-- `below_category_content` (Term-Meta, unterhalb der Produkte): der
-  eigentliche strukturierte Inhalt mit `<h2>`, `<ul><li>`, `<p>`, `<strong>`.
-- Yoast SEO: Term-Meta-Keys `_yoast_wpseo_title`, `_yoast_wpseo_metadesc`,
-  `_yoast_wpseo_focuskw` (gleiches Präfix-Schema wie bei Posts, aber auf
-  Term-Ebene). Verifikation über `wp_yoast_get_head` mit der Live-URL, da
-  `wp_yoast_get_post_seo` nur für Posts funktioniert.
+Rendern siehe `tools/category-tiles/README.md`. Ergebnisse liegen als PNG in
+`category-images/`, benannt nach `<term_id>_<slug>.png` (hanfjack.de) bzw.
+`com<term_id>_<slug>.png` (nur auf hanfjack.com vorhandene Kategorien).
 
-## Umfang
+Upload in WordPress ueber `wp_upload_media_from_url` mit der Raw-URL aus
+diesem Repository, danach `thumbnail_id` als Term-Meta setzen.
 
-96 Kategorien insgesamt, 91 aktiv (count > 0), 5 übersprungen (0 Produkte):
-CBD Vapes, Produktarchiv, Schneidbretter, Süßigkeiten und Snacks, Uncategorized.
+## hanfjack.de
 
-Siehe `aktive_kategorien.json` für die vollständige Liste (id, name, slug,
-parent, count).
+- 14 neue Kategorien (IDs 16435-16527) mit Beschreibung, Yoast-Titel,
+  Meta-Description und Kachel versorgt.
+- 8 Nachzuegler ohne Kachel nachtraeglich versorgt
+  (15521, 15523, 15550, 15557-15560, 16087; Medien 42501-42508).
+- 2 Kacheln korrigiert: `539_luefter-und-filter`, `5423_feuerzeuge-und-zippo`.
 
-## Fortschritt
+## hanfjack.com
 
-- [x] Filter (608) + Aktivkohlefilter (4550) + 6 Größen-Subkats — 7/7
-- [x] Headshop-Baum (inkl. Headshop selbst) — 25/25
-- [x] Growshop-Baum — 31/31
-- [x] Samen-Baum — 6/6
-- [x] Lebensmittel-Baum — 9/9
-- [x] CBD-Baum — 4/4
-- [x] Standalone (Hanfprodukte, Pflegeprodukte, Bundles, Dr. Grow Sets, Mystery Boxen, Merch, Angebote, Vermehrungsmaterial) — 8/8
+32 Kategorien hatten Luecken (Beschreibung, Kachel oder SEO). Alle 32 sind
+jetzt vollstaendig:
 
-## Abschluss
+- 21 Kacheln neu hochgeladen (Medien 38453-38473) und als `thumbnail_id`
+  gesetzt.
+- 31 Beschreibungen gesetzt: 20 wortgleich von der .de-Kategorie
+  uebernommen (Abgleich ueber den normalisierten Namen, nicht ueber den
+  Slug - die Slugs weichen zwischen den Shops ab), 11 neu geschrieben
+  (Merch-Linie und Pflege & Reinigung).
+- 32 x `_yoast_wpseo_title` und 32 x `_yoast_wpseo_metadesc` als Term-Meta
+  gesetzt (Yoast liest auf dieser Installation Taxonomie-SEO aus Term-Meta).
 
-Alle 91 aktiven Produktkategorien (von 96 gesamt, 5 mit 0 Produkten übersprungen)
-sind fertig: description (kurzer Klartext-Intro) + below_category_content
-(strukturiertes HTML mit H2/UL) + Yoast SEO (Title/Meta-Description/Focus-Keyword)
-für jede Kategorie geschrieben und live verifiziert.
+Betroffene Term-IDs auf .com:
+160, 4734, 5898-5908, 6033, 6147, 6198, 6205, 6724, 6727, 9610, 9687,
+11771-11773, 13150, 13163, 13181, 13184, 13192, 13197, 13228, 13687.
+
+## Offen
+
+- `below_category_content` ("Was du hier findest"-Block unter dem Archiv)
+  fehlt bei den neuen Kategorien auf beiden Shops. 86 aeltere .de-Kategorien
+  haben ihn. Noch nicht freigegeben.
