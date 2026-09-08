@@ -203,3 +203,47 @@ Alle 72 Alt-Stil-Texte (11 auf .de, 61 auf .com, zusammen rund 230.000 Zeichen)
 liegen vollstaendig in `below-category-content.backup.json`. Die Sicherung wurde
 aus den bereits erfolgten API-Antworten dieser Session erstellt, ohne zusaetzliche
 Abfragen, und gegen die Audit-Liste geprueft: kein Eintrag fehlt, keiner ist leer.
+
+## Umstellung durchgefuehrt
+
+Stand: 2026-09-08. Alle 72 Alt-Stil-Bloecke sind ersetzt: 11 auf hanfjack.de,
+61 auf hanfjack.com. Jeder Schreibvorgang wurde vom Server mit `updated: true`
+quittiert.
+
+Vorgehen:
+
+- **47 der 61 .com-Bloecke** wurden aus der gleichnamigen .de-Kategorie
+  uebernommen, deren Text bereits im aktuellen Stil vorlag. Beide Shops
+  formulieren dieselbe Kategorie damit wortgleich.
+- **10 weitere** uebernehmen den Text, der in diesem Schritt neu fuer die
+  .de-Schwesterkategorie geschrieben wurde (Lebensmittel-Unterkategorien
+  und Bundles).
+- **4 wurden neu geschrieben**, weil es keine passende .de-Vorlage gab:
+  Growbedarf, Stecklinge, Hydroponik Systeme, Vapes.
+
+Drei Zuordnungen brauchten eine Korrektur von Hand:
+
+- `Aktivkohlefilter` existiert auf beiden Shops doppelt und meint zweierlei.
+  Term 126 (Abluftfilter) bekam den Text von .de 4161, Term 131 (Filter-Tips
+  im Headshop) den von .de 4550. Eine Zuordnung allein ueber den Namen haette
+  beide auf denselben Text gelegt.
+- `Growzubehoer` (Term 153): der .de-Text nennt Messgeraete, pH-Wert, Pumpen
+  sowie Lupen & Mikroskope als Unterkategorien. Auf .com haengen die nicht
+  unter Growzubehoer, deshalb wurde die Aufzaehlung auf die dort tatsaechlich
+  vorhandenen Unterkategorien gekuerzt.
+- `Growbedarf` (Term 92): entspricht .de `Growshop`, hat dort aber keine
+  Unterkategorie `Bewaesserung`. Der Punkt wurde durch `Erde & Substrate`
+  ersetzt.
+
+Der Headshop-Block auf .com, der zuvor eine fremde Kategorie beschrieb und
+rohes Chat-DOM-Markup enthielt, ist damit ebenfalls bereinigt.
+
+### Verifikation
+
+Zurueckgelesen und Zeichen fuer Zeichen gegen die Vorlage geprueft wurden alle
+11 Bloecke auf .de sowie 12 auf .com. Die .com-Stichprobe deckt gezielt die
+Faelle mit Sonderbehandlung ab (89, 92, 103, 106, 109, 122, 126, 131, 133, 153,
+156, 91). Kein zurueckgelesener Text enthaelt noch Alt-Stil-Merkmale.
+
+Die urspruenglichen Texte bleiben in `below-category-content.backup.json`
+erhalten, die neu gesetzten stehen in `below-category-content.json`.
