@@ -42,8 +42,30 @@ Betroffene Term-IDs auf .com:
 160, 4734, 5898-5908, 6033, 6147, 6198, 6205, 6724, 6727, 9610, 9687,
 11771-11773, 13150, 13163, 13181, 13184, 13192, 13197, 13228, 13687.
 
+## below_category_content
+
+Der Textblock unter dem Kategorie-Archiv (`below_category_content` als
+Term-Meta) ist jetzt auf beiden Shops nachgezogen. Stil wie bei den
+bestehenden Kategorien: ein bis zwei `<h2>`-Abschnitte mit `<p>` oder `<ul>`,
+sachlich, ohne Werbesprache und ohne Emoji.
+
+- **hanfjack.de (15):** die 14 neuen Kategorien 16435-16458 und 16527 sowie
+  13416 (Pumpen), dessen Block leer war.
+- **hanfjack.com (46):** die 14 neuen Kategorien (14011-14085) und die
+  32 Luecken-Kategorien.
+
+Bei den .com-Kategorien wurde der .de-Text 1:1 uebernommen, wo er bereits im
+aktuellen Stil vorlag (18 Faelle). Zwei Ausnahmen: bei `Hanfprodukte` und
+`CBD Vapes` liegt auf .de noch alter Marketing-Text mit Emoji und
+`data-start`-Attributen - dafuer wurde fuer .com ein sauberer Block neu
+geschrieben. Der Luftfilter-Block nennt auf .de "siehe Unterkategorie
+Ersatzfilter"; auf .com ist Ersatzfilter keine Unterkategorie, der Satz wurde
+entsprechend angepasst. Die 12 reinen .com-Kategorien (Merch-Linie und
+Pflege & Reinigung) haben neu geschriebene Bloecke.
+
+Alle gesetzten Texte liegen zum Nachvollziehen in
+`shop-texte/kategorien/below-category-content.json`.
+
 ## Offen
 
-- `below_category_content` ("Was du hier findest"-Block unter dem Archiv)
-  fehlt bei den neuen Kategorien auf beiden Shops. 86 aeltere .de-Kategorien
-  haben ihn. Noch nicht freigegeben.
+- Aktuell nichts offen aus diesem Arbeitspaket.
