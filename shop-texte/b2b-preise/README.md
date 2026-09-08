@@ -57,15 +57,22 @@ IDs wurden für alle 547 Variationen über die zurückgemeldeten SKUs geprüft
 &ndash; keine Abweichung. Für HJ-7000079 (letztes Produkt, ohne Nachfolger)
 wurden die IDs direkt gelesen.
 
-## Offen
+## Nachtrag 10er-Packungen
 
-Drei Strains haben im Sheet einen unplausiblen EK für die 10er-Packung
-(9,50&nbsp;€, während die 5er 27,50&nbsp;€ kostet; vergleichbare Sorten liegen
-bei 49,50&nbsp;€). Diese drei Variationen wurden **nicht** geschrieben:
+Drei Strains hatten im Auto-Sheet einen falschen EK für die 10er-Packung
+(9,50&nbsp;€). Korrigiert auf **49,50&nbsp;€**, damit B2B 54,45&nbsp;€ und
+Anbauverein 69,30&nbsp;€:
 
 - HJ-7000021-10 &ndash; Gelato Auto
 - HJ-7000024-10 &ndash; Gorilla Z Auto
 - HJ-7000063-10 &ndash; Ztrawberriez Auto
+
+**Offen:** Der Laden-VK dieser drei Variationen stammt noch aus dem falschen EK
+und liegt bei 17,76&nbsp;€ netto (19,00&nbsp;€ brutto). Nach der im Katalog
+durchgängig verwendeten Regel (brutto&nbsp;=&nbsp;2&nbsp;&times;&nbsp;EK, netto&nbsp;=&nbsp;brutto&nbsp;/&nbsp;1,07)
+müsste er **92,52&nbsp;€ netto / 99,00&nbsp;€ brutto** lauten. Solange er nicht
+korrigiert ist, greift für beide Rollen der niedrigere Laden-VK, weil das Plugin
+nie über den regulären Preis hinausgeht.
 
 ## Dateien
 
