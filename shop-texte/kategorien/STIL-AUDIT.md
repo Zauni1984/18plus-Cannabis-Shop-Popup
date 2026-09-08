@@ -240,10 +240,17 @@ rohes Chat-DOM-Markup enthielt, ist damit ebenfalls bereinigt.
 
 ### Verifikation
 
-Zurueckgelesen und Zeichen fuer Zeichen gegen die Vorlage geprueft wurden alle
-11 Bloecke auf .de sowie 12 auf .com. Die .com-Stichprobe deckt gezielt die
-Faelle mit Sonderbehandlung ab (89, 92, 103, 106, 109, 122, 126, 131, 133, 153,
-156, 91). Kein zurueckgelesener Text enthaelt noch Alt-Stil-Merkmale.
+Alle 72 Bloecke wurden nach dem Schreiben einzeln zurueckgelesen und Zeichen
+fuer Zeichen gegen die Vorlage verglichen, zusaetzlich auf die sechs
+Alt-Stil-Merkmale geprueft.
+
+Ergebnis: keine Abweichung, kein verbliebenes Alt-Stil-Merkmal.
+
+Die Vollpruefung hat einen Fehler gefunden, den die vorherige Stichprobe nicht
+gezeigt haette: Bei Term 131 auf .com fehlte im ersten Schreibvorgang der
+Abschnitt "Marken im Sortiment". Der Text war gueltig und im richtigen Stil,
+aber nicht wortgleich mit der .de-Vorlage. Er wurde vollstaendig neu gesetzt
+und erneut geprueft.
 
 Die urspruenglichen Texte bleiben in `below-category-content.backup.json`
 erhalten, die neu gesetzten stehen in `below-category-content.json`.
