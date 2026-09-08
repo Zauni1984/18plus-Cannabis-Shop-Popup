@@ -254,3 +254,55 @@ und erneut geprueft.
 
 Die urspruenglichen Texte bleiben in `below-category-content.backup.json`
 erhalten, die neu gesetzten stehen in `below-category-content.json`.
+
+## Leere Bloecke gefuellt
+
+Stand: 2026-09-08. Von den 25 leeren Bloecken mit Produkten sind 23 gefuellt:
+2 auf hanfjack.de (Angebote, Merch) und 21 auf hanfjack.com. Alle 23 wurden
+zurueckgelesen und stimmen exakt mit der Vorlage ueberein.
+
+19 der 21 .com-Bloecke sind wortgleich aus der gleichnamigen .de-Kategorie
+uebernommen. Zwei Ausnahmen:
+
+- **Bewaesserung** (Term 8215): der .de-Text nennt vier AutoPot-Unterkategorien.
+  Auf .com hat Bewaesserung keine Unterkategorien - die AutoPot-Systeme liegen
+  direkt darin. Der Text beschreibt deshalb den Inhalt und das
+  AutoPot-Funktionsprinzip statt einer Unterkategorie-Liste.
+- **Merch** (Term 5897): auf .com haengen elf Unterkategorien darunter, auf .de
+  keine. Der .com-Text listet sie, der .de-Text bleibt allgemein.
+
+Angebote und Merch hatten auf keinem der beiden Shops eine Vorlage und wurden
+neu geschrieben.
+
+### Nicht gefuellt
+
+- **Uncategorized** (.com Term 15, .de Term 698). Siehe naechster Abschnitt.
+- **Dr. Grow Sets** (.de Term 6212, 1 Produkt, unter Bundles). War nicht Teil
+  des freigegebenen Umfangs.
+- Fuenf leere Systemkategorien ohne Produkte: Schneidbretter (.de 605, .com 100),
+  Produktarchiv (.de 13020, .com 7983), Uncategorized (.de 698).
+
+## Uncategorized auf hanfjack.com
+
+Term 15 enthaelt 22 Produkte (18 veroeffentlicht, 4 privat). Ein Textblock waere
+hier das falsche Mittel - das Problem ist die fehlende Zuordnung, und der
+Bestand selbst ist fehlerhaft:
+
+- **20 der 22 sind Paradise-Seeds-Duplikate.** Jede Sorte existiert zwei- bis
+  dreimal: Durga Mata, El Dorado OG, Gulupa und Nebula je 3x, Sunset Paradise
+  und Tangerine Sorbet je 2x (in 3er- und 5er-Packung).
+- **Keines der 20 hat eine SKU.**
+- Bei den acht aelteren Eintraegen (IDs 27123-27139) passt der **Permalink nicht
+  zum Produktnamen** - sie tragen alle Varianten von
+  `paradise-seeds-el-dorado-og-feminisierte-cannabissamen-...`, unabhaengig von
+  der tatsaechlichen Sorte. Das deutet auf eine Kopie als Anlage-Grundlage hin,
+  bei der nur der Titel geaendert wurde.
+- Die restlichen zwei sind regulaere Artikel, denen schlicht die Kategorie fehlt:
+  Spider Farmer 3-in-1 Bodensensor (28034) und Spider Farmer 200X
+  Trichomen-Mikroskop (27524).
+
+Empfehlung: die Dubletten bereinigen und je Sorte einen Eintrag behalten
+(vorzugsweise aus der neueren 283xx/284xx-Reihe mit korrektem Permalink), diesen
+unter Samen einsortieren und eine SKU vergeben. Die beiden Spider-Farmer-Artikel
+gehoeren nach Messgeraete bzw. Lupen & Mikroskope. Nicht angefasst, weil
+Loeschen und Umkategorisieren eine Entscheidung des Shopbetreibers ist.
