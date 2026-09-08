@@ -6,6 +6,7 @@
 "menge": null,
 "status": "publish",
 "vk": "17.47",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -15,6 +16,7 @@
 "menge": null,
 "status": "publish",
 "vk": "17.47",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -26,6 +28,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "786.89",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -35,6 +38,7 @@
 "menge": 1,
 "status": "publish",
 "vk": "175.46",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -44,6 +48,7 @@
 "menge": 0,
 "status": "publish",
 "vk": "91.68",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -53,6 +58,7 @@
 "menge": 0,
 "status": "publish",
 "vk": "48.57",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -62,6 +68,7 @@
 "menge": 0,
 "status": "publish",
 "vk": "22.69",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -73,6 +80,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "1000.00",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -82,6 +90,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "584.79",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -91,6 +100,7 @@
 "menge": 1250,
 "status": "publish",
 "vk": "165.46",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -100,6 +110,7 @@
 "menge": 325,
 "status": "publish",
 "vk": "50.34",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -109,6 +120,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "17.23",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -118,6 +130,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "10.00",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -129,6 +142,7 @@
 "menge": 1250,
 "status": "publish",
 "vk": "199.92",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -138,6 +152,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "89.16",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -147,6 +162,7 @@
 "menge": 250,
 "status": "private",
 "vk": "69.66",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -156,6 +172,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "19.5",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -165,6 +182,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "11.09",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -176,6 +194,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "100.76",
+"mo": 5,
 "b2b": "",
 "anbau": ""
 },
@@ -185,6 +204,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "67.14",
+"mo": 4,
 "b2b": "",
 "anbau": ""
 },
@@ -194,6 +214,7 @@
 "menge": 1,
 "status": "publish",
 "vk": "33.53",
+"mo": 3,
 "b2b": "",
 "anbau": ""
 },
@@ -203,6 +224,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "25.13",
+"mo": 2,
 "b2b": "",
 "anbau": ""
 },
@@ -212,6 +234,7 @@
 "menge": 250,
 "status": "publish",
 "vk": "16.72",
+"mo": 1,
 "b2b": "",
 "anbau": ""
 }
@@ -223,6 +246,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "100.76",
+"mo": 5,
 "b2b": "",
 "anbau": ""
 },
@@ -232,6 +256,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "67.14",
+"mo": 4,
 "b2b": "",
 "anbau": ""
 },
@@ -241,6 +266,7 @@
 "menge": 1,
 "status": "publish",
 "vk": "33.53",
+"mo": 3,
 "b2b": "",
 "anbau": ""
 },
@@ -250,6 +276,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "25.13",
+"mo": 2,
 "b2b": "",
 "anbau": ""
 },
@@ -259,6 +286,7 @@
 "menge": 250,
 "status": "publish",
 "vk": "16.72",
+"mo": 1,
 "b2b": "",
 "anbau": ""
 }
@@ -270,6 +298,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "1088.15",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -279,6 +308,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "663.19",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -288,6 +318,7 @@
 "menge": 1250,
 "status": "publish",
 "vk": "187.48",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -297,6 +328,7 @@
 "menge": 325,
 "status": "publish",
 "vk": "53.70",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -306,6 +338,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "18.24",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -315,6 +348,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "10.84",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -326,6 +360,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "100.76",
+"mo": 5,
 "b2b": "",
 "anbau": ""
 },
@@ -335,6 +370,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "67.14",
+"mo": 4,
 "b2b": "",
 "anbau": ""
 },
@@ -344,6 +380,7 @@
 "menge": 1,
 "status": "publish",
 "vk": "33.53",
+"mo": 3,
 "b2b": "",
 "anbau": ""
 },
@@ -353,6 +390,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "25.13",
+"mo": 2,
 "b2b": "",
 "anbau": ""
 },
@@ -362,6 +400,7 @@
 "menge": 250,
 "status": "publish",
 "vk": "16.72",
+"mo": 1,
 "b2b": "",
 "anbau": ""
 }
@@ -373,6 +412,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "201.60",
+"mo": 5,
 "b2b": "",
 "anbau": ""
 },
@@ -382,6 +422,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "104.96",
+"mo": 4,
 "b2b": "",
 "anbau": ""
 },
@@ -391,6 +432,7 @@
 "menge": 1,
 "status": "publish",
 "vk": "25.13",
+"mo": 3,
 "b2b": "",
 "anbau": ""
 },
@@ -400,6 +442,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "20.92",
+"mo": 2,
 "b2b": "",
 "anbau": ""
 },
@@ -409,6 +452,7 @@
 "menge": 250,
 "status": "publish",
 "vk": "16.72",
+"mo": 1,
 "b2b": "",
 "anbau": ""
 }
@@ -420,6 +464,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "164.62",
+"mo": 5,
 "b2b": "",
 "anbau": ""
 },
@@ -429,6 +474,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "83.95",
+"mo": 4,
 "b2b": "",
 "anbau": ""
 },
@@ -438,6 +484,7 @@
 "menge": 1,
 "status": "publish",
 "vk": "25.13",
+"mo": 3,
 "b2b": "",
 "anbau": ""
 },
@@ -447,6 +494,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "20.92",
+"mo": 2,
 "b2b": "",
 "anbau": ""
 },
@@ -456,6 +504,7 @@
 "menge": 250,
 "status": "publish",
 "vk": "16.72",
+"mo": 1,
 "b2b": "",
 "anbau": ""
 }
@@ -467,6 +516,7 @@
 "menge": 2,
 "status": "publish",
 "vk": "134.37",
+"mo": 4,
 "b2b": "",
 "anbau": ""
 },
@@ -476,6 +526,7 @@
 "menge": 2,
 "status": "publish",
 "vk": "33.53",
+"mo": 2,
 "b2b": "",
 "anbau": ""
 },
@@ -485,6 +536,7 @@
 "menge": 2,
 "status": "publish",
 "vk": "25.13",
+"mo": 1,
 "b2b": "",
 "anbau": ""
 },
@@ -494,6 +546,7 @@
 "menge": 2,
 "status": "publish",
 "vk": "41.93",
+"mo": 3,
 "b2b": "",
 "anbau": ""
 },
@@ -503,6 +556,7 @@
 "menge": 2,
 "status": "publish",
 "vk": "201.60",
+"mo": 5,
 "b2b": "",
 "anbau": ""
 }
@@ -514,6 +568,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "159.58",
+"mo": 4,
 "b2b": "",
 "anbau": ""
 },
@@ -523,6 +578,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.53",
+"mo": 2,
 "b2b": "",
 "anbau": ""
 },
@@ -532,6 +588,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "29.33",
+"mo": 1,
 "b2b": "",
 "anbau": ""
 },
@@ -541,6 +598,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "41.93",
+"mo": 3,
 "b2b": "",
 "anbau": ""
 },
@@ -550,6 +608,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "243.61",
+"mo": 5,
 "b2b": "",
 "anbau": ""
 }
@@ -561,6 +620,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "75.55",
+"mo": 4,
 "b2b": "",
 "anbau": ""
 },
@@ -570,6 +630,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "41.93",
+"mo": 3,
 "b2b": "",
 "anbau": ""
 },
@@ -579,6 +640,7 @@
 "menge": 1,
 "status": "publish",
 "vk": "20.92",
+"mo": 2,
 "b2b": "",
 "anbau": ""
 },
@@ -588,6 +650,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "16.72",
+"mo": 1,
 "b2b": "",
 "anbau": ""
 }
@@ -599,6 +662,7 @@
 "menge": 10,
 "status": "private",
 "vk": "219.59",
+"mo": 5,
 "b2b": "",
 "anbau": ""
 },
@@ -608,6 +672,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "121.04",
+"mo": 4,
 "b2b": "",
 "anbau": ""
 },
@@ -617,6 +682,7 @@
 "menge": 1,
 "status": "publish",
 "vk": "30.15",
+"mo": 3,
 "b2b": "",
 "anbau": ""
 },
@@ -626,6 +692,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "17.84",
+"mo": 2,
 "b2b": "",
 "anbau": ""
 },
@@ -635,6 +702,7 @@
 "menge": 250,
 "status": "publish",
 "vk": "7.13",
+"mo": 1,
 "b2b": "",
 "anbau": ""
 }
@@ -646,6 +714,7 @@
 "menge": 10,
 "status": "private",
 "vk": "80.35",
+"mo": 5,
 "b2b": "",
 "anbau": ""
 },
@@ -655,6 +724,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "32.69",
+"mo": 4,
 "b2b": "",
 "anbau": ""
 },
@@ -664,6 +734,7 @@
 "menge": 1,
 "status": "publish",
 "vk": "11.1",
+"mo": 3,
 "b2b": "",
 "anbau": ""
 },
@@ -673,6 +744,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "6.75",
+"mo": 2,
 "b2b": "",
 "anbau": ""
 },
@@ -682,6 +754,7 @@
 "menge": 250,
 "status": "publish",
 "vk": "3.5",
+"mo": 1,
 "b2b": "",
 "anbau": ""
 }
@@ -693,6 +766,7 @@
 "menge": 10,
 "status": "private",
 "vk": "435.34",
+"mo": 5,
 "b2b": "",
 "anbau": ""
 },
@@ -702,6 +776,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "200",
+"mo": 4,
 "b2b": "",
 "anbau": ""
 },
@@ -711,6 +786,7 @@
 "menge": 1,
 "status": "publish",
 "vk": "60.42",
+"mo": 3,
 "b2b": "",
 "anbau": ""
 },
@@ -720,6 +796,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "36.13",
+"mo": 2,
 "b2b": "",
 "anbau": ""
 },
@@ -729,6 +806,7 @@
 "menge": 250,
 "status": "publish",
 "vk": "22.45",
+"mo": 1,
 "b2b": "",
 "anbau": ""
 }
@@ -740,6 +818,7 @@
 "menge": 10,
 "status": "private",
 "vk": "67.14",
+"mo": 5,
 "b2b": "",
 "anbau": ""
 },
@@ -749,6 +828,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "29.33",
+"mo": 4,
 "b2b": "",
 "anbau": ""
 },
@@ -758,6 +838,7 @@
 "menge": 1,
 "status": "publish",
 "vk": "12.1",
+"mo": 3,
 "b2b": "",
 "anbau": ""
 },
@@ -767,6 +848,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "7.05",
+"mo": 2,
 "b2b": "",
 "anbau": ""
 },
@@ -776,6 +858,7 @@
 "menge": 250,
 "status": "publish",
 "vk": "3.46",
+"mo": 1,
 "b2b": "",
 "anbau": ""
 }
@@ -787,6 +870,7 @@
 "menge": 10,
 "status": "private",
 "vk": "75.55",
+"mo": 5,
 "b2b": "",
 "anbau": ""
 },
@@ -796,6 +880,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "31.85",
+"mo": 4,
 "b2b": "",
 "anbau": ""
 },
@@ -805,6 +890,7 @@
 "menge": 1,
 "status": "publish",
 "vk": "13.99",
+"mo": 3,
 "b2b": "",
 "anbau": ""
 },
@@ -814,6 +900,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "7.33",
+"mo": 2,
 "b2b": "",
 "anbau": ""
 },
@@ -823,6 +910,7 @@
 "menge": 250,
 "status": "publish",
 "vk": "4.7",
+"mo": 1,
 "b2b": "",
 "anbau": ""
 }
@@ -834,6 +922,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -843,6 +932,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -852,6 +942,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -861,6 +952,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -870,6 +962,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -879,6 +972,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -888,6 +982,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -899,6 +994,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -908,6 +1004,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "372.90",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -917,6 +1014,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "233.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -926,6 +1024,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -935,6 +1034,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "65.42",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -944,6 +1044,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -953,6 +1054,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "22.43",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -964,6 +1066,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "22.43",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -973,6 +1076,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -982,6 +1086,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "65.42",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -991,6 +1096,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1000,6 +1106,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "233.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1009,6 +1116,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "372.90",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1018,6 +1126,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1214.02",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -1029,6 +1138,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "22.43",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1038,6 +1148,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1047,6 +1158,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "65.42",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1056,6 +1168,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1065,6 +1178,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "233.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1074,6 +1188,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "372.90",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1083,6 +1198,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1214.02",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -1094,6 +1210,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1103,6 +1220,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1112,6 +1230,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1121,6 +1240,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1130,6 +1250,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1139,6 +1260,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1148,6 +1270,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -1159,6 +1282,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1168,6 +1292,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1177,6 +1302,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1186,6 +1312,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1195,6 +1322,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1204,6 +1332,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1213,6 +1342,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -1224,6 +1354,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1233,6 +1364,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1242,6 +1374,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1251,6 +1384,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1260,6 +1394,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1269,6 +1404,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1278,6 +1414,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -1289,6 +1426,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1298,6 +1436,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1307,6 +1446,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1316,6 +1456,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1325,6 +1466,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1334,6 +1476,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1343,6 +1486,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -1354,6 +1498,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1363,6 +1508,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1372,6 +1518,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1381,6 +1528,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1390,6 +1538,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1399,6 +1548,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1408,6 +1558,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -1419,6 +1570,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "28.04",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1428,6 +1580,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "42.06",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1437,6 +1590,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "74.77",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1446,6 +1600,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "163.55",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1455,6 +1610,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "280.37",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1464,6 +1620,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "419.63",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1473,6 +1630,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1307.48",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -1484,6 +1642,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "28.04",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1493,6 +1652,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "42.06",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1502,6 +1662,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "74.77",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1511,6 +1672,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "163.55",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1520,6 +1682,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "280.37",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1529,6 +1692,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "419.63",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1538,6 +1702,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1307.48",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -1549,6 +1714,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "22.43",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1558,6 +1724,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1567,6 +1734,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "65.42",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1576,6 +1744,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1585,6 +1754,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "233.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1594,6 +1764,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "372.90",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -1605,6 +1776,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "22.43",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1614,6 +1786,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1623,6 +1796,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "65.42",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1632,6 +1806,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1641,6 +1816,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "233.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1650,6 +1826,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "372.90",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1659,6 +1836,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1214.02",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -1670,6 +1848,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "22.43",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1679,6 +1858,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1688,6 +1868,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "65.42",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1697,6 +1878,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1706,6 +1888,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "233.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1715,6 +1898,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "372.90",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -1726,6 +1910,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1735,6 +1920,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1744,6 +1930,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1753,6 +1940,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1762,6 +1950,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1771,6 +1960,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1780,6 +1970,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -1791,6 +1982,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "22.43",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1800,6 +1992,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1809,6 +2002,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "65.42",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1818,6 +2012,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1827,6 +2022,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "233.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1836,6 +2032,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "372.90",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -1847,6 +2044,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1856,6 +2054,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1865,6 +2064,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1874,6 +2074,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1883,6 +2084,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1892,6 +2094,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1901,6 +2104,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -1912,6 +2116,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1921,6 +2126,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1930,6 +2136,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1939,6 +2146,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1948,6 +2156,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1957,6 +2166,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1966,6 +2176,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -1977,6 +2188,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "39.25",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1986,6 +2198,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -1995,6 +2208,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2004,6 +2218,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "210.28",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2013,6 +2228,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "327.10",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2022,6 +2238,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "467.29",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -2033,6 +2250,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2042,6 +2260,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2051,6 +2270,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2060,6 +2280,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2069,6 +2290,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2078,6 +2300,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2087,6 +2310,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -2098,6 +2322,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2107,6 +2332,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2116,6 +2342,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2125,6 +2352,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2134,6 +2362,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2143,6 +2372,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2152,6 +2382,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -2163,6 +2394,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "39.25",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2172,6 +2404,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2181,6 +2414,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2190,6 +2424,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "210.28",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2199,6 +2434,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "327.10",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2208,6 +2444,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "467.29",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -2219,6 +2456,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2228,6 +2466,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2237,6 +2476,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2246,6 +2486,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2255,6 +2496,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2264,6 +2506,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2273,6 +2516,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -2284,6 +2528,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2293,6 +2538,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2302,6 +2548,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2311,6 +2558,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2320,6 +2568,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2329,6 +2578,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2338,6 +2588,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -2349,6 +2600,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2358,6 +2610,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2367,6 +2620,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2376,6 +2630,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2385,6 +2640,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2394,6 +2650,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2403,6 +2660,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -2414,6 +2672,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "22.43",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2423,6 +2682,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2432,6 +2692,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "65.42",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2441,6 +2702,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2450,6 +2712,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "233.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2459,6 +2722,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "372.90",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2468,6 +2732,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1214.02",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -2479,6 +2744,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "28.04",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2488,6 +2754,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "42.06",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2497,6 +2764,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "74.77",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2506,6 +2774,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "163.55",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2515,6 +2784,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "280.37",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2524,6 +2794,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "419.63",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2533,6 +2804,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1307.48",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -2544,6 +2816,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2553,6 +2826,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2562,6 +2836,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2571,6 +2846,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2580,6 +2856,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2589,6 +2866,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2598,6 +2876,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -2609,6 +2888,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "39.25",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2618,6 +2898,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2627,6 +2908,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2636,6 +2918,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "210.28",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2645,6 +2928,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "327.10",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2654,6 +2938,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "467.29",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -2665,6 +2950,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "39.25",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2674,6 +2960,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2683,6 +2970,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2692,6 +2980,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "210.28",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2701,6 +2990,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "327.10",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2710,6 +3000,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "467.29",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -2721,6 +3012,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "39.25",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2730,6 +3022,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2739,6 +3032,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2748,6 +3042,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "210.28",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2757,6 +3052,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "327.10",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2766,6 +3062,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "467.29",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -2777,6 +3074,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "39.25",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2786,6 +3084,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2795,6 +3094,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2804,6 +3104,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "210.28",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2813,6 +3114,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "327.10",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2822,6 +3124,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "467.29",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -2833,6 +3136,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2842,6 +3146,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2851,6 +3156,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2860,6 +3166,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2869,6 +3176,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2878,6 +3186,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2887,6 +3196,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -2898,6 +3208,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "39.25",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2907,6 +3218,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2916,6 +3228,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2925,6 +3238,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "210.28",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2934,6 +3248,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "327.10",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2943,6 +3258,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "467.29",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2952,6 +3268,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1822.43",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -2963,6 +3280,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2972,6 +3290,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2981,6 +3300,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2990,6 +3310,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -2999,6 +3320,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3008,6 +3330,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3017,6 +3340,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -3028,6 +3352,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "22.43",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3037,6 +3362,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3046,6 +3372,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "65.42",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3055,6 +3382,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3064,6 +3392,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "233.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3073,6 +3402,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "372.90",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3082,6 +3412,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1214.02",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -3093,6 +3424,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "22.43",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3102,6 +3434,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3111,6 +3444,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "65.42",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3120,6 +3454,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3129,6 +3464,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "233.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3138,6 +3474,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "372.90",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -3149,6 +3486,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "22.43",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3158,6 +3496,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3167,6 +3506,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "65.42",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3176,6 +3516,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3185,6 +3526,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "233.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3194,6 +3536,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "372.90",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -3205,6 +3548,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3214,6 +3558,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3223,6 +3568,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3232,6 +3578,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3241,6 +3588,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3250,6 +3598,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3259,6 +3608,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -3270,6 +3620,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3279,6 +3630,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3288,6 +3640,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3297,6 +3650,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3306,6 +3660,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3315,6 +3670,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3324,6 +3680,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -3335,6 +3692,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "39.25",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3344,6 +3702,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3353,6 +3712,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3362,6 +3722,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "210.28",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3371,6 +3732,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "327.10",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3380,6 +3742,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "467.29",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3389,6 +3752,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -3400,6 +3764,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3409,6 +3774,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3418,6 +3784,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3427,6 +3794,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3436,6 +3804,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3445,6 +3814,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3454,6 +3824,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -3465,6 +3836,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3474,6 +3846,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3483,6 +3856,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3492,6 +3866,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3501,6 +3876,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3510,6 +3886,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3519,6 +3896,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -3530,6 +3908,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "39.25",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3539,6 +3918,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3548,6 +3928,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3557,6 +3938,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "210.28",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3566,6 +3948,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "327.10",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3575,6 +3958,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "467.29",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -3586,6 +3970,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3595,6 +3980,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3604,6 +3990,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3613,6 +4000,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3622,6 +4010,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3631,6 +4020,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3640,6 +4030,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -3651,6 +4042,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "22.43",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3660,6 +4052,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3669,6 +4062,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "65.42",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3678,6 +4072,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3687,6 +4082,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "233.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3696,6 +4092,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "372.90",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3705,6 +4102,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1214.02",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -3716,6 +4114,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "22.43",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3725,6 +4124,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3734,6 +4134,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "65.42",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3743,6 +4144,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3752,6 +4154,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "233.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3761,6 +4164,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "372.90",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3770,6 +4174,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1214.02",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -3781,6 +4186,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3790,6 +4196,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3799,6 +4206,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3808,6 +4216,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3817,6 +4226,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3826,6 +4236,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3835,6 +4246,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -3846,6 +4258,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3855,6 +4268,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3864,6 +4278,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3873,6 +4288,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3882,6 +4298,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3891,6 +4308,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3900,6 +4318,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -3911,6 +4330,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "39.25",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3920,6 +4340,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3929,6 +4350,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3938,6 +4360,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "210.28",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3947,6 +4370,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "327.10",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3956,6 +4380,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "467.29",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -3967,6 +4392,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3976,6 +4402,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3985,6 +4412,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -3994,6 +4422,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4003,6 +4432,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4012,6 +4442,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4021,6 +4452,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -4032,6 +4464,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "39.25",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4041,6 +4474,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4050,6 +4484,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4059,6 +4494,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "210.28",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4068,6 +4504,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "327.10",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4077,6 +4514,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "467.29",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -4088,6 +4526,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "22.43",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4097,6 +4536,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4106,6 +4546,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "65.42",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4115,6 +4556,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4124,6 +4566,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "233.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4133,6 +4576,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "372.90",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -4144,6 +4588,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4153,6 +4598,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4162,6 +4608,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4171,6 +4618,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4180,6 +4628,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4189,6 +4638,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4198,6 +4648,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -4209,6 +4660,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "22.43",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4218,6 +4670,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4227,6 +4680,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "65.42",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4236,6 +4690,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4245,6 +4700,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "233.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4254,6 +4710,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "372.90",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4263,6 +4720,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -4274,6 +4732,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4283,6 +4742,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4292,6 +4752,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4301,6 +4762,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "207.48",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4310,6 +4772,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4319,6 +4782,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4328,6 +4792,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -4339,6 +4804,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4348,6 +4814,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4357,6 +4824,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4366,6 +4834,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "207.48",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4375,6 +4844,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4384,6 +4854,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4393,6 +4864,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -4404,6 +4876,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4413,6 +4886,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4422,6 +4896,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4431,6 +4906,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "207.48",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4440,6 +4916,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4449,6 +4926,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4458,6 +4936,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -4469,6 +4948,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4478,6 +4958,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4487,6 +4968,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4496,6 +4978,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "207.48",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4505,6 +4988,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4514,6 +4998,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4523,6 +5008,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -4534,6 +5020,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4543,6 +5030,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4552,6 +5040,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4561,6 +5050,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "207.48",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4570,6 +5060,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4579,6 +5070,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4588,6 +5080,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -4599,6 +5092,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4608,6 +5102,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4617,6 +5112,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4626,6 +5122,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "207.48",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4635,6 +5132,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4644,6 +5142,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4653,6 +5152,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -4664,6 +5164,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4673,6 +5174,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4682,6 +5184,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4691,6 +5194,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4700,6 +5204,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "17.76",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4709,6 +5214,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4718,6 +5224,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -4729,6 +5236,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4738,6 +5246,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4747,6 +5256,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4756,6 +5266,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4765,6 +5276,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "17.76",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4774,6 +5286,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4783,6 +5296,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -4794,6 +5308,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4803,6 +5318,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4812,6 +5328,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4821,6 +5338,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4830,6 +5348,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "17.76",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4839,6 +5358,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4848,6 +5368,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -4859,6 +5380,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4868,6 +5390,7 @@
 "menge": 100,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4877,6 +5400,7 @@
 "menge": 50,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4886,6 +5410,7 @@
 "menge": 25,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4895,6 +5420,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4904,6 +5430,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4913,6 +5440,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -4924,6 +5452,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4933,6 +5462,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4942,6 +5472,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4951,6 +5482,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4960,6 +5492,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4969,6 +5502,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4978,6 +5512,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -4989,6 +5524,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -4998,6 +5534,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5007,6 +5544,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5016,6 +5554,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5025,6 +5564,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5034,6 +5574,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5043,6 +5584,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -5054,6 +5596,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5063,6 +5606,7 @@
 "menge": 100,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5072,6 +5616,7 @@
 "menge": 50,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5081,6 +5626,7 @@
 "menge": 25,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5090,6 +5636,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5099,6 +5646,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5108,6 +5656,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -5119,6 +5668,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5128,6 +5678,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5137,6 +5688,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5146,6 +5698,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5155,6 +5708,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5164,6 +5718,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5173,6 +5728,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -5184,6 +5740,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5193,6 +5750,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5202,6 +5760,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5211,6 +5770,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5220,6 +5780,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5229,6 +5790,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5238,6 +5800,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -5249,6 +5812,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5258,6 +5822,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5267,6 +5832,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5276,6 +5842,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5285,6 +5852,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5294,6 +5862,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5303,6 +5872,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -5314,6 +5884,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5323,6 +5894,7 @@
 "menge": 100,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5332,6 +5904,7 @@
 "menge": 50,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5341,6 +5914,7 @@
 "menge": 25,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5350,6 +5924,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5359,6 +5934,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5368,6 +5944,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -5379,6 +5956,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5388,6 +5966,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5397,6 +5976,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5406,6 +5986,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5415,6 +5996,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5424,6 +6006,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5433,6 +6016,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -5444,6 +6028,7 @@
 "menge": 3,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5453,6 +6038,7 @@
 "menge": 5,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5462,6 +6048,7 @@
 "menge": 10,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5471,6 +6058,7 @@
 "menge": 25,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5480,6 +6068,7 @@
 "menge": 50,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5489,6 +6078,7 @@
 "menge": 100,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5498,6 +6088,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -5509,6 +6100,7 @@
 "menge": 3,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5518,6 +6110,7 @@
 "menge": 5,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5527,6 +6120,7 @@
 "menge": 10,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5536,6 +6130,7 @@
 "menge": 25,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5545,6 +6140,7 @@
 "menge": 50,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5554,6 +6150,7 @@
 "menge": 100,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5563,6 +6160,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -5574,6 +6172,7 @@
 "menge": 3,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5583,6 +6182,7 @@
 "menge": 5,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5592,6 +6192,7 @@
 "menge": 10,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5601,6 +6202,7 @@
 "menge": 25,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5610,6 +6212,7 @@
 "menge": 50,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5619,6 +6222,7 @@
 "menge": 100,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5628,6 +6232,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -5639,6 +6244,7 @@
 "menge": 3,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5648,6 +6254,7 @@
 "menge": 5,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5657,6 +6264,7 @@
 "menge": 10,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5666,6 +6274,7 @@
 "menge": 25,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5675,6 +6284,7 @@
 "menge": 50,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5684,6 +6294,7 @@
 "menge": 100,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5693,6 +6304,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -5704,6 +6316,7 @@
 "menge": 3,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5713,6 +6326,7 @@
 "menge": 5,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5722,6 +6336,7 @@
 "menge": 10,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5731,6 +6346,7 @@
 "menge": 25,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5740,6 +6356,7 @@
 "menge": 50,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5749,6 +6366,7 @@
 "menge": 100,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5758,6 +6376,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -5769,6 +6388,7 @@
 "menge": 3,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5778,6 +6398,7 @@
 "menge": 5,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5787,6 +6408,7 @@
 "menge": 10,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5796,6 +6418,7 @@
 "menge": 25,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5805,6 +6428,7 @@
 "menge": 50,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5814,6 +6438,7 @@
 "menge": 100,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5823,6 +6448,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -5834,6 +6460,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -5843,6 +6470,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "372.90",
+"mo": 0,
 "b2b": "219.45",
 "anbau": "279.3"
 },
@@ -5852,6 +6480,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "233.64",
+"mo": 0,
 "b2b": "137.5",
 "anbau": "175"
 },
@@ -5861,6 +6490,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 0,
 "b2b": "82.5",
 "anbau": "105"
 },
@@ -5870,6 +6500,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "65.42",
+"mo": 0,
 "b2b": "38.5",
 "anbau": "49"
 },
@@ -5879,6 +6510,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "22",
 "anbau": "28"
 },
@@ -5888,6 +6520,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "22.43",
+"mo": 0,
 "b2b": "13.2",
 "anbau": "16.8"
 }
@@ -5899,6 +6532,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1214.02",
+"mo": 0,
 "b2b": "714.45",
 "anbau": "909.3"
 },
@@ -5908,6 +6542,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "372.90",
+"mo": 0,
 "b2b": "219.45",
 "anbau": "279.3"
 },
@@ -5917,6 +6552,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "233.64",
+"mo": 0,
 "b2b": "137.5",
 "anbau": "175"
 },
@@ -5926,6 +6562,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 0,
 "b2b": "82.5",
 "anbau": "105"
 },
@@ -5935,6 +6572,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "65.42",
+"mo": 0,
 "b2b": "38.5",
 "anbau": "49"
 },
@@ -5944,6 +6582,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "22",
 "anbau": "28"
 },
@@ -5953,6 +6592,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "22.43",
+"mo": 0,
 "b2b": "13.2",
 "anbau": "16.8"
 }
@@ -5964,6 +6604,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1214.02",
+"mo": 0,
 "b2b": "714.45",
 "anbau": "909.3"
 },
@@ -5973,6 +6614,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "372.90",
+"mo": 0,
 "b2b": "219.45",
 "anbau": "279.3"
 },
@@ -5982,6 +6624,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "233.64",
+"mo": 0,
 "b2b": "137.5",
 "anbau": "175"
 },
@@ -5991,6 +6634,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 0,
 "b2b": "82.5",
 "anbau": "105"
 },
@@ -6000,6 +6644,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "65.42",
+"mo": 0,
 "b2b": "38.5",
 "anbau": "49"
 },
@@ -6009,6 +6654,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "22",
 "anbau": "28"
 },
@@ -6018,6 +6664,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "22.43",
+"mo": 0,
 "b2b": "13.2",
 "anbau": "16.8"
 }
@@ -6029,6 +6676,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 },
@@ -6038,6 +6686,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -6047,6 +6696,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -6056,6 +6706,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -6065,6 +6716,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -6074,6 +6726,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -6083,6 +6736,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 }
@@ -6094,6 +6748,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 },
@@ -6103,6 +6758,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -6112,6 +6768,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -6121,6 +6778,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -6130,6 +6788,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -6139,6 +6798,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -6148,6 +6808,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 }
@@ -6159,6 +6820,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 },
@@ -6168,6 +6830,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -6177,6 +6840,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -6186,6 +6850,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -6195,6 +6860,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -6204,6 +6870,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -6213,6 +6880,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 }
@@ -6224,6 +6892,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 },
@@ -6233,6 +6902,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -6242,6 +6912,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -6251,6 +6922,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -6260,6 +6932,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -6269,6 +6942,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -6278,6 +6952,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 }
@@ -6289,6 +6964,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 },
@@ -6298,6 +6974,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -6307,6 +6984,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -6316,6 +6994,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -6325,6 +7004,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -6334,6 +7014,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -6343,6 +7024,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 }
@@ -6354,6 +7036,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "714.45",
 "anbau": "909.3"
 },
@@ -6363,6 +7046,7 @@
 "menge": 100,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "219.45",
 "anbau": "279.3"
 },
@@ -6372,6 +7056,7 @@
 "menge": 50,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "137.5",
 "anbau": "175"
 },
@@ -6381,6 +7066,7 @@
 "menge": 25,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "82.5",
 "anbau": "105"
 },
@@ -6390,6 +7076,7 @@
 "menge": 10,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "38.5",
 "anbau": "49"
 },
@@ -6399,6 +7086,7 @@
 "menge": 5,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "22",
 "anbau": "28"
 },
@@ -6408,6 +7096,7 @@
 "menge": 3,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "13.2",
 "anbau": "16.8"
 }
@@ -6419,6 +7108,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1307.48",
+"mo": 0,
 "b2b": "769.45",
 "anbau": "979.3"
 },
@@ -6428,6 +7118,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "419.63",
+"mo": 0,
 "b2b": "246.95",
 "anbau": "314.3"
 },
@@ -6437,6 +7128,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "280.37",
+"mo": 0,
 "b2b": "165",
 "anbau": "210"
 },
@@ -6446,6 +7138,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "163.55",
+"mo": 0,
 "b2b": "96.25",
 "anbau": "122.5"
 },
@@ -6455,6 +7148,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "74.77",
+"mo": 0,
 "b2b": "44",
 "anbau": "56"
 },
@@ -6464,6 +7158,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "42.06",
+"mo": 0,
 "b2b": "24.75",
 "anbau": "31.5"
 },
@@ -6473,6 +7168,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "28.04",
+"mo": 0,
 "b2b": "16.5",
 "anbau": "21"
 }
@@ -6484,6 +7180,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1307.48",
+"mo": 0,
 "b2b": "769.45",
 "anbau": "979.3"
 },
@@ -6493,6 +7190,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "419.63",
+"mo": 0,
 "b2b": "246.95",
 "anbau": "314.3"
 },
@@ -6502,6 +7200,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "280.37",
+"mo": 0,
 "b2b": "165",
 "anbau": "210"
 },
@@ -6511,6 +7210,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "163.55",
+"mo": 0,
 "b2b": "96.25",
 "anbau": "122.5"
 },
@@ -6520,6 +7220,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "74.77",
+"mo": 0,
 "b2b": "44",
 "anbau": "56"
 },
@@ -6529,6 +7230,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "42.06",
+"mo": 0,
 "b2b": "24.75",
 "anbau": "31.5"
 },
@@ -6538,6 +7240,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "28.04",
+"mo": 0,
 "b2b": "16.5",
 "anbau": "21"
 }
@@ -6549,6 +7252,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "714.45",
 "anbau": "909.3"
 },
@@ -6558,6 +7262,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "372.90",
+"mo": 0,
 "b2b": "219.45",
 "anbau": "279.3"
 },
@@ -6567,6 +7272,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "233.64",
+"mo": 0,
 "b2b": "137.5",
 "anbau": "175"
 },
@@ -6576,6 +7282,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 0,
 "b2b": "82.5",
 "anbau": "105"
 },
@@ -6585,6 +7292,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "65.42",
+"mo": 0,
 "b2b": "38.5",
 "anbau": "49"
 },
@@ -6594,6 +7302,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "22",
 "anbau": "28"
 },
@@ -6603,6 +7312,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "22.43",
+"mo": 0,
 "b2b": "13.2",
 "anbau": "16.8"
 }
@@ -6614,6 +7324,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1214.02",
+"mo": 0,
 "b2b": "714.45",
 "anbau": "909.3"
 },
@@ -6623,6 +7334,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "372.90",
+"mo": 0,
 "b2b": "219.45",
 "anbau": "279.3"
 },
@@ -6632,6 +7344,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "233.64",
+"mo": 0,
 "b2b": "137.5",
 "anbau": "175"
 },
@@ -6641,6 +7354,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 0,
 "b2b": "82.5",
 "anbau": "105"
 },
@@ -6650,6 +7364,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "65.42",
+"mo": 0,
 "b2b": "38.5",
 "anbau": "49"
 },
@@ -6659,6 +7374,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "22",
 "anbau": "28"
 },
@@ -6668,6 +7384,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "22.43",
+"mo": 0,
 "b2b": "13.2",
 "anbau": "16.8"
 }
@@ -6679,6 +7396,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "714.45",
 "anbau": "909.3"
 },
@@ -6688,6 +7406,7 @@
 "menge": 100,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "219.45",
 "anbau": "279.3"
 },
@@ -6697,6 +7416,7 @@
 "menge": 50,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "137.5",
 "anbau": "175"
 },
@@ -6706,6 +7426,7 @@
 "menge": 25,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "82.5",
 "anbau": "105"
 },
@@ -6715,6 +7436,7 @@
 "menge": 10,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "38.5",
 "anbau": "49"
 },
@@ -6724,6 +7446,7 @@
 "menge": 5,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "22",
 "anbau": "28"
 },
@@ -6733,6 +7456,7 @@
 "menge": 3,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "13.2",
 "anbau": "16.8"
 }
@@ -6744,6 +7468,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "714.45",
 "anbau": "909.3"
 },
@@ -6753,6 +7478,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "372.90",
+"mo": 0,
 "b2b": "219.45",
 "anbau": "279.3"
 },
@@ -6762,6 +7488,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "233.64",
+"mo": 0,
 "b2b": "137.5",
 "anbau": "175"
 },
@@ -6771,6 +7498,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 0,
 "b2b": "82.5",
 "anbau": "105"
 },
@@ -6780,6 +7508,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "65.42",
+"mo": 0,
 "b2b": "38.5",
 "anbau": "49"
 },
@@ -6789,6 +7518,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "22",
 "anbau": "28"
 },
@@ -6798,6 +7528,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "22.43",
+"mo": 0,
 "b2b": "13.2",
 "anbau": "16.8"
 }
@@ -6809,6 +7540,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 },
@@ -6818,6 +7550,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -6827,6 +7560,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -6836,6 +7570,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -6845,6 +7580,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -6854,6 +7590,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -6863,6 +7600,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 }
@@ -6874,6 +7612,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "714.45",
 "anbau": "909.3"
 },
@@ -6883,6 +7622,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "372.90",
+"mo": 0,
 "b2b": "219.45",
 "anbau": "279.3"
 },
@@ -6892,6 +7632,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "233.64",
+"mo": 0,
 "b2b": "137.5",
 "anbau": "175"
 },
@@ -6901,6 +7642,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 0,
 "b2b": "82.5",
 "anbau": "105"
 },
@@ -6910,6 +7652,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "65.42",
+"mo": 0,
 "b2b": "38.5",
 "anbau": "49"
 },
@@ -6919,6 +7662,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "22",
 "anbau": "28"
 },
@@ -6928,6 +7672,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "22.43",
+"mo": 0,
 "b2b": "13.2",
 "anbau": "16.8"
 }
@@ -6939,6 +7684,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 },
@@ -6948,6 +7694,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -6957,6 +7704,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -6966,6 +7714,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -6975,6 +7724,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -6984,6 +7734,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -6993,6 +7744,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 }
@@ -7004,6 +7756,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 },
@@ -7013,6 +7766,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -7022,6 +7776,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -7031,6 +7786,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -7040,6 +7796,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -7049,6 +7806,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -7058,6 +7816,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 }
@@ -7069,6 +7828,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 },
@@ -7078,6 +7838,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "467.29",
+"mo": 0,
 "b2b": "275",
 "anbau": "350"
 },
@@ -7087,6 +7848,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "327.10",
+"mo": 0,
 "b2b": "192.5",
 "anbau": "245"
 },
@@ -7096,6 +7858,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "210.28",
+"mo": 0,
 "b2b": "123.75",
 "anbau": "157.5"
 },
@@ -7105,6 +7868,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "60.5",
 "anbau": "77"
 },
@@ -7114,6 +7878,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "35.75",
 "anbau": "45.5"
 },
@@ -7123,6 +7888,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "39.25",
+"mo": 0,
 "b2b": "23.1",
 "anbau": "29.4"
 }
@@ -7134,6 +7900,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 },
@@ -7143,6 +7910,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -7152,6 +7920,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -7161,6 +7930,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -7170,6 +7940,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -7179,6 +7950,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -7188,6 +7960,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 }
@@ -7199,6 +7972,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 },
@@ -7208,6 +7982,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -7217,6 +7992,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -7226,6 +8002,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -7235,6 +8012,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -7244,6 +8022,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -7253,6 +8032,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 }
@@ -7264,6 +8044,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 },
@@ -7273,6 +8054,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -7282,6 +8064,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -7291,6 +8074,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -7300,6 +8084,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -7309,6 +8094,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -7318,6 +8104,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 }
@@ -7329,6 +8116,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 },
@@ -7338,6 +8126,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -7347,6 +8136,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -7356,6 +8146,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -7365,6 +8156,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -7374,6 +8166,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -7383,6 +8176,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 }
@@ -7394,6 +8188,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 },
@@ -7403,6 +8198,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -7412,6 +8208,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -7421,6 +8218,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -7430,6 +8228,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -7439,6 +8238,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -7448,6 +8248,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 }
@@ -7459,6 +8260,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 },
@@ -7468,6 +8270,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -7477,6 +8280,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -7486,6 +8290,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -7495,6 +8300,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -7504,6 +8310,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -7513,6 +8320,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 }
@@ -7524,6 +8332,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 },
@@ -7533,6 +8342,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -7542,6 +8352,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -7551,6 +8362,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -7560,6 +8372,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -7569,6 +8382,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -7578,6 +8392,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -7589,6 +8404,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "39.25",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -7598,6 +8414,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -7607,6 +8424,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -7616,6 +8434,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "210.28",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -7625,6 +8444,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "327.10",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -7634,6 +8454,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "467.29",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 }
@@ -7645,6 +8466,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "22.43",
+"mo": 0,
 "b2b": "13.2",
 "anbau": "16.8"
 },
@@ -7654,6 +8476,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "22",
 "anbau": "28"
 },
@@ -7663,6 +8486,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "65.42",
+"mo": 0,
 "b2b": "38.5",
 "anbau": "49"
 },
@@ -7672,6 +8496,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 0,
 "b2b": "82.5",
 "anbau": "105"
 },
@@ -7681,6 +8506,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "233.64",
+"mo": 0,
 "b2b": "137.5",
 "anbau": "175"
 },
@@ -7690,6 +8516,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "372.90",
+"mo": 0,
 "b2b": "219.45",
 "anbau": "279.3"
 },
@@ -7699,6 +8526,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1214.02",
+"mo": 0,
 "b2b": "714.45",
 "anbau": "909.3"
 }
@@ -7710,6 +8538,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "28.04",
+"mo": 0,
 "b2b": "16.5",
 "anbau": "21"
 },
@@ -7719,6 +8548,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "42.06",
+"mo": 0,
 "b2b": "24.75",
 "anbau": "31.5"
 },
@@ -7728,6 +8558,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "74.77",
+"mo": 0,
 "b2b": "44",
 "anbau": "56"
 },
@@ -7737,6 +8568,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "163.55",
+"mo": 0,
 "b2b": "96.25",
 "anbau": "122.5"
 },
@@ -7746,6 +8578,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "280.37",
+"mo": 0,
 "b2b": "165",
 "anbau": "210"
 },
@@ -7755,6 +8588,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "419.63",
+"mo": 0,
 "b2b": "246.95",
 "anbau": "314.3"
 },
@@ -7764,6 +8598,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1307.48",
+"mo": 0,
 "b2b": "769.45",
 "anbau": "979.3"
 }
@@ -7775,6 +8610,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 },
@@ -7784,6 +8620,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -7793,6 +8630,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -7802,6 +8640,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -7811,6 +8650,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -7820,6 +8660,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -7829,6 +8670,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -7840,6 +8682,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "39.25",
+"mo": 0,
 "b2b": "23.1",
 "anbau": "29.4"
 },
@@ -7849,6 +8692,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "35.75",
 "anbau": "45.5"
 },
@@ -7858,6 +8702,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "60.5",
 "anbau": "77"
 },
@@ -7867,6 +8712,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "210.28",
+"mo": 0,
 "b2b": "123.75",
 "anbau": "157.5"
 },
@@ -7876,6 +8722,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "327.10",
+"mo": 0,
 "b2b": "192.5",
 "anbau": "245"
 },
@@ -7885,6 +8732,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "467.29",
+"mo": 0,
 "b2b": "275",
 "anbau": "350"
 },
@@ -7894,6 +8742,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -7905,6 +8754,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "39.25",
+"mo": 0,
 "b2b": "23.1",
 "anbau": "29.4"
 },
@@ -7914,6 +8764,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "35.75",
 "anbau": "45.5"
 },
@@ -7923,6 +8774,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "60.5",
 "anbau": "77"
 },
@@ -7932,6 +8784,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "210.28",
+"mo": 0,
 "b2b": "123.75",
 "anbau": "157.5"
 },
@@ -7941,6 +8794,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "327.10",
+"mo": 0,
 "b2b": "192.5",
 "anbau": "245"
 },
@@ -7950,6 +8804,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "467.29",
+"mo": 0,
 "b2b": "275",
 "anbau": "350"
 },
@@ -7959,6 +8814,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -7970,6 +8826,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "39.25",
+"mo": 0,
 "b2b": "23.1",
 "anbau": "29.4"
 },
@@ -7979,6 +8836,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "35.75",
 "anbau": "45.5"
 },
@@ -7988,6 +8846,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "60.5",
 "anbau": "77"
 },
@@ -7997,6 +8856,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "210.28",
+"mo": 0,
 "b2b": "123.75",
 "anbau": "157.5"
 },
@@ -8006,6 +8866,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "327.10",
+"mo": 0,
 "b2b": "192.5",
 "anbau": "245"
 },
@@ -8015,6 +8876,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "467.29",
+"mo": 0,
 "b2b": "275",
 "anbau": "350"
 },
@@ -8024,6 +8886,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -8035,6 +8898,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "39.25",
+"mo": 0,
 "b2b": "23.1",
 "anbau": "29.4"
 },
@@ -8044,6 +8908,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "35.75",
 "anbau": "45.5"
 },
@@ -8053,6 +8918,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "60.5",
 "anbau": "77"
 },
@@ -8062,6 +8928,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "210.28",
+"mo": 0,
 "b2b": "123.75",
 "anbau": "157.5"
 },
@@ -8071,6 +8938,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "327.10",
+"mo": 0,
 "b2b": "192.5",
 "anbau": "245"
 },
@@ -8080,6 +8948,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "467.29",
+"mo": 0,
 "b2b": "275",
 "anbau": "350"
 },
@@ -8089,6 +8958,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -8100,6 +8970,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 },
@@ -8109,6 +8980,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -8118,6 +8990,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -8127,6 +9000,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -8136,6 +9010,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -8145,6 +9020,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -8154,6 +9030,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -8165,6 +9042,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "39.25",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 },
@@ -8174,6 +9052,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -8183,6 +9062,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -8192,6 +9072,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "210.28",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -8201,6 +9082,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "327.10",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -8210,6 +9092,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "467.29",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -8219,6 +9102,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1822.43",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -8230,6 +9114,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 },
@@ -8239,6 +9124,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -8248,6 +9134,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -8257,6 +9144,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -8266,6 +9154,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -8275,6 +9164,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -8284,6 +9174,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -8295,6 +9186,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "22.43",
+"mo": 0,
 "b2b": "13.2",
 "anbau": "16.8"
 },
@@ -8304,6 +9196,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "22",
 "anbau": "28"
 },
@@ -8313,6 +9206,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "65.42",
+"mo": 0,
 "b2b": "38.5",
 "anbau": "49"
 },
@@ -8322,6 +9216,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 0,
 "b2b": "82.5",
 "anbau": "105"
 },
@@ -8331,6 +9226,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "233.64",
+"mo": 0,
 "b2b": "137.5",
 "anbau": "175"
 },
@@ -8340,6 +9236,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "372.90",
+"mo": 0,
 "b2b": "219.45",
 "anbau": "279.3"
 },
@@ -8349,6 +9246,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1214.02",
+"mo": 0,
 "b2b": "714.45",
 "anbau": "909.3"
 }
@@ -8360,6 +9258,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "22.43",
+"mo": 0,
 "b2b": "13.2",
 "anbau": "16.8"
 },
@@ -8369,6 +9268,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "22",
 "anbau": "28"
 },
@@ -8378,6 +9278,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "65.42",
+"mo": 0,
 "b2b": "38.5",
 "anbau": "49"
 },
@@ -8387,6 +9288,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 0,
 "b2b": "82.5",
 "anbau": "105"
 },
@@ -8396,6 +9298,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "233.64",
+"mo": 0,
 "b2b": "137.5",
 "anbau": "175"
 },
@@ -8405,6 +9308,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "372.90",
+"mo": 0,
 "b2b": "219.45",
 "anbau": "279.3"
 },
@@ -8414,6 +9318,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "714.45",
 "anbau": "909.3"
 }
@@ -8425,6 +9330,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "22.43",
+"mo": 0,
 "b2b": "13.2",
 "anbau": "16.8"
 },
@@ -8434,6 +9340,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "22",
 "anbau": "28"
 },
@@ -8443,6 +9350,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "65.42",
+"mo": 0,
 "b2b": "38.5",
 "anbau": "49"
 },
@@ -8452,6 +9360,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 0,
 "b2b": "82.5",
 "anbau": "105"
 },
@@ -8461,6 +9370,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "233.64",
+"mo": 0,
 "b2b": "137.5",
 "anbau": "175"
 },
@@ -8470,6 +9380,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "372.90",
+"mo": 0,
 "b2b": "219.45",
 "anbau": "279.3"
 },
@@ -8479,6 +9390,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "714.45",
 "anbau": "909.3"
 }
@@ -8490,6 +9402,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 },
@@ -8499,6 +9412,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -8508,6 +9422,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -8517,6 +9432,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -8526,6 +9442,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -8535,6 +9452,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -8544,6 +9462,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -8555,6 +9474,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 },
@@ -8564,6 +9484,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -8573,6 +9494,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -8582,6 +9504,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -8591,6 +9514,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -8600,6 +9524,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -8609,6 +9534,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -8620,6 +9546,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "39.25",
+"mo": 0,
 "b2b": "23.1",
 "anbau": "29.4"
 },
@@ -8629,6 +9556,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "35.75",
 "anbau": "45.5"
 },
@@ -8638,6 +9566,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "60.5",
 "anbau": "77"
 },
@@ -8647,6 +9576,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "210.28",
+"mo": 0,
 "b2b": "123.75",
 "anbau": "157.5"
 },
@@ -8656,6 +9586,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "327.10",
+"mo": 0,
 "b2b": "192.5",
 "anbau": "245"
 },
@@ -8665,6 +9596,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "467.29",
+"mo": 0,
 "b2b": "275",
 "anbau": "350"
 },
@@ -8674,6 +9606,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -8685,6 +9618,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 },
@@ -8694,6 +9628,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -8703,6 +9638,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -8712,6 +9648,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -8721,6 +9658,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -8730,6 +9668,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -8739,6 +9678,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -8750,6 +9690,7 @@
 "menge": 3,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 },
@@ -8759,6 +9700,7 @@
 "menge": 5,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -8768,6 +9710,7 @@
 "menge": 10,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -8777,6 +9720,7 @@
 "menge": 25,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -8786,6 +9730,7 @@
 "menge": 50,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "200.2",
 "anbau": "254.8"
 },
@@ -8795,6 +9740,7 @@
 "menge": 100,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -8804,6 +9750,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -8815,6 +9762,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 },
@@ -8824,6 +9772,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -8833,6 +9782,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -8842,6 +9792,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -8851,6 +9802,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -8860,6 +9812,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -8869,6 +9822,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -8880,6 +9834,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "39.25",
+"mo": 0,
 "b2b": "23.1",
 "anbau": "29.4"
 },
@@ -8889,6 +9844,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "35.75",
 "anbau": "45.5"
 },
@@ -8898,6 +9854,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "60.5",
 "anbau": "77"
 },
@@ -8907,6 +9864,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "210.28",
+"mo": 0,
 "b2b": "123.75",
 "anbau": "157.5"
 },
@@ -8916,6 +9874,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "327.10",
+"mo": 0,
 "b2b": "192.5",
 "anbau": "245"
 },
@@ -8925,6 +9884,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "467.29",
+"mo": 0,
 "b2b": "275",
 "anbau": "350"
 }
@@ -8936,6 +9896,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 },
@@ -8945,6 +9906,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -8954,6 +9916,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -8963,6 +9926,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -8972,6 +9936,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -8981,6 +9946,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -8990,6 +9956,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -9001,6 +9968,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "22.43",
+"mo": 0,
 "b2b": "13.2",
 "anbau": "16.8"
 },
@@ -9010,6 +9978,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "22",
 "anbau": "28"
 },
@@ -9019,6 +9988,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "65.42",
+"mo": 0,
 "b2b": "38.5",
 "anbau": "49"
 },
@@ -9028,6 +9998,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 0,
 "b2b": "82.5",
 "anbau": "105"
 },
@@ -9037,6 +10008,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "233.64",
+"mo": 0,
 "b2b": "137.5",
 "anbau": "175"
 },
@@ -9046,6 +10018,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "372.90",
+"mo": 0,
 "b2b": "219.45",
 "anbau": "279.3"
 },
@@ -9055,6 +10028,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1214.02",
+"mo": 0,
 "b2b": "714.45",
 "anbau": "909.3"
 }
@@ -9066,6 +10040,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "22.43",
+"mo": 0,
 "b2b": "13.2",
 "anbau": "16.8"
 },
@@ -9075,6 +10050,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "22",
 "anbau": "28"
 },
@@ -9084,6 +10060,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "65.42",
+"mo": 0,
 "b2b": "38.5",
 "anbau": "49"
 },
@@ -9093,6 +10070,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 0,
 "b2b": "82.5",
 "anbau": "105"
 },
@@ -9102,6 +10080,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "233.64",
+"mo": 0,
 "b2b": "137.5",
 "anbau": "175"
 },
@@ -9111,6 +10090,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "372.90",
+"mo": 0,
 "b2b": "219.45",
 "anbau": "279.3"
 },
@@ -9120,6 +10100,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1214.02",
+"mo": 0,
 "b2b": "714.45",
 "anbau": "909.3"
 }
@@ -9131,6 +10112,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 },
@@ -9140,6 +10122,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -9149,6 +10132,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -9158,6 +10142,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -9167,6 +10152,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -9176,6 +10162,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -9185,6 +10172,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -9196,6 +10184,7 @@
 "menge": 3,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 },
@@ -9205,6 +10194,7 @@
 "menge": 5,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -9214,6 +10204,7 @@
 "menge": 10,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -9223,6 +10214,7 @@
 "menge": 25,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -9232,6 +10224,7 @@
 "menge": 50,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -9241,6 +10234,7 @@
 "menge": 100,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -9250,6 +10244,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -9261,6 +10256,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 },
@@ -9270,6 +10266,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -9279,6 +10276,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -9288,6 +10286,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -9297,6 +10296,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -9306,6 +10306,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -9315,6 +10316,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -9326,6 +10328,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "39.25",
+"mo": 0,
 "b2b": "23.1",
 "anbau": "29.4"
 },
@@ -9335,6 +10338,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "35.75",
 "anbau": "45.5"
 },
@@ -9344,6 +10348,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "60.5",
 "anbau": "77"
 },
@@ -9353,6 +10358,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "210.28",
+"mo": 0,
 "b2b": "123.75",
 "anbau": "157.5"
 },
@@ -9362,6 +10368,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "327.10",
+"mo": 0,
 "b2b": "192.5",
 "anbau": "245"
 },
@@ -9371,6 +10378,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "467.29",
+"mo": 0,
 "b2b": "275",
 "anbau": "350"
 }
@@ -9382,6 +10390,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 },
@@ -9391,6 +10400,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -9400,6 +10410,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -9409,6 +10420,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -9418,6 +10430,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -9427,6 +10440,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -9436,6 +10450,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -9447,6 +10462,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "39.25",
+"mo": 0,
 "b2b": "23.1",
 "anbau": "29.4"
 },
@@ -9456,6 +10472,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "35.75",
 "anbau": "45.5"
 },
@@ -9465,6 +10482,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "60.5",
 "anbau": "77"
 },
@@ -9474,6 +10492,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "210.28",
+"mo": 0,
 "b2b": "123.75",
 "anbau": "157.5"
 },
@@ -9483,6 +10502,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "327.10",
+"mo": 0,
 "b2b": "192.5",
 "anbau": "245"
 },
@@ -9492,6 +10512,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "467.29",
+"mo": 0,
 "b2b": "275",
 "anbau": "350"
 },
@@ -9501,6 +10522,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -9512,6 +10534,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "22.43",
+"mo": 0,
 "b2b": "13.2",
 "anbau": "16.8"
 },
@@ -9521,6 +10544,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "22",
 "anbau": "28"
 },
@@ -9530,6 +10554,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "65.42",
+"mo": 0,
 "b2b": "38.5",
 "anbau": "49"
 },
@@ -9539,6 +10564,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 0,
 "b2b": "82.5",
 "anbau": "105"
 },
@@ -9548,6 +10574,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "233.64",
+"mo": 0,
 "b2b": "137.5",
 "anbau": "175"
 },
@@ -9557,6 +10584,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "372.90",
+"mo": 0,
 "b2b": "219.45",
 "anbau": "279.3"
 },
@@ -9566,6 +10594,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "714.45",
 "anbau": "909.3"
 }
@@ -9577,6 +10606,7 @@
 "menge": 3,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 },
@@ -9586,6 +10616,7 @@
 "menge": 5,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -9595,6 +10626,7 @@
 "menge": 10,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -9604,6 +10636,7 @@
 "menge": 25,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -9613,6 +10646,7 @@
 "menge": 50,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -9622,6 +10656,7 @@
 "menge": 100,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -9631,6 +10666,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -9642,6 +10678,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 },
@@ -9651,6 +10688,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -9660,6 +10698,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -9669,6 +10708,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -9678,6 +10718,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -9687,6 +10728,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -9696,6 +10738,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -9707,6 +10750,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "22.43",
+"mo": 0,
 "b2b": "13.2",
 "anbau": "16.8"
 },
@@ -9716,6 +10760,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "22",
 "anbau": "28"
 },
@@ -9725,6 +10770,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "65.42",
+"mo": 0,
 "b2b": "38.5",
 "anbau": "49"
 },
@@ -9734,6 +10780,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 0,
 "b2b": "82.5",
 "anbau": "105"
 },
@@ -9743,6 +10790,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "233.64",
+"mo": 0,
 "b2b": "137.5",
 "anbau": "175"
 },
@@ -9752,6 +10800,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "372.90",
+"mo": 0,
 "b2b": "219.45",
 "anbau": "279.3"
 },
@@ -9761,6 +10810,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "714.45",
 "anbau": "909.3"
 }
@@ -9772,6 +10822,7 @@
 "menge": 3,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 },
@@ -9781,6 +10832,7 @@
 "menge": 5,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -9790,6 +10842,7 @@
 "menge": 10,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -9799,6 +10852,7 @@
 "menge": 25,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "117.7",
 "anbau": "149.8"
 },
@@ -9808,6 +10862,7 @@
 "menge": 50,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "200.2",
 "anbau": "254.8"
 },
@@ -9817,6 +10872,7 @@
 "menge": 100,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -9826,6 +10882,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -9837,6 +10894,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 },
@@ -9846,6 +10904,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -9855,6 +10914,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "200.93",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -9864,6 +10924,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -9873,6 +10934,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -9882,6 +10944,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 },
@@ -9891,6 +10954,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 }
@@ -9902,6 +10966,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 },
@@ -9911,6 +10976,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -9920,6 +10986,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -9929,6 +10996,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "207.48",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -9938,6 +11006,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -9947,6 +11016,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -9956,6 +11026,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 }
@@ -9967,6 +11038,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "879.45",
 "anbau": "1119.3"
 },
@@ -9976,6 +11048,7 @@
 "menge": 100,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "301.95",
 "anbau": "384.3"
 },
@@ -9985,6 +11058,7 @@
 "menge": 50,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -9994,6 +11068,7 @@
 "menge": 25,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "164.45",
 "anbau": "209.3"
 },
@@ -10003,6 +11078,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "60.5",
 "anbau": "77"
 },
@@ -10012,6 +11088,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "35.75",
 "anbau": "45.5"
 },
@@ -10021,6 +11098,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "22",
 "anbau": "28"
 }
@@ -10032,6 +11110,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "22",
 "anbau": "28"
 },
@@ -10041,6 +11120,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "35.75",
 "anbau": "45.5"
 },
@@ -10050,6 +11130,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "60.5",
 "anbau": "77"
 },
@@ -10059,6 +11140,7 @@
 "menge": 25,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "164.45",
 "anbau": "209.3"
 },
@@ -10068,6 +11150,7 @@
 "menge": 50,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -10077,6 +11160,7 @@
 "menge": 100,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "301.95",
 "anbau": "384.3"
 },
@@ -10086,6 +11170,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "879.45",
 "anbau": "1119.3"
 }
@@ -10097,6 +11182,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 },
@@ -10106,6 +11192,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -10115,6 +11202,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -10124,6 +11212,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "207.48",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -10133,6 +11222,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -10142,6 +11232,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -10151,6 +11242,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -10162,6 +11254,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "22",
 "anbau": "28"
 },
@@ -10171,6 +11264,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "35.75",
 "anbau": "45.5"
 },
@@ -10180,6 +11274,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "60.5",
 "anbau": "77"
 },
@@ -10189,6 +11284,7 @@
 "menge": 25,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -10198,6 +11294,7 @@
 "menge": 50,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -10207,6 +11304,7 @@
 "menge": 100,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -10216,6 +11314,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -10227,6 +11326,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "22",
 "anbau": "28"
 },
@@ -10236,6 +11336,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "35.75",
 "anbau": "45.5"
 },
@@ -10245,6 +11346,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "60.5",
 "anbau": "77"
 },
@@ -10254,6 +11356,7 @@
 "menge": 25,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "164.45",
 "anbau": "209.3"
 },
@@ -10263,6 +11366,7 @@
 "menge": 50,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -10272,6 +11376,7 @@
 "menge": 100,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "301.95",
 "anbau": "384.3"
 },
@@ -10281,6 +11386,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "879.45",
 "anbau": "1119.3"
 }
@@ -10292,6 +11398,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 },
@@ -10301,6 +11408,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -10310,6 +11418,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -10319,6 +11428,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "207.48",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -10328,6 +11438,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -10337,6 +11448,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -10346,6 +11458,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -10357,6 +11470,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "22",
 "anbau": "28"
 },
@@ -10366,6 +11480,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "35.75",
 "anbau": "45.5"
 },
@@ -10375,6 +11490,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "60.5",
 "anbau": "77"
 },
@@ -10384,6 +11500,7 @@
 "menge": 25,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -10393,6 +11510,7 @@
 "menge": 50,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -10402,6 +11520,7 @@
 "menge": 100,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -10411,6 +11530,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -10422,6 +11542,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "22",
 "anbau": "28"
 },
@@ -10431,6 +11552,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "35.75",
 "anbau": "45.5"
 },
@@ -10440,6 +11562,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "60.5",
 "anbau": "77"
 },
@@ -10449,6 +11572,7 @@
 "menge": 25,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -10458,6 +11582,7 @@
 "menge": 50,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -10467,6 +11592,7 @@
 "menge": 100,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -10476,6 +11602,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -10487,6 +11614,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "22",
 "anbau": "28"
 },
@@ -10496,6 +11624,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "35.75",
 "anbau": "45.5"
 },
@@ -10505,6 +11634,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "60.5",
 "anbau": "77"
 },
@@ -10514,6 +11644,7 @@
 "menge": 25,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "164.45",
 "anbau": "209.3"
 },
@@ -10523,6 +11654,7 @@
 "menge": 50,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -10532,6 +11664,7 @@
 "menge": 100,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "301.95",
 "anbau": "384.3"
 },
@@ -10541,6 +11674,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "879.45",
 "anbau": "1119.3"
 }
@@ -10552,6 +11686,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 },
@@ -10561,6 +11696,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -10570,6 +11706,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -10579,6 +11716,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "207.48",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -10588,6 +11726,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -10597,6 +11736,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -10606,6 +11746,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -10617,6 +11758,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "22",
 "anbau": "28"
 },
@@ -10626,6 +11768,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "35.75",
 "anbau": "45.5"
 },
@@ -10635,6 +11778,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "60.5",
 "anbau": "77"
 },
@@ -10644,6 +11788,7 @@
 "menge": 25,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -10653,6 +11798,7 @@
 "menge": 50,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -10662,6 +11808,7 @@
 "menge": 100,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -10671,6 +11818,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -10682,6 +11830,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "22",
 "anbau": "28"
 },
@@ -10691,6 +11840,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "35.75",
 "anbau": "45.5"
 },
@@ -10700,6 +11850,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "60.5",
 "anbau": "77"
 },
@@ -10709,6 +11860,7 @@
 "menge": 25,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "164.45",
 "anbau": "209.3"
 },
@@ -10718,6 +11870,7 @@
 "menge": 50,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -10727,6 +11880,7 @@
 "menge": 100,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "301.95",
 "anbau": "384.3"
 },
@@ -10736,6 +11890,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "879.45",
 "anbau": "1119.3"
 }
@@ -10747,6 +11902,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 },
@@ -10756,6 +11912,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -10765,6 +11922,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -10774,6 +11932,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "207.48",
+"mo": 0,
 "b2b": "118.25",
 "anbau": "150.5"
 },
@@ -10783,6 +11942,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -10792,6 +11952,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -10801,6 +11962,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -10812,6 +11974,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "37.38",
+"mo": 0,
 "b2b": "22",
 "anbau": "28"
 },
@@ -10821,6 +11984,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "60.75",
+"mo": 0,
 "b2b": "35.75",
 "anbau": "45.5"
 },
@@ -10830,6 +11994,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "102.80",
+"mo": 0,
 "b2b": "60.5",
 "anbau": "77"
 },
@@ -10839,6 +12004,7 @@
 "menge": 25,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "164.45",
 "anbau": "209.3"
 },
@@ -10848,6 +12014,7 @@
 "menge": 50,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -10857,6 +12024,7 @@
 "menge": 100,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "301.95",
 "anbau": "384.3"
 },
@@ -10866,6 +12034,7 @@
 "menge": 500,
 "status": "private",
 "vk": "",
+"mo": 0,
 "b2b": "879.45",
 "anbau": "1119.3"
 }
@@ -10877,6 +12046,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "33.64",
+"mo": 0,
 "b2b": "19.8",
 "anbau": "25.2"
 },
@@ -10886,6 +12056,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "51.40",
+"mo": 0,
 "b2b": "30.25",
 "anbau": "38.5"
 },
@@ -10895,6 +12066,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "92.52",
+"mo": 0,
 "b2b": "54.45",
 "anbau": "69.3"
 },
@@ -10904,6 +12076,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "207.48",
+"mo": 0,
 "b2b": "110",
 "anbau": "140"
 },
@@ -10913,6 +12086,7 @@
 "menge": 50,
 "status": "publish",
 "vk": "341.12",
+"mo": 0,
 "b2b": "200.75",
 "anbau": "255.5"
 },
@@ -10922,6 +12096,7 @@
 "menge": 100,
 "status": "publish",
 "vk": "466.36",
+"mo": 0,
 "b2b": "274.45",
 "anbau": "349.3"
 },
@@ -10931,6 +12106,7 @@
 "menge": 500,
 "status": "publish",
 "vk": "1400.93",
+"mo": 0,
 "b2b": "824.45",
 "anbau": "1049.3"
 }
@@ -10942,6 +12118,7 @@
 "menge": 5,
 "status": "private",
 "vk": "55.14",
+"mo": 2,
 "b2b": "33",
 "anbau": "39"
 },
@@ -10951,6 +12128,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "30.84",
+"mo": 1,
 "b2b": "22",
 "anbau": "26"
 },
@@ -10960,6 +12138,7 @@
 "menge": null,
 "status": "private",
 "vk": "55.14",
+"mo": 2,
 "b2b": "",
 "anbau": ""
 },
@@ -10969,6 +12148,7 @@
 "menge": null,
 "status": "publish",
 "vk": "30.84",
+"mo": 1,
 "b2b": "",
 "anbau": ""
 },
@@ -10978,6 +12158,7 @@
 "menge": null,
 "status": "private",
 "vk": "55.14",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -10987,6 +12168,7 @@
 "menge": null,
 "status": "publish",
 "vk": "30.84",
+"mo": 0,
 "b2b": "",
 "anbau": ""
 },
@@ -10996,6 +12178,7 @@
 "menge": null,
 "status": "private",
 "vk": "55.14",
+"mo": 2,
 "b2b": "",
 "anbau": ""
 },
@@ -11005,6 +12188,7 @@
 "menge": null,
 "status": "publish",
 "vk": "30.84",
+"mo": 1,
 "b2b": "",
 "anbau": ""
 },
@@ -11014,6 +12198,7 @@
 "menge": null,
 "status": "private",
 "vk": "55.14",
+"mo": 2,
 "b2b": "",
 "anbau": ""
 },
@@ -11023,6 +12208,7 @@
 "menge": null,
 "status": "publish",
 "vk": "30.84",
+"mo": 1,
 "b2b": "",
 "anbau": ""
 }
@@ -11034,6 +12220,7 @@
 "menge": 5,
 "status": "private",
 "vk": "53.50",
+"mo": 2,
 "b2b": "",
 "anbau": ""
 },
@@ -11043,6 +12230,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "23.36",
+"mo": 1,
 "b2b": "",
 "anbau": ""
 }
@@ -11054,6 +12242,7 @@
 "menge": 25,
 "status": "publish",
 "vk": "140.19",
+"mo": 4,
 "b2b": "82.5",
 "anbau": "97.5"
 },
@@ -11063,6 +12252,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "70.09",
+"mo": 3,
 "b2b": "41.25",
 "anbau": "48.75"
 },
@@ -11072,6 +12262,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 2,
 "b2b": "22",
 "anbau": "26"
 },
@@ -11081,6 +12272,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "25.23",
+"mo": 1,
 "b2b": "14.85",
 "anbau": "17.55"
 }
@@ -11092,6 +12284,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "30.84",
+"mo": 1,
 "b2b": "20.9",
 "anbau": "24.7"
 }
@@ -11103,6 +12296,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "30.84",
+"mo": 1,
 "b2b": "22",
 "anbau": "26"
 },
@@ -11112,6 +12306,7 @@
 "menge": 5,
 "status": "private",
 "vk": "55.14",
+"mo": 2,
 "b2b": "33",
 "anbau": "39"
 },
@@ -11121,6 +12316,7 @@
 "menge": null,
 "status": "publish",
 "vk": "30.84",
+"mo": 1,
 "b2b": "",
 "anbau": ""
 }
@@ -11132,6 +12328,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "30.84",
+"mo": 1,
 "b2b": "20.9",
 "anbau": "24.7"
 }
@@ -11143,6 +12340,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "30.84",
+"mo": 1,
 "b2b": "22",
 "anbau": "26"
 }
@@ -11154,6 +12352,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "30.84",
+"mo": 1,
 "b2b": "22",
 "anbau": "26"
 }
@@ -11165,6 +12364,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "30.84",
+"mo": 1,
 "b2b": "20.9",
 "anbau": "24.7"
 }
@@ -11176,6 +12376,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "30.84",
+"mo": 1,
 "b2b": "22",
 "anbau": "26"
 }
@@ -11187,6 +12388,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "25.14",
+"mo": 1,
 "b2b": "15.4",
 "anbau": "18.2"
 }
@@ -11198,6 +12400,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "25.14",
+"mo": 1,
 "b2b": "15.4",
 "anbau": "18.2"
 }
@@ -11209,6 +12412,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "25.14",
+"mo": 1,
 "b2b": "12.65",
 "anbau": "14.95"
 }
@@ -11220,6 +12424,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "28.04",
+"mo": 1,
 "b2b": "14.85",
 "anbau": "17.55"
 }
@@ -11231,6 +12436,7 @@
 "menge": 3,
 "status": "publish",
 "vk": "28.04",
+"mo": 1,
 "b2b": "18.98",
 "anbau": "22.43"
 }
@@ -11242,8 +12448,9 @@
 "menge": 3,
 "status": "publish",
 "vk": "27.10",
-"b2b": "",
-"anbau": ""
+"mo": 1,
+"b2b": "15.4",
+"anbau": "18.2"
 }
 },
 "18142": {
@@ -11253,6 +12460,7 @@
 "menge": 10,
 "status": "publish",
 "vk": "70.09",
+"mo": 3,
 "b2b": "",
 "anbau": ""
 },
@@ -11262,6 +12470,7 @@
 "menge": 5,
 "status": "publish",
 "vk": "37.38",
+"mo": 2,
 "b2b": "",
 "anbau": ""
 },
@@ -11271,6 +12480,301 @@
 "menge": 3,
 "status": "publish",
 "vk": "25.23",
+"mo": 1,
+"b2b": "14.85",
+"anbau": "17.55"
+}
+},
+"18145": {
+"18510": {
+"sku": "HJ-6393115-04",
+"opt": "25 St\u00fcck",
+"menge": 25,
+"status": "publish",
+"vk": "158.88",
+"mo": 4,
+"b2b": "",
+"anbau": ""
+},
+"18509": {
+"sku": "HJ-6393115-03",
+"opt": "10 St\u00fcck",
+"menge": 10,
+"status": "publish",
+"vk": "79.44",
+"mo": 3,
+"b2b": "",
+"anbau": ""
+},
+"18508": {
+"sku": "HJ-6393115-02",
+"opt": "5 St\u00fcck",
+"menge": 5,
+"status": "publish",
+"vk": "43.46",
+"mo": 2,
+"b2b": "",
+"anbau": ""
+},
+"18507": {
+"sku": "HJ-6393115-01",
+"opt": "3 St\u00fcck",
+"menge": 3,
+"status": "publish",
+"vk": "28.50",
+"mo": 1,
+"b2b": "16.78",
+"anbau": "19.83"
+}
+},
+"18146": {
+"18506": {
+"sku": "HJ-2773873-04",
+"opt": "25 St\u00fcck",
+"menge": 25,
+"status": "publish",
+"vk": "158.88",
+"mo": 4,
+"b2b": "",
+"anbau": ""
+},
+"18505": {
+"sku": "HJ-2773873-03",
+"opt": "10 St\u00fcck",
+"menge": 10,
+"status": "publish",
+"vk": "79.44",
+"mo": 3,
+"b2b": "",
+"anbau": ""
+},
+"18504": {
+"sku": "HJ-2773873-02",
+"opt": "5 St\u00fcck",
+"menge": 5,
+"status": "publish",
+"vk": "43.46",
+"mo": 2,
+"b2b": "",
+"anbau": ""
+},
+"18503": {
+"sku": "HJ-2773873-01",
+"opt": "3 St\u00fcck",
+"menge": 3,
+"status": "publish",
+"vk": "28.50",
+"mo": 1,
+"b2b": "",
+"anbau": ""
+}
+},
+"18147": {
+"18502": {
+"sku": "HJ-8948157-04",
+"opt": "25 St\u00fcck",
+"menge": 25,
+"status": "publish",
+"vk": "112.15",
+"mo": 4,
+"b2b": "",
+"anbau": ""
+},
+"18501": {
+"sku": "HJ-8948157-03",
+"opt": "10 St\u00fcck",
+"menge": 10,
+"status": "publish",
+"vk": "56.07",
+"mo": 3,
+"b2b": "",
+"anbau": ""
+},
+"18500": {
+"sku": "HJ-8948157-02",
+"opt": "5 St\u00fcck",
+"menge": 5,
+"status": "publish",
+"vk": "30.37",
+"mo": 2,
+"b2b": "",
+"anbau": ""
+},
+"18499": {
+"sku": "HJ-8948157-01",
+"opt": "3 St\u00fcck",
+"menge": 3,
+"status": "publish",
+"vk": "20.09",
+"mo": 1,
+"b2b": "",
+"anbau": ""
+}
+},
+"18148": {
+"18498": {
+"sku": "HJ-8841292-04",
+"opt": "25 St\u00fcck",
+"menge": 25,
+"status": "publish",
+"vk": "158.88",
+"mo": 4,
+"b2b": "",
+"anbau": ""
+}
+},
+"18163": {
+"18438": {
+"sku": "HJ-3848756-03",
+"opt": "10 St\u00fcck",
+"menge": 10,
+"status": "publish",
+"vk": "65.42",
+"mo": 3,
+"b2b": "",
+"anbau": ""
+}
+},
+"18221": {
+"18226": {
+"sku": "HJ-2298597-03",
+"opt": "10 St\u00fcck",
+"menge": 10,
+"status": "publish",
+"vk": "51.40",
+"mo": 3,
+"b2b": "",
+"anbau": ""
+}
+},
+"18149": {
+"18494": {
+"sku": "HJ-1198835-04",
+"opt": "25 St\u00fcck",
+"menge": 25,
+"status": "publish",
+"vk": "102.80",
+"mo": 4,
+"b2b": "",
+"anbau": ""
+}
+},
+"18150": {
+"18490": {
+"sku": "HJ-9998654-04",
+"opt": "25 St\u00fcck",
+"menge": 25,
+"status": "publish",
+"vk": "130.84",
+"mo": 4,
+"b2b": "",
+"anbau": ""
+}
+},
+"18151": {
+"18486": {
+"sku": "HJ-1913822-04",
+"opt": "25 St\u00fcck",
+"menge": 25,
+"status": "publish",
+"vk": "121.49",
+"mo": 4,
+"b2b": "",
+"anbau": ""
+}
+},
+"18152": {
+"18482": {
+"sku": "HJ-6583624-04",
+"opt": "25 St\u00fcck",
+"menge": 25,
+"status": "publish",
+"vk": "121.49",
+"mo": 4,
+"b2b": "",
+"anbau": ""
+},
+"18479": {
+"sku": "HJ-6583624-01",
+"opt": "3 St\u00fcck",
+"menge": 3,
+"status": "publish",
+"vk": "21.49",
+"mo": 1,
+"b2b": "12.65",
+"anbau": "14.95"
+},
+"18480": {
+"sku": "HJ-6583624-02",
+"opt": "5 St\u00fcck",
+"menge": 5,
+"status": "publish",
+"vk": "32.71",
+"mo": 2,
+"b2b": "19.25",
+"anbau": "22.75"
+},
+"18481": {
+"sku": "HJ-6583624-03",
+"opt": "10 St\u00fcck",
+"menge": 10,
+"status": "publish",
+"vk": "60.75",
+"mo": 3,
+"b2b": "35.75",
+"anbau": "42.25"
+}
+},
+"18153": {
+"18478": {
+"sku": "HJ-3863283-04",
+"opt": "25 St\u00fcck",
+"menge": 25,
+"status": "publish",
+"vk": "168.22",
+"mo": 4,
+"b2b": "",
+"anbau": ""
+},
+"18475": {
+"sku": "HJ-3863283-01",
+"opt": "3 St\u00fcck",
+"menge": 3,
+"status": "publish",
+"vk": "30.37",
+"mo": 1,
+"b2b": "17.88",
+"anbau": "21.13"
+},
+"18476": {
+"sku": "HJ-3863283-02",
+"opt": "5 St\u00fcck",
+"menge": 5,
+"status": "publish",
+"vk": "46.26",
+"mo": 2,
+"b2b": "27.23",
+"anbau": "32.18"
+},
+"18477": {
+"sku": "HJ-3863283-03",
+"opt": "10 St\u00fcck",
+"menge": 10,
+"status": "publish",
+"vk": "84.11",
+"mo": 3,
+"b2b": "49.5",
+"anbau": "58.5"
+}
+},
+"18154": {
+"18474": {
+"sku": "HJ-7212993-04",
+"opt": "25 St\u00fcck",
+"menge": 25,
+"status": "publish",
+"vk": "158.88",
+"mo": 4,
 "b2b": "",
 "anbau": ""
 }
