@@ -70,9 +70,24 @@ Anbauverein 69,30&nbsp;€:
 Der Laden-VK dieser drei Variationen stammte ebenfalls aus dem falschen EK
 (17,76&nbsp;€ netto) und wurde nach der im Katalog durchgängig verwendeten Regel
 (brutto&nbsp;=&nbsp;2&nbsp;&times;&nbsp;EK, netto&nbsp;=&nbsp;brutto&nbsp;/&nbsp;1,07)
-auf **92,52&nbsp;€ netto / 99,00&nbsp;€ brutto** korrigiert. Damit greifen die
+auf **92,52&nbsp;€ netto / 99,00&nbsp;€ brutto** korrigiert &ndash; auf hanfjack.com
+und auf hanfjack.de, weil .de die B2C-Preise nach .com überträgt. Damit greifen die
 Rollenpreise wieder: das Plugin geht nie über den regulären Preis hinaus, und
 vor der Korrektur wurden für beide Rollen nur 17,76&nbsp;€ ausgespielt.
+
+### VK-Lücke bei denselben drei Strains
+
+Bei Gelato, Gorilla Z und Ztrawberriez ist auf **beiden** Shops nur die
+10er-Packung mit einem Preis versehen; die übrigen sechs Größen stehen ohne
+Preis auf `private` und sind damit nicht verkäuflich. Die EK-Werte liegen im
+Sheet vor, die Soll-Preise stehen in `drei-strains-vk-luecken.json`
+(36,00 / 55,00 / 215,00 / 365,00 / 499,00 / 1499,00&nbsp;€ brutto). Noch nicht
+gesetzt &ndash; das würde 18&nbsp;Variationen je Shop neu aktivieren.
+
+Ein Abgleich der lokalen CSV gegen das Sheet zeigt, dass sonst keine
+EK-Abweichung durchgeschlagen ist: die 36 vom Excel-Datumsfehler betroffenen
+5er-Preise sind auf hanfjack.de korrekt gesetzt (Stichprobe HJ-7000004,
+HJ-7000010, HJ-7000030 &ndash; alle sieben Größen mit passendem Preis).
 
 ## Dateien
 
