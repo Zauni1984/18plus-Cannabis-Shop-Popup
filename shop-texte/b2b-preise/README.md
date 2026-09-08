@@ -67,12 +67,12 @@ Anbauverein 69,30&nbsp;€:
 - HJ-7000024-10 &ndash; Gorilla Z Auto
 - HJ-7000063-10 &ndash; Ztrawberriez Auto
 
-**Offen:** Der Laden-VK dieser drei Variationen stammt noch aus dem falschen EK
-und liegt bei 17,76&nbsp;€ netto (19,00&nbsp;€ brutto). Nach der im Katalog
-durchgängig verwendeten Regel (brutto&nbsp;=&nbsp;2&nbsp;&times;&nbsp;EK, netto&nbsp;=&nbsp;brutto&nbsp;/&nbsp;1,07)
-müsste er **92,52&nbsp;€ netto / 99,00&nbsp;€ brutto** lauten. Solange er nicht
-korrigiert ist, greift für beide Rollen der niedrigere Laden-VK, weil das Plugin
-nie über den regulären Preis hinausgeht.
+Der Laden-VK dieser drei Variationen stammte ebenfalls aus dem falschen EK
+(17,76&nbsp;€ netto) und wurde nach der im Katalog durchgängig verwendeten Regel
+(brutto&nbsp;=&nbsp;2&nbsp;&times;&nbsp;EK, netto&nbsp;=&nbsp;brutto&nbsp;/&nbsp;1,07)
+auf **92,52&nbsp;€ netto / 99,00&nbsp;€ brutto** korrigiert. Damit greifen die
+Rollenpreise wieder: das Plugin geht nie über den regulären Preis hinaus, und
+vor der Korrektur wurden für beide Rollen nur 17,76&nbsp;€ ausgespielt.
 
 ## Dateien
 
