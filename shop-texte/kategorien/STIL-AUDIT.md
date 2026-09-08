@@ -306,3 +306,63 @@ Empfehlung: die Dubletten bereinigen und je Sorte einen Eintrag behalten
 unter Samen einsortieren und eine SKU vergeben. Die beiden Spider-Farmer-Artikel
 gehoeren nach Messgeraete bzw. Lupen & Mikroskope. Nicht angefasst, weil
 Loeschen und Umkategorisieren eine Entscheidung des Shopbetreibers ist.
+
+## Restliche offene Punkte abgearbeitet
+
+Stand: 2026-09-08.
+
+### Erledigt
+
+- **Dr. Grow Sets** (.de 6212): leerer Block gefuellt.
+- **CBD Vapes Kategoriebeschreibung** (.de 6881): vom alten Marketing-Stil mit
+  `dir="auto"`-Attributen auf eine sachliche Fassung umgestellt, inhaltlich
+  gleichwertig zur .com-Beschreibung.
+- **Uncategorized auf .com ist leer** (0 veroeffentlichte Produkte):
+  - Spider Farmer 3-in-1 Bodensensor (28034) -> Messgeraete (11771)
+  - Spider Farmer 200X Trichomen-Mikroskop (27524) -> Lupen & Mikroskope (13687)
+  - 20 Paradise-Seeds-Dubletten ohne SKU auf `private` gesetzt (nicht geloescht,
+    also umkehrbar).
+
+### Zum Paradise-Seeds-Bestand
+
+Die 20 Dubletten verteilen sich auf sechs Sorten. Kanonische HJ-Produkte
+(variabel, mit SKU und Mengenvarianten) existieren nur fuer zwei davon:
+
+| Sorte | HJ-Produkt | Status nach Bereinigung |
+|---|---|---|
+| Tangerine Sorbet | 28450 (HJ-5497982) | weiter bestellbar |
+| Sunset Paradise | 28444 (HJ-2727965) | weiter bestellbar |
+| Durga Mata | keins | derzeit nicht bestellbar |
+| El Dorado OG | keins | derzeit nicht bestellbar |
+| Gulupa | keins | derzeit nicht bestellbar |
+| Nebula | keins | derzeit nicht bestellbar |
+
+Die vier Sorten ohne HJ-Produkt sind damit vorerst aus dem Shop. Das ist so
+abgestimmt - sie kommen ueber den Sync von hanfjack.de neu herein.
+
+Anmerkung zum Bestand: Bei den 5-Samen-Varianten von Sunset Paradise und
+Tangerine Sorbet stand ein Lagerbestand von je 3 Stueck auf den nun privaten
+Dubletten, waehrend die HJ-Varianten auf `onbackorder` stehen. Vor dem naechsten
+Sync lohnt ein Blick, ob dieser Bestand uebernommen werden muss.
+
+### Nicht umsetzbar: noindex fuer die 8 Kategorie-Dubletten
+
+Fuer die acht leeren Duplikat-Kategorien auf .com war `noindex` als reversible
+Loesung vorgesehen. Das laesst sich ueber die API nicht setzen: Yoast SEO 28.4
+liest den Wert fuer Taxonomien nicht aus Term-Meta. Geprueft wurden beide
+gaengigen Schluessel, jeweils mit anschliessender Kontrolle des gerenderten
+Yoast-Head:
+
+- `_yoast_wpseo_noindex` = "1" -> Head zeigt weiter `index, follow`
+- `_yoast_wpseo_meta-robots-noindex` = "1" -> Head zeigt weiter `index, follow`
+
+Beide Testwerte wurden wieder entfernt. Yoast speichert Taxonomie-Robots in der
+Option `wpseo_taxonomy_meta` bzw. der Indexables-Tabelle, an die die verfuegbaren
+Werkzeuge nicht herankommen.
+
+Damit bleiben zwei Wege, beide ausserhalb dessen, was hier ohne weitere Freigabe
+getan wurde: die Kategorien in wp-admin einzeln auf noindex stellen, oder sie
+loeschen. Loeschen ist nicht umkehrbar und loest die Ursache nicht - die
+Duplikate sind vermutlich entstanden, weil der Sync eine neue Kategorie angelegt
+hat, statt die vorhandene zu treffen. Ohne Korrektur der Sync-Zuordnung koennen
+sie erneut auftauchen.
