@@ -182,3 +182,24 @@ Entscheidung des Shopbetreibers und wurde nicht angefasst.
 Nicht betroffen: Aktivkohlefilter 126 und 131 heissen zwar gleich, sind aber
 zwei verschiedene Dinge (Abluftfilter vs. Filter-Tips) und beide befuellt.
 
+
+## Inhaltliche Fehlzuordnung
+
+Beim Sichern der Alttexte fiel ein Block auf, der nicht zu seiner Kategorie passt:
+
+- **hanfjack.com Term 89** heisst `Headshop` (744 Produkte), der Text darunter
+  beginnt aber mit "Willkommen in unserer Kategorie **Zubehoer**" und beschreibt
+  Aschenbecher, Aufbewahrung, Filter, Grinder, Papers und Schneidbretter. Der
+  Block wurde offenbar aus einer anderen Kategorie uebernommen. Zusaetzlich
+  enthaelt er rohes DOM-Markup aus einem Chat-Fenster.
+
+Die uebrigen Abweichungen zwischen Kategoriename und Textbezeichnung sind blosse
+Formulierungsunterschiede (z. B. `Mehl` / "Hanfmehl", `Automatisch` /
+"Automatische Cannabis Samen") und inhaltlich korrekt.
+
+## Sicherung
+
+Alle 72 Alt-Stil-Texte (11 auf .de, 61 auf .com, zusammen rund 230.000 Zeichen)
+liegen vollstaendig in `below-category-content.backup.json`. Die Sicherung wurde
+aus den bereits erfolgten API-Antworten dieser Session erstellt, ohne zusaetzliche
+Abfragen, und gegen die Audit-Liste geprueft: kein Eintrag fehlt, keiner ist leer.
