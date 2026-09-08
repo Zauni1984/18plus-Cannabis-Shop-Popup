@@ -80,9 +80,20 @@ vor der Korrektur wurden für beide Rollen nur 17,76&nbsp;€ ausgespielt.
 Bei Gelato, Gorilla Z und Ztrawberriez ist auf **beiden** Shops nur die
 10er-Packung mit einem Preis versehen; die übrigen sechs Größen stehen ohne
 Preis auf `private` und sind damit nicht verkäuflich. Die EK-Werte liegen im
-Sheet vor, die Soll-Preise stehen in `drei-strains-vk-luecken.json`
-(36,00 / 55,00 / 215,00 / 365,00 / 499,00 / 1499,00&nbsp;€ brutto). Noch nicht
-gesetzt &ndash; das würde 18&nbsp;Variationen je Shop neu aktivieren.
+Sheet vor, die Preise stehen in `drei-strains-vk-luecken.json`.
+
+**Erledigt:** Die fehlenden sechs Größen sind auf beiden Shops gesetzt und von
+`private` auf `publish` gestellt &ndash; 18&nbsp;Variationen je Shop, alle
+`purchasable`:
+
+| Größe | netto | brutto |
+| --- | --- | --- |
+| 3 | 33,64&nbsp;€ | 36,00&nbsp;€ |
+| 5 | 51,40&nbsp;€ | 55,00&nbsp;€ |
+| 25 | 200,93&nbsp;€ | 215,00&nbsp;€ |
+| 50 | 341,12&nbsp;€ | 365,00&nbsp;€ |
+| 100 | 466,36&nbsp;€ | 499,00&nbsp;€ |
+| 500 | 1.400,93&nbsp;€ | 1.499,00&nbsp;€ |
 
 Ein Abgleich der lokalen CSV gegen das Sheet zeigt, dass sonst keine
 EK-Abweichung durchgeschlagen ist: die 36 vom Excel-Datumsfehler betroffenen
