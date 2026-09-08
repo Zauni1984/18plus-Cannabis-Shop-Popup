@@ -1,6 +1,6 @@
 # B2B- und Anbauverein-Preise (hanfjack.com)
 
-Stand: 08.09.2026 &ndash; Fast Buds Autoflower
+Stand: 08.09.2026 &ndash; Fast Buds Autoflower und Feminisiert
 
 ## Regel
 
@@ -19,9 +19,15 @@ Die Werte gelten vorerst ausschließlich für Fast Buds.
 
 ## Umfang
 
-- 63 variable Produkte (HJ-7000001 &ndash; HJ-7000063), Autoflower
-- 435 Variationen geschrieben, alle mit `source: "variation"` bestätigt
-- Feminisierte Linie (HJ-7000064 &ndash; HJ-7000079) folgt später
+| Linie | Produkte | Variationen |
+| --- | --- | --- |
+| Autoflower (HJ-7000001 &ndash; HJ-7000063) | 63 | 435 |
+| Feminisiert (HJ-7000064 &ndash; HJ-7000079) | 16 | 112 |
+| **Summe** | **79** | **547** |
+
+Alle geschriebenen Variationen wurden über `wwpro_wholesale_prices` mit
+`source: "variation"` bestätigt; SKU und Variations-ID stimmen in allen Fällen
+überein.
 
 ## Schreibweg
 
@@ -47,8 +53,9 @@ Antwort: `source` muss auf `variation` stehen.
 IDs sind stattdessen aus dem Anlagemuster abgeleitet: Eltern, dann 0&ndash;2
 Bilder, dann die Variationen in aufsteigender Packungsgröße; die letzte
 Variation liegt direkt vor der nächsten Eltern-ID. Abgeleitete und tatsächliche
-IDs wurden für alle 435 Variationen über die zurückgemeldeten SKUs geprüft
-&ndash; keine Abweichung.
+IDs wurden für alle 547 Variationen über die zurückgemeldeten SKUs geprüft
+&ndash; keine Abweichung. Für HJ-7000079 (letztes Produkt, ohne Nachfolger)
+wurden die IDs direkt gelesen.
 
 ## Offen
 
@@ -65,3 +72,5 @@ bei 49,50&nbsp;€). Diese drei Variationen wurden **nicht** geschrieben:
 - `fastbuds-autos-b2b-plan.json` &ndash; berechnete Preise je HJ-SKU
 - `fastbuds-autos-com-variation-ids.json` &ndash; HJ-SKU &rarr; Variations-ID auf .com
 - `fastbuds-autos-geschrieben.json` &ndash; Verifikation: SKU &rarr; [ID, B2B, Anbauverein, source, source]
+- `fastbuds-fems-b2b-plan.json`, `fastbuds-fems-com-variation-ids.json`,
+  `fastbuds-fems-geschrieben.json` &ndash; dasselbe für die feminisierte Linie
