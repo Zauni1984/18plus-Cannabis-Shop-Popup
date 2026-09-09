@@ -106,3 +106,50 @@ Beide Formeln liefern fast immer dasselbe Ergebnis (bei allen 303 Growin-Artikel
 unterscheiden sich aber genau an den Halb-Cent-Grenzen. Mit der korrekten Formel und einem
 Netto-Preis mit 4 Nachkommastellen ist **jeder** Zielbruttopreis exakt erreichbar – deshalb
 gab es bei Growin keinen einzigen Ausreißer.
+
+---
+
+# Nachtrag 2: B2B-Preise auf hanfjack.com (durchgeführt)
+
+Regel wie bei Bloomtech und Aqua Master: **B2B Kunde = EK + 10 %**, **Anbauverein = EK + 30 %**,
+immer auf Basis des **regulären** Händlerpreises (Spalte S). Aktions-/Sonder-EK wurden nach
+ausdrücklicher Vorgabe ignoriert – eine Aktion läuft aus, der reguläre Preis bleibt.
+
+| | Anzahl |
+|---|---|
+| Growin-Artikel auf hanfjack.com | 303 |
+| Preise geschrieben | 303 |
+| Schreibfehler | 0 |
+| voll wirksam | **227** |
+| vom Plugin gedeckelt | **76** |
+
+Geschrieben in `_wwpro_price_b2b_customer` und `_wwpro_price_anbauverein`, anschließend über das
+Kontrollfeld `wwpro_wholesale_prices` verifiziert (Vergleich `own_price` gegen Soll und `price`
+gegen `own_price`).
+
+## Die 76 gedeckelten Artikel
+Woo Wholesale Pro begrenzt einen Rollenpreis stillschweigend auf den regulären Verkaufspreis.
+Bei 76 Artikeln liegt EK + 10 % oder EK + 30 % **über** dem Endkundenpreis, den Growin selbst
+empfiehlt – der Rollenpreis greift dort also nicht voll. Vollständige Liste in
+`growin-b2b-gedeckelt.json`.
+
+Das ist kein Fehler beim Einpflegen, sondern dieselbe Ursache wie bei den 12 Artikeln unter EK:
+Growins Endkundenpreise stehen bei einem Teil des Sortiments zu dicht an ihren Händlerpreisen
+oder darunter. Betroffen ist fast das komplette Twister- und Master-Trimmer-Programm.
+
+Härtefälle, bei denen **beide** Rollenpreise auf den Endkundenpreis fallen und der B2B-Kunde
+damit exakt so viel zahlt wie ein Endkunde:
+
+| SKU | Artikel | EK | wirksamer Rollenpreis |
+|---|---|---|---|
+| 112144 | VitaLink Buddy, 10 L | 571,00 | 97,39 |
+| 111164 | Twister Tandem T2 mit Leaf Collectors | 31.500,00 | 25.966,30 |
+| 111166 | Twister Tandem T4 mit Leaf Collectors | 20.546,55 | 18.901,66 |
+| 109650 | Twister T2 Wet Tumbler | 1.300,00 | 875,55 |
+| 112347 | MX ICE 200 LITE | 3.600,00 | 3.151,18 |
+| 111165 | Twister T4 Rails, Triple | 1.596,00 | 1.424,29 |
+| 111338 | Twister T4 CHEVRON, Antriebsrad | 40,50 | 26,81 |
+| 112976 | Master Trimmer LIO 40 Freeze Dryer | 7.600,00 | 7.599,92 |
+
+Diese Artikel bringen im B2B-Verkauf keine Marge und teilweise Verlust. Hier hilft nur, den
+Endkundenpreis anzuheben oder die Artikel aus dem B2B-Sortiment zu nehmen.
