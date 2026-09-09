@@ -153,3 +153,40 @@ damit exakt so viel zahlt wie ein Endkunde:
 
 Diese Artikel bringen im B2B-Verkauf keine Marge und teilweise Verlust. Hier hilft nur, den
 Endkundenpreis anzuheben oder die Artikel aus dem B2B-Sortiment zu nehmen.
+
+---
+
+# Nachtrag 3: Endkundenpreise angehoben (durchgeführt)
+
+Entscheidung des Betreibers: bei den gedeckelten Artikeln nicht die B2B-Preise senken, sondern
+den **Endkundenpreis anheben** – auf **netto = EK × 1,61**, den Median des übrigen
+Growin-Sortiments. Geschrieben ausschließlich auf **hanfjack.de**; hanfjack.com zieht die
+B2C-Preise über den Shop-Sync nach.
+
+| | Anzahl |
+|---|---|
+| gedeckelte Artikel | 76 |
+| Preis angehoben | **75** |
+| aus dem Verkauf genommen | **1** |
+
+Alle 75 wurden nach dem Schreiben über `price_html` geprüft – **75 von 75 exakt**, keine
+Abweichung. Der Anbauvereinspreis (EK + 30 %) liegt jetzt bei allen 75 sicher unter dem
+Endkundenpreis, die Deckelung greift nicht mehr.
+
+Summe netto über die 75 Artikel: 253.441 € → 391.720 € (+55 %).
+
+## VitaLink Buddy 10 L (SKU 112144) – aus dem Verkauf
+Growin führt für dieses Gebinde einen Händlerpreis von **571,00 €**, während 250 ml 8,00 €,
+1 L 15,00 € und 5 L 29,00 € kosten. Der Wert steht nicht nur in der CSV, sondern wurde vom
+`growin-stock-sync`-Plugin auch direkt aus dem Growin-Kundenbereich gezogen
+(`_growin_price_dealer = 571`) – es ist also Growins eigener Datenstand, kein Importfehler
+auf unserer Seite.
+
+Eine Anhebung auf 1.094 € brutto wäre auf dieser Grundlage nicht zu vertreten. Der Artikel
+steht deshalb auf **beiden Shops auf `draft`** (hanfjack.de ID 41672, hanfjack.com ID 37645),
+bis der Einkaufspreis mit Growin geklärt ist.
+
+## Hinweis zum Sync
+Die B2B-Rollenpreise auf hanfjack.com sind bereits gesetzt, werden aber erst dann voll wirksam,
+wenn der neue Endkundenpreis von hanfjack.de nach hanfjack.com durchgelaufen ist. Bis dahin
+greift dort weiter die alte Deckelung.
