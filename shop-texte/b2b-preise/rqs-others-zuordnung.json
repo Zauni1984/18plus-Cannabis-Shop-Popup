@@ -1,0 +1,16 @@
+{
+ "quelle": "RQS_Pricelist_2025__Others_Wholesale.xlsx (Stand 15.01.2025)",
+ "regel": "B2B Kunde = EK + 10 %, Anbauverein = EK + 30 %",
+ "positionen_preisliste": 150,
+ "gesetzt": [
+  {"produkt_id": 31136, "produkt": "RQS iGrowCan", "typ": "simple", "sku_rqs": "IGROWCAN *", "ek": 12.45, "b2b": 13.70, "anbau": 16.19},
+  {"produkt_id": 31038, "produkt": "RQS Starterset Autoflower", "typ": "simple", "sku_rqs": "RQSSK001", "ek": 20.00, "b2b": 22.00, "anbau": 26.00},
+  {"produkt_id": 28031, "produkt": "Royal Queen Seeds Einmachglas 400ml", "typ": "simple", "sku_rqs": "RQSGLASSJAR 400", "ek": 4.00, "b2b": 4.40, "anbau": 5.20},
+  {"produkt_id": 26396, "produkt": "Royal Queen Seeds Smartphone Mikroskop 100x", "typ": "simple", "sku_rqs": "RQSMICROSCOPEPHONE", "ek": 16.50, "b2b": 18.15, "anbau": 21.45}
+ ],
+ "offen_keine_preislisten_zeile": [
+  {"produkt_id": 31134, "produkt": "RQS Starterset CBD", "vk_brutto": 39.95, "hinweis": "Preisliste kennt nur Starter Kit Autoflowering/Feminized (je 20,00) und Easy Start (4,00) - kein CBD-Set. VK identisch mit Autoflower-Set, EK 20,00 waere plausibel, aber nicht belegt."},
+  {"produkt_id": 31211, "produkt": "RQS Starterset F1-Hybride", "vk_brutto": 49.95, "typ": "variable", "hinweis": "Nicht in der Preisliste enthalten."}
+ ],
+ "ohne_shop_produkt": "144 der 150 Positionen (Grinder, Papers, Feuerzeuge, Kleidung, Duenger, Toepfe, Curing, Scheren) haben kein Produkt auf hanfjack.com."
+}
