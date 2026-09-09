@@ -47,16 +47,21 @@
    "ek": 20.0,
    "b2b": 22.0,
    "anbau": 26.0
-  }
- ],
- "offen_keine_preislisten_zeile": [
+  },
   {
    "produkt_id": 31211,
    "produkt": "RQS Starterset F1-Hybride",
-   "vk_brutto": 49.95,
    "typ": "variable",
-   "hinweis": "Nicht in der Preisliste enthalten."
+   "variationen": [
+    31213,
+    31214
+   ],
+   "sku_rqs": "ohne (Freigabe Nutzer: EK aus VK brutto 49,95 rueckgerechnet)",
+   "ek": 25.0,
+   "b2b": 27.5,
+   "anbau": 32.5
   }
  ],
+ "offen_keine_preislisten_zeile": [],
  "ohne_shop_produkt": "144 der 150 Positionen (Grinder, Papers, Feuerzeuge, Kleidung, Duenger, Toepfe, Curing, Scheren) haben kein Produkt auf hanfjack.com."
 }
