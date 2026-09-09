@@ -78,3 +78,31 @@ die Grundlage ist.
 3. Sollen die 7 veröffentlichten „nur für Gewerbe"-Artikel auf hanfjack.de sichtbar bleiben?
 4. B2B-Preise für Growin auf hanfjack.com setzen (EK + 10 % / EK + 30 %) – auf Basis
    regulärer EK oder Aktions-EK?
+
+---
+
+# Nachtrag: B2C-Anpassung auf hanfjack.de (durchgeführt)
+
+Entscheidung des Betreibers: gleiche Regel wie bei Bloomtech – **Listenpreis brutto − 0,10 €**,
+Aktions-/Sonderpreise werden grundsätzlich ignoriert, es zählt immer der reguläre Preis.
+
+| | Anzahl |
+|---|---|
+| Growin-Artikel auf hanfjack.de | 303 |
+| ohne Listen-Endkundenpreis (nur für Gewerbe) | 18 – unverändert |
+| Listenpreis unter 10 € (Billigartikel-Regel) | 32 – unverändert |
+| **geändert** | **253** |
+
+Alle 253 wurden nach dem Schreiben über `price_html` gegen den Zielbruttopreis geprüft –
+**253 von 253 exakt getroffen**, keine Ausnahme.
+
+## Rundungsmodell korrigiert
+Beim Bloomtech-Durchlauf hatte ein Artikel (SKU 17414) den Zielpreis um 1 Cent verfehlt.
+Ursache geklärt: WooCommerce bildet den Bruttopreis nicht als `netto × 1,19`, sondern als
+
+    brutto = round(netto, 2) + round(netto × 0,19, 2)
+
+Beide Formeln liefern fast immer dasselbe Ergebnis (bei allen 303 Growin-Artikeln identisch),
+unterscheiden sich aber genau an den Halb-Cent-Grenzen. Mit der korrekten Formel und einem
+Netto-Preis mit 4 Nachkommastellen ist **jeder** Zielbruttopreis exakt erreichbar – deshalb
+gab es bei Growin keinen einzigen Ausreißer.
