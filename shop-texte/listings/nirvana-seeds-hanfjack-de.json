@@ -13,10 +13,11 @@
     "gewicht": "0.01",
     "attribut": "pa_inhalt (global, variantenbildend)",
     "marke": "pwb-brand 'Nirvana Seeds' (Term 16635)",
-    "hersteller": "bewusst nicht gesetzt"
+    "hersteller": "bewusst nicht gesetzt",
+    "sku": "Eltern = Tiger-One-Artikelnummer, Variante = Artikelnummer + Packungsgroesse"
   },
   "hinweise": [
-    "Nirvana-SKUs tragen keinen Packungs-Suffix (z.B. NV-AK48 statt NV-AK48-5). Damit Eltern-SKU und Varianten-SKU nicht kollidieren, wurden die Elternprodukte OHNE SKU angelegt; die Tiger-One-Artikelnummer steht auf der Variante.",
+    "SKU-Konvention: Elternprodukt traegt die Tiger-One-Artikelnummer, die Variante dieselbe Nummer plus Packungsgroesse (z.B. NV-AK48 / NV-AK48-5) - identisch zu Silent Seeds und Purple City Genetics.",
     "Auf ausdruecklichen Wunsch wurden auch die als discontinued markierten Artikel gelistet.",
     "Verfuegbarkeiten sind noch nicht bekannt - alle Artikel stehen auf Lieferrueckstand ohne Lagerbestand.",
     "Produkttexte, Tags und SEO fehlen noch (bewusst leer angelegt)."
@@ -33,7 +34,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-AK48-REG",
+      "sku_variante": "NV-AK48-REG-10"
     },
     {
       "sku_tigerone": "NV-AK48-AUTO",
@@ -46,7 +49,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-AK48-AUTO",
+      "sku_variante": "NV-AK48-AUTO-5"
     },
     {
       "sku_tigerone": "NV-AK48",
@@ -59,7 +64,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-AK48",
+      "sku_variante": "NV-AK48-5"
     },
     {
       "sku_tigerone": "NV-AMN-AUTO",
@@ -72,7 +79,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-AMN-AUTO",
+      "sku_variante": "NV-AMN-AUTO-5"
     },
     {
       "sku_tigerone": "NV-AMN",
@@ -85,7 +94,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": true,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-AMN",
+      "sku_variante": "NV-AMN-5"
     },
     {
       "sku_tigerone": "NV-AMNHAZ-AUTO",
@@ -98,7 +109,9 @@
       "ek_tigerone": "15",
       "preis_netto_hanfjack_de": "29",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-AMNHAZ-AUTO",
+      "sku_variante": "NV-AMNHAZ-AUTO-5"
     },
     {
       "sku_tigerone": "NV-HZ-1",
@@ -111,7 +124,9 @@
       "ek_tigerone": "15",
       "preis_netto_hanfjack_de": "29",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-HZ-1",
+      "sku_variante": "NV-HZ-1-5"
     },
     {
       "sku_tigerone": "NV-HAZ-1-REG",
@@ -124,7 +139,9 @@
       "ek_tigerone": "15",
       "preis_netto_hanfjack_de": "29",
       "discontinued": true,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-HAZ-1-REG",
+      "sku_variante": "NV-HAZ-1-REG-10"
     },
     {
       "sku_tigerone": "NV-AI-AUTO",
@@ -137,7 +154,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-AI-AUTO",
+      "sku_variante": "NV-AI-AUTO-5"
     },
     {
       "sku_tigerone": "NV-AI",
@@ -150,7 +169,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-AI",
+      "sku_variante": "NV-AI-5"
     },
     {
       "sku_tigerone": "NV-AI-REG",
@@ -163,7 +184,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-AI-REG",
+      "sku_variante": "NV-AI-REG-10"
     },
     {
       "sku_tigerone": "NV-B52",
@@ -176,7 +199,9 @@
       "ek_tigerone": "15",
       "preis_netto_hanfjack_de": "29",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-B52",
+      "sku_variante": "NV-B52-5"
     },
     {
       "sku_tigerone": "NV-BIGBUD-AUTO",
@@ -189,7 +214,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-BIGBUD-AUTO",
+      "sku_variante": "NV-BIGBUD-AUTO-5"
     },
     {
       "sku_tigerone": "NV-P-99-BB",
@@ -202,7 +229,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": true,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-P-99-BB",
+      "sku_variante": "NV-P-99-BB-5"
     },
     {
       "sku_tigerone": "NV-BIGBUD-REG",
@@ -215,7 +244,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-BIGBUD-REG",
+      "sku_variante": "NV-BIGBUD-REG-10"
     },
     {
       "sku_tigerone": "NV-BJ",
@@ -228,7 +259,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-BJ",
+      "sku_variante": "NV-BJ-5"
     },
     {
       "sku_tigerone": "NV-BB",
@@ -241,7 +274,9 @@
       "ek_tigerone": "15",
       "preis_netto_hanfjack_de": "29",
       "discontinued": true,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-BB",
+      "sku_variante": "NV-BB-5"
     },
     {
       "sku_tigerone": "NV-BLDR-AUTO",
@@ -254,7 +289,9 @@
       "ek_tigerone": "15",
       "preis_netto_hanfjack_de": "29",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-BLDR-AUTO",
+      "sku_variante": "NV-BLDR-AUTO-5"
     },
     {
       "sku_tigerone": "NV-BLDR",
@@ -267,7 +304,9 @@
       "ek_tigerone": "15",
       "preis_netto_hanfjack_de": "29",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-BLDR",
+      "sku_variante": "NV-BLDR-5"
     },
     {
       "sku_tigerone": "NV-BLDR-REG",
@@ -280,7 +319,9 @@
       "ek_tigerone": "15",
       "preis_netto_hanfjack_de": "29",
       "discontinued": true,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-BLDR-REG",
+      "sku_variante": "NV-BLDR-REG-10"
     },
     {
       "sku_tigerone": "NV-BKA",
@@ -293,7 +334,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-BKA",
+      "sku_variante": "NV-BKA-5"
     },
     {
       "sku_tigerone": "NV-BLUB-REG",
@@ -306,7 +349,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-BLUB-REG",
+      "sku_variante": "NV-BLUB-REG-10"
     },
     {
       "sku_tigerone": "NV-DURB",
@@ -319,7 +364,9 @@
       "ek_tigerone": "15",
       "preis_netto_hanfjack_de": "29",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-DURB",
+      "sku_variante": "NV-DURB-5"
     },
     {
       "sku_tigerone": "NV-GEL-AUTO",
@@ -332,7 +379,9 @@
       "ek_tigerone": "15",
       "preis_netto_hanfjack_de": "29",
       "discontinued": true,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-GEL-AUTO",
+      "sku_variante": "NV-GEL-AUTO-5"
     },
     {
       "sku_tigerone": "NV-GEL",
@@ -345,7 +394,9 @@
       "ek_tigerone": "15",
       "preis_netto_hanfjack_de": "29",
       "discontinued": true,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-GEL",
+      "sku_variante": "NV-GEL-5"
     },
     {
       "sku_tigerone": "NV-GG48-AUTO",
@@ -358,7 +409,9 @@
       "ek_tigerone": "15",
       "preis_netto_hanfjack_de": "29",
       "discontinued": true,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-GG48-AUTO",
+      "sku_variante": "NV-GG48-AUTO-5"
     },
     {
       "sku_tigerone": "NV-GG48",
@@ -371,7 +424,9 @@
       "ek_tigerone": "15",
       "preis_netto_hanfjack_de": "29",
       "discontinued": true,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-GG48",
+      "sku_variante": "NV-GG48-5"
     },
     {
       "sku_tigerone": "NV-GSC-AUTO",
@@ -384,7 +439,9 @@
       "ek_tigerone": "15",
       "preis_netto_hanfjack_de": "29",
       "discontinued": true,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-GSC-AUTO",
+      "sku_variante": "NV-GSC-AUTO-5"
     },
     {
       "sku_tigerone": "NV-GSC",
@@ -397,7 +454,9 @@
       "ek_tigerone": "15",
       "preis_netto_hanfjack_de": "29",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-GSC",
+      "sku_variante": "NV-GSC-5"
     },
     {
       "sku_tigerone": "NV-HMW-AUTO",
@@ -410,7 +469,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": true,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-HMW-AUTO",
+      "sku_variante": "NV-HMW-AUTO-5"
     },
     {
       "sku_tigerone": "NV-HMW",
@@ -423,7 +484,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-HMW",
+      "sku_variante": "NV-HMW-5"
     },
     {
       "sku_tigerone": "NV-HMW-REG",
@@ -436,7 +499,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-HMW-REG",
+      "sku_variante": "NV-HMW-REG-10"
     },
     {
       "sku_tigerone": "NV-HINK",
@@ -449,7 +514,9 @@
       "ek_tigerone": "15",
       "preis_netto_hanfjack_de": "29",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-HINK",
+      "sku_variante": "NV-HINK-5"
     },
     {
       "sku_tigerone": "NV-ICE",
@@ -462,7 +529,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-ICE",
+      "sku_variante": "NV-ICE-5"
     },
     {
       "sku_tigerone": "NV-ICE-REG",
@@ -475,7 +544,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": true,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-ICE-REG",
+      "sku_variante": "NV-ICE-REG-10"
     },
     {
       "sku_tigerone": "NV-JHA",
@@ -488,7 +559,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-JHA",
+      "sku_variante": "NV-JHA-5"
     },
     {
       "sku_tigerone": "NV-JH",
@@ -501,7 +574,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-JH",
+      "sku_variante": "NV-JH-5"
     },
     {
       "sku_tigerone": "NV-K2",
@@ -514,7 +589,9 @@
       "ek_tigerone": "15",
       "preis_netto_hanfjack_de": "29",
       "discontinued": true,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-K2",
+      "sku_variante": "NV-K2-5"
     },
     {
       "sku_tigerone": "NV-LOGHZA",
@@ -527,7 +604,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-LOGHZA",
+      "sku_variante": "NV-LOGHZA-5"
     },
     {
       "sku_tigerone": "NV-LOGHAZE",
@@ -540,7 +619,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-LOGHAZE",
+      "sku_variante": "NV-LOGHAZE-5"
     },
     {
       "sku_tigerone": "NV-OGKSH",
@@ -553,7 +634,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-OGKSH",
+      "sku_variante": "NV-OGKSH-5"
     },
     {
       "sku_tigerone": "NV-LOGKU",
@@ -566,7 +649,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": true,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-LOGKU",
+      "sku_variante": "NV-LOGKU-5"
     },
     {
       "sku_tigerone": "NV-MK",
@@ -579,7 +664,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-MK",
+      "sku_variante": "NV-MK-5"
     },
     {
       "sku_tigerone": "NV-NLA",
@@ -592,7 +679,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": true,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-NLA",
+      "sku_variante": "NV-NLA-5"
     },
     {
       "sku_tigerone": "NV-NL",
@@ -605,7 +694,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-NL",
+      "sku_variante": "NV-NL-5"
     },
     {
       "sku_tigerone": "NV-NL-REG",
@@ -618,7 +709,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-NL-REG",
+      "sku_variante": "NV-NL-REG-10"
     },
     {
       "sku_tigerone": "NV-OB-AUTO",
@@ -631,7 +724,9 @@
       "ek_tigerone": "15",
       "preis_netto_hanfjack_de": "29",
       "discontinued": true,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-OB-AUTO",
+      "sku_variante": "NV-OB-AUTO-5"
     },
     {
       "sku_tigerone": "NV-OB-REG",
@@ -644,7 +739,9 @@
       "ek_tigerone": "15",
       "preis_netto_hanfjack_de": "29",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-OB-REG",
+      "sku_variante": "NV-OB-REG-10"
     },
     {
       "sku_tigerone": "NV-ORGL-AUTO",
@@ -657,7 +754,9 @@
       "ek_tigerone": "15",
       "preis_netto_hanfjack_de": "29",
       "discontinued": true,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-ORGL-AUTO",
+      "sku_variante": "NV-ORGL-AUTO-5"
     },
     {
       "sku_tigerone": "NV-ORGL",
@@ -670,7 +769,9 @@
       "ek_tigerone": "15",
       "preis_netto_hanfjack_de": "29",
       "discontinued": true,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-ORGL",
+      "sku_variante": "NV-ORGL-5"
     },
     {
       "sku_tigerone": "NV-PPP",
@@ -683,7 +784,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-PPP",
+      "sku_variante": "NV-PPP-5"
     },
     {
       "sku_tigerone": "NV-RC-AUTO",
@@ -696,7 +799,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": true,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-RC-AUTO",
+      "sku_variante": "NV-RC-AUTO-5"
     },
     {
       "sku_tigerone": "NV-RC",
@@ -709,7 +814,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": true,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-RC",
+      "sku_variante": "NV-RC-5"
     },
     {
       "sku_tigerone": "NV-SR",
@@ -722,7 +829,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": true,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-SR",
+      "sku_variante": "NV-SR-5"
     },
     {
       "sku_tigerone": "NV-SK1-AUTO",
@@ -735,7 +844,9 @@
       "ek_tigerone": "15",
       "preis_netto_hanfjack_de": "29",
       "discontinued": true,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-SK1-AUTO",
+      "sku_variante": "NV-SK1-AUTO-5"
     },
     {
       "sku_tigerone": "NV-SOMXXL-AUTO",
@@ -748,7 +859,9 @@
       "ek_tigerone": "15",
       "preis_netto_hanfjack_de": "29",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-SOMXXL-AUTO",
+      "sku_variante": "NV-SOMXXL-AUTO-5"
     },
     {
       "sku_tigerone": "NV-SSD",
@@ -761,7 +874,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": true,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-SSD",
+      "sku_variante": "NV-SSD-5"
     },
     {
       "sku_tigerone": "NV-SSH",
@@ -774,7 +889,9 @@
       "ek_tigerone": "15",
       "preis_netto_hanfjack_de": "29",
       "discontinued": true,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-SSH",
+      "sku_variante": "NV-SSH-5"
     },
     {
       "sku_tigerone": "NV-SS",
@@ -787,7 +904,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-SS",
+      "sku_variante": "NV-SS-5"
     },
     {
       "sku_tigerone": "NV-SS-REG",
@@ -800,7 +919,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-SS-REG",
+      "sku_variante": "NV-SS-REG-10"
     },
     {
       "sku_tigerone": "NV-T44-AUTO",
@@ -813,7 +934,9 @@
       "ek_tigerone": "15",
       "preis_netto_hanfjack_de": "29",
       "discontinued": true,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-T44-AUTO",
+      "sku_variante": "NV-T44-AUTO-5"
     },
     {
       "sku_tigerone": "NV-T44",
@@ -826,7 +949,9 @@
       "ek_tigerone": "15",
       "preis_netto_hanfjack_de": "29",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-T44",
+      "sku_variante": "NV-T44-5"
     },
     {
       "sku_tigerone": "NV-WR",
@@ -839,7 +964,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-WR",
+      "sku_variante": "NV-WR-5"
     },
     {
       "sku_tigerone": "NV-WWA",
@@ -852,7 +979,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": true,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-WWA",
+      "sku_variante": "NV-WWA-5"
     },
     {
       "sku_tigerone": "NV-WW",
@@ -865,7 +994,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": true,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-WW",
+      "sku_variante": "NV-WW-5"
     },
     {
       "sku_tigerone": "NV-WW-REG",
@@ -878,7 +1009,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-WW-REG",
+      "sku_variante": "NV-WW-REG-10"
     },
     {
       "sku_tigerone": "NV-WONDER",
@@ -891,7 +1024,9 @@
       "ek_tigerone": "12.5",
       "preis_netto_hanfjack_de": "24",
       "discontinued": false,
-      "bild": true
+      "bild": true,
+      "sku_eltern": "NV-WONDER",
+      "sku_variante": "NV-WONDER-5"
     }
   ]
 }
