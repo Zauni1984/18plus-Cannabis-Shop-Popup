@@ -1,0 +1,855 @@
+{
+  "marke": "Serious Seeds",
+  "shop": "hanfjack.de",
+  "pwb_brand_term_id": 4751,
+  "quelle": "Tiger One Katalog (Google-Sheet-Export)",
+  "stand": "2026-09-10",
+  "status_aller_produkte": "draft",
+  "anzahl_produkte": 26,
+  "anzahl_varianten": 42,
+  "preisregel": "regular_price = abrunden(VK_TigerOne x 0,99) auf ganze Euro, Eingabe NETTO (Shop rechnet +7% MwSt.)",
+  "stammdaten": {
+    "tax_status": "taxable",
+    "tax_class": "reduzierter-preis",
+    "shipping_class": "paket-standard",
+    "delivery_time_id": 5417,
+    "attribut": "pa_inhalt (ID 2, global, variantenbildend)",
+    "weight": "0.01",
+    "manage_stock": false,
+    "stock_status": "onbackorder",
+    "backorders": "no"
+  },
+  "packungsgroessen": {
+    "3 Stück": 17,
+    "6 Stück": 18,
+    "11 Stück": 7
+  },
+  "hinweise": [
+    "Varianten-SKUs wurden aus dem Tiger-One-Export uebernommen. Serious Seeds fuehrt dort teils Suffixe (z. B. SRSAK47-FEM-3 fuer 3 Stueck) und teils die Basisnummer fuer die 6er-Packung (SRSAK47-FEM) - das wurde unveraendert uebernommen, alle 68 SKUs sind eindeutig.",
+    "7 Regular-Artikel (11er-Packungen) kamen ohne parent_sku. Sie wurden als variables Produkt mit einer Variante angelegt; Eltern-SKU = Lieferanten-Artikelnummer, Varianten-SKU = Artikelnummer + '-11'.",
+    "1 Sorte ohne Produktbild im Export: SRS-FRDU-FEM (Fruity Durban) - Bild muss nachgepflegt werden.",
+    "3 Sorten sind bei Tiger One als Auslaufartikel markiert und wurden auf Wunsch mitgelistet: Double Dutch, Motavation, Warlock.",
+    "2 CBD-Sorten zusaetzlich in Kategorie CBD Samen (2309): Chronic CBD, Warlock CBD.",
+    "Produkttexte, Tags und SEO wurden bewusst noch nicht gesetzt.",
+    "Lagerstatus steht auf 'onbackorder' bis die Verfuegbarkeitsliste vorliegt."
+  ],
+  "bestandsprodukte_kein_konflikt": {
+    "hinweis": "Im Shop gibt es zwei namensgleiche Serious-Seeds-Produkte. Beide sind Stecklinge in der Kategorie Vermehrungsmaterial (13458), keine Samen - also kein Dublettenkonflikt. Nicht angefasst.",
+    "produkte": [
+      {
+        "id": 14039,
+        "sku": "HJ-1594166",
+        "name": "AK47",
+        "kategorie": "Vermehrungsmaterial",
+        "status": "publish"
+      },
+      {
+        "id": 19755,
+        "sku": "HJ-5491725",
+        "name": "White Russian",
+        "kategorie": "Vermehrungsmaterial (angenommen)",
+        "status": "publish"
+      }
+    ]
+  },
+  "produkte": [
+    {
+      "produkt_id": 44267,
+      "name": "Serious Seeds AK 47 Auto feminisiert",
+      "sku_eltern": "serious-ak47-auto-feminised-seeds",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150270_996424_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SRSAK47-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "35",
+          "ek_tigerone": "17",
+          "preis_netto": "34",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SRSAK47-AUTO-FEM",
+          "inhalt": "6 Stück",
+          "pack_lieferant": "6 Seeds",
+          "vk_tigerone": "55",
+          "ek_tigerone": "26.4",
+          "preis_netto": "54",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44269,
+      "name": "Serious Seeds AK47 feminisiert",
+      "sku_eltern": "ak47-fem-serious-seeds",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151229_1001204_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SRSAK47-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "47",
+          "ek_tigerone": "22.82",
+          "preis_netto": "46",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SRSAK47-FEM",
+          "inhalt": "6 Stück",
+          "pack_lieferant": "6 Seeds",
+          "vk_tigerone": "80",
+          "ek_tigerone": "38.84",
+          "preis_netto": "79",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44271,
+      "name": "Serious Seeds AK47 regulär",
+      "sku_eltern": "SRSAK",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140050_932830_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SRSAK-11",
+          "inhalt": "11 Stück",
+          "pack_lieferant": "11 Seeds",
+          "vk_tigerone": "80",
+          "ek_tigerone": "38.84",
+          "preis_netto": "79",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44273,
+      "name": "Serious Seeds Bubble Gum feminisiert",
+      "sku_eltern": "serious-bubble-gum-feminised-seeds",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150271_996429_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SRSBG-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "42",
+          "ek_tigerone": "20.39",
+          "preis_netto": "41",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SRSBG-FEM",
+          "inhalt": "6 Stück",
+          "pack_lieferant": "6 Seeds",
+          "vk_tigerone": "70",
+          "ek_tigerone": "33.98",
+          "preis_netto": "69",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44275,
+      "name": "Serious Seeds Bubble Gum regulär",
+      "sku_eltern": "SRSBG",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140055_932843_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SRSBG-11",
+          "inhalt": "11 Stück",
+          "pack_lieferant": "11 Seeds",
+          "vk_tigerone": "70",
+          "ek_tigerone": "33.98",
+          "preis_netto": "69",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44277,
+      "name": "Serious Seeds Chronic CBD feminisiert",
+      "sku_eltern": "chronic-cbd-fem-serious-seeds",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548,
+        2309
+      ],
+      "kategorien_namen": [
+        "Feminisiert",
+        "CBD Samen"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151231_1001214_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SRSCBDCHR-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "32",
+          "ek_tigerone": "15.54",
+          "preis_netto": "31",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SRSCBDCHR-FEM",
+          "inhalt": "6 Stück",
+          "pack_lieferant": "6 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "24.28",
+          "preis_netto": "49",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44279,
+      "name": "Serious Seeds Chronic feminisiert",
+      "sku_eltern": "chronic-fem-serious-seeds",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151233_1001224_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SRSCH-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "42",
+          "ek_tigerone": "20.39",
+          "preis_netto": "41",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SRSCH-FEM",
+          "inhalt": "6 Stück",
+          "pack_lieferant": "6 Seeds",
+          "vk_tigerone": "70",
+          "ek_tigerone": "33.98",
+          "preis_netto": "69",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44281,
+      "name": "Serious Seeds Chronic regulär",
+      "sku_eltern": "SRSCH",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140062_932860_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SRSCH-11",
+          "inhalt": "11 Stück",
+          "pack_lieferant": "11 Seeds",
+          "vk_tigerone": "70",
+          "ek_tigerone": "33.98",
+          "preis_netto": "69",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44283,
+      "name": "Serious Seeds Double Dutch feminisiert",
+      "sku_eltern": "double-dutch-fem-serious-seeds",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151234_1001229_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "SRSDD-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "42",
+          "ek_tigerone": "20.39",
+          "preis_netto": "41",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44285,
+      "name": "Serious Seeds Fruity Durban feminisiert",
+      "sku_eltern": "SRS-FRDU-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SRS-FRDU-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "18.43",
+          "preis_netto": "37",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SRS-FRDU-FEM-6",
+          "inhalt": "6 Stück",
+          "pack_lieferant": "6 Seeds",
+          "vk_tigerone": "60",
+          "ek_tigerone": "29.14",
+          "preis_netto": "59",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44287,
+      "name": "Serious Seeds Kali Mist feminisiert",
+      "sku_eltern": "kali-mist-fem-serious-seeds",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151236_1001239_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SRSKM-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "47",
+          "ek_tigerone": "22.82",
+          "preis_netto": "46",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SRSKM-FEM",
+          "inhalt": "6 Stück",
+          "pack_lieferant": "6 Seeds",
+          "vk_tigerone": "80",
+          "ek_tigerone": "38.84",
+          "preis_netto": "79",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44289,
+      "name": "Serious Seeds Kali Mist regulär",
+      "sku_eltern": "SRSKM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140069_932877_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SRSKM-11",
+          "inhalt": "11 Stück",
+          "pack_lieferant": "11 Seeds",
+          "vk_tigerone": "80",
+          "ek_tigerone": "38.84",
+          "preis_netto": "79",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44291,
+      "name": "Serious Seeds Motavation feminisiert",
+      "sku_eltern": "motavation-fem-serious-seeds",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/152725_1038738_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "SRSM-FEM",
+          "inhalt": "6 Stück",
+          "pack_lieferant": "6 Seeds",
+          "vk_tigerone": "70",
+          "ek_tigerone": "33.98",
+          "preis_netto": "69",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44293,
+      "name": "Serious Seeds Seriosa feminisiert",
+      "sku_eltern": "SRS-SRSA-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150521_997680_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SRS-SRSA-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "47",
+          "ek_tigerone": "22.82",
+          "preis_netto": "46",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SRS-SRSA-FEM-6",
+          "inhalt": "6 Stück",
+          "pack_lieferant": "6 Seeds",
+          "vk_tigerone": "80",
+          "ek_tigerone": "38.84",
+          "preis_netto": "79",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44295,
+      "name": "Serious Seeds Seriotica feminisiert",
+      "sku_eltern": "SRS-SRTA-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150522_997685_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SRS-SRTA-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "58",
+          "ek_tigerone": "28.2",
+          "preis_netto": "57",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SRS-SRTA-FEM-6",
+          "inhalt": "6 Stück",
+          "pack_lieferant": "6 Seeds",
+          "vk_tigerone": "100",
+          "ek_tigerone": "48.5",
+          "preis_netto": "99",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44297,
+      "name": "Serious Seeds Serious 6 feminisiert",
+      "sku_eltern": "Serious-6-fem-serious-seeds",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151239_1001254_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SRSS6-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "32",
+          "ek_tigerone": "15.54",
+          "preis_netto": "31",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SRSS6-FEM",
+          "inhalt": "6 Stück",
+          "pack_lieferant": "6 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "24.28",
+          "preis_netto": "49",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44299,
+      "name": "Serious Seeds Serious 6 regulär",
+      "sku_eltern": "SRSSM-010",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/141436_2001220_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SRSSM-010-11",
+          "inhalt": "11 Stück",
+          "pack_lieferant": "11 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "24.28",
+          "preis_netto": "49",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44301,
+      "name": "Serious Seeds Serious Happiness feminisiert",
+      "sku_eltern": "serious-happiness-fem-serious-seeds",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151237_1001244_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SRSSM-006F-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "42",
+          "ek_tigerone": "20.39",
+          "preis_netto": "41",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SRSSM-006F-6",
+          "inhalt": "6 Stück",
+          "pack_lieferant": "6 Seeds",
+          "vk_tigerone": "70",
+          "ek_tigerone": "33.98",
+          "preis_netto": "69",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44303,
+      "name": "Serious Seeds Serious Happiness regulär",
+      "sku_eltern": "SRSSM-006",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/141409_2001181_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SRSSM-006-11",
+          "inhalt": "11 Stück",
+          "pack_lieferant": "11 Seeds",
+          "vk_tigerone": "70",
+          "ek_tigerone": "33.98",
+          "preis_netto": "69",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44305,
+      "name": "Serious Seeds Serious Kush feminisiert",
+      "sku_eltern": "serious-kush-fem-serious-seeds",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151238_1001249_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SRSSRK-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "42",
+          "ek_tigerone": "20.39",
+          "preis_netto": "41",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SRSSRK-FEM",
+          "inhalt": "6 Stück",
+          "pack_lieferant": "6 Seeds",
+          "vk_tigerone": "70",
+          "ek_tigerone": "33.98",
+          "preis_netto": "69",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44307,
+      "name": "Serious Seeds Strawberry Akeil feminisiert",
+      "sku_eltern": "strawberry-akeil-fem-serious-seeds",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151240_1001259_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SRSSM-011F-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "47",
+          "ek_tigerone": "22.82",
+          "preis_netto": "46",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SRSSM-011F-6",
+          "inhalt": "6 Stück",
+          "pack_lieferant": "6 Seeds",
+          "vk_tigerone": "80",
+          "ek_tigerone": "38.84",
+          "preis_netto": "79",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44309,
+      "name": "Serious Seeds Warlock CBD feminisiert",
+      "sku_eltern": "warlock-cbd-fem-serious-seeds",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548,
+        2309
+      ],
+      "kategorien_namen": [
+        "Feminisiert",
+        "CBD Samen"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151232_1001219_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SRSCBDWRK-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "32",
+          "ek_tigerone": "15.54",
+          "preis_netto": "31",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SRSCBDWRK-FEM",
+          "inhalt": "6 Stück",
+          "pack_lieferant": "6 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "24.28",
+          "preis_netto": "49",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44311,
+      "name": "Serious Seeds Warlock feminisiert",
+      "sku_eltern": "warlock-fem-serious-seeds",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/152726_1038742_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "SRSW-FEM",
+          "inhalt": "6 Stück",
+          "pack_lieferant": "6 Seeds",
+          "vk_tigerone": "70",
+          "ek_tigerone": "33.98",
+          "preis_netto": "69",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44313,
+      "name": "Serious Seeds White Russian Auto feminisiert",
+      "sku_eltern": "white-russian-auto-fem-serious-seeds",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151242_1001269_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SRSAUTOWR-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "13.6",
+          "preis_netto": "27",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SRSAUTOWR-FEM",
+          "inhalt": "6 Stück",
+          "pack_lieferant": "6 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "24.28",
+          "preis_netto": "49",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44315,
+      "name": "Serious Seeds White Russian feminisiert",
+      "sku_eltern": "white-russian-feminised-seeds-serious",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150272_996435_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SRSWR-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "42",
+          "ek_tigerone": "20.39",
+          "preis_netto": "41",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SRSWR-FEM",
+          "inhalt": "6 Stück",
+          "pack_lieferant": "6 Seeds",
+          "vk_tigerone": "70",
+          "ek_tigerone": "33.98",
+          "preis_netto": "69",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44317,
+      "name": "Serious Seeds White Russian regulär",
+      "sku_eltern": "SRSWR",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140075_932892_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SRSWR-11",
+          "inhalt": "11 Stück",
+          "pack_lieferant": "11 Seeds",
+          "vk_tigerone": "70",
+          "ek_tigerone": "33.98",
+          "preis_netto": "69",
+          "auslaufartikel": false
+        }
+      ]
+    }
+  ]
+}
