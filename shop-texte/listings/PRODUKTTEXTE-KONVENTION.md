@@ -120,6 +120,7 @@ Couch-lock→Couch-Lock · Psychedelic→Psychedelisch
 | Serious Seeds | 26 | fertig (2026-09-11) |
 | Silent Seeds | 41 | fertig (2026-09-11) |
 | Ripper Seeds | 26 | fertig (2026-09-11) |
+| Purple City Genetics | 5 | fertig (2026-09-11) |
 
 Bei Seedsman wurde zusätzlich ein unsauberer Produktname korrigiert:
 ID 43483 → „Seedsman Relax Collection feminisiert (3 × 1 Samen)".
@@ -517,3 +518,25 @@ Description, Genetics, Aroma/Terpene, Effects und Morphology ausgewertet.
   im Shop fehlt – offener Punkt für die Sortimentsprüfung.
 - **Packungsgrößen:** DO-G nur 3 Samen, Ripper Haze und Sideral nur 5 Samen,
   alle anderen 3 und 5.
+
+## Purple-City-Genetics-Besonderheiten
+
+Der Tiger-One-Export liefert hier **nur die Genetik** (5/5), sonst nichts. Die
+eigenen Shops der Marke (purplecitygenetics.com, eu. und us.) führen diese fünf
+Linien **nicht mehr**; der EU-Shop hat 42 ganz andere Sorten und gar keine
+Beschreibungstexte. Quelle der Texte sind deshalb die Züchterangaben, wie sie der
+europäische Fachhandel und die Sortendatenbank **SeedFinder** dokumentieren. Das
+steht in jedem der fünf Texte ausdrücklich im Hinweisblock.
+
+- **Keine THC-/CBD-Werte** dokumentiert – bei Purple #40 nur „hoher THC-Gehalt"
+  ohne Zahl. Die Attribute `THC Gehalt` und `CBD Gehalt` bleiben leer.
+- **Blütezeit** steht in Wochen (9–10 bzw. 9–11); die Tagesangabe in Klammern und
+  das Attribut `Blütezeit (Tage)` sind daraus gerechnet (63–70 bzw. 63–77).
+- **Ertrag:** Nur Purple #40 hat Zahlen (450–550 g/m², bis 800 g je Pflanze). Bei
+  PCG Cookies × Watermelon Zkittlez nennt der Züchter „mittel", der Fachhandel
+  500–600 g/m² und rund 700 g je Pflanze – beides steht mit Quelle im Text.
+- **Drei der fünf Sorten sind regulär** (Lemon Caramel, Limón Picón, Smac Town);
+  Attribut `Variante` = `Regulär`, Tag `Zuchtsamen`.
+- **Alle fünf nur als 3er-Packung.**
+- **Wiederkehrende Züchterhinweise:** Die Pflanzen verdoppeln in der Blüte ihre
+  Höhe und brauchen Stützen; mehrere Linien färben bei kühlen Nächten violett aus.
