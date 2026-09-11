@@ -411,3 +411,25 @@ ausdrückliche Hinweis, dass kein Prozentwert vorliegt.
 
 Der Züchter führt zusätzlich `Biddy Early`, `Kali Bubba` und `Serious 7` —
 diese drei fehlen in der Tiger-One-Liste.
+
+## „discontinued" ist kein Bestandssignal
+
+Festgelegt am 2026-09-11: Das Feld `discontinued` im Tiger-One-Export heißt
+**nicht** ausverkauft. Die Sorten bleiben lieferbar, solange Bestand da ist — und
+gerade alte, auslaufende Sorten sind oft besonders gefragt.
+
+Daraus folgt:
+
+- Auslaufende Artikel werden **gelistet und veröffentlicht** wie alle anderen.
+  Sie werden nicht ausgeblendet, nicht deaktiviert und nicht auf „ausverkauft"
+  gesetzt, nur weil die Markierung gesetzt ist.
+- Eine Deaktivierung braucht immer einen eigenen Grund — etwa eine Dublette
+  (Quasar Auto 44991) oder eine fehlende Lieferbarkeit aus dem Lagerbestand.
+- Das Lagerbestands-Plugin wertet `discontinued` deshalb nicht aus. Der einzige
+  belastbare Bestandswert kommt aus dem Stock Feed des Tiger-One-ERP.
+- In den Listungsberichten bleibt die Zahl der markierten Artikel als Hinweis
+  stehen, ist aber keine offene Entscheidung mehr.
+
+Damit sind die früher als „offen" geführten Punkte zu Amsterdam Genetics (26),
+Buddha Seeds (14), Nirvana (27), Pyramid (18), Ripper (5) und Silent (11)
+geklärt: Alle bleiben gelistet.
