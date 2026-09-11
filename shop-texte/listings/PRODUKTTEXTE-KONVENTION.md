@@ -112,7 +112,7 @@ Couch-lock→Couch-Lock · Psychedelic→Psychedelisch
 | Marke | Produkte | Texte/SEO/Tags/Eigenschaften |
 | --- | --- | --- |
 | Seedsman | 97 | fertig (2026-09-10) |
-| Sweet Seeds | 99 | offen |
+| Sweet Seeds | 99 | fertig (2026-09-11) |
 | TerpyZ Mutant Genetics | 18 | offen |
 | Sensi Seeds | 97 | offen (dünne Datenlage) |
 | Amsterdam Genetics | 36 | offen (dünne Datenlage) |
@@ -121,3 +121,30 @@ Couch-lock→Couch-Lock · Psychedelic→Psychedelisch
 
 Bei Seedsman wurde zusätzlich ein unsauberer Produktname korrigiert:
 ID 43483 → „Seedsman Relax Collection feminisiert (3 × 1 Samen)".
+
+## Sweet-Seeds-Besonderheiten
+
+Sweet Seeds führt mehrere parallele Linien derselben Genetik. Das wird in den
+Texten konsequent unterschieden:
+
+- **FAST-Version** (`seeds_flowering_type = Early/fast`): photoperiodische
+  F1-Hybride, gekreuzt mit der hauseigenen Autoflower derselben Sorte. Bleibt
+  lichtabhängig, blüht aber rund eine Woche kürzer.
+  `Samentyp: feminisiert (FAST-Version, photoperiodisch)`.
+- **XL Auto**: auf Größe und Ertrag selektierte Autoflower-Linie → Tag `XL Ertrag`.
+- **Generationsangaben** („5. Autoflower-Generation") werden als eigene Zeile in
+  „Auf einen Blick" geführt, wenn der Züchter sie nennt.
+- **Packungsgrößen**: 4 und 7 Stück (Standard), 5 Stück (US-Genetik-Linie),
+  10 Stück (Mischpakete).
+- **Mischpakete** (Sweet Mix, Sweet Mix Auto, Terp Explosion Mix, Delicious &
+  Resinous Mix Auto) erhalten den Tag `Mischpaket`; Aroma und Wirkung werden
+  ausdrücklich als nicht einzeln angebbar ausgewiesen.
+
+Konkrete THC-Punktwerte von Sweet Seeds, die in die Texte übernommen wurden:
+28–32 % Pineapple Fruz · 26–32 % Super Boof x RS11 · 24–30 % Mimosa x Chimera #3 ·
+23–30 % Permanent Marker XL Auto · 22–30 % Mental Rainbow F1 Fast ·
+20–28 % Permanent Jealousy XL Auto · 20–26 % Gelonade · 20–25 % Studio 54 Stardust Auto ·
+19–22 % Garlic Icing x Chimera #3.
+
+Bei **Monster Maker** nennt Sweet Seeds keinen Zahlenwert („high THC content") –
+dort steht deshalb ausdrücklich „keine konkrete Angabe des Züchters".
