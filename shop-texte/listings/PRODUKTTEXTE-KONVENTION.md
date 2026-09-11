@@ -121,6 +121,7 @@ Couch-lock→Couch-Lock · Psychedelic→Psychedelisch
 | Silent Seeds | 41 | fertig (2026-09-11) |
 | Ripper Seeds | 26 | fertig (2026-09-11) |
 | Purple City Genetics | 5 | fertig (2026-09-11) |
+| Pyramid Seeds | 71 | fertig (2026-09-11) |
 
 Bei Seedsman wurde zusätzlich ein unsauberer Produktname korrigiert:
 ID 43483 → „Seedsman Relax Collection feminisiert (3 × 1 Samen)".
@@ -540,3 +541,52 @@ steht in jedem der fünf Texte ausdrücklich im Hinweisblock.
 - **Alle fünf nur als 3er-Packung.**
 - **Wiederkehrende Züchterhinweise:** Die Pflanzen verdoppeln in der Blüte ihre
   Höhe und brauchen Stützen; mehrere Linien färben bei kühlen Nächten violett aus.
+
+## Pyramid-Seeds-Besonderheiten
+
+Der Tiger-One-Export liefert nur Filterbänder und ein Genetik-Kürzel. Quelle aller
+Zahlen sind deshalb die **deutschen Datenseiten von pyramidseeds.com** (`/de/`);
+alle 71 Produkte konnten eindeutig einer Züchterseite zugeordnet werden. Die
+Domains pyramidseeds.net und .es sind über den Egress-Proxy nicht erreichbar.
+
+- **Zwei Lichtangaben:** Pyramid Seeds nennt jede Zeit doppelt – einmal unter HPS,
+  einmal unter LED (LED jeweils rund 7 Tage kürzer). Die Zeile lautet deshalb
+  „Blütezeit indoor: 55 Tage (unter LED 48 Tage)". Ins Attribut
+  `Blütezeit (Tage)` geht der HPS-Wert.
+- **Autos: Gesamtzyklus statt Blütezeit.** Für die selbstblühenden Linien gibt der
+  Züchter „Zyklus Indoor" ab Aussaat an, nicht die Blütedauer. Die Zeile heißt
+  entsprechend „Gesamtzyklus: 65 Tage ab Aussaat (unter LED 58 Tage)"; das
+  Attribut `Blütezeit (Tage)` bleibt bei Autos leer.
+- **Ertrag doppelt:** g/m² plus ein zweiter Wert „bis X g je 1,5 m² mit
+  720-W-LED" – beides steht so im Text, weil der Züchter beides nennt.
+- **Wuchshöhe indoor** gibt es fast nur für die Autos (z. B. 40–140 cm bei Purple
+  Auto, bis 180 cm bei Ramses Auto); bei den Fotoperiodischen nur für Shark CBD
+  (80–120 cm) und White Widow CBD (80–130 cm).
+- **Kollektionen** stehen als Tag: `Bestseller` (Black Cherry Punch, Purple Auto,
+  Super Hash, Tutankhamon) und `Heart Notes` – die erklärt sinnlichkeitsbezogene
+  Linie mit Gorila Auto, Ice Cream und Lemon Larry OG.
+- **CBD-Linien (7):** 7–12 % THC bei 10–15 % CBD, bei White Widow CBD
+  (fotoperiodisch) 15–21 % CBD. Das sind **keine Nutzhanfsorten** – der Hinweis,
+  dass 7–12 % THC psychoaktiv relevant bleiben, steht in jedem CBD-Text.
+- **Attribut `CBD Gehalt`** kommt bei diesen Linien aus der **Unter**grenze der
+  Züchterspanne (10–15 % → Band `10–15 %`), nicht aus der Obergrenze.
+- **Attribut `THC Gehalt`:** Obergrenze ab 25 % → `25 % und mehr`. Betrifft 21 der
+  71 Sorten, darunter Cookies USA mit 25–28 % (höchste Angabe im Katalog).
+- **Extremwerte, die so im Text stehen:** Tutankhamon 26 % THC mit ausdrücklichem
+  Verweis auf unabhängige Growertests bis 30 %; Tahoe Cure 25–27 % als
+  „höchster THC-Gehalt der Kush-Linie"; Kukulkan bis 2 kg je Pflanze outdoor;
+  Lennon als einzige Sorte mit Schwierigkeitsgrad „Experte" (80 Tage Blüte,
+  Ernte erst im November).
+- **Widersprüche/Lücken, die der Text benennt:** Ramses nennt 80 Tage Blüte bei
+  gleichzeitig früher Septemberernte; Cookies USA Auto hat keinen LED-Zyklus und
+  Northern Lights (fotoperiodisch) keinen LED-Blütewert; Gelato und Mendocino
+  Purple Kush haben kein Outdoor-Erntefenster. Bei Alpujarrena, New York City,
+  Purple und Romulan legt der Züchter die Elternlinien nicht offen.
+- **Auto und Fotoperiodische weichen voneinander ab** – nicht nur im Zyklus: Bei
+  Gelato dreht der Züchter das Genotyp-Verhältnis (Auto 55 % Sativa, Foto 55 %
+  Indica) und beschreibt die Wirkung anders; bei Super OG Kush nennt er für die
+  Auto den Sortennamen, für die Fotoperiodische Hindu Kush als Genetik.
+- **Seltene Leitterpene:** Ocimen (nur Fresh Candy), Humulen (Ice Cream und
+  Cookies USA Auto), Pinen an erster Stelle (Romulan).
+- **Alle 71 in 4 und 7 Samen**, gepackt als 3+1 bzw. 5+2 – das steht in jedem
+  Hinweisblock.
