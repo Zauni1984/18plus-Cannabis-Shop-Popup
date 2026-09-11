@@ -117,7 +117,7 @@ Couch-lock→Couch-Lock · Psychedelic→Psychedelisch
 | Sensi Seeds | 100 | fertig (2026-09-11) |
 | Amsterdam Genetics | 36 | fertig (2026-09-11) |
 | Buddha Seeds | 35 | fertig (2026-09-11) |
-| Serious Seeds | 26 | offen (dünne Datenlage) |
+| Serious Seeds | 26 | fertig (2026-09-11) |
 
 Bei Seedsman wurde zusätzlich ein unsauberer Produktname korrigiert:
 ID 43483 → „Seedsman Relax Collection feminisiert (3 × 1 Samen)".
@@ -345,3 +345,69 @@ Regeln, die daraus entstanden sind:
 Der Züchter führt zusätzlich `Pulsar`, `Morpheus`, `Panakeia` (hohe Terpene),
 `Gorilla Auto`, `Assortierte Klassiker` und `Auto Diesel` – diese Sorten fehlen
 in der Tiger-One-Liste und wären eine mögliche Sortimentslücke.
+
+## Serious-Seeds-Besonderheiten
+
+Serious Seeds hat die mit Abstand beste Datenlage aller Marken dieser Reihe.
+Recherchiert wurde auf der deutschen Züchterseite
+`seriousseeds.com/de/hanfsamen/<slug>` (curl + eigener Parser, 19 Sortenseiten
+für 26 Artikelnummern, 16 Sorten).
+
+Der Export war dagegen fast leer: von 42 Serious-Zeilen hatten 39 eine
+Genetikangabe, aber nur 2 eine Blütezeit, 2 einen Ertrag, 0 eine Wuchshöhe,
+0 Effekte. Nach der Recherche sind alle 26 Produkte vollständig.
+
+### Zusätzliche Felder, die nur Serious Seeds liefert
+
+| Feld | Inhalt |
+| --- | --- |
+| `Veg. Phase empfohlen` | Zeit von Keimung bis Umstellung auf 12/12, z. B. „2,5–4 Wochen" |
+| `Blütezeit indoor` | Wochen plus, wo der Züchter sie nennt, Tage: „8–9 Wochen (53–63 Tage)" |
+| `Erntezeit outdoor` | konkretes Datumsfenster, z. B. „Mitte/Ende Oktober" |
+| `Auszeichnungen` | Zahl der Cups laut Züchter (AK-47: 27, Kali Mist: 16, Bubble Gum: 12) |
+
+### Konkrete THC-/CBD-Werte (Züchter- bzw. Laborangaben)
+
+| Sorte | Werte |
+| --- | --- |
+| Seriotica | 25–28 % THC — höchster Wert im Sortiment |
+| White Russian (+ regulär) | 22 % THC / 1 % CBD |
+| AK-47 (+ regulär) | 20 % THC / 1 % CBD, Labortest 1999: 21,5 % |
+| Warlock | 20 % THC / 1 % CBD |
+| Strawberry Akeil | AK-47-Linie: 20 % / 1 % |
+| Fruity Durban | 18–20 % THC, kein CBD |
+| Serious 6 (+ regulär) | 17 % THC im CANNA-Labor 2013 |
+| White Russian Auto | 17 % THC im CANNA-Labor (erste Charge) |
+| CBD-Chronic | Labordurchschnitt 5,4 % THC : 5,8 % CBD, beste Pflanze 7,88 % : 6,93 %, alle 10 Proben 1:1 |
+| CBD-Warlock | Labordurchschnitt ~8 % THC : 4 % CBD, beste Pflanzen 16,86 % : 15,58 %, 9 von 24 Proben 2:1 |
+
+Wo der Züchter nur Kategorien nennt („sehr hoch", „hoch", „mittel", „niedrig",
+„keiner"), steht die Kategorie mit dem Zusatz „(Züchterkategorie)" und der
+ausdrückliche Hinweis, dass kein Prozentwert vorliegt.
+
+### Widersprüche und Besonderheiten
+
+- **Seriotica:** Züchter 25–28 % THC, Lieferantenband nur 16–24 %. Beide Werte
+  stehen im Text, jeweils mit Quelle. Attribut `THC Gehalt` = `25 % und mehr`.
+- **Chronic:** Die Züchterseite widerspricht sich selbst (Spalte „9–10 Wochen",
+  Zahlenblock „53–63 Tage"). Wir übernehmen nur die Wochenangabe.
+- **Serious 6:** Serious Seeds empfiehlt die Indoor-Blüte **nur erfahrenen
+  Growern**, weil laut Züchter 2 von 100 Pflanzen auf Lichtstress mit
+  Hermaphroditismus reagieren. Das steht so im Text — im Freiland kein Thema.
+- **Reguläre Samen:** Sieben Artikelnummern sind regulär (AK47, Bubble Gum,
+  Chronic, Kali Mist, Serious 6, Serious Happiness, White Russian). Sie bekommen
+  denselben Datenblock, aber eine eigene Einleitung zur Zuchtarbeit und den Tag
+  `Zuchtsamen`.
+- **Auslaufend beim Lieferanten:** Double Dutch (44283), Motavation (44291),
+  Warlock (44311) sind als `discontinued` markiert; der Hinweis steht im Text.
+- **Limitierte Editionen:** Strawberry Akeil und CBD-Warlock führt der Züchter
+  ausdrücklich als limitiert.
+- **Für deutsche Freilandlagen interessant:** Serious 6 (selbst im Norden Ende
+  September fertig), Fruity Durban (6 Wochen Blüte, Mitte September), Seriosa
+  und Seriotica (Mitte September). Kali Mist dagegen erst **Ende November** —
+  im Text klar als Indoor-Sorte eingeordnet.
+
+### Nicht gelistete Serious-Seeds-Sorten
+
+Der Züchter führt zusätzlich `Biddy Early`, `Kali Bubba` und `Serious 7` —
+diese drei fehlen in der Tiger-One-Liste.
