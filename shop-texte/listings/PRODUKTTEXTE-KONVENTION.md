@@ -118,6 +118,7 @@ Couch-lock→Couch-Lock · Psychedelic→Psychedelisch
 | Amsterdam Genetics | 36 | fertig (2026-09-11) |
 | Buddha Seeds | 35 | fertig (2026-09-11) |
 | Serious Seeds | 26 | fertig (2026-09-11) |
+| Silent Seeds | 41 | fertig (2026-09-11) |
 
 Bei Seedsman wurde zusätzlich ein unsauberer Produktname korrigiert:
 ID 43483 → „Seedsman Relax Collection feminisiert (3 × 1 Samen)".
@@ -433,3 +434,46 @@ Daraus folgt:
 Damit sind die früher als „offen" geführten Punkte zu Amsterdam Genetics (26),
 Buddha Seeds (14), Nirvana (27), Pyramid (18), Ripper (5) und Silent (11)
 geklärt: Alle bleiben gelistet.
+
+## Silent-Seeds-Besonderheiten
+
+Der Tiger-One-Export ist bei Silent Seeds sehr dünn (Blütezeit, Ertrag, Höhe,
+Aroma, Effekte durchgehend leer, bei 5 Sorten fehlt sogar die Genetik). Quelle
+der Texte ist deshalb die **deutsche Züchterseite silent-seeds.de**: 45 Sortenseiten
+wurden geladen und ihr Datenblatt (Geschlecht, Genotyp, Cross, THC, CBD, Blütezeit
+in Innenräumen, Produktion in Innenräumen, Außenproduktion, Ernte im Freiland,
+Höhe im Freien, Umwelt, Geschmack) plus die Prosaabschnitte ausgewertet. Alle
+41 Shop-Produkte haben dort eine Entsprechung.
+
+- **Die Züchterprozente liegen oft über dem Tiger-One-Band.** Wo sich beide
+  widersprechen, steht der Züchterwert zuerst und das Lieferantenband dahinter:
+  „THC: 27–30 % (Züchterangabe); Lieferantenband Tiger One: 16–24 %". Betrifft
+  Acai Jelly, B45, Gorilla Frost, OG Kush, Pink Sunset, Polar Gelato, Starfire OG.
+- **Attribut `THC Gehalt`** kommt aus dem Züchterwert: Obergrenze über 25 % →
+  `25 % und mehr`, sonst das passende Band.
+- **Attribut `CBD Gehalt`** nur, wenn der Züchter einen Zahlenwert unter 1 %
+  nennt. Bei „geringer Prozentsatz" (6 Sorten) und „weniger als 2 %" (7 Sorten)
+  bleibt das Attribut leer, der Text sagt es ausdrücklich.
+- **Autoflower:** Silent Seeds nennt auch für Autos nur das Feld „Blütezeit in
+  Innenräumen" und sagt nicht, ob Blüte oder Gesamtzyklus gemeint ist. Die Zeile
+  heißt deshalb „Blütezeit indoor", und die Hinweise sagen diese Unklarheit.
+- **Widersprüchliche Einheit:** Bei **B45** (42573) und **Peach Cake** (42615)
+  steht die Außenproduktion auf der Züchterseite in „g/m2", obwohl das Feld die
+  Ernte je Pflanze meint; die Größenordnung entspricht den anderen Sorten. Im
+  Text steht „1.400–1.600 g je Pflanze (auf der Züchterseite in g/m² angegeben)".
+- **Moby Dick Auto** (42608) hat auf der Züchterseite keinen Wirkungsabschnitt.
+  Der Wirkungstext sagt das und ordnet nur über die Genetik ein.
+- **Mint Candy** (42606): Der Züchter schreibt die Kreuzung als
+  „Face Off OG x 2 x Animal Face Mints". Die Schreibweise bleibt erhalten und ist
+  im Text als Züchterschreibweise gekennzeichnet.
+- **Maschinell übersetzte Elternnamen** der Züchterseite wurden auf die
+  Originalnamen zurückgeführt (Kritisch + → Critical +, Apfelkrapfen → Apple
+  Fritter, Käsekuchen → Cheese Cake, Eistorte → Ice Cream Cake,
+  Tiergesichter-Minzbonbons → Animal Face Mints); wo der Export die Genetik
+  saubererer führt, hat er Vorrang.
+- **Sortenlinien:** `FAST Version` (Lemon Tree FAST, photoperiodisch und
+  schneller), `XL Ertrag` (Alien Gas XXL Auto, Mac Dawg XXL Auto),
+  `Limitierte Auflage` (Mint Candy, Rainbow Gas, Tropical Jam),
+  `Julian Marley` (4 Sorten), `Sherbinskis` (5 Sorten), `Cookies` (2 Sorten).
+- **Dinafem-Herkunft**: Critical Jack Auto und Moby Dick Auto führt Silent Seeds
+  ausdrücklich als Originalgenetik von Dinafem Seeds – das steht so im Text.
