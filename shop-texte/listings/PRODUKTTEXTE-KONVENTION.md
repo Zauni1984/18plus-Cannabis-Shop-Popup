@@ -113,7 +113,7 @@ Couch-lock→Couch-Lock · Psychedelic→Psychedelisch
 | --- | --- | --- |
 | Seedsman | 97 | fertig (2026-09-10) |
 | Sweet Seeds | 99 | fertig (2026-09-11) |
-| TerpyZ Mutant Genetics | 18 | offen |
+| TerpyZ Mutant Genetics | 18 | fertig (2026-09-11) |
 | Sensi Seeds | 97 | offen (dünne Datenlage) |
 | Amsterdam Genetics | 36 | offen (dünne Datenlage) |
 | Buddha Seeds | 35 | offen (dünne Datenlage) |
@@ -148,3 +148,29 @@ Konkrete THC-Punktwerte von Sweet Seeds, die in die Texte übernommen wurden:
 
 Bei **Monster Maker** nennt Sweet Seeds keinen Zahlenwert („high THC content") –
 dort steht deshalb ausdrücklich „keine konkrete Angabe des Züchters".
+
+## TerpyZ-Besonderheiten
+
+TerpyZ Mutant Genetics züchtet bewusst auf Blattanomalien und ungewöhnliche
+Wuchsformen. Das wird in den Texten als Absicht benannt, nicht als Defekt:
+
+- **Duckweb** – Schwimmhaut-Blattform (Pink Nova, Quackberry Rose)
+- **Fern** – farnartige Blattstruktur (Mentha de Croco Fern-Linie)
+- **SWAG** – fixierte Blattanomalie der SWAG-Linien (Zen-X Swag, Zfuel Swag)
+- **Variegated** – Panaschierung; im Hinweistext wird erwähnt, dass panaschierte
+  Pflanzen weniger Chlorophyll haben und deshalb langsamer wachsen
+- **GPP** – Linien mit ungewöhnlichen Blütenformen (Ed Rosenbud u. a.)
+
+14 von 18 Sorten sind **regulär** (männlich und weiblich) – der Hinweistext sagt
+das ausdrücklich und nennt Zuchtzwecke als Einsatzgebiet; bei F2-, F3- und
+BX-Generationen steht zusätzlich „ausdrücklich für Züchtungsarbeit gedacht".
+Nur 4 Sorten sind feminisiert (Gary & Gas, Mentha de Croco Fern BX1 F2,
+Neon Wasabi, Super Menthol Haze, Zitro).
+
+Bei den 5 feminisierten Sorten nennt TerpyZ **keine THC- und CBD-Werte** –
+dort steht durchgehend „keine Angabe des Züchters", nie eine geschätzte Zahl.
+Neon Wasabi hat zusätzlich keine Blütezeitangabe.
+
+Die **Mentha de Croco (MDC)** ist das Kernprojekt der Marke und Elternteil
+nahezu aller feminisierten Sorten – das wird in den Texten als Zusammenhang
+benannt.
