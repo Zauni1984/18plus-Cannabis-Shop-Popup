@@ -114,7 +114,7 @@ Couch-lock→Couch-Lock · Psychedelic→Psychedelisch
 | Seedsman | 97 | fertig (2026-09-10) |
 | Sweet Seeds | 99 | fertig (2026-09-11) |
 | TerpyZ Mutant Genetics | 18 | fertig (2026-09-11) |
-| Sensi Seeds | 100 | in Arbeit, Züchterdaten recherchiert |
+| Sensi Seeds | 100 | fertig (2026-09-11) |
 | Amsterdam Genetics | 36 | fertig (2026-09-11) |
 | Buddha Seeds | 35 | offen (dünne Datenlage) |
 | Serious Seeds | 26 | offen (dünne Datenlage) |
@@ -212,3 +212,83 @@ Sonderfälle:
 - **Amnesia Haze regulär** und **Critical Mass regulär**: CBD dokumentiert,
   THC nicht.
 - **Quicksilver**: THC dokumentiert, CBD nicht.
+
+## Neues Feld: Klimazone
+
+Sensi Seeds gibt für jede Sorte eine Klimazone an. Das Feld wird in „Auf einen
+Blick" als eigene Zeile geführt, weil es für den Außenanbau in Deutschland die
+eigentliche Kaufinformation ist. Drei Werte kommen vor:
+
+- **kühles / kaltes Klima** – reift auch in nördlichen Lagen draußen aus
+- **gemäßigtes / kontinentales Klima**
+- **sonniges / mediterranes Klima**
+
+Ein passendes globales Produktattribut existiert im Shop noch nicht; die Angabe
+steht deshalb nur im Text. Ein Attribut dafür anzulegen wäre ein eigener Schritt
+und ist nicht entschieden.
+
+## Sensi-Seeds-Besonderheiten
+
+**Sensi Seeds veröffentlicht grundsätzlich keine THC- und CBD-Prozentwerte** –
+weder im Tiger-One-Export (THC 3/100, CBD 0/100) noch auf der eigenen Website.
+Der Züchter arbeitet durchgehend mit Kategorien. In allen 100 Texten steht
+deshalb „Sensi Seeds nennt keine Prozentwerte" statt einer Zahl.
+
+Die vier Stellen auf sensiseeds.com, an denen überhaupt eine Prozentzahl neben
+„THC" stand, waren unbrauchbar und wurden verworfen: zwei fremdsprachige
+Textreste aus Nutzerbewertungen, einmal der Sativa-Anteil, einmal ein
+Satzfragment. Solche Fundstücke gelten nicht als Züchterangabe.
+
+Einzige Ausnahme im ganzen Sortiment: **Satin Black Domina CBD** mit einem
+dokumentierten Verhältnis THC:CBD von 2:1 und rund 8 Wochen Blüte indoor –
+beides aus dem Marketingtext des Exports.
+
+### Recherche auf sensiseeds.com
+
+Die Sortendaten stammen von der Website des Züchters (`*.sensiseeds.com`, in der
+Netzwerk-Policy der Arbeitsumgebung freigegeben). 98 von 100 Produkten wurden
+über die Sitemap auf ihre Sortenseite gemappt und jede Seite nach dem Abruf
+gegen den Seitentitel geprüft; falsche Zuordnungen wurden verworfen statt
+übernommen. Damit ergibt sich:
+
+| Feld | Export | nach Recherche |
+|---|---|---|
+| Indica/Sativa | 23 | 98 |
+| Blütezeit (Kategorie) | 18 | 98 |
+| Ertrag (Kategorie) | 22 | 96 |
+| Wuchshöhe | 20 | 96 |
+| Klimazone | – | 98 |
+| Aroma | 6 | 94 |
+| Wirkung | 2 | 90 |
+
+Aroma und Wirkung wurden aus den Sortenbeschreibungen des Züchters abgeleitet
+und in die Hausbegriffe übersetzt; die Texte sind selbst formuliert, nicht
+übernommen.
+
+Zwei Produkte haben beim Züchter keine eigene Sortenseite und wurden bewusst
+**nicht** auf eine fremde Seite gemappt: **Satin Black Domina CBD** (nicht die
+normale Black Domina) und das Mischpaket **Mixed**.
+
+### Kategorien des Züchters, wie sie in den Texten stehen
+
+- Ertrag: mittel · groß · üppig · XXL
+- Blütezeit: kurz · durchschnittlich · lang · extralang
+- Wuchshöhe: kompakt · durchschnittlich · hoch
+
+Auffälligkeiten, die so übernommen und als Planungshinweis gekennzeichnet sind:
+**Caramellow Kush Auto** und **Honey Melon Kush Auto** führt Sensi als
+Autoflower mit langer Blütezeit, **Sensi Amnesia XXL Auto** sogar mit
+extralanger – für Autos untypisch, aber so dokumentiert.
+
+### Sortenstruktur
+
+15 Sorten liegen als feminisierte und als reguläre Version vor; die Texte
+unterscheiden beide und nennen bei regulären Samen ausdrücklich den Zuchtzweck.
+Wo der Lieferant bei einer der beiden Versionen die vollständigere Genetik
+angibt (etwa Big Bud, Jack Herer, Silver Haze, Sensi Skunk), wird das im Text
+mit Quellenhinweis ergänzt statt einfach übertragen.
+
+Zwei Lieferanten-Datenfragen bleiben offen und sind in den Texten benannt:
+**California Indica** (feminisiert) und **Californian Indica** (regulär) haben
+abweichende Genetikangaben; **NL#5 x Haze** und **Northern Lights #5 x Haze**
+sind dieselbe Kreuzung unter zwei Namen.
