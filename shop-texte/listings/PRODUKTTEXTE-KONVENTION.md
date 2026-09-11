@@ -114,8 +114,8 @@ Couch-lock→Couch-Lock · Psychedelic→Psychedelisch
 | Seedsman | 97 | fertig (2026-09-10) |
 | Sweet Seeds | 99 | fertig (2026-09-11) |
 | TerpyZ Mutant Genetics | 18 | fertig (2026-09-11) |
-| Sensi Seeds | 97 | offen (dünne Datenlage) |
-| Amsterdam Genetics | 36 | offen (dünne Datenlage) |
+| Sensi Seeds | 100 | in Arbeit, Züchterdaten recherchiert |
+| Amsterdam Genetics | 36 | fertig (2026-09-11) |
 | Buddha Seeds | 35 | offen (dünne Datenlage) |
 | Serious Seeds | 26 | offen (dünne Datenlage) |
 
@@ -174,3 +174,41 @@ Neon Wasabi hat zusätzlich keine Blütezeitangabe.
 Die **Mentha de Croco (MDC)** ist das Kernprojekt der Marke und Elternteil
 nahezu aller feminisierten Sorten – das wird in den Texten als Zusammenhang
 benannt.
+
+## Variante für dünne Datenlagen
+
+Wenn ein Züchter nur wenige Felder dokumentiert, werden die Fehlstellen **nicht**
+als Reihe von „keine Angabe"-Zeilen in „Auf einen Blick" geführt – das liest sich
+wie ein kaputtes Datenblatt. Stattdessen:
+
+- „Auf einen Blick" listet nur, was tatsächlich belegt ist, plus die Packungsgrößen.
+- Ein Satz unter „Hinweise" benennt die Lücke vollständig und namentlich:
+  „Zu Blütezeit, Ertrag, Wuchshöhe, Aroma und Wirkung macht <Marke> bei dieser
+  Sorte keine Angaben. Wir tragen hier nur ein, was der Züchter dokumentiert,
+  und erfinden keine Werte."
+- Einzelne fehlende Kernwerte (THC, CBD, Kreuzung) bleiben als eigene Zeile mit
+  „keine Angabe des Züchters" stehen, weil Kunden dort gezielt hinsehen.
+
+So angewandt bei Amsterdam Genetics.
+
+## Amsterdam-Genetics-Besonderheiten
+
+Der Export liefert hier Genetik (36/36), THC (34/36) und CBD (32/36), aber
+**keine** Blütezeit, Ertrag, Wuchshöhe, Aroma, Wirkung oder Indica/Sativa-Einordnung.
+Entsprechend tragen die Texte auch keinen Indica-/Sativa-/Hybrid-Tag.
+
+Stärke der Marke ist die tief aufgeschlüsselte Genetik – oft bis in die zweite
+Generation (etwa „Tahoe OG (Tahoe OG #1 x Tahoe OG #2) x OG Kush (Chem Dawg x
+Lemon Thai)"). Die Texte nutzen das und benennen zusätzlich die internen
+Zusammenhänge: White Choco ist Stammsorte von fünf weiteren Sorten, Lemon Ice
+und Kosher Tangie Kush laufen in der Lemongrass zusammen, Skywalker Saga und
+Grapefruit Superstar in der Skyrocket.
+
+Sonderfälle:
+- **Compromise CBD Version 1 und 2**: Kreuzung laut Lieferant „Undisclosed" –
+  steht als „keine Angabe des Züchters" im Text. Worin sich die beiden Versionen
+  unterscheiden, ist ebenfalls nicht dokumentiert und wird so benannt.
+- **Blue Monkey CBD**: als CBD-Sorte geführt, THC 0–4 %, aber ohne CBD-Wert.
+- **Amnesia Haze regulär** und **Critical Mass regulär**: CBD dokumentiert,
+  THC nicht.
+- **Quicksilver**: THC dokumentiert, CBD nicht.
