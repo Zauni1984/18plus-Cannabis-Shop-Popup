@@ -116,7 +116,7 @@ Couch-lock→Couch-Lock · Psychedelic→Psychedelisch
 | TerpyZ Mutant Genetics | 18 | fertig (2026-09-11) |
 | Sensi Seeds | 100 | fertig (2026-09-11) |
 | Amsterdam Genetics | 36 | fertig (2026-09-11) |
-| Buddha Seeds | 35 | offen (dünne Datenlage) |
+| Buddha Seeds | 35 | fertig (2026-09-11) |
 | Serious Seeds | 26 | offen (dünne Datenlage) |
 
 Bei Seedsman wurde zusätzlich ein unsauberer Produktname korrigiert:
@@ -292,3 +292,56 @@ Zwei Lieferanten-Datenfragen bleiben offen und sind in den Texten benannt:
 **California Indica** (feminisiert) und **Californian Indica** (regulär) haben
 abweichende Genetikangaben; **NL#5 x Haze** und **Northern Lights #5 x Haze**
 sind dieselbe Kreuzung unter zwei Namen.
+
+## Buddha-Seeds-Besonderheiten
+
+Buddha Seeds ist die erste Marke dieser Reihe, bei der die Züchterseite
+**echte Zahlen** liefert – anders als Sensi Seeds. Recherchiert wurde auf
+`buddhaseedbank.com/de/producto/<slug>/` (curl + eigener Parser, 1,2 s Pause,
+33 Seiten für 35 Artikelnummern).
+
+Abdeckung nach der Recherche (Export → Züchter):
+
+| Feld | Export | nach Recherche |
+| --- | --- | --- |
+| Genetik/Genanteile | 25 | 35 |
+| THC-Band | 15 | 15 (Züchter nennt keine Prozente) |
+| CBD | 0 | 1 (Medikit: über 20 % CBD bei rund 1 % THC) |
+| Blütezeit (Tage) | 0 | 16 (alle photoperiodischen Sorten) |
+| Erntemonat | 0 | 16 |
+| Ertrag indoor (g/m²) | 0 | 35 |
+| Ertrag outdoor (g/Pflanze) | 0 | 35 |
+| Aroma | 0 | 34 |
+| Wirkung | 0 | 35 |
+| Wuchshöhe | 0 | 1 (Deimos, rund 1 m) |
+
+Regeln, die daraus entstanden sind:
+
+- **Ertrag wird getrennt geführt:** `Ertrag indoor` in g/m², `Ertrag outdoor`
+  in g bzw. kg **je Pflanze** – so gibt es der Züchter an.
+- **Erntemonat** als eigene Zeile, nur die Nordhalbkugel-Angabe
+  („Zweite Oktoberhälfte (Nordhalbkugel)").
+- **Autoflower ohne Laufzeit:** Buddha Seeds nennt für die meisten Autos keine
+  Tage ab Keimung. Ausnahmen mit echter Angabe: Magnum Auto (rund 85 Tage
+  Gesamtzyklus), Assorted Mix Auto (50–55 bis 80–85 Tage). Sonst steht der
+  Hinweis, dass der Züchter dazu nichts sagt.
+- **Spanische Resttexte** auf der Züchterseite (Aroma war teils unübersetzt)
+  wurden ins Deutsche übertragen, Maschinenübersetzungs-Fehler korrigiert
+  („Narkotika und Arzneimittel" → „narkotisch und medizinisch orientiert").
+- **Keine Indica-/Sativa-Prozente:** Buddha Seeds nennt nur Kategorien
+  (Sativa, Indica, Indica-dominanter Hybrid) – Attribute 17/18 bleiben leer.
+
+### Widersprüche zwischen Export und Züchter (dokumentiert, nicht stillschweigend geändert)
+
+| Produkt | Befund |
+| --- | --- |
+| Kraken (44979) | Züchter: **photodependent**, 58–63 Tage Blüte, Ernte Ende September. Export: `Autoflowering`. Text und Attribute folgen dem Züchter, der Widerspruch steht unter „Hinweise". Produktname enthält kein „Auto". |
+| Quasar Auto (44991) | Buddha Seeds führt Quasar **nur photoperiodisch**. Die Artikelnummer `BS-SBSF050001-10` (10 Samen, VK 70) ist zusätzlich `discontinued='y'`. 44993 „Quasar" (3 Samen) ist die echte Sorte. → Dublette, Deaktivierung empfohlen. |
+| Deimos regulär (44975) | Züchter listet Deimos **nur feminisiert**. Die regulären Samen (`BS-BDR10`) haben keine Züchterseite; Werte stammen von der feminisierten Sortenseite, was im Text steht. |
+| Purple Kush / Medikit CBD | Jeweils **zwei eigene Züchterseiten** (auto + photoperiodisch) mit unterschiedlichen Zahlen → legitime Paare, keine Dubletten. |
+
+### Nicht gelistete Buddha-Sorten
+
+Der Züchter führt zusätzlich `Pulsar`, `Morpheus`, `Panakeia` (hohe Terpene),
+`Gorilla Auto`, `Assortierte Klassiker` und `Auto Diesel` – diese Sorten fehlen
+in der Tiger-One-Liste und wären eine mögliche Sortimentslücke.
