@@ -119,6 +119,7 @@ Couch-lock→Couch-Lock · Psychedelic→Psychedelisch
 | Buddha Seeds | 35 | fertig (2026-09-11) |
 | Serious Seeds | 26 | fertig (2026-09-11) |
 | Silent Seeds | 41 | fertig (2026-09-11) |
+| Ripper Seeds | 26 | fertig (2026-09-11) |
 
 Bei Seedsman wurde zusätzlich ein unsauberer Produktname korrigiert:
 ID 43483 → „Seedsman Relax Collection feminisiert (3 × 1 Samen)".
@@ -477,3 +478,42 @@ Höhe im Freien, Umwelt, Geschmack) plus die Prosaabschnitte ausgewertet. Alle
   `Julian Marley` (4 Sorten), `Sherbinskis` (5 Sorten), `Cookies` (2 Sorten).
 - **Dinafem-Herkunft**: Critical Jack Auto und Moby Dick Auto führt Silent Seeds
   ausdrücklich als Originalgenetik von Dinafem Seeds – das steht so im Text.
+
+## Ripper-Seeds-Besonderheiten
+
+Der Tiger-One-Export ist hier dünn (THC 6/60 Zeilen, Höhe 0/60, Blütezeit 20/60).
+Quelle der Texte ist deshalb **ripperseeds.com/en**: alle 26 Sortenseiten wurden
+geladen und ihr Datenblatt (Plant type, Indoor flowering days bzw. Flowering from
+germination, Outdoor flowering, Yield, Effect, Flavor) plus die Abschnitte
+Description, Genetics, Aroma/Terpene, Effects und Morphology ausgewertet.
+
+- **Ertrag:** Ripper Seeds nennt nur Kategorien (High, Medium to High, Very high).
+  Wo der Export Zahlenbänder liefert (7 Sorten), stehen diese im Text
+  („450–600 g/m²"), sonst die Züchterkategorie mit Quellenangabe.
+- **Zwei neue Zeilen** in „Auf einen Blick" für diese Marke, weil der Züchter nur
+  Filterstufen veröffentlicht: `Wirkungsstärke (Züchterfilter)` (sehr stark, stark,
+  potent, gut beherrschbar) und `Geschmacksrichtung (Züchterfilter)` (fruchtig,
+  trocken, durchdringend, säuerlich-erdig, erdiger Kush).
+- **Auszeichnungen** werden aus der Award-Tabelle der Sortenseite gezählt und als
+  „n Cup-Platzierungen (Züchterangabe)" geführt: Zombie Kush 25, Sour Ripper 10,
+  Toxic 8, Old School 5, Criminal 4, Ripper Haze 4, Washing Machine 4, OMG 3,
+  Chempie 1, DO-G 1, KmintZ 1.
+- **THC:** Nur drei Sorten haben ein Lieferantenband (Ripper Haze, Toxic, Washing
+  Machine → `16–24 %`), zwei Autos nennen auf der Züchterseite 15 bis 25 %
+  (KmintZ Auto, Sour Ripper Auto → Attribut `16–24 %`). Bei allen anderen steht
+  im Text ausdrücklich, dass Ripper Seeds keinen Prozentwert nennt, und das
+  Attribut bleibt leer. **CBD nennt der Züchter nirgends.**
+- **Autoflower:** Der Züchter gibt hier das Feld „Flowering from germination" an.
+  Die Zeile heißt deshalb `Gesamtzyklus: … ab Keimung`, und das Attribut
+  `Blütezeit (Tage)` bleibt bei Autos leer, weil der Wert keine Blütezeit ist.
+- **Abweichende Zeitangaben** zwischen Datenblatt und Textteil (Shimo 50–60 Tage
+  vs. 7–8 Wochen, KmintZ 60–70 Tage vs. 9 Wochen, CandyGaz 60–65 Tage vs.
+  9 Wochen, Braincake 60–70 Tage vs. 65 Tage, Zake 55–60 Tage vs. 8–9 Wochen,
+  Zombie Bride 60–70 Tage vs. 9 Wochen) stehen beide im Text, mit Quelle.
+- **Namensabweichung:** Der Züchter schreibt **Criminal+**, der Shop führt
+  „Criminal"; der Text nennt beide Schreibweisen. Gleiches Prinzip bei
+  Braincake (Züchter: Brain Cake) und Break Pad Breath (Züchter: Brake Pad Breath).
+- **Sortiment:** ripperseeds.com führt zusätzlich **Ripper Badazz regulär**, die
+  im Shop fehlt – offener Punkt für die Sortimentsprüfung.
+- **Packungsgrößen:** DO-G nur 3 Samen, Ripper Haze und Sideral nur 5 Samen,
+  alle anderen 3 und 5.
