@@ -1,0 +1,898 @@
+[
+{
+"hj_sku": "HJ-7000064-3",
+"name": "Biscotti Gelato",
+"menge": "3",
+"ek": "20.00",
+"b2b": "22.00",
+"anbau": "28.00"
+},
+{
+"hj_sku": "HJ-7000064-5",
+"name": "Biscotti Gelato",
+"menge": "5",
+"ek": "32.50",
+"b2b": "35.75",
+"anbau": "45.50"
+},
+{
+"hj_sku": "HJ-7000064-10",
+"name": "Biscotti Gelato",
+"menge": "10",
+"ek": "55.00",
+"b2b": "60.50",
+"anbau": "77.00"
+},
+{
+"hj_sku": "HJ-7000064-25",
+"name": "Biscotti Gelato",
+"menge": "25",
+"ek": "149.50",
+"b2b": "164.45",
+"anbau": "209.30"
+},
+{
+"hj_sku": "HJ-7000064-50",
+"name": "Biscotti Gelato",
+"menge": "50",
+"ek": "249.50",
+"b2b": "274.45",
+"anbau": "349.30"
+},
+{
+"hj_sku": "HJ-7000064-100",
+"name": "Biscotti Gelato",
+"menge": "100",
+"ek": "274.50",
+"b2b": "301.95",
+"anbau": "384.30"
+},
+{
+"hj_sku": "HJ-7000064-500",
+"name": "Biscotti Gelato",
+"menge": "500",
+"ek": "799.50",
+"b2b": "879.45",
+"anbau": "1119.30"
+},
+{
+"hj_sku": "HJ-7000065-3",
+"name": "GG4 Sherbet FF",
+"menge": "3",
+"ek": "18.00",
+"b2b": "19.80",
+"anbau": "25.20"
+},
+{
+"hj_sku": "HJ-7000065-5",
+"name": "GG4 Sherbet FF",
+"menge": "5",
+"ek": "27.50",
+"b2b": "30.25",
+"anbau": "38.50"
+},
+{
+"hj_sku": "HJ-7000065-10",
+"name": "GG4 Sherbet FF",
+"menge": "10",
+"ek": "49.50",
+"b2b": "54.45",
+"anbau": "69.30"
+},
+{
+"hj_sku": "HJ-7000065-25",
+"name": "GG4 Sherbet FF",
+"menge": "25",
+"ek": "107.50",
+"b2b": "118.25",
+"anbau": "150.50"
+},
+{
+"hj_sku": "HJ-7000065-50",
+"name": "GG4 Sherbet FF",
+"menge": "50",
+"ek": "182.50",
+"b2b": "200.75",
+"anbau": "255.50"
+},
+{
+"hj_sku": "HJ-7000065-100",
+"name": "GG4 Sherbet FF",
+"menge": "100",
+"ek": "249.50",
+"b2b": "274.45",
+"anbau": "349.30"
+},
+{
+"hj_sku": "HJ-7000065-500",
+"name": "GG4 Sherbet FF",
+"menge": "500",
+"ek": "749.50",
+"b2b": "824.45",
+"anbau": "1049.30"
+},
+{
+"hj_sku": "HJ-7000066-3",
+"name": "Garlic Mint Sherbet",
+"menge": "3",
+"ek": "20.00",
+"b2b": "22.00",
+"anbau": "28.00"
+},
+{
+"hj_sku": "HJ-7000066-5",
+"name": "Garlic Mint Sherbet",
+"menge": "5",
+"ek": "32.50",
+"b2b": "35.75",
+"anbau": "45.50"
+},
+{
+"hj_sku": "HJ-7000066-10",
+"name": "Garlic Mint Sherbet",
+"menge": "10",
+"ek": "55.00",
+"b2b": "60.50",
+"anbau": "77.00"
+},
+{
+"hj_sku": "HJ-7000066-25",
+"name": "Garlic Mint Sherbet",
+"menge": "25",
+"ek": "107.50",
+"b2b": "118.25",
+"anbau": "150.50"
+},
+{
+"hj_sku": "HJ-7000066-50",
+"name": "Garlic Mint Sherbet",
+"menge": "50",
+"ek": "182.50",
+"b2b": "200.75",
+"anbau": "255.50"
+},
+{
+"hj_sku": "HJ-7000066-100",
+"name": "Garlic Mint Sherbet",
+"menge": "100",
+"ek": "249.50",
+"b2b": "274.45",
+"anbau": "349.30"
+},
+{
+"hj_sku": "HJ-7000066-500",
+"name": "Garlic Mint Sherbet",
+"menge": "500",
+"ek": "749.50",
+"b2b": "824.45",
+"anbau": "1049.30"
+},
+{
+"hj_sku": "HJ-7000067-3",
+"name": "Gary Sherbet",
+"menge": "3",
+"ek": "20.00",
+"b2b": "22.00",
+"anbau": "28.00"
+},
+{
+"hj_sku": "HJ-7000067-5",
+"name": "Gary Sherbet",
+"menge": "5",
+"ek": "32.50",
+"b2b": "35.75",
+"anbau": "45.50"
+},
+{
+"hj_sku": "HJ-7000067-10",
+"name": "Gary Sherbet",
+"menge": "10",
+"ek": "55.00",
+"b2b": "60.50",
+"anbau": "77.00"
+},
+{
+"hj_sku": "HJ-7000067-25",
+"name": "Gary Sherbet",
+"menge": "25",
+"ek": "149.50",
+"b2b": "164.45",
+"anbau": "209.30"
+},
+{
+"hj_sku": "HJ-7000067-50",
+"name": "Gary Sherbet",
+"menge": "50",
+"ek": "249.50",
+"b2b": "274.45",
+"anbau": "349.30"
+},
+{
+"hj_sku": "HJ-7000067-100",
+"name": "Gary Sherbet",
+"menge": "100",
+"ek": "274.50",
+"b2b": "301.95",
+"anbau": "384.30"
+},
+{
+"hj_sku": "HJ-7000067-500",
+"name": "Gary Sherbet",
+"menge": "500",
+"ek": "799.50",
+"b2b": "879.45",
+"anbau": "1119.30"
+},
+{
+"hj_sku": "HJ-7000068-3",
+"name": "Gorilla Cookies FF",
+"menge": "3",
+"ek": "18.00",
+"b2b": "19.80",
+"anbau": "25.20"
+},
+{
+"hj_sku": "HJ-7000068-5",
+"name": "Gorilla Cookies FF",
+"menge": "5",
+"ek": "27.50",
+"b2b": "30.25",
+"anbau": "38.50"
+},
+{
+"hj_sku": "HJ-7000068-10",
+"name": "Gorilla Cookies FF",
+"menge": "10",
+"ek": "49.50",
+"b2b": "54.45",
+"anbau": "69.30"
+},
+{
+"hj_sku": "HJ-7000068-25",
+"name": "Gorilla Cookies FF",
+"menge": "25",
+"ek": "107.50",
+"b2b": "118.25",
+"anbau": "150.50"
+},
+{
+"hj_sku": "HJ-7000068-50",
+"name": "Gorilla Cookies FF",
+"menge": "50",
+"ek": "182.50",
+"b2b": "200.75",
+"anbau": "255.50"
+},
+{
+"hj_sku": "HJ-7000068-100",
+"name": "Gorilla Cookies FF",
+"menge": "100",
+"ek": "249.50",
+"b2b": "274.45",
+"anbau": "349.30"
+},
+{
+"hj_sku": "HJ-7000068-500",
+"name": "Gorilla Cookies FF",
+"menge": "500",
+"ek": "749.50",
+"b2b": "824.45",
+"anbau": "1049.30"
+},
+{
+"hj_sku": "HJ-7000069-3",
+"name": "Gorilla Melon",
+"menge": "3",
+"ek": "20.00",
+"b2b": "22.00",
+"anbau": "28.00"
+},
+{
+"hj_sku": "HJ-7000069-5",
+"name": "Gorilla Melon",
+"menge": "5",
+"ek": "32.50",
+"b2b": "35.75",
+"anbau": "45.50"
+},
+{
+"hj_sku": "HJ-7000069-10",
+"name": "Gorilla Melon",
+"menge": "10",
+"ek": "55.00",
+"b2b": "60.50",
+"anbau": "77.00"
+},
+{
+"hj_sku": "HJ-7000069-25",
+"name": "Gorilla Melon",
+"menge": "25",
+"ek": "107.50",
+"b2b": "118.25",
+"anbau": "150.50"
+},
+{
+"hj_sku": "HJ-7000069-50",
+"name": "Gorilla Melon",
+"menge": "50",
+"ek": "182.50",
+"b2b": "200.75",
+"anbau": "255.50"
+},
+{
+"hj_sku": "HJ-7000069-100",
+"name": "Gorilla Melon",
+"menge": "100",
+"ek": "249.50",
+"b2b": "274.45",
+"anbau": "349.30"
+},
+{
+"hj_sku": "HJ-7000069-500",
+"name": "Gorilla Melon",
+"menge": "500",
+"ek": "749.50",
+"b2b": "824.45",
+"anbau": "1049.30"
+},
+{
+"hj_sku": "HJ-7000070-3",
+"name": "Lemon Cherry Runtz",
+"menge": "3",
+"ek": "20.00",
+"b2b": "22.00",
+"anbau": "28.00"
+},
+{
+"hj_sku": "HJ-7000070-5",
+"name": "Lemon Cherry Runtz",
+"menge": "5",
+"ek": "32.50",
+"b2b": "35.75",
+"anbau": "45.50"
+},
+{
+"hj_sku": "HJ-7000070-10",
+"name": "Lemon Cherry Runtz",
+"menge": "10",
+"ek": "55.00",
+"b2b": "60.50",
+"anbau": "77.00"
+},
+{
+"hj_sku": "HJ-7000070-25",
+"name": "Lemon Cherry Runtz",
+"menge": "25",
+"ek": "149.50",
+"b2b": "164.45",
+"anbau": "209.30"
+},
+{
+"hj_sku": "HJ-7000070-50",
+"name": "Lemon Cherry Runtz",
+"menge": "50",
+"ek": "249.50",
+"b2b": "274.45",
+"anbau": "349.30"
+},
+{
+"hj_sku": "HJ-7000070-100",
+"name": "Lemon Cherry Runtz",
+"menge": "100",
+"ek": "274.50",
+"b2b": "301.95",
+"anbau": "384.30"
+},
+{
+"hj_sku": "HJ-7000070-500",
+"name": "Lemon Cherry Runtz",
+"menge": "500",
+"ek": "799.50",
+"b2b": "879.45",
+"anbau": "1119.30"
+},
+{
+"hj_sku": "HJ-7000071-3",
+"name": "Lemon Mandarin",
+"menge": "3",
+"ek": "20.00",
+"b2b": "22.00",
+"anbau": "28.00"
+},
+{
+"hj_sku": "HJ-7000071-5",
+"name": "Lemon Mandarin",
+"menge": "5",
+"ek": "32.50",
+"b2b": "35.75",
+"anbau": "45.50"
+},
+{
+"hj_sku": "HJ-7000071-10",
+"name": "Lemon Mandarin",
+"menge": "10",
+"ek": "55.00",
+"b2b": "60.50",
+"anbau": "77.00"
+},
+{
+"hj_sku": "HJ-7000071-25",
+"name": "Lemon Mandarin",
+"menge": "25",
+"ek": "107.50",
+"b2b": "118.25",
+"anbau": "150.50"
+},
+{
+"hj_sku": "HJ-7000071-50",
+"name": "Lemon Mandarin",
+"menge": "50",
+"ek": "182.50",
+"b2b": "200.75",
+"anbau": "255.50"
+},
+{
+"hj_sku": "HJ-7000071-100",
+"name": "Lemon Mandarin",
+"menge": "100",
+"ek": "249.50",
+"b2b": "274.45",
+"anbau": "349.30"
+},
+{
+"hj_sku": "HJ-7000071-500",
+"name": "Lemon Mandarin",
+"menge": "500",
+"ek": "749.50",
+"b2b": "824.45",
+"anbau": "1049.30"
+},
+{
+"hj_sku": "HJ-7000072-3",
+"name": "Lemonpaya",
+"menge": "3",
+"ek": "20.00",
+"b2b": "22.00",
+"anbau": "28.00"
+},
+{
+"hj_sku": "HJ-7000072-5",
+"name": "Lemonpaya",
+"menge": "5",
+"ek": "32.50",
+"b2b": "35.75",
+"anbau": "45.50"
+},
+{
+"hj_sku": "HJ-7000072-10",
+"name": "Lemonpaya",
+"menge": "10",
+"ek": "55.00",
+"b2b": "60.50",
+"anbau": "77.00"
+},
+{
+"hj_sku": "HJ-7000072-25",
+"name": "Lemonpaya",
+"menge": "25",
+"ek": "149.50",
+"b2b": "164.45",
+"anbau": "209.30"
+},
+{
+"hj_sku": "HJ-7000072-50",
+"name": "Lemonpaya",
+"menge": "50",
+"ek": "249.50",
+"b2b": "274.45",
+"anbau": "349.30"
+},
+{
+"hj_sku": "HJ-7000072-100",
+"name": "Lemonpaya",
+"menge": "100",
+"ek": "274.50",
+"b2b": "301.95",
+"anbau": "384.30"
+},
+{
+"hj_sku": "HJ-7000072-500",
+"name": "Lemonpaya",
+"menge": "500",
+"ek": "799.50",
+"b2b": "879.45",
+"anbau": "1119.30"
+},
+{
+"hj_sku": "HJ-7000073-3",
+"name": "Orange Sherbet FF",
+"menge": "3",
+"ek": "18.00",
+"b2b": "19.80",
+"anbau": "25.20"
+},
+{
+"hj_sku": "HJ-7000073-5",
+"name": "Orange Sherbet FF",
+"menge": "5",
+"ek": "27.50",
+"b2b": "30.25",
+"anbau": "38.50"
+},
+{
+"hj_sku": "HJ-7000073-10",
+"name": "Orange Sherbet FF",
+"menge": "10",
+"ek": "49.50",
+"b2b": "54.45",
+"anbau": "69.30"
+},
+{
+"hj_sku": "HJ-7000073-25",
+"name": "Orange Sherbet FF",
+"menge": "25",
+"ek": "107.50",
+"b2b": "118.25",
+"anbau": "150.50"
+},
+{
+"hj_sku": "HJ-7000073-50",
+"name": "Orange Sherbet FF",
+"menge": "50",
+"ek": "182.50",
+"b2b": "200.75",
+"anbau": "255.50"
+},
+{
+"hj_sku": "HJ-7000073-100",
+"name": "Orange Sherbet FF",
+"menge": "100",
+"ek": "249.50",
+"b2b": "274.45",
+"anbau": "349.30"
+},
+{
+"hj_sku": "HJ-7000073-500",
+"name": "Orange Sherbet FF",
+"menge": "500",
+"ek": "749.50",
+"b2b": "824.45",
+"anbau": "1049.30"
+},
+{
+"hj_sku": "HJ-7000074-3",
+"name": "Papaya Sherbet",
+"menge": "3",
+"ek": "20.00",
+"b2b": "22.00",
+"anbau": "28.00"
+},
+{
+"hj_sku": "HJ-7000074-5",
+"name": "Papaya Sherbet",
+"menge": "5",
+"ek": "32.50",
+"b2b": "35.75",
+"anbau": "45.50"
+},
+{
+"hj_sku": "HJ-7000074-10",
+"name": "Papaya Sherbet",
+"menge": "10",
+"ek": "55.00",
+"b2b": "60.50",
+"anbau": "77.00"
+},
+{
+"hj_sku": "HJ-7000074-25",
+"name": "Papaya Sherbet",
+"menge": "25",
+"ek": "107.50",
+"b2b": "118.25",
+"anbau": "150.50"
+},
+{
+"hj_sku": "HJ-7000074-50",
+"name": "Papaya Sherbet",
+"menge": "50",
+"ek": "182.50",
+"b2b": "200.75",
+"anbau": "255.50"
+},
+{
+"hj_sku": "HJ-7000074-100",
+"name": "Papaya Sherbet",
+"menge": "100",
+"ek": "249.50",
+"b2b": "274.45",
+"anbau": "349.30"
+},
+{
+"hj_sku": "HJ-7000074-500",
+"name": "Papaya Sherbet",
+"menge": "500",
+"ek": "749.50",
+"b2b": "824.45",
+"anbau": "1049.30"
+},
+{
+"hj_sku": "HJ-7000075-3",
+"name": "Papayton",
+"menge": "3",
+"ek": "20.00",
+"b2b": "22.00",
+"anbau": "28.00"
+},
+{
+"hj_sku": "HJ-7000075-5",
+"name": "Papayton",
+"menge": "5",
+"ek": "32.50",
+"b2b": "35.75",
+"anbau": "45.50"
+},
+{
+"hj_sku": "HJ-7000075-10",
+"name": "Papayton",
+"menge": "10",
+"ek": "55.00",
+"b2b": "60.50",
+"anbau": "77.00"
+},
+{
+"hj_sku": "HJ-7000075-25",
+"name": "Papayton",
+"menge": "25",
+"ek": "149.50",
+"b2b": "164.45",
+"anbau": "209.30"
+},
+{
+"hj_sku": "HJ-7000075-50",
+"name": "Papayton",
+"menge": "50",
+"ek": "249.50",
+"b2b": "274.45",
+"anbau": "349.30"
+},
+{
+"hj_sku": "HJ-7000075-100",
+"name": "Papayton",
+"menge": "100",
+"ek": "274.50",
+"b2b": "301.95",
+"anbau": "384.30"
+},
+{
+"hj_sku": "HJ-7000075-500",
+"name": "Papayton",
+"menge": "500",
+"ek": "799.50",
+"b2b": "879.45",
+"anbau": "1119.30"
+},
+{
+"hj_sku": "HJ-7000076-3",
+"name": "Purple Lemonade FF",
+"menge": "3",
+"ek": "18.00",
+"b2b": "19.80",
+"anbau": "25.20"
+},
+{
+"hj_sku": "HJ-7000076-5",
+"name": "Purple Lemonade FF",
+"menge": "5",
+"ek": "27.50",
+"b2b": "30.25",
+"anbau": "38.50"
+},
+{
+"hj_sku": "HJ-7000076-10",
+"name": "Purple Lemonade FF",
+"menge": "10",
+"ek": "49.50",
+"b2b": "54.45",
+"anbau": "69.30"
+},
+{
+"hj_sku": "HJ-7000076-25",
+"name": "Purple Lemonade FF",
+"menge": "25",
+"ek": "107.50",
+"b2b": "118.25",
+"anbau": "150.50"
+},
+{
+"hj_sku": "HJ-7000076-50",
+"name": "Purple Lemonade FF",
+"menge": "50",
+"ek": "182.50",
+"b2b": "200.75",
+"anbau": "255.50"
+},
+{
+"hj_sku": "HJ-7000076-100",
+"name": "Purple Lemonade FF",
+"menge": "100",
+"ek": "249.50",
+"b2b": "274.45",
+"anbau": "349.30"
+},
+{
+"hj_sku": "HJ-7000076-500",
+"name": "Purple Lemonade FF",
+"menge": "500",
+"ek": "749.50",
+"b2b": "824.45",
+"anbau": "1049.30"
+},
+{
+"hj_sku": "HJ-7000077-3",
+"name": "Rainbow Melon",
+"menge": "3",
+"ek": "20.00",
+"b2b": "22.00",
+"anbau": "28.00"
+},
+{
+"hj_sku": "HJ-7000077-5",
+"name": "Rainbow Melon",
+"menge": "5",
+"ek": "32.50",
+"b2b": "35.75",
+"anbau": "45.50"
+},
+{
+"hj_sku": "HJ-7000077-10",
+"name": "Rainbow Melon",
+"menge": "10",
+"ek": "55.00",
+"b2b": "60.50",
+"anbau": "77.00"
+},
+{
+"hj_sku": "HJ-7000077-25",
+"name": "Rainbow Melon",
+"menge": "25",
+"ek": "149.50",
+"b2b": "164.45",
+"anbau": "209.30"
+},
+{
+"hj_sku": "HJ-7000077-50",
+"name": "Rainbow Melon",
+"menge": "50",
+"ek": "249.50",
+"b2b": "274.45",
+"anbau": "349.30"
+},
+{
+"hj_sku": "HJ-7000077-100",
+"name": "Rainbow Melon",
+"menge": "100",
+"ek": "274.50",
+"b2b": "301.95",
+"anbau": "384.30"
+},
+{
+"hj_sku": "HJ-7000077-500",
+"name": "Rainbow Melon",
+"menge": "500",
+"ek": "799.50",
+"b2b": "879.45",
+"anbau": "1119.30"
+},
+{
+"hj_sku": "HJ-7000078-3",
+"name": "Tropicana Cookies FF",
+"menge": "3",
+"ek": "18.00",
+"b2b": "19.80",
+"anbau": "25.20"
+},
+{
+"hj_sku": "HJ-7000078-5",
+"name": "Tropicana Cookies FF",
+"menge": "5",
+"ek": "27.50",
+"b2b": "30.25",
+"anbau": "38.50"
+},
+{
+"hj_sku": "HJ-7000078-10",
+"name": "Tropicana Cookies FF",
+"menge": "10",
+"ek": "49.50",
+"b2b": "54.45",
+"anbau": "69.30"
+},
+{
+"hj_sku": "HJ-7000078-25",
+"name": "Tropicana Cookies FF",
+"menge": "25",
+"ek": "100.00",
+"b2b": "110.00",
+"anbau": "140.00"
+},
+{
+"hj_sku": "HJ-7000078-50",
+"name": "Tropicana Cookies FF",
+"menge": "50",
+"ek": "182.50",
+"b2b": "200.75",
+"anbau": "255.50"
+},
+{
+"hj_sku": "HJ-7000078-100",
+"name": "Tropicana Cookies FF",
+"menge": "100",
+"ek": "249.50",
+"b2b": "274.45",
+"anbau": "349.30"
+},
+{
+"hj_sku": "HJ-7000078-500",
+"name": "Tropicana Cookies FF",
+"menge": "500",
+"ek": "749.50",
+"b2b": "824.45",
+"anbau": "1049.30"
+},
+{
+"hj_sku": "HJ-7000079-3",
+"name": "Wedding Cheesecake FF",
+"menge": "3",
+"ek": "18.00",
+"b2b": "19.80",
+"anbau": "25.20"
+},
+{
+"hj_sku": "HJ-7000079-5",
+"name": "Wedding Cheesecake FF",
+"menge": "5",
+"ek": "27.50",
+"b2b": "30.25",
+"anbau": "38.50"
+},
+{
+"hj_sku": "HJ-7000079-10",
+"name": "Wedding Cheesecake FF",
+"menge": "10",
+"ek": "49.50",
+"b2b": "54.45",
+"anbau": "69.30"
+},
+{
+"hj_sku": "HJ-7000079-25",
+"name": "Wedding Cheesecake FF",
+"menge": "25",
+"ek": "107.50",
+"b2b": "118.25",
+"anbau": "150.50"
+},
+{
+"hj_sku": "HJ-7000079-50",
+"name": "Wedding Cheesecake FF",
+"menge": "50",
+"ek": "182.50",
+"b2b": "200.75",
+"anbau": "255.50"
+},
+{
+"hj_sku": "HJ-7000079-100",
+"name": "Wedding Cheesecake FF",
+"menge": "100",
+"ek": "249.50",
+"b2b": "274.45",
+"anbau": "349.30"
+},
+{
+"hj_sku": "HJ-7000079-500",
+"name": "Wedding Cheesecake FF",
+"menge": "500",
+"ek": "749.50",
+"b2b": "824.45",
+"anbau": "1049.30"
+}
+]

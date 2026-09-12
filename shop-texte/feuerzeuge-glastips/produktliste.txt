@@ -1,0 +1,17 @@
+Feuerzeuge (Kat. 5426, 2 Produkte, HEMPER Portal Gun 35457 ausgeschlossen):
+20069, 20070
+
+Zippo (Kat. 5424, 43 Produkte, alle einschließen):
+14778, 14779, 14810, 14795, 14813, 14815, 14804, 14816, 14801, 14818, 14811, 14791, 14822, 14797, 14790, 14803, 14802, 14789, 14812, 14792, 14788, 14784, 14823, 14798, 14821, 14820, 14819, 14814, 14809, 14808, 14807, 14806, 14805, 14800, 14799, 14796, 14794, 14817, 14787, 14786, 14782, 14781, 14780
+
+Glas-Tips (Kat. 5191, 6 Produkte, 5 HEMPER Glasfilter ausgeschlossen: 35386, 35385, 35384, 34995, 34994):
+31760, 31758, 14418, 14417, 14416, 14415
+
+Feuerzeuge & Zippo (Elternkategorie 5423) direkt zugeordnete Produkte, beide HEMPER, ausgeschlossen: 37596, 37410
+
+Gesamt einzuschließen: 51 Produkte
+
+WICHTIGER BEFUND aus Stichprobe (3 Produkte):
+- Zippo 14802 (BLACK MATTE): sauber, kein H1, keine Hanfjack-CTA, du-Anrede. Yoast metadesc etwas knapp aber ok.
+- Feuerzeuge 20069 (Rasta Leaves, private): sauber, kein H1, keine CTA.
+- Glas-Tips 14415 (Herb Shuttles Glas-Tip Spiral Amber): HAT einen <h1 data-path-to-node="13">-Tag am Anfang der description ("Herb Shuttles Glas-Tip Spiral 10 mm Amber: Wiederverwendbarer Genuss mit Stil") — VERSTOSS, muss gefixt werden. Da alle 6 Herb-Shuttles-Produkte vermutlich aus demselben Content-Batch stammen (gleiches Erstellungsdatum 2025-07-26), ist zu erwarten, dass alle 6 dasselbe Problem haben — sorgfältig prüfen und ggf. auch auf einen Hanfjack-CTA-Absatz am Ende checken.

@@ -1,0 +1,661 @@
+{
+  "quelle": "Tiger One Google-Sheet Export (tigerone.csv), Marke 'Ripper Seeds'",
+  "shop": "hanfjack.de",
+  "stand": "2026-09-10",
+  "anzahl_produkte": 26,
+  "anzahl_varianten": 49,
+  "preisregel": "regular_price = abrunden(VK x 0,99) auf volle Euro, eingetragen als NETTO (Shop zeigt +7% brutto)",
+  "einstellungen": {
+    "status": "draft",
+    "sku": "Eltern = Tiger-One-Basisartikelnummer (parent_sku), Variante = Artikelnummer mit Packungs-Suffix",
+    "steuer": "tax_status=taxable, tax_class=reduzierter-preis (7%)",
+    "versandklasse": "paket-standard (12792)",
+    "lieferzeit": "2-3 Wochen (Term 5417)",
+    "lager": "manage_stock=false, stock_status=onbackorder, backorders=no",
+    "gewicht": "0.01",
+    "attribut": "pa_inhalt (global, variantenbildend) - 3 Stueck und 5 Stueck",
+    "marke": "pwb-brand 'Ripper Seeds' (Term 2619, existierte bereits ohne Produkte)",
+    "hersteller": "bewusst nicht gesetzt"
+  },
+  "hinweise": [
+    "Wie vereinbart erst ab 3er Pack: die 11 1er-Zeilen des Exports wurden ignoriert.",
+    "3 Sorten haben nur eine Packungsgroesse: DO-G nur 3er, Ripper Haze und Sideral nur 5er.",
+    "5 Sorten sind im Export als discontinued markiert (DO-G, Kroma, Old School, Ripper Haze, Sideral) - wie bei Nirvana und Pyramid mitgelistet.",
+    "6 Sorten haben im Export kein brauchbares Bild und wurden ohne Bild angelegt (Braincake, Break Pad Breath, CandyGaz, DO-G, EyeBallz, Ripper Haze).",
+    "Washing Machine: die Bild-URL des 3er-Pack lief auf 404, stattdessen wurde die funktionierende URL derselben Sorte aus der 1er-Zeile verwendet.",
+    "Schreibweise angeglichen: der Export fuehrt 'KmintZ' und 'Kmintz Auto' - im Shop beide als KmintZ.",
+    "Alle Sorten sind feminisiert, keine Regular- und keine CBD-Sorten.",
+    "Produkttexte, Tags und SEO fehlen noch (bewusst leer angelegt)."
+  ],
+  "produkte": [
+    {
+      "produkt": "Ripper Seeds Braincake feminisiert",
+      "product_id": 43231,
+      "sku_eltern": "RIPP-BRCAKE-FEM",
+      "kategorie": 548,
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": false,
+      "varianten": [
+        {
+          "sku": "RIPP-BRCAKE-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "27",
+          "ek_tigerone": "11.16",
+          "preis_netto_hanfjack_de": "26"
+        },
+        {
+          "sku": "RIPP-BRCAKE-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto_hanfjack_de": "44"
+        }
+      ]
+    },
+    {
+      "produkt": "Ripper Seeds Break Pad Breath feminisiert",
+      "product_id": 43232,
+      "sku_eltern": "RIPP-BRPB-FEM",
+      "kategorie": 548,
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": false,
+      "varianten": [
+        {
+          "sku": "RIPP-BRPB-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "27",
+          "ek_tigerone": "11.16",
+          "preis_netto_hanfjack_de": "26"
+        },
+        {
+          "sku": "RIPP-BRPB-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto_hanfjack_de": "44"
+        }
+      ]
+    },
+    {
+      "produkt": "Ripper Seeds CandyGaz feminisiert",
+      "product_id": 43233,
+      "sku_eltern": "RIPP-CGAZ-FEM",
+      "kategorie": 548,
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": false,
+      "varianten": [
+        {
+          "sku": "RIPP-CGAZ-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "27",
+          "ek_tigerone": "11.16",
+          "preis_netto_hanfjack_de": "26"
+        },
+        {
+          "sku": "RIPP-CGAZ-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto_hanfjack_de": "44"
+        }
+      ]
+    },
+    {
+      "produkt": "Ripper Seeds Chempie feminisiert",
+      "product_id": 43235,
+      "sku_eltern": "RIPP-CHPIE-FEM",
+      "kategorie": 548,
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "RIPP-CHPIE-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "24",
+          "ek_tigerone": "9.92",
+          "preis_netto_hanfjack_de": "23"
+        },
+        {
+          "sku": "RIPP-CHPIE-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "40",
+          "ek_tigerone": "16.53",
+          "preis_netto_hanfjack_de": "39"
+        }
+      ]
+    },
+    {
+      "produkt": "Ripper Seeds Criminal feminisiert",
+      "product_id": 43237,
+      "sku_eltern": "RIPP-CR-FEM",
+      "kategorie": 548,
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "RIPP-CR-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "24",
+          "ek_tigerone": "9.92",
+          "preis_netto_hanfjack_de": "23"
+        },
+        {
+          "sku": "RIPP-CR-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "40",
+          "ek_tigerone": "16.53",
+          "preis_netto_hanfjack_de": "39"
+        }
+      ]
+    },
+    {
+      "produkt": "Ripper Seeds DO-G feminisiert",
+      "product_id": 43238,
+      "sku_eltern": "RIPP-DOG-FEM",
+      "kategorie": 548,
+      "bluetetyp": "photoperiodisch",
+      "discontinued": true,
+      "bild": false,
+      "varianten": [
+        {
+          "sku": "RIPP-DOG-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "27",
+          "ek_tigerone": "11.16",
+          "preis_netto_hanfjack_de": "26"
+        }
+      ]
+    },
+    {
+      "produkt": "Ripper Seeds EyeBallz feminisiert",
+      "product_id": 43239,
+      "sku_eltern": "RIPP-EYBA-FEM",
+      "kategorie": 548,
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": false,
+      "varianten": [
+        {
+          "sku": "RIPP-EYBA-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "27",
+          "ek_tigerone": "11.16",
+          "preis_netto_hanfjack_de": "26"
+        },
+        {
+          "sku": "RIPP-EYBA-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto_hanfjack_de": "44"
+        }
+      ]
+    },
+    {
+      "produkt": "Ripper Seeds KmintZ Auto feminisiert",
+      "product_id": 43241,
+      "sku_eltern": "RIPP-KMZ-AUTO-FEM",
+      "kategorie": 547,
+      "bluetetyp": "Auto",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "RIPP-KMZ-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "27",
+          "ek_tigerone": "11.16",
+          "preis_netto_hanfjack_de": "26"
+        },
+        {
+          "sku": "RIPP-KMZ-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto_hanfjack_de": "44"
+        }
+      ]
+    },
+    {
+      "produkt": "Ripper Seeds KmintZ feminisiert",
+      "product_id": 43243,
+      "sku_eltern": "RIPP-KMZ-FEM",
+      "kategorie": 548,
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "RIPP-KMZ-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "27",
+          "ek_tigerone": "11.16",
+          "preis_netto_hanfjack_de": "26"
+        },
+        {
+          "sku": "RIPP-KMZ-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto_hanfjack_de": "44"
+        }
+      ]
+    },
+    {
+      "produkt": "Ripper Seeds Korenji feminisiert",
+      "product_id": 43245,
+      "sku_eltern": "RIPP-KOR-FEM",
+      "kategorie": 548,
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "RIPP-KOR-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "27",
+          "ek_tigerone": "11.16",
+          "preis_netto_hanfjack_de": "26"
+        },
+        {
+          "sku": "RIPP-KOR-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto_hanfjack_de": "44"
+        }
+      ]
+    },
+    {
+      "produkt": "Ripper Seeds Kroma feminisiert",
+      "product_id": 43247,
+      "sku_eltern": "RIPP-KROM-FEM",
+      "kategorie": 548,
+      "bluetetyp": "photoperiodisch",
+      "discontinued": true,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "RIPP-KROM-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "27",
+          "ek_tigerone": "11.16",
+          "preis_netto_hanfjack_de": "26"
+        },
+        {
+          "sku": "RIPP-KROM-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto_hanfjack_de": "44"
+        }
+      ]
+    },
+    {
+      "produkt": "Ripper Seeds OMG feminisiert",
+      "product_id": 43249,
+      "sku_eltern": "RIPP-OMG-FEM",
+      "kategorie": 548,
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "RIPP-OMG-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "27",
+          "ek_tigerone": "11.16",
+          "preis_netto_hanfjack_de": "26"
+        },
+        {
+          "sku": "RIPP-OMG-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto_hanfjack_de": "44"
+        }
+      ]
+    },
+    {
+      "produkt": "Ripper Seeds Old School feminisiert",
+      "product_id": 43251,
+      "sku_eltern": "RIPP-OS-FEM",
+      "kategorie": 548,
+      "bluetetyp": "photoperiodisch",
+      "discontinued": true,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "RIPP-OS-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "27",
+          "ek_tigerone": "11.16",
+          "preis_netto_hanfjack_de": "26"
+        },
+        {
+          "sku": "RIPP-OS-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "40",
+          "ek_tigerone": "16.53",
+          "preis_netto_hanfjack_de": "39"
+        }
+      ]
+    },
+    {
+      "produkt": "Ripper Seeds Radical Juice Auto feminisiert",
+      "product_id": 43253,
+      "sku_eltern": "RIPP-RJ-AUTO-FEM",
+      "kategorie": 547,
+      "bluetetyp": "Auto",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "RIPP-RJ-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "27",
+          "ek_tigerone": "11.16",
+          "preis_netto_hanfjack_de": "26"
+        },
+        {
+          "sku": "RIPP-RJ-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto_hanfjack_de": "44"
+        }
+      ]
+    },
+    {
+      "produkt": "Ripper Seeds Radical Juice feminisiert",
+      "product_id": 43255,
+      "sku_eltern": "RIPP-RJ-FEM",
+      "kategorie": 548,
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "RIPP-RJ-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "27",
+          "ek_tigerone": "11.16",
+          "preis_netto_hanfjack_de": "26"
+        },
+        {
+          "sku": "RIPP-RJ-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto_hanfjack_de": "44"
+        }
+      ]
+    },
+    {
+      "produkt": "Ripper Seeds Ripper Haze feminisiert",
+      "product_id": 43256,
+      "sku_eltern": "RIPP-RH-FEM",
+      "kategorie": 548,
+      "bluetetyp": "photoperiodisch",
+      "discontinued": true,
+      "bild": false,
+      "varianten": [
+        {
+          "sku": "RIPP-RH-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto_hanfjack_de": "44"
+        }
+      ]
+    },
+    {
+      "produkt": "Ripper Seeds Shimo feminisiert",
+      "product_id": 43258,
+      "sku_eltern": "RIPP-SHIM-FEM",
+      "kategorie": 548,
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "RIPP-SHIM-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "27",
+          "ek_tigerone": "11.16",
+          "preis_netto_hanfjack_de": "26"
+        },
+        {
+          "sku": "RIPP-SHIM-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto_hanfjack_de": "44"
+        }
+      ]
+    },
+    {
+      "produkt": "Ripper Seeds Sideral feminisiert",
+      "product_id": 43260,
+      "sku_eltern": "RIPP-SID-FEM",
+      "kategorie": 548,
+      "bluetetyp": "photoperiodisch",
+      "discontinued": true,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "RIPP-SID-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "40",
+          "ek_tigerone": "16.53",
+          "preis_netto_hanfjack_de": "39"
+        }
+      ]
+    },
+    {
+      "produkt": "Ripper Seeds Sour Ripper Auto feminisiert",
+      "product_id": 43262,
+      "sku_eltern": "RIPP-SR-AUTO-FEM",
+      "kategorie": 547,
+      "bluetetyp": "Auto",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "RIPP-SR-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "24",
+          "ek_tigerone": "9.92",
+          "preis_netto_hanfjack_de": "23"
+        },
+        {
+          "sku": "RIPP-SR-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "40",
+          "ek_tigerone": "16.53",
+          "preis_netto_hanfjack_de": "39"
+        }
+      ]
+    },
+    {
+      "produkt": "Ripper Seeds Sour Ripper feminisiert",
+      "product_id": 43264,
+      "sku_eltern": "RIPP-SR-FEM",
+      "kategorie": 548,
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "RIPP-SR-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "24",
+          "ek_tigerone": "9.92",
+          "preis_netto_hanfjack_de": "23"
+        },
+        {
+          "sku": "RIPP-SR-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "40",
+          "ek_tigerone": "16.53",
+          "preis_netto_hanfjack_de": "39"
+        }
+      ]
+    },
+    {
+      "produkt": "Ripper Seeds Toxic feminisiert",
+      "product_id": 43266,
+      "sku_eltern": "RIPP-TX-FEM",
+      "kategorie": 548,
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "RIPP-TX-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "24",
+          "ek_tigerone": "9.92",
+          "preis_netto_hanfjack_de": "23"
+        },
+        {
+          "sku": "RIPP-TX-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "40",
+          "ek_tigerone": "16.53",
+          "preis_netto_hanfjack_de": "39"
+        }
+      ]
+    },
+    {
+      "produkt": "Ripper Seeds Zake feminisiert",
+      "product_id": 43268,
+      "sku_eltern": "RIPP-ZAK-FEM",
+      "kategorie": 548,
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "RIPP-ZAK-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "27",
+          "ek_tigerone": "11.16",
+          "preis_netto_hanfjack_de": "26"
+        },
+        {
+          "sku": "RIPP-ZAK-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto_hanfjack_de": "44"
+        }
+      ]
+    },
+    {
+      "produkt": "Ripper Seeds Zombie Bride feminisiert",
+      "product_id": 43270,
+      "sku_eltern": "RIPP-ZB-FEM",
+      "kategorie": 548,
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "RIPP-ZB-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "27",
+          "ek_tigerone": "11.16",
+          "preis_netto_hanfjack_de": "26"
+        },
+        {
+          "sku": "RIPP-ZB-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto_hanfjack_de": "44"
+        }
+      ]
+    },
+    {
+      "produkt": "Ripper Seeds Zombie Kush Auto feminisiert",
+      "product_id": 43272,
+      "sku_eltern": "RIPP-ZK-AUTO-FEM",
+      "kategorie": 547,
+      "bluetetyp": "Auto",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "RIPP-ZK-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30",
+          "ek_tigerone": "12.4",
+          "preis_netto_hanfjack_de": "29"
+        },
+        {
+          "sku": "RIPP-ZK-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "50",
+          "ek_tigerone": "20.66",
+          "preis_netto_hanfjack_de": "49"
+        }
+      ]
+    },
+    {
+      "produkt": "Ripper Seeds Zombie Kush feminisiert",
+      "product_id": 43274,
+      "sku_eltern": "RIPP-ZK-FEM",
+      "kategorie": 548,
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "RIPP-ZK-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30",
+          "ek_tigerone": "12.4",
+          "preis_netto_hanfjack_de": "29"
+        },
+        {
+          "sku": "RIPP-ZK-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "50",
+          "ek_tigerone": "20.66",
+          "preis_netto_hanfjack_de": "49"
+        }
+      ]
+    },
+    {
+      "produkt": "Ripper Seeds Washing Machine feminisiert",
+      "product_id": 43276,
+      "sku_eltern": "RIPP-WM-FEM",
+      "kategorie": 548,
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "RIPP-WM-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "24",
+          "ek_tigerone": "9.92",
+          "preis_netto_hanfjack_de": "23"
+        },
+        {
+          "sku": "RIPP-WM-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "40",
+          "ek_tigerone": "16.53",
+          "preis_netto_hanfjack_de": "39"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+[
+ {"produkt":"Purple City Genetics Lemon Caramel regulär","product_id":42730,"parent_sku":"PCG-LC-REG","kategorie":"Regular","genetik":"F1 Durb x Gushers x SLSMAC","bild":true,
+  "varianten":[{"sku":"PCG-LC-REG-3","inhalt":"3 Stück","vk_tigerone":"32","vk_minus1":"31.68","preis_netto":"32","brutto_7pct":"34.24","ek":"12.79"}]},
+ {"produkt":"Purple City Genetics Limón Picón regulär","product_id":42732,"parent_sku":"PCG-LP-REG","kategorie":"Regular","genetik":"Chile Verde x SLSMAC","bild":true,
+  "varianten":[{"sku":"PCG-LP-REG-3","inhalt":"3 Stück","vk_tigerone":"32","vk_minus1":"31.68","preis_netto":"32","brutto_7pct":"34.24","ek":"12.79"}]},
+ {"produkt":"Purple City Genetics PCG Cookies x Watermelon Zkittlez feminisiert","product_id":42734,"parent_sku":"PCG-CWZ-FEM","kategorie":"Feminisiert","genetik":"PCG Cookies x Watermelon Zkittlez","bild":true,
+  "varianten":[{"sku":"PCG-CWZ-FEM-3","inhalt":"3 Stück","vk_tigerone":"33","vk_minus1":"32.67","preis_netto":"33","brutto_7pct":"35.31","ek":"10.90"}]},
+ {"produkt":"Purple City Genetics Purple #40 feminisiert","product_id":42736,"parent_sku":"PCG-P40-FEM","kategorie":"Feminisiert","genetik":"GMO x Purple Punch","bild":true,
+  "varianten":[{"sku":"PCG-P40-FEM-3","inhalt":"3 Stück","vk_tigerone":"37","vk_minus1":"36.63","preis_netto":"37","brutto_7pct":"39.59","ek":"14.79"}]},
+ {"produkt":"Purple City Genetics Smac Town regulär","product_id":42738,"parent_sku":"PCG-ST-REG","kategorie":"Regular","genetik":"Oakland Purp x SLSMAC","bild":true,
+  "varianten":[{"sku":"PCG-ST-REG-3","inhalt":"3 Stück","vk_tigerone":"32","vk_minus1":"31.68","preis_netto":"32","brutto_7pct":"34.24","ek":"12.79"}]}
+]

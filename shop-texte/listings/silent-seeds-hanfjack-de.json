@@ -1,0 +1,1331 @@
+[
+  {
+    "produkt": "Silent Seeds Acai Jelly feminisiert",
+    "product_id": 42565,
+    "parent_sku": "SIL-ACJ-FEM",
+    "kategorie": "Feminisiert",
+    "bild": true,
+    "varianten": [
+      {
+        "sku": "SIL-ACJ-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "69",
+        "vk_minus1": "68.31",
+        "preis_netto": "68",
+        "brutto_7pct": "72.76",
+        "ek": "32.34",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-ACJ-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "99",
+        "vk_minus1": "98.01",
+        "preis_netto": "98",
+        "brutto_7pct": "104.86",
+        "ek": "46.26",
+        "discontinued": false
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Alien Gas XXL Auto feminisiert",
+    "product_id": 42568,
+    "parent_sku": "SIL-ALGAXXL-AUTO-FEM",
+    "kategorie": "Automatisch",
+    "bild": false,
+    "varianten": [
+      {
+        "sku": "SIL-ALGAXXL-AUTO-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "28",
+        "vk_minus1": "27.72",
+        "preis_netto": "28",
+        "brutto_7pct": "29.96",
+        "ek": "13.08",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-ALGAXXL-AUTO-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "45",
+        "vk_minus1": "44.55",
+        "preis_netto": "45",
+        "brutto_7pct": "48.15",
+        "ek": "21.03",
+        "discontinued": false
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Amnesia Lemon feminisiert",
+    "product_id": 42570,
+    "parent_sku": "SIL-AMNLEM-FEM",
+    "kategorie": "Feminisiert",
+    "bild": true,
+    "varianten": [
+      {
+        "sku": "SIL-AMNLEM-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "26",
+        "vk_minus1": "25.74",
+        "preis_netto": "26",
+        "brutto_7pct": "27.82",
+        "ek": "12.15",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-AMNLEM-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "43",
+        "vk_minus1": "42.57",
+        "preis_netto": "43",
+        "brutto_7pct": "46.01",
+        "ek": "20.09",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-AMNLEM-FEM-10",
+        "inhalt": "10 Stück",
+        "vk_tigerone": "86",
+        "vk_minus1": "85.14",
+        "preis_netto": "85",
+        "brutto_7pct": "90.95",
+        "ek": "40.19",
+        "discontinued": true
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds B-52 feminisiert",
+    "product_id": 42571,
+    "parent_sku": "SIL-B52-FEM",
+    "kategorie": "Feminisiert",
+    "bild": false,
+    "varianten": [
+      {
+        "sku": "SIL-B52-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "36",
+        "vk_minus1": "35.64",
+        "preis_netto": "36",
+        "brutto_7pct": "38.52",
+        "ek": "16.82",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-B52-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "56",
+        "vk_minus1": "55.44",
+        "preis_netto": "55",
+        "brutto_7pct": "58.85",
+        "ek": "26.17",
+        "discontinued": false
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds B45 feminisiert",
+    "product_id": 42573,
+    "parent_sku": "SIL-B45-FEM",
+    "kategorie": "Feminisiert",
+    "bild": true,
+    "varianten": [
+      {
+        "sku": "SIL-B45-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "39",
+        "vk_minus1": "38.61",
+        "preis_netto": "39",
+        "brutto_7pct": "41.73",
+        "ek": "18.22",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-B45-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "59",
+        "vk_minus1": "58.41",
+        "preis_netto": "58",
+        "brutto_7pct": "62.06",
+        "ek": "27.57",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-B45-FEM-10",
+        "inhalt": "10 Stück",
+        "vk_tigerone": "109",
+        "vk_minus1": "107.91",
+        "preis_netto": "108",
+        "brutto_7pct": "115.56",
+        "ek": "50.93",
+        "discontinued": false
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Cherry Essence feminisiert",
+    "product_id": 42574,
+    "parent_sku": "SIL-CHES-FEM",
+    "kategorie": "Feminisiert",
+    "bild": false,
+    "varianten": [
+      {
+        "sku": "SIL-CHES-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "39",
+        "vk_minus1": "38.61",
+        "preis_netto": "39",
+        "brutto_7pct": "41.73",
+        "ek": "18.22",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-CHES-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "59",
+        "vk_minus1": "58.41",
+        "preis_netto": "58",
+        "brutto_7pct": "62.06",
+        "ek": "27.57",
+        "discontinued": false
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Cookielato feminisiert",
+    "product_id": 42576,
+    "parent_sku": "SIL-CL-FEM",
+    "kategorie": "Feminisiert",
+    "bild": true,
+    "varianten": [
+      {
+        "sku": "SIL-CL-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "28",
+        "vk_minus1": "27.72",
+        "preis_netto": "28",
+        "brutto_7pct": "29.96",
+        "ek": "13.08",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-CL-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "45",
+        "vk_minus1": "44.55",
+        "preis_netto": "45",
+        "brutto_7pct": "48.15",
+        "ek": "21.03",
+        "discontinued": false
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Critical Jack Auto feminisiert",
+    "product_id": 42578,
+    "parent_sku": "SIL-CRJ-AUTO-FEM",
+    "kategorie": "Automatisch",
+    "bild": true,
+    "varianten": [
+      {
+        "sku": "SIL-CRJ-AUTO-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "23",
+        "vk_minus1": "22.77",
+        "preis_netto": "23",
+        "brutto_7pct": "24.61",
+        "ek": "10.75",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-CRJ-AUTO-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "37",
+        "vk_minus1": "36.63",
+        "preis_netto": "37",
+        "brutto_7pct": "39.59",
+        "ek": "17.29",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-CRJ-AUTO-FEM-10",
+        "inhalt": "10 Stück",
+        "vk_tigerone": "75",
+        "vk_minus1": "74.25",
+        "preis_netto": "74",
+        "brutto_7pct": "79.18",
+        "ek": "35.05",
+        "discontinued": true
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Critical Jack feminisiert",
+    "product_id": 42580,
+    "parent_sku": "SIL-CRJ-FEM",
+    "kategorie": "Feminisiert",
+    "bild": true,
+    "varianten": [
+      {
+        "sku": "SIL-CRJ-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "23",
+        "vk_minus1": "22.77",
+        "preis_netto": "23",
+        "brutto_7pct": "24.61",
+        "ek": "10.75",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-CRJ-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "37",
+        "vk_minus1": "36.63",
+        "preis_netto": "37",
+        "brutto_7pct": "39.59",
+        "ek": "17.29",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-CRJ-FEM-10",
+        "inhalt": "10 Stück",
+        "vk_tigerone": "75",
+        "vk_minus1": "74.25",
+        "preis_netto": "74",
+        "brutto_7pct": "79.18",
+        "ek": "35.05",
+        "discontinued": true
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Critical Mango feminisiert",
+    "product_id": 42582,
+    "parent_sku": "SIL-CRMAN-FEM",
+    "kategorie": "Feminisiert",
+    "bild": true,
+    "varianten": [
+      {
+        "sku": "SIL-CRMAN-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "27",
+        "vk_minus1": "26.73",
+        "preis_netto": "27",
+        "brutto_7pct": "28.89",
+        "ek": "12.62",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-CRMAN-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "44",
+        "vk_minus1": "43.56",
+        "preis_netto": "44",
+        "brutto_7pct": "47.08",
+        "ek": "20.56",
+        "discontinued": false
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Critical+ 2.0 Auto feminisiert",
+    "product_id": 42584,
+    "parent_sku": "SIL-CRPL2-AUTO-FEM",
+    "kategorie": "Automatisch",
+    "bild": true,
+    "varianten": [
+      {
+        "sku": "SIL-CRPL2-AUTO-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "25",
+        "vk_minus1": "24.75",
+        "preis_netto": "25",
+        "brutto_7pct": "26.75",
+        "ek": "11.68",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-CRPL2-AUTO-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "40",
+        "vk_minus1": "39.60",
+        "preis_netto": "40",
+        "brutto_7pct": "42.80",
+        "ek": "18.69",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-CRPL2-AUTO-FEM-10",
+        "inhalt": "10 Stück",
+        "vk_tigerone": "80",
+        "vk_minus1": "79.20",
+        "preis_netto": "79",
+        "brutto_7pct": "84.53",
+        "ek": "37.38",
+        "discontinued": false
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Critical+ 2.0 feminisiert",
+    "product_id": 42586,
+    "parent_sku": "SIL-CRPL2-FEM",
+    "kategorie": "Feminisiert",
+    "bild": true,
+    "varianten": [
+      {
+        "sku": "SIL-CRPL2-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "28",
+        "vk_minus1": "27.72",
+        "preis_netto": "28",
+        "brutto_7pct": "29.96",
+        "ek": "13.08",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-CRPL2-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "45",
+        "vk_minus1": "44.55",
+        "preis_netto": "45",
+        "brutto_7pct": "48.15",
+        "ek": "21.03",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-CRPL2-FEM-10",
+        "inhalt": "10 Stück",
+        "vk_tigerone": "90",
+        "vk_minus1": "89.10",
+        "preis_netto": "89",
+        "brutto_7pct": "95.23",
+        "ek": "42.06",
+        "discontinued": false
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Gorilla Frost feminisiert",
+    "product_id": 42588,
+    "parent_sku": "SIL-GORFR-FEM",
+    "kategorie": "Feminisiert",
+    "bild": true,
+    "varianten": [
+      {
+        "sku": "SIL-GORFR-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "28",
+        "vk_minus1": "27.72",
+        "preis_netto": "28",
+        "brutto_7pct": "29.96",
+        "ek": "13.08",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-GORFR-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "45",
+        "vk_minus1": "44.55",
+        "preis_netto": "45",
+        "brutto_7pct": "48.15",
+        "ek": "21.03",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-GORFR-FEM-10",
+        "inhalt": "10 Stück",
+        "vk_tigerone": "90",
+        "vk_minus1": "89.10",
+        "preis_netto": "89",
+        "brutto_7pct": "95.23",
+        "ek": "42.06",
+        "discontinued": true
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Grape Juice feminisiert",
+    "product_id": 42590,
+    "parent_sku": "SIL-GRJU-FEM",
+    "kategorie": "Feminisiert",
+    "bild": true,
+    "varianten": [
+      {
+        "sku": "SIL-GRJU-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "26",
+        "vk_minus1": "25.74",
+        "preis_netto": "26",
+        "brutto_7pct": "27.82",
+        "ek": "12.15",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-GRJU-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "42",
+        "vk_minus1": "41.58",
+        "preis_netto": "42",
+        "brutto_7pct": "44.94",
+        "ek": "19.63",
+        "discontinued": false
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Jamaican Mountain (Julian Marley) feminisiert",
+    "product_id": 42591,
+    "parent_sku": "SIL-JAMO-FEM",
+    "kategorie": "Feminisiert",
+    "bild": false,
+    "varianten": [
+      {
+        "sku": "SIL-JAMO-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "43.2",
+        "vk_minus1": "42.77",
+        "preis_netto": "43",
+        "brutto_7pct": "46.01",
+        "ek": "16.82",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-JAMO-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "67.2",
+        "vk_minus1": "66.53",
+        "preis_netto": "67",
+        "brutto_7pct": "71.69",
+        "ek": "26.17",
+        "discontinued": false
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Jamaican Sunset (Julian Marley) feminisiert",
+    "product_id": 42592,
+    "parent_sku": "SIL-JASU-FEM",
+    "kategorie": "Feminisiert",
+    "bild": false,
+    "varianten": [
+      {
+        "sku": "SIL-JASU-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "43.2",
+        "vk_minus1": "42.77",
+        "preis_netto": "43",
+        "brutto_7pct": "46.01",
+        "ek": "16.82",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-JASU-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "67.2",
+        "vk_minus1": "66.53",
+        "preis_netto": "67",
+        "brutto_7pct": "71.69",
+        "ek": "26.17",
+        "discontinued": false
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Julian Marley Special feminisiert",
+    "product_id": 42593,
+    "parent_sku": "SIL-JUMS-FEM",
+    "kategorie": "Feminisiert",
+    "bild": false,
+    "varianten": [
+      {
+        "sku": "SIL-JUMS-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "52.8",
+        "vk_minus1": "52.27",
+        "preis_netto": "52",
+        "brutto_7pct": "55.64",
+        "ek": "20.56",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-JUMS-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "76.8",
+        "vk_minus1": "76.03",
+        "preis_netto": "76",
+        "brutto_7pct": "81.32",
+        "ek": "29.91",
+        "discontinued": false
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds King Of Kings (Julian Marley) feminisiert",
+    "product_id": 42594,
+    "parent_sku": "SIL-KIOK-FEM",
+    "kategorie": "Feminisiert",
+    "bild": false,
+    "varianten": [
+      {
+        "sku": "SIL-KIOK-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "52.8",
+        "vk_minus1": "52.27",
+        "preis_netto": "52",
+        "brutto_7pct": "55.64",
+        "ek": "20.56",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-KIOK-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "76.8",
+        "vk_minus1": "76.03",
+        "preis_netto": "76",
+        "brutto_7pct": "81.32",
+        "ek": "29.91",
+        "discontinued": false
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds L.A. Vanilla Cake Auto feminisiert",
+    "product_id": 42596,
+    "parent_sku": "SIL-LAVC-AUTO-FEM",
+    "kategorie": "Automatisch",
+    "bild": true,
+    "varianten": [
+      {
+        "sku": "SIL-LAVC-AUTO-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "25",
+        "vk_minus1": "24.75",
+        "preis_netto": "25",
+        "brutto_7pct": "26.75",
+        "ek": "11.68",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-LAVC-AUTO-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "40",
+        "vk_minus1": "39.60",
+        "preis_netto": "40",
+        "brutto_7pct": "42.80",
+        "ek": "18.69",
+        "discontinued": false
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds L.A. Vanilla Cake feminisiert",
+    "product_id": 42598,
+    "parent_sku": "SIL-LAVC-FEM",
+    "kategorie": "Feminisiert",
+    "bild": true,
+    "varianten": [
+      {
+        "sku": "SIL-LAVC-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "28",
+        "vk_minus1": "27.72",
+        "preis_netto": "28",
+        "brutto_7pct": "29.96",
+        "ek": "13.08",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-LAVC-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "47",
+        "vk_minus1": "46.53",
+        "preis_netto": "47",
+        "brutto_7pct": "50.29",
+        "ek": "21.96",
+        "discontinued": false
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Lemon Sorbet feminisiert",
+    "product_id": 42600,
+    "parent_sku": "SIL-LSORB-FEM",
+    "kategorie": "Feminisiert",
+    "bild": true,
+    "varianten": [
+      {
+        "sku": "SIL-LSORB-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "27",
+        "vk_minus1": "26.73",
+        "preis_netto": "27",
+        "brutto_7pct": "28.89",
+        "ek": "12.62",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-LSORB-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "44",
+        "vk_minus1": "43.56",
+        "preis_netto": "44",
+        "brutto_7pct": "47.08",
+        "ek": "20.56",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-LSORB-FEM-10",
+        "inhalt": "10 Stück",
+        "vk_tigerone": "88",
+        "vk_minus1": "87.12",
+        "preis_netto": "87",
+        "brutto_7pct": "93.09",
+        "ek": "41.12",
+        "discontinued": true
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Lemon Tree 2.0 feminisiert",
+    "product_id": 42602,
+    "parent_sku": "SIL-LTREE2-FEM",
+    "kategorie": "Feminisiert",
+    "bild": true,
+    "varianten": [
+      {
+        "sku": "SIL-LTREE2-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "39",
+        "vk_minus1": "38.61",
+        "preis_netto": "39",
+        "brutto_7pct": "41.73",
+        "ek": "18.22",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-LTREE2-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "59",
+        "vk_minus1": "58.41",
+        "preis_netto": "58",
+        "brutto_7pct": "62.06",
+        "ek": "27.57",
+        "discontinued": false
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Lemon Tree FAST feminisiert",
+    "product_id": 42604,
+    "parent_sku": "SIL-LTREE-FAST-FEM",
+    "kategorie": "Feminisiert",
+    "bild": true,
+    "varianten": [
+      {
+        "sku": "SIL-LTREE-FAST-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "36",
+        "vk_minus1": "35.64",
+        "preis_netto": "36",
+        "brutto_7pct": "38.52",
+        "ek": "16.82",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-LTREE-FAST-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "55",
+        "vk_minus1": "54.45",
+        "preis_netto": "54",
+        "brutto_7pct": "57.78",
+        "ek": "25.7",
+        "discontinued": false
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Mac Dawg XXL Auto feminisiert",
+    "product_id": 42605,
+    "parent_sku": "SIL-MADAXXL-AUTO-FEM",
+    "kategorie": "Automatisch",
+    "bild": false,
+    "varianten": [
+      {
+        "sku": "SIL-MADAXXL-AUTO-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "28",
+        "vk_minus1": "27.72",
+        "preis_netto": "28",
+        "brutto_7pct": "29.96",
+        "ek": "13.08",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-MADAXXL-AUTO-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "45",
+        "vk_minus1": "44.55",
+        "preis_netto": "45",
+        "brutto_7pct": "48.15",
+        "ek": "21.03",
+        "discontinued": false
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Mint Candy feminisiert",
+    "product_id": 42606,
+    "parent_sku": "SIL-MICA-FEM",
+    "kategorie": "Feminisiert",
+    "bild": false,
+    "varianten": [
+      {
+        "sku": "SIL-MICA-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "39",
+        "vk_minus1": "38.61",
+        "preis_netto": "39",
+        "brutto_7pct": "41.73",
+        "ek": "18.22",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-MICA-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "59",
+        "vk_minus1": "58.41",
+        "preis_netto": "58",
+        "brutto_7pct": "62.06",
+        "ek": "27.57",
+        "discontinued": false
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Moby Dick Auto feminisiert",
+    "product_id": 42608,
+    "parent_sku": "SIL-MBD-AUTO-FEM",
+    "kategorie": "Automatisch",
+    "bild": true,
+    "varianten": [
+      {
+        "sku": "SIL-MBD-AUTO-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "25",
+        "vk_minus1": "24.75",
+        "preis_netto": "25",
+        "brutto_7pct": "26.75",
+        "ek": "11.68",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-MBD-AUTO-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "42",
+        "vk_minus1": "41.58",
+        "preis_netto": "42",
+        "brutto_7pct": "44.94",
+        "ek": "19.63",
+        "discontinued": false
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Moby Dick feminisiert",
+    "product_id": 42610,
+    "parent_sku": "SIL-MBD-FEM",
+    "kategorie": "Feminisiert",
+    "bild": true,
+    "varianten": [
+      {
+        "sku": "SIL-MBD-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "27",
+        "vk_minus1": "26.73",
+        "preis_netto": "27",
+        "brutto_7pct": "28.89",
+        "ek": "12.62",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-MBD-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "44",
+        "vk_minus1": "43.56",
+        "preis_netto": "44",
+        "brutto_7pct": "47.08",
+        "ek": "20.56",
+        "discontinued": false
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds OG Kush feminisiert",
+    "product_id": 42612,
+    "parent_sku": "SIL-OGK-FEM",
+    "kategorie": "Feminisiert",
+    "bild": true,
+    "varianten": [
+      {
+        "sku": "SIL-OGK-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "25",
+        "vk_minus1": "24.75",
+        "preis_netto": "25",
+        "brutto_7pct": "26.75",
+        "ek": "11.68",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-OGK-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "40",
+        "vk_minus1": "39.60",
+        "preis_netto": "40",
+        "brutto_7pct": "42.80",
+        "ek": "18.69",
+        "discontinued": false
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Original Amnesia feminisiert",
+    "product_id": 42614,
+    "parent_sku": "SIL-ORAMN-FEM",
+    "kategorie": "Feminisiert",
+    "bild": true,
+    "varianten": [
+      {
+        "sku": "SIL-ORAMN-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "26",
+        "vk_minus1": "25.74",
+        "preis_netto": "26",
+        "brutto_7pct": "27.82",
+        "ek": "12.15",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-ORAMN-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "43",
+        "vk_minus1": "42.57",
+        "preis_netto": "43",
+        "brutto_7pct": "46.01",
+        "ek": "20.09",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-ORAMN-FEM-10",
+        "inhalt": "10 Stück",
+        "vk_tigerone": "85",
+        "vk_minus1": "84.15",
+        "preis_netto": "84",
+        "brutto_7pct": "89.88",
+        "ek": "39.72",
+        "discontinued": true
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Peach Cake by Cookies feminisiert",
+    "product_id": 42615,
+    "parent_sku": "SIL-PECA-FEM",
+    "kategorie": "Feminisiert",
+    "bild": false,
+    "varianten": [
+      {
+        "sku": "SIL-PECA-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "39",
+        "vk_minus1": "38.61",
+        "preis_netto": "39",
+        "brutto_7pct": "41.73",
+        "ek": "18.22",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-PECA-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "59",
+        "vk_minus1": "58.41",
+        "preis_netto": "58",
+        "brutto_7pct": "62.06",
+        "ek": "27.57",
+        "discontinued": false
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Pink Sunset Auto feminisiert",
+    "product_id": 42617,
+    "parent_sku": "SIL-PSUN-AUTO-FEM",
+    "kategorie": "Automatisch",
+    "bild": true,
+    "varianten": [
+      {
+        "sku": "SIL-PSUN-AUTO-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "59",
+        "vk_minus1": "58.41",
+        "preis_netto": "58",
+        "brutto_7pct": "62.06",
+        "ek": "27.57",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-PSUN-AUTO-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "89",
+        "vk_minus1": "88.11",
+        "preis_netto": "88",
+        "brutto_7pct": "94.16",
+        "ek": "41.58",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-PSUN-AUTO-FEM-10",
+        "inhalt": "10 Stück",
+        "vk_tigerone": "159",
+        "vk_minus1": "157.41",
+        "preis_netto": "157",
+        "brutto_7pct": "167.99",
+        "ek": "74.29",
+        "discontinued": true
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Pink Sunset feminisiert",
+    "product_id": 42619,
+    "parent_sku": "SIL-PSUN-FEM",
+    "kategorie": "Feminisiert",
+    "bild": true,
+    "varianten": [
+      {
+        "sku": "SIL-PSUN-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "69",
+        "vk_minus1": "68.31",
+        "preis_netto": "68",
+        "brutto_7pct": "72.76",
+        "ek": "32.34",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-PSUN-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "99",
+        "vk_minus1": "98.01",
+        "preis_netto": "98",
+        "brutto_7pct": "104.86",
+        "ek": "46.26",
+        "discontinued": false
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Polar Gelato Auto feminisiert",
+    "product_id": 42620,
+    "parent_sku": "SIL-PGEL-AUTO-FEM",
+    "kategorie": "Automatisch",
+    "bild": true,
+    "varianten": [
+      {
+        "sku": "SIL-PGEL-AUTO-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "59",
+        "vk_minus1": "58.41",
+        "preis_netto": "58",
+        "brutto_7pct": "62.06",
+        "ek": "27.57",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-PGEL-AUTO-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "89",
+        "vk_minus1": "88.11",
+        "preis_netto": "88",
+        "brutto_7pct": "94.16",
+        "ek": "41.58",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-PGEL-AUTO-FEM-10",
+        "inhalt": "10 Stück",
+        "vk_tigerone": "159",
+        "vk_minus1": "157.41",
+        "preis_netto": "157",
+        "brutto_7pct": "167.99",
+        "ek": "74.29",
+        "discontinued": true
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Polar Gelato feminisiert",
+    "product_id": 42622,
+    "parent_sku": "SIL-PGEL-FEM",
+    "kategorie": "Feminisiert",
+    "bild": true,
+    "varianten": [
+      {
+        "sku": "SIL-PGEL-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "69",
+        "vk_minus1": "68.31",
+        "preis_netto": "68",
+        "brutto_7pct": "72.76",
+        "ek": "32.34",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-PGEL-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "99",
+        "vk_minus1": "98.01",
+        "preis_netto": "98",
+        "brutto_7pct": "104.86",
+        "ek": "46.26",
+        "discontinued": false
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Rainbow Gas feminisiert",
+    "product_id": 42623,
+    "parent_sku": "SIL-RAGA-FEM",
+    "kategorie": "Feminisiert",
+    "bild": false,
+    "varianten": [
+      {
+        "sku": "SIL-RAGA-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "39",
+        "vk_minus1": "38.61",
+        "preis_netto": "39",
+        "brutto_7pct": "41.73",
+        "ek": "18.22",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-RAGA-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "59",
+        "vk_minus1": "58.41",
+        "preis_netto": "58",
+        "brutto_7pct": "62.06",
+        "ek": "27.57",
+        "discontinued": false
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Starfire OG feminisiert",
+    "product_id": 42625,
+    "parent_sku": "SIL-STFR-FEM",
+    "kategorie": "Feminisiert",
+    "bild": true,
+    "varianten": [
+      {
+        "sku": "SIL-STFR-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "28",
+        "vk_minus1": "27.72",
+        "preis_netto": "28",
+        "brutto_7pct": "29.96",
+        "ek": "13.08",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-STFR-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "45",
+        "vk_minus1": "44.55",
+        "preis_netto": "45",
+        "brutto_7pct": "48.15",
+        "ek": "21.03",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-STFR-FEM-10",
+        "inhalt": "10 Stück",
+        "vk_tigerone": "90",
+        "vk_minus1": "89.10",
+        "preis_netto": "89",
+        "brutto_7pct": "95.23",
+        "ek": "42.06",
+        "discontinued": true
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Sugar Rock by Cookies feminisiert",
+    "product_id": 42626,
+    "parent_sku": "SIL-SURO-FEM",
+    "kategorie": "Feminisiert",
+    "bild": false,
+    "varianten": [
+      {
+        "sku": "SIL-SURO-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "39",
+        "vk_minus1": "38.61",
+        "preis_netto": "39",
+        "brutto_7pct": "41.73",
+        "ek": "18.22",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-SURO-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "59",
+        "vk_minus1": "58.41",
+        "preis_netto": "58",
+        "brutto_7pct": "62.06",
+        "ek": "27.57",
+        "discontinued": false
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Tropical Jam feminisiert",
+    "product_id": 42627,
+    "parent_sku": "SIL-TRJA-FEM",
+    "kategorie": "Feminisiert",
+    "bild": false,
+    "varianten": [
+      {
+        "sku": "SIL-TRJA-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "39",
+        "vk_minus1": "38.61",
+        "preis_netto": "39",
+        "brutto_7pct": "41.73",
+        "ek": "18.22",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-TRJA-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "59",
+        "vk_minus1": "58.41",
+        "preis_netto": "58",
+        "brutto_7pct": "62.06",
+        "ek": "27.57",
+        "discontinued": false
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Watermelon Runtz feminisiert",
+    "product_id": 42629,
+    "parent_sku": "SIL-WMR-FEM",
+    "kategorie": "Feminisiert",
+    "bild": true,
+    "varianten": [
+      {
+        "sku": "SIL-WMR-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "28",
+        "vk_minus1": "27.72",
+        "preis_netto": "28",
+        "brutto_7pct": "29.96",
+        "ek": "13.08",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-WMR-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "47",
+        "vk_minus1": "46.53",
+        "preis_netto": "47",
+        "brutto_7pct": "50.29",
+        "ek": "21.96",
+        "discontinued": false
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds White Widow feminisiert",
+    "product_id": 42631,
+    "parent_sku": "SIL-WW-FEM",
+    "kategorie": "Feminisiert",
+    "bild": true,
+    "varianten": [
+      {
+        "sku": "SIL-WW-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "25",
+        "vk_minus1": "24.75",
+        "preis_netto": "25",
+        "brutto_7pct": "26.75",
+        "ek": "11.68",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-WW-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "40",
+        "vk_minus1": "39.60",
+        "preis_netto": "40",
+        "brutto_7pct": "42.80",
+        "ek": "18.69",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-WW-FEM-10",
+        "inhalt": "10 Stück",
+        "vk_tigerone": "79",
+        "vk_minus1": "78.21",
+        "preis_netto": "78",
+        "brutto_7pct": "83.46",
+        "ek": "36.92",
+        "discontinued": true
+      }
+    ]
+  },
+  {
+    "produkt": "Silent Seeds Zkittlez 2.0 feminisiert",
+    "product_id": 42633,
+    "parent_sku": "SIL-ZK2-FEM",
+    "kategorie": "Feminisiert",
+    "bild": true,
+    "varianten": [
+      {
+        "sku": "SIL-ZK2-FEM-3",
+        "inhalt": "3 Stück",
+        "vk_tigerone": "28",
+        "vk_minus1": "27.72",
+        "preis_netto": "28",
+        "brutto_7pct": "29.96",
+        "ek": "13.08",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-ZK2-FEM-5",
+        "inhalt": "5 Stück",
+        "vk_tigerone": "45",
+        "vk_minus1": "44.55",
+        "preis_netto": "45",
+        "brutto_7pct": "48.15",
+        "ek": "21.03",
+        "discontinued": false
+      },
+      {
+        "sku": "SIL-ZK2-FEM-10",
+        "inhalt": "10 Stück",
+        "vk_tigerone": "90",
+        "vk_minus1": "89.10",
+        "preis_netto": "89",
+        "brutto_7pct": "95.23",
+        "ek": "42.06",
+        "discontinued": true
+      }
+    ]
+  }
+]

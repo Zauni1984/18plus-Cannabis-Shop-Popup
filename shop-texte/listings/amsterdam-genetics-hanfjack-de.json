@@ -1,0 +1,1419 @@
+{
+  "marke": "Amsterdam Genetics",
+  "shop": "hanfjack.de",
+  "pwb_brand_term_id": 9070,
+  "quelle": "Tiger One Katalog (Google-Sheet-Export)",
+  "stand": "2026-09-10",
+  "status_aller_produkte": "draft",
+  "anzahl_produkte": 36,
+  "anzahl_varianten": 87,
+  "preisregel": "regular_price = abrunden(VK_TigerOne x 0,99) auf ganze Euro, Eingabe NETTO (Shop rechnet +7% MwSt.)",
+  "stammdaten": {
+    "tax_status": "taxable",
+    "tax_class": "reduzierter-preis",
+    "shipping_class": "paket-standard",
+    "delivery_time_id": 5417,
+    "attribut": "pa_inhalt (ID 2, global, variantenbildend)",
+    "weight": "0.01",
+    "manage_stock": false,
+    "stock_status": "onbackorder",
+    "backorders": "no"
+  },
+  "packungsgroessen": {
+    "3 Stück": 29,
+    "5 Stück": 32,
+    "10 Stück": 26
+  },
+  "hinweise": [
+    "Der pwb-brand-Term 'Amsterdam Genetics' (9070) existierte bereits im Shop und wurde allen 36 Produkten zugewiesen.",
+    "ACHTUNG Auslaufartikel: 26 der 36 Sorten sind bei Tiger One komplett als Auslaufartikel markiert, bei 6 weiteren Sorten nur die 10er-Packung. Nur 4 Sorten sind vollstaendig aktiv (AK-020 Auto, Blue Amnesia Auto, Compromise CBD Version 1, Lemon Ice). Vor der Veroeffentlichung entscheiden, welche Auslaufsorten ueberhaupt online gehen sollen.",
+    "Varianten-SKUs wurden aus dem Tiger-One-Export uebernommen (Suffix -3/-5/-10). 2 Regular-Artikel kamen ohne parent_sku; dort ist die Eltern-SKU die Lieferanten-Artikelnummer und die Varianten-SKU Artikelnummer + '-10' (AMG-AMHAZ-REG-10-10, AMG-CRMASS-REG-10-10). Alle 123 SKUs sind eindeutig.",
+    "3 CBD-Sorten zusaetzlich in Kategorie CBD Samen (2309): Blue Monkey CBD, Compromise CBD Version 1, Compromise CBD Version 2.",
+    "Alle 36 Sorten haben ein Produktbild im Export - keine Nachpflege noetig.",
+    "Namenskorrekturen gegenueber dem Export: 'AK - 020' wurde zu 'AK-020' normalisiert (so schreibt Amsterdam Genetics die Auto-Version selbst); bei den beiden Compromise-CBD-Artikeln stand '(version 1)' bzw. '(Version 2)' hinter 'Feminised Seeds', sodass die automatische Namensbildung nicht greifen konnte - sie heissen jetzt 'Compromise CBD (Version 1)' bzw. '(Version 2)'.",
+    "Keine fehlenden Preise.",
+    "Produkttexte, Tags und SEO wurden bewusst noch nicht gesetzt.",
+    "Lagerstatus steht auf 'onbackorder' bis die Verfuegbarkeitsliste vorliegt."
+  ],
+  "dubletten_warnung": {
+    "hinweis": "Ein bestehendes Amsterdam-Genetics-Produkt im Shop traegt eine HJ-SKU und wurde laut Vorgabe nicht angefasst. Es ist eine inhaltliche Dublette zur 3er-Variante von AMG-MILK-AUTO-FEM (ID 44826) und muss vor der Veroeffentlichung entschieden werden.",
+    "produkte": [
+      {
+        "id": 28686,
+        "sku": "HJ-1412865",
+        "name": "Amsterdam Genetics Milkshake Kush Auto 3er Pack",
+        "status": "publish",
+        "lager": "instock 3",
+        "preis": "17.29 EUR regular / 12.50 EUR Aktion",
+        "neues_pendant": "AMG-MILK-AUTO-FEM-3 (ID 44826, 19 EUR netto)"
+      }
+    ]
+  },
+  "produkte": [
+    {
+      "produkt_id": 44774,
+      "name": "Amsterdam Genetics AK-020 feminisiert",
+      "sku_eltern": "AMG-AK020-Fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149195_991026_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "AMG-AK020-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.26",
+          "preis_netto": "19",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "AMG-AK020-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "12.4",
+          "preis_netto": "29",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "AMG-AK020-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "55",
+          "ek_tigerone": "22.73",
+          "preis_netto": "54",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44776,
+      "name": "Amsterdam Genetics AK Choco Kush feminisiert",
+      "sku_eltern": "AMG-AKCHKU-Fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149199_991046_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "AMG-AKCHKU-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "12.4",
+          "preis_netto": "29",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "AMG-AKCHKU-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto": "44",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "AMG-AKCHKU-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "80",
+          "ek_tigerone": "33.06",
+          "preis_netto": "79",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44778,
+      "name": "Amsterdam Genetics AK OG Kush feminisiert",
+      "sku_eltern": "AMG-AKOGKU-Fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149192_991011_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "AMG-AKOGKU-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "12.4",
+          "preis_netto": "29",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "AMG-AKOGKU-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto": "44",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "AMG-AKOGKU-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "80",
+          "ek_tigerone": "33.06",
+          "preis_netto": "79",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44780,
+      "name": "Amsterdam Genetics AK-020 Auto feminisiert",
+      "sku_eltern": "AMG-AK020-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150083_995485_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "AMG-AK020-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.26",
+          "preis_netto": "19",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "AMG-AK020-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "12.4",
+          "preis_netto": "29",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44782,
+      "name": "Amsterdam Genetics Amazing Haze feminisiert",
+      "sku_eltern": "AMG-AMHAZ-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149735_993735_pimcore.png",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "AMG-AMHAZ-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "25",
+          "ek_tigerone": "10.33",
+          "preis_netto": "24",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "AMG-AMHAZ-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "36.5",
+          "ek_tigerone": "15.08",
+          "preis_netto": "36",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "AMG-AMHAZ-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "62.5",
+          "ek_tigerone": "25.83",
+          "preis_netto": "61",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44784,
+      "name": "Amsterdam Genetics Amnesia Haze regulär",
+      "sku_eltern": "AMG-AMHAZ-REG-10",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/d/7/d753f2c44c6f12af18ced6ebf242bacedfbe4bf690baf0b31db234298b78f7a9.jpeg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "AMG-AMHAZ-REG-10-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "80",
+          "ek_tigerone": "33.06",
+          "preis_netto": "79",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44786,
+      "name": "Amsterdam Genetics Blue Amnesia Auto feminisiert",
+      "sku_eltern": "AMG-BLUAMN-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149738_993750_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "AMG-BLUAMN-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.26",
+          "preis_netto": "19",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "AMG-BLUAMN-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "12.4",
+          "preis_netto": "29",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44788,
+      "name": "Amsterdam Genetics Blue Magic feminisiert",
+      "sku_eltern": "AMG-BLUMAG-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149737_993745_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "AMG-BLUMAG-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "25",
+          "ek_tigerone": "10.33",
+          "preis_netto": "24",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-BLUMAG-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "36.5",
+          "ek_tigerone": "15.08",
+          "preis_netto": "36",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44790,
+      "name": "Amsterdam Genetics Blue Monkey CBD feminisiert",
+      "sku_eltern": "AMG-BLMONK-CBD-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548,
+        2309
+      ],
+      "kategorien_namen": [
+        "Feminisiert",
+        "CBD Samen"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150081_995475_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "AMG-BLMONK-CBD-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.26",
+          "preis_netto": "19",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "AMG-BLMONK-CBD-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "12.4",
+          "preis_netto": "29",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "AMG-BLMONK-CBD-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "55",
+          "ek_tigerone": "22.73",
+          "preis_netto": "54",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44792,
+      "name": "Amsterdam Genetics Choco Cheesecake feminisiert",
+      "sku_eltern": "AMG-CHOCCHEES-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150198_996063_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "AMG-CHOCCHEES-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.26",
+          "preis_netto": "19",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-CHOCCHEES-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "12.4",
+          "preis_netto": "29",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44794,
+      "name": "Amsterdam Genetics Choco Kush Auto feminisiert",
+      "sku_eltern": "AMG-CHKU-AUTO-Fem",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149200_991051_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "AMG-CHKU-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "25",
+          "ek_tigerone": "10.33",
+          "preis_netto": "24",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-CHKU-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "36.5",
+          "ek_tigerone": "15.08",
+          "preis_netto": "36",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-CHKU-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "62.5",
+          "ek_tigerone": "25.83",
+          "preis_netto": "61",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44796,
+      "name": "Amsterdam Genetics Chocolato feminisiert",
+      "sku_eltern": "AMG-CHLATO-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150078_995460_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "AMG-CHLATO-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "12.4",
+          "preis_netto": "29",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-CHLATO-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto": "44",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-CHLATO-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "80",
+          "ek_tigerone": "33.06",
+          "preis_netto": "79",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44798,
+      "name": "Amsterdam Genetics Chunky Cookies feminisiert",
+      "sku_eltern": "AMG-CHUNKYC-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150069_995415_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "AMG-CHUNKYC-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "25",
+          "ek_tigerone": "10.33",
+          "preis_netto": "24",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-CHUNKYC-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "36.5",
+          "ek_tigerone": "15.08",
+          "preis_netto": "36",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-CHUNKYC-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "62.5",
+          "ek_tigerone": "25.83",
+          "preis_netto": "61",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44800,
+      "name": "Amsterdam Genetics Compromise CBD (Version 1) feminisiert",
+      "sku_eltern": "AMG-COMPR-CBD-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548,
+        2309
+      ],
+      "kategorien_namen": [
+        "Feminisiert",
+        "CBD Samen"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150082_995480_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "AMG-COMPR-CBD-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "25",
+          "ek_tigerone": "10.33",
+          "preis_netto": "24",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "AMG-COMPR-CBD-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "40",
+          "ek_tigerone": "16.53",
+          "preis_netto": "39",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44802,
+      "name": "Amsterdam Genetics Compromise CBD (Version 2) feminisiert",
+      "sku_eltern": "AMG-COMPR2-CBD-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548,
+        2309
+      ],
+      "kategorien_namen": [
+        "Feminisiert",
+        "CBD Samen"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150139_995768_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "AMG-COMPR2-CBD-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "25",
+          "ek_tigerone": "10.33",
+          "preis_netto": "24",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-COMPR2-CBD-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "40",
+          "ek_tigerone": "16.53",
+          "preis_netto": "39",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44804,
+      "name": "Amsterdam Genetics Critical Mass regulär",
+      "sku_eltern": "AMG-CRMASS-REG-10",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/c/9/c930ea1b0bb82ac8b49090b5165975ecbca4724158614207d0c2770d6a1d9ccb.jpeg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "AMG-CRMASS-REG-10-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto": "44",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44806,
+      "name": "Amsterdam Genetics Double Blue feminisiert",
+      "sku_eltern": "AMG-DBLU-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150080_995470_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "AMG-DBLU-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "25",
+          "ek_tigerone": "10.33",
+          "preis_netto": "24",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-DBLU-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "36.5",
+          "ek_tigerone": "15.08",
+          "preis_netto": "36",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-DBLU-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "62.5",
+          "ek_tigerone": "25.83",
+          "preis_netto": "61",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44808,
+      "name": "Amsterdam Genetics Dutch Duchess feminisiert",
+      "sku_eltern": "AMG-DUDU-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150070_995420_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "AMG-DUDU-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto": "44",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-DUDU-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "80",
+          "ek_tigerone": "33.06",
+          "preis_netto": "79",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44810,
+      "name": "Amsterdam Genetics Fatkid's Cake feminisiert",
+      "sku_eltern": "AMG-FKC-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150075_995445_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "AMG-FKC-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "12.4",
+          "preis_netto": "29",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-FKC-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto": "44",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44812,
+      "name": "Amsterdam Genetics Grapefruit Superstar feminisiert",
+      "sku_eltern": "AMG-GRFRSS-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150077_995455_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "AMG-GRFRSS-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "25",
+          "ek_tigerone": "10.33",
+          "preis_netto": "24",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-GRFRSS-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "36.5",
+          "ek_tigerone": "15.08",
+          "preis_netto": "36",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-GRFRSS-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "62.5",
+          "ek_tigerone": "25.83",
+          "preis_netto": "61",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44814,
+      "name": "Amsterdam Genetics Green Magic feminisiert",
+      "sku_eltern": "AMG-GRMAG-Fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149197_991036_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "AMG-GRMAG-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "25",
+          "ek_tigerone": "10.33",
+          "preis_netto": "24",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-GRMAG-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "36.5",
+          "ek_tigerone": "15.08",
+          "preis_netto": "36",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44816,
+      "name": "Amsterdam Genetics Kosher Choco Kush feminisiert",
+      "sku_eltern": "AMG-KOCHKU-Fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149196_991031_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "AMG-KOCHKU-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "12.4",
+          "preis_netto": "29",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-KOCHKU-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto": "44",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-KOCHKU-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "80",
+          "ek_tigerone": "33.06",
+          "preis_netto": "79",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44818,
+      "name": "Amsterdam Genetics Kosher Tangie Kush feminisiert",
+      "sku_eltern": "AMG-KOTANKU-Fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149193_991016_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "AMG-KOTANKU-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "62.5",
+          "ek_tigerone": "25.83",
+          "preis_netto": "61",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44820,
+      "name": "Amsterdam Genetics Lemon Ice feminisiert",
+      "sku_eltern": "AMG-LEMICE-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149739_993755_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "AMG-LEMICE-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.26",
+          "preis_netto": "19",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "AMG-LEMICE-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "12.4",
+          "preis_netto": "29",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44822,
+      "name": "Amsterdam Genetics Lemongrass feminisiert",
+      "sku_eltern": "AMG-LEMGR-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150071_995425_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "AMG-LEMGR-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "25",
+          "ek_tigerone": "10.33",
+          "preis_netto": "24",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-LEMGR-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "36.5",
+          "ek_tigerone": "15.08",
+          "preis_netto": "36",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-LEMGR-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "62.5",
+          "ek_tigerone": "25.83",
+          "preis_netto": "61",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44824,
+      "name": "Amsterdam Genetics Magic OG Kush feminisiert",
+      "sku_eltern": "AMG-MAGOGK-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150072_995430_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "AMG-MAGOGK-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.26",
+          "preis_netto": "19",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-MAGOGK-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "12.4",
+          "preis_netto": "29",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44826,
+      "name": "Amsterdam Genetics Milkshake Kush Auto feminisiert",
+      "sku_eltern": "AMG-MILK-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149736_993740_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "AMG-MILK-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.26",
+          "preis_netto": "19",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "AMG-MILK-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "12.4",
+          "preis_netto": "29",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "AMG-MILK-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "55",
+          "ek_tigerone": "22.73",
+          "preis_netto": "54",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44828,
+      "name": "Amsterdam Genetics Quicksilver feminisiert",
+      "sku_eltern": "AMG-QUICKS-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150074_995440_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "AMG-QUICKS-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.26",
+          "preis_netto": "19",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-QUICKS-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "12.4",
+          "preis_netto": "29",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-QUICKS-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "55",
+          "ek_tigerone": "22.73",
+          "preis_netto": "54",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44830,
+      "name": "Amsterdam Genetics Sketch feminisiert",
+      "sku_eltern": "AMG-SKETCH-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150079_995465_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "AMG-SKETCH-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.26",
+          "preis_netto": "19",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-SKETCH-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "12.4",
+          "preis_netto": "29",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-SKETCH-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "55",
+          "ek_tigerone": "22.73",
+          "preis_netto": "54",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44832,
+      "name": "Amsterdam Genetics Skyrocket feminisiert",
+      "sku_eltern": "AMG-SKYR-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150073_995435_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "AMG-SKYR-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "12.4",
+          "preis_netto": "29",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-SKYR-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto": "44",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-SKYR-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "80",
+          "ek_tigerone": "33.06",
+          "preis_netto": "79",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44834,
+      "name": "Amsterdam Genetics Skywalker Saga feminisiert",
+      "sku_eltern": "AMG-SKYWS-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150076_995450_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "AMG-SKYWS-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "12.4",
+          "preis_netto": "29",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-SKYWS-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto": "44",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-SKYWS-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "80",
+          "ek_tigerone": "33.06",
+          "preis_netto": "79",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44836,
+      "name": "Amsterdam Genetics Strawberry Glue feminisiert",
+      "sku_eltern": "AMG-STRGL-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149734_993730_pimcore.png",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "AMG-STRGL-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "25",
+          "ek_tigerone": "10.33",
+          "preis_netto": "24",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-STRGL-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "36.5",
+          "ek_tigerone": "15.08",
+          "preis_netto": "36",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-STRGL-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "62.5",
+          "ek_tigerone": "25.83",
+          "preis_netto": "61",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44838,
+      "name": "Amsterdam Genetics Super Silver Haze feminisiert",
+      "sku_eltern": "AMG-SSH-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149740_993760_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "AMG-SSH-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.26",
+          "preis_netto": "19",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-SSH-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "12.4",
+          "preis_netto": "29",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44840,
+      "name": "Amsterdam Genetics Tangerine G13 feminisiert",
+      "sku_eltern": "AMG-TANG13-Fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149198_991041_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "AMG-TANG13-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "80",
+          "ek_tigerone": "33.06",
+          "preis_netto": "79",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44842,
+      "name": "Amsterdam Genetics White Choco feminisiert",
+      "sku_eltern": "AMG-WHCH-Fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149190_991001_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "AMG-WHCH-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "12.4",
+          "preis_netto": "29",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-WHCH-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto": "44",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-WHCH-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "80",
+          "ek_tigerone": "33.06",
+          "preis_netto": "79",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44844,
+      "name": "Amsterdam Genetics White Choco Haze feminisiert",
+      "sku_eltern": "AMG-WHCHHA-Fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149191_991006_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "AMG-WHCHHA-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "12.4",
+          "preis_netto": "29",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "AMG-WHCHHA-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto": "44",
+          "auslaufartikel": true
+        }
+      ]
+    }
+  ]
+}
