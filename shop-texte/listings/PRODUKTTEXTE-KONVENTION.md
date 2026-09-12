@@ -122,6 +122,7 @@ Couch-lock→Couch-Lock · Psychedelic→Psychedelisch
 | Ripper Seeds | 26 | fertig (2026-09-11) |
 | Purple City Genetics | 5 | fertig (2026-09-11) |
 | Pyramid Seeds | 71 | fertig (2026-09-11) |
+| Nirvana Seeds | 67 | fertig (2026-09-12) |
 
 Bei Seedsman wurde zusätzlich ein unsauberer Produktname korrigiert:
 ID 43483 → „Seedsman Relax Collection feminisiert (3 × 1 Samen)".
@@ -590,3 +591,45 @@ Domains pyramidseeds.net und .es sind über den Egress-Proxy nicht erreichbar.
   Cookies USA Auto), Pinen an erster Stelle (Romulan).
 - **Alle 71 in 4 und 7 Samen**, gepackt als 3+1 bzw. 5+2 – das steht in jedem
   Hinweisblock.
+
+## Nirvana-Seeds-Besonderheiten
+
+Nirvana ist die erste Marke, bei der die Züchterdaten nicht aus dem
+Tiger-One-Export kommen, sondern aus drei Quellen mit klarer Rangfolge. Welche
+Quelle ein Produkt nutzt, steht im Text selbst:
+
+1. **Aktueller Nirvana-Webshop** (nirvanashop.com) – 54 der 67 Produkte. Die
+   Datenblätter sind ausführlich: Kreuzung, THC, Blüte, Ertrag indoor/outdoor,
+   Höhe, Resistenz, Schwierigkeitsgrad, Aroma und Wirkung.
+2. **Archivierte Nirvana-Datenblätter** (SeedFinder-Sortenseiten für
+   `nirvana-seeds`) – 10 Linien, die der Züchter nicht mehr selbst listet:
+   Blackberry, GG-48, GG-48 Auto, Hawaii Maui Waui Auto, Ice (fem + reg), K2,
+   Short Rider Auto, Somango XXL Auto, Top 44, White Rhino. Jeder dieser Texte
+   sagt im ersten Absatz, dass die Angaben aus dem archivierten Datenblatt
+   stammen, und bleibt auf das beschränkt, was dort steht (teils ohne THC-Wert,
+   ohne Außenertrag oder nur mit Züchterkategorien wie „kurz“ oder „mittel“).
+3. **Keine Züchterdaten** – 7 Artikel. Vier Autoflower-Versionen ohne eigenes
+   Datenblatt (Top 44 Auto, Skunk #1 Auto, Orange Bud Auto, Raspberry Cough
+   Auto) führen Aroma und Wirkung der photoperiodischen Linie und sagen das
+   ausdrücklich; drei Artikel ohne dokumentierte Linie (Amnesia feminisiert,
+   Amnesia Auto, Blueberry regulär) nennen nur den Samentyp.
+
+Weitere Festlegungen:
+
+- **Züchterkategorien statt Zahlen** werden als solche gekennzeichnet:
+  `THC: hoch (Kategorie, ohne Zahlenwert)`, `Wuchshöhe: kurz (Züchterkategorie)`,
+  `Ertrag indoor: mittel bis hoch (Züchterkategorie)`.
+- **Zwei Packungsgrößen**: feminisiert und autoflowering als 5er, regulär als
+  10er. Der Hinweis-Absatz nennt die Packung.
+- **Reguläre Linien** bekommen den Tag `Zuchtsamen` und einen Hinweis zur
+  Zuchtnutzung (Männchen separieren, Mutterpflanzen, Pollenlagerung).
+- **Cup-Angaben** nur, wenn der Züchter sie selbst nennt: Ice trägt
+  `Cup-Gewinner` (Nirvana schreibt den Sieg beim Cannabis Cup 1998 im eigenen
+  Datenblatt). White Widow bekommt den Tag nicht, weil Nirvana dazu nichts
+  veröffentlicht.
+- **Tag-Auffüllung**: Wo Marke, Sorte, Samentyp und Klasse weniger als sechs
+  Tags ergeben (Linien ohne THC-Wert), werden Elternsorten aus der
+  Genetik-Angabe ergänzt. Einzige Ausnahme mit fünf Tags: Amnesia feminisiert –
+  dort gibt es keine belegte Elternsorte.
+- **Nirvana nennt für Autos `Gesamtzyklus` ab Aussaat**, nicht Blütezeit; das
+  Attribut `Blütezeit (Tage)` (21) bleibt bei Autos deshalb leer.
