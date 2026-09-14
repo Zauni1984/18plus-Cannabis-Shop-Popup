@@ -633,3 +633,61 @@ Weitere Festlegungen:
   dort gibt es keine belegte Elternsorte.
 - **Nirvana nennt für Autos `Gesamtzyklus` ab Aussaat**, nicht Blütezeit; das
   Attribut `Blütezeit (Tage)` (21) bleibt bei Autos deshalb leer.
+
+## Hardware-Variante (Vaporizer, Zubehör, Non-Seeds)
+
+Für alles, was kein Saatgut ist – Vaporizer, Ersatzteile, Glas, Zubehör –
+gilt derselbe Fast-Buds-Stil, aber mit angepasstem Gerüst:
+
+```html
+<p>Absatz 1: Was das Gerät ist, für wen, Einordnung in die Serie.</p>
+<p>Absatz 2: Funktionsprinzip, Bedienung, was den Unterschied macht.</p>
+<h3>Auf einen Blick:</h3>
+<ul>
+<li><b>Typ:</b> …</li>
+<li><b>Material:</b> …</li>
+<li><b>Maße / Gewicht:</b> …</li>
+<li><b>Akku:</b> …</li>            <!-- nur bei Geräten mit Akku -->
+<li><b>Temperatur:</b> …</li>      <!-- nur wenn der Hersteller sie nennt -->
+<li><b>Passend für:</b> …</li>     <!-- bei Zubehör immer -->
+</ul>
+<h3>Pflege und Handhabung</h3>     <!-- optional, wo Reinigung/Umgang relevant ist -->
+<h3>Hinweise</h3>
+```
+
+Unterschiede zum Saatgut-Gerüst:
+
+- **Kein Rechtshinweis.** Der Sammlerstück-/Keimungs-Absatz gehört nur zu Samen.
+- **Kein Aroma-/Wirkung-Block**, stattdessen optional „Pflege und Handhabung".
+- „Auf einen Blick" enthält nur Herstellerangaben. Fehlt ein Wert, steht das
+  unter „Hinweise" namentlich, nie als geschätzte Zahl (z. B. DAB Pen Mini:
+  „Zu Akkukapazität, Temperaturstufen und Maßen macht Norddampf keine Angaben –
+  wir erfinden dazu keine Werte.").
+- Yoast: `seo_title` = `<Produktname> kaufen | Hanfjack` (bzw. gekürzt, wenn der
+  Name zu lang wird), `focus_keyword` = der Produktname. CTA bleibt wie gehabt
+  nur in `meta_description`.
+
+## Grok-Texte erkennen und ersetzen
+
+Ältere Produkttexte im Shop stammen aus einem KI-Copy-Paste und tragen die
+Signatur ` dir="auto"` (auch `dir="ltr"` / `dir="rtl"`) in `<p>`- und
+`<ul>`-Tags – in Beschreibung **und** Kurzbeschreibung. Sie werden nicht
+repariert, sondern komplett durch den Hausstil ersetzt.
+
+Auffinden ohne API-Kosten über die öffentliche Store-API:
+
+```
+https://hanfjack.de/wp-json/wc/store/v1/products?per_page=100&page=N
+```
+
+liefert `description` und `short_description` im Klartext (nur veröffentlichte,
+sichtbare Produkte – private und Entwürfe müssen separat geprüft werden).
+Stand 2026-09-14: **864 betroffene Produkte** im öffentlichen Katalog.
+
+| Marke / Bereich | Produkte | Status |
+| --- | --- | --- |
+| Norddampf (Vapes & Zubehör) | 18 | fertig (2026-09-14) |
+
+Fakten für die Norddampf-Texte kommen von norddampf.com (abgerufen 2026-09-14),
+nicht aus den alten Shop-Texten – die alten Angaben waren teils falsch
+(Relict-Akku stand mit 2300 mAh in der Meta-Description, Hersteller nennt 2600 mAh).
