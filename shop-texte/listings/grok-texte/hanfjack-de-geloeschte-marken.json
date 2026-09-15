@@ -22,7 +22,8 @@
    "_yoast_wpseo_twitter-image": "",
    "_yoast_wpseo_twitter-image-id": ""
   },
-  "produkte": {}
+  "produkte": {},
+  "grund": "kein Produkt in irgendeinem Status"
  },
  {
   "id": 14125,
@@ -47,7 +48,8 @@
    "_yoast_wpseo_twitter-image": "",
    "_yoast_wpseo_twitter-image-id": ""
   },
-  "produkte": {}
+  "produkte": {},
+  "grund": "kein Produkt in irgendeinem Status"
  },
  {
   "id": 16440,
@@ -72,7 +74,8 @@
    "_yoast_wpseo_twitter-image": "",
    "_yoast_wpseo_twitter-image-id": ""
   },
-  "produkte": {}
+  "produkte": {},
+  "grund": "kein Produkt in irgendeinem Status"
  },
  {
   "id": 16444,
@@ -97,7 +100,8 @@
    "_yoast_wpseo_twitter-image": "",
    "_yoast_wpseo_twitter-image-id": ""
   },
-  "produkte": {}
+  "produkte": {},
+  "grund": "kein Produkt in irgendeinem Status"
  },
  {
   "id": 1884,
@@ -122,7 +126,8 @@
    "_yoast_wpseo_twitter-image": "",
    "_yoast_wpseo_twitter-image-id": ""
   },
-  "produkte": {}
+  "produkte": {},
+  "grund": "kein Produkt in irgendeinem Status"
  },
  {
   "id": 7560,
@@ -147,7 +152,8 @@
    "_yoast_wpseo_twitter-image": "",
    "_yoast_wpseo_twitter-image-id": ""
   },
-  "produkte": {}
+  "produkte": {},
+  "grund": "kein Produkt in irgendeinem Status"
  },
  {
   "id": 16445,
@@ -172,6 +178,33 @@
    "_yoast_wpseo_twitter-image": "",
    "_yoast_wpseo_twitter-image-id": ""
   },
-  "produkte": {}
+  "produkte": {},
+  "grund": "kein Produkt in irgendeinem Status"
+ },
+ {
+  "id": 16340,
+  "name": "Hy-Pro Fertilizers",
+  "slug": "hy-pro-fertilizers",
+  "description": "Hy-Pro Fertilizers ist ein niederländischer Hersteller von Düngern und Substraten.\n\nIm Shop steht Hy-Pro Terra als 20-Liter-Erde. Die Marke führt daneben Flüssigdünger je Substrat.",
+  "meta": {
+   "_yoast_wpseo_title": "Hy-Pro Terra Erde kaufen | Hanfjack",
+   "_yoast_wpseo_metadesc": "Hy-Pro Fertilizers: Terra-Erde im 20-Liter-Sack aus dem niederländischen Programm. Jetzt bei Hanfjack.",
+   "_yoast_wpseo_focuskw": "Hy-Pro",
+   "_yoast_wpseo_canonical": "",
+   "_yoast_wpseo_bctitle": "",
+   "_yoast_wpseo_meta-robots-noindex": "default",
+   "_yoast_wpseo_is_cornerstone": "0",
+   "_yoast_wpseo_opengraph-title": "",
+   "_yoast_wpseo_opengraph-description": "",
+   "_yoast_wpseo_opengraph-image": "",
+   "_yoast_wpseo_opengraph-image-id": "",
+   "_yoast_wpseo_twitter-title": "",
+   "_yoast_wpseo_twitter-description": "",
+   "_yoast_wpseo_twitter-image": "",
+   "_yoast_wpseo_twitter-image-id": ""
+  },
+  "grund": "Dublette zu HY-PRO (2169) – Produkt umgehaengt, Term zusammengefuehrt",
+  "produkte": {},
+  "count": 0
  }
 ]

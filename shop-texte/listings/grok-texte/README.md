@@ -1,14 +1,14 @@
 # Grok-Texte ersetzen – 847 Produkte und alle Marken auf hanfjack.de
 
-Stand: 15.09.2026 · **847 Produkte** vollständig neu getextet (Beschreibung, Kurzbeschreibung, Yoast-Titel, Meta-Description, Focus-Keyword) und **auf hanfjack.de eingespielt**. Dazu **alle Marken** der Taxonomie `pwb-brand` neu beschrieben und deren Yoast-Felder erneuert; aus 241 Marken sind nach dem Aufräumen **234** geworden.
+Stand: 15.09.2026 · **847 Produkte** vollständig neu getextet (Beschreibung, Kurzbeschreibung, Yoast-Titel, Meta-Description, Focus-Keyword) und **auf hanfjack.de eingespielt**. Dazu **alle Marken** der Taxonomie `pwb-brand` neu beschrieben und deren Yoast-Felder erneuert; aus 241 Marken sind nach dem Aufräumen **233** geworden.
 
 Die Texte liegen in diesem Ordner:
 
 - `hanfjack-de-847-produkttexte.json` – Volltexte als HTML, Schlüssel ist die WooCommerce-Produkt-ID (Upload-Quelle)
 - `hanfjack-de-847-produkttexte.csv` – dieselben Daten als Tabelle zur Durchsicht
-- `hanfjack-de-markentexte.json` – die 234 Markenbeschreibungen samt Yoast-Feldern
+- `hanfjack-de-markentexte.json` – die 233 Markenbeschreibungen samt Yoast-Feldern
 - `hanfjack-de-markentexte.csv` – dieselben Markendaten als Tabelle
-- `hanfjack-de-geloeschte-marken.json` – Sicherung der 7 gelöschten Marken-Terms
+- `hanfjack-de-geloeschte-marken.json` – Sicherung der 8 entfernten Marken-Terms
 
 ## Upload
 
@@ -31,7 +31,7 @@ plus REST-Abgleich aller 847):
 Fünf Produkte (510, 1878, 1879, 22211, 22243) unterscheiden sich im Zeichenvergleich nur durch
 WordPress' automatische Typografie (`"` → `"`, `'` → `'`). Das ist gewollt und inhaltlich identisch.
 
-## Markenbeschreibungen (241 → 234 Marken)
+## Markenbeschreibungen (241 → 233 Marken)
 
 Der Grok-Marker steckte nicht nur in Produkttexten, sondern auch in der Taxonomie `pwb-brand`:
 101 der 241 Marken trugen `dir="auto"` in ihrer Beschreibung. Diese Texte erscheinen im Tab
@@ -40,11 +40,12 @@ etwa auf 178 Produktseiten, bei Barneys Farm auf 124.
 
 Am 15.09.2026 abgearbeitet:
 
-- **234 Marken** haben eine neue, zweiabsätzige Beschreibung sowie neuen Yoast-Titel, neue
+- **233 Marken** haben eine neue, zweiabsätzige Beschreibung sowie neuen Yoast-Titel, neue
   Meta-Description und ein neues Focus-Keyword. Keine Marke ist mehr ohne Text.
 - Das **zweite Beschreibungsfeld** (`pwb_long_brand_desc`, Perfect WooCommerce Brands) wurde auf
   allen 102 betroffenen Marken geleert. Im Tab „Marke“ steht jetzt genau ein Textblock.
 - **7 Marken ohne jedes Produkt** wurden gelöscht (siehe unten).
+- Die Dublette **HY-PRO / Hy-Pro Fertilizers** wurde zusammengeführt.
 
 24 Marken zeigten in der Taxonomie den Zähler 0. Ein Abgleich über alle Produktstatus hat
 gezeigt, dass davon **17 weiterhin private Produkte oder Entwürfe** tragen – die bleiben stehen
@@ -69,18 +70,18 @@ Ordner, die gelöschten Terms als `hanfjack-de-geloeschte-marken.json`.
 - Beschreibung und Yoast-Felder liefen über `POST /wp/v2/pwb-brand/<id>` mit einem
   WordPress-Anwendungspasswort; der WooCommerce-Schlüssel reicht dafür nicht.
 
-### Kontrolle nach dem Upload (alle 234 Marken über die REST-API gegengelesen)
+### Kontrolle nach dem Upload (alle 233 Marken über die REST-API gegengelesen)
 
 | Prüfung | Ergebnis |
 | --- | --- |
 | `dir="auto"` in Markenbeschreibungen | 0 |
 | HTML in Markenbeschreibungen | 0 |
 | CTA im Beschreibungstext (gehört nur in Titel/Meta) | 0 |
-| Absatztrennung durch Leerzeile vorhanden | 234 von 234 |
-| Yoast-Titel ≤ 75 Zeichen | 234 von 234 |
-| Meta-Description 100–160 Zeichen | 234 von 234 |
+| Absatztrennung durch Leerzeile vorhanden | 233 von 233 |
+| Yoast-Titel ≤ 75 Zeichen | 233 von 233 |
+| Meta-Description 100–160 Zeichen | 233 von 233 |
 | Marken ohne Beschreibung | 0 |
-| Focus-Keyword gesetzt und in Titel und Text enthalten | 234 von 234 |
+| Focus-Keyword gesetzt und in Titel und Text enthalten | 233 von 233 |
 | Zweiter Textblock im Tab „Marke“ (Vollscan über 217 Produktseiten) | 0 |
 | `pwb_long_brand_desc` bei den 17 Marken ohne öffentliche Produkte | leer |
 
@@ -97,8 +98,11 @@ ein einziges Produkt und wurden gelöscht:
 Clipper (7649), exotic-seeds (14125), Ferna Trade (16440), Hermann Meyer KG (16444),
 hortiOne (1884), In House Genetics (7560), Terra Exotica (16445).
 
-ID, Name, Slug und Meta dieser Terms liegen vor dem Löschen gesichert in
-`hanfjack-de-geloeschte-marken.json`. Produkte, Medien und Kategorien wurden nicht angefasst.
+Dazu kommt Hy-Pro Fertilizers (16340) als zusammengeführte Dublette – siehe unten.
+
+ID, Name, Slug und Meta aller acht Terms liegen vor dem Löschen gesichert in
+`hanfjack-de-geloeschte-marken.json`. Produkte, Medien und Kategorien wurden nicht angefasst;
+die einzige Produktänderung ist die Markenzuordnung von „Hy-Pro Terra 20 Liter".
 
 ### Marken mit privaten Produkten – behalten und neu betextet
 
@@ -114,7 +118,7 @@ oder Entwürfe. Sie sind erhalten geblieben und haben neue Beschreibungen und Yo
 | Preferred Gardens | 9 |
 | French Connection | 8 |
 | Medina Mood | 6 |
-| HY-PRO | 5 |
+| Hy-Pro Fertilizers (vormals HY-PRO) | 5 |
 | Jumi | 5 |
 | Biodor | 3 |
 | Grounded Genetics | 3 |
@@ -125,8 +129,33 @@ oder Entwürfe. Sie sind erhalten geblieben und haben neue Beschreibungen und Yo
 | Rhino | 1 |
 | Hydro Garden | 1 (Entwurf) |
 
-**Offener Befund:** HY-PRO (2169) und Hy-Pro Fertilizers (16340) sind dieselbe Marke und liegen
-doppelt in der Taxonomie. Zusammenführen wäre sinnvoll, wurde hier aber nicht angefasst.
+### Zusammengeführte Dublette: HY-PRO / Hy-Pro Fertilizers
+
+HY-PRO (2169) und Hy-Pro Fertilizers (16340) waren dieselbe Marke. Zusammengeführt wurde auf
+**Term 2169**, weil dort das Markenlogo hängt und alle fünf Produkte der anderen Seite
+`HJ-`-SKUs tragen und laut Vorgabe nicht angefasst werden dürfen. Umgehängt wurde deshalb nur
+das eine Produkt ohne `HJ-`-SKU:
+
+- „Hy-Pro Terra 20 Liter" (ID 39489, SKU 13002) von Term 16340 auf Term 2169
+- Term 2169 umbenannt in **Hy-Pro Fertilizers**, Slug auf `hy-pro-fertilizers` gesetzt, damit die
+  bereits von Google indexierte Archiv-URL erhalten bleibt
+- Term 16340 gelöscht, nachdem er in keinem Produktstatus mehr etwas trug
+- Beschreibung und Yoast-Felder von 2169 decken jetzt beide Sortimente ab
+
+Die alte, produktlose URL `/marke/hy-pro/` liefert dadurch 404. Sie hatte kein einziges
+öffentliches Produkt; ein Redirect auf `/marke/hy-pro-fertilizers/` wäre trotzdem sauber.
+
+### Offene Befunde aus der Markenarbeit
+
+- **Eazy Plug (16447) und eazyplug (6531)** sind dieselbe Marke und liegen weiterhin doppelt in
+  der Taxonomie: 16447 trägt vier Produkte mit regulären SKUs, 6531 drei Produkte mit
+  `HJ-`-SKUs. Nach demselben Muster wie bei Hy-Pro ließe sich auf 6531 zusammenführen, ohne ein
+  `HJ-`-Produkt anzufassen. Nicht angefasst.
+- **„Hy-Pro Terra 20 Liter" (39489) trägt `min_age` 18**, obwohl es ein Dünger ist. Das bricht
+  den Google-Merchant-Center-Feed. Nicht angefasst, weil auf diesen Shop grundsätzlich kein
+  `min_age` geschrieben wird.
+- Produkt 39489 beschreibt sich selbst als Kanister, liegt aber in „Erde & Substrate" und trug
+  in der alten Marken-Meta die Bezeichnung „20-Liter-Sack". Die Gebindeform gehört geprüft.
 
 ## Prüfungen der Texte (alle bestanden)
 
