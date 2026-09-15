@@ -56,27 +56,57 @@ Einnährstoffdünger, bei zweien oder dreien ein Volldünger.
 | Attribut | befüllt | Abdeckung |
 | --- | ---: | ---: |
 | Inhalt | 466 | 95 % |
-| Form | 455 | 93 % |
+| Form | 456 | 93 % |
 | Anwendungsphase | 370 | 75 % |
 | Anwendungsart | 359 | 73 % |
 | Substrat | 312 | 64 % |
 | Nährstoffe | 267 | 54 % |
 | Düngertyp | 182 | 37 % |
-| NPK-Verhältnis | 110 | 22 % |
-| Düngerart | 76 | 15 % |
+| NPK-Verhältnis | 117 | 24 % |
+| Düngerart | 83 | 17 % |
 | Löslichkeit | 15 | 3 % |
 | Wirkdauer | 0 | 0 % |
 
+## Herstellerdatenblätter
+
+Für NPK, Düngerart und Löslichkeit wurden die Herstellerseiten ausgewertet (`d_web.py`,
+`d_web_map.py`). Ergebnis nach Marke:
+
+| Hersteller | Produkte im Shop | veröffentlicht NPK? |
+| --- | ---: | --- |
+| Canna | 71 | **nein** — weder auf den Produkt- noch auf den Linienseiten |
+| Hesi | 58 | ja, als „NPK 4-2-4" direkt auf der Produktseite |
+| Terra Aquatica (GHE) | 46 | nicht öffentlich auffindbar |
+| Advanced Hydroponics | 36 | nein |
+| Athena | 33 | nicht öffentlich auffindbar |
+| Atami | 29 | nur als Rechenhinweis, ohne Werte |
+| BioTabs | 25 | nein |
+| Mills Nutrients | 24 | nicht öffentlich auffindbar |
+| Plagron | 19 | ja, als „NPK-Dünger (2-2-4)" plus PDF-Datenblatt |
+
+Aus Hesi und Plagron kamen 38 Zuordnungen, davon 14 mit neuen Werten — der Rest war aus den
+Shoptexten schon belegt.
+
+`pdftext.py` ist dabei entstanden: Die Umgebung hat kein `pdftotext`, und `pypdf` scheitert an
+einer kaputten cryptography-Bindung. Das Skript packt die FlateDecode-Streams selbst aus und
+sammelt die Text-Operatoren ein. Damit ist das Plagron-Datenblatt vollständig lesbar — Gesamt-
+stickstoff, Nitrat- und Ammoniumanteil, P₂O₅, K₂O, MgO, SO₃ und sechs Spurenelemente mit
+Prozentwerten, jeweils mit dem Vermerk „water soluble".
+
 ## Offen
 
-**NPK, Düngerart und Löslichkeit bleiben dünn**, weil die Shoptexte sie meist nicht nennen.
-Sie stehen auf den Herstellerdatenblättern — Canna (71 Produkte), Hesi (58), Terra Aquatica (46),
-Advanced Hydroponics (36), Athena (33), Atami (29), BioTabs (25), Mills (24). Das ist der
-nächste Schritt.
+**NPK bleibt bei 24 %, und das liegt an den Herstellern, nicht am Verfahren.** 369 der 487
+Produkte sind potenzielle Basisdünger, die eine NPK-Deklaration tragen könnten. Der größte
+Anbieter im Sortiment — Canna mit 71 Produkten — veröffentlicht sie im Netz überhaupt nicht.
+Die übrigen großen Marken ebenso wenig. Die Werte stehen auf den Etiketten und in PDF-Daten-
+blättern, die nicht frei verlinkt sind. Wer sie vollständig haben will, kommt um Etikettenfotos
+oder einen Datenblattzugang beim Hersteller nicht herum. Geschätzt wird nichts.
 
-**Wirkdauer steht bei 0 %.** Sofort- gegen Langzeitwirkung ist bei Flüssigdüngern für Hydro- und
-Erdkultur praktisch nie ausgewiesen; die Angabe gehört eher zu Gartenbaudüngern. Geschätzt wird
-dort nichts.
+**Löslichkeit (3 %) und Wirkdauer (0 %)** aus demselben Grund. Sofort- gegen Langzeitwirkung ist
+bei Flüssigdüngern für Hydro- und Erdkultur praktisch nie ausgewiesen; die Angabe gehört eher zu
+Gartenbaudüngern.
 
 **Hygroskopizität** wurde bewusst nicht als Attribut angelegt: Kein Hersteller im Sortiment
 veröffentlicht dazu Werte.
+
+**Growbedarf** (1344 Produkte) steht noch aus — eigener Durchgang, wie besprochen.
