@@ -1,7 +1,7 @@
 # Herstellerangaben hanfjack.de – Prüfung und Vervollständigung
 
 Stand: 15.09.2026 · **183 Hersteller** der Taxonomie `product_manufacturer` geprüft.
-Vorher **138 vollständig**, jetzt **168 vollständig**.
+Vorher **138 vollständig**, jetzt **174 vollständig**.
 
 Die Daten liegen in diesem Ordner:
 
@@ -22,7 +22,7 @@ Die Angaben nach der EU-Produktsicherheitsverordnung (GPSR, VO (EU) 2023/988):
 | F | ladungsfähige Anschrift statt nur Postfach |
 | G | keine Formatfehler in der Adresse |
 
-## Was ergänzt wurde (33 Hersteller)
+## Was ergänzt wurde (40 Hersteller)
 
 Jede Angabe stammt aus dem Impressum, der Kontaktseite oder einem amtlichen Register des
 Herstellers. Wo sich nichts belegen ließ, wurde nichts eingetragen.
@@ -43,7 +43,9 @@ Herstellers. Wo sich nichts belegen ließ, wurde nichts eingetragen.
 | Nestlé | Nestlé Deutschland AG, Anschrift, Telefon, E-Mail | nestle.de/info/impressum |
 | Jouy & Co Sweets B.V. | Anschrift, KvK, Telefon, E-Mail, Web | jouyco.nl/legal-notice |
 | On top trade s.r.o. | Anschrift | Vertriebsangabe Chillo Cannabis Ice Tea |
-| Doja | E-Mail und Web | dojapak.com – der Hersteller nennt keine Anschrift |
+| Doja | Ort, E-Mail, EU-Verantwortlicher | Angaben vom Shopbetreiber |
+| Terphogz | Anschrift, Web, EU-Verantwortlicher | Angaben vom Shopbetreiber |
+| HASHY | MonkeysGodTorino, Anschrift, P. IVA, E-Mail, Web | hashyallinone.com/contatti |
 
 ### Fehlende elektronische Kontaktadresse ergänzt
 
@@ -72,31 +74,40 @@ Bei fünf Herstellern stand die verantwortliche Person in der EU im Feld der Her
 statt im dafür vorgesehenen Feld: Green Planet Nutrients, House & Garden, Mills Nutrients,
 Plantation Products LLC und Rock Holdings Pty Ltd.
 
-## Was offen bleibt (15 Hersteller)
+## EU-Verantwortliche nachgetragen
+
+Für die vier Drittlandhersteller ohne benannte verantwortliche Person wurde geprüft, über welchen
+deutschen Großhändler die Ware läuft. Alle vier stehen in der Herstellerliste von **bloomtech.de**
+(Bloomtech GmbH, Northeim); Grow In AG führt keine davon. Eingetragen wurde deshalb Bloomtech:
+
+| Hersteller | Produkte | Land |
+| --- | --- | --- |
+| Carson | 11 | USA |
+| Hydroponic Research | 5 | USA |
+| New Millenium Garden | 1 | USA |
+| Birchmeier Sprühtechnik AG | 1 | Schweiz |
+
+Vom Shopbetreiber kamen außerdem die Angaben für **Doja** und **Terphogz** – bei beiden ist
+Hemp Group Int. GmbH, Geesthacht, die verantwortliche Person in der EU. **HASHY** ließ sich über
+die vom Shopbetreiber genannte Herstellerseite auflösen: MonkeysGodTorino, Turin.
+
+## Was offen bleibt (9 Hersteller)
 
 | Hersteller | Produkte | Offener Punkt |
 | --- | --- | --- |
 | Compound Genetics | 22 | keine Herstellerangabe – die eigene Website führt einen Platzhalter („123 Example Road") |
-| Carson | 11 | Drittland USA ohne EU-Verantwortlichen |
-| Doja | 7 | Postleitzahl und Land fehlen – der Hersteller nennt keine Anschrift |
-| Hydroponic Research | 5 | Drittland USA ohne EU-Verantwortlichen |
+| Doja | 7 | Postleitzahl fehlt – der Hersteller nennt nur „Los Angeles, CA" |
 | House & Garden | 4 | nur Postfach – eingetragen ist der australische Vertrieb Stealth Garden |
 | Rock Holdings Pty Ltd | 3 | nur Postfach – der Hersteller nennt selbst nur „C/- Clarendon Post Office" |
 | Lovin In Her Eyes | 2 | keine Herstellerangabe belegbar |
-| Birchmeier Sprühtechnik AG | 1 | Drittland Schweiz ohne EU-Verantwortlichen |
-| HASHY | 1 | keine Herstellerangabe belegbar |
 | Mosca Seeds | 1 | nur Postfach |
-| New Millenium Garden | 1 | Drittland USA ohne EU-Verantwortlichen |
 | On top trade s.r.o. | 1 | keine elektronische Kontaktadresse belegbar |
 | RBA | 1 | keine Herstellerangabe belegbar |
-| Terphogz | 1 | keine Herstellerangabe belegbar – die Website blockt den Abruf |
 | TRAFIKA | 0 | keine Postleitzahl (Büroanschriften in Abu Dhabi und Dubai) |
 
-Bei den vier Drittland-Fällen ohne EU-Verantwortlichen ist die Angabe eine Entscheidung des
-Shops: entweder der Distributor, über den die Ware kommt, oder der Shop selbst als Importeur.
-Diese Angabe lässt sich nicht recherchieren, sie steht auf der Lieferung beziehungsweise im
-Vertrag. Bei den übrigen offenen Punkten veröffentlicht der Hersteller schlicht keine
-belegbaren Daten; hier hilft nur eine Nachforderung beim Lieferanten.
+Bei diesen veröffentlicht der Hersteller schlicht keine belegbaren Daten, oder er gibt selbst nur
+ein Postfach an. Hier hilft nur eine Nachforderung beim Lieferanten. Sie bleiben vorerst wie sie
+sind.
 
 ## Weitere Befunde
 
@@ -104,6 +115,9 @@ belegbaren Daten; hier hilft nur eine Nachforderung beim Lieferanten.
   geführten Artikel (Bud XL, Root Excelurator) sind EU-Ware des niederländischen Herstellers
   Van de Zwaan. Die Zuordnung passt nicht zur Ware; belegbare niederländische Kontaktdaten waren
   nicht auffindbar (Domains nicht erreichbar).
+- **Compound Genetics, Lovin In Her Eyes und RBA** stehen ebenfalls in der Bloomtech-Herstellerliste.
+  Falls die Ware über Bloomtech kommt, ließe sich dort wenigstens die verantwortliche Person in der
+  EU eintragen, auch wenn die Herstelleranschrift weiter fehlt.
 - **Hersteller-Dublette**: „hy-pro" (16434, fünf Produkte) und „Hy-Pro Fertilizers" (16341, ein
   Produkt) sind dieselbe Firma. Beide tragen jetzt dieselbe Anschrift. Zusammenführen ginge nur
   über das Umhängen von Produkten mit `HJ-`-SKU und wurde deshalb nicht gemacht.
