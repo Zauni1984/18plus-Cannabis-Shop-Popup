@@ -46,6 +46,7 @@ Herstellers. Wo sich nichts belegen ließ, wurde nichts eingetragen.
 | Doja | Ort, E-Mail, EU-Verantwortlicher | Angaben vom Shopbetreiber |
 | Terphogz | Anschrift, Web, EU-Verantwortlicher | Angaben vom Shopbetreiber |
 | HASHY | MonkeysGodTorino, Anschrift, P. IVA, E-Mail, Web | hashyallinone.com/contatti |
+| Compound Genetics | Ort, E-Mail, Web, EU-Verantwortlicher | Angaben vom Shopbetreiber |
 
 ### Fehlende elektronische Kontaktadresse ergänzt
 
@@ -87,15 +88,15 @@ deutschen Großhändler die Ware läuft. Alle vier stehen in der Herstellerliste
 | New Millenium Garden | 1 | USA |
 | Birchmeier Sprühtechnik AG | 1 | Schweiz |
 
-Vom Shopbetreiber kamen außerdem die Angaben für **Doja** und **Terphogz** – bei beiden ist
-Hemp Group Int. GmbH, Geesthacht, die verantwortliche Person in der EU. **HASHY** ließ sich über
+Vom Shopbetreiber kamen außerdem die Angaben für **Doja**, **Terphogz** und **Compound Genetics** –
+bei allen dreien ist Hemp Group Int. GmbH, Geesthacht, die verantwortliche Person in der EU. **HASHY** ließ sich über
 die vom Shopbetreiber genannte Herstellerseite auflösen: MonkeysGodTorino, Turin.
 
 ## Was offen bleibt (9 Hersteller)
 
 | Hersteller | Produkte | Offener Punkt |
 | --- | --- | --- |
-| Compound Genetics | 22 | keine Herstellerangabe – die eigene Website führt einen Platzhalter („123 Example Road") |
+| Compound Genetics | 22 | Postleitzahl fehlt – der Hersteller nennt nur Petaluma, Kalifornien |
 | Doja | 7 | Postleitzahl fehlt – der Hersteller nennt nur „Los Angeles, CA" |
 | House & Garden | 4 | nur Postfach – eingetragen ist der australische Vertrieb Stealth Garden |
 | Rock Holdings Pty Ltd | 3 | nur Postfach – der Hersteller nennt selbst nur „C/- Clarendon Post Office" |
@@ -115,9 +116,12 @@ sind.
   geführten Artikel (Bud XL, Root Excelurator) sind EU-Ware des niederländischen Herstellers
   Van de Zwaan. Die Zuordnung passt nicht zur Ware; belegbare niederländische Kontaktdaten waren
   nicht auffindbar (Domains nicht erreichbar).
-- **Compound Genetics, Lovin In Her Eyes und RBA** stehen ebenfalls in der Bloomtech-Herstellerliste.
-  Falls die Ware über Bloomtech kommt, ließe sich dort wenigstens die verantwortliche Person in der
-  EU eintragen, auch wenn die Herstelleranschrift weiter fehlt.
+- **Lovin In Her Eyes und RBA** stehen ebenfalls in der Bloomtech-Herstellerliste. Falls die Ware
+  über Bloomtech kommt, ließe sich dort wenigstens die verantwortliche Person in der EU eintragen,
+  auch wenn die Herstelleranschrift weiter fehlt.
+- **Compound Genetics** nennt auf der eigenen Website als Anschrift den Platzhalter
+  „123 Example Road". Eingetragen ist deshalb nur der Ort Petaluma, Kalifornien; eine
+  Straßenanschrift mit Postleitzahl fehlt weiterhin.
 - **Hersteller-Dublette**: „hy-pro" (16434, fünf Produkte) und „Hy-Pro Fertilizers" (16341, ein
   Produkt) sind dieselbe Firma. Beide tragen jetzt dieselbe Anschrift. Zusammenführen ginge nur
   über das Umhängen von Produkten mit `HJ-`-SKU und wurde deshalb nicht gemacht.
