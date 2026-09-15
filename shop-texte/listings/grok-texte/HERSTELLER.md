@@ -47,6 +47,7 @@ Herstellers. Wo sich nichts belegen ließ, wurde nichts eingetragen.
 | Terphogz | Anschrift, Web, EU-Verantwortlicher | Angaben vom Shopbetreiber |
 | HASHY | MonkeysGodTorino, Anschrift, P. IVA, E-Mail, Web | hashyallinone.com/contatti |
 | Compound Genetics | Ort, E-Mail, Web, EU-Verantwortlicher | Angaben vom Shopbetreiber |
+| Lovin In Her Eyes | Telefon, E-Mail, Web | lovininhereyes.com/homepage/contact-us |
 
 ### Fehlende elektronische Kontaktadresse ergänzt
 
@@ -100,7 +101,7 @@ die vom Shopbetreiber genannte Herstellerseite auflösen: MonkeysGodTorino, Turi
 | Doja | 7 | Postleitzahl fehlt – der Hersteller nennt nur „Los Angeles, CA" |
 | House & Garden | 4 | nur Postfach – eingetragen ist der australische Vertrieb Stealth Garden |
 | Rock Holdings Pty Ltd | 3 | nur Postfach – der Hersteller nennt selbst nur „C/- Clarendon Post Office" |
-| Lovin In Her Eyes | 2 | keine Herstellerangabe belegbar |
+| Lovin In Her Eyes | 2 | verantwortliche Person in der EU (Tiger One) – Anschrift steht noch aus |
 | Mosca Seeds | 1 | nur Postfach |
 | On top trade s.r.o. | 1 | keine elektronische Kontaktadresse belegbar |
 | RBA | 1 | keine Herstellerangabe belegbar |
@@ -116,9 +117,13 @@ sind.
   geführten Artikel (Bud XL, Root Excelurator) sind EU-Ware des niederländischen Herstellers
   Van de Zwaan. Die Zuordnung passt nicht zur Ware; belegbare niederländische Kontaktdaten waren
   nicht auffindbar (Domains nicht erreichbar).
-- **Lovin In Her Eyes und RBA** stehen ebenfalls in der Bloomtech-Herstellerliste. Falls die Ware
-  über Bloomtech kommt, ließe sich dort wenigstens die verantwortliche Person in der EU eintragen,
-  auch wenn die Herstelleranschrift weiter fehlt.
+- **Lovin In Her Eyes** veröffentlicht keine Straßenanschrift; Telefon, E-Mail und Website sind
+  eingetragen. Als verantwortliche Person in der EU ist Tiger One vorgesehen, deren Anschrift ließ
+  sich nicht belegen (tiger-one.eu liefert kein Impressum aus) und steht noch aus.
+- **RBA** steht ebenfalls in der Bloomtech-Herstellerliste. Falls die Ware über Bloomtech kommt,
+  ließe sich dort wenigstens die verantwortliche Person in der EU eintragen.
+- **TRAFIKA** trägt bereits Lauwe Zaunreither GbR als verantwortliche Person in der EU. Offen bleibt
+  nur die Postleitzahl der beiden Büroanschriften in Abu Dhabi und Dubai.
 - **Compound Genetics** nennt auf der eigenen Website als Anschrift den Platzhalter
   „123 Example Road". Eingetragen ist deshalb nur der Ort Petaluma, Kalifornien; eine
   Straßenanschrift mit Postleitzahl fehlt weiterhin.
