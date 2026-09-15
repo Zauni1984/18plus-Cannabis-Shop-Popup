@@ -1,11 +1,13 @@
-# Grok-Texte ersetzen – 847 Produkte auf hanfjack.de
+# Grok-Texte ersetzen – 847 Produkte und 241 Marken auf hanfjack.de
 
-Stand: 15.09.2026 · **847 Produkte** vollständig neu getextet (Beschreibung, Kurzbeschreibung, Yoast-Titel, Meta-Description, Focus-Keyword) und **auf hanfjack.de eingespielt**.
+Stand: 15.09.2026 · **847 Produkte** vollständig neu getextet (Beschreibung, Kurzbeschreibung, Yoast-Titel, Meta-Description, Focus-Keyword) und **auf hanfjack.de eingespielt**. Dazu **alle 241 Marken** der Taxonomie `pwb-brand` neu beschrieben und deren Yoast-Felder erneuert.
 
 Die Texte liegen in diesem Ordner:
 
 - `hanfjack-de-847-produkttexte.json` – Volltexte als HTML, Schlüssel ist die WooCommerce-Produkt-ID (Upload-Quelle)
 - `hanfjack-de-847-produkttexte.csv` – dieselben Daten als Tabelle zur Durchsicht
+- `hanfjack-de-markentexte.json` – die 217 Markenbeschreibungen samt Yoast-Feldern
+- `hanfjack-de-markentexte.csv` – dieselben Markendaten als Tabelle
 
 ## Upload
 
@@ -28,13 +30,56 @@ plus REST-Abgleich aller 847):
 Fünf Produkte (510, 1878, 1879, 22211, 22243) unterscheiden sich im Zeichenvergleich nur durch
 WordPress' automatische Typografie (`"` → `"`, `'` → `'`). Das ist gewollt und inhaltlich identisch.
 
-## Offener Befund: Markenbeschreibungen
+## Markenbeschreibungen (241 Marken)
 
-Der Grok-Marker steckt nicht nur in Produkttexten. Von den **241 Marken** der Taxonomie
-`pwb-brand` tragen **101 noch `dir="auto"`** in ihrer Beschreibung, weitere **139 haben gar keine
-Beschreibung**. Diese Texte erscheinen im Tab „Marke“ auf jeder Produktseite der jeweiligen Marke
-und auf den Marken-Archivseiten – bei Royal Queen Seeds etwa auf 178 Produktseiten, bei
-Barneys Farm auf 124. Das ist eigenes Arbeitspaket und in diesem Durchgang nicht enthalten.
+Der Grok-Marker steckte nicht nur in Produkttexten, sondern auch in der Taxonomie `pwb-brand`:
+101 der 241 Marken trugen `dir="auto"` in ihrer Beschreibung. Diese Texte erscheinen im Tab
+„Marke“ auf jeder Produktseite der Marke und auf der Marken-Archivseite – bei Royal Queen Seeds
+etwa auf 178 Produktseiten, bei Barneys Farm auf 124.
+
+Am 15.09.2026 abgearbeitet:
+
+- **217 Marken mit Produkten** haben eine neue, zweiabsätzige Beschreibung sowie neuen
+  Yoast-Titel und neue Meta-Description.
+- Das **zweite Beschreibungsfeld** (`pwb_long_brand_desc`, Perfect WooCommerce Brands) wurde auf
+  allen 101 betroffenen Marken geleert. Im Tab „Marke“ steht jetzt genau ein Textblock.
+- **24 Marken ohne Produkte** (Karteileichen) wurden von Beschreibung und eigenen Yoast-Werten
+  befreit, damit Yoast auf sein Template zurückfällt.
+
+Die Texte liegen als `hanfjack-de-markentexte.json` und `hanfjack-de-markentexte.csv` in diesem
+Ordner.
+
+### Technische Hinweise
+
+- Markenbeschreibungen werden auf hanfjack.de per `wp_filter_kses` von HTML befreit. Die Texte
+  sind deshalb reiner Text; ein **Leerzeile zwischen den Absätzen** erzeugt auf der Archivseite
+  zwei `<p>`, ein einzelner Zeilenumbruch nur ein `<br>`.
+- `pwb_long_brand_desc` ist nicht als REST-Meta registriert und musste einzeln je Term
+  geschrieben werden.
+- Beschreibung und Yoast-Felder liefen über `POST /wp/v2/pwb-brand/<id>` mit einem
+  WordPress-Anwendungspasswort; der WooCommerce-Schlüssel reicht dafür nicht.
+
+### Kontrolle nach dem Upload (alle 241 Marken über die REST-API gegengelesen)
+
+| Prüfung | Ergebnis |
+| --- | --- |
+| `dir="auto"` in Markenbeschreibungen | 0 |
+| HTML in Markenbeschreibungen | 0 |
+| CTA im Beschreibungstext (gehört nur in Titel/Meta) | 0 |
+| Absatztrennung durch Leerzeile vorhanden | 217 von 217 |
+| Yoast-Titel ≤ 75 Zeichen | 217 von 217 |
+| Meta-Description 100–160 Zeichen | 217 von 217 |
+| Marken ohne Beschreibung | 24 – ausschließlich Marken mit 0 Produkten |
+
+### Empfehlung
+
+Die 24 produktlosen Marken sind Karteileichen und sollten gelöscht werden. Gelöscht wurde in
+diesem Durchgang nichts:
+
+Alltest, Atlas Seed, Biodor, Clipper, Dope Seeds, exotic-seeds, Ferna Trade, French Connection,
+Grounded Genetics, Hermann Meyer KG, hortiOne, HY-PRO, Hydro Garden, In House Genetics, Jumi,
+Knistermann, Medina Mood, Ona, Preferred Gardens, Prof, Rhino, SHEESH, Terra Exotica,
+The Bulldog Seeds.
 
 ## Prüfungen der Texte (alle bestanden)
 
