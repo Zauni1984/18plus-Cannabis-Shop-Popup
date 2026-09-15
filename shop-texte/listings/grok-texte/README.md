@@ -1,13 +1,14 @@
-# Grok-Texte ersetzen – 847 Produkte und 241 Marken auf hanfjack.de
+# Grok-Texte ersetzen – 847 Produkte und alle Marken auf hanfjack.de
 
-Stand: 15.09.2026 · **847 Produkte** vollständig neu getextet (Beschreibung, Kurzbeschreibung, Yoast-Titel, Meta-Description, Focus-Keyword) und **auf hanfjack.de eingespielt**. Dazu **alle 241 Marken** der Taxonomie `pwb-brand` neu beschrieben und deren Yoast-Felder erneuert.
+Stand: 15.09.2026 · **847 Produkte** vollständig neu getextet (Beschreibung, Kurzbeschreibung, Yoast-Titel, Meta-Description, Focus-Keyword) und **auf hanfjack.de eingespielt**. Dazu **alle Marken** der Taxonomie `pwb-brand` neu beschrieben und deren Yoast-Felder erneuert; aus 241 Marken sind nach dem Aufräumen **234** geworden.
 
 Die Texte liegen in diesem Ordner:
 
 - `hanfjack-de-847-produkttexte.json` – Volltexte als HTML, Schlüssel ist die WooCommerce-Produkt-ID (Upload-Quelle)
 - `hanfjack-de-847-produkttexte.csv` – dieselben Daten als Tabelle zur Durchsicht
-- `hanfjack-de-markentexte.json` – die 217 Markenbeschreibungen samt Yoast-Feldern
+- `hanfjack-de-markentexte.json` – die 234 Markenbeschreibungen samt Yoast-Feldern
 - `hanfjack-de-markentexte.csv` – dieselben Markendaten als Tabelle
+- `hanfjack-de-geloeschte-marken.json` – Sicherung der 7 gelöschten Marken-Terms
 
 ## Upload
 
@@ -30,7 +31,7 @@ plus REST-Abgleich aller 847):
 Fünf Produkte (510, 1878, 1879, 22211, 22243) unterscheiden sich im Zeichenvergleich nur durch
 WordPress' automatische Typografie (`"` → `"`, `'` → `'`). Das ist gewollt und inhaltlich identisch.
 
-## Markenbeschreibungen (241 Marken)
+## Markenbeschreibungen (241 → 234 Marken)
 
 Der Grok-Marker steckte nicht nur in Produkttexten, sondern auch in der Taxonomie `pwb-brand`:
 101 der 241 Marken trugen `dir="auto"` in ihrer Beschreibung. Diese Texte erscheinen im Tab
@@ -39,12 +40,16 @@ etwa auf 178 Produktseiten, bei Barneys Farm auf 124.
 
 Am 15.09.2026 abgearbeitet:
 
-- **217 Marken mit Produkten** haben eine neue, zweiabsätzige Beschreibung sowie neuen
-  Yoast-Titel, neue Meta-Description und ein neues Focus-Keyword.
+- **234 Marken** haben eine neue, zweiabsätzige Beschreibung sowie neuen Yoast-Titel, neue
+  Meta-Description und ein neues Focus-Keyword. Keine Marke ist mehr ohne Text.
 - Das **zweite Beschreibungsfeld** (`pwb_long_brand_desc`, Perfect WooCommerce Brands) wurde auf
   allen 102 betroffenen Marken geleert. Im Tab „Marke“ steht jetzt genau ein Textblock.
-- **24 Marken ohne Produkte** (Karteileichen) wurden von Beschreibung und eigenen Yoast-Werten
-  befreit, damit Yoast auf sein Template zurückfällt.
+- **7 Marken ohne jedes Produkt** wurden gelöscht (siehe unten).
+
+24 Marken zeigten in der Taxonomie den Zähler 0. Ein Abgleich über alle Produktstatus hat
+gezeigt, dass davon **17 weiterhin private Produkte oder Entwürfe** tragen – die bleiben stehen
+und haben ebenfalls neue Texte bekommen. Nur die verbleibenden **7 ohne jedes Produkt** in
+irgendeinem Status wurden entfernt.
 
 101 der zweiten Beschreibungen waren Grok-Texte. Eine weitere (Atami) war ein eigener, sauberer
 Text ohne Grok-Marker – nach der Vorgabe „nur noch eine Markenbeschreibung“ ebenfalls entfernt.
@@ -52,7 +57,7 @@ Gefunden wurde sie erst durch einen Vollscan aller 217 Marken-Produktseiten, wei
 `pwb_long_brand_desc` über die REST-API nicht lesbar ist.
 
 Die Texte liegen als `hanfjack-de-markentexte.json` und `hanfjack-de-markentexte.csv` in diesem
-Ordner.
+Ordner, die gelöschten Terms als `hanfjack-de-geloeschte-marken.json`.
 
 ### Technische Hinweise
 
@@ -64,34 +69,64 @@ Ordner.
 - Beschreibung und Yoast-Felder liefen über `POST /wp/v2/pwb-brand/<id>` mit einem
   WordPress-Anwendungspasswort; der WooCommerce-Schlüssel reicht dafür nicht.
 
-### Kontrolle nach dem Upload (alle 241 Marken über die REST-API gegengelesen)
+### Kontrolle nach dem Upload (alle 234 Marken über die REST-API gegengelesen)
 
 | Prüfung | Ergebnis |
 | --- | --- |
 | `dir="auto"` in Markenbeschreibungen | 0 |
 | HTML in Markenbeschreibungen | 0 |
 | CTA im Beschreibungstext (gehört nur in Titel/Meta) | 0 |
-| Absatztrennung durch Leerzeile vorhanden | 217 von 217 |
-| Yoast-Titel ≤ 75 Zeichen | 217 von 217 |
-| Meta-Description 100–160 Zeichen | 217 von 217 |
-| Marken ohne Beschreibung | 24 – ausschließlich Marken mit 0 Produkten |
-| Focus-Keyword gesetzt und in Titel und Text enthalten | 217 von 217 |
+| Absatztrennung durch Leerzeile vorhanden | 234 von 234 |
+| Yoast-Titel ≤ 75 Zeichen | 234 von 234 |
+| Meta-Description 100–160 Zeichen | 234 von 234 |
+| Marken ohne Beschreibung | 0 |
+| Focus-Keyword gesetzt und in Titel und Text enthalten | 234 von 234 |
 | Zweiter Textblock im Tab „Marke“ (Vollscan über 217 Produktseiten) | 0 |
+| `pwb_long_brand_desc` bei den 17 Marken ohne öffentliche Produkte | leer |
 
 Zwei Produktseiten zeigen zwei Textblöcke im Tab „Marke“, weil dem Produkt zwei Marken zugeordnet
 sind: „Erntebundle Small Black“ (Meditrade und TRAFIKA) und „Stahl-Bindedraht 1,8 mm“ (Easy Grow
 und Bloomtech). Das ist eine Zuordnungsfrage im Produkt, keine zweite Markenbeschreibung – bei
 allen vier Marken ist `pwb_long_brand_desc` leer.
 
-### Empfehlung
+### Gelöschte Marken
 
-Die 24 produktlosen Marken sind Karteileichen und sollten gelöscht werden. Gelöscht wurde in
-diesem Durchgang nichts:
+Sieben Marken hatten in **keinem** Produktstatus (publish, draft, pending, private, future, trash)
+ein einziges Produkt und wurden gelöscht:
 
-Alltest, Atlas Seed, Biodor, Clipper, Dope Seeds, exotic-seeds, Ferna Trade, French Connection,
-Grounded Genetics, Hermann Meyer KG, hortiOne, HY-PRO, Hydro Garden, In House Genetics, Jumi,
-Knistermann, Medina Mood, Ona, Preferred Gardens, Prof, Rhino, SHEESH, Terra Exotica,
-The Bulldog Seeds.
+Clipper (7649), exotic-seeds (14125), Ferna Trade (16440), Hermann Meyer KG (16444),
+hortiOne (1884), In House Genetics (7560), Terra Exotica (16445).
+
+ID, Name, Slug und Meta dieser Terms liegen vor dem Löschen gesichert in
+`hanfjack-de-geloeschte-marken.json`. Produkte, Medien und Kategorien wurden nicht angefasst.
+
+### Marken mit privaten Produkten – behalten und neu betextet
+
+Diese 17 Marken standen in der Taxonomie mit 0 Produkten, tragen aber weiterhin private Artikel
+oder Entwürfe. Sie sind erhalten geblieben und haben neue Beschreibungen und Yoast-Felder bekommen:
+
+| Marke | private Produkte |
+| --- | --- |
+| SHEESH | 40 |
+| The Bulldog Seeds | 14 |
+| Dope Seeds | 10 |
+| Ona | 9 |
+| Preferred Gardens | 9 |
+| French Connection | 8 |
+| Medina Mood | 6 |
+| HY-PRO | 5 |
+| Jumi | 5 |
+| Biodor | 3 |
+| Grounded Genetics | 3 |
+| Atlas Seed | 2 |
+| Alltest | 1 |
+| Knistermann | 1 |
+| Prof | 1 |
+| Rhino | 1 |
+| Hydro Garden | 1 (Entwurf) |
+
+**Offener Befund:** HY-PRO (2169) und Hy-Pro Fertilizers (16340) sind dieselbe Marke und liegen
+doppelt in der Taxonomie. Zusammenführen wäre sinnvoll, wurde hier aber nicht angefasst.
 
 ## Prüfungen der Texte (alle bestanden)
 
