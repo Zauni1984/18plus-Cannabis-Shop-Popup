@@ -1,0 +1,12 @@
+{
+ "pa_npk": 45,
+ "pa_naehrstoffe": 46,
+ "pa_duengertyp": 47,
+ "pa_duengerart": 48,
+ "pa_wirkdauer": 49,
+ "pa_form": 50,
+ "pa_loeslichkeit": 51,
+ "pa_anwendungsphase": 52,
+ "pa_substrat": 53,
+ "pa_anwendungsart": 54
+}

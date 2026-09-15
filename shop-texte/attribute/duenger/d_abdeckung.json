@@ -1,0 +1,16 @@
+{
+ "anzahl": 487,
+ "abdeckung": {
+  "pa_inhalt": 466,
+  "pa_form": 455,
+  "pa_anwendungsphase": 370,
+  "pa_anwendungsart": 359,
+  "pa_duengerart": 76,
+  "pa_duengertyp": 182,
+  "pa_naehrstoffe": 267,
+  "pa_substrat": 312,
+  "pa_loeslichkeit": 15,
+  "pa_npk": 110,
+  "pa_farbe": 1
+ }
+}
