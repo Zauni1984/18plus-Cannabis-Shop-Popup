@@ -40,11 +40,16 @@ etwa auf 178 Produktseiten, bei Barneys Farm auf 124.
 Am 15.09.2026 abgearbeitet:
 
 - **217 Marken mit Produkten** haben eine neue, zweiabsätzige Beschreibung sowie neuen
-  Yoast-Titel und neue Meta-Description.
+  Yoast-Titel, neue Meta-Description und ein neues Focus-Keyword.
 - Das **zweite Beschreibungsfeld** (`pwb_long_brand_desc`, Perfect WooCommerce Brands) wurde auf
-  allen 101 betroffenen Marken geleert. Im Tab „Marke“ steht jetzt genau ein Textblock.
+  allen 102 betroffenen Marken geleert. Im Tab „Marke“ steht jetzt genau ein Textblock.
 - **24 Marken ohne Produkte** (Karteileichen) wurden von Beschreibung und eigenen Yoast-Werten
   befreit, damit Yoast auf sein Template zurückfällt.
+
+101 der zweiten Beschreibungen waren Grok-Texte. Eine weitere (Atami) war ein eigener, sauberer
+Text ohne Grok-Marker – nach der Vorgabe „nur noch eine Markenbeschreibung“ ebenfalls entfernt.
+Gefunden wurde sie erst durch einen Vollscan aller 217 Marken-Produktseiten, weil
+`pwb_long_brand_desc` über die REST-API nicht lesbar ist.
 
 Die Texte liegen als `hanfjack-de-markentexte.json` und `hanfjack-de-markentexte.csv` in diesem
 Ordner.
@@ -52,7 +57,7 @@ Ordner.
 ### Technische Hinweise
 
 - Markenbeschreibungen werden auf hanfjack.de per `wp_filter_kses` von HTML befreit. Die Texte
-  sind deshalb reiner Text; ein **Leerzeile zwischen den Absätzen** erzeugt auf der Archivseite
+  sind deshalb reiner Text; eine **Leerzeile zwischen den Absätzen** erzeugt auf der Archivseite
   zwei `<p>`, ein einzelner Zeilenumbruch nur ein `<br>`.
 - `pwb_long_brand_desc` ist nicht als REST-Meta registriert und musste einzeln je Term
   geschrieben werden.
@@ -70,6 +75,13 @@ Ordner.
 | Yoast-Titel ≤ 75 Zeichen | 217 von 217 |
 | Meta-Description 100–160 Zeichen | 217 von 217 |
 | Marken ohne Beschreibung | 24 – ausschließlich Marken mit 0 Produkten |
+| Focus-Keyword gesetzt und in Titel und Text enthalten | 217 von 217 |
+| Zweiter Textblock im Tab „Marke“ (Vollscan über 217 Produktseiten) | 0 |
+
+Zwei Produktseiten zeigen zwei Textblöcke im Tab „Marke“, weil dem Produkt zwei Marken zugeordnet
+sind: „Erntebundle Small Black“ (Meditrade und TRAFIKA) und „Stahl-Bindedraht 1,8 mm“ (Easy Grow
+und Bloomtech). Das ist eine Zuordnungsfrage im Produkt, keine zweite Markenbeschreibung – bei
+allen vier Marken ist `pwb_long_brand_desc` leer.
 
 ### Empfehlung
 
