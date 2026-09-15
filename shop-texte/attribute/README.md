@@ -38,16 +38,45 @@ bereits vorhanden, aber lückenhaft und uneinheitlich befüllt.
 
 ## Fortschritt
 
+**945 von 1807 Samen** bearbeitet, zehn Markenläufe, alle ohne Fehler.
+
 | Marke | Produkte | Quelle | Umfang |
 | --- | --- | --- | --- |
-| Royal Queen Seeds | 166 | royalqueenseeds.de, Datenblatt je Sorte | 14 Attribute |
+| Royal Queen Seeds | 166 | royalqueenseeds.de | 14 Attribute je Sorte |
 | Dutch Passion | 103 | dutch-passion.com | Typ, Blütezeit, THC, CBD, Schwierigkeitsgrad |
-| Barneys Farm | 90 | barneysfarm.com, Datenblatt je Sorte | 14 Attribute |
-| Sensi Seeds | 63 | sensiseeds.com | Sativa/Indica, Typ, Klima, Schwierigkeitsgrad |
+| Barneys Farm | 90 | barneysfarm.com | 14 Attribute je Sorte |
+| Sweet Seeds | 71 | sweetseeds.com | THC, CBD, Genanteile, Blütezeit, Ertrag, Höhe, Effekte, Aroma |
+| Sensi Seeds | 63 | sensiseeds.com | Genanteile, Typ, Klima, Schwierigkeitsgrad |
+| Pyramid Seeds | 60 | pyramidseeds.com | 12 Attribute inkl. Terpene und Schwierigkeitsgrad |
 | Nirvana Seeds | 56 | Herstellerangaben aus der Textrecherche | Blütezeit, Genetik, Ertrag, Höhe, Erntemonat |
+| Anesia Seeds | 43 | anesiaseeds.com | THC, Genanteile, Blütezeit, Höhe, Ertrag, Erntemonat, Aroma |
+| Paradise Seeds | 38 | paradise-seeds.com | THC, Genanteile, Blütezeit, Höhe, Ertrag, Effekte, Aroma |
 | **Variante, alle Marken** | **1126** | Produktname | Variante |
 
-Alle Läufe ohne Fehler.
+### Abdeckung im Katalog
+
+| Attribut | vorher | jetzt | Abdeckung |
+| --- | --- | --- | --- |
+| Variante | 1286 | 1690 | 93 % |
+| THC-Gehalt | 1299 | 1357 | 75 % |
+| Aroma | 1054 | 1080 | 59 % |
+| Genetik | 1053 | 1074 | 59 % |
+| Effekte | 897 | 990 | 54 % |
+| Blütezeit | 865 | 929 | 51 % |
+| Sativa % / Indica % | 670 / 674 | 778 / 785 | 43 % |
+| Terpene | 730 | 730 | 40 % |
+| CBD-Gehalt | 366 | 376 | 20 % |
+| Typ | 0 | 336 | 18 % |
+| Anbauumgebung | 0 | 342 | 18 % |
+| Ertrag | 0 | 296 | 16 % |
+| Wuchshöhe | 0 | 243 | 13 % |
+| Schwierigkeitsgrad | 0 | 136 | 7 % |
+| Erntemonat | 0 | 81 | 4 % |
+| Klima | 0 | 71 | 3 % |
+
+Die Zuwächse bei Aroma, Genetik und THC fallen kleiner aus als die Zahl der bearbeiteten
+Produkte, weil diese Felder vielfach schon belegt waren. Dort liegt der Gewinn in der
+Vereinheitlichung der Werte, nicht in der Zahl.
 
 ## Offene Punkte
 
