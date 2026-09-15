@@ -5,7 +5,7 @@ sys.path.insert(0, '.')
 from rq_apply import AUTH
 import attr_schema as A
 
-KAT = 342          # Kategorie "Samen"
+KAT = 532          # Kategorie "Samen"
 prods, page = [], 1
 while True:
     u = (f'https://hanfjack.de/wp-json/wc/v3/products?per_page=100&page={page}'

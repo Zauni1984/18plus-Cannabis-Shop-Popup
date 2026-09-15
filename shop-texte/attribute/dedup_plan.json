@@ -1,0 +1,1943 @@
+{
+ "pa_thc-gehalt": [
+  {
+   "kanon": {
+    "id": 16709,
+    "name": "0–4 %",
+    "count": 0
+   },
+   "alt": [
+    {
+     "id": 17053,
+     "name": "0-4 %",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 16689,
+    "name": "10–15 %",
+    "count": 27
+   },
+   "alt": [
+    {
+     "id": 17107,
+     "name": "10-15 %",
+     "count": 0
+    },
+    {
+     "id": 12588,
+     "name": "10-15%",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17889,
+    "name": "15–20 %",
+    "count": 154
+   },
+   "alt": [
+    {
+     "id": 567,
+     "name": "15-20%",
+     "count": 3
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 16647,
+    "name": "16–24 %",
+    "count": 2
+   },
+   "alt": [
+    {
+     "id": 16964,
+     "name": "16-24 %",
+     "count": 0
+    },
+    {
+     "id": 12700,
+     "name": "16-24%",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 16957,
+    "name": "19-22 %",
+    "count": 0
+   },
+   "alt": [
+    {
+     "id": 557,
+     "name": "19-22%",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17902,
+    "name": "20–25 %",
+    "count": 299
+   },
+   "alt": [
+    {
+     "id": 17075,
+     "name": "20-25 %",
+     "count": 0
+    },
+    {
+     "id": 568,
+     "name": "20-25%",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 16960,
+    "name": "20-26 %",
+    "count": 0
+   },
+   "alt": [
+    {
+     "id": 12558,
+     "name": "20-26%",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17021,
+    "name": "20-28 %",
+    "count": 0
+   },
+   "alt": [
+    {
+     "id": 11971,
+     "name": "20-28%",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17025,
+    "name": "23-30 %",
+    "count": 0
+   },
+   "alt": [
+    {
+     "id": 3547,
+     "name": "23-30%",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17010,
+    "name": "24-30 %",
+    "count": 0
+   },
+   "alt": [
+    {
+     "id": 3738,
+     "name": "24-30%",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 16743,
+    "name": "5–9 %",
+    "count": 0
+   },
+   "alt": [
+    {
+     "id": 16982,
+     "name": "5-9 %",
+     "count": 0
+    },
+    {
+     "id": 3584,
+     "name": "5-9%",
+     "count": 0
+    }
+   ]
+  }
+ ],
+ "pa_cbd-gehalt": [
+  {
+   "kanon": {
+    "id": 3587,
+    "name": "15%",
+    "count": 0
+   },
+   "alt": [
+    {
+     "id": 501,
+     "name": "~ 15%",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 488,
+    "name": "22%",
+    "count": 0
+   },
+   "alt": [
+    {
+     "id": 489,
+     "name": "~ 22%",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 16648,
+    "name": "0–1 %",
+    "count": 210
+   },
+   "alt": [
+    {
+     "id": 16965,
+     "name": "0-1 %",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 16710,
+    "name": "1–5 %",
+    "count": 65
+   },
+   "alt": [
+    {
+     "id": 16986,
+     "name": "1-5 %",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17854,
+    "name": "15–20 %",
+    "count": 7
+   },
+   "alt": [
+    {
+     "id": 3590,
+     "name": "15-20%",
+     "count": 0
+    }
+   ]
+  }
+ ],
+ "pa_aroma": [
+  {
+   "kanon": {
+    "id": 1233,
+    "name": "Beeren",
+    "count": 31
+   },
+   "alt": [
+    {
+     "id": 6711,
+     "name": "Beere",
+     "count": 11
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 3598,
+    "name": "Blaubeeren",
+    "count": 17
+   },
+   "alt": [
+    {
+     "id": 17265,
+     "name": "Blaubeere",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 18461,
+    "name": "Bubble Gum",
+    "count": 2
+   },
+   "alt": [
+    {
+     "id": 12423,
+     "name": "Bubblegum",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 18109,
+    "name": "Frucht",
+    "count": 3
+   },
+   "alt": [
+    {
+     "id": 18418,
+     "name": "Früchte",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 3372,
+    "name": "Grapefruit",
+    "count": 5
+   },
+   "alt": [
+    {
+     "id": 18441,
+     "name": "Grapefruit)",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 3714,
+    "name": "Himbeere",
+    "count": 1
+   },
+   "alt": [
+    {
+     "id": 3713,
+     "name": "Himbeeren",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17360,
+    "name": "Lakritz",
+    "count": 1
+   },
+   "alt": [
+    {
+     "id": 3484,
+     "name": "Lakritze",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 18176,
+    "name": "Spritzige Zitrusnote",
+    "count": 1
+   },
+   "alt": [
+    {
+     "id": 12443,
+     "name": "Spritzige Zitrusnoten",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 6691,
+    "name": "Süßigkeit",
+    "count": 12
+   },
+   "alt": [
+    {
+     "id": 1656,
+     "name": "Süßigkeiten",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 11846,
+    "name": "Trauben",
+    "count": 16
+   },
+   "alt": [
+    {
+     "id": 3483,
+     "name": "Traube",
+     "count": 1
+    }
+   ]
+  }
+ ],
+ "pa_geschmack": [
+  {
+   "kanon": {
+    "id": 18115,
+    "name": "Beere",
+    "count": 6
+   },
+   "alt": [
+    {
+     "id": 6719,
+     "name": "Beeren",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 6733,
+    "name": "Früchte",
+    "count": 1
+   },
+   "alt": [
+    {
+     "id": 18276,
+     "name": "Frucht",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 3453,
+    "name": "Limette",
+    "count": 6
+   },
+   "alt": [
+    {
+     "id": 3451,
+     "name": "Limetten",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 18201,
+    "name": "Nelke",
+    "count": 1
+   },
+   "alt": [
+    {
+     "id": 3868,
+     "name": "Nelken",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 1653,
+    "name": "Sommer-Beeren",
+    "count": 1
+   },
+   "alt": [
+    {
+     "id": 18253,
+     "name": "Sommerbeere",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 18238,
+    "name": "Sprit",
+    "count": 1
+   },
+   "alt": [
+    {
+     "id": 6131,
+     "name": "Sprite",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 18110,
+    "name": "Süße Beere",
+    "count": 3
+   },
+   "alt": [
+    {
+     "id": 1661,
+     "name": "süße Beeren",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 18100,
+    "name": "Süßigkeit",
+    "count": 7
+   },
+   "alt": [
+    {
+     "id": 582,
+     "name": "Süßigkeiten",
+     "count": 3
+    }
+   ]
+  }
+ ],
+ "pa_genetik": [
+  {
+   "kanon": {
+    "id": 17550,
+    "name": "Apple Fritter",
+    "count": 0
+   },
+   "alt": [
+    {
+     "id": 12252,
+     "name": "(Apple Fritter",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 16703,
+    "name": "Cinderella 99",
+    "count": 3
+   },
+   "alt": [
+    {
+     "id": 12503,
+     "name": "(Cinderella 99",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 8464,
+    "name": "City of God × The White Angel × Future #1",
+    "count": 0
+   },
+   "alt": [
+    {
+     "id": 3531,
+     "name": "(City of God × The White Angel) × Future #1",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 12261,
+    "name": "Gary Payton",
+    "count": 2
+   },
+   "alt": [
+    {
+     "id": 12254,
+     "name": "(Gary Payton",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 12112,
+    "name": "Gelato 41",
+    "count": 7
+   },
+   "alt": [
+    {
+     "id": 12267,
+     "name": "(Gelato 41",
+     "count": 0
+    },
+    {
+     "id": 12325,
+     "name": "Gelato #41",
+     "count": 2
+    },
+    {
+     "id": 12242,
+     "name": "Gelato 41)",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 11884,
+    "name": "Gorilla Glue #4",
+    "count": 6
+   },
+   "alt": [
+    {
+     "id": 12600,
+     "name": "(Gorilla Glue #4",
+     "count": 1
+    },
+    {
+     "id": 17537,
+     "name": "Gorilla Glue 4",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 18924,
+    "name": "Grandaddy Purp",
+    "count": 1
+   },
+   "alt": [
+    {
+     "id": 12590,
+     "name": "(Grandaddy Purps",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17330,
+    "name": "Jack Herer x Super Skunk x Haze",
+    "count": 1
+   },
+   "alt": [
+    {
+     "id": 17332,
+     "name": "(Jack Herer x Super Skunk) x Haze",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 12524,
+    "name": "Kerosene Krash",
+    "count": 1
+   },
+   "alt": [
+    {
+     "id": 12525,
+     "name": "(Kerosene Krash",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 12257,
+    "name": "OZ Kush",
+    "count": 0
+   },
+   "alt": [
+    {
+     "id": 12262,
+     "name": "(OZ Kush",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 3544,
+    "name": "Platinum Cookies × Granddaddy Purple × Blue Power × Gelatti",
+    "count": 1
+   },
+   "alt": [
+    {
+     "id": 3543,
+     "name": "(Platinum Cookies × Granddaddy Purple) × Blue Power × Gelatti",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 12335,
+    "name": "SFV OG",
+    "count": 3
+   },
+   "alt": [
+    {
+     "id": 12204,
+     "name": "(SFV OG",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 12653,
+    "name": "Super Lemon Haze",
+    "count": 3
+   },
+   "alt": [
+    {
+     "id": 12619,
+     "name": "(Super Lemon Haze",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 11852,
+    "name": "Wedding Cake",
+    "count": 6
+   },
+   "alt": [
+    {
+     "id": 12625,
+     "name": "(Wedding Cake",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 12188,
+    "name": "Hash Plant",
+    "count": 2
+   },
+   "alt": [
+    {
+     "id": 12614,
+     "name": "• Hash Plant",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 12029,
+    "name": "AK-47",
+    "count": 12
+   },
+   "alt": [
+    {
+     "id": 11893,
+     "name": "AK 47",
+     "count": 0
+    },
+    {
+     "id": 17414,
+     "name": "AK47",
+     "count": 3
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 18539,
+    "name": "AK48",
+    "count": 1
+   },
+   "alt": [
+    {
+     "id": 17750,
+     "name": "AK-48",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 11889,
+    "name": "Alice's Klon",
+    "count": 0
+   },
+   "alt": [
+    {
+     "id": 11887,
+     "name": "Alice’s Klon",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 12554,
+    "name": "Auto Glueberry OG",
+    "count": 1
+   },
+   "alt": [
+    {
+     "id": 12526,
+     "name": "Auto Glueberry O.G.)",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 12068,
+    "name": "Bubble Gum",
+    "count": 5
+   },
+   "alt": [
+    {
+     "id": 11843,
+     "name": "Bubblegum",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17782,
+    "name": "Chem's Sister",
+    "count": 2
+   },
+   "alt": [
+    {
+     "id": 17446,
+     "name": "Chem’s Sister",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 11932,
+    "name": "Cherry Pie",
+    "count": 8
+   },
+   "alt": [
+    {
+     "id": 12622,
+     "name": "Cherry Pie)",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 18525,
+    "name": "Critical + 2.0",
+    "count": 1
+   },
+   "alt": [
+    {
+     "id": 18528,
+     "name": "Critical 2.0",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 11885,
+    "name": "Do-Si-Dos",
+    "count": 4
+   },
+   "alt": [
+    {
+     "id": 11879,
+     "name": "Dosidos",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 12109,
+    "name": "Durban Poison",
+    "count": 6
+   },
+   "alt": [
+    {
+     "id": 12613,
+     "name": "Durban Poison)",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 12460,
+    "name": "Forbidden Fruit",
+    "count": 0
+   },
+   "alt": [
+    {
+     "id": 12620,
+     "name": "Forbidden Fruit)",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 18689,
+    "name": "Frostbanger Auto",
+    "count": 1
+   },
+   "alt": [
+    {
+     "id": 6704,
+     "name": "Frost Banger Auto",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 11923,
+    "name": "Gelato #33",
+    "count": 2
+   },
+   "alt": [
+    {
+     "id": 12048,
+     "name": "Gelato 33",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 5411,
+    "name": "Gelato #44 x Cookies Auto",
+    "count": 0
+   },
+   "alt": [
+    {
+     "id": 18099,
+     "name": "Gelato 44 x Cookies Auto",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 12095,
+    "name": "GG4",
+    "count": 6
+   },
+   "alt": [
+    {
+     "id": 18651,
+     "name": "GG#4",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 11873,
+    "name": "Girl Scout Cookies",
+    "count": 10
+   },
+   "alt": [
+    {
+     "id": 12568,
+     "name": "Girl Scout Cookies)",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 18530,
+    "name": "Gorilla Glue #5",
+    "count": 1
+   },
+   "alt": [
+    {
+     "id": 17538,
+     "name": "Gorilla Glue 5",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 11855,
+    "name": "Granddaddy Purple",
+    "count": 4
+   },
+   "alt": [
+    {
+     "id": 11906,
+     "name": "Grand Daddy Purple",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 3581,
+    "name": "Himalaya - Afghanische und CBD-reiche Genetik",
+    "count": 0
+   },
+   "alt": [
+    {
+     "id": 19041,
+     "name": "Himalaya, Afghanische und CBD-reiche Genetik",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 11896,
+    "name": "Jack Herer",
+    "count": 7
+   },
+   "alt": [
+    {
+     "id": 12504,
+     "name": "Jack Herer)",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 12023,
+    "name": "Jealousy",
+    "count": 2
+   },
+   "alt": [
+    {
+     "id": 12255,
+     "name": "Jealousy)",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 18543,
+    "name": "KmintZ",
+    "count": 4
+   },
+   "alt": [
+    {
+     "id": 18546,
+     "name": "K-Mintz",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 12655,
+    "name": "King's Juice",
+    "count": 0
+   },
+   "alt": [
+    {
+     "id": 19024,
+     "name": "King’s Juice",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 12656,
+    "name": "King's Kush Auto",
+    "count": 0
+   },
+   "alt": [
+    {
+     "id": 19025,
+     "name": "King’s Kush Auto",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 18554,
+    "name": "L.A. Kush",
+    "count": 1
+   },
+   "alt": [
+    {
+     "id": 16798,
+     "name": "L.A Kush",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 3476,
+    "name": "Larry OG x Grand Daddy Purple x Ruderalis",
+    "count": 0
+   },
+   "alt": [
+    {
+     "id": 3475,
+     "name": "Larry OG x Grand Daddy Purple) x Ruderalis",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17558,
+    "name": "Lemon Tree",
+    "count": 2
+   },
+   "alt": [
+    {
+     "id": 12607,
+     "name": "Lemon Tree)",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 19027,
+    "name": "Lil R2, R1-Selektion",
+    "count": 1
+   },
+   "alt": [
+    {
+     "id": 12627,
+     "name": "Lil R2 – R1-Selektion",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 16788,
+    "name": "NL#5",
+    "count": 3
+   },
+   "alt": [
+    {
+     "id": 12031,
+     "name": "NL #5",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 11870,
+    "name": "Northern Lights",
+    "count": 22
+   },
+   "alt": [
+    {
+     "id": 12296,
+     "name": "Northern Light",
+     "count": 4
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 11864,
+    "name": "OG Kush",
+    "count": 34
+   },
+   "alt": [
+    {
+     "id": 11903,
+     "name": "O.G. Kush",
+     "count": 0
+    },
+    {
+     "id": 12601,
+     "name": "OG Kush)",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 11897,
+    "name": "Orange Bud",
+    "count": 6
+   },
+   "alt": [
+    {
+     "id": 12591,
+     "name": "Orange Bud)",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 12014,
+    "name": "Pineapple Train Wreck",
+    "count": 0
+   },
+   "alt": [
+    {
+     "id": 12017,
+     "name": "Pineapple Trainwreck",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 16701,
+    "name": "Pre 98 Bubba Kush",
+    "count": 2
+   },
+   "alt": [
+    {
+     "id": 18860,
+     "name": "Pre-98 Bubba Kush",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 12226,
+    "name": "Rope Fuel",
+    "count": 1
+   },
+   "alt": [
+    {
+     "id": 12218,
+     "name": "Ropefuel",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 12182,
+    "name": "RS11",
+    "count": 3
+   },
+   "alt": [
+    {
+     "id": 17583,
+     "name": "RS-11",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 11842,
+    "name": "Runtz",
+    "count": 8
+   },
+   "alt": [
+    {
+     "id": 12205,
+     "name": "Runtz)",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 19035,
+    "name": "Shishka Berry",
+    "count": 1
+   },
+   "alt": [
+    {
+     "id": 12044,
+     "name": "Shishkaberry",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 12113,
+    "name": "Thai",
+    "count": 12
+   },
+   "alt": [
+    {
+     "id": 11867,
+     "name": "Thai)",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 1652,
+    "name": "Wedding Cake x BF Super Auto #1",
+    "count": 0
+   },
+   "alt": [
+    {
+     "id": 17927,
+     "name": "Wedding Cake x BF Super Auto 1",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 11848,
+    "name": "Zkittlez",
+    "count": 12
+   },
+   "alt": [
+    {
+     "id": 12633,
+     "name": "Zkittlez)",
+     "count": 0
+    }
+   ]
+  }
+ ],
+ "pa_indica": [
+  {
+   "kanon": {
+    "id": 18007,
+    "name": "10 %",
+    "count": 0
+   },
+   "alt": [
+    {
+     "id": 11861,
+     "name": "10%",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 18052,
+    "name": "100 %",
+    "count": 9
+   },
+   "alt": [
+    {
+     "id": 1711,
+     "name": "100%",
+     "count": 4
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17965,
+    "name": "15 %",
+    "count": 0
+   },
+   "alt": [
+    {
+     "id": 3460,
+     "name": "15%",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17691,
+    "name": "20 %",
+    "count": 19
+   },
+   "alt": [
+    {
+     "id": 2218,
+     "name": "20%",
+     "count": 4
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17653,
+    "name": "25 %",
+    "count": 5
+   },
+   "alt": [
+    {
+     "id": 3627,
+     "name": "25%",
+     "count": 6
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17569,
+    "name": "30 %",
+    "count": 18
+   },
+   "alt": [
+    {
+     "id": 2190,
+     "name": "30%",
+     "count": 19
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17765,
+    "name": "35 %",
+    "count": 7
+   },
+   "alt": [
+    {
+     "id": 3412,
+     "name": "35%",
+     "count": 3
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17528,
+    "name": "40 %",
+    "count": 25
+   },
+   "alt": [
+    {
+     "id": 1669,
+     "name": "40%",
+     "count": 14
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17682,
+    "name": "45 %",
+    "count": 5
+   },
+   "alt": [
+    {
+     "id": 4738,
+     "name": "45%",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17878,
+    "name": "5 %",
+    "count": 0
+   },
+   "alt": [
+    {
+     "id": 12306,
+     "name": "5%",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17606,
+    "name": "50 %",
+    "count": 37
+   },
+   "alt": [
+    {
+     "id": 1636,
+     "name": "50%",
+     "count": 28
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17684,
+    "name": "55 %",
+    "count": 13
+   },
+   "alt": [
+    {
+     "id": 3432,
+     "name": "55%",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17525,
+    "name": "60 %",
+    "count": 46
+   },
+   "alt": [
+    {
+     "id": 1662,
+     "name": "60%",
+     "count": 17
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17592,
+    "name": "65 %",
+    "count": 14
+   },
+   "alt": [
+    {
+     "id": 1654,
+     "name": "65%",
+     "count": 9
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17533,
+    "name": "70 %",
+    "count": 38
+   },
+   "alt": [
+    {
+     "id": 1650,
+     "name": "70%",
+     "count": 19
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17566,
+    "name": "75 %",
+    "count": 20
+   },
+   "alt": [
+    {
+     "id": 1695,
+     "name": "75%",
+     "count": 9
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17664,
+    "name": "80 %",
+    "count": 31
+   },
+   "alt": [
+    {
+     "id": 1717,
+     "name": "80%",
+     "count": 23
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17723,
+    "name": "85 %",
+    "count": 5
+   },
+   "alt": [
+    {
+     "id": 3464,
+     "name": "85%",
+     "count": 5
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17646,
+    "name": "90 %",
+    "count": 24
+   },
+   "alt": [
+    {
+     "id": 2187,
+     "name": "90%",
+     "count": 8
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 18285,
+    "name": "95 %",
+    "count": 2
+   },
+   "alt": [
+    {
+     "id": 3527,
+     "name": "95%",
+     "count": 1
+    }
+   ]
+  }
+ ],
+ "pa_sativa": [
+  {
+   "kanon": {
+    "id": 17647,
+    "name": "10 %",
+    "count": 25
+   },
+   "alt": [
+    {
+     "id": 2188,
+     "name": "10%",
+     "count": 6
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 18495,
+    "name": "100 %",
+    "count": 5
+   },
+   "alt": [
+    {
+     "id": 8468,
+     "name": "100%",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17724,
+    "name": "15 %",
+    "count": 4
+   },
+   "alt": [
+    {
+     "id": 3465,
+     "name": "15%",
+     "count": 5
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17665,
+    "name": "20 %",
+    "count": 31
+   },
+   "alt": [
+    {
+     "id": 1718,
+     "name": "20%",
+     "count": 22
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17567,
+    "name": "25 %",
+    "count": 19
+   },
+   "alt": [
+    {
+     "id": 1696,
+     "name": "25%",
+     "count": 9
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17534,
+    "name": "30 %",
+    "count": 40
+   },
+   "alt": [
+    {
+     "id": 1651,
+     "name": "30%",
+     "count": 19
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17593,
+    "name": "35 %",
+    "count": 16
+   },
+   "alt": [
+    {
+     "id": 1655,
+     "name": "35%",
+     "count": 8
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17526,
+    "name": "40 %",
+    "count": 48
+   },
+   "alt": [
+    {
+     "id": 1663,
+     "name": "40%",
+     "count": 16
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17685,
+    "name": "45 %",
+    "count": 10
+   },
+   "alt": [
+    {
+     "id": 3433,
+     "name": "45%",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 18284,
+    "name": "5 %",
+    "count": 3
+   },
+   "alt": [
+    {
+     "id": 3528,
+     "name": "5%",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17607,
+    "name": "50 %",
+    "count": 36
+   },
+   "alt": [
+    {
+     "id": 1637,
+     "name": "50%",
+     "count": 28
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17683,
+    "name": "55 %",
+    "count": 5
+   },
+   "alt": [
+    {
+     "id": 4739,
+     "name": "55%",
+     "count": 4
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17529,
+    "name": "60 %",
+    "count": 26
+   },
+   "alt": [
+    {
+     "id": 1670,
+     "name": "60%",
+     "count": 13
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17766,
+    "name": "65 %",
+    "count": 6
+   },
+   "alt": [
+    {
+     "id": 3413,
+     "name": "65%",
+     "count": 3
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17570,
+    "name": "70 %",
+    "count": 16
+   },
+   "alt": [
+    {
+     "id": 2191,
+     "name": "70%",
+     "count": 21
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17654,
+    "name": "75 %",
+    "count": 6
+   },
+   "alt": [
+    {
+     "id": 3628,
+     "name": "75%",
+     "count": 5
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17692,
+    "name": "80 %",
+    "count": 18
+   },
+   "alt": [
+    {
+     "id": 2219,
+     "name": "80%",
+     "count": 4
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17858,
+    "name": "90 %",
+    "count": 0
+   },
+   "alt": [
+    {
+     "id": 11862,
+     "name": "90%",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17877,
+    "name": "95 %",
+    "count": 0
+   },
+   "alt": [
+    {
+     "id": 12307,
+     "name": "95%",
+     "count": 1
+    }
+   ]
+  }
+ ],
+ "pa_effekte": [
+  {
+   "kanon": {
+    "id": 18402,
+    "name": "Antistress",
+    "count": 12
+   },
+   "alt": [
+    {
+     "id": 1714,
+     "name": "Anti-Stress",
+     "count": 0
+    }
+   ]
+  }
+ ],
+ "pa_terpene": [
+  {
+   "kanon": {
+    "id": 13957,
+    "name": "Caryophyllen",
+    "count": 557
+   },
+   "alt": [
+    {
+     "id": 18318,
+     "name": "β-Caryophyllen",
+     "count": 5
+    }
+   ]
+  }
+ ],
+ "pa_ertrag": [
+  {
+   "kanon": {
+    "id": 17841,
+    "name": "400-450 g/m² (Indoor)",
+    "count": 1
+   },
+   "alt": [
+    {
+     "id": 18472,
+     "name": "400 - 450 g/m² (Indoor)",
+     "count": 6
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17828,
+    "name": "450-500 g/m² (Indoor)",
+    "count": 7
+   },
+   "alt": [
+    {
+     "id": 18475,
+     "name": "450 - 500 g/m² (Indoor)",
+     "count": 5
+    }
+   ]
+  },
+  {
+   "kanon": {
+    "id": 17835,
+    "name": "500-550 g/m² (Indoor)",
+    "count": 5
+   },
+   "alt": [
+    {
+     "id": 18474,
+     "name": "500 - 550 g/m² (Indoor)",
+     "count": 5
+    }
+   ]
+  }
+ ]
+}

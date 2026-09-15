@@ -1,6 +1,6 @@
 # Produktattribute der Samen auf hanfjack.de
 
-Stand: 15.09.2026 · **1807 Samen** (ohne Entwürfe) in 51 Marken.
+Stand: 15.09.2026 · **1604 veröffentlichte Samen** in 51 Marken (1890 inkl. Entwürfe und privater Artikel).
 
 Ziel: 16 Attribute je Sorte, einheitlich befüllt und filterbar.
 
@@ -54,28 +54,48 @@ Dazu 772 Produkte aus den eigenen Produktbeschreibungen und 293 aus einem Händl
 | Paradise Seeds | 38 | paradise-seeds.com | THC, Genanteile, Blütezeit, Höhe, Ertrag, Effekte, Aroma |
 | **Variante, alle Marken** | **1126** | Produktname | Variante |
 | **Alle Marken** | **772** | „Auf einen Blick" aus der eigenen Produktbeschreibung | Blütezeit, Samentyp, Genanteile, THC, CBD, Genetik, Ertrag, Wuchshöhe |
-| **21 Marken** | **293** | house-of-seeds.de (Händlerkatalog) | Aroma, Effekte, Terpene, Genetik |
+| **21 Marken** | **293** | house-of-seeds.de (Händlerkatalog), 1. Durchgang | Aroma, Effekte, Terpene, Genetik |
+| **Alle Marken** | **446** | house-of-seeds.de, 2. Durchgang über den Gesamtbestand | dieselben vier Felder, nur wo noch leer |
+| **Alle Marken** | **1361** | Beschreibungen mit abweichenden Labeln | Blütezeit, Variante, Typ, Genanteile, THC, CBD, Genetik, Ertrag, Wuchshöhe |
+| **Alle Marken** | **471** | Sortentyp autoflowering | Erntemonat „Ganzjährig (Auto)" |
 
 ### Abdeckung im Katalog
 
-| Attribut | vorher | jetzt | Abdeckung |
-| --- | --- | --- | --- |
-| Variante | 1286 | 1690 | 93 % |
-| THC-Gehalt | 1299 | 1357 | 75 % |
-| Aroma | 1054 | 1080 | 59 % |
-| Genetik | 1053 | 1074 | 59 % |
-| Effekte | 897 | 990 | 54 % |
-| Blütezeit | 865 | 929 | 51 % |
-| Sativa % / Indica % | 670 / 674 | 778 / 785 | 43 % |
-| Terpene | 730 | 730 | 40 % |
-| CBD-Gehalt | 366 | 376 | 20 % |
-| Typ | 0 | 336 | 18 % |
-| Anbauumgebung | 0 | 342 | 18 % |
-| Ertrag | 0 | 296 | 16 % |
-| Wuchshöhe | 0 | 243 | 13 % |
-| Schwierigkeitsgrad | 0 | 136 | 7 % |
-| Erntemonat | 0 | 81 | 4 % |
-| Klima | 0 | 71 | 3 % |
+1604 veröffentlichte Samen, Stand nach allen Läufen:
+
+| Attribut | befüllt | Abdeckung |
+| --- | ---: | ---: |
+| Variante | 1603 | 99 % |
+| Genetik | 1520 | 94 % |
+| THC-Gehalt | 1203 | 75 % |
+| Aroma | 1196 | 74 % |
+| Effekte | 1102 | 68 % |
+| Blütezeit | 1005 | 62 % |
+| Typ | 909 | 56 % |
+| Terpene | 887 | 55 % |
+| Indica % | 667 | 41 % |
+| Sativa % | 660 | 41 % |
+| Erntemonat | 550 | 34 % |
+| CBD-Gehalt | 344 | 21 % |
+| Wuchshöhe | 340 | 21 % |
+| Anbauumgebung | 321 | 20 % |
+| Ertrag | 285 | 17 % |
+| Geschmack | 174 | 10 % |
+| Schwierigkeitsgrad | 132 | 8 % |
+| Klima | 58 | 3 % |
+| Ruderalis % | 0 | 0 % |
+
+Zum Vergleich der Ausgangsstand vor dieser Runde: Typ 0, Anbauumgebung 0, Ertrag 0,
+Wuchshöhe 0, Schwierigkeitsgrad 0, Erntemonat 0, Klima 0 — diese sieben Attribute gab es
+vorher gar nicht. Terpene standen bei 40 %, Effekte bei 54 %, Blütezeit bei 51 %.
+
+**Klima (3 %) und Schwierigkeitsgrad (8 %) bleiben dünn, und das bleibt auch so.** Beide
+Angaben veröffentlichen nur wenige Hersteller (Royal Queen Seeds, Sensi, Pyramid). Weder der
+Händlerkatalog noch die Produktbeschreibungen enthalten sie. Sie zu schätzen hieße, Werte zu
+erfinden — deshalb bleiben die Felder leer.
+
+**Ruderalis % steht bei 0 %**, weil die Genanteile in den Quellen durchgängig als Sativa/Indica
+angegeben werden, auch bei Autos. Der Ruderalis-Anteil wird nirgends beziffert.
 
 Die Zuwächse bei Aroma, Genetik und THC fallen kleiner aus als die Zahl der bearbeiteten
 Produkte, weil diese Felder vielfach schon belegt waren. Dort liegt der Gewinn in der
@@ -107,7 +127,11 @@ Alle neuen Werte werden vor dem Schreiben gegen die vorhandenen Taxonomie-Terme 
 ## Offene Punkte
 
 - **Fast Buds (111 Produkte)**: 2fast4buds.com und die Produktseiten von fastbuds.com sind
-  hinter Cloudflare, die Datenblätter sind nicht abrufbar.
+  hinter Cloudflare, die Datenblätter sind nicht abrufbar. Abgedeckt über die eigenen
+  Beschreibungen und den Händlerkatalog.
+- **78 Samen ohne jede belastbare Quelle**: Bei ihnen steht im Beschreibungstext ausdrücklich,
+  dass der Züchter keine Daten veröffentlicht (Beispiel Solfire Gardens Rubicite: „Zu Rubicite
+  ist bislang kein Beschreibungstext des Züchters hinterlegt"). Dort bleiben die Felder leer.
 - **Sensi Seeds**: veröffentlicht Ertrag, Höhe und Blütezeit nur qualitativ („Üppiger Ertrag",
   „Durchschnittliche Blütezeit"). Diese Felder bleiben dort leer. 53 der 116 Sorten stehen nicht
   in der Sitemap (reguläre Samen und Autos werden per JavaScript nachgeladen).
@@ -130,8 +154,14 @@ Alle neuen Werte werden vor dem Schreiben gegen die vorhandenen Taxonomie-Terme 
   Schreibweisen: **Critical + ≠ Critical** und **Criminal+ ≠ Criminal**. Ebenso bleibt bei der
   Blütezeit „70+" neben „70" bestehen — das Plus ist eine Angabe, keine Tippvariante.
 
-  Das Zusammenführen (`dedup_apply.py`) hängt die Produkte auf den Kanon-Term um und löscht
-  danach den leeren Term. Steht noch aus.
+  **Erledigt:** `dedup_apply.py` hat **714 Produktzuordnungen** auf den jeweiligen Kanon-Term
+  umgehängt, fehlerfrei. Die leer gewordenen Terme bleiben auf Wunsch stehen (Zähler 0) und
+  können im Backend in einem Rutsch entfernt werden; `dedup_apply.py --loeschen` würde das
+  auch übernehmen.
+
+  Beim Schreiben selbst sind über alle vier Wortattribute nur **vier neue Terme** entstanden —
+  „Kuchen", „Harz", „Säuerlich", „nostalgisch". Keine einzige Schreibweisen-Dublette, weil jeder
+  Wert vor dem Schreiben gegen die bestehende Taxonomie abgeglichen wird.
 
 - **Humboldt Seed Company**: humboldtseedcompany.com veröffentlicht nur 53 Sortenseiten mit
   Datenblock, davon passen 5 auf den Shop-Bestand. Der restliche Katalog liegt auf den
