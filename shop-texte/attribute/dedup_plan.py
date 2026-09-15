@@ -44,9 +44,16 @@ AUSNAHME_SLUGS = {'pa_bluetezeit-tage'}
 
 
 def echte_dublette(terme):
-    kern = {n.rstrip(' +').lower() for _, n, _ in terme}
-    mit_plus = {n for _, n, _ in terme if n.rstrip().endswith('+')}
-    return not (mit_plus and len(kern) == 1 and len(mit_plus) < len(terme))
+    """Ein '+' ist eine Angabe, keine Schreibvariante: Critical + ist eine andere
+    Sorte als Critical, Critical + Auto eine andere als Critical Auto."""
+    namen = [n for _, n, _ in terme]
+    mit = [n for n in namen if '+' in n]
+    ohne = [n for n in namen if '+' not in n]
+    if not mit or not ohne:
+        return True
+    def ohne_plus(n):
+        return ' '.join(n.replace('+', ' ').split()).lower()
+    return not any(ohne_plus(a) == ohne_plus(b) for a in mit for b in ohne)
 
 
 plan = {}

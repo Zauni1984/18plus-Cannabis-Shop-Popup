@@ -154,10 +154,24 @@ Alle neuen Werte werden vor dem Schreiben gegen die vorhandenen Taxonomie-Terme 
   Schreibweisen: **Critical + ≠ Critical** und **Criminal+ ≠ Criminal**. Ebenso bleibt bei der
   Blütezeit „70+" neben „70" bestehen — das Plus ist eine Angabe, keine Tippvariante.
 
-  **Erledigt:** `dedup_apply.py` hat **714 Produktzuordnungen** auf den jeweiligen Kanon-Term
-  umgehängt, fehlerfrei. Die leer gewordenen Terme bleiben auf Wunsch stehen (Zähler 0) und
-  können im Backend in einem Rutsch entfernt werden; `dedup_apply.py --loeschen` würde das
-  auch übernehmen.
+  **Erledigt:** `dedup_apply.py` hat **721 Produktzuordnungen** auf den jeweiligen Kanon-Term
+  umgehängt, `leere_terme.py` anschließend **149 leer gewordene Terme gelöscht**. Gelöscht wird
+  nur, was der Shop selbst mit Zähler 0 meldet — jeder Term wird einzeln abgefragt und vorher
+  in `leere_terme_backup.json` gesichert (Name, Slug, Beschreibung, Ziel-Term).
+
+  Von 137 Dublettengruppen sind **4 übrig, und die bleiben**, weil es echte Wertunterschiede
+  sind und keine Schreibweisen:
+
+  | Attribut | bleibt getrennt | Grund |
+  | --- | --- | --- |
+  | Genetik | Critical + ≠ Critical | eigenständige Sorte |
+  | Genetik | Critical + Auto ≠ Critical Auto | eigenständige Sorte |
+  | Genetik | Criminal+ ≠ Criminal | eigenständige Sorte |
+  | Blütezeit | 70+ ≠ 70 | das Plus ist eine Angabe |
+
+  `dedup_plan.py` erkennt das an einer eigenen Regel: Sobald sich zwei Namen nur durch ein
+  „+" unterscheiden, wird die Gruppe übersprungen — unabhängig davon, wo im Namen das Plus
+  steht.
 
   Beim Schreiben selbst sind über alle vier Wortattribute nur **vier neue Terme** entstanden —
   „Kuchen", „Harz", „Säuerlich", „nostalgisch". Keine einzige Schreibweisen-Dublette, weil jeder
