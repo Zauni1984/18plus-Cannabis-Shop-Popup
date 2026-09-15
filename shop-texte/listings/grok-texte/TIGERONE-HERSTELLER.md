@@ -3,8 +3,8 @@
 Stand: 15.09.2026 · Abgleich der Tiger-One-Lagerliste (10.904 Artikelnummern) gegen alle
 4.441 Produkte und 1.631 Variationssätze auf hanfjack.de.
 
-**Ergebnis: 808 Produkte tragen eine Tiger-One-Artikelnummer – und kein einziges davon hat einen
-Hersteller-Term zugewiesen.** Damit fehlt bei diesen Artikeln die komplette Herstellerangabe nach
+**Ausgangslage: 808 Produkte trugen eine Tiger-One-Artikelnummer – und kein einziges davon hatte einen
+Hersteller-Term zugewiesen.** (Inzwischen erledigt, siehe unten.) Damit fehlt bei diesen Artikeln die komplette Herstellerangabe nach
 GPSR, nicht nur die verantwortliche Person in der EU.
 
 Status der 808: 727 veröffentlicht, 80 Entwürfe, 1 privat.
@@ -34,26 +34,50 @@ Status der 808: 727 veröffentlicht, 80 Entwürfe, 1 privat.
 | Purple City Genetics | 5 |
 | Grand Daddy Genetics | 3 |
 
-## Was daraus folgt
+## Erledigt
 
-Der Auftrag, Tiger One als verantwortliche Person in der EU einzutragen, lässt sich für diese
-Artikel nicht über das Herstellerfeld erfüllen, solange kein Hersteller-Term an den Produkten
-hängt. Nötig wären zwei Schritte:
+Beide Schritte sind ausgeführt. **Alle 808 Produkte tragen jetzt einen Hersteller-Term, keiner
+ist offen geblieben, kein Fehler.**
 
-1. Für jede der 20 Marken einen Hersteller-Term mit Anschrift anlegen beziehungsweise den
-   vorhandenen ergänzen, mit Tiger One als verantwortlicher Person in der EU bei den
-   Drittland-Herstellern.
-2. Die 808 Produkte diesem Term zuweisen – das ist eine Änderung an den Produkten selbst.
+Für zwölf Marken gab es noch keinen Hersteller-Term; die sind neu angelegt:
 
-Hersteller-Terms existieren bislang nur für Ethos Genetics, Brothers Grimm Seeds,
-Lovin In Her Eyes, Sensi Seeds, Amsterdam Genetics, Sweet Seeds und Ace Seeds; sie sind aber
-keinem dieser Produkte zugeordnet. Für Nirvana Seeds, Seedsman, Pyramid Seeds (als Hersteller),
-Silent Seeds, Buddha Seeds, The Cali Connection, Ripper Seeds, Serious Seeds, James Loud Genetics,
-Solfire Gardens, TerpyZ Mutant Genetics, Purple City Genetics und Grand Daddy Genetics gibt es
-überhaupt keinen Hersteller-Term.
+| Marke | Term | Hersteller | EU-Verantwortliche |
+| --- | --- | --- | --- |
+| Nirvana Seeds | 19378 | Pygmalion bv, Camplaan 20-B, 2103 GW Heemstede, NL | — (EU-Sitz) |
+| Silent Seeds | 19379 | SYNEX GROUP B.V., Overwegwachter 4, 3034 KG Rotterdam, NL | — (EU-Sitz) |
+| Ripper Seeds | 19380 | Black Friday S.L., Calle Viladomat 202, 08205 Sabadell, ES, CIF B66322801 | — (EU-Sitz) |
+| Serious Seeds | 19381 | Serious Seeds B.V., NL, USt-IdNr. NL814048122B01 | — (EU-Sitz) |
+| Buddha Seeds | 19382 | Buddha Seeds, ES | — (EU-Sitz) |
+| Solfire Gardens | 19383 | 9849 17th Ave SW Suite 407, Seattle, WA 98106, USA | Tiger One |
+| Purple City Genetics | 19384 | Oakland, Kalifornien, USA, Lizenz TAL18-0001555 | Tiger One |
+| James Loud Genetics | 19385 | USA | Tiger One |
+| The Cali Connection | 19386 | USA | Tiger One |
+| Grand Daddy Genetics | 19387 | Kalifornien, USA | Tiger One |
+| Seedsman | 19388 | Vereinigtes Königreich | Tiger One |
+| TerpyZ Mutant Genetics | 19389 | Spanien | — (EU-Sitz) |
 
-Die vollständige Liste der betroffenen Produkte steht in
-`hanfjack-de-tigerone-produkte-ohne-hersteller.json` (ID, Name, SKU, Status, Marke).
+Tiger One steht nur bei den Drittland-Herstellern als verantwortliche Person in der EU. Wo der
+Hersteller selbst in der EU sitzt, ist er der Wirtschaftsakteur nach Artikel 16 GPSR; ein
+zusätzlicher Eintrag wäre dort sachlich falsch.
+
+### Wo keine Straßenanschrift steht
+
+Sieben der zwölf Hersteller veröffentlichen keine Straßenanschrift: Serious Seeds, Buddha Seeds,
+Purple City Genetics, James Loud Genetics, The Cali Connection, Grand Daddy Genetics, Seedsman und
+TerpyZ. Dort steht Firmierung, Land und die publizierten Kontaktwege — dasselbe Muster wie bei
+Lovin In Her Eyes. **Erfunden wurde keine Adresse.** Die Quelle je Marke ist in `mfg_neu.py`
+hinter jedem Eintrag vermerkt.
+
+Zwei Hinweise für später:
+
+- **Seedsman**: Die Marke gehört laut Markenregister der TGR Ventures Limited, Companies House
+  04530044, The Old Post Office, 41–43 Market Place, Chippenham, Wiltshire SN15 3HR. Seedsman
+  selbst nennt diese Anschrift nirgends als Herstelleranschrift, deshalb steht sie nicht im
+  Herstellerfeld, sondern nur hier. Auffällig: Seedsman (+44 1451 844855) und Tiger One
+  (+44 1451 844800) teilen sich dieselbe Vorwahl und Nummernfolge.
+- **Serious Seeds**: Ein Wirtschaftsauskunftsdienst führt „Bisonstraat, 1448 WT Purmerend" ohne
+  Hausnummer. Eine Anschrift ohne Hausnummer ist für die GPSR-Angabe wertlos, deshalb nicht
+  eingetragen.
 
 ## Tiger One
 
