@@ -1,13 +1,42 @@
 # Grok-Texte ersetzen – 847 Produkte auf hanfjack.de
 
-Stand: 14.09.2026 · **847 Produkte** vollständig neu getextet (Beschreibung, Kurzbeschreibung, Yoast-Titel, Meta-Description, Focus-Keyword).
+Stand: 15.09.2026 · **847 Produkte** vollständig neu getextet (Beschreibung, Kurzbeschreibung, Yoast-Titel, Meta-Description, Focus-Keyword) und **auf hanfjack.de eingespielt**.
 
 Die Texte liegen in diesem Ordner:
 
 - `hanfjack-de-847-produkttexte.json` – Volltexte als HTML, Schlüssel ist die WooCommerce-Produkt-ID (Upload-Quelle)
 - `hanfjack-de-847-produkttexte.csv` – dieselben Daten als Tabelle zur Durchsicht
 
-## Prüfungen (alle bestanden)
+## Upload
+
+Am 15.09.2026 über die WooCommerce-REST-API (`POST /wc/v3/products/batch`, 25 Produkte je Anfrage)
+eingespielt. Geschrieben wurden je Produkt `description`, `short_description` sowie die drei
+Yoast-Postmeta-Felder `_yoast_wpseo_title`, `_yoast_wpseo_metadesc` und `_yoast_wpseo_focuskw`.
+Preise, Bestand, Attribute, Kategorien und Varianten wurden nicht angefasst.
+
+Kontrolle nach dem Upload gegen den Live-Shop (Store-API-Vollscan über 3919 sichtbare Produkte
+plus REST-Abgleich aller 847):
+
+| Prüfung | Ergebnis |
+| --- | --- |
+| Produkte im Shop auffindbar | 847 von 847 |
+| `dir="auto"` / `data-start` in Produkttexten | 0 |
+| Beschreibung und Kurzbeschreibung stimmen mit der Quelle überein | 847 von 847 |
+| Yoast-Titel, Meta-Description und Focus-Keyword gesetzt und korrekt | 847 von 847 |
+| Produkte mit gesetztem `min_age` | 0 – Dünger bleiben ohne Altersfreigabe |
+
+Fünf Produkte (510, 1878, 1879, 22211, 22243) unterscheiden sich im Zeichenvergleich nur durch
+WordPress' automatische Typografie (`"` → `"`, `'` → `'`). Das ist gewollt und inhaltlich identisch.
+
+## Offener Befund: Markenbeschreibungen
+
+Der Grok-Marker steckt nicht nur in Produkttexten. Von den **241 Marken** der Taxonomie
+`pwb-brand` tragen **101 noch `dir="auto"`** in ihrer Beschreibung, weitere **139 haben gar keine
+Beschreibung**. Diese Texte erscheinen im Tab „Marke“ auf jeder Produktseite der jeweiligen Marke
+und auf den Marken-Archivseiten – bei Royal Queen Seeds etwa auf 178 Produktseiten, bei
+Barneys Farm auf 124. Das ist eigenes Arbeitspaket und in diesem Durchgang nicht enthalten.
+
+## Prüfungen der Texte (alle bestanden)
 
 - kein `dir="auto"` und keine `data-start`/`data-end`-Reste mehr
 - Meta-Description 100–160 Zeichen, Yoast-Titel ≤ 75 Zeichen
