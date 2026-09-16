@@ -1,4 +1,43 @@
-# Produktattribute der Samen auf hanfjack.de
+# Produktattribute auf hanfjack.de
+
+**Gesamtstand 16.09.2026: 3919 veröffentlichte Produkte, 3644 davon (92 %) tragen Attribute.**
+
+| Bereich | Produkte | mit Attribut | Anteil |
+| --- | ---: | ---: | ---: |
+| Samen | 1604 | 1604 | 100 % |
+| Dünger | 467 | 467 | 100 % |
+| Headshop | 768 | 706 | 91 % |
+| Growbedarf | 877 | 673 | 76 % |
+| Übriges | 203 | 194 | 95 % |
+
+Je Bereich gibt es einen eigenen Ordner mit Schema, Parser und Ergebnisbericht:
+`duenger/`, `growbedarf/`, `headshop/`, `uebriges/`. Der Rest dieser Datei beschreibt die Samen.
+
+Insgesamt hat der Shop jetzt **66 Produktattribute**; 33 davon sind in dieser Runde neu
+entstanden.
+
+## Dublettenbereinigung über alle Attribute
+
+`dedup_scan.py` findet Terme, die sich nur in der Schreibweise unterscheiden, `dedup_plan.py`
+bestimmt je Gruppe den Kanon-Term, `dedup_apply.py` hängt die Produkte um und `leere_terme.py`
+löscht die leer gewordenen Terme — aber nur solche, die der Shop selbst mit Zähler 0 meldet, und
+erst nach einer Sicherung.
+
+Bilanz: **1083 Produktzuordnungen umgehängt, 206 Terme gelöscht.**
+
+Zwei Regeln haben sich als notwendig erwiesen:
+
+- **Zahlen dürfen nicht normalisiert werden.** Der erste Entwurf hätte `2,2 kg` und `22 kg`
+  zusammengeführt, weil er alle Satzzeichen entfernte. Bei jedem Attribut, dessen Wert eine Zahl
+  trägt, bleiben Komma und Bindestrich deshalb erhalten. Vereinheitlicht werden nur echte
+  Schreibvarianten: fehlendes Leerzeichen vor der Einheit, Dezimalpunkt statt Komma,
+  griechisches My statt Mikrozeichen, `dBA` statt `dB(A)`.
+- **Ein „+" ist eine Angabe, keine Tippvariante.** Critical + bleibt von Critical getrennt,
+  Critical + Auto von Critical Auto, 70+ Tage von 70 Tagen.
+
+Am Ende stehen noch vier Gruppen — genau diese vier — und die bleiben so.
+
+# Samen
 
 Stand: 15.09.2026 · **1604 veröffentlichte Samen** in 51 Marken (1890 inkl. Entwürfe und privater Artikel).
 

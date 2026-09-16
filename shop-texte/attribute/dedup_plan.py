@@ -27,14 +27,29 @@ def punkte(name, slug, count):
         p += 10000 if re.fullmatch(r'\d+\s%', name) else -10000
     if slug == 'pa_ertrag':
         p += 500 if ' - ' not in name else 0        # kompakte Schreibweise 400-450
-    if re.search(r'[()]', name) and slug not in ('pa_ertrag', 'pa_wuchshoehe'):
-        p -= 5000                      # Klammerreste aus fehlerhaftem Split
+    # Klammerreste stammen aus dem fehlerhaften Kreuzungs-Split und betreffen nur
+    # die Genetik. Anderswo sind Klammern gewollt: 32 dB(A), 600 g/m² (Indoor)
+    if slug == 'pa_genetik' and re.search(r'[()]', name):
+        p -= 5000
     if name.startswith(('\u2022', '-', '~')):
         p -= 5000
     if '\u2019' in name:
         p -= 100                       # typografischer Apostroph -> gerader bevorzugt
     if name != name.strip() or re.search(r'\s{2,}', name):
         p -= 1000
+    # Schreibweise der Einheiten vereinheitlichen
+    if re.search(r'\d\s(?:W|mm|cm|m|kg|g|V|Hz|t|µm|dB|lm|m³/h|µmol)', name):
+        p += 400                       # Leerzeichen vor der Einheit
+    if re.search(r'\d\.\d', name):
+        p -= 300                       # Dezimalpunkt statt Komma
+    if '\u03bc' in name:
+        p -= 300                       # griechisches My statt Mikrozeichen
+    if re.match(r'^[Øø⌀]', name.strip()):
+        p -= 200                       # fuehrendes Durchmesserzeichen
+    if 'dB(A)' in name:
+        p += 150
+    if '\u00d7' in name:
+        p += 100                       # typografisches Malzeichen
     return p
 
 

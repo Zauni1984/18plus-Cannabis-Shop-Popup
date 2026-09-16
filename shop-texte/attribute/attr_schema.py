@@ -49,4 +49,13 @@ ALT_NEU = {
 ATTR_ID = {'pa_aroma':7,'pa_thc-gehalt':4,'pa_cbd-gehalt':6,'pa_sativa':18,'pa_indica':17,
            'pa_ruderalis':19,'pa_terpene':38,'pa_variante':12,'pa_bluetezeit-tage':21,
            'pa_effekte':20,'pa_genetik':16,'pa_typ':15,'pa_klima':39,'pa_wuchshoehe':40,
-           'pa_anbauumgebung':41,'pa_erntemonat':42,'pa_ertrag':43,'pa_schwierigkeitsgrad':44,'pa_geschmack':11}
+           'pa_anbauumgebung':41,'pa_erntemonat':42,'pa_ertrag':43,'pa_schwierigkeitsgrad':44,'pa_geschmack':11,
+           'pa_inhalt':2,'pa_verpackung':5,'pa_einheit':8,'pa_farbe':3,'pa_groesse':25,
+           'pa_npk':45,'pa_naehrstoffe':46,'pa_duengertyp':47,'pa_duengerart':48,
+           'pa_wirkdauer':49,'pa_form':50,'pa_loeslichkeit':51,'pa_anwendungsphase':52,
+           'pa_substrat':53,'pa_anwendungsart':54,
+           'pa_luftdurchsatz':55,'pa_anschluss':56,'pa_abmessungen':57,'pa_material':58,
+           'pa_gewicht':59,'pa_schutzart':60,'pa_flaeche':61,
+           'pa_weee-nummer':23,'pa_leistungsaufnahme':26,'pa_spannung':27,
+           'pa_lichtspektrum':28,'pa_ppf':29,'pa_ppe':30,'pa_frequenz':31,
+           'pa_stromverbrauch':32,'pa_lumen':33,'pa_amp':34,'pa_geraeuschpegel':35,'pa_maschenweite':62,'pa_presskraft':63,'pa_herkunft':64,'pa_format':65,'pa_motiv':66,'pa_brennstoff':67,'pa_laenge':68,'pa_durchmesser':69,'pa_spektrum':70,'pa_traegeroel':71,'pa_verlag':72,'pa_einband':73,'pa_isbn':74,'pa_grammatur':75}

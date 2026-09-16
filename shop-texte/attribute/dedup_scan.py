@@ -16,16 +16,29 @@ def hole(aid):
     return t
 
 NUMERISCH = {'pa_thc-gehalt', 'pa_cbd-gehalt', 'pa_sativa', 'pa_indica', 'pa_ruderalis',
-             'pa_bluetezeit-tage', 'pa_ertrag', 'pa_wuchshoehe'}
+             'pa_bluetezeit-tage', 'pa_ertrag', 'pa_wuchshoehe',
+             # alles, wo eine Zahl den Wert traegt: 2,2 kg ist nicht 22 kg
+             'pa_gewicht', 'pa_luftdurchsatz', 'pa_anschluss', 'pa_abmessungen',
+             'pa_laenge', 'pa_durchmesser', 'pa_maschenweite', 'pa_presskraft',
+             'pa_grammatur', 'pa_leistungsaufnahme', 'pa_ppf', 'pa_ppe', 'pa_lumen',
+             'pa_geraeuschpegel', 'pa_spannung', 'pa_frequenz', 'pa_flaeche',
+             'pa_groesse', 'pa_inhalt', 'pa_amp', 'pa_stromverbrauch', 'pa_npk'}
 
 
 def key(n, slug=''):
     s = n.lower().replace('\u2013', '-').replace('\u2014', '-').replace('\u2212', '-')
     if slug in NUMERISCH:
-        # Zahlen und Trennzeichen bleiben erhalten - 0-4 % und 0,4 % sind NICHT gleich
+        # Zahlen und Trennzeichen bleiben erhalten - 0-4 % und 0,4 % sind NICHT gleich,
+        # 2,2 kg nicht 22 kg. Nur Schreibvarianten werden vereinheitlicht.
         s = re.sub(r'[\s~+]+', '', s)
         s = s.replace('\u00b2', '2').replace('\u00b3', '3')
-        return re.sub(r'[^a-z0-9,.\-/%]+', '', s)
+        s = s.replace('\u03bc', '\u00b5')                 # griechisches My -> Mikrozeichen
+        s = re.sub(r'(?<=\d)\.(?=\d)', ',', s)          # Dezimalpunkt -> Komma
+        s = re.sub(r'[\u00d7]', 'x', s)                   # Malzeichen
+        s = re.sub(r'[\u2013\u2014]', '-', s)
+        s = re.sub(r'db\(a\)', 'dba', s)
+        s = s.replace('\u00f8', '').replace('\u2300', '')  # Durchmesserzeichen
+        return re.sub(r'[^a-z0-9,\-/%\u00b5]+', '', s)
     s = unicodedata.normalize('NFKD', s).replace('\u00df', 'ss')
     s = ''.join(c for c in s if not unicodedata.combining(c))
     s = re.sub(r'[^a-z0-9]+', '', s)
