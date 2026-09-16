@@ -82,9 +82,41 @@ Namensdubletten aufgelöst (133 Produkte umgehängt, 9 Zwillinge gelöscht) und 
 Termen den sauberen Slug gegeben — `cannabis-samen` → `hanfsamen`, `freiland` → `outdoor-grow`,
 `top%c2%b7max` → `top-max`.
 
+## Ausdünnen des langen Schwanzes
+
+Auftrag war, die rund 1900 selten genutzten Tags zu entfernen, **soweit sie keinen Sinn ergeben**.
+Eine Stichprobe hat gezeigt, dass der größte Teil davon sehr wohl arbeitet:
+
+| Tag | verbindet |
+| --- | --- |
+| UV-Schutz Glas | zwei Miron-Violettglas-Gefäße |
+| Zitrone CBD Öl | die 5-%- und die 10-%-Variante desselben Öls |
+| SF1000 | zwei Growzelt-Sets desselben Modells |
+| Deep Water Culture | zwei DWC-Systeme |
+| Seedling Heat Mat | zwei Heizmatten |
+| 4 Töpfe | zwei AutoPot-Konfigurationen |
+| Bay Area | zwei Grand-Daddy-Sorten derselben Herkunft |
+
+Solche Tags kategorisieren und verbessern die interne Suche — genau der Zweck. Sie wurden
+**nicht** gelöscht.
+
+Gelöscht wurde nur, was nichts verbindet:
+
+| Grund | Tags |
+| --- | ---: |
+| an genau einem Produkt | 187 |
+| SEO-Floskel („… kaufen") | 11 |
+| bedeutungsloses Fragment | 1 |
+| **gesamt** | **199** |
+
+Ein Tag an einem einzigen Produkt gruppiert nichts, und die interne Suche findet das Produkt
+ohnehin über seinen Namen. Es waren fast durchweg Sortennamen, die nur einmal im Sortiment
+vorkommen — Acai Jelly, Anubis Auto, Moby Dick, Smac Town.
+
+Die Sicherung steht in `tag_weg_backup.json` (Name, Slug, ID, Produktzahl, Grund).
+
+**Stand danach: 3332 Tags, 3097 aktiv.** Kein aktiver Tag hängt mehr an nur einem Produkt.
+
 ## Offen
 
 Die **235 leer gewordenen Tags** stehen noch im System; du wolltest sie selbst löschen.
-
-Der lange Schwanz bleibt bestehen: rund 1900 Tags hängen an 1 bis 3 Produkten. Das sind
-überwiegend Sortennamen, die du ausdrücklich behalten wolltest, dazu Motive und Modellbezeichnungen.
