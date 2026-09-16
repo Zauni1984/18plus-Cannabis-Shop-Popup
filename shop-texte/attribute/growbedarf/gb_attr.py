@@ -49,6 +49,7 @@ EINHEIT = {
   'pa_lumen':             r'\d\s*(?:lm\b|Lumen)',
   'pa_material':          r'^[A-Za-zÄÖÜäöüß][^0-9]{2,44}$',
   'pa_farbe':             r'^[A-Za-zÄÖÜäöüß/ -]{3,24}$',
+  'pa_durchsatz':         r'\d\s*(?:kg|g|lbs?|Pfund)\s*/?\s*(?:h|Std|Stunde)',
 }
 
 
@@ -81,16 +82,18 @@ FREI = [
   ('pa_anschluss',     r'[Øø⌀]\s*(\d{2,3})\s*mm'),
   ('pa_leistungsaufnahme', r'(?<![\d,.])(\d{1,4})\s*W(?:att)?\b(?!\w)'),
   ('pa_inhalt',        r'(?:Volumen|Inhalt)\s*[:\s]\s*(\d+(?:[,.]\d+)?\s*(?:L|Liter|ml))\b'),
+  ('pa_inhalt',        r'(?<![\d,.x])(\d+(?:[,.]\d+)?\s*(?:L|Liter|ml|kg|g))\b(?!\w)', 'nur_name'),
   ('pa_abmessungen',   r'(?:Außenmaß|Außenmaße|Maße)\s*[:\s]\s*'
                        r'(\d+(?:[,.]\d+)?\s*[x×]\s*\d+(?:[,.]\d+)?(?:\s*[x×]\s*\d+(?:[,.]\d+)?)?\s*(?:mm|cm|m)\b)'),
   ('pa_durchmesser_hilf', r'Durchmesser\s*[Øø⌀]?\s*(\d+(?:[,.]\d+)?\s*cm)\b'),
-  ('pa_maschenweite',  r'(?<![\d,.])(\d{2,4})\s*[µμu]m\b'),
+  ('pa_durchsatz',     r'(\d+(?:[,.]\d+)?\s*(?:kg|lbs?)\s*(?:pro Stunde|/\s*h|je Stunde))'),
+  ('pa_maschenweite',  r'(?<![\d,.])(\d{2,4})\s*(?:[µμu]m|my)\b'),
   ('pa_presskraft',    r'(?<![\d,.])(\d+(?:[,.]\d+)?)\s*(?:Tonnen?|t)\b(?!\w)'),
 ]
 
 # Werkstoffe, wie sie in den Stichpunkten stehen
 MATERIAL = [
-  ('Edelstahl',   r'\bEdelstahl\w*\b|\brostfrei\w*\s+Stahl\b|\bstainless\b|\bV[24]A\b'),
+  ('Edelstahl',   r'\bEdelstahl\w*|\brostfrei\w*\s+Stahl\b|\bstainless\b|\bV[24]A\b'),
   ('Stahl',       r'\bStahl(?:rohr\w*)?\b'),
   ('Aluminium',   r'\bAlu(?:minium)?\b'),
   ('Nylon',       r'\bNylon\b|\bPolyamid\b'),
@@ -99,9 +102,9 @@ MATERIAL = [
   ('PVC',         r'\bPVC\b'),
   ('Kunststoff',  r'\bKunststoff\b'),
   ('Glas',        r'\bGlas\b'),
-  ('Silikon',     r'\bSilikon\b'),
+  ('Silikon',     r'\bSilikon\w*'),
   ('Textil',      r'\bTextil\b|\bOxford\b|\bPolyester\b'),
-  ('Keramik',     r'\bKeramik\b'),
+  ('Keramik',     r'\bKeramik\w*'),
 ]
 
 
@@ -120,8 +123,10 @@ VERNEINT = r'(?:nicht|kein[ae]?[rnms]?|ohne|statt|frei von)\W{0,24}$'
 def frei(t, name):
     """sucht erst im Namen, dann im Text"""
     out = {}
-    for slug, muster in FREI:
-        for quelle in (name, t):
+    for eintrag in FREI:
+        slug, muster = eintrag[0], eintrag[1]
+        nur_name = len(eintrag) > 2 and eintrag[2] == 'nur_name'
+        for quelle in ((name,) if nur_name else (name, t)):
             m = re.search(muster, quelle, re.I)
             if m:
                 w = m.group(1).strip()
@@ -137,6 +142,7 @@ def frei(t, name):
                     w = re.sub(r'\s*m[³3]\s*/\s*h', ' m³/h', w)
                 w = re.sub(r'\s{2,}', ' ', w).strip()
                 if slug == 'pa_inhalt':
+                    w = re.sub(r'(\d)\s*([a-zA-Z])', r'\1 \2', w)   # 4g -> 4 g
                     if re.search(r'ml$', w, re.I):
                         w = re.sub(r'\s*ml$', ' ml', w, flags=re.I)
                     else:

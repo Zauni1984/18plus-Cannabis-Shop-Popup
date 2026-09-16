@@ -58,4 +58,4 @@ ATTR_ID = {'pa_aroma':7,'pa_thc-gehalt':4,'pa_cbd-gehalt':6,'pa_sativa':18,'pa_i
            'pa_gewicht':59,'pa_schutzart':60,'pa_flaeche':61,
            'pa_weee-nummer':23,'pa_leistungsaufnahme':26,'pa_spannung':27,
            'pa_lichtspektrum':28,'pa_ppf':29,'pa_ppe':30,'pa_frequenz':31,
-           'pa_stromverbrauch':32,'pa_lumen':33,'pa_amp':34,'pa_geraeuschpegel':35,'pa_maschenweite':62,'pa_presskraft':63,'pa_herkunft':64,'pa_format':65,'pa_motiv':66,'pa_brennstoff':67,'pa_laenge':68,'pa_durchmesser':69,'pa_spektrum':70,'pa_traegeroel':71,'pa_verlag':72,'pa_einband':73,'pa_isbn':74,'pa_grammatur':75}
+           'pa_stromverbrauch':32,'pa_lumen':33,'pa_amp':34,'pa_geraeuschpegel':35,'pa_maschenweite':62,'pa_presskraft':63,'pa_herkunft':64,'pa_format':65,'pa_motiv':66,'pa_brennstoff':67,'pa_laenge':68,'pa_durchmesser':69,'pa_spektrum':70,'pa_traegeroel':71,'pa_verlag':72,'pa_einband':73,'pa_isbn':74,'pa_grammatur':75,'pa_durchsatz':76,'pa_passend-fuer':77}
