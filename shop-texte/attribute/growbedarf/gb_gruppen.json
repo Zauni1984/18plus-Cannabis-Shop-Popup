@@ -1,0 +1,152 @@
+[
+ [
+  "LED Growlampen",
+  75,
+  "pa_leistungsaufnahme",
+  67
+ ],
+ [
+  "LED Growlampen",
+  75,
+  "pa_ppf",
+  45
+ ],
+ [
+  "LED Growlampen",
+  75,
+  "pa_ppe",
+  34
+ ],
+ [
+  "LED Growlampen",
+  75,
+  "pa_lichtspektrum",
+  45
+ ],
+ [
+  "LED Growlampen",
+  75,
+  "pa_abmessungen",
+  51
+ ],
+ [
+  "Zu- und Abluft",
+  64,
+  "pa_anschluss",
+  54
+ ],
+ [
+  "Zu- und Abluft",
+  64,
+  "pa_luftdurchsatz",
+  30
+ ],
+ [
+  "Zu- und Abluft",
+  64,
+  "pa_leistungsaufnahme",
+  33
+ ],
+ [
+  "Zu- und Abluft",
+  64,
+  "pa_material",
+  22
+ ],
+ [
+  "Aktivkohlefilter",
+  40,
+  "pa_luftdurchsatz",
+  35
+ ],
+ [
+  "Aktivkohlefilter",
+  40,
+  "pa_anschluss",
+  31
+ ],
+ [
+  "Aktivkohlefilter",
+  40,
+  "pa_gewicht",
+  23
+ ],
+ [
+  "Growboxen",
+  71,
+  "pa_abmessungen",
+  35
+ ],
+ [
+  "Growboxen",
+  71,
+  "pa_material",
+  38
+ ],
+ [
+  "Growboxen",
+  71,
+  "pa_gewicht",
+  12
+ ],
+ [
+  "Pflanzentöpfe",
+  32,
+  "pa_inhalt",
+  13
+ ],
+ [
+  "Pflanzentöpfe",
+  32,
+  "pa_material",
+  21
+ ],
+ [
+  "Trimmer & Erntehelfer",
+  144,
+  "pa_material",
+  44
+ ],
+ [
+  "Trimmer & Erntehelfer",
+  144,
+  "pa_leistungsaufnahme",
+  23
+ ],
+ [
+  "Trimmer & Erntehelfer",
+  144,
+  "pa_abmessungen",
+  28
+ ],
+ [
+  "Extraktion & Pressen",
+  44,
+  "pa_maschenweite",
+  14
+ ],
+ [
+  "Extraktion & Pressen",
+  44,
+  "pa_presskraft",
+  10
+ ],
+ [
+  "Extraktion & Pressen",
+  44,
+  "pa_material",
+  17
+ ],
+ [
+  "Extraktion & Pressen",
+  44,
+  "pa_leistungsaufnahme",
+  9
+ ],
+ [
+  "Erde & Substrate",
+  40,
+  "pa_inhalt",
+  30
+ ]
+]
