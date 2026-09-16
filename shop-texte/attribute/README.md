@@ -37,6 +37,20 @@ Zwei Regeln haben sich als notwendig erwiesen:
 
 Am Ende stehen noch vier Gruppen — genau diese vier — und die bleiben so.
 
+## Fehleinträge in der Genetik
+
+Eine Stichprobe über den fertigen Bestand hat gezeigt, dass in `pa_genetik` Werte gelandet
+waren, die dort nicht hingehören: Genanteile wie „50% Indica / 50% Sativa", ein nackter
+Prozentwert und zwei Fließtextsätze. `genetik_fix.py` hat sie aus **9 Produkten** entfernt und
+die 11 leer gewordenen Terme gelöscht. Die Genanteile standen bei allen betroffenen Produkten
+ohnehin schon korrekt in `Sativa %` und `Indica %`, es ging also keine Angabe verloren; das
+Skript hätte sie sonst dorthin verschoben.
+
+Nicht angefasst wurden 73 auffällig lange Genetik-Werte. Die Prüfung ergab, dass sie
+vollständig sind und nicht abgeschnitten — teils verschachtelte Kreuzungen wie
+`(Afghani Indica x Canadian Ortega) x (Northern Lights x Hash Plant)`, teils ausformulierte
+Abstammungen. Beides ist inhaltlich richtig, nur ausführlich.
+
 # Samen
 
 Stand: 15.09.2026 · **1604 veröffentlichte Samen** in 51 Marken (1890 inkl. Entwürfe und privater Artikel).
