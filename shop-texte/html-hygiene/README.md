@@ -142,6 +142,41 @@ Das rendert korrekt, ist aber eine vierte Vorlage neben den drei oben.
 **2 Produkte haben gar keine Beschreibung**: Propagator Set S (15365) und
 Propagator Set XL (15371). Dafuer braucht es Text, keinen Umbau.
 
+## Kontrolle nach dem Lauf
+
+Alle 4441 Beschreibungen wurden erneut aus dem Shop geholt und gegen das
+Soll verglichen. Der Fliesstext ist zeichengleich geblieben, bis auf acht
+Produkte:
+
+- vier mit der beabsichtigten LaTeX-Aufloesung
+- vier, in denen WordPress ein nacktes `>` zu `&gt;` korrigiert hat
+  (`>25 %` in Doja- und Terra-Aquatica-Texten). Rendert identisch und ist
+  streng genommen die richtigere Schreibweise.
+
+Zwei Stellen brauchten eine Nachbehandlung:
+
+**8321 Terra Aquatica Starter Kit TriPart.** WordPress laesst ueber die
+REST-Schnittstelle kein `<object data="...">` durch – die Schnittstelle
+hat kein `unfiltered_html`, anders als ein Redakteur im Backend. Die
+eingebettete PDF-Vorschau des Duengeschemas verlor dabei ihre Attribute
+und blieb als leere Huelle zurueck. Die leere Huelle ist entfernt; der
+Download-Link und die Schaltflaeche darunter waren nie betroffen und
+funktionieren. Die Inline-Vorschau ist damit weg.
+
+Es ist das einzige Produkt im Katalog mit einer `<object>`-Einbettung.
+
+**10133 und 10261 Paradise Seeds.** Sahen nach kaputten Listen aus, sind
+aber repariert: im Original standen `<p><!-- wp:list-item --></p>` mitten
+zwischen den `<li>` und ein `</ul>` innerhalb eines Absatzes. Jetzt liegt
+eine saubere Verschachtelung vor, bei gleicher Anzahl `<ul>` und `<li>`.
+
+## Was ausserhalb dieses Laufs liegt
+
+Das Duengeschema-PDF von 8321 liegt auf
+`mintcream-crab-935546.hostingersite.com` – einer Hostinger-Wegwerfdomain,
+nicht auf hanfjack.de. Es ist derzeit erreichbar, verschwindet aber mit
+der Staging-Umgebung. Gehoert in die eigene Mediathek.
+
 ## Regel fuer neue Texte
 
 - Abschnittstitel als `<h3 style="margin-top:1.8em">`, die erste ohne

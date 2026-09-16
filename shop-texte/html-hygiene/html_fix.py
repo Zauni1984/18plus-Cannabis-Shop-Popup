@@ -65,6 +65,9 @@ def _leere_bloecke(h):
         h = re.sub(r'<p[^>]*>(?:\s|&nbsp;|<br\s*/?>)*</p>', '', h, flags=re.I)
         h = re.sub(r'<(h[1-6])[^>]*>(?:\s|&nbsp;|<br\s*/?>)*</\1>', '', h, flags=re.I)
         h = re.sub(r'<li>(?:\s|&nbsp;)*</li>', '', h, flags=re.I)
+        # WordPress raeumt beim Speichern Attribute aus <object>; was
+        # zurueckbleibt, ist eine leere Huelle ohne Wirkung.
+        h = re.sub(r'<object[^>]*>\s*</object>', '', h, flags=re.I)
         if h == vorher: break
     return h
 
