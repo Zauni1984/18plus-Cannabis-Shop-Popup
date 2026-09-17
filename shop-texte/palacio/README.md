@@ -98,3 +98,66 @@ Alle anderen wertenden Angaben stehen als Herstellerangaben im Text
 Die Bilder kamen ueber die Palacio-API und wurden nach WordPress
 hochgeladen; das Hauptbild zeigt den Airless-Spender mit lesbarem Aufdruck
 („FLUORIDE FREE", „Beta-carotene & herb oil") und bestaetigt den Text.
+
+---
+
+# Drei Geschenksets KON004, KON008, KON009 (17.09.2026)
+
+| | KON009 | KON004 | KON008 |
+|---|---|---|---|
+| Shop-ID | 45379 | 45384 | 45385 |
+| SKU | HJ-2635225 | HJ-9768207 | HJ-2876138 |
+| GTIN | 8595641303990 | 8595641304409 | 8595641304485 |
+| VK brutto | 25,00 € | 30,00 € | 30,00 € |
+| netto | 21,01 € | 25,21 € | 25,21 € |
+| Bestand | 12 | 12 | 10 |
+| Gewicht | 0,73 kg | 1,61 kg | 0,65 kg |
+| Bilder | 4 | 4 | 4 |
+
+Alle drei heissen beim Hersteller „PALACIO Soothe Beauty Set"; der Zusatz im
+Shop-Namen trennt sie.
+
+**Status: `private`** – die Lieferung ist noch nicht da. Gilt auch fuer die
+drei Zahnpasten 45365–45367.
+
+## Die Inhaltsstoffe kommen aus den Komponenten
+
+Kein Set fuehrt ein eigenes `ingredients`-Feld. Die Komponenten stehen aber
+im Katalog und sind auf den Kartonbildern lesbar:
+
+| Set | Komponenten |
+|---|---|
+| KON009 | PAL1198 Cannacool 200 ml · PAL1122 Konopny Gel Forte 200 ml · PAL1197 Cannahot 200 ml |
+| KON004 | PAL0355 Haarshampoo 500 ml · PAL1192 Koerperbutter 200 ml · PAL1224 Cremeduschgel 500 ml |
+| KON008 | PAL0441 Gesichtscreme 50 ml · PAL1229 Nachtcreme 50 ml · PAL1209 Reinigungsschaum 150 ml |
+
+Bei KON009 stehen alle drei Komponenten auch selbst im Shop (509, 510, 508).
+
+**Das Bild hat die Zuordnung entschieden.** Der Katalog fuehrt vier
+Hanf-Shampoos zu 500 ml und acht Duschgele; die Kurzbeschreibung sagt nur
+„Vlasovy sampon 500ml" und „Sprchovy gel 500 ml". Auf dem Karton steht
+„KREMOVY SPRCHOVY … s konopnym olejem" – das ist PAL1224. Beim Shampoo bleibt
+eine Unschaerfe, die aber folgenlos ist: **die INCI-Listen der vier
+500-ml-Varianten sind wortgleich.**
+
+## Ein Tippfehler in den Herstellerdaten
+
+PAL0441 und PAL1229 fuehren **„Triethenolamine"**. Die Nummer gibt es nicht;
+gemeint ist Triethanolamine. Beleg: 511 und 512 tragen dieselbe Rezeptur und
+dort steht sie richtig. `pal_inci.TIPPFEHLER` korrigiert das, statt den
+Fehler in den Shop zu tragen.
+
+Das Woerterbuch steht damit bei **201 Begriffen**.
+
+## Nachtrag zum Preis
+
+Bei KON009 war zuerst kein VK genannt. Die Hausregel fuer Bundles laesst sich
+am Bestand ablesen: Sportpack und Cannapack stehen auf exakt der Summe ihrer
+Komponenten (2 × 6,30 € netto = 12,60 €), Flexpack ebenso (2 × 10,08 € =
+20,16 €). Fuer KON009 waeren das 3 × 6,30 € = 18,90 € netto. Angesagt wurden
+dann 25,00 € brutto – die Rechnung war also nur ein Vorschlag, kein Ergebnis.
+
+## Noch nicht gelistet
+
+KON005, KON006 und KON007 – die drei uebrigen Sets der Reihe, alle mit EAN im
+Katalog.

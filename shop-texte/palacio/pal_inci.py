@@ -31,6 +31,7 @@ DE = {
  'Bellis Perennis Flower Extract': 'Gänseblümchen-Blütenextrakt',
  'Benzaldehyde': 'Benzaldehyd',
  'Benzoic Acid': 'Benzoesäure',
+ 'Benzyl Alcohol': 'Benzylalkohol',
  'Benzyl Benzoate': 'Benzylbenzoat',
  'Beta-Carotene': 'Beta-Carotin',
  'Beta-Caryophyllene': 'Beta-Caryophyllen',
@@ -66,7 +67,9 @@ DE = {
  'Citrus Sinensis Peel Oil Expressed': 'Orangenschalenöl (kaltgepresst)',
  'Cocamide DEA': 'Cocamid DEA',
  'Cocamidopropyl Betaine': 'Cocamidopropylbetain',
+ 'Coco Glucoside': 'Cocoglucosid',
  'Coumarin': 'Cumarin',
+ 'Curcuma Longa Root Extract': 'Kurkuma-Wurzelextrakt',
  'Dehydroacetic Acid': 'Dehydracetsäure',
  'Denatonium Benzoate': 'Denatoniumbenzoat',
  'Echinacea Purpurea Flower/Leaf/Stem Extract': 'Sonnenhut-Extrakt (Blüte/Blatt/Stängel)',
@@ -127,6 +130,7 @@ DE = {
  'PEG-40 Hydrogenated Castor Oil': 'PEG-40 hydriertes Rizinusöl',
  'PEG-7 Glyceryl Cocoate': 'PEG-7 Glycerylcocoat',
  'Panthenol': 'Panthenol',
+ 'Pantolactone': 'Pantolacton',
  'Paraffin': 'Paraffin',
  'Paraffinum Liquidum': 'Dickflüssiges Paraffin',
  'Parfum': 'Parfüm',
@@ -154,6 +158,7 @@ DE = {
  'Scutellaria Baicalensis Leaf Extract': 'Baikal-Helmkraut-Blattextrakt',
  'Sodium Benzoate': 'Natriumbenzoat',
  'Sodium Chloride': 'Natriumchlorid',
+ 'Sodium Cocoamphoacetate': 'Natriumcocoamphoacetat',
  'Sodium Citrate': 'Natriumcitrat',
  'Sodium Hyaluronate': 'Natriumhyaluronat',
  'Sodium Hydroxide': 'Natriumhydroxid',
@@ -192,11 +197,15 @@ DE = {
  'Welschriesling 40%': 'Welschriesling 40 %',
 }
 
+# Tippfehler in den Palacio-Rohdaten. Belegt: 511 und 512 tragen dieselbe
+# Rezeptur wie PAL0441, dort steht die Nummer korrekt.
+TIPPFEHLER = {'triethenolamine': 'Triethanolamine'}
+
 def _norm(s):
     s = re.sub(r'\s+', ' ', s).strip().strip('.').strip()
     if s.lower() == 'alcohol denat':
         return 'Alcohol Denat.'
-    return s
+    return TIPPFEHLER.get(s.lower(), s)
 
 def zerlegen(roh):
     """Rohfeld -> Liste der INCI-Begriffe, Extension-Bloecke abgeschnitten."""
