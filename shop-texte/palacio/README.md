@@ -161,3 +161,73 @@ dann 25,00 € brutto – die Rechnung war also nur ein Vorschlag, kein Ergebnis
 
 KON005, KON006 und KON007 – die drei uebrigen Sets der Reihe, alle mit EAN im
 Katalog.
+
+---
+
+# Fehlende Herstellerbilder nachgetragen (17.09.2026)
+
+**17 Produkte, 33 Bilder.** Der Bestand ging von 50 auf 83 Bilder.
+
+| ID | vorher | nachher | | ID | vorher | nachher |
+|---|---|---|---|---|---|---|
+| 497 | 1 | 2 | | 512 | 1 | 3 |
+| 499 | 2 | 4 | | 1877 | 1 | 4 |
+| 500 | 1 | 2 | | 1878 | 1 | 3 |
+| 501 | 1 | 3 | | 1879 | 1 | 6 |
+| 502 | 1 | 2 | | 13783 | 2 | 4 |
+| 503 | 1 | 2 | | 13786 | 2 | 4 |
+| 504 | 1 | 4 | | 20192 | 3 | 4 |
+| 508 | 4 | 6 | | 510 | 2 | 4 |
+| 511 | 4 | 5 | | | | |
+
+Bestehende Bilder blieben unveraendert und behielten ihre Reihenfolge, die
+neuen kommen dahinter. Kein Hauptbild hat gewechselt.
+
+## Zwei Verfahren waren Sackgassen
+
+1. **Byte-Hash.** Der Shop speichert WebP, Palacio liefert PNG und JPEG.
+   Dieselbe Aufnahme hat nie denselben Hash – das Ergebnis waere gewesen:
+   „alle 71 Bilder sind neu".
+2. **dHash.** Naheliegend, traegt aber auch nicht: Die Shop-Bilder sind enger
+   beschnitten als die Herstellerbilder. Der Versatz allein bringt identische
+   Aufnahmen auf 35 von 256 Bit Abstand – ueber jeder brauchbaren Schwelle.
+   Wieder waeren alle 71 als neu gezaehlt worden.
+
+## Was traegt: erst den Weissrand weg
+
+Alle Aufnahmen sind Freisteller auf Weiss. Nach dem Zuschnitt auf die
+Bounding Box der nicht-weissen Pixel, Skalierung auf 48 × 48 Graustufen und
+Autokontrast trennen die Werte sauber:
+
+- gleiche Aufnahme: **2,6 bis 7,5** RMSE
+- anderes Motiv: **76 bis 155**
+
+Die Schwelle liegt bei 30 und damit weit von beiden Gruppen entfernt. Von den
+71 Kandidaten blieben so **33** uebrig; 38 waren dieselben Aufnahmen in
+anderer Kodierung.
+
+Pillow war im Container nicht installiert (`pip install pillow`).
+
+## Zwei Produkte haben eine neue Verpackung
+
+Der Sichtvergleich der Grenzfaelle zeigte mehr als nur neue Perspektiven:
+
+- **512 Bio Oel Fusscreme** – der Shop fuehrte die alte, schlichte Tube; der
+  Hersteller zeigt eine neu gestaltete („CANNABIS FOOT CREAM with bio hemp
+  oil").
+- **1877 After Sun Koerperlotion** – im Shop das alte „NATURE'S BEST"-Design,
+  beim Hersteller das neue „Herbal Therapy"-Layout.
+
+Beide alten Aufnahmen stehen weiterhin an erster Stelle. Ob das Hauptbild
+umgehaengt werden soll, haengt daran, welche Ware tatsaechlich im Lager liegt
+– das entscheidet der Blick ins Regal, nicht der Katalog.
+
+## Ein abgebrochener Lauf
+
+Der erste Durchgang starb nach 11 von 17 Produkten an einem Connection Reset
+– Uploads von mehreren MB brechen gelegentlich ab. Das Bild 45413 war da
+schon hochgeladen, aber noch keinem Produkt zugeordnet. Der zweite Lauf hat
+es wiederverwendet statt neu hochzuladen; `hoch()` hat jetzt eine
+Wiederholung mit wachsender Wartezeit.
+
+Kontrolle danach: 0 fehlende Bilder, keine Dubletten in den 27 Galerien.
