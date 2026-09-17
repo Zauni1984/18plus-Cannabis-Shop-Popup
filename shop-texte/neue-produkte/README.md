@@ -255,3 +255,55 @@ wuerde bestehende URLs brechen und eine Weiterleitung noetig machen.
 
 **Die Yoast-Titel ebenfalls.** Dort ist „Rolling Papers" ein Suchbegriff und
 steht nicht im Produktfeed.
+
+---
+
+## Sechstes Beispiel: zwei G-Rollz-Einzelheftchen aus den Boxen (17.09.2026)
+
+**45357 G-Rollz Diablos King Size Slim** und **45358 G-Rollz King´s Choice
+King Size**, beide **Entwurf** – es fehlen Bilder des Einzelheftchens.
+
+| Feld | beide |
+|---|---|
+| SKU | HJ-4847587 / HJ-8480023 |
+| Preis | 0,84 € netto = **1,00 € brutto** (19 %) |
+| Bestand | je 50, kein Lieferrueckstand |
+| Lieferzeit | 1–3 Tage · Paket Standard |
+| Kategorie | Papers · Marke G-Rollz · New Ways BV |
+| Tags | 7 bzw. 6 |
+
+### Die Boxbilder haben die Arbeit gemacht
+
+Die Ausgangsartikel 30294 und 30290 trugen beide den Satz „Wie viele Heftchen
+die Box enthaelt, gibt die Produktbezeichnung nicht an". Zwei Quellen haben
+das aufgeloest:
+
+- **thenewways.com** (New Ways BV ist im Shop als Hersteller beider Boxen
+  hinterlegt): `GR08A-DIS` = „Diablos – 50 White KS Slim Papers (50 Booklets
+  Display)", `GR09A-DIS` = „King's Choice – 50 White KS Wide Papers (50
+  Booklets Display)". **Beide EANs der Seite stimmen mit den GTINs der
+  Shop-Boxen ueberein** – damit ist die Zuordnung hart, nicht geraten.
+- **Die Boxbilder im Shop.** Der Aufdruck ist lesbar: „32 + 18 FREE PAPERS IN
+  EACH BOOKLET", „KING SLIM CLASSIC – 50 ultra thin papers" bzw. „KING SIZE
+  PAPERS – 50 extra thin papers", dazu die Siegel Chlorine Free, Non GMO,
+  Vegan Product, „Vegan + Plant Based" und „Partner (Spain)".
+
+Beide Boxtexte wurden entsprechend nachgezogen (`fix_grollz_box.py`, Stand
+vorher in `grollz_box_vorher.json`), inklusive MPN, Tags, Attributen und
+Meta-Description. 50 Heftchen à 50 Blaettchen sind 2.500 Blaettchen je Box.
+
+### Was WebFetch falsch gelesen hat
+
+Die Zusammenfassung der Herstellerseite behauptete fuer Diablos „Tips
+Included: Yes". Im Rohtext steht davon nichts – andere G-Rollz-Linien heissen
+ausdruecklich „… Papers + Tips", diese beiden nicht. Die Rohquelle schlaegt
+die Zusammenfassung.
+
+### Was leer bleibt
+
+- **GTIN** der Einzelheftchen: die bekannten Nummern gehoeren den Displays.
+- **MPN** der Einzelheftchen: veroeffentlicht ist nur `GR08A-DIS` /
+  `GR09A-DIS`. Die Basisnummer ohne `-DIS` waere eine Ableitung aus einem
+  Muster – genau die Falle aus dem Smoking-Beispiel.
+- **Gewicht:** 0,344 kg je Display durch 50 waere 6,9 g, aber der Karton
+  zaehlt mit. Das ist eine Schaetzung, also bleibt das Feld leer.
