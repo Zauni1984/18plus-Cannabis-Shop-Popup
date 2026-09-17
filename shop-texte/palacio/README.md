@@ -67,7 +67,7 @@ Stand vor dem Lauf: `palacio_desc_vorher.json`.
 
 # Drei neue Zahnpasten (17.09.2026)
 
-**45365 / 45366 / 45367**, alle **Entwurf**.
+**45365 / 45366 / 45367**, alle **veroeffentlicht**.
 
 | | Refreshing | Sensitive | Whitening |
 |---|---|---|---|
@@ -76,14 +76,19 @@ Stand vor dem Lauf: `palacio_desc_vorher.json`.
 | GTIN | 8595641303839 | 8595641303846 | 8595641303853 |
 | SKU | HJ-6720902 | HJ-7854149 | HJ-4575145 |
 | Bilder | 3 | 4 | 4 |
+| Preis | 10,08 € netto = 12,00 € brutto | dito | dito |
 
 Gemeinsam: 75 g, 0,095 kg, 13,2 × 3,5 × 3,5 cm, Bestand 5, kein
 Lieferrueckstand, 1–3 Tage, Paket Standard, Kategorie Pflegeprodukte, Marke
 Palacio, PALACIO CZ s.r.o.
 
-**Warum Entwurf:** Es war kein VK angesagt. Eingetragen sind 5,04 € netto =
-6,00 € brutto – der Preis des Schwesterprodukts 20190 (Palacio HEMP & DENT,
-ebenfalls 75 g Zahnpasta). Das ist eine Ableitung, keine Vorgabe.
+**Preis:** 10,08 € netto = **12,00 € brutto**, angesagt und damit gesetzt;
+alle drei sind veroeffentlicht. Der zuerst abgeleitete Preis war falsch: Der
+Schwesterartikel 20190 (HEMP & DENT) steht bei 6,00 € brutto, die neuen
+Pasten haben aber einen EK von ueber 6 €. Bei der Hausregel brutto = 2 x EK
+kommt man auf 12 €. Ein Schwesterpreis traegt also nur, solange die Ware
+auch im Einkauf vergleichbar ist – bei einer neuen, teureren Linie derselben
+Marke nicht.
 
 **Eine Herstellerangabe ist nicht uebernommen:** Der Whitening-Text behauptet,
 Bambus-Aktivkohle remineralisiere den Zahnschmelz. Aktivkohle tut das nicht.
