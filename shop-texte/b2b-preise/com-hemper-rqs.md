@@ -181,3 +181,50 @@ zuordnen, Gebinde pruefen, Aufschlag rechnen, schreiben, zurueckleisen.
 
 **Die 171 Tiger-One-SKUs, die nicht mehr in der Liste stehen** (siehe
 `com-rollenpreise.md`), sind darin enthalten.
+
+---
+
+## Nachtrag: HEMPER ueber die EAN (17.09.2026)
+
+Der Hinweis, HEMPER liesse sich auch ueber EAN oder Titel erkennen, war
+richtig und hat den Lauf mehr als verdoppelt.
+
+**Warum die SKU nicht reicht:** die HEMPER-Artikel im Shop tragen ueberwiegend
+`HJ-`-Nummern, die in der Lieferantenmappe nicht vorkommen. Die EAN steht
+dagegen in beiden Systemen – im Shop als `gtin` (und `_ts_gtin`), in der Mappe
+als `UPC`. 511 der 514 Mappen-Zeilen fuehren eine UPC, 206 der 214 offenen
+Shop-Positionen ein gepflegtes GTIN.
+
+| Zuordnungsweg | Positionen |
+|---|---:|
+| SKU | 296 |
+| GTIN | 203 |
+| Titel | 2 |
+| **Summe** | **501** |
+
+Der Titeltreffer war „HEMPER Forty Ounce Wasserfilter-Glas XL" → `JWP0924`
+(„Forty Ounce XL Bong 9.5"). Abgesichert ueber die 42 Schwesterartikel: alle
+tragen EK 60,00 € und VK 126,04 € – genau den VK dieses Artikels.
+
+Alle 205 Positionen des zweiten und dritten Durchgangs wurden
+zurueckgelesen, keine Abweichung.
+
+### Die Mappe ist damit ausgeschoepft
+
+80 Mappen-Zeilen bleiben unzugeordnet. Sie wurden zusaetzlich gegen **alle**
+4577 Shop-Produkte geprueft – per GTIN und per Titel. Kein einziger Treffer:
+der Shop fuehrt diese Ware nicht (ueberwiegend Hara-Supply-Cones und
+RIPNDIP-Artikel).
+
+### Was bei HEMPER offen bleibt
+
+| Artikel | Grund |
+|---|---|
+| Bubble Wasserfilter-Glas XL (`HJ-9695361`) | EK 149,99 € liegt **ueber** dem VK von 126,04 € |
+| Ash Catcher Plus Ersatzfilter 3er (`HJ-1718932`) | EK 10,00 € liegt ueber dem VK von 8,39 € |
+| Geruchsneutralisierer Spray Fresh und Lemon, je Box und Einzelstueck | Anbauvereinpreis laege ueber dem VK |
+| Quick Tips Thekendisplay (`HJ-6456441`) | kein Verkaufspreis hinterlegt |
+| King Size Cones Teeblatt Sweet, Quick Hitters Etui-Set Grape | kein Verkaufspreis, und der Titeltreffer waere mehrdeutig |
+
+Die ersten beiden sind keine Preisfrage, sondern ein Hinweis: der Shop
+verkauft diese Artikel unter Einkaufspreis.
