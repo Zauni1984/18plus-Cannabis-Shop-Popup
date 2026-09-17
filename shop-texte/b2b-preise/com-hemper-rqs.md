@@ -145,3 +145,39 @@ Medusa `RO-0526-01`. Das ist ein kaputter Variationsaufbau, kein Preisproblem.
 - `hemper_map.py` – Spalten- und Gebinde-Erkennung, der heikle Teil
 - `hemper_plan.py`, `schreib_hemper.py`
 - `rqs_ek.py`, `rqs_plan.py`, `schreib_rqs.py`, `pruef_rqs.py`
+
+---
+
+## Gesamtstand hanfjack.com nach diesem Lauf
+
+| | Positionen |
+|---|---:|
+| verkaeufliche Positionen (Produkte + Variationen) | 7183 |
+| mit Rollenpreisen | 4270 (59 %) |
+| ohne | 2913 |
+
+Die vollstaendige Liste der offenen Positionen steht in
+`com-offene-rollenpreise.json`, sortiert nach Marke.
+
+### Woran es jeweils fehlt
+
+| Marke | offen | fehlt |
+|---|---:|---|
+| Hanfjack (Merch) | 262 | Eigenware, kein EK hinterlegt |
+| HEMPER | 212 | 208 davon Glas- und Zubehoerteile mit `HJ-`-SKU, die in der Mappe gar nicht vorkommen; 4 sind die zurueckgestellten Sprays |
+| Paradise Seeds | 146 | keine Preisliste im Repo |
+| Sensi Seeds | 138 | keine Preisliste |
+| Dutch Passion | 109 | keine Preisliste |
+| Plagron | 104 | keine Preisliste |
+| PURIZE | 88 | keine Preisliste |
+| Spider Farmer | 86 | keine Preisliste |
+| Atami | 86 | keine Preisliste |
+| 420flow | 79 | keine Preisliste |
+| Nirvana, Sweedbar, Barneys Farm, Wizard Trees, Zippo, Humboldt, SHEESH, G-Rollz, Alge u. a. | je 30–65 | keine Preisliste |
+
+Fuer alles ausser Hanfjack-Merch fehlt schlicht die EK-Quelle. Sobald eine
+Preisliste vorliegt, ist der Ablauf derselbe wie hier: SKU oder Name
+zuordnen, Gebinde pruefen, Aufschlag rechnen, schreiben, zurueckleisen.
+
+**Die 171 Tiger-One-SKUs, die nicht mehr in der Liste stehen** (siehe
+`com-rollenpreise.md`), sind darin enthalten.
