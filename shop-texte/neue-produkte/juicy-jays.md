@@ -66,14 +66,40 @@ Smoking-Sortiment hat sich ein aehnlich „offensichtliches" Muster als falsch
 erwiesen (zwei Boxen trugen die Nummer eines dritten Artikels). Die GTIN
 identifiziert den Artikel eindeutig, der MPN bleibt leer.
 
-**Gewicht der 2in1-Hefte.** Die reinen Papierhefte haben 0,006 kg – belegt
-ueber 9006, 9009 und 9013. Fuer die 2in1-Variante mit Tipkarte gibt es keinen
-belegten Wert; das Feld bleibt leer, wie schon bei den Boxen.
+**Gewicht.** Die reinen Papierhefte haben 0,006 kg – belegt ueber 9006, 9009
+und 9013. Fuer die 2in1-Variante mit Tipkarte wurden **0,01 kg** nachgereicht
+und gesetzt.
 
-**Bilder.** Alle 13 neuen Produkte haben noch keins.
+**Bilder.** Nachgereicht und zugeordnet – 13 neue Produkte plus ein
+Austauschbild fuer 9006.
 
 ## Nachtrag
 
 Sechs der 2in1-Meta-Descriptions waren beim ersten Schreiben ueber 156
 Zeichen – der Zusatz „mit integrierten Tips" hat sie gesprengt. Korrigiert.
 Bei generierten SEO-Texten lohnt die Laengenpruefung im selben Lauf.
+
+
+## Nachtrag: Bilder (17.09.2026)
+
+14 Bilder zugeordnet – je eines fuer die 13 neuen Produkte, dazu ein
+Austauschbild fuer 9006. Die Zuordnung lief ueber den Dateinamen und wurde an
+zwei Stichproben gegen das Bild selbst geprueft, weil zwei Namen nicht
+eindeutig waren:
+
+- `Juicy-Jays-Bluebberry-Papers` – Tippfehler, zeigt Blueberry King Size Slim
+- `Juicy-Jays-Melon-Mango-Papers` – zeigt **Mello** Mango
+
+### Der Tippfehler im Dateinamen
+
+Ueber die WordPress-Schnittstelle laesst sich **der physische Dateiname nicht
+aendern**. `slug` und `title` nimmt sie an, `source_url` bleibt stehen. Die
+Datei wurde deshalb unter dem richtigen Namen neu hochgeladen:
+
+| | |
+|---|---|
+| alt | 45328 `Juicy-Jays-Bluebberry-Papers.jpeg` |
+| neu | 45338 `Juicy-Jays-Blueberry-Papers.jpeg` |
+
+9006 zeigt jetzt auf 45338. **45328 liegt noch in der Mediathek** und wird von
+keinem Produkt mehr verwendet – geloescht wurde nichts, das entscheidet ihr.
