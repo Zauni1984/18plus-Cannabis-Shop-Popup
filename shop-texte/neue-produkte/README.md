@@ -191,3 +191,46 @@ sehen. Statt der Rezension zu folgen, benennt der Hinweistext die Lage.
 - **Backorders `no` und Versandklasse `paket-standard`** sind nicht geraten,
   sondern die Konvention der Kategorie Papers: 121 von 128 veroeffentlichten
   Artikeln stehen auf `no`, alle 128 auf `paket-standard`.
+
+---
+
+## Fuenftes Beispiel: Anesia Seeds Organic Rolling Papers King Size (17.09.2026)
+
+**Produkt 45350**, **Entwurf** – geht live, sobald die Bilder da sind.
+
+| Feld | Wert |
+|---|---|
+| SKU | HJ-3192942 |
+| Preis | 0,84 € netto = **1,00 € brutto** (19 %) |
+| Bestand | 50, kein Lieferrueckstand |
+| Gewicht | 0,001 kg |
+| Lieferzeit | 1–3 Tage · Paket Standard |
+| Kategorie | Papers · Marke Anesia Seeds · Ruperts Farm SL |
+| Attribute | Format: King Size · Inhalt: 1 Heftchen mit 32 Blaettchen · Farbe: Schwarz · Motiv: Krokodil |
+| Tags | 4 |
+| Yoast | Titel 45 Zeichen, Meta-Description 121 Zeichen |
+
+**Quelle:** ausschliesslich die Ansage. Zu dem Heftchen steht online nichts,
+also stehen im Datensatz auch nur die genannten Angaben: 32 Blaettchen, King
+Size, schwarzes Heftchen mit Anesia-Logo und Krokodil-Motiv, 1 g, keine EAN.
+
+### Was leer bleibt und warum es im Text steht
+
+Papiermaterial, Gummierung, Grammatur und Blattmass sind nicht belegt. Statt
+sie vom RQS- oder Dutch-Passion-Heftchen abzuleiten – andere Marke, anderes
+Werk – benennt der Hinweistext sie als offen. Ebenso das Wort „Organic": es
+stammt aus der Artikelbezeichnung, nicht aus einem Zertifikat, und der Text
+sagt das auch.
+
+### Drei uebernommene Konventionen statt Vorgaben
+
+Lieferzeit 1–3 Tage, Versandklasse Paket Standard und `backorders: no` waren
+nicht angesagt. Sie folgen der Kategorie Papers (alle 128 veroeffentlichten
+Artikel auf Paket Standard, 121 davon auf `no`) und dem Umstand, dass die Ware
+mit 50 Stueck selbst lagernd ist – daher auch der Tag `Beilngries`.
+
+### Der Artikelname weicht von der Ansage ab
+
+Angesagt war „Anesia Seeds KS Organic Heftchen". Im Shop heisst der Artikel
+**Anesia Seeds Organic Rolling Papers King Size**, damit er in der Reihe mit
+den anderen Blättchen-Heften steht (Dutch Passion, RQS, Smoking).
