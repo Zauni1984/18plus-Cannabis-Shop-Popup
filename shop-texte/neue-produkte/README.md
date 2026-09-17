@@ -307,3 +307,41 @@ die Zusammenfassung.
   Muster – genau die Falle aus dem Smoking-Beispiel.
 - **Gewicht:** 0,344 kg je Display durch 50 waere 6,9 g, aber der Karton
   zaehlt mit. Das ist eine Schaetzung, also bleibt das Feld leer.
+
+---
+
+## Grundpreise nachtragen (17.09.2026)
+
+Von den 26 heute angelegten Produkten trug nur die PURIZE-Packung einen
+Grundpreis. Die anderen 25 sind nachgezogen (`grundpreise.py`).
+
+Der Shop nutzt **WooCommerce Germanized**. Der Grundpreis haengt an drei
+Feldern, die die REST-Schnittstelle auf oberster Ebene fuehrt:
+
+```python
+{'unit': {'id': 261},                                   # Stueck, kg (16), l (26)
+ 'unit_price': {'base': '1', 'product': '32', 'price_auto': True}}
+```
+
+Mit `price_auto` rechnet das Plugin selbst; ein eigener Preis ist nicht noetig.
+
+### Die Konvention steht im Bestand, nicht im Gesetz
+
+- **Blaettchen:** Einheit Stueck, Menge = Blattzahl je Heft. Entscheidend war
+  8992 (Smoking Red 2in1): 33 Blaettchen **plus** 33 Tips, im Feld steht
+  **33**. Gezaehlt werden also die Blaettchen, nicht beides zusammen.
+- **Cremes, Gele, Oele:** Einheit l, Menge in Litern.
+- **Zahnpasta:** Einheit **kg**, nicht l – so steht 20190 im Bestand, obwohl
+  75 g auch als Volumen gingen.
+- **Sets:** Einheit l, Menge = Gesamtinhalt. 14701 steht auf 0,4 l fuer
+  zweimal 200 ml, also wird summiert, nicht je Komponente gerechnet.
+
+### Eine Rundungsdifferenz, die der ganze Shop hat
+
+Germanized rechnet vom **gespeicherten Nettopreis**, nicht vom angezeigten
+Bruttopreis. Bei der Zahnpasta sind das 10,08 € × 1,19 = 11,9952 €, geteilt
+durch 0,075 kg ergibt **159,94 €/kg** statt der 160,00 €/kg, die sich aus dem
+angezeigten Preis von 12,00 € ergeben wuerden. Dasselbe steht seit jeher bei
+20190 (79,97 statt 80,00). Das ist kein Fehler dieser Produkte, sondern die
+Folge der Nettospeicherung – deshalb bleibt `price_auto` an, statt hier als
+einzige Artikel einen Handwert einzutragen.
