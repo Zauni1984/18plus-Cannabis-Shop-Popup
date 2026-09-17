@@ -102,3 +102,43 @@ sich nichts ableiten. Ein leeres Feld ist besser als eine falsche Nummer.
 Die Meta-Description war beim ersten Schreiben 161 Zeichen lang und damit
 ueber der Grenze von 156. Bei neuen Produkten lohnt der Blick darauf, bevor
 der Artikel live geht – Google schneidet sonst ab.
+
+
+---
+
+## Drittes Beispiel: Dutch Passion Rolling Papers King Size Slim + Tips (17.09.2026)
+
+**Produkt 45340**, Entwurf (Bilder kommen nach).
+
+| Feld | Wert |
+|---|---|
+| SKU / MPN | HJ-7777627 / ROLPSINGLE |
+| Preis | 1,68 € netto = **2,00 € brutto** |
+| Bestand | 7, kein Lieferrueckstand |
+| Lieferzeit | 1–3 Tage · Paket Standard |
+| Kategorie | Papers · Marke und Hersteller Dutch Passion |
+| Attribute | Format: King Size Slim · Inhalt: 1 Heft |
+| Tags | 6 |
+
+**Quelle:** die Herstellerseite selbst – anders als bei den B2B-Portalen ist
+dutch-passion.com frei abrufbar. Belegt sind King Size Slim, Slow Burning,
+Tips im Heft, die Verpackung als Origami-Rolling-Tray und die Artikelnummer
+ROLPSINGLE.
+
+**Der MPN ist hier gesetzt**, anders als bei Smoking und Juicy Jay's: Er steht
+auf der Herstellerseite, ist also keine Ableitung aus einem Muster.
+
+### Was der Hersteller nicht nennt
+
+Weder Blattzahl noch Papiermaterial noch eine EAN. Das steht so auch im
+Hinweistext des Produkts, und geschaetzt wird nichts. Das **Gewicht** bleibt
+aus demselben Grund leer – Papers, Tips und Faltkarton zusammen lassen sich
+nicht aus den Juicy-Jay's-Werten ableiten.
+
+### Nebenbefund zum Hersteller-Datensatz
+
+Der Eintrag 6071 fuehrt **Lauwe Zaunreither GbR als EU-Verantwortlichen**.
+Zaadhandel Dutch Passion BV sitzt aber in Amsterdam, also in der EU – nach
+GPSR Art. 16 ist der Hersteller dann selbst der Wirtschaftsakteur und
+braucht keinen Bevollmaechtigten. Der Eintrag wurde nicht veraendert, gehoert
+aber geprueft.
