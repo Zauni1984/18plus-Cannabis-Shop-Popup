@@ -142,3 +142,52 @@ Zaadhandel Dutch Passion BV sitzt aber in Amsterdam, also in der EU – nach
 GPSR Art. 16 ist der Hersteller dann selbst der Wirtschaftsakteur und
 braucht keinen Bevollmaechtigten. Der Eintrag wurde nicht veraendert, gehoert
 aber geprueft.
+
+---
+
+## Viertes Beispiel: RQS Organic Rolling Papers King Size (17.09.2026)
+
+**Produkt 45349**, veroeffentlicht.
+
+| Feld | Wert |
+|---|---|
+| SKU / GTIN / MPN | HJ-2022389 / 8435523607214 / RQSPR002OP |
+| Preis | 0,84 € netto = **1,00 € brutto** (19 %) |
+| Bestand | 15, kein Lieferrueckstand |
+| Lieferzeit | 1–3 Tage · Paket Standard |
+| Kategorie | Papers · Marke Royal Queen Seeds · Snorkel Spain S.L. |
+| Attribute | Format: King Size, 110 × 45 mm · Inhalt: 1 Heftchen mit 32 Blaettchen · Material: Zellstoff und Gummi arabicum |
+| Tags | 6 |
+| Bilder | 2 |
+| Yoast | Titel 51 Zeichen, Meta-Description 143 Zeichen |
+
+**Quelle:** die Herstellerseite royalqueenseeds.de/free-seeds/251-rqs-biologische-blaettchen.html,
+zusaetzlich die Produktbilder. Belegt sind 32 ungebleichte Blaettchen je
+Heftchen, natuerlicher Zellstoff und Gummi arabicum aus Europa, ultraduenn und
+langsam brennend, das Heftchen aus Kraftpapier (Kiefer, Bambus,
+Agrarabfaelle), das Mass 110 × 45 mm und die Artikelnummer RQSPR002OP.
+
+### Die EAN kam aus zwei Richtungen
+
+Angesagt war `8435523607641`, auf der Herstellerseite steht aber nur
+`8435523607214`. Nach Ruecksprache gilt die Online-Nummer. Ein Abgleich gegen
+alle 178 Shop-Produkte der Marke zeigte keinen Konflikt – beide Nummern waren
+im Shop frei. Die Produktsuche taugt dafuer nicht: sie indexiert `gtin` nicht
+und meldet fuer jede EAN „nicht gefunden".
+
+### Tips stehen bewusst nicht im Text
+
+Eine Kundenrezension auf der Herstellerseite sagt „Tips gleich dabei". Der
+Herstellertext nennt keine, und auf den Bildern ist kein Tip-Heftchen zu
+sehen. Statt der Rezension zu folgen, benennt der Hinweistext die Lage.
+
+### Nebenbefunde
+
+- **Medium 45348** (`RQS-biologische-Blaettchen3.jpg`) ist byte-identisch mit
+  45346 – ein Doppel-Upload. Es wurde nicht zugeordnet und nicht geloescht.
+- **Hersteller 6565 (Snorkel Spain S.L.)** fuehrt wie Dutch Passion einen
+  EU-Bevollmaechtigten, obwohl Spanien in der EU liegt. Gehoert zur Liste in
+  `shop-texte/gpsr/`.
+- **Backorders `no` und Versandklasse `paket-standard`** sind nicht geraten,
+  sondern die Konvention der Kategorie Papers: 121 von 128 veroeffentlichten
+  Artikeln stehen auf `no`, alle 128 auf `paket-standard`.
