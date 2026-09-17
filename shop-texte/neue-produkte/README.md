@@ -47,17 +47,58 @@ Steinkohle-Aktivkohle, Keramikkappen beidseitig, hergestellt in Deutschland.
 Das Leopard-Design betrifft die Optik, nicht den Aufbau – im Text steht das
 auch so.
 
-### Warum Entwurf und nicht veroeffentlicht
+Bilder wurden nachgereicht und zugeordnet, der Artikel ist **veroeffentlicht**.
 
-Es fehlt das **Produktbild**. Die Herstellerseite fuehrt das Leopard-Design
-nicht, und das B2B-Portal `b2b-headshop.de` antwortet auch ueber einen echten
-Browser mit einer Bot-Sperre (HTTP 401) – von dort ist ohne Login nichts zu
-holen. Ein Artikel ohne Bild ist im Shop und im Feed unbrauchbar, deshalb
-steht er auf Entwurf, sonst aber vollstaendig.
+Die Bilder haben den Text praezisiert: das Leopardenmuster sitzt auf dem
+Filter selbst, nicht nur auf der Verpackung, und der Beutel ist
+wiederverschliessbar. Beides steht jetzt in Beschreibung und Tabelle.
 
-### Ebenfalls offen
+**Offen:** GTIN und MPN. Beim Schwesterprodukt stehen dort `4260748410653`
+und `Reg50-White`; die Leopard-Nummern liegen nur im B2B-Portal. Ohne GTIN
+laeuft der Artikel im Google-Feed schlechter.
 
-- **GTIN und MPN** sind leer. Beim Schwesterprodukt stehen dort
-  `4260748410653` und `Reg50-White`; die Leopard-Nummern liegen nur im
-  B2B-Portal. Ohne GTIN laeuft der Artikel im Google-Feed schlechter.
-- `min_age` hat der Shop selbst auf 18 gesetzt – nichts zu tun.
+---
+
+## Zweites Beispiel: Smoking Supreme King Size Slim 2in1 (17.09.2026)
+
+**Produkt 45305**, veroeffentlicht.
+
+| Feld | Wert |
+|---|---|
+| Name | Smoking Supreme King Size Slim 2in1 |
+| SKU / GTIN | HJ-2951736 / 8414775023164 |
+| Preis | 1,68 € netto = **2,00 € brutto** |
+| Bestand | 19, **kein Lieferrueckstand** |
+| Lieferzeit | 1–3 Tage · Paket Standard |
+| Kategorie | Papers · Marke Smoking · Miquel y Costas & Miquel, S.A. |
+| Attribute | Format: King Size Slim · Inhalt: 1 Heft · Material: 100 % pflanzlich |
+| Tags | 7 |
+| Bilder | 3, Einzelheft geschlossen zuerst |
+
+**Quellen der Angaben:** Produkt 18977 (dieselbe Ware als 24er-Box) liefert
+Format 110 × 44 mm, 33 Blaettchen + 33 Tips je Heft, FSC-Zertifizierung,
+Naturgummi und Slow Burning. Die Produktbilder ergaenzen Ultra Smooth Touch,
+Herstellung in Barcelona und den Spezialschnitt der Tips.
+
+### Der MPN bleibt bewusst leer
+
+Das naheliegende Muster – Box = `VE-` plus Einzelnummer – traegt nicht.
+Produkt 18980 („Master KS Ultra Slim Box") und 18981 („Brown Creator Box")
+tragen **beide** `VE-SMK-Kukuxumusu-KS`, also die Nummer eines dritten
+Artikels. Im Shop stehen also mindestens zwei falsche MPNs; daraus laesst
+sich nichts ableiten. Ein leeres Feld ist besser als eine falsche Nummer.
+
+### Zwei Dinge zum Nacharbeiten
+
+- **Das Gewicht 0,019 kg** stammt vom baugleichen Smoking Red King Size 2in1
+  (8992) – gleiche Bauart, 33 Blaettchen mit Tips. Es ist uebernommen, nicht
+  gemessen.
+- **Die Box 18977 steht auf `private`** und hat einen kaputten Kurztext
+  (`<p>Ultrafeine, transparente</p>` bricht mitten im Satz ab). Wenn sie
+  wieder oeffentlich werden soll, gehoert der Text ueberarbeitet.
+
+### Nachtrag zur Laengenkontrolle
+
+Die Meta-Description war beim ersten Schreiben 161 Zeichen lang und damit
+ueber der Grenze von 156. Bei neuen Produkten lohnt der Blick darauf, bevor
+der Artikel live geht – Google schneidet sonst ab.
