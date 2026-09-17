@@ -234,3 +234,24 @@ mit 50 Stueck selbst lagernd ist – daher auch der Tag `Beilngries`.
 Angesagt war „Anesia Seeds KS Organic Heftchen". Im Shop heisst der Artikel
 **Anesia Seeds Organic Rolling Papers King Size**, damit er in der Reihe mit
 den anderen Blättchen-Heften steht (Dutch Passion, RQS, Smoking).
+
+---
+
+## Regel: „Papers" gehoert nicht in den Produkttitel (17.09.2026)
+
+Im ganzen Katalog trugen genau drei Artikel „Papers" im Namen – alle drei
+neu angelegt. Der Rest der Kategorie heisst seit jeher
+`<Marke> <Sorte> <Format>`, etwa „Juicy Jay´s Jamaican Rum King Size Slim"
+oder „Smoking Supreme King Size Slim 2in1". Die drei wurden nachgezogen:
+
+| ID | vorher | jetzt |
+|---|---|---|
+| 45340 | Dutch Passion Rolling Papers King Size Slim + Tips | Dutch Passion King Size Slim + Tips |
+| 45349 | RQS Organic Rolling Papers King Size | RQS Organic King Size |
+| 45350 | Anesia Seeds Organic Rolling Papers King Size | Anesia Seeds Organic King Size |
+
+**Die Slugs blieben stehen.** Sie tragen `rolling-papers` weiter, aendern
+wuerde bestehende URLs brechen und eine Weiterleitung noetig machen.
+
+**Die Yoast-Titel ebenfalls.** Dort ist „Rolling Papers" ein Suchbegriff und
+steht nicht im Produktfeed.
