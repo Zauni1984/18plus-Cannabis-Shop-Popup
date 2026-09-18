@@ -116,13 +116,38 @@ Seiteninhalt selbst (117.000 Zeichen Builder-Layout) kommt weder eine H1 noch
 das Wort „Hanfprodukte" vor; die oberste Ueberschrift ist ein `h3`
 („Wizard Trees").
 
-Zwei Wege:
+### Umgesetzt, aber noch nicht fertig
 
-1. In der Seitenbearbeitung von 27543 unter den OceanWP-Einstellungen
-   „Titel deaktivieren" ausschalten. Das blendet aber den Titelbereich
-   sichtbar wieder ein und veraendert die Startseite optisch.
-2. Der Hero-Sektion im Builder eine H1 geben und `ocean_disable_title`
-   anlassen. Unauffaelliger, aber Handarbeit im Layout.
+Auf Ansage wurde an Seite 27543 gesetzt:
+
+```
+ocean_disable_title:    "on"  ->  "default"
+ocean_post_title_style: ""    ->  "centered"
+```
+
+Der Titel erscheint jetzt und ist mittig (`page-header centered-page-header`).
+Sicherung des alten Zustands: `seite27543_meta_vorher.json`.
+
+**Es ist trotzdem noch keine H1.** OceanWP gibt den Seitentitel bei
+*einzelnen Seiten* als `<h4 class="page-header-title">` aus – auf der
+Startseite genauso wie auf /impressum/. Bei *Archiven* steht derselbe
+Baustein dagegen als `<h1>`:
+
+| Seite | page-header-title |
+|---|---|
+| /produkt-kategorie/papers/ | `h1` |
+| /marke/royal-queen-seeds/ | `h1` |
+| /blog/ | `h1` |
+| /impressum/ | `h4` |
+| Startseite | `h4` |
+
+Die Ueberschriftenebene fuer Archive ist also schon umgestellt, die fuer
+einzelne Seiten nicht. Das ist eine **Theme-Einstellung im Customizer**
+(Seitentitel → Ueberschriften-Tag), kein Seiten-Meta – ueber die
+REST-Schnittstelle nicht erreichbar, der `oceanwp/v1`-Namespace bietet nur
+Onboarding-Routen. Der Schalter muss im Customizer von h4 auf h1 gestellt
+werden; er wirkt dann auf alle einzelnen Seiten, was auch fuer Impressum,
+AGB und Co. richtig ist.
 
 ### Der urspruengliche Befund
 
