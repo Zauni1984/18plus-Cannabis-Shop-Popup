@@ -93,3 +93,48 @@ beiden laesst sich nicht sagen, auf welche Begriffe die Domain auf Position
 28 haengt und welche Seiten die 930.000 Impressionen holen. Vor allem die
 Desktop-Luecke (Position 34,2 gegenueber 19,8 mobil) bleibt ohne Abfragedaten
 unerklaerbar.
+
+---
+
+# Nachtrag 18.09.2026: zwei von drei erledigt
+
+## AdsBot ist raus
+
+Die robots.txt enthaelt kein `AdsBot` mehr. Googles Anzeigen-Crawler darf die
+Seite wieder lesen.
+
+## Die Archive sind auf noindex – und zwar gruendlich
+
+| | vorher | jetzt |
+|---|---|---|
+| Sitemaps im Index | 44 | **9** |
+| URLs in der Sitemap | 10.297 | **4.515** |
+
+Geprueft am ausgelieferten HTML:
+
+| Seite | robots |
+|---|---|
+| /inhalt/75g/ | `noindex, follow` |
+| /aroma/erdig/ | `noindex, follow` |
+| /produkt-schlagwort/king-size/ | `noindex, follow` |
+| /produkt-kategorie/papers/ | `index, follow` |
+| /marke/royal-queen-seeds/ | `index, follow` |
+
+Was uebrig bleibt: 3.994 Produkte, 104 Kategorien, 219 Marken, 156 Beitraege,
+34 Seiten, 8 Blog-Kategorien. **Die indexierbare Flaeche ist um 56 Prozent
+geschrumpft**, und was bleibt, sind genau die Seiten, die etwas verkaufen
+oder erklaeren.
+
+### Eine Nebenwirkung, die eine Entscheidung verdient
+
+Mit abgeschaltet wurden auch die **Produkt-Schlagworte insgesamt** – alle
+2.339, nicht nur die 1.009 mit hoechstens drei Produkten. Darunter sind rund
+**466 Schlagworte mit zehn und mehr Produkten**, etwa „King Size" mit 56.
+Solche Seiten koennen durchaus ranken.
+
+Das ist vertretbar und viele Shops machen es genauso: Schlagwort-Archive
+ueberschneiden sich stark mit Kategorien, und nach einem Core Update ist
+Konzentration das Naheliegende. Es sollte nur eine Entscheidung sein und kein
+Versehen. Wer die starken Schlagworte zurueckholen will, kann sie einzeln
+wieder auf „Ja" stellen – die Taxonomie-Einstellung ist die Voreinstellung,
+der Term schlaegt sie.
