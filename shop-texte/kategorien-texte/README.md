@@ -188,3 +188,33 @@ Ein Kategorietext, der die Grenze des eigenen Produkts benennt, ist genau
 das, was jemand vor dem Kauf wissen will.
 
 Stand vor dem Eingriff: `kat_texte_3_vorher.json`.
+
+---
+
+## Stapel 4: zwanzig Kategorien (18.09.2026)
+
+Ab hier wird nicht mehr der ganze Text neu geschrieben, sondern nur der
+Zusatz. `kat_zusatz.anhaengen()` stellt den Bestand voran – Einleitung und,
+wo vorhanden, der hochgezogene Block bleiben unveraendert stehen. Das ist
+schneller und kann nichts verlieren.
+
+Angebote (201 Produkte), Trimmer & Erntehelfer (144), Extraktion & Pressen
+(44), Vapes & Pods (40), Merch (36), ph-Wert (33), Pflanzentoepfe (32),
+F1 Samen (29), Pflegeprodukte (27), AutoPot Komplettsysteme (26),
+Duenger Sets (25), Lebensmittel (25), Bundles (23), CBD Blueten (22),
+Komplettsets (22), AutoPot Verrohrung (21), Controller (21), Luftfilter (19),
+Anzuchtbeleuchtung (16), CBD Oel (16) – von 96–446 auf 621–1.143 Zeichen.
+
+### Ein Fehler, der fast live gegangen waere
+
+Der erste Durchlauf dieses Stapels war in **Ersatzschreibung** getippt:
+„aendern" statt „ändern", „Groesse" statt „Größe", „massgeblich" statt
+„maßgeblich". Auf der Seite haette genau das gestanden. Alle zwanzig Texte
+wurden aus der Sicherung neu geschrieben und anschliessend Kategorie fuer
+Kategorie gegen ein Suchmuster geprueft, das Ersatzschreibungen findet, echte
+Woerter wie „genauer", „zuerst" und „Dauerbetrieb" aber durchlaesst. Zwei
+Reste blieben dabei haengen und wurden einzeln behoben: „MCT-Oel" und
+„Ueber".
+
+**Lehre fuer die naechsten Staepel:** deutsche Texte mit echten Umlauten
+tippen, Ersatzschreibung nur in Bezeichnern und Kommentaren.
