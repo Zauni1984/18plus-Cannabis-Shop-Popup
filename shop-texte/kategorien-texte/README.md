@@ -57,3 +57,51 @@ Raster gezogen, wo sie hingehoeren.
 
 Stand vor dem Eingriff: `kat_beschreibung_vorher.json`.
 Kontrolle danach: keine zusammengeklebten Stellen mehr.
+
+---
+
+## Stapel 1: die sechs groessten Kategorien (18.09.2026)
+
+| ID | Kategorie | Produkte | vorher | jetzt |
+|---|---|---|---|---|
+| 532 | Samen | 1.608 | 172 | **1.412** |
+| 538 | Growshop | 1.356 | 170 | **1.252** |
+| 548 | Feminisiert | 966 | 145 | **1.360** |
+| 547 | Automatisch | 471 | 192 | **1.393** |
+| 55 | Headshop | 826 | 216 | **985** |
+| 1132 | Duenger | 487 | 164 | **1.521** |
+
+Die vorhandene Einleitung steht in allen sechs unveraendert als erster
+Absatz – sie war sachlich richtig und im Hausstil, nur zu kurz allein. Der
+Rest ist neu und wurde per Zusicherung im Skript gegen Verlust gesichert.
+
+### Was in den Texten steht
+
+Keine Werbesprache, kein Aufruf zum Kauf, nichts Erfundenes. Erklaert wird,
+was jemand vor dem Kauf wissen muss:
+
+- **Samen:** die vier Samenarten und wofuer jede taugt, Auswahlkriterien
+  (Bluetezeit, Wuchshoehe, Ertrag, drinnen oder draussen), Lagerung,
+  rechtlicher Rahmen.
+- **Growshop:** was zur Grundausstattung gehoert, warum Licht und Abluft die
+  zwei Stellschrauben sind, womit Einsteiger anfangen.
+- **Feminisiert:** wie feminisierte Samen entstehen, was das im Anbau spart,
+  der Unterschied photoperiodisch zu automatisch, wann reguläre Samen die
+  bessere Wahl sind.
+- **Automatisch:** warum Ruderalis-Erbgut nach Alter blueht statt nach
+  Tageslaenge, der Zeitplan, die Grenzen (kleinerer Ertrag, wenig Zeit zur
+  Erholung nach Stress), was im Anbau anders laeuft.
+- **Headshop:** die drei Wege Drehen, Wasserpfeife, Verdampfen mit dem
+  jeweils zugehoerigen Zubehoer; Verbrauchsmaterial gegen Anschaffung.
+- **Duenger:** was NPK bedeutet, organisch gegen mineralisch, warum Wachstum
+  und Bluete verschiedene Verhaeltnisse brauchen, Dosierung mit pH- und
+  Leitwertbereichen.
+
+### Die Rechtsangabe
+
+Im Samen-Text steht auf Ansage: **bis zu drei Pflanzen je erwachsener Person
+am eigenen Wohnsitz.** Die Zahl kommt aus dem Konsumcannabisgesetz und wurde
+ausdruecklich freigegeben; ohne Freigabe waere sie nicht in den Text
+gekommen.
+
+Stand vor dem Eingriff: `kat_texte_1_vorher.json`.
