@@ -149,3 +149,42 @@ Stand vor dem Eingriff: `kat_texte_1_vorher.json`.
   der Pflanze sagt.
 
 Stand vor dem Eingriff: `kat_texte_2_vorher.json`.
+
+---
+
+## Stapel 3: dreizehn Kategorien (18.09.2026)
+
+| ID | Kategorie | Produkte | vorher | jetzt |
+|---|---|---|---|---|
+| 4552 | Extra Slim 6 mm | 75 | 244 | 899 |
+| 7048 | Pipes | 71 | 141 | 989 |
+| 1974 | Rolling Trays | 66 | 159 | 818 |
+| 4160 | Zu- und Abluft | 64 | 151 | 1.026 |
+| 2309 | CBD Samen | 59 | 136 | 826 |
+| 1193 | CBD | 52 | 126 | 891 |
+| 5423 | Feuerzeuge & Zippo | 46 | 122 | 684 |
+| 5424 | Zippo | 43 | 158 | 908 |
+| 6862 | Vaporizer | 42 | 138 | 1.274 |
+| 13458 | Vermehrungsmaterial | 42 | 114 | 892 |
+| 598 | Aufbewahrung | 41 | 150 | 846 |
+| 4161 | Aktivkohlefilter (Growbox) | 40 | 166 | 1.090 |
+| 4235 | Erde & Substrate | 40 | 139 | 1.065 |
+
+### CBD: ohne Wirkaussagen, und das steht auch so im Text
+
+Gesundheitsbezogene Angaben sind bei diesen Produkten nicht zulaessig.
+Beschrieben wird deshalb, **was die Ware ist** – Cannabidiol aus Nutzhanf,
+nicht berauschend, Gehalt je Artikel ausgewiesen – und nicht, was sie
+bewirken soll. Der Text sagt das ausdruecklich: „Aussagen zu einer
+gesundheitlichen Wirkung machen wir bewusst nicht – sie sind fuer diese
+Produkte weder zulaessig noch belegt."
+
+### Ein Text, der vom Kauf abraten kann
+
+**Vermehrungsmaterial:** „Dafuer bringt er keine neue Genetik ins Spiel: Aus
+hundert Stecklingen derselben Mutter wird hundertmal dieselbe Pflanze."
+Wer Sortenvielfalt sucht, erfaehrt hier, dass Samen die richtige Wahl waeren.
+Ein Kategorietext, der die Grenze des eigenen Produkts benennt, ist genau
+das, was jemand vor dem Kauf wissen will.
+
+Stand vor dem Eingriff: `kat_texte_3_vorher.json`.
