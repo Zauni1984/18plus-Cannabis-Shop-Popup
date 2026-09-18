@@ -105,3 +105,47 @@ ausdruecklich freigegeben; ohne Freigabe waere sie nicht in den Text
 gekommen.
 
 Stand vor dem Eingriff: `kat_texte_1_vorher.json`.
+
+---
+
+## Stapel 2: die naechsten zwoelf (18.09.2026)
+
+| ID | Kategorie | Produkte | vorher | jetzt |
+|---|---|---|---|---|
+| 6523 | Growzubehoer | 308 | 145 | 1.198 |
+| 549 | Regular | 141 | 150 | 1.029 |
+| 607 | Papers | 127 | 165 | 994 |
+| 539 | Luefter & Filter | 118 | 167 | 1.089 |
+| 3852 | Bongs | 106 | 222 | 1.156 |
+| 608 | Filter | 106 | 267 | 915 |
+| 4550 | Aktivkohlefilter | 91 | 270 | 1.147 |
+| 6864 | Dabbing | 86 | 126 | 1.101 |
+| 1401 | Bewaesserung | 83 | 153 | 1.204 |
+| 4706 | Pre Rolled Papers | 80 | 167 | 882 |
+| 844 | LED Growlampen | 75 | 160 | 1.120 |
+| 531 | Growboxen | 71 | 174 | 1.261 |
+
+### Zwei Stellen, an denen bewusst nicht geworben wird
+
+- **Bongs:** „Gesuender wird das Rauchen dadurch nicht – es fuehlt sich nur
+  milder an." Die Wasserfilterung kuehlt und faengt Partikel, mehr laesst
+  sich nicht belegen.
+- **Filtertips aus Karton:** „Gefiltert wird dabei nichts – er gibt nur
+  Form." Der Unterschied zum Aktivkohlefilter steht damit im Text, statt
+  beide als dasselbe zu verkaufen.
+
+### Zahlen im Text, und woher sie kommen
+
+- **Abluft:** „Als Faustregel wird das Volumen der Box etwa einmal pro Minute
+  ausgetauscht" – bei 1 × 1 × 2 m also rund 120 m³/h. Als Faustregel
+  gekennzeichnet, nicht als Herstellerangabe.
+- **Aktivkohlefilter:** 6 mm passt zu King-Size-Papers und Cones, 5 bis 14 mm
+  sind die gaengigen Durchmesser. Deckt sich mit den Unterkategorien.
+- **Growboxen:** 60 × 60 fuer ein bis zwei Pflanzen, 80er und 100er als
+  Hausgroessen, 120er fuer mehrere – plus der Hinweis, dass die Hoehe nach
+  Lampe, Abstand und Topf knapper ausfaellt als die Aussenmasse vermuten
+  lassen.
+- **LED:** PPF gegen PPE erklaert, weil Watt allein nichts ueber das Licht an
+  der Pflanze sagt.
+
+Stand vor dem Eingriff: `kat_texte_2_vorher.json`.
