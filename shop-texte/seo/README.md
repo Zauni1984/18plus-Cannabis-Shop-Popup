@@ -100,107 +100,49 @@ von „Ben") behalten ihr Markup – das ist legitim.
 
 ---
 
-## Befund 2: H1 – Produktseiten erledigt, Rest offen
+## Befund 2 (erledigt): H1
 
-**Stand 18.09.2026, zweite Pruefung:** Bis auf die Startseite hat jetzt jeder
-Seitentyp eine H1.
+**Stand 18.09.2026, Schlusskontrolle.** Jeder gepruefte Seitentyp hat genau
+eine H1:
 
 | Seitentyp | h1 |
 |---|---|
+| Startseite | „HANFJACK HANFPRODUKTE" |
+| Impressum | „Impressum" |
+| AGB | „AGB" |
 | Produkt (neu) | „RQS Organic King Size" |
 | Produkt (alt) | „Barneys Farm Runtz Auto 3er Pack" |
 | Kategorie Papers | „Papers" |
 | Kategorie Samen | „Samen" |
-| Kategorie Pflegeprodukte | „Pflegeprodukte" |
 | Marke | „Royal Queen Seeds" |
 | Schlagwort | „King Size" |
 | Blog | „Blog" |
-| **Startseite** | **keine** |
 
-### Warum die Startseite als einzige keine H1 hat
+Dazu eine Stichprobe von 15 zufaelligen Produktseiten: **15 von 15 mit genau
+einer H1**, keine ohne und keine mit mehreren.
 
-Die Startseite ist Seite **27543**, und ihr Titel lautet tatsaechlich
-„HANFJACK HANFPRODUKTE". Er wird nur nicht ausgegeben: die Seite traegt das
-OceanWP-Meta
+### Wie es dahin kam
 
-```
-ocean_disable_title: "on"
-```
+Drei Schritte, in dieser Reihenfolge:
 
-und der Body bekommt entsprechend die Klasse `page-header-disabled`. Der
-Titel steht also in der Datenbank, das Theme unterdrueckt ihn. Im
-Seiteninhalt selbst (117.000 Zeichen Builder-Layout) kommt weder eine H1 noch
-das Wort „Hanfprodukte" vor; die oberste Ueberschrift ist ein `h3`
-(„Wizard Trees").
+1. Produkttitel auf H1 (vom Betreiber gesetzt).
+2. Ueberschriften-Tag fuer Archive auf h1 – damit bekamen Kategorie-, Marken-,
+   Schlagwort- und Blogseiten ihre H1 ueber den Baustein
+   `page-header-title`.
+3. An Seite 27543 (Startseite): `ocean_disable_title` von `"on"` auf
+   `"default"` und `ocean_post_title_style` auf `"centered"` – der Titel stand
+   in der Datenbank, wurde aber vom Theme unterdrueckt. Sicherung:
+   `seite27543_meta_vorher.json`. Danach das Ueberschriften-Tag fuer einzelne
+   Seiten von h4 auf h1 (Customizer), was Startseite, Impressum, AGB und die
+   uebrigen Einzelseiten zugleich erledigt hat.
 
-### Umgesetzt, aber noch nicht fertig
+### Eine Kleinigkeit bleibt
 
-Auf Ansage wurde an Seite 27543 gesetzt:
-
-```
-ocean_disable_title:    "on"  ->  "default"
-ocean_post_title_style: ""    ->  "centered"
-```
-
-Der Titel erscheint jetzt und ist mittig (`page-header centered-page-header`).
-Sicherung des alten Zustands: `seite27543_meta_vorher.json`.
-
-**Es ist trotzdem noch keine H1.** OceanWP gibt den Seitentitel bei
-*einzelnen Seiten* als `<h4 class="page-header-title">` aus – auf der
-Startseite genauso wie auf /impressum/. Bei *Archiven* steht derselbe
-Baustein dagegen als `<h1>`:
-
-| Seite | page-header-title |
-|---|---|
-| /produkt-kategorie/papers/ | `h1` |
-| /marke/royal-queen-seeds/ | `h1` |
-| /blog/ | `h1` |
-| /impressum/ | `h4` |
-| Startseite | `h4` |
-
-Die Ueberschriftenebene fuer Archive ist also schon umgestellt, die fuer
-einzelne Seiten nicht. Das ist eine **Theme-Einstellung im Customizer**
-(Seitentitel → Ueberschriften-Tag), kein Seiten-Meta – ueber die
-REST-Schnittstelle nicht erreichbar, der `oceanwp/v1`-Namespace bietet nur
-Onboarding-Routen. Der Schalter muss im Customizer von h4 auf h1 gestellt
-werden; er wirkt dann auf alle einzelnen Seiten, was auch fuer Impressum,
-AGB und Co. richtig ist.
-
-### Der urspruengliche Befund
-
-Geprueft an drei Produkten, neu und alt:
-
-| Seite | h1 |
-|---|---|
-| /produkt/rqs-organic-rolling-papers-king-size/ | „RQS Organic King Size" |
-| /produkt/barneys-farm-runtz-auto/ | „Barneys Farm Runtz Auto 3er Pack" |
-| /produkt/palacio-hanfsalbe-regenerierend-125ml-dose/ | „Palacio Hanfsalbe regenerierend – 125ml Dose" |
-
-Der urspruengliche Befund lautete:
-
-### Ausgangslage
-
-Geprueft an fuenf Seitentypen, alle ohne `<h1>`:
-
-| Seitentyp | Beispiel | h1 |
-|---|---|---|
-| Produkt | /produkt/rqs-organic-rolling-papers-king-size/ | fehlt |
-| Produkt | /produkt/palacio-hanfsalbe-regenerierend-125ml-dose/ | fehlt |
-| Kategorie | /produkt-kategorie/papers/ | fehlt |
-| Kategorie | /produkt-kategorie/samen/ | fehlt |
-| Marke | /marke/royal-queen-seeds/ | fehlt |
-| Schlagwort | /produkt-schlagwort/king-size/ | fehlt |
-
-Der Produktname steht in einem `<h2>`, darunter folgen weitere `<h2>`
-(„Beschreibung", „Zusaetzliche Informationen", „Rezensionen"). Die Startseite
-hat als einzige eine H1 – und die lautet „HANFJACK HANFPRODUKTE".
-
-Das betrifft **rund 11.000 URLs** und ist ein Fehler im OceanWP-Template,
-kein Inhaltsproblem. Eine H1 allein macht keine Rankings, aber sie ist das
-staerkste On-Page-Signal fuer das Thema einer Seite, und sie fehlt
-flaechendeckend.
-
----
+Auf Produktseiten steht der Produktname **zweimal** als Ueberschrift: als
+`<h4 class="page-header-title">` im Seitenkopf und als `<h1>` in der
+Produktzusammenfassung. Das ist kein Fehler und kostet keine Rankings, aber
+eine Ueberschrift ist entbehrlich. Wer aufraeumen will, blendet den
+Seitenkopf-Titel auf Produkten aus.
 
 ## Befund 3: Rund 6.000 duenne Archivseiten in der Sitemap
 
