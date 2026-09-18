@@ -113,3 +113,61 @@ verteilen sich auf Laender ohne nennenswerte Klicks (USA 22.004 Impressionen
    0,8 % CTR.
 4. **Merchant Center ausbauen**: Position 3,3 und 13,82 % CTR sind Werte, die
    organisch auf absehbare Zeit nicht erreichbar sind.
+
+---
+
+## Nachtrag: wo die Ueberarbeitung eine Luecke gelassen hat
+
+### Die Kategorieseiten haben je einen Satz
+
+Von **110 Produktkategorien haben 107 weniger als 300 Zeichen** Beschreibung,
+zwei gar keine, eine liegt zwischen 300 und 800. Keine einzige kommt ueber
+800 Zeichen.
+
+| Kategorie | Produkte | Text |
+|---|---|---|
+| Samen | 1.608 | 172 Zeichen |
+| Growshop | 1.356 | 170 Zeichen |
+| Feminisiert | 966 | 145 Zeichen |
+| Headshop | 826 | 216 Zeichen |
+| Duenger | 487 | 164 Zeichen |
+| Automatisch | 471 | 192 Zeichen |
+| Growzubehoer | 308 | 145 Zeichen |
+| Papers | 127 | 165 Zeichen |
+
+Das ist die Luecke. 4.426 Produkttexte wurden ueberarbeitet – aber
+Produktseiten ranken auf Markenbegriffe („Barneys Farm Runtz Auto"). Die
+Gattungsbegriffe, um die es geht („Cannabis Samen kaufen", „feminisierte
+Samen", „Growshop"), gehoeren den **Kategorieseiten**, und die tragen je
+einen Satz ueber einem Produktraster.
+
+Fuer ein Core Update, das fragt „ist diese Seite die beste Antwort auf diese
+Suche", ist das die schwaechste Stelle der Domain.
+
+### Merchant Center: der Feed laeuft, die Eintraege fehlen trotzdem
+
+| Feed | Produkte | zuletzt erzeugt |
+|---|---|---|
+| Hanfjack-Google (Google Shopping) | 7.905 | 18.09.2026 |
+| Hanfjack-Adcell-XML | 3.919 | 16.09.2026 |
+| HanfjackAdcell (CSV) | 3.993 | 18.09.2026 |
+
+Der Google-Feed enthaelt 7.905 Positionen und wird taeglich erneuert.
+Trotzdem stehen dem im ganzen Jahr nur **5.919 Haendlereintrags-Impressionen**
+gegenueber. Zwischen Feed und Suchergebnis liegt also etwas – bei einem
+Cannabis-Sortiment mit hoher Wahrscheinlichkeit **Ablehnungen im Merchant
+Center**: Samen und CBD fallen dort unter eingeschraenkte Produkte, Papers,
+Growzubehoer und Pflegeprodukte nicht.
+
+Genau das passt zu den Zahlen: Was durchkommt, holt **13,82 % CTR auf
+Position 3,3**. Ein Blick in die Merchant-Center-Diagnose (wie viele Artikel
+abgelehnt, mit welcher Begruendung) sagt, ob der erlaubte Teil des Sortiments
+ueberhaupt ausgeschoepft ist.
+
+### Was zur Beurteilung noch fehlt
+
+Der Export enthielt Diagramm, Geraete, Laender und Suchdarstellung – **nicht
+die Abfragen und nicht die Seiten**. Ohne die beiden laesst sich nicht sagen,
+welche Seiten die 930.000 Impressionen holen und auf welche Begriffe. Vor
+allem die Desktop-Luecke (Position 34,2 gegenueber 19,8 mobil) laesst sich
+ohne Abfragedaten nicht erklaeren.
