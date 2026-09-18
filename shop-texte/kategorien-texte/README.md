@@ -218,3 +218,54 @@ Reste blieben dabei haengen und wurden einzeln behoben: „MCT-Oel" und
 
 **Lehre fuer die naechsten Staepel:** deutsche Texte mit echten Umlauten
 tippen, Ersatzschreibung nur in Bezeichnern und Kommentaren.
+
+---
+
+## Stapel 5 und 6: der Rest (18.09.2026)
+
+**Stapel 5 (23):** Curing & Lagerung, Erntescheren, Messgeraete,
+Anzuchtmedien, CBD fuer Tiere, Buecher, Ersatzfilter, Geruchsneutralisation,
+Zeltzubehoer, Aschenbecher, Glas-Tips, Kraeutermuehlen, Lupen & Mikroskope,
+Anzucht, AutoPot Tanks, Blunts, Beheizung, Pflanzzubehoer, AutoPot Toepfe,
+Trimmer, Waagen, Pumpen, Stecklingszubehoer.
+
+**Stapel 6 (34):** Hanftee, Ventilatoren, Veredeln & Extraktion,
+Feuchtigkeitsregler, Knabberhanf, Tabakersatz, Terpene, Folien & Reflexion,
+Mundstuecke, Mystery Boxen, Rohkost, die vier uebrigen
+Aktivkohlefilter-Durchmesser, Handschuhe, Hydrokultur-Anzucht,
+Luftbefeuchter, Luftentfeuchter, Schaedlingsbekaempfung, Feuerzeuge,
+Getraenke, Gewuerze, Hanfoel, Hanfprodukte, Hanfsamen,
+Zimmergewaechshaeuser, Mehl, THC Test, CBD Vapes, Dr. Grow Sets,
+Schneidbretter, Suessigkeiten und Snacks.
+
+## Ergebnis
+
+| Textlaenge | Kategorien |
+|---|---|
+| 600 Zeichen und mehr | **101** |
+| unter 600 | 7 |
+| ohne Text | 2 |
+
+Vorher lagen **107 von 110 unter 300 Zeichen** und keine einzige ueber 800.
+
+**Die sieben unter 600** liegen bei 387 bis 592 Zeichen und haben null bis
+vier Produkte: Dr. Grow Sets, Feuerzeuge, Getraenke, Mundstuecke, Mystery
+Boxen, Regular 8-9mm, Schneidbretter. Mehr Text waere dort Fuellmaterial –
+zu einer Kategorie mit zwei Artikeln gibt es nicht mehr zu sagen.
+
+**Die zwei ohne Text** sind `Produktarchiv` und `Uncategorized`, beide ohne
+Produkte und ohne Zweck. Sie gehoeren nicht in die Textpflege, sondern auf
+noindex.
+
+## Was in keinem Text steht
+
+- **Gesundheitsbezogene Angaben** bei CBD und Lebensmitteln. Bei CBD steht
+  ausdruecklich im Text, dass wir sie nicht machen.
+- **Beschoenigungen.** Der Bong-Text sagt, dass Wasserfilterung das Rauchen
+  nicht gesuender macht; der Tabakersatz-Text, dass ohne Nikotin nicht
+  unbedenklich heisst; der Filtertip-Text, dass ein Kartontip nichts filtert.
+- **Erfundene Zahlen.** Wo Werte stehen – Feuchtebereiche, pH-Bereiche,
+  Abluftleistung, Anzuchttemperatur – sind sie als uebliche Bereiche oder
+  Faustregeln gekennzeichnet.
+
+Sicherungen: `kat_texte_1_vorher.json` bis `kat_texte_6_vorher.json`.
