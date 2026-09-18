@@ -19,7 +19,7 @@ verschiebt die Suche von „wird sie gefunden" zu „warum ist sie nichts wert".
 
 ---
 
-## Befund 1: 3.856 Produktseiten tragen eine erfundene 5-Sterne-Bewertung
+## Befund 1 (erledigt): 3.856 Produktseiten trugen eine erfundene 5-Sterne-Bewertung
 
 **Das ist der schwerwiegendste Fund.** Das Plugin **SASWP** (Schema &
 Structured Data for WP & AMP, erkennbar am
@@ -52,11 +52,28 @@ Spam-Markup** – und die trifft die ganze Domain, nicht die einzelne Seite.
 Das passt zu dem Bild: indexiert, schnell, ordentliche Texte, trotzdem kaum
 Sichtbarkeit.
 
-**Stand 18.09.2026: unveraendert aktiv.** Nachgeprueft an fuenf Produkten
-ohne echte Bewertung – 45349 (RQS Organic), 45296 (PURIZE Leopard), 30294
-(G-Rollz Diablos Box), 30844 (Barneys Farm Banana Runtz) – alle senden
-weiterhin `aggregateRating 5/5, reviewCount 1`, Autor „Hanfjack". Produkt 504
-mit einer echten Rezension sendet korrekt „Anonym" als Autor.
+### ERLEDIGT am 18.09.2026
+
+Die Automatikbewertung ist abgeschaltet. Kontrolle an einer Zufallsstichprobe
+von **40 veroeffentlichten Produkten**, jeweils mit Cache-Umgehung abgerufen:
+
+| Pruefpunkt | Ergebnis |
+|---|---|
+| Produkte ohne echte Bewertung mit erfundenem Rating | **0 von 40** |
+| Produkt-Schema noch vorhanden | 40 von 40 |
+| Angebot (Preis, Verfuegbarkeit) noch vorhanden | 40 von 40 – 20× `Offer` (einfache Produkte), 20× `AggregateOffer` (variable) |
+| Produkte mit echter Rezension behalten ihr Markup | ja, geprueft an 504 (1 Rezension, Autor „Anonym") |
+
+Einzeln nachgesehen und sauber: 45349 RQS Organic, 45296 PURIZE Leopard,
+30294 G-Rollz Diablos Box, 30844 Barneys Farm Banana Runtz, 13783 Palacio
+Tiger Massage Gel, 9006 Juicy Jay´s Blueberry. Keine `aggregateRating`, keine
+`Review`-Bloecke mehr – und die wertvollen Teile des Markups sind
+unangetastet.
+
+**Wichtig fuer den naechsten Schritt:** Steht in der Search Console eine
+manuelle Massnahme, verschwindet sie durch die Reparatur **nicht von selbst**.
+Dann muss dort ein Antrag auf erneute Ueberpruefung gestellt werden – jetzt
+ist der richtige Zeitpunkt dafuer, weil der Grund beseitigt ist.
 
 **Zu pruefen, bevor irgendetwas anderes angefasst wird:** Search Console →
 Sicherheit und manuelle Massnahmen. Steht dort ein Eintrag, ist die Ursache
@@ -261,12 +278,13 @@ Seiten) wuerde das in einem Schritt klaeren.
 
 ## Reihenfolge
 
-1. **Search Console auf manuelle Massnahmen pruefen.** Ein Eintrag dort
-   erklaert alles andere und macht jede weitere Optimierung sinnlos, solange
-   er steht.
-2. **SASWP-Automatikbewertung abschalten.** 3.856 Seiten mit erfundenen
-   Rezensionen sind ein Risiko, das nichts einbringt.
-3. **H1 ins Template.** Einmal im Child-Theme, wirkt auf rund 11.000 URLs.
+1. ~~**SASWP-Automatikbewertung abschalten.**~~ Erledigt am 18.09.2026.
+2. **Search Console auf manuelle Massnahmen pruefen** – und falls eine
+   vorliegt, jetzt den Antrag auf erneute Ueberpruefung stellen. Die
+   Reparatur hebt eine Massnahme nicht von allein auf.
+3. **Ueberschriften-Tag fuer einzelne Seiten im Customizer von h4 auf h1.**
+   Archive stehen schon auf h1, Produktseiten haben ihre H1 – es fehlen nur
+   noch Startseite, Impressum, AGB und die uebrigen Einzelseiten.
 4. **Attribut- und Kleinst-Schlagwort-Archive auf noindex.** Halbiert die
    indexierbare Flaeche und konzentriert sie auf das, was verkauft.
 5. **`max-image-preview:large` setzen.**
