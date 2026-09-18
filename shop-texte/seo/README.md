@@ -179,13 +179,21 @@ Produkten ebenso. Kategorien, Marken und die grossen Schlagworte bleiben.
 
 ## Befund 4: Kleinere Sachen
 
-- **Keine `robots`-Meta-Angabe.** Auf keiner geprueften Seite steht ein
-  `<meta name="robots">`. Damit fehlt auch `max-image-preview:large` – die
-  Produktbilder erscheinen in der Suche nur als kleine Vorschau statt gross.
-  Fuer einen Shop kostet das Klicks.
+- ~~**Keine `robots`-Meta-Angabe.**~~ **Das war ein Messfehler von mir.** Die
+  Angabe steht auf jeder geprueften Seite, und zwar vollstaendig:
+  `index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1`.
+  Mein Suchmuster verlangte doppelte Anfuehrungszeichen, Yoast schreibt aber
+  einfache (`<meta name='robots' …>`). Hier ist nichts zu tun – die grossen
+  Bildvorschauen sind bereits freigegeben.
 - **`User-agent: AdsBot / Disallow: /`** in der robots.txt sperrt Googles
   Anzeigen-Crawler aus. Organisch harmlos, aber wer Google Ads schaltet,
-  bekommt dadurch Qualitaetsprobleme.
+  bekommt dadurch Qualitaetsprobleme. **Bestaetigt, noch offen.** Die
+  robots.txt wird virtuell von WordPress ausgeliefert (kein `Last-Modified`,
+  `Content-Type: text/plain; charset=utf-8`), der Eintrag steht innerhalb des
+  Yoast-Blocks. Aendern laesst er sich nur in **Yoast SEO → Werkzeuge →
+  Datei-Editor → robots.txt**; der `yoast/v1`-Namespace bietet dafuer keine
+  Route, ueber die Schnittstelle komme ich nicht heran. Zu loeschen sind die
+  zwei Zeilen `User-agent: AdsBot` und `Disallow: /`.
 - **Weiterleitungskette** auf /produkt/northern-lights/: 883 ms
   Redirect-Dauer, TTFB 1.368 ms gegenueber ~500 ms bei den anderen
   Messpunkten. Lohnt einen Blick auf die Redirect-Tabelle.
