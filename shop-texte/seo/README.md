@@ -56,6 +56,20 @@ Sichtbarkeit.
 Sicherheit und manuelle Massnahmen. Steht dort ein Eintrag, ist die Ursache
 gefunden.
 
+**Das Plugin heisst** „Schema & Structured Data for WP & AMP", Version 1.66,
+Slug `schema-and-structured-data-for-wp`. SASWP ist die gaengige Abkuerzung
+und zugleich das Code-Praefix des Plugins, daher die Klasse
+`saswp-schema-markup-output` im Quelltext.
+
+Es ist die **einzige** Quelle strukturierter Daten auf den Produktseiten: die
+Seite enthaelt genau einen JSON-LD-Block, und der kommt von SASWP. Yoasts
+eigenes Schema ist abgeschaltet. Die erfundene Bewertung hat also keine
+zweite Quelle, die man uebersehen koennte.
+
+Drei weitere Bewertungs-Plugins sind aktiv – Customer Reviews for
+WooCommerce, Trustpilot-reviews und das Google-Bewertungs-Widget –, senden
+aber aktuell kein konkurrierendes Produkt-Markup.
+
 **Die Reparatur** liegt in den SASWP-Einstellungen: die automatische
 Bewertung fuer Produkte ohne Rezension abschalten. Produkte mit echten
 Bewertungen (137 Stueck, z. B. Barneys Farm Runtz Auto mit zwei Rezensionen
@@ -63,7 +77,31 @@ von „Ben") behalten ihr Markup – das ist legitim.
 
 ---
 
-## Befund 2: Keine einzige Seite ausser der Startseite hat eine H1
+## Befund 2: H1 – Produktseiten erledigt, Rest offen
+
+**Nachtrag 18.09.2026:** Die Produkttitel stehen jetzt in einer H1. Geprueft
+an drei Produkten, neu und alt:
+
+| Seite | h1 |
+|---|---|
+| /produkt/rqs-organic-rolling-papers-king-size/ | „RQS Organic King Size" |
+| /produkt/barneys-farm-runtz-auto/ | „Barneys Farm Runtz Auto 3er Pack" |
+| /produkt/palacio-hanfsalbe-regenerierend-125ml-dose/ | „Palacio Hanfsalbe regenerierend – 125ml Dose" |
+
+**Zwei Luecken sind geblieben, eine davon ist neu:**
+
+- **Die Startseite hat ihre H1 verloren.** Heute frueh stand dort noch
+  `<h1>HANFJACK HANFPRODUKTE</h1>`; jetzt kommt der Text auf der Seite gar
+  nicht mehr vor und es gibt keine H1. Die wichtigste Seite der Domain ist
+  damit die einzige ohne Ueberschrift erster Ordnung.
+- **Kategorie-, Marken-, Schlagwort- und Blogseiten haben weiterhin keine
+  H1.** Betroffen sind unter anderem /produkt-kategorie/papers/,
+  /produkt-kategorie/samen/, /marke/royal-queen-seeds/,
+  /produkt-schlagwort/king-size/ und /blog/.
+
+Der urspruengliche Befund lautete:
+
+### Ausgangslage
 
 Geprueft an fuenf Seitentypen, alle ohne `<h1>`:
 
