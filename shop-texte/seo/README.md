@@ -52,6 +52,12 @@ Spam-Markup** – und die trifft die ganze Domain, nicht die einzelne Seite.
 Das passt zu dem Bild: indexiert, schnell, ordentliche Texte, trotzdem kaum
 Sichtbarkeit.
 
+**Stand 18.09.2026: unveraendert aktiv.** Nachgeprueft an fuenf Produkten
+ohne echte Bewertung – 45349 (RQS Organic), 45296 (PURIZE Leopard), 30294
+(G-Rollz Diablos Box), 30844 (Barneys Farm Banana Runtz) – alle senden
+weiterhin `aggregateRating 5/5, reviewCount 1`, Autor „Hanfjack". Produkt 504
+mit einer echten Rezension sendet korrekt „Anonym" als Autor.
+
 **Zu pruefen, bevor irgendetwas anderes angefasst wird:** Search Console →
 Sicherheit und manuelle Massnahmen. Steht dort ein Eintrag, ist die Ursache
 gefunden.
@@ -79,25 +85,54 @@ von „Ben") behalten ihr Markup – das ist legitim.
 
 ## Befund 2: H1 – Produktseiten erledigt, Rest offen
 
-**Nachtrag 18.09.2026:** Die Produkttitel stehen jetzt in einer H1. Geprueft
-an drei Produkten, neu und alt:
+**Stand 18.09.2026, zweite Pruefung:** Bis auf die Startseite hat jetzt jeder
+Seitentyp eine H1.
+
+| Seitentyp | h1 |
+|---|---|
+| Produkt (neu) | „RQS Organic King Size" |
+| Produkt (alt) | „Barneys Farm Runtz Auto 3er Pack" |
+| Kategorie Papers | „Papers" |
+| Kategorie Samen | „Samen" |
+| Kategorie Pflegeprodukte | „Pflegeprodukte" |
+| Marke | „Royal Queen Seeds" |
+| Schlagwort | „King Size" |
+| Blog | „Blog" |
+| **Startseite** | **keine** |
+
+### Warum die Startseite als einzige keine H1 hat
+
+Die Startseite ist Seite **27543**, und ihr Titel lautet tatsaechlich
+„HANFJACK HANFPRODUKTE". Er wird nur nicht ausgegeben: die Seite traegt das
+OceanWP-Meta
+
+```
+ocean_disable_title: "on"
+```
+
+und der Body bekommt entsprechend die Klasse `page-header-disabled`. Der
+Titel steht also in der Datenbank, das Theme unterdrueckt ihn. Im
+Seiteninhalt selbst (117.000 Zeichen Builder-Layout) kommt weder eine H1 noch
+das Wort „Hanfprodukte" vor; die oberste Ueberschrift ist ein `h3`
+(„Wizard Trees").
+
+Zwei Wege:
+
+1. In der Seitenbearbeitung von 27543 unter den OceanWP-Einstellungen
+   „Titel deaktivieren" ausschalten. Das blendet aber den Titelbereich
+   sichtbar wieder ein und veraendert die Startseite optisch.
+2. Der Hero-Sektion im Builder eine H1 geben und `ocean_disable_title`
+   anlassen. Unauffaelliger, aber Handarbeit im Layout.
+
+### Der urspruengliche Befund
+
+Geprueft an drei Produkten, neu und alt:
 
 | Seite | h1 |
 |---|---|
 | /produkt/rqs-organic-rolling-papers-king-size/ | „RQS Organic King Size" |
 | /produkt/barneys-farm-runtz-auto/ | „Barneys Farm Runtz Auto 3er Pack" |
 | /produkt/palacio-hanfsalbe-regenerierend-125ml-dose/ | „Palacio Hanfsalbe regenerierend – 125ml Dose" |
-
-**Zwei Luecken sind geblieben, eine davon ist neu:**
-
-- **Die Startseite hat ihre H1 verloren.** Heute frueh stand dort noch
-  `<h1>HANFJACK HANFPRODUKTE</h1>`; jetzt kommt der Text auf der Seite gar
-  nicht mehr vor und es gibt keine H1. Die wichtigste Seite der Domain ist
-  damit die einzige ohne Ueberschrift erster Ordnung.
-- **Kategorie-, Marken-, Schlagwort- und Blogseiten haben weiterhin keine
-  H1.** Betroffen sind unter anderem /produkt-kategorie/papers/,
-  /produkt-kategorie/samen/, /marke/royal-queen-seeds/,
-  /produkt-schlagwort/king-size/ und /blog/.
 
 Der urspruengliche Befund lautete:
 
