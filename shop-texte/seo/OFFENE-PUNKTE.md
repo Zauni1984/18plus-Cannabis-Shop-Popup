@@ -138,3 +138,37 @@ Konzentration das Naheliegende. Es sollte nur eine Entscheidung sein und kein
 Versehen. Wer die starken Schlagworte zurueckholen will, kann sie einzeln
 wieder auf „Ja" stellen – die Taxonomie-Einstellung ist die Voreinstellung,
 der Term schlaegt sie.
+
+## Geoblocker sperrt Googlebot (19.09.2026, dringend)
+
+Nach Aktivierung von Geoblocker und Hostinger CDN gemessen. Von einer
+US-Adresse antwortet der Shop mit **403 „Der Zugriff aus Ihrem Land (US) wurde
+blockiert."** – und zwar unabhaengig vom User-Agent, auch fuer Googlebot und
+Bingbot:
+
+| URL | Chrome | Googlebot |
+|---|---|---|
+| `/` | 200 | 200 |
+| `/automatisch/` | 403 | 403 |
+| `/produkt/barneys-farm-runtz-auto/` | 403 | 403 |
+| `/sitemap_index.xml` | 403 | 403 |
+| `/robots.txt` | 200 | 200 |
+
+Die 200er sind ausschliesslich Seiten, die im WP-Rocket-Cache liegen und vom
+LiteSpeed vor PHP ausgeliefert werden; mit Cache-Buster (`/shop/?nc=123`) wird
+auch daraus ein 403. Der Geoblocker laeuft also in PHP und trifft alles, was
+tatsaechlich gerendert wird.
+
+Fuer deutsche Kunden ist das richtig. Googlebot crawlt aber ueberwiegend aus
+den USA. Anhaltende 403 auf Sitemaps, Kategorie- und Produktseiten fuehren zu
+Crawling-Fehlern in der Search Console und mittelfristig zum Verlust der
+Indexierung – das Gegenteil von dem, was die Ueberarbeitung erreichen soll.
+
+**Zu tun:** im Geoblocker die Suchmaschinen-Crawler ausnehmen (Whitelist fuer
+Googlebot/Bingbot per Reverse-DNS, ersatzweise die Google-IP-Bereiche aus
+`https://developers.google.com/static/search/apis/ipranges/googlebot.json`)
+und die Sitemap-Dateien generell freigeben. Danach in der Search Console
+„Live-Test" auf einer Kategorie- und einer Produktseite pruefen.
+
+Die REST-API mit Schluesselpaar ist nicht betroffen (200), die Pflege laeuft
+weiter.
