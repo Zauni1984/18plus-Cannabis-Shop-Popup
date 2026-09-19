@@ -21,3 +21,6 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+
+# Gebautes Plugin-Paket (wird bei Bedarf neu erzeugt)
+bloomtech-stock-sync.zip

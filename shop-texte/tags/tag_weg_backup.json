@@ -1,0 +1,1395 @@
+[
+  {
+    "id": 17501,
+    "name": "Acai Jelly",
+    "slug": "acai-jelly",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17464,
+    "name": "AK 47 Auto",
+    "slug": "ak-47-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17644,
+    "name": "Alpujarrena Auto",
+    "slug": "alpujarrena-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17650,
+    "name": "American Pie",
+    "slug": "american-pie",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17649,
+    "name": "American Pie Auto",
+    "slug": "american-pie-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17651,
+    "name": "Amnesia Gold Auto",
+    "slug": "amnesia-gold-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17506,
+    "name": "Amnesia Lemon",
+    "slug": "amnesia-lemon",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17656,
+    "name": "Anesthesia Auto",
+    "slug": "anesthesia-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17660,
+    "name": "Anubis",
+    "slug": "anubis",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17658,
+    "name": "Anubis Auto",
+    "slug": "anubis-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 11630,
+    "name": "Athena Balance kaufen",
+    "slug": "athena-balance-kaufen",
+    "count": 2,
+    "grund": "SEO-Floskel"
+  },
+  {
+    "id": 11639,
+    "name": "Athena Bloom kaufen",
+    "slug": "athena-bloom-kaufen",
+    "count": 3,
+    "grund": "SEO-Floskel"
+  },
+  {
+    "id": 11652,
+    "name": "Athena CaMg kaufen",
+    "slug": "athena-camg-kaufen",
+    "count": 3,
+    "grund": "SEO-Floskel"
+  },
+  {
+    "id": 11669,
+    "name": "Athena Grow kaufen",
+    "slug": "athena-grow-kaufen",
+    "count": 2,
+    "grund": "SEO-Floskel"
+  },
+  {
+    "id": 11676,
+    "name": "Athena IPW kaufen",
+    "slug": "athena-ipw-kaufen",
+    "count": 2,
+    "grund": "SEO-Floskel"
+  },
+  {
+    "id": 11683,
+    "name": "Athena PK kaufen",
+    "slug": "athena-pk-kaufen",
+    "count": 2,
+    "grund": "SEO-Floskel"
+  },
+  {
+    "id": 11693,
+    "name": "Athena pro Balance kaufen",
+    "slug": "athena-pro-balance-kaufen",
+    "count": 2,
+    "grund": "SEO-Floskel"
+  },
+  {
+    "id": 11708,
+    "name": "Athena pro Core kaufen",
+    "slug": "athena-pro-core-kaufen",
+    "count": 2,
+    "grund": "SEO-Floskel"
+  },
+  {
+    "id": 11716,
+    "name": "Athena pro Fade kaufen",
+    "slug": "athena-pro-fade-kaufen",
+    "count": 3,
+    "grund": "SEO-Floskel"
+  },
+  {
+    "id": 11723,
+    "name": "Athena pro Grow kaufen",
+    "slug": "athena-pro-grow-kaufen",
+    "count": 2,
+    "grund": "SEO-Floskel"
+  },
+  {
+    "id": 17509,
+    "name": "B-52",
+    "slug": "b-52",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17515,
+    "name": "B45",
+    "slug": "b45",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 20576,
+    "name": "Birchmeier",
+    "slug": "birchmeier",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17757,
+    "name": "Black Domino",
+    "slug": "black-domino",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17756,
+    "name": "Blackberry",
+    "slug": "blackberry",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17666,
+    "name": "Blue Pyramid",
+    "slug": "blue-pyramid",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17663,
+    "name": "Blue Pyramid Auto",
+    "slug": "blue-pyramid-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17761,
+    "name": "Blueberry Kush",
+    "slug": "blueberry-kush",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17415,
+    "name": "Buddha Classics AK",
+    "slug": "buddha-classics-ak",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17413,
+    "name": "Buddha Classics AK Auto",
+    "slug": "buddha-classics-ak-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17417,
+    "name": "Buddha Classics Amnesia",
+    "slug": "buddha-classics-amnesia",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17416,
+    "name": "Buddha Classics Amnesia Auto",
+    "slug": "buddha-classics-amnesia-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17421,
+    "name": "Buddha Classics Critical",
+    "slug": "buddha-classics-critical",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17419,
+    "name": "Buddha Classics Critical Auto",
+    "slug": "buddha-classics-critical-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17422,
+    "name": "Buddha Classics Diesel",
+    "slug": "buddha-classics-diesel",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17427,
+    "name": "Buddha Classics Skunk",
+    "slug": "buddha-classics-skunk",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17423,
+    "name": "Buddha Classics Skunk Auto",
+    "slug": "buddha-classics-skunk-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17430,
+    "name": "Buddha Classics White Widow",
+    "slug": "buddha-classics-white-widow",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17429,
+    "name": "Buddha Classics White Widow Auto",
+    "slug": "buddha-classics-white-widow-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17433,
+    "name": "Buddha Cookie",
+    "slug": "buddha-cookie",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17432,
+    "name": "Buddha Cookie Auto",
+    "slug": "buddha-cookie-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17434,
+    "name": "Buddha Dosi2",
+    "slug": "buddha-dosi2",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17435,
+    "name": "Buddha Gelato",
+    "slug": "buddha-gelato",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17437,
+    "name": "Buddha Tangie Auto",
+    "slug": "buddha-tangie-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17438,
+    "name": "Buddha Wedding Cheesecake",
+    "slug": "buddha-wedding-cheesecake",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17440,
+    "name": "Buddha Zkittlez Auto",
+    "slug": "buddha-zkittlez-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17441,
+    "name": "Calamity Jane Auto",
+    "slug": "calamity-jane-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17497,
+    "name": "Cannatonic",
+    "slug": "cannatonic",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 20547,
+    "name": "CannaVita",
+    "slug": "cannavita",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17601,
+    "name": "Chempie",
+    "slug": "chempie",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17467,
+    "name": "Chronic CBD",
+    "slug": "chronic-cbd",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17751,
+    "name": "Colombian Gold",
+    "slug": "colombian-gold",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17521,
+    "name": "Cookielato",
+    "slug": "cookielato",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17669,
+    "name": "Cookies USA",
+    "slug": "cookies-usa",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17602,
+    "name": "Criminal",
+    "slug": "criminal",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17527,
+    "name": "Critical Jack",
+    "slug": "critical-jack",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17523,
+    "name": "Critical Jack Auto",
+    "slug": "critical-jack-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17530,
+    "name": "Critical Mango",
+    "slug": "critical-mango",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17535,
+    "name": "Critical+ 2.0",
+    "slug": "critical-2-0",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17532,
+    "name": "Critical+ 2.0 Auto",
+    "slug": "critical-2-0-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17670,
+    "name": "Do Si Dos Auto",
+    "slug": "do-si-dos-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17472,
+    "name": "Double Dutch",
+    "slug": "double-dutch",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17671,
+    "name": "Double OG Haze",
+    "slug": "double-og-haze",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17486,
+    "name": "Flaggschiff",
+    "slug": "flaggschiff",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17675,
+    "name": "Fresh Candy",
+    "slug": "fresh-candy",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17673,
+    "name": "Fresh Candy Auto",
+    "slug": "fresh-candy-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17681,
+    "name": "Galaxy",
+    "slug": "galaxy",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17676,
+    "name": "Galaxy Auto",
+    "slug": "galaxy-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17678,
+    "name": "Galaxy CBD",
+    "slug": "galaxy-cbd",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 20578,
+    "name": "GIB",
+    "slug": "gib",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17445,
+    "name": "Gorila",
+    "slug": "gorila",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17686,
+    "name": "Gorila Auto",
+    "slug": "gorila-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17536,
+    "name": "Gorilla Frost",
+    "slug": "gorilla-frost",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17539,
+    "name": "Grape Juice",
+    "slug": "grape-juice",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 20553,
+    "name": "Growth Technology",
+    "slug": "growth-technology",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 3014,
+    "name": "Growzelt kaufen",
+    "slug": "growzelt-kaufen",
+    "count": 2,
+    "grund": "SEO-Floskel"
+  },
+  {
+    "id": 20574,
+    "name": "Hardcover",
+    "slug": "hardcover",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17745,
+    "name": "HASHY",
+    "slug": "hashy",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17770,
+    "name": "Hawaiian",
+    "slug": "hawaiian",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17687,
+    "name": "Heart Notes",
+    "slug": "heart-notes",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 20559,
+    "name": "Hubey",
+    "slug": "hubey",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 20607,
+    "name": "Jack Puck",
+    "slug": "jack-puck",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 20548,
+    "name": "Jiffy",
+    "slug": "jiffy",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17773,
+    "name": "K2",
+    "slug": "k2",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17611,
+    "name": "Kmintz",
+    "slug": "kmintz",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17610,
+    "name": "Kmintz Auto",
+    "slug": "kmintz-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17612,
+    "name": "Korenji",
+    "slug": "korenji",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17613,
+    "name": "Kroma",
+    "slug": "kroma",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17693,
+    "name": "Kryptonite",
+    "slug": "kryptonite",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17689,
+    "name": "Kryptonite Auto",
+    "slug": "kryptonite-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17694,
+    "name": "Kukulkan",
+    "slug": "kukulkan",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17556,
+    "name": "l.a. Vanilla Cake",
+    "slug": "l-a-vanilla-cake",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17554,
+    "name": "l.a. Vanilla Cake Auto",
+    "slug": "l-a-vanilla-cake-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17620,
+    "name": "Lavender",
+    "slug": "lavender",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17634,
+    "name": "Lemon Caramel",
+    "slug": "lemon-caramel",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17557,
+    "name": "Lemon Sorbet",
+    "slug": "lemon-sorbet",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17559,
+    "name": "Lemon Tree 2.0",
+    "slug": "lemon-tree-2-0",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17562,
+    "name": "Lemon Tree Fast",
+    "slug": "lemon-tree-fast",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17697,
+    "name": "Lennon",
+    "slug": "lennon",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17696,
+    "name": "Lennon Auto",
+    "slug": "lennon-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17637,
+    "name": "Limón Picón",
+    "slug": "limon-picon",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17552,
+    "name": "MAC",
+    "slug": "mac",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 20606,
+    "name": "Magical Butter",
+    "slug": "magical-butter",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17442,
+    "name": "Magnum",
+    "slug": "magnum",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17448,
+    "name": "Magnum Auto",
+    "slug": "magnum-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 20573,
+    "name": "MAMA Publishing",
+    "slug": "mama-publishing",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17452,
+    "name": "Medikit CBD",
+    "slug": "medikit-cbd",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17449,
+    "name": "Medikit CBD Auto",
+    "slug": "medikit-cbd-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17565,
+    "name": "Moby Dick",
+    "slug": "moby-dick",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17480,
+    "name": "Motavation",
+    "slug": "motavation",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17403,
+    "name": "Mother's Finest",
+    "slug": "mothers-finest",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17404,
+    "name": "Mr Nice G13 x Hash Plant",
+    "slug": "mr-nice-g13-x-hash-plant",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17406,
+    "name": "N13 Kush",
+    "slug": "n13-kush",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17703,
+    "name": "Nefertiti",
+    "slug": "nefertiti",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17701,
+    "name": "Nefertiti Auto",
+    "slug": "nefertiti-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17707,
+    "name": "New York City",
+    "slug": "new-york-city",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17704,
+    "name": "New York City Auto",
+    "slug": "new-york-city-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17706,
+    "name": "New York City CBD Auto",
+    "slug": "new-york-city-cbd-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17408,
+    "name": "Nl#5 x Haze",
+    "slug": "nl5-x-haze",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17489,
+    "name": "Nordische Lagen",
+    "slug": "nordische-lagen",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17410,
+    "name": "Northern Lights #5 x Haze",
+    "slug": "northern-lights-5-x-haze",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17709,
+    "name": "Northern Lights CBD",
+    "slug": "northern-lights-cbd",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17708,
+    "name": "Northern Lights CBD Auto",
+    "slug": "northern-lights-cbd-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17642,
+    "name": "Oakland",
+    "slug": "oakland",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17713,
+    "name": "Olympia",
+    "slug": "olympia",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17710,
+    "name": "Olympia Auto",
+    "slug": "olympia-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17614,
+    "name": "Omg",
+    "slug": "omg",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17568,
+    "name": "Original Amnesia",
+    "slug": "original-amnesia",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17639,
+    "name": "Pcg Cookies x Watermelon Zkittlez",
+    "slug": "pcg-cookies-x-watermelon-zkittlez",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17577,
+    "name": "Pink Sunset",
+    "slug": "pink-sunset",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17575,
+    "name": "Pink Sunset Auto",
+    "slug": "pink-sunset-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 20577,
+    "name": "PLANT T",
+    "slug": "plant-t",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17580,
+    "name": "Polar Gelato",
+    "slug": "polar-gelato",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 20541,
+    "name": "Pre Rolled Papers",
+    "slug": "pre-rolled-papers",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17783,
+    "name": "Pure Power Plant",
+    "slug": "pure-power-plant",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17640,
+    "name": "Purple #40",
+    "slug": "purple-40",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17714,
+    "name": "Purple Auto",
+    "slug": "purple-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17455,
+    "name": "Purple Kush Auto",
+    "slug": "purple-kush-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17458,
+    "name": "Quasar",
+    "slug": "quasar",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17616,
+    "name": "Radical Juice",
+    "slug": "radical-juice",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17615,
+    "name": "Radical Juice Auto",
+    "slug": "radical-juice-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17716,
+    "name": "Ramses",
+    "slug": "ramses",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17715,
+    "name": "Ramses Auto",
+    "slug": "ramses-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17459,
+    "name": "Red Dwarf Auto",
+    "slug": "red-dwarf-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 20551,
+    "name": "Romberg",
+    "slug": "romberg",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17717,
+    "name": "Romulan",
+    "slug": "romulan",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 20589,
+    "name": "RoyalRoom",
+    "slug": "royalroom",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17461,
+    "name": "Sea Of Green",
+    "slug": "sea-of-green",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17402,
+    "name": "Sensi Mixed",
+    "slug": "sensi-mixed",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17372,
+    "name": "Sensi Purple Kush",
+    "slug": "sensi-purple-kush",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17374,
+    "name": "Sensi Skunk Auto",
+    "slug": "sensi-skunk-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17481,
+    "name": "Sensi Star",
+    "slug": "sensi-star",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17483,
+    "name": "Seriosa",
+    "slug": "seriosa",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17485,
+    "name": "Seriotica",
+    "slug": "seriotica",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17493,
+    "name": "Serious Kush",
+    "slug": "serious-kush",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17722,
+    "name": "Shark",
+    "slug": "shark",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17719,
+    "name": "Shark Auto",
+    "slug": "shark-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17618,
+    "name": "Shimo",
+    "slug": "shimo",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17378,
+    "name": "Shiva Shanti Ii",
+    "slug": "shiva-shanti-ii",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17381,
+    "name": "Shiva Skunk Auto",
+    "slug": "shiva-skunk-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17786,
+    "name": "Short Rider",
+    "slug": "short-rider",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17619,
+    "name": "Sideral",
+    "slug": "sideral",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17385,
+    "name": "Silver Fire",
+    "slug": "silver-fire",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17389,
+    "name": "Skunk #1 Auto",
+    "slug": "skunk-1-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17641,
+    "name": "Smac Town",
+    "slug": "smac-town",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17789,
+    "name": "Somango XXL",
+    "slug": "somango-xxl",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17623,
+    "name": "Sour Ripper",
+    "slug": "sour-ripper",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17622,
+    "name": "Sour Ripper Auto",
+    "slug": "sour-ripper-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17584,
+    "name": "Starfire OG",
+    "slug": "starfire-og",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17495,
+    "name": "Strawberry Akeil",
+    "slug": "strawberry-akeil",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17729,
+    "name": "Super Hash",
+    "slug": "super-hash",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17725,
+    "name": "Super Hash Auto",
+    "slug": "super-hash-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17732,
+    "name": "Super OG Kush",
+    "slug": "super-og-kush",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17730,
+    "name": "Super OG Kush Auto",
+    "slug": "super-og-kush-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17395,
+    "name": "Super Skunk Auto",
+    "slug": "super-skunk-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17398,
+    "name": "Sweet Cherry Kush",
+    "slug": "sweet-cherry-kush",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17460,
+    "name": "Syrup Auto",
+    "slug": "syrup-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17733,
+    "name": "Tahoe Cure",
+    "slug": "tahoe-cure",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17400,
+    "name": "Tangerine Sugar",
+    "slug": "tangerine-sugar",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17624,
+    "name": "Toxic",
+    "slug": "toxic",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17735,
+    "name": "Tutankhamon Auto",
+    "slug": "tutankhamon-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17462,
+    "name": "Vesta Auto",
+    "slug": "vesta-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17496,
+    "name": "Warlock CBD",
+    "slug": "warlock-cbd",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17632,
+    "name": "Washing Machine",
+    "slug": "washing-machine",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17591,
+    "name": "Watermelon Runtz",
+    "slug": "watermelon-runtz",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17737,
+    "name": "Watermelon Zkittlez",
+    "slug": "watermelon-zkittlez",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17741,
+    "name": "Wembley",
+    "slug": "wembley",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17740,
+    "name": "Wembley Auto",
+    "slug": "wembley-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17425,
+    "name": "White Dwarf",
+    "slug": "white-dwarf",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17463,
+    "name": "White Dwarf Auto",
+    "slug": "white-dwarf-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17499,
+    "name": "White Russian Auto",
+    "slug": "white-russian-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17743,
+    "name": "White Widow CBD",
+    "slug": "white-widow-cbd",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17742,
+    "name": "White Widow CBD Auto",
+    "slug": "white-widow-cbd-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17794,
+    "name": "Wonder Woman",
+    "slug": "wonder-woman",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 14538,
+    "name": "Z",
+    "slug": "z",
+    "count": 2,
+    "grund": "Fragment"
+  },
+  {
+    "id": 17627,
+    "name": "Zake",
+    "slug": "zake",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17594,
+    "name": "Zkittlez 2.0",
+    "slug": "zkittlez-2-0",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17628,
+    "name": "Zombie Bride",
+    "slug": "zombie-bride",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  },
+  {
+    "id": 17631,
+    "name": "Zombie Kush Auto",
+    "slug": "zombie-kush-auto",
+    "count": 1,
+    "grund": "nur ein Produkt"
+  }
+]

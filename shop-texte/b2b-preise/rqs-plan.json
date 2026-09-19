@@ -1,0 +1,4013 @@
+[
+ {
+  "produkt_id": 11291,
+  "produkt": "Royal Queen Seeds Medusa F1-Hybrid",
+  "quelle": "Medusa F1",
+  "sektion": "F1 Hybrids",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "20",
+    "b2b": "22.00",
+    "anbau": "26.00"
+   },
+   "5": {
+    "ek": "30",
+    "b2b": "33.00",
+    "anbau": "39.00"
+   },
+   "10": {
+    "ek": "55",
+    "b2b": "60.50",
+    "anbau": "71.50"
+   },
+   "25": {
+    "ek": "110",
+    "b2b": "121.00",
+    "anbau": "143.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 11295,
+  "produkt": "Royal Queen Seeds Orion F1-Hybrid",
+  "quelle": "Orion F1",
+  "sektion": "F1 Hybrids",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "20",
+    "b2b": "22.00",
+    "anbau": "26.00"
+   },
+   "5": {
+    "ek": "30",
+    "b2b": "33.00",
+    "anbau": "39.00"
+   },
+   "10": {
+    "ek": "55",
+    "b2b": "60.50",
+    "anbau": "71.50"
+   },
+   "25": {
+    "ek": "110",
+    "b2b": "121.00",
+    "anbau": "143.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 12599,
+  "produkt": "Royal Queen Seeds Apollo F1",
+  "quelle": "Apollo F1",
+  "sektion": "F1 Hybrids",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "19",
+    "b2b": "20.90",
+    "anbau": "24.70"
+   },
+   "5": {
+    "ek": "28.5",
+    "b2b": "31.35",
+    "anbau": "37.05"
+   },
+   "10": {
+    "ek": "52.5",
+    "b2b": "57.75",
+    "anbau": "68.25"
+   },
+   "25": {
+    "ek": "105",
+    "b2b": "115.50",
+    "anbau": "136.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 12603,
+  "produkt": "Royal Queen Seeds Epsilon F1",
+  "quelle": "Epsilon F1",
+  "sektion": "F1 Hybrids",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "19",
+    "b2b": "20.90",
+    "anbau": "24.70"
+   },
+   "5": {
+    "ek": "28.5",
+    "b2b": "31.35",
+    "anbau": "37.05"
+   },
+   "10": {
+    "ek": "52.5",
+    "b2b": "57.75",
+    "anbau": "68.25"
+   },
+   "25": {
+    "ek": "105",
+    "b2b": "115.50",
+    "anbau": "136.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 12607,
+  "produkt": "Royal Queen Seeds Gaia F1",
+  "quelle": "Gaia F1",
+  "sektion": "F1 Hybrids",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "20",
+    "b2b": "22.00",
+    "anbau": "26.00"
+   },
+   "5": {
+    "ek": "30",
+    "b2b": "33.00",
+    "anbau": "39.00"
+   },
+   "10": {
+    "ek": "55",
+    "b2b": "60.50",
+    "anbau": "71.50"
+   },
+   "25": {
+    "ek": "110",
+    "b2b": "121.00",
+    "anbau": "143.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 12611,
+  "produkt": "Royal Queen Seeds Hyperion F1",
+  "quelle": "Hyperion F1",
+  "sektion": "F1 Hybrids",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "20",
+    "b2b": "22.00",
+    "anbau": "26.00"
+   },
+   "5": {
+    "ek": "30",
+    "b2b": "33.00",
+    "anbau": "39.00"
+   },
+   "10": {
+    "ek": "55",
+    "b2b": "60.50",
+    "anbau": "71.50"
+   },
+   "25": {
+    "ek": "110",
+    "b2b": "121.00",
+    "anbau": "143.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 12615,
+  "produkt": "Royal Queen Seeds Milky Way F1",
+  "quelle": "Milky Way F1",
+  "sektion": "F1 Hybrids",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "19",
+    "b2b": "20.90",
+    "anbau": "24.70"
+   },
+   "5": {
+    "ek": "28.5",
+    "b2b": "31.35",
+    "anbau": "37.05"
+   },
+   "10": {
+    "ek": "52.5",
+    "b2b": "57.75",
+    "anbau": "68.25"
+   },
+   "25": {
+    "ek": "105",
+    "b2b": "115.50",
+    "anbau": "136.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 12619,
+  "produkt": "Royal Queen Seeds Titan F1",
+  "quelle": "Titan F1",
+  "sektion": "F1 Hybrids",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "20",
+    "b2b": "22.00",
+    "anbau": "26.00"
+   },
+   "5": {
+    "ek": "30",
+    "b2b": "33.00",
+    "anbau": "39.00"
+   },
+   "10": {
+    "ek": "55",
+    "b2b": "60.50",
+    "anbau": "71.50"
+   },
+   "25": {
+    "ek": "110",
+    "b2b": "121.00",
+    "anbau": "143.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 12623,
+  "produkt": "Royal Queen Seeds x Tyson Corkscrew Auto",
+  "quelle": "Corkscrew Auto",
+  "sektion": "Tyson Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "14",
+    "b2b": "15.40",
+    "anbau": "18.20"
+   },
+   "5": {
+    "ek": "21.25",
+    "b2b": "23.38",
+    "anbau": "27.63"
+   },
+   "10": {
+    "ek": "38.25",
+    "b2b": "42.08",
+    "anbau": "49.73"
+   }
+  }
+ },
+ {
+  "produkt_id": 12628,
+  "produkt": "Royal Queen Seeds x Tyson GOAT’lato Auto",
+  "quelle": "GOAT'lato Auto",
+  "sektion": "Tyson Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "14",
+    "b2b": "15.40",
+    "anbau": "18.20"
+   },
+   "5": {
+    "ek": "21.25",
+    "b2b": "23.38",
+    "anbau": "27.63"
+   },
+   "10": {
+    "ek": "38.25",
+    "b2b": "42.08",
+    "anbau": "49.73"
+   }
+  }
+ },
+ {
+  "produkt_id": 12633,
+  "produkt": "Royal Queen Seeds x Tyson NYC Sour D Auto",
+  "quelle": "NYC Sour D Auto",
+  "sektion": "Tyson Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "11.5",
+    "b2b": "12.65",
+    "anbau": "14.95"
+   },
+   "5": {
+    "ek": "17.5",
+    "b2b": "19.25",
+    "anbau": "22.75"
+   },
+   "10": {
+    "ek": "32.5",
+    "b2b": "35.75",
+    "anbau": "42.25"
+   }
+  }
+ },
+ {
+  "produkt_id": 12638,
+  "produkt": "Royal Queen Seeds x Tyson Dynamite Diesel",
+  "quelle": "Dynamite Diesel",
+  "sektion": "Tyson Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "13.5",
+    "b2b": "14.85",
+    "anbau": "17.55"
+   },
+   "5": {
+    "ek": "20",
+    "b2b": "22.00",
+    "anbau": "26.00"
+   },
+   "10": {
+    "ek": "37.5",
+    "b2b": "41.25",
+    "anbau": "48.75"
+   }
+  }
+ },
+ {
+  "produkt_id": 12643,
+  "produkt": "Royal Queen Seeds x Tyson Gelato 44",
+  "quelle": "Gelato 44",
+  "sektion": "Tyson Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "17.25",
+    "b2b": "18.98",
+    "anbau": "22.43"
+   },
+   "5": {
+    "ek": "26.25",
+    "b2b": "28.88",
+    "anbau": "34.13"
+   },
+   "10": {
+    "ek": "47.5",
+    "b2b": "52.25",
+    "anbau": "61.75"
+   }
+  }
+ },
+ {
+  "produkt_id": 12648,
+  "produkt": "Royal Queen Seeds x Tyson Punch Pie",
+  "quelle": "Punch Pie",
+  "sektion": "Tyson Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "14",
+    "b2b": "15.40",
+    "anbau": "18.20"
+   },
+   "5": {
+    "ek": "21.25",
+    "b2b": "23.38",
+    "anbau": "27.63"
+   },
+   "10": {
+    "ek": "38.25",
+    "b2b": "42.08",
+    "anbau": "49.73"
+   }
+  }
+ },
+ {
+  "produkt_id": 18142,
+  "produkt": "Royal Queen Seeds Alien OG",
+  "quelle": "Alien OG",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized - Limited Availability",
+  "preise": {
+   "3": {
+    "ek": "13.5",
+    "b2b": "14.85",
+    "anbau": "17.55"
+   }
+  }
+ },
+ {
+  "produkt_id": 18144,
+  "produkt": "Royal Queen Seeds Amnesia Haze",
+  "quelle": "Amnesia Haze",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "13.5",
+    "b2b": "14.85",
+    "anbau": "17.55"
+   },
+   "5": {
+    "ek": "20",
+    "b2b": "22.00",
+    "anbau": "26.00"
+   },
+   "10": {
+    "ek": "37.5",
+    "b2b": "41.25",
+    "anbau": "48.75"
+   },
+   "25": {
+    "ek": "75",
+    "b2b": "82.50",
+    "anbau": "97.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 18145,
+  "produkt": "Royal Queen Seeds Apple Fritter",
+  "quelle": "Apple Fritter",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized - Limited Availability",
+  "preise": {
+   "3": {
+    "ek": "15.25",
+    "b2b": "16.78",
+    "anbau": "19.83"
+   }
+  }
+ },
+ {
+  "produkt_id": 18146,
+  "produkt": "Royal Queen Seeds Biscotti",
+  "quelle": "Biscotti",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "15.25",
+    "b2b": "16.78",
+    "anbau": "19.83"
+   },
+   "5": {
+    "ek": "23.25",
+    "b2b": "25.58",
+    "anbau": "30.23"
+   },
+   "10": {
+    "ek": "42.5",
+    "b2b": "46.75",
+    "anbau": "55.25"
+   }
+  }
+ },
+ {
+  "produkt_id": 18147,
+  "produkt": "Royal Queen Seeds Blue Cheese",
+  "quelle": "Blue Cheese",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "10.75",
+    "b2b": "11.83",
+    "anbau": "13.98"
+   },
+   "5": {
+    "ek": "16.25",
+    "b2b": "17.88",
+    "anbau": "21.13"
+   },
+   "10": {
+    "ek": "30",
+    "b2b": "33.00",
+    "anbau": "39.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 18148,
+  "produkt": "Royal Queen Seeds Blue Gelato",
+  "quelle": "Blue Gelato",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "15.25",
+    "b2b": "16.78",
+    "anbau": "19.83"
+   },
+   "5": {
+    "ek": "23.25",
+    "b2b": "25.58",
+    "anbau": "30.23"
+   },
+   "10": {
+    "ek": "42.5",
+    "b2b": "46.75",
+    "anbau": "55.25"
+   }
+  }
+ },
+ {
+  "produkt_id": 18149,
+  "produkt": "Royal Queen Seeds Blue Mystic",
+  "quelle": "Blue Mystic",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized - Limited Availability",
+  "preise": {
+   "3": {
+    "ek": "10",
+    "b2b": "11.00",
+    "anbau": "13.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 18150,
+  "produkt": "Royal Queen Seeds Bubble Kush",
+  "quelle": "Bubble Kush",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized - Limited Availability",
+  "preise": {
+   "3": {
+    "ek": "12.5",
+    "b2b": "13.75",
+    "anbau": "16.25"
+   }
+  }
+ },
+ {
+  "produkt_id": 18151,
+  "produkt": "Royal Queen Seeds Bubblegum XL",
+  "quelle": "Bubblegum XL",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized - Limited Availability",
+  "preise": {
+   "3": {
+    "ek": "11.5",
+    "b2b": "12.65",
+    "anbau": "14.95"
+   }
+  }
+ },
+ {
+  "produkt_id": 18152,
+  "produkt": "Royal Queen Seeds Candy Kush Express – Fast",
+  "quelle": "Candy Kush Express - Fast",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "11.5",
+    "b2b": "12.65",
+    "anbau": "14.95"
+   },
+   "5": {
+    "ek": "17.5",
+    "b2b": "19.25",
+    "anbau": "22.75"
+   },
+   "10": {
+    "ek": "32.5",
+    "b2b": "35.75",
+    "anbau": "42.25"
+   }
+  }
+ },
+ {
+  "produkt_id": 18153,
+  "produkt": "Royal Queen Seeds Cereal Milk",
+  "quelle": "Cereal Milk",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "16.25",
+    "b2b": "17.88",
+    "anbau": "21.13"
+   },
+   "5": {
+    "ek": "24.750000000000004",
+    "b2b": "27.23",
+    "anbau": "32.18"
+   },
+   "10": {
+    "ek": "45",
+    "b2b": "49.50",
+    "anbau": "58.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 18154,
+  "produkt": "Royal Queen Seeds Cherry Pie",
+  "quelle": "Cherry Pie",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "15.25",
+    "b2b": "16.78",
+    "anbau": "19.83"
+   },
+   "5": {
+    "ek": "23.25",
+    "b2b": "25.58",
+    "anbau": "30.23"
+   },
+   "10": {
+    "ek": "42.5",
+    "b2b": "46.75",
+    "anbau": "55.25"
+   }
+  }
+ },
+ {
+  "produkt_id": 18155,
+  "produkt": "Royal Queen Seeds Chocolate Haze",
+  "quelle": "Chocolate Haze",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "11.5",
+    "b2b": "12.65",
+    "anbau": "14.95"
+   },
+   "5": {
+    "ek": "17.5",
+    "b2b": "19.25",
+    "anbau": "22.75"
+   },
+   "10": {
+    "ek": "32.5",
+    "b2b": "35.75",
+    "anbau": "42.25"
+   }
+  }
+ },
+ {
+  "produkt_id": 18156,
+  "produkt": "Royal Queen Seeds Cookies Gelato",
+  "quelle": "Cookies Gelato",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "15.25",
+    "b2b": "16.78",
+    "anbau": "19.83"
+   },
+   "5": {
+    "ek": "23.25",
+    "b2b": "25.58",
+    "anbau": "30.23"
+   },
+   "10": {
+    "ek": "42.5",
+    "b2b": "46.75",
+    "anbau": "55.25"
+   },
+   "25": {
+    "ek": "85",
+    "b2b": "93.50",
+    "anbau": "110.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 18157,
+  "produkt": "Royal Queen Seeds Critical",
+  "quelle": "Critical",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "11.5",
+    "b2b": "12.65",
+    "anbau": "14.95"
+   },
+   "5": {
+    "ek": "17.5",
+    "b2b": "19.25",
+    "anbau": "22.75"
+   },
+   "10": {
+    "ek": "32.5",
+    "b2b": "35.75",
+    "anbau": "42.25"
+   },
+   "25": {
+    "ek": "65",
+    "b2b": "71.50",
+    "anbau": "84.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 18158,
+  "produkt": "Royal Queen Seeds Critical Kush",
+  "quelle": "Critical Kush",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "10.75",
+    "b2b": "11.83",
+    "anbau": "13.98"
+   },
+   "5": {
+    "ek": "16.25",
+    "b2b": "17.88",
+    "anbau": "21.13"
+   },
+   "10": {
+    "ek": "30",
+    "b2b": "33.00",
+    "anbau": "39.00"
+   },
+   "25": {
+    "ek": "60",
+    "b2b": "66.00",
+    "anbau": "78.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 18159,
+  "produkt": "Royal Queen Seeds Do-si-dos",
+  "quelle": "Do-si-dos",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "15.25",
+    "b2b": "16.78",
+    "anbau": "19.83"
+   },
+   "5": {
+    "ek": "23.25",
+    "b2b": "25.58",
+    "anbau": "30.23"
+   },
+   "10": {
+    "ek": "42.5",
+    "b2b": "46.75",
+    "anbau": "55.25"
+   }
+  }
+ },
+ {
+  "produkt_id": 18160,
+  "produkt": "Royal Queen Seeds El Patron",
+  "quelle": "El Patron",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "16.25",
+    "b2b": "17.88",
+    "anbau": "21.13"
+   },
+   "5": {
+    "ek": "24.75",
+    "b2b": "27.23",
+    "anbau": "32.18"
+   },
+   "10": {
+    "ek": "45",
+    "b2b": "49.50",
+    "anbau": "58.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 18161,
+  "produkt": "Royal Queen Seeds Fat Banana",
+  "quelle": "Fat Banana",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "12.5",
+    "b2b": "13.75",
+    "anbau": "16.25"
+   },
+   "5": {
+    "ek": "18.75",
+    "b2b": "20.63",
+    "anbau": "24.38"
+   },
+   "10": {
+    "ek": "35",
+    "b2b": "38.50",
+    "anbau": "45.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 18163,
+  "produkt": "Royal Queen Seeds Forbidden Fruit",
+  "quelle": "Forbidden Fruit",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized - Limited Availability",
+  "preise": {
+   "3": {
+    "ek": "12.5",
+    "b2b": "13.75",
+    "anbau": "16.25"
+   }
+  }
+ },
+ {
+  "produkt_id": 18164,
+  "produkt": "Royal Queen Seeds Fruit Spirit",
+  "quelle": "Fruit Spirit",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized - Limited Availability",
+  "preise": {
+   "3": {
+    "ek": "10",
+    "b2b": "11.00",
+    "anbau": "13.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 18165,
+  "produkt": "Royal Queen Seeds Granddaddy Purple",
+  "quelle": "Grandaddy Purple",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized - Limited Availability",
+  "preise": {
+   "3": {
+    "ek": "14.5",
+    "b2b": "15.95",
+    "anbau": "18.85"
+   }
+  }
+ },
+ {
+  "produkt_id": 18166,
+  "produkt": "Royal Queen Seeds Grape Ape",
+  "quelle": "Grape Ape",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "15.25",
+    "b2b": "16.78",
+    "anbau": "19.83"
+   },
+   "5": {
+    "ek": "23.25",
+    "b2b": "25.58",
+    "anbau": "30.23"
+   },
+   "10": {
+    "ek": "42.5",
+    "b2b": "46.75",
+    "anbau": "55.25"
+   }
+  }
+ },
+ {
+  "produkt_id": 18167,
+  "produkt": "Royal Queen Seeds Green Crack Punch",
+  "quelle": "Green Crack Punch",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized - Limited Availability",
+  "preise": {
+   "3": {
+    "ek": "14.5",
+    "b2b": "15.95",
+    "anbau": "18.85"
+   }
+  }
+ },
+ {
+  "produkt_id": 18168,
+  "produkt": "Royal Queen Seeds Green Gelato",
+  "quelle": "Green Gelato",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "16.25",
+    "b2b": "17.88",
+    "anbau": "21.13"
+   },
+   "5": {
+    "ek": "24.75",
+    "b2b": "27.23",
+    "anbau": "32.18"
+   },
+   "10": {
+    "ek": "45",
+    "b2b": "49.50",
+    "anbau": "58.50"
+   },
+   "25": {
+    "ek": "90",
+    "b2b": "99.00",
+    "anbau": "117.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 18169,
+  "produkt": "Royal Queen Seeds Gushers",
+  "quelle": "Gusher",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized - Limited Availability",
+  "preise": {
+   "3": {
+    "ek": "14.5",
+    "b2b": "15.95",
+    "anbau": "18.85"
+   }
+  }
+ },
+ {
+  "produkt_id": 18170,
+  "produkt": "Royal Queen Seeds Haze Berry",
+  "quelle": "Haze Berry",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "12.5",
+    "b2b": "13.75",
+    "anbau": "16.25"
+   },
+   "5": {
+    "ek": "18.75",
+    "b2b": "20.63",
+    "anbau": "24.38"
+   },
+   "10": {
+    "ek": "35",
+    "b2b": "38.50",
+    "anbau": "45.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 18171,
+  "produkt": "Royal Queen Seeds Honey Cream – Fast",
+  "quelle": "Honey Cream - Fast",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "10",
+    "b2b": "11.00",
+    "anbau": "13.00"
+   },
+   "5": {
+    "ek": "15",
+    "b2b": "16.50",
+    "anbau": "19.50"
+   },
+   "10": {
+    "ek": "27.5",
+    "b2b": "30.25",
+    "anbau": "35.75"
+   },
+   "25": {
+    "ek": "55",
+    "b2b": "60.50",
+    "anbau": "71.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 18172,
+  "produkt": "Royal Queen Seeds HulkBerry",
+  "quelle": "HulkBerry",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "14.5",
+    "b2b": "15.95",
+    "anbau": "18.85"
+   },
+   "5": {
+    "ek": "22",
+    "b2b": "24.20",
+    "anbau": "28.60"
+   },
+   "10": {
+    "ek": "40",
+    "b2b": "44.00",
+    "anbau": "52.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 18173,
+  "produkt": "Royal Queen Seeds Ice",
+  "quelle": "Ice",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized - Limited Availability",
+  "preise": {
+   "3": {
+    "ek": "10",
+    "b2b": "11.00",
+    "anbau": "13.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 18174,
+  "produkt": "Royal Queen Seeds Kali Dog",
+  "quelle": "Kali Dog",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized - Limited Availability",
+  "preise": {
+   "3": {
+    "ek": "10.75",
+    "b2b": "11.83",
+    "anbau": "13.98"
+   }
+  }
+ },
+ {
+  "produkt_id": 18175,
+  "produkt": "Royal Queen Seeds Larry OG",
+  "quelle": "Larry OG",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized - Limited Availability",
+  "preise": {
+   "3": {
+    "ek": "14.5",
+    "b2b": "15.95",
+    "anbau": "18.85"
+   }
+  }
+ },
+ {
+  "produkt_id": 18176,
+  "produkt": "Royal Queen Seeds Legendary OG Punch",
+  "quelle": "Legendary OG Punch",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "14.5",
+    "b2b": "15.95",
+    "anbau": "18.85"
+   },
+   "5": {
+    "ek": "22",
+    "b2b": "24.20",
+    "anbau": "28.60"
+   },
+   "10": {
+    "ek": "40",
+    "b2b": "44.00",
+    "anbau": "52.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 18177,
+  "produkt": "Royal Queen Seeds Lemon Shining Silver Haze",
+  "quelle": "Lemon Shining Silver Haze",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "10.75",
+    "b2b": "11.83",
+    "anbau": "13.98"
+   },
+   "5": {
+    "ek": "16.25",
+    "b2b": "17.88",
+    "anbau": "21.13"
+   },
+   "10": {
+    "ek": "30",
+    "b2b": "33.00",
+    "anbau": "39.00"
+   },
+   "25": {
+    "ek": "60",
+    "b2b": "66.00",
+    "anbau": "78.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 18178,
+  "produkt": "Royal Queen Seeds Lemon Skunk",
+  "quelle": "Lemon Skunk",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized - Limited Availability",
+  "preise": {
+   "3": {
+    "ek": "11.5",
+    "b2b": "12.65",
+    "anbau": "14.95"
+   }
+  }
+ },
+ {
+  "produkt_id": 18179,
+  "produkt": "Royal Queen Seeds Mexican Rush",
+  "quelle": "Mexican Rush",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "14.5",
+    "b2b": "15.95",
+    "anbau": "18.85"
+   },
+   "5": {
+    "ek": "22",
+    "b2b": "24.20",
+    "anbau": "28.60"
+   },
+   "10": {
+    "ek": "40",
+    "b2b": "44.00",
+    "anbau": "52.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 18180,
+  "produkt": "Royal Queen Seeds Mimosa",
+  "quelle": "Mimosa",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "14.5",
+    "b2b": "15.95",
+    "anbau": "18.85"
+   },
+   "5": {
+    "ek": "22",
+    "b2b": "24.20",
+    "anbau": "28.60"
+   },
+   "10": {
+    "ek": "40",
+    "b2b": "44.00",
+    "anbau": "52.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 18181,
+  "produkt": "Royal Queen Seeds Mother Gorilla",
+  "quelle": "Mother Gorilla",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "11.5",
+    "b2b": "12.65",
+    "anbau": "14.95"
+   },
+   "5": {
+    "ek": "17.5",
+    "b2b": "19.25",
+    "anbau": "22.75"
+   },
+   "10": {
+    "ek": "32.5",
+    "b2b": "35.75",
+    "anbau": "42.25"
+   }
+  }
+ },
+ {
+  "produkt_id": 18182,
+  "produkt": "Royal Queen Seeds North Thunderfuck",
+  "quelle": "North Thunderfuck",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized - Limited Availability",
+  "preise": {
+   "3": {
+    "ek": "13.5",
+    "b2b": "14.85",
+    "anbau": "17.55"
+   }
+  }
+ },
+ {
+  "produkt_id": 18183,
+  "produkt": "Royal Queen Seeds Northern Light",
+  "quelle": "Northern Light",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "10.75",
+    "b2b": "11.83",
+    "anbau": "13.98"
+   },
+   "5": {
+    "ek": "16.25",
+    "b2b": "17.88",
+    "anbau": "21.13"
+   },
+   "10": {
+    "ek": "30",
+    "b2b": "33.00",
+    "anbau": "39.00"
+   },
+   "25": {
+    "ek": "60",
+    "b2b": "66.00",
+    "anbau": "78.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 18184,
+  "produkt": "Royal Queen Seeds O.G. Kush",
+  "quelle": "O.G. Kush",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "10.75",
+    "b2b": "11.83",
+    "anbau": "13.98"
+   },
+   "5": {
+    "ek": "16.25",
+    "b2b": "17.88",
+    "anbau": "21.13"
+   },
+   "10": {
+    "ek": "30",
+    "b2b": "33.00",
+    "anbau": "39.00"
+   },
+   "25": {
+    "ek": "60",
+    "b2b": "66.00",
+    "anbau": "78.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 18185,
+  "produkt": "Royal Queen Seeds Pineapple Kush",
+  "quelle": "Pineapple Kush",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "12.5",
+    "b2b": "13.75",
+    "anbau": "16.25"
+   },
+   "5": {
+    "ek": "18.75",
+    "b2b": "20.63",
+    "anbau": "24.38"
+   },
+   "10": {
+    "ek": "35",
+    "b2b": "38.50",
+    "anbau": "45.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 18186,
+  "produkt": "Royal Queen Seeds Pink Gorilla",
+  "quelle": "Pink Gorilla",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized - Limited Availability",
+  "preise": {
+   "3": {
+    "ek": "15.25",
+    "b2b": "16.78",
+    "anbau": "19.83"
+   }
+  }
+ },
+ {
+  "produkt_id": 18187,
+  "produkt": "Royal Queen Seeds Pink Mist",
+  "quelle": "Pink Mist",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized - Limited Availability",
+  "preise": {
+   "3": {
+    "ek": "10.75",
+    "b2b": "11.83",
+    "anbau": "13.98"
+   }
+  }
+ },
+ {
+  "produkt_id": 18188,
+  "produkt": "Royal Queen Seeds Pink Runtz",
+  "quelle": "Pink Runtz",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "12.5",
+    "b2b": "13.75",
+    "anbau": "16.25"
+   },
+   "5": {
+    "ek": "18.75",
+    "b2b": "20.63",
+    "anbau": "24.38"
+   },
+   "10": {
+    "ek": "35",
+    "b2b": "38.50",
+    "anbau": "45.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 18189,
+  "produkt": "Royal Queen Seeds Power Flower",
+  "quelle": "Power Flower",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "10",
+    "b2b": "11.00",
+    "anbau": "13.00"
+   },
+   "5": {
+    "ek": "15",
+    "b2b": "16.50",
+    "anbau": "19.50"
+   },
+   "10": {
+    "ek": "27.5",
+    "b2b": "30.25",
+    "anbau": "35.75"
+   }
+  }
+ },
+ {
+  "produkt_id": 18190,
+  "produkt": "Royal Queen Seeds Purple Punch",
+  "quelle": "Purple Punch",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "16.25",
+    "b2b": "17.88",
+    "anbau": "21.13"
+   },
+   "5": {
+    "ek": "24.75",
+    "b2b": "27.23",
+    "anbau": "32.18"
+   },
+   "10": {
+    "ek": "45",
+    "b2b": "49.50",
+    "anbau": "58.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 18191,
+  "produkt": "Royal Queen Seeds Purple Queen",
+  "quelle": "Purple Queen",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "10",
+    "b2b": "11.00",
+    "anbau": "13.00"
+   },
+   "5": {
+    "ek": "15",
+    "b2b": "16.50",
+    "anbau": "19.50"
+   },
+   "10": {
+    "ek": "27.5",
+    "b2b": "30.25",
+    "anbau": "35.75"
+   },
+   "25": {
+    "ek": "55",
+    "b2b": "60.50",
+    "anbau": "71.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 18192,
+  "produkt": "Royal Queen Seeds Royal AK",
+  "quelle": "Royal AK",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized - Limited Availability",
+  "preise": {
+   "3": {
+    "ek": "10.75",
+    "b2b": "11.83",
+    "anbau": "13.98"
+   }
+  }
+ },
+ {
+  "produkt_id": 18193,
+  "produkt": "Royal Queen Seeds Royal Cheese – Fast",
+  "quelle": "Royal Cheese - Fast",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized - Limited Availability",
+  "preise": {
+   "3": {
+    "ek": "10",
+    "b2b": "11.00",
+    "anbau": "13.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 18194,
+  "produkt": "Royal Queen Seeds Royal Cookies",
+  "quelle": "Royal Cookies",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "13.5",
+    "b2b": "14.85",
+    "anbau": "17.55"
+   },
+   "5": {
+    "ek": "20",
+    "b2b": "22.00",
+    "anbau": "26.00"
+   },
+   "10": {
+    "ek": "37.5",
+    "b2b": "41.25",
+    "anbau": "48.75"
+   }
+  }
+ },
+ {
+  "produkt_id": 18195,
+  "produkt": "Royal Queen Seeds Royal Domina",
+  "quelle": "Royal Domina",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized - Limited Availability",
+  "preise": {
+   "3": {
+    "ek": "11.5",
+    "b2b": "12.65",
+    "anbau": "14.95"
+   }
+  }
+ },
+ {
+  "produkt_id": 18196,
+  "produkt": "Royal Queen Seeds Royal Gorilla",
+  "quelle": "Royal Gorilla",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "13.5",
+    "b2b": "14.85",
+    "anbau": "17.55"
+   },
+   "5": {
+    "ek": "20",
+    "b2b": "22.00",
+    "anbau": "26.00"
+   },
+   "10": {
+    "ek": "37.5",
+    "b2b": "41.25",
+    "anbau": "48.75"
+   },
+   "25": {
+    "ek": "75",
+    "b2b": "82.50",
+    "anbau": "97.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 18197,
+  "produkt": "Royal Queen Seeds Royal Moby",
+  "quelle": "Royal Moby",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "12.5",
+    "b2b": "13.75",
+    "anbau": "16.25"
+   },
+   "5": {
+    "ek": "18.75",
+    "b2b": "20.63",
+    "anbau": "24.38"
+   },
+   "10": {
+    "ek": "35",
+    "b2b": "38.50",
+    "anbau": "45.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 18198,
+  "produkt": "Royal Queen Seeds Royal Runtz",
+  "quelle": "Royal Runtz",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "12.5",
+    "b2b": "13.75",
+    "anbau": "16.25"
+   },
+   "5": {
+    "ek": "18.75",
+    "b2b": "20.63",
+    "anbau": "24.38"
+   },
+   "10": {
+    "ek": "35",
+    "b2b": "38.50",
+    "anbau": "45.50"
+   },
+   "25": {
+    "ek": "70",
+    "b2b": "77.00",
+    "anbau": "91.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 18199,
+  "produkt": "Royal Queen Seeds Royal Skywalker",
+  "quelle": "Royal Skywalker",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "16.25",
+    "b2b": "17.88",
+    "anbau": "21.13"
+   },
+   "5": {
+    "ek": "24.750000000000004",
+    "b2b": "27.23",
+    "anbau": "32.18"
+   },
+   "10": {
+    "ek": "45",
+    "b2b": "49.50",
+    "anbau": "58.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 18200,
+  "produkt": "Royal Queen Seeds Sherbet Queen",
+  "quelle": "Sherbet Queen",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized - Limited Availability",
+  "preise": {
+   "3": {
+    "ek": "12.5",
+    "b2b": "13.75",
+    "anbau": "16.25"
+   }
+  }
+ },
+ {
+  "produkt_id": 18201,
+  "produkt": "Royal Queen Seeds Shining Silver Haze",
+  "quelle": "Shining Silver Haze",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "11.5",
+    "b2b": "12.65",
+    "anbau": "14.95"
+   },
+   "5": {
+    "ek": "17.5",
+    "b2b": "19.25",
+    "anbau": "22.75"
+   },
+   "10": {
+    "ek": "32.5",
+    "b2b": "35.75",
+    "anbau": "42.25"
+   }
+  }
+ },
+ {
+  "produkt_id": 18202,
+  "produkt": "Royal Queen Seeds Shogun",
+  "quelle": "Shogun",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "13.5",
+    "b2b": "14.85",
+    "anbau": "17.55"
+   },
+   "5": {
+    "ek": "20",
+    "b2b": "22.00",
+    "anbau": "26.00"
+   },
+   "10": {
+    "ek": "37.5",
+    "b2b": "41.25",
+    "anbau": "48.75"
+   }
+  }
+ },
+ {
+  "produkt_id": 18203,
+  "produkt": "Royal Queen Seeds Skunk XL",
+  "quelle": "Skunk XL",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "10",
+    "b2b": "11.00",
+    "anbau": "13.00"
+   },
+   "5": {
+    "ek": "15",
+    "b2b": "16.50",
+    "anbau": "19.50"
+   },
+   "10": {
+    "ek": "27.5",
+    "b2b": "30.25",
+    "anbau": "35.75"
+   }
+  }
+ },
+ {
+  "produkt_id": 18204,
+  "produkt": "Royal Queen Seeds Somango XL",
+  "quelle": "Somango XL",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized - Limited Availability",
+  "preise": {
+   "3": {
+    "ek": "12.5",
+    "b2b": "13.75",
+    "anbau": "16.25"
+   }
+  }
+ },
+ {
+  "produkt_id": 18205,
+  "produkt": "Royal Queen Seeds Sour Diesel",
+  "quelle": "Sour Diesel",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized - Limited Availability",
+  "preise": {
+   "3": {
+    "ek": "11.5",
+    "b2b": "12.65",
+    "anbau": "14.95"
+   }
+  }
+ },
+ {
+  "produkt_id": 18206,
+  "produkt": "Royal Queen Seeds Special Kush #1",
+  "quelle": "Special Kush #1",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "4.75",
+    "b2b": "5.23",
+    "anbau": "6.18"
+   },
+   "5": {
+    "ek": "7.75",
+    "b2b": "8.53",
+    "anbau": "10.08"
+   },
+   "10": {
+    "ek": "13.5",
+    "b2b": "14.85",
+    "anbau": "17.55"
+   },
+   "25": {
+    "ek": "27",
+    "b2b": "29.70",
+    "anbau": "35.10"
+   }
+  }
+ },
+ {
+  "produkt_id": 18207,
+  "produkt": "Royal Queen Seeds Special Queen #1",
+  "quelle": "Special Queen #1",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "5.25",
+    "b2b": "5.78",
+    "anbau": "6.83"
+   },
+   "5": {
+    "ek": "8.25",
+    "b2b": "9.08",
+    "anbau": "10.73"
+   },
+   "10": {
+    "ek": "15",
+    "b2b": "16.50",
+    "anbau": "19.50"
+   },
+   "25": {
+    "ek": "30",
+    "b2b": "33.00",
+    "anbau": "39.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 18208,
+  "produkt": "Royal Queen Seeds Speedy Chile – Fast",
+  "quelle": "Speedy Chile - Fast",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized - Limited Availability",
+  "preise": {
+   "3": {
+    "ek": "10.75",
+    "b2b": "11.83",
+    "anbau": "13.98"
+   }
+  }
+ },
+ {
+  "produkt_id": 18209,
+  "produkt": "Royal Queen Seeds Sticky Queen",
+  "quelle": "Sticky Queen",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "16.25",
+    "b2b": "17.88",
+    "anbau": "21.13"
+   },
+   "5": {
+    "ek": "24.75",
+    "b2b": "27.23",
+    "anbau": "32.18"
+   },
+   "10": {
+    "ek": "45",
+    "b2b": "49.50",
+    "anbau": "58.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 18210,
+  "produkt": "Royal Queen Seeds Strawberry Cough",
+  "quelle": "Strawberry Cough",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized - Limited Availability",
+  "preise": {
+   "3": {
+    "ek": "12.5",
+    "b2b": "13.75",
+    "anbau": "16.25"
+   }
+  }
+ },
+ {
+  "produkt_id": 18211,
+  "produkt": "Royal Queen Seeds Sundae Driver",
+  "quelle": "Sundae Driver",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized - Limited Availability",
+  "preise": {
+   "3": {
+    "ek": "16.25",
+    "b2b": "17.88",
+    "anbau": "21.13"
+   }
+  }
+ },
+ {
+  "produkt_id": 18212,
+  "produkt": "Royal Queen Seeds Sweet ZZ",
+  "quelle": "Sweet ZZ",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "15.25",
+    "b2b": "16.78",
+    "anbau": "19.83"
+   },
+   "5": {
+    "ek": "23.25",
+    "b2b": "25.58",
+    "anbau": "30.23"
+   },
+   "10": {
+    "ek": "42.5",
+    "b2b": "46.75",
+    "anbau": "55.25"
+   }
+  }
+ },
+ {
+  "produkt_id": 18213,
+  "produkt": "Royal Queen Seeds Tangie",
+  "quelle": "Tangie",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized - Limited Availability",
+  "preise": {
+   "3": {
+    "ek": "13.5",
+    "b2b": "14.85",
+    "anbau": "17.55"
+   }
+  }
+ },
+ {
+  "produkt_id": 18214,
+  "produkt": "Royal Queen Seeds Trainwreck",
+  "quelle": "Trainwreck",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "12.5",
+    "b2b": "13.75",
+    "anbau": "16.25"
+   },
+   "5": {
+    "ek": "18.75",
+    "b2b": "20.63",
+    "anbau": "24.38"
+   },
+   "10": {
+    "ek": "35",
+    "b2b": "38.50",
+    "anbau": "45.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 18215,
+  "produkt": "Royal Queen Seeds Triple G",
+  "quelle": "Triple G",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "16.25",
+    "b2b": "17.88",
+    "anbau": "21.13"
+   },
+   "5": {
+    "ek": "24.750000000000004",
+    "b2b": "27.23",
+    "anbau": "32.18"
+   },
+   "10": {
+    "ek": "45",
+    "b2b": "49.50",
+    "anbau": "58.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 18216,
+  "produkt": "Royal Queen Seeds Tropicana Cookies Purple",
+  "quelle": "Tropicana Cookies Purple",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "14.5",
+    "b2b": "15.95",
+    "anbau": "18.85"
+   },
+   "5": {
+    "ek": "22",
+    "b2b": "24.20",
+    "anbau": "28.60"
+   },
+   "10": {
+    "ek": "40",
+    "b2b": "44.00",
+    "anbau": "52.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 18217,
+  "produkt": "Royal Queen Seeds Watermelon",
+  "quelle": "Watermelon",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "14.5",
+    "b2b": "15.95",
+    "anbau": "18.85"
+   },
+   "5": {
+    "ek": "22",
+    "b2b": "24.20",
+    "anbau": "28.60"
+   },
+   "10": {
+    "ek": "40",
+    "b2b": "44.00",
+    "anbau": "52.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 18218,
+  "produkt": "Royal Queen Seeds Wedding Cake",
+  "quelle": "Wedding cake",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized - Limited Availability",
+  "preise": {
+   "3": {
+    "ek": "15.25",
+    "b2b": "16.78",
+    "anbau": "19.83"
+   }
+  }
+ },
+ {
+  "produkt_id": 18219,
+  "produkt": "Royal Queen Seeds Wedding Crasher",
+  "quelle": "Wedding Crasher",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "16.25",
+    "b2b": "17.88",
+    "anbau": "21.13"
+   },
+   "5": {
+    "ek": "24.750000000000004",
+    "b2b": "27.23",
+    "anbau": "32.18"
+   },
+   "10": {
+    "ek": "45",
+    "b2b": "49.50",
+    "anbau": "58.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 18220,
+  "produkt": "Royal Queen Seeds Wedding Gelato",
+  "quelle": "Wedding Gelato",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "16.25",
+    "b2b": "17.88",
+    "anbau": "21.13"
+   },
+   "5": {
+    "ek": "24.750000000000004",
+    "b2b": "27.23",
+    "anbau": "32.18"
+   },
+   "10": {
+    "ek": "45",
+    "b2b": "49.50",
+    "anbau": "58.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 18221,
+  "produkt": "Royal Queen Seeds White Widow",
+  "quelle": "White Widow",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "10",
+    "b2b": "11.00",
+    "anbau": "13.00"
+   },
+   "5": {
+    "ek": "15",
+    "b2b": "16.50",
+    "anbau": "19.50"
+   },
+   "10": {
+    "ek": "27.5",
+    "b2b": "30.25",
+    "anbau": "35.75"
+   },
+   "25": {
+    "ek": "55",
+    "b2b": "60.50",
+    "anbau": "71.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 22580,
+  "produkt": "Royal Queen Seeds AMG",
+  "quelle": "AMG",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "15.25",
+    "b2b": "16.78",
+    "anbau": "19.83"
+   },
+   "5": {
+    "ek": "23.25",
+    "b2b": "25.58",
+    "anbau": "30.23"
+   },
+   "10": {
+    "ek": "42.5",
+    "b2b": "46.75",
+    "anbau": "55.25"
+   }
+  }
+ },
+ {
+  "produkt_id": 30753,
+  "produkt": "RQS Sticky Queen Auto",
+  "quelle": "Sticky Queen Auto",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "15.25",
+    "b2b": "16.78",
+    "anbau": "19.83"
+   },
+   "5": {
+    "ek": "23.25",
+    "b2b": "25.58",
+    "anbau": "30.23"
+   },
+   "10": {
+    "ek": "42.5",
+    "b2b": "46.75",
+    "anbau": "55.25"
+   }
+  }
+ },
+ {
+  "produkt_id": 30758,
+  "produkt": "RQS Blue Cheese Auto",
+  "quelle": "Blue Cheese Autom.",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "10.75",
+    "b2b": "11.83",
+    "anbau": "13.98"
+   },
+   "5": {
+    "ek": "16.25",
+    "b2b": "17.88",
+    "anbau": "21.13"
+   },
+   "10": {
+    "ek": "30",
+    "b2b": "33.00",
+    "anbau": "39.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 30764,
+  "produkt": "RQS Royal Haze Auto",
+  "quelle": "Royal Haze Autom.",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "10.75",
+    "b2b": "11.83",
+    "anbau": "13.98"
+   },
+   "5": {
+    "ek": "16.25",
+    "b2b": "17.88",
+    "anbau": "21.13"
+   },
+   "10": {
+    "ek": "30",
+    "b2b": "33.00",
+    "anbau": "39.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 30770,
+  "produkt": "RQS Mexican Rush Auto",
+  "quelle": "Mexican Rush Auto",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "13.5",
+    "b2b": "14.85",
+    "anbau": "17.55"
+   },
+   "5": {
+    "ek": "20",
+    "b2b": "22.00",
+    "anbau": "26.00"
+   },
+   "10": {
+    "ek": "37.5",
+    "b2b": "41.25",
+    "anbau": "48.75"
+   }
+  }
+ },
+ {
+  "produkt_id": 30775,
+  "produkt": "RQS Mimosa Auto",
+  "quelle": "Mimosa Auto",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "13.5",
+    "b2b": "14.85",
+    "anbau": "17.55"
+   },
+   "5": {
+    "ek": "20",
+    "b2b": "22.00",
+    "anbau": "26.00"
+   },
+   "10": {
+    "ek": "37.5",
+    "b2b": "41.25",
+    "anbau": "48.75"
+   }
+  }
+ },
+ {
+  "produkt_id": 30781,
+  "produkt": "RQS Royal Bluematic",
+  "quelle": "Royal Bluematic",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "11.5",
+    "b2b": "12.65",
+    "anbau": "14.95"
+   },
+   "5": {
+    "ek": "17.5",
+    "b2b": "19.25",
+    "anbau": "22.75"
+   },
+   "10": {
+    "ek": "32.5",
+    "b2b": "35.75",
+    "anbau": "42.25"
+   }
+  }
+ },
+ {
+  "produkt_id": 30787,
+  "produkt": "RQS Royal Creamatic",
+  "quelle": "Royal Creamatic",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "10",
+    "b2b": "11.00",
+    "anbau": "13.00"
+   },
+   "5": {
+    "ek": "15",
+    "b2b": "16.50",
+    "anbau": "19.50"
+   },
+   "10": {
+    "ek": "27.5",
+    "b2b": "30.25",
+    "anbau": "35.75"
+   }
+  }
+ },
+ {
+  "produkt_id": 30793,
+  "produkt": "RQS Green Gelato Auto",
+  "quelle": "Green Gelato Auto",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "13.5",
+    "b2b": "14.85",
+    "anbau": "17.55"
+   },
+   "5": {
+    "ek": "20",
+    "b2b": "22.00",
+    "anbau": "26.00"
+   },
+   "10": {
+    "ek": "37.5",
+    "b2b": "41.25",
+    "anbau": "48.75"
+   },
+   "25": {
+    "ek": "75",
+    "b2b": "82.50",
+    "anbau": "97.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 30799,
+  "produkt": "RQS Northern Light Auto",
+  "quelle": "Northern Light Autom.",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "11.5",
+    "b2b": "12.65",
+    "anbau": "14.95"
+   },
+   "5": {
+    "ek": "17.5",
+    "b2b": "19.25",
+    "anbau": "22.75"
+   },
+   "10": {
+    "ek": "32.5",
+    "b2b": "35.75",
+    "anbau": "42.25"
+   },
+   "25": {
+    "ek": "65",
+    "b2b": "71.50",
+    "anbau": "84.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 30805,
+  "produkt": "RQS North Thunderfuck Auto",
+  "quelle": "North Thunderfuck Auto",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "12.5",
+    "b2b": "13.75",
+    "anbau": "16.25"
+   },
+   "5": {
+    "ek": "18.75",
+    "b2b": "20.63",
+    "anbau": "24.38"
+   },
+   "10": {
+    "ek": "35",
+    "b2b": "38.50",
+    "anbau": "45.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 30811,
+  "produkt": "RQS Triple G Auto",
+  "quelle": "Triple G Auto",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "13.5",
+    "b2b": "14.85",
+    "anbau": "17.55"
+   },
+   "5": {
+    "ek": "20",
+    "b2b": "22.00",
+    "anbau": "26.00"
+   },
+   "10": {
+    "ek": "37.5",
+    "b2b": "41.25",
+    "anbau": "48.75"
+   }
+  }
+ },
+ {
+  "produkt_id": 30817,
+  "produkt": "RQS Haze Berry Auto",
+  "quelle": "Haze Berry Auto",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "10.75",
+    "b2b": "11.83",
+    "anbau": "13.98"
+   },
+   "5": {
+    "ek": "16.25",
+    "b2b": "17.88",
+    "anbau": "21.13"
+   },
+   "10": {
+    "ek": "30",
+    "b2b": "33.00",
+    "anbau": "39.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 30828,
+  "produkt": "RQS Sweet ZZ Auto",
+  "quelle": "Sweet ZZ Auto",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "12.5",
+    "b2b": "13.75",
+    "anbau": "16.25"
+   },
+   "5": {
+    "ek": "18.75",
+    "b2b": "20.63",
+    "anbau": "24.38"
+   },
+   "10": {
+    "ek": "35",
+    "b2b": "38.50",
+    "anbau": "45.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 30834,
+  "produkt": "RQS Sweet Skunk Auto",
+  "quelle": "Sweet Skunk Autom.",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "11.5",
+    "b2b": "12.65",
+    "anbau": "14.95"
+   },
+   "5": {
+    "ek": "17.5",
+    "b2b": "19.25",
+    "anbau": "22.75"
+   },
+   "10": {
+    "ek": "32.5",
+    "b2b": "35.75",
+    "anbau": "42.25"
+   }
+  }
+ },
+ {
+  "produkt_id": 30840,
+  "produkt": "RQS Cherry Pie Auto",
+  "quelle": "Cherry Pie Auto",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "13.5",
+    "b2b": "14.85",
+    "anbau": "17.55"
+   },
+   "5": {
+    "ek": "20",
+    "b2b": "22.00",
+    "anbau": "26.00"
+   },
+   "10": {
+    "ek": "37.5",
+    "b2b": "41.25",
+    "anbau": "48.75"
+   }
+  }
+ },
+ {
+  "produkt_id": 30846,
+  "produkt": "RQS Trainwreck Auto",
+  "quelle": "Trainwreck Auto",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "12.5",
+    "b2b": "13.75",
+    "anbau": "16.25"
+   },
+   "5": {
+    "ek": "18.75",
+    "b2b": "20.63",
+    "anbau": "24.38"
+   },
+   "10": {
+    "ek": "35",
+    "b2b": "38.50",
+    "anbau": "45.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 30852,
+  "produkt": "RQS Tropicana Cookies Purple Auto",
+  "quelle": "Tropicana Cookies Purple Auto",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "13.5",
+    "b2b": "14.85",
+    "anbau": "17.55"
+   },
+   "5": {
+    "ek": "20",
+    "b2b": "22.00",
+    "anbau": "26.00"
+   },
+   "10": {
+    "ek": "37.5",
+    "b2b": "41.25",
+    "anbau": "48.75"
+   }
+  }
+ },
+ {
+  "produkt_id": 30857,
+  "produkt": "RQS Royal Cheese Auto",
+  "quelle": "Royal Cheese Autom.",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "10",
+    "b2b": "11.00",
+    "anbau": "13.00"
+   },
+   "5": {
+    "ek": "15",
+    "b2b": "16.50",
+    "anbau": "19.50"
+   },
+   "10": {
+    "ek": "27.5",
+    "b2b": "30.25",
+    "anbau": "35.75"
+   }
+  }
+ },
+ {
+  "produkt_id": 30863,
+  "produkt": "RQS Granddaddy Purple Auto",
+  "quelle": "Granddaddy Purple Auto",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "13.5",
+    "b2b": "14.85",
+    "anbau": "17.55"
+   },
+   "5": {
+    "ek": "20",
+    "b2b": "22.00",
+    "anbau": "26.00"
+   },
+   "10": {
+    "ek": "37.5",
+    "b2b": "41.25",
+    "anbau": "48.75"
+   }
+  }
+ },
+ {
+  "produkt_id": 30869,
+  "produkt": "RQS Pink Runtz Auto",
+  "quelle": "Pink Runtz Auto",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "12.5",
+    "b2b": "13.75",
+    "anbau": "16.25"
+   },
+   "5": {
+    "ek": "18.75",
+    "b2b": "20.63",
+    "anbau": "24.38"
+   },
+   "10": {
+    "ek": "35",
+    "b2b": "38.50",
+    "anbau": "45.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 30875,
+  "produkt": "RQS Grape Ape Auto",
+  "quelle": "Grape Ape Auto",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "13.5",
+    "b2b": "14.85",
+    "anbau": "17.55"
+   },
+   "5": {
+    "ek": "20",
+    "b2b": "22.00",
+    "anbau": "26.00"
+   },
+   "10": {
+    "ek": "37.5",
+    "b2b": "41.25",
+    "anbau": "48.75"
+   }
+  }
+ },
+ {
+  "produkt_id": 30881,
+  "produkt": "RQS White Widow Auto",
+  "quelle": "White Widow Autom.",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "11.5",
+    "b2b": "12.65",
+    "anbau": "14.95"
+   },
+   "5": {
+    "ek": "17.5",
+    "b2b": "19.25",
+    "anbau": "22.75"
+   },
+   "10": {
+    "ek": "32.5",
+    "b2b": "35.75",
+    "anbau": "42.25"
+   },
+   "25": {
+    "ek": "65",
+    "b2b": "71.50",
+    "anbau": "84.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 30887,
+  "produkt": "RQS Fat Banana Auto",
+  "quelle": "Fat Banana Auto",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "11.5",
+    "b2b": "12.65",
+    "anbau": "14.95"
+   },
+   "5": {
+    "ek": "17.5",
+    "b2b": "19.25",
+    "anbau": "22.75"
+   },
+   "10": {
+    "ek": "32.5",
+    "b2b": "35.75",
+    "anbau": "42.25"
+   },
+   "25": {
+    "ek": "65",
+    "b2b": "71.50",
+    "anbau": "84.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 30893,
+  "produkt": "RQS Cookies Gelato Auto",
+  "quelle": "Cookies Gelato Auto",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "11.5",
+    "b2b": "12.65",
+    "anbau": "14.95"
+   },
+   "5": {
+    "ek": "17.5",
+    "b2b": "19.25",
+    "anbau": "22.75"
+   },
+   "10": {
+    "ek": "32.5",
+    "b2b": "35.75",
+    "anbau": "42.25"
+   },
+   "25": {
+    "ek": "65",
+    "b2b": "71.50",
+    "anbau": "84.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 30899,
+  "produkt": "RQS Royal Runtz Auto",
+  "quelle": "Royal Runtz Auto",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "11.5",
+    "b2b": "12.65",
+    "anbau": "14.95"
+   },
+   "5": {
+    "ek": "17.5",
+    "b2b": "19.25",
+    "anbau": "22.75"
+   },
+   "10": {
+    "ek": "32.5",
+    "b2b": "35.75",
+    "anbau": "42.25"
+   }
+  }
+ },
+ {
+  "produkt_id": 30905,
+  "produkt": "RQS Royal Cookies Auto",
+  "quelle": "Royal Cookies Autom.",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "12.5",
+    "b2b": "13.75",
+    "anbau": "16.25"
+   },
+   "5": {
+    "ek": "18.75",
+    "b2b": "20.63",
+    "anbau": "24.38"
+   },
+   "10": {
+    "ek": "35",
+    "b2b": "38.50",
+    "anbau": "45.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 30911,
+  "produkt": "RQS Watermelon Auto",
+  "quelle": "Watermelon Auto",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "13.5",
+    "b2b": "14.85",
+    "anbau": "17.55"
+   },
+   "5": {
+    "ek": "20",
+    "b2b": "22.00",
+    "anbau": "26.00"
+   },
+   "10": {
+    "ek": "37.5",
+    "b2b": "41.25",
+    "anbau": "48.75"
+   }
+  }
+ },
+ {
+  "produkt_id": 30917,
+  "produkt": "RQS Apple Fritter Auto",
+  "quelle": "Apple Fritter Auto",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "12.5",
+    "b2b": "13.75",
+    "anbau": "16.25"
+   },
+   "5": {
+    "ek": "18.75",
+    "b2b": "20.63",
+    "anbau": "24.38"
+   },
+   "10": {
+    "ek": "35",
+    "b2b": "38.50",
+    "anbau": "45.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 30923,
+  "produkt": "RQS Royal Critical Auto",
+  "quelle": "Royal Critical Autom.",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "10.75",
+    "b2b": "11.83",
+    "anbau": "13.98"
+   },
+   "5": {
+    "ek": "16.25",
+    "b2b": "17.88",
+    "anbau": "21.13"
+   },
+   "10": {
+    "ek": "30",
+    "b2b": "33.00",
+    "anbau": "39.00"
+   },
+   "25": {
+    "ek": "60",
+    "b2b": "66.00",
+    "anbau": "78.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 30929,
+  "produkt": "RQS Sherbet Queen Auto",
+  "quelle": "Sherbet Queen Auto",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "11.5",
+    "b2b": "12.65",
+    "anbau": "14.95"
+   },
+   "5": {
+    "ek": "17.5",
+    "b2b": "19.25",
+    "anbau": "22.75"
+   },
+   "10": {
+    "ek": "32.5",
+    "b2b": "35.75",
+    "anbau": "42.25"
+   },
+   "25": {
+    "ek": "65",
+    "b2b": "71.50",
+    "anbau": "84.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 30935,
+  "produkt": "RQS HulkBerry Auto",
+  "quelle": "Hulkberry Auto",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "13.5",
+    "b2b": "14.85",
+    "anbau": "17.55"
+   },
+   "5": {
+    "ek": "20",
+    "b2b": "22.00",
+    "anbau": "26.00"
+   },
+   "10": {
+    "ek": "37.5",
+    "b2b": "41.25",
+    "anbau": "48.75"
+   },
+   "25": {
+    "ek": "75",
+    "b2b": "82.50",
+    "anbau": "97.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 30941,
+  "produkt": "RQS Purple Queen Auto",
+  "quelle": "Purple Queen Auto",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "11.5",
+    "b2b": "12.65",
+    "anbau": "14.95"
+   },
+   "5": {
+    "ek": "17.5",
+    "b2b": "19.25",
+    "anbau": "22.75"
+   },
+   "10": {
+    "ek": "32.5",
+    "b2b": "35.75",
+    "anbau": "42.25"
+   }
+  }
+ },
+ {
+  "produkt_id": 30947,
+  "produkt": "RQS Royal Gorilla Auto",
+  "quelle": "Royal Gorilla Autom.",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "13.5",
+    "b2b": "14.85",
+    "anbau": "17.55"
+   },
+   "5": {
+    "ek": "20",
+    "b2b": "22.00",
+    "anbau": "26.00"
+   },
+   "10": {
+    "ek": "37.5",
+    "b2b": "41.25",
+    "anbau": "48.75"
+   },
+   "25": {
+    "ek": "75",
+    "b2b": "82.50",
+    "anbau": "97.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 30953,
+  "produkt": "RQS Wedding Cake Auto",
+  "quelle": "Wedding cake Auto",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "12.5",
+    "b2b": "13.75",
+    "anbau": "16.25"
+   },
+   "5": {
+    "ek": "18.75",
+    "b2b": "20.63",
+    "anbau": "24.38"
+   },
+   "10": {
+    "ek": "35",
+    "b2b": "38.50",
+    "anbau": "45.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 30959,
+  "produkt": "RQS Royal Dwarf",
+  "quelle": "Royal Dwarf",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "7.5",
+    "b2b": "8.25",
+    "anbau": "9.75"
+   },
+   "5": {
+    "ek": "12.5",
+    "b2b": "13.75",
+    "anbau": "16.25"
+   },
+   "10": {
+    "ek": "22.5",
+    "b2b": "24.75",
+    "anbau": "29.25"
+   }
+  }
+ },
+ {
+  "produkt_id": 30965,
+  "produkt": "RQS Pink Mist Auto",
+  "quelle": "Pink Mist Auto",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "10",
+    "b2b": "11.00",
+    "anbau": "13.00"
+   },
+   "5": {
+    "ek": "15",
+    "b2b": "16.50",
+    "anbau": "19.50"
+   },
+   "10": {
+    "ek": "27.5",
+    "b2b": "30.25",
+    "anbau": "35.75"
+   }
+  }
+ },
+ {
+  "produkt_id": 30970,
+  "produkt": "RQS Easy Bud",
+  "quelle": "Easy Bud",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "8.75",
+    "b2b": "9.63",
+    "anbau": "11.38"
+   },
+   "5": {
+    "ek": "13.5",
+    "b2b": "14.85",
+    "anbau": "17.55"
+   },
+   "10": {
+    "ek": "25",
+    "b2b": "27.50",
+    "anbau": "32.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 30976,
+  "produkt": "RQS Purple Lemonade Auto",
+  "quelle": "Purple Lemonade Auto",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "17.25",
+    "b2b": "18.98",
+    "anbau": "22.43"
+   },
+   "5": {
+    "ek": "26.25",
+    "b2b": "28.88",
+    "anbau": "34.13"
+   },
+   "10": {
+    "ek": "47.5",
+    "b2b": "52.25",
+    "anbau": "61.75"
+   }
+  }
+ },
+ {
+  "produkt_id": 30981,
+  "produkt": "RQS Quick One",
+  "quelle": "Quick One",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "7.5",
+    "b2b": "8.25",
+    "anbau": "9.75"
+   },
+   "5": {
+    "ek": "12.5",
+    "b2b": "13.75",
+    "anbau": "16.25"
+   },
+   "10": {
+    "ek": "22.5",
+    "b2b": "24.75",
+    "anbau": "29.25"
+   },
+   "25": {
+    "ek": "45",
+    "b2b": "49.50",
+    "anbau": "58.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 30987,
+  "produkt": "RQS Diesel Auto",
+  "quelle": "Diesel Automatic",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "10.75",
+    "b2b": "11.83",
+    "anbau": "13.98"
+   },
+   "5": {
+    "ek": "16.25",
+    "b2b": "17.88",
+    "anbau": "21.13"
+   },
+   "10": {
+    "ek": "30",
+    "b2b": "33.00",
+    "anbau": "39.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 30993,
+  "produkt": "RQS Bubble Kush Auto",
+  "quelle": "Bubble Kush Autom.",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "12.5",
+    "b2b": "13.75",
+    "anbau": "16.25"
+   },
+   "5": {
+    "ek": "18.75",
+    "b2b": "20.63",
+    "anbau": "24.38"
+   },
+   "10": {
+    "ek": "35",
+    "b2b": "38.50",
+    "anbau": "45.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 30999,
+  "produkt": "RQS Amnesia Haze Auto",
+  "quelle": "Amnesia Haze Autom.",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "13.5",
+    "b2b": "14.85",
+    "anbau": "17.55"
+   },
+   "5": {
+    "ek": "20",
+    "b2b": "22.00",
+    "anbau": "26.00"
+   },
+   "10": {
+    "ek": "37.5",
+    "b2b": "41.25",
+    "anbau": "48.75"
+   },
+   "25": {
+    "ek": "75",
+    "b2b": "82.50",
+    "anbau": "97.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 31005,
+  "produkt": "RQS Do-Si-Dos Auto",
+  "quelle": "Do-si-dos Auto",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "13.5",
+    "b2b": "14.85",
+    "anbau": "17.55"
+   },
+   "5": {
+    "ek": "20",
+    "b2b": "22.00",
+    "anbau": "26.00"
+   },
+   "10": {
+    "ek": "37.5",
+    "b2b": "41.25",
+    "anbau": "48.75"
+   },
+   "25": {
+    "ek": "75",
+    "b2b": "82.50",
+    "anbau": "97.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 31011,
+  "produkt": "RQS Royal Jack Auto",
+  "quelle": "Royal Jack Automatic",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "12.5",
+    "b2b": "13.75",
+    "anbau": "16.25"
+   },
+   "5": {
+    "ek": "18.75",
+    "b2b": "20.63",
+    "anbau": "24.38"
+   },
+   "10": {
+    "ek": "35",
+    "b2b": "38.50",
+    "anbau": "45.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 31017,
+  "produkt": "RQS Purple Punch Auto",
+  "quelle": "Purple Punch Auto",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "12.5",
+    "b2b": "13.75",
+    "anbau": "16.25"
+   },
+   "5": {
+    "ek": "18.75",
+    "b2b": "20.63",
+    "anbau": "24.38"
+   },
+   "10": {
+    "ek": "35",
+    "b2b": "38.50",
+    "anbau": "45.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 31023,
+  "produkt": "RQS Royal Kush Auto",
+  "quelle": "Royal Kush Automatic",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "10.75",
+    "b2b": "11.83",
+    "anbau": "13.98"
+   },
+   "5": {
+    "ek": "16.25",
+    "b2b": "17.88",
+    "anbau": "21.13"
+   },
+   "10": {
+    "ek": "30",
+    "b2b": "33.00",
+    "anbau": "39.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 31029,
+  "produkt": "RQS Royal AK Auto",
+  "quelle": "Royal AK Automatic",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "10.75",
+    "b2b": "11.83",
+    "anbau": "13.98"
+   },
+   "5": {
+    "ek": "16.25",
+    "b2b": "17.88",
+    "anbau": "21.13"
+   },
+   "10": {
+    "ek": "30",
+    "b2b": "33.00",
+    "anbau": "39.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 31034,
+  "produkt": "RQS Autoflowering Mix",
+  "quelle": "Autoflowering Mix",
+  "sektion": "Royal Queen Seeds",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "10.75",
+    "b2b": "11.83",
+    "anbau": "13.98"
+   },
+   "5": {
+    "ek": "16.25",
+    "b2b": "17.88",
+    "anbau": "21.13"
+   }
+  }
+ },
+ {
+  "produkt_id": 31040,
+  "produkt": "RQS Dance World",
+  "quelle": "Dance World",
+  "sektion": "CBD Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "8.75",
+    "b2b": "9.63",
+    "anbau": "11.38"
+   },
+   "5": {
+    "ek": "13.5",
+    "b2b": "14.85",
+    "anbau": "17.55"
+   },
+   "10": {
+    "ek": "25",
+    "b2b": "27.50",
+    "anbau": "32.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 31046,
+  "produkt": "RQS Royal Highness",
+  "quelle": "Royal Highness",
+  "sektion": "CBD Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "8.75",
+    "b2b": "9.63",
+    "anbau": "11.38"
+   },
+   "5": {
+    "ek": "13.5",
+    "b2b": "14.85",
+    "anbau": "17.55"
+   },
+   "10": {
+    "ek": "25",
+    "b2b": "27.50",
+    "anbau": "32.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 31052,
+  "produkt": "RQS Medical Mass",
+  "quelle": "Medical Mass",
+  "sektion": "CBD Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "12.5",
+    "b2b": "13.75",
+    "anbau": "16.25"
+   },
+   "5": {
+    "ek": "18.75",
+    "b2b": "20.63",
+    "anbau": "24.38"
+   },
+   "10": {
+    "ek": "35",
+    "b2b": "38.50",
+    "anbau": "45.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 31058,
+  "produkt": "RQS Painkiller XL",
+  "quelle": "Painkiller XL",
+  "sektion": "CBD Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "12.5",
+    "b2b": "13.75",
+    "anbau": "16.25"
+   },
+   "5": {
+    "ek": "18.75",
+    "b2b": "20.63",
+    "anbau": "24.38"
+   },
+   "10": {
+    "ek": "35",
+    "b2b": "38.50",
+    "anbau": "45.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 31064,
+  "produkt": "RQS Royal THCV",
+  "quelle": "Royal THCV",
+  "sektion": "CBD Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "21.5",
+    "b2b": "23.65",
+    "anbau": "27.95"
+   },
+   "5": {
+    "ek": "32.5",
+    "b2b": "35.75",
+    "anbau": "42.25"
+   },
+   "10": {
+    "ek": "60",
+    "b2b": "66.00",
+    "anbau": "78.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 31070,
+  "produkt": "RQS Royal CBG Automatic",
+  "quelle": "Royal CBG Auto",
+  "sektion": "CBD Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "17.25",
+    "b2b": "18.98",
+    "anbau": "22.43"
+   },
+   "5": {
+    "ek": "26.25",
+    "b2b": "28.88",
+    "anbau": "34.13"
+   },
+   "10": {
+    "ek": "47.5",
+    "b2b": "52.25",
+    "anbau": "61.75"
+   }
+  }
+ },
+ {
+  "produkt_id": 31076,
+  "produkt": "RQS Royal CBDV Automatic",
+  "quelle": "Royal CBDV Auto",
+  "sektion": "CBD Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "17.25",
+    "b2b": "18.98",
+    "anbau": "22.43"
+   },
+   "5": {
+    "ek": "26.25",
+    "b2b": "28.88",
+    "anbau": "34.13"
+   },
+   "10": {
+    "ek": "47.5",
+    "b2b": "52.25",
+    "anbau": "61.75"
+   }
+  }
+ },
+ {
+  "produkt_id": 31082,
+  "produkt": "RQS Tatanka Pure CBD",
+  "quelle": "Tatanka Pure",
+  "sektion": "CBD Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "13.5",
+    "b2b": "14.85",
+    "anbau": "17.55"
+   },
+   "5": {
+    "ek": "20",
+    "b2b": "22.00",
+    "anbau": "26.00"
+   },
+   "10": {
+    "ek": "37.5",
+    "b2b": "41.25",
+    "anbau": "48.75"
+   }
+  }
+ },
+ {
+  "produkt_id": 31088,
+  "produkt": "RQS Purplematic CBD",
+  "quelle": "Purplematic",
+  "sektion": "CBD Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "17.25",
+    "b2b": "18.98",
+    "anbau": "22.43"
+   },
+   "5": {
+    "ek": "26.25",
+    "b2b": "28.88",
+    "anbau": "34.13"
+   },
+   "10": {
+    "ek": "47.5",
+    "b2b": "52.25",
+    "anbau": "61.75"
+   }
+  }
+ },
+ {
+  "produkt_id": 31094,
+  "produkt": "RQS Joanne’s CBD",
+  "quelle": "Joanne's CBD",
+  "sektion": "CBD Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "12.5",
+    "b2b": "13.75",
+    "anbau": "16.25"
+   },
+   "5": {
+    "ek": "18.75",
+    "b2b": "20.63",
+    "anbau": "24.38"
+   },
+   "10": {
+    "ek": "35",
+    "b2b": "38.50",
+    "anbau": "45.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 31100,
+  "produkt": "RQS Solomatic CBD",
+  "quelle": "Solomatic",
+  "sektion": "CBD Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "17.25",
+    "b2b": "18.98",
+    "anbau": "22.43"
+   },
+   "5": {
+    "ek": "26.25",
+    "b2b": "28.88",
+    "anbau": "34.13"
+   },
+   "10": {
+    "ek": "47.5",
+    "b2b": "52.25",
+    "anbau": "61.75"
+   }
+  }
+ },
+ {
+  "produkt_id": 31106,
+  "produkt": "RQS Stress Killer Automatic CBD",
+  "quelle": "Stress Killer Autom.",
+  "sektion": "CBD Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "12.5",
+    "b2b": "13.75",
+    "anbau": "16.25"
+   },
+   "5": {
+    "ek": "18.75",
+    "b2b": "20.63",
+    "anbau": "24.38"
+   },
+   "10": {
+    "ek": "35",
+    "b2b": "38.50",
+    "anbau": "45.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 31112,
+  "produkt": "RQS Fast Eddy Automatic CBD",
+  "quelle": "Fast Eddy Autom.",
+  "sektion": "CBD Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "12.5",
+    "b2b": "13.75",
+    "anbau": "16.25"
+   },
+   "5": {
+    "ek": "18.75",
+    "b2b": "20.63",
+    "anbau": "24.38"
+   },
+   "10": {
+    "ek": "35",
+    "b2b": "38.50",
+    "anbau": "45.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 31118,
+  "produkt": "RQS Royal Medic",
+  "quelle": "Royal Medic",
+  "sektion": "CBD Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "7.5",
+    "b2b": "8.25",
+    "anbau": "9.75"
+   },
+   "5": {
+    "ek": "12.5",
+    "b2b": "13.75",
+    "anbau": "16.25"
+   },
+   "10": {
+    "ek": "22.5",
+    "b2b": "24.75",
+    "anbau": "29.25"
+   }
+  }
+ },
+ {
+  "produkt_id": 31124,
+  "produkt": "RQS Euphoria",
+  "quelle": "Euphoria",
+  "sektion": "CBD Seeds",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "11.5",
+    "b2b": "12.65",
+    "anbau": "14.95"
+   },
+   "5": {
+    "ek": "17.5",
+    "b2b": "19.25",
+    "anbau": "22.75"
+   },
+   "10": {
+    "ek": "32.5",
+    "b2b": "35.75",
+    "anbau": "42.25"
+   }
+  }
+ },
+ {
+  "produkt_id": 31138,
+  "produkt": "RQS Cosmic Cheddar F1",
+  "quelle": "Cosmic Cheddar F1 - New 2025",
+  "sektion": "F1 Hybrids",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "19",
+    "b2b": "20.90",
+    "anbau": "24.70"
+   },
+   "5": {
+    "ek": "28.5",
+    "b2b": "31.35",
+    "anbau": "37.05"
+   },
+   "10": {
+    "ek": "52.5",
+    "b2b": "57.75",
+    "anbau": "68.25"
+   },
+   "25": {
+    "ek": "105",
+    "b2b": "115.50",
+    "anbau": "136.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 31143,
+  "produkt": "RQS Astro Lemonade F1",
+  "quelle": "Astro Lemonade - New 2025",
+  "sektion": "F1 Hybrids",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "20",
+    "b2b": "22.00",
+    "anbau": "26.00"
+   },
+   "5": {
+    "ek": "30",
+    "b2b": "33.00",
+    "anbau": "39.00"
+   },
+   "10": {
+    "ek": "55",
+    "b2b": "60.50",
+    "anbau": "71.50"
+   },
+   "25": {
+    "ek": "110",
+    "b2b": "121.00",
+    "anbau": "143.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 31148,
+  "produkt": "RQS Orbital Banana F1",
+  "quelle": "Orbital Banana F1 - New 2025",
+  "sektion": "F1 Hybrids",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "19",
+    "b2b": "20.90",
+    "anbau": "24.70"
+   },
+   "5": {
+    "ek": "28.5",
+    "b2b": "31.35",
+    "anbau": "37.05"
+   },
+   "10": {
+    "ek": "52.5",
+    "b2b": "57.75",
+    "anbau": "68.25"
+   },
+   "25": {
+    "ek": "105",
+    "b2b": "115.50",
+    "anbau": "136.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 31153,
+  "produkt": "RQS Gaia F1",
+  "quelle": "Gaia F1",
+  "sektion": "F1 Hybrids",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "20",
+    "b2b": "22.00",
+    "anbau": "26.00"
+   },
+   "5": {
+    "ek": "30",
+    "b2b": "33.00",
+    "anbau": "39.00"
+   },
+   "10": {
+    "ek": "55",
+    "b2b": "60.50",
+    "anbau": "71.50"
+   },
+   "25": {
+    "ek": "110",
+    "b2b": "121.00",
+    "anbau": "143.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 31158,
+  "produkt": "RQS Atlas F1",
+  "quelle": "Atlas F1",
+  "sektion": "F1 Hybrids",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "21",
+    "b2b": "23.10",
+    "anbau": "27.30"
+   },
+   "5": {
+    "ek": "31.5",
+    "b2b": "34.65",
+    "anbau": "40.95"
+   },
+   "10": {
+    "ek": "57.5",
+    "b2b": "63.25",
+    "anbau": "74.75"
+   },
+   "25": {
+    "ek": "115",
+    "b2b": "126.50",
+    "anbau": "149.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 31163,
+  "produkt": "RQS Milky Way F1",
+  "quelle": "Milky Way F1",
+  "sektion": "F1 Hybrids",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "19",
+    "b2b": "20.90",
+    "anbau": "24.70"
+   },
+   "5": {
+    "ek": "28.5",
+    "b2b": "31.35",
+    "anbau": "37.05"
+   },
+   "10": {
+    "ek": "52.5",
+    "b2b": "57.75",
+    "anbau": "68.25"
+   },
+   "25": {
+    "ek": "105",
+    "b2b": "115.50",
+    "anbau": "136.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 31169,
+  "produkt": "RQS Epsilon F1",
+  "quelle": "Epsilon F1",
+  "sektion": "F1 Hybrids",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "19",
+    "b2b": "20.90",
+    "anbau": "24.70"
+   },
+   "5": {
+    "ek": "28.5",
+    "b2b": "31.35",
+    "anbau": "37.05"
+   },
+   "10": {
+    "ek": "52.5",
+    "b2b": "57.75",
+    "anbau": "68.25"
+   },
+   "25": {
+    "ek": "105",
+    "b2b": "115.50",
+    "anbau": "136.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 31175,
+  "produkt": "RQS Medusa F1",
+  "quelle": "Medusa F1",
+  "sektion": "F1 Hybrids",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "20",
+    "b2b": "22.00",
+    "anbau": "26.00"
+   },
+   "5": {
+    "ek": "30",
+    "b2b": "33.00",
+    "anbau": "39.00"
+   },
+   "10": {
+    "ek": "55",
+    "b2b": "60.50",
+    "anbau": "71.50"
+   },
+   "25": {
+    "ek": "110",
+    "b2b": "121.00",
+    "anbau": "143.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 31181,
+  "produkt": "RQS Titan F1",
+  "quelle": "Titan F1",
+  "sektion": "F1 Hybrids",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "20",
+    "b2b": "22.00",
+    "anbau": "26.00"
+   },
+   "5": {
+    "ek": "30",
+    "b2b": "33.00",
+    "anbau": "39.00"
+   },
+   "10": {
+    "ek": "55",
+    "b2b": "60.50",
+    "anbau": "71.50"
+   },
+   "25": {
+    "ek": "110",
+    "b2b": "121.00",
+    "anbau": "143.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 31187,
+  "produkt": "RQS Orion F1",
+  "quelle": "Orion F1",
+  "sektion": "F1 Hybrids",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "20",
+    "b2b": "22.00",
+    "anbau": "26.00"
+   },
+   "5": {
+    "ek": "30",
+    "b2b": "33.00",
+    "anbau": "39.00"
+   },
+   "10": {
+    "ek": "55",
+    "b2b": "60.50",
+    "anbau": "71.50"
+   },
+   "25": {
+    "ek": "110",
+    "b2b": "121.00",
+    "anbau": "143.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 31193,
+  "produkt": "RQS Cosmos F1",
+  "quelle": "Cosmos F1",
+  "sektion": "F1 Hybrids",
+  "typ": "Feminized",
+  "preise": {
+   "3": {
+    "ek": "21",
+    "b2b": "23.10",
+    "anbau": "27.30"
+   },
+   "5": {
+    "ek": "31.5",
+    "b2b": "34.65",
+    "anbau": "40.95"
+   },
+   "10": {
+    "ek": "57.5",
+    "b2b": "63.25",
+    "anbau": "74.75"
+   },
+   "25": {
+    "ek": "115",
+    "b2b": "126.50",
+    "anbau": "149.50"
+   }
+  }
+ },
+ {
+  "produkt_id": 31199,
+  "produkt": "RQS Hyperion F1",
+  "quelle": "Hyperion F1",
+  "sektion": "F1 Hybrids",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "20",
+    "b2b": "22.00",
+    "anbau": "26.00"
+   },
+   "5": {
+    "ek": "30",
+    "b2b": "33.00",
+    "anbau": "39.00"
+   },
+   "10": {
+    "ek": "55",
+    "b2b": "60.50",
+    "anbau": "71.50"
+   },
+   "25": {
+    "ek": "110",
+    "b2b": "121.00",
+    "anbau": "143.00"
+   }
+  }
+ },
+ {
+  "produkt_id": 31205,
+  "produkt": "RQS Apollo F1",
+  "quelle": "Apollo F1",
+  "sektion": "F1 Hybrids",
+  "typ": "Automatic",
+  "preise": {
+   "3": {
+    "ek": "19",
+    "b2b": "20.90",
+    "anbau": "24.70"
+   },
+   "5": {
+    "ek": "28.5",
+    "b2b": "31.35",
+    "anbau": "37.05"
+   },
+   "10": {
+    "ek": "52.5",
+    "b2b": "57.75",
+    "anbau": "68.25"
+   },
+   "25": {
+    "ek": "105",
+    "b2b": "115.50",
+    "anbau": "136.50"
+   }
+  }
+ }
+]

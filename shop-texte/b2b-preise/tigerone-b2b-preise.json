@@ -1,0 +1,2012 @@
+[
+  {
+    "sku": "ACEEBREG10",
+    "brand": "Ace Seeds",
+    "variation_id": 31580,
+    "product_id": 31578,
+    "name": "Ace Seeds Early Bubba regulär – 10 Samen",
+    "ek": "29.55",
+    "b2b_customer": "32.51",
+    "anbauverein": "38.42"
+  },
+  {
+    "sku": "ACEEPPCKREG10",
+    "brand": "Ace Seeds",
+    "variation_id": 31583,
+    "product_id": 31581,
+    "name": "Ace Seeds ErdPurt x PCK regulär – 10 Samen",
+    "ek": "29.55",
+    "b2b_customer": "32.51",
+    "anbauverein": "38.42"
+  },
+  {
+    "sku": "ACEHPHAZKALCHINFEM5",
+    "brand": "Ace Seeds",
+    "variation_id": 31589,
+    "product_id": 31587,
+    "name": "Ace Seeds HashPlant Haze x Kali China feminisiert – 5 Samen",
+    "ek": "29.55",
+    "b2b_customer": "32.51",
+    "anbauverein": "38.42"
+  },
+  {
+    "sku": "ACEHTFEM5",
+    "brand": "Ace Seeds",
+    "variation_id": 31592,
+    "product_id": 31590,
+    "name": "Ace Seeds HashTonic feminisiert – 5 Samen",
+    "ek": "29.55",
+    "b2b_customer": "32.51",
+    "anbauverein": "38.42"
+  },
+  {
+    "sku": "ACEHTREG10",
+    "brand": "Ace Seeds",
+    "variation_id": 31595,
+    "product_id": 31593,
+    "name": "Ace Seeds HashTonic regulär – 10 Samen",
+    "ek": "29.55",
+    "b2b_customer": "32.51",
+    "anbauverein": "38.42"
+  },
+  {
+    "sku": "ACEMBKREG10",
+    "brand": "Ace Seeds",
+    "variation_id": 31603,
+    "product_id": 31600,
+    "name": "Ace Seeds Morocco Beldia Kif regulär",
+    "ek": "22.73",
+    "b2b_customer": "25.00",
+    "anbauverein": "29.55"
+  },
+  {
+    "sku": "ACEMBKREG5",
+    "brand": "Ace Seeds",
+    "variation_id": 31602,
+    "product_id": 31600,
+    "name": "Ace Seeds Morocco Beldia Kif regulär",
+    "ek": "11.82",
+    "b2b_customer": "13.00",
+    "anbauverein": "15.37"
+  },
+  {
+    "sku": "ACEMIXFEM3",
+    "brand": "Ace Seeds",
+    "variation_id": 31576,
+    "product_id": 31574,
+    "name": "Ace Seeds Ace Mix feminisiert",
+    "ek": "9.55",
+    "b2b_customer": "10.51",
+    "anbauverein": "12.42"
+  },
+  {
+    "sku": "ACEMIXFEM5",
+    "brand": "Ace Seeds",
+    "variation_id": 31577,
+    "product_id": 31574,
+    "name": "Ace Seeds Ace Mix feminisiert",
+    "ek": "13.64",
+    "b2b_customer": "15.00",
+    "anbauverein": "17.73"
+  },
+  {
+    "sku": "ACEMIXREGU10",
+    "brand": "Ace Seeds",
+    "variation_id": 31573,
+    "product_id": 31570,
+    "name": "Ace Seeds ACE Mix regulär",
+    "ek": "13.64",
+    "b2b_customer": "15.00",
+    "anbauverein": "17.73"
+  },
+  {
+    "sku": "ACEMIXREGU5",
+    "brand": "Ace Seeds",
+    "variation_id": 31572,
+    "product_id": 31570,
+    "name": "Ace Seeds ACE Mix regulär",
+    "ek": "9.55",
+    "b2b_customer": "10.51",
+    "anbauverein": "12.42"
+  },
+  {
+    "sku": "ACEMPFEM3",
+    "brand": "Ace Seeds",
+    "variation_id": 31598,
+    "product_id": 31596,
+    "name": "Ace Seeds Malawi x Panama feminisiert",
+    "ek": "18.18",
+    "b2b_customer": "20.00",
+    "anbauverein": "23.63"
+  },
+  {
+    "sku": "ACEMPFEM5",
+    "brand": "Ace Seeds",
+    "variation_id": 31599,
+    "product_id": 31596,
+    "name": "Ace Seeds Malawi x Panama feminisiert",
+    "ek": "29.55",
+    "b2b_customer": "32.51",
+    "anbauverein": "38.42"
+  },
+  {
+    "sku": "ACENCALREG10",
+    "brand": "Ace Seeds",
+    "variation_id": 31611,
+    "product_id": 31608,
+    "name": "Ace Seeds New Caledonia regulär",
+    "ek": "29.55",
+    "b2b_customer": "32.51",
+    "anbauverein": "38.42"
+  },
+  {
+    "sku": "ACENCALREG5",
+    "brand": "Ace Seeds",
+    "variation_id": 31610,
+    "product_id": 31608,
+    "name": "Ace Seeds New Caledonia regulär",
+    "ek": "15.91",
+    "b2b_customer": "17.50",
+    "anbauverein": "20.68"
+  },
+  {
+    "sku": "ACENEPANREG10",
+    "brand": "Ace Seeds",
+    "variation_id": 31607,
+    "product_id": 31604,
+    "name": "Ace Seeds Nepal Annapurna regulär",
+    "ek": "22.73",
+    "b2b_customer": "25.00",
+    "anbauverein": "29.55"
+  },
+  {
+    "sku": "ACENEPANREG5",
+    "brand": "Ace Seeds",
+    "variation_id": 31606,
+    "product_id": 31604,
+    "name": "Ace Seeds Nepal Annapurna regulär",
+    "ek": "11.82",
+    "b2b_customer": "13.00",
+    "anbauverein": "15.37"
+  },
+  {
+    "sku": "ACEOEFEM3",
+    "brand": "Ace Seeds",
+    "variation_id": 31618,
+    "product_id": 31616,
+    "name": "Ace Seeds Orient Express feminisiert",
+    "ek": "18.18",
+    "b2b_customer": "20.00",
+    "anbauverein": "23.63"
+  },
+  {
+    "sku": "ACEOEFEM5",
+    "brand": "Ace Seeds",
+    "variation_id": 31619,
+    "product_id": 31616,
+    "name": "Ace Seeds Orient Express feminisiert",
+    "ek": "29.55",
+    "b2b_customer": "32.51",
+    "anbauverein": "38.42"
+  },
+  {
+    "sku": "ACEOTHREGU10",
+    "brand": "Ace Seeds",
+    "variation_id": 31615,
+    "product_id": 31612,
+    "name": "Ace Seeds Oldtimer's Haze regulär",
+    "ek": "36.36",
+    "b2b_customer": "40.00",
+    "anbauverein": "47.27"
+  },
+  {
+    "sku": "ACEOTHREGU5",
+    "brand": "Ace Seeds",
+    "variation_id": 31614,
+    "product_id": 31612,
+    "name": "Ace Seeds Oldtimer's Haze regulär",
+    "ek": "20.45",
+    "b2b_customer": "22.50",
+    "anbauverein": "26.59"
+  },
+  {
+    "sku": "ACEPANFEM3",
+    "brand": "Ace Seeds",
+    "variation_id": 31626,
+    "product_id": 31624,
+    "name": "Ace Seeds Panama feminisiert",
+    "ek": "18.18",
+    "b2b_customer": "20.00",
+    "anbauverein": "23.63"
+  },
+  {
+    "sku": "ACEPANFEM5",
+    "brand": "Ace Seeds",
+    "variation_id": 31627,
+    "product_id": 31624,
+    "name": "Ace Seeds Panama feminisiert",
+    "ek": "29.55",
+    "b2b_customer": "32.51",
+    "anbauverein": "38.42"
+  },
+  {
+    "sku": "ACEPANREGU10",
+    "brand": "Ace Seeds",
+    "variation_id": 31631,
+    "product_id": 31628,
+    "name": "Ace Seeds Panama regulär",
+    "ek": "36.36",
+    "b2b_customer": "40.00",
+    "anbauverein": "47.27"
+  },
+  {
+    "sku": "ACEPANREGU5",
+    "brand": "Ace Seeds",
+    "variation_id": 31630,
+    "product_id": 31628,
+    "name": "Ace Seeds Panama regulär",
+    "ek": "20.45",
+    "b2b_customer": "22.50",
+    "anbauverein": "26.59"
+  },
+  {
+    "sku": "ACEPBHFEM3",
+    "brand": "Ace Seeds",
+    "variation_id": 31634,
+    "product_id": 31632,
+    "name": "Ace Seeds Panama x Bangi Haze feminisiert",
+    "ek": "18.18",
+    "b2b_customer": "20.00",
+    "anbauverein": "23.63"
+  },
+  {
+    "sku": "ACEPBHFEM5",
+    "brand": "Ace Seeds",
+    "variation_id": 31635,
+    "product_id": 31632,
+    "name": "Ace Seeds Panama x Bangi Haze feminisiert",
+    "ek": "29.55",
+    "b2b_customer": "32.51",
+    "anbauverein": "38.42"
+  },
+  {
+    "sku": "ACEPCKREGU10",
+    "brand": "Ace Seeds",
+    "variation_id": 31623,
+    "product_id": 31620,
+    "name": "Ace Seeds Pakistan Chitral Kush regulär",
+    "ek": "36.36",
+    "b2b_customer": "40.00",
+    "anbauverein": "47.27"
+  },
+  {
+    "sku": "ACEPCKREGU5",
+    "brand": "Ace Seeds",
+    "variation_id": 31622,
+    "product_id": 31620,
+    "name": "Ace Seeds Pakistan Chitral Kush regulär",
+    "ek": "20.45",
+    "b2b_customer": "22.50",
+    "anbauverein": "26.59"
+  },
+  {
+    "sku": "ACEPHMREG10",
+    "brand": "Ace Seeds",
+    "variation_id": 31639,
+    "product_id": 31636,
+    "name": "Ace Seeds Purple Haze x Malawi regulär",
+    "ek": "29.55",
+    "b2b_customer": "32.51",
+    "anbauverein": "38.42"
+  },
+  {
+    "sku": "ACEPHMREG5",
+    "brand": "Ace Seeds",
+    "variation_id": 31638,
+    "product_id": 31636,
+    "name": "Ace Seeds Purple Haze x Malawi regulär",
+    "ek": "15.91",
+    "b2b_customer": "17.50",
+    "anbauverein": "20.68"
+  },
+  {
+    "sku": "ACEZAFEM3",
+    "brand": "Ace Seeds",
+    "variation_id": 31646,
+    "product_id": 31644,
+    "name": "Ace Seeds Zamaldelica feminisiert",
+    "ek": "18.18",
+    "b2b_customer": "20.00",
+    "anbauverein": "23.63"
+  },
+  {
+    "sku": "ACEZAFEM5",
+    "brand": "Ace Seeds",
+    "variation_id": 31647,
+    "product_id": 31644,
+    "name": "Ace Seeds Zamaldelica feminisiert",
+    "ek": "29.55",
+    "b2b_customer": "32.51",
+    "anbauverein": "38.42"
+  },
+  {
+    "sku": "ACEZAMAUTOFEM3",
+    "brand": "Ace Seeds",
+    "variation_id": 31642,
+    "product_id": 31640,
+    "name": "Ace Seeds Zamaldelica Auto feminisiert",
+    "ek": "14.09",
+    "b2b_customer": "15.50",
+    "anbauverein": "18.32"
+  },
+  {
+    "sku": "ACEZAMAUTOFEM5",
+    "brand": "Ace Seeds",
+    "variation_id": 31643,
+    "product_id": 31640,
+    "name": "Ace Seeds Zamaldelica Auto feminisiert",
+    "ek": "22.73",
+    "b2b_customer": "25.00",
+    "anbauverein": "29.55"
+  },
+  {
+    "sku": "ACEZAREGU10",
+    "brand": "Ace Seeds",
+    "variation_id": 31651,
+    "product_id": 31648,
+    "name": "Ace Seeds Zamaldelica regulär",
+    "ek": "29.55",
+    "b2b_customer": "32.51",
+    "anbauverein": "38.42"
+  },
+  {
+    "sku": "ACEZAREGU5",
+    "brand": "Ace Seeds",
+    "variation_id": 31650,
+    "product_id": 31648,
+    "name": "Ace Seeds Zamaldelica regulär",
+    "ek": "15.91",
+    "b2b_customer": "17.50",
+    "anbauverein": "20.68"
+  },
+  {
+    "sku": "BGS-AG13S1-FEM-9",
+    "brand": "Brothers Grimm Seeds",
+    "variation_id": 31481,
+    "product_id": 31479,
+    "name": "Brothers Grimm Seeds Airborne G13 S1 feminisiert – 9 Samen",
+    "ek": "27.5",
+    "b2b_customer": "30.25",
+    "anbauverein": "35.75"
+  },
+  {
+    "sku": "BGS-APOL-FEM-3",
+    "brand": "Brothers Grimm Seeds",
+    "variation_id": 31478,
+    "product_id": 31474,
+    "name": "Brothers Grimm Seeds Apollo feminisiert – 3 Samen",
+    "ek": "17.5",
+    "b2b_customer": "19.25",
+    "anbauverein": "22.75"
+  },
+  {
+    "sku": "BGS-C99-REG-13",
+    "brand": "Brothers Grimm Seeds",
+    "variation_id": 31487,
+    "product_id": 31485,
+    "name": "Brothers Grimm Seeds Cinderella 99 regulär – 13 Samen",
+    "ek": "54.5",
+    "b2b_customer": "59.95",
+    "anbauverein": "70.85"
+  },
+  {
+    "sku": "BGS-CIPI-FEM-3",
+    "brand": "Brothers Grimm Seeds",
+    "variation_id": 31492,
+    "product_id": 31488,
+    "name": "Brothers Grimm Seeds Cinderella Pineapple feminisiert – 3 Samen",
+    "ek": "17.5",
+    "b2b_customer": "19.25",
+    "anbauverein": "22.75"
+  },
+  {
+    "sku": "BGS-CIPU-FEM-9",
+    "brand": "Brothers Grimm Seeds",
+    "variation_id": 31498,
+    "product_id": 31493,
+    "name": "Brothers Grimm Seeds Cinderella Purple feminisiert – 9 Samen",
+    "ek": "27.5",
+    "b2b_customer": "30.25",
+    "anbauverein": "35.75"
+  },
+  {
+    "sku": "BGS-DAAF-FEM-9",
+    "brand": "Brothers Grimm Seeds",
+    "variation_id": 31501,
+    "product_id": 31499,
+    "name": "Brothers Grimm Seeds Dank AF feminisiert – 9 Samen",
+    "ek": "17.5",
+    "b2b_customer": "19.25",
+    "anbauverein": "22.75"
+  },
+  {
+    "sku": "BGS-DRFU-FEM-9",
+    "brand": "Brothers Grimm Seeds",
+    "variation_id": 31538,
+    "product_id": 31536,
+    "name": "Brothers Grimm Seeds Montel's Dream Fuel feminisiert – 9 Samen",
+    "ek": "27.5",
+    "b2b_customer": "30.25",
+    "anbauverein": "35.75"
+  },
+  {
+    "sku": "BGS-DRST-FEM-9",
+    "brand": "Brothers Grimm Seeds",
+    "variation_id": 31504,
+    "product_id": 31502,
+    "name": "Brothers Grimm Seeds DreamStone by Montel feminisiert – 9 Samen",
+    "ek": "27.5",
+    "b2b_customer": "30.25",
+    "anbauverein": "35.75"
+  },
+  {
+    "sku": "BGS-DRWI-FEM-9",
+    "brand": "Brothers Grimm Seeds",
+    "variation_id": 31541,
+    "product_id": 31539,
+    "name": "Brothers Grimm Seeds Montel's Dream Widow feminisiert – 9 Samen",
+    "ek": "27.5",
+    "b2b_customer": "30.25",
+    "anbauverein": "35.75"
+  },
+  {
+    "sku": "BGS-DTC99-FEM-3",
+    "brand": "Brothers Grimm Seeds",
+    "variation_id": 31509,
+    "product_id": 31505,
+    "name": "Brothers Grimm Seeds Durban Thai x C99 feminisiert – 3 Samen",
+    "ek": "17.5",
+    "b2b_customer": "19.25",
+    "anbauverein": "22.75"
+  },
+  {
+    "sku": "BGS-G13GE-FEM-3",
+    "brand": "Brothers Grimm Seeds",
+    "variation_id": 31514,
+    "product_id": 31510,
+    "name": "Brothers Grimm Seeds G13 Genius feminisiert – 3 Samen",
+    "ek": "17.5",
+    "b2b_customer": "19.25",
+    "anbauverein": "22.75"
+  },
+  {
+    "sku": "BGS-GEJU-FEM-9",
+    "brand": "Brothers Grimm Seeds",
+    "variation_id": 31518,
+    "product_id": 31515,
+    "name": "Brothers Grimm Seeds Genius Juice feminisiert – 9 Samen",
+    "ek": "27.5",
+    "b2b_customer": "30.25",
+    "anbauverein": "35.75"
+  },
+  {
+    "sku": "BGS-GRGL-FEM-3",
+    "brand": "Brothers Grimm Seeds",
+    "variation_id": 31523,
+    "product_id": 31519,
+    "name": "Brothers Grimm Seeds Grimm Glue feminisiert – 3 Samen",
+    "ek": "17.5",
+    "b2b_customer": "19.25",
+    "anbauverein": "22.75"
+  },
+  {
+    "sku": "BGS-GRTR-FEM-9",
+    "brand": "Brothers Grimm Seeds",
+    "variation_id": 31526,
+    "product_id": 31524,
+    "name": "Brothers Grimm Seeds Grimm Truffles feminisiert – 9 Samen",
+    "ek": "17.5",
+    "b2b_customer": "19.25",
+    "anbauverein": "22.75"
+  },
+  {
+    "sku": "BGS-KIQU-FEM-3",
+    "brand": "Brothers Grimm Seeds",
+    "variation_id": 31535,
+    "product_id": 31533,
+    "name": "Brothers Grimm Seeds Killer Queen feminisiert – 3 Samen",
+    "ek": "17.5",
+    "b2b_customer": "19.25",
+    "anbauverein": "22.75"
+  },
+  {
+    "sku": "BGS-OCIF-FEM-9",
+    "brand": "Brothers Grimm Seeds",
+    "variation_id": 31547,
+    "product_id": 31542,
+    "name": "Brothers Grimm Seeds Ocifer feminisiert",
+    "ek": "27.5",
+    "b2b_customer": "30.25",
+    "anbauverein": "35.75"
+  },
+  {
+    "sku": "BGS-PRHA-FEM-3",
+    "brand": "Brothers Grimm Seeds",
+    "variation_id": 31555,
+    "product_id": 31551,
+    "name": "Brothers Grimm Seeds Princess Haze feminisiert – 3 Samen",
+    "ek": "17.5",
+    "b2b_customer": "19.25",
+    "anbauverein": "22.75"
+  },
+  {
+    "sku": "BGS-SPQU-FEM-3",
+    "brand": "Brothers Grimm Seeds",
+    "variation_id": 31564,
+    "product_id": 31560,
+    "name": "Brothers Grimm Seeds Space Queen feminisiert – 3 Samen",
+    "ek": "17.5",
+    "b2b_customer": "19.25",
+    "anbauverein": "22.75"
+  },
+  {
+    "sku": "BGS-TH99-FEM-3",
+    "brand": "Brothers Grimm Seeds",
+    "variation_id": 31569,
+    "product_id": 31565,
+    "name": "Brothers Grimm Seeds Thai Herer 99 feminisiert – 3 Samen",
+    "ek": "17.5",
+    "b2b_customer": "19.25",
+    "anbauverein": "22.75"
+  },
+  {
+    "sku": "TPB-BUBLF4-FEM-9",
+    "brand": "Brothers Grimm Seeds",
+    "variation_id": 31484,
+    "product_id": 31482,
+    "name": "Brothers Grimm Seeds Bubble's Blueberry F4 feminisiert – 9 Samen",
+    "ek": "30",
+    "b2b_customer": "33.00",
+    "anbauverein": "39.00"
+  },
+  {
+    "sku": "TPB-JBTT-FEM-9",
+    "brand": "Brothers Grimm Seeds",
+    "variation_id": 31532,
+    "product_id": 31530,
+    "name": "Brothers Grimm Seeds Julian's Black Tee Tangie feminisiert – 9 Samen",
+    "ek": "30",
+    "b2b_customer": "33.00",
+    "anbauverein": "39.00"
+  },
+  {
+    "sku": "TPB-RHP-FEM-9",
+    "brand": "Brothers Grimm Seeds",
+    "variation_id": 31559,
+    "product_id": 31556,
+    "name": "Brothers Grimm Seeds Ricky's Hash Plant feminisiert – 9 Samen",
+    "ek": "30",
+    "b2b_customer": "33.00",
+    "anbauverein": "39.00"
+  },
+  {
+    "sku": "ETHO-ATFUR1-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32025,
+    "product_id": 32023,
+    "name": "Ethos Genetics Atomic Fuego R1 feminisiert – 5 Samen",
+    "ek": "38.98",
+    "b2b_customer": "42.88",
+    "anbauverein": "50.67"
+  },
+  {
+    "sku": "ETHO-ATLER1-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32028,
+    "product_id": 32026,
+    "name": "Ethos Genetics Atomic Leisure R1 feminisiert – 5 Samen",
+    "ek": "38.98",
+    "b2b_customer": "42.88",
+    "anbauverein": "50.67"
+  },
+  {
+    "sku": "ETHO-BADA-AUTO-FEM-6",
+    "brand": "Ethos Genetics",
+    "variation_id": 32037,
+    "product_id": 32035,
+    "name": "Ethos Genetics Banana Daddy RBX2 Auto feminisiert – 6 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-BADAIBL-AUTO-FEM-6",
+    "brand": "Ethos Genetics",
+    "variation_id": 32031,
+    "product_id": 32029,
+    "name": "Ethos Genetics Banana Daddy IBL Auto feminisiert – 6 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-BADAR1-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32034,
+    "product_id": 32032,
+    "name": "Ethos Genetics Banana Daddy R1 feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-BAHARBX-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32040,
+    "product_id": 32038,
+    "name": "Ethos Genetics Banana Hammock RBX feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-BAJEIBL-AUTO-FEM-6",
+    "brand": "Ethos Genetics",
+    "variation_id": 32043,
+    "product_id": 32041,
+    "name": "Ethos Genetics Banana Jealousy IBL Auto feminisiert – 6 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-BANJRF3-AUTO-FEM-6",
+    "brand": "Ethos Genetics",
+    "variation_id": 32046,
+    "product_id": 32044,
+    "name": "Ethos Genetics Banana Jealousy RF3 Auto feminisiert – 6 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-BBCORBX-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32052,
+    "product_id": 32050,
+    "name": "Ethos Genetics BooBerry Cookies RBX feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-BFNF-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32049,
+    "product_id": 32047,
+    "name": "Ethos Genetics Big Fat n' Fruity R1 feminisiert – 5 Samen",
+    "ek": "38.98",
+    "b2b_customer": "42.88",
+    "anbauverein": "50.67"
+  },
+  {
+    "sku": "ETHO-BUGU-AUTO-FEM-6",
+    "brand": "Ethos Genetics",
+    "variation_id": 32055,
+    "product_id": 32053,
+    "name": "Ethos Genetics Bubble Gummy Auto feminisiert – 6 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-CASTRBX-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32058,
+    "product_id": 32056,
+    "name": "Ethos Genetics Candy Store RBX feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-CHAMR1-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32061,
+    "product_id": 32059,
+    "name": "Ethos Genetics Chama! R1 feminisiert – 5 Samen",
+    "ek": "38.98",
+    "b2b_customer": "42.88",
+    "anbauverein": "50.67"
+  },
+  {
+    "sku": "ETHO-CHFR1-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32064,
+    "product_id": 32062,
+    "name": "Ethos Genetics Chem Funk R1 feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-CISU-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32073,
+    "product_id": 32071,
+    "name": "Ethos Genetics Citradelic Sunset feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-COOGRBX-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32076,
+    "product_id": 32074,
+    "name": "Ethos Genetics Colin OG RBX feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-CPOG-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32070,
+    "product_id": 32068,
+    "name": "Ethos Genetics Cherry Pie OG S1 feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-CRESCMP-FEM-6",
+    "brand": "Ethos Genetics",
+    "variation_id": 32079,
+    "product_id": 32077,
+    "name": "Ethos Genetics Crescendo Multi-Pack feminisiert – 6 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-CRESRBX1-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32082,
+    "product_id": 32080,
+    "name": "Ethos Genetics Crescendo RBX1 feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-DBG1-FAST-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32085,
+    "product_id": 32083,
+    "name": "Ethos Genetics Dirty Banana Gen 1 Schnell feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-ELBRBX-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32088,
+    "product_id": 32086,
+    "name": "Ethos Genetics Early Lemon Berry RBX feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-ETAPR1-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32091,
+    "product_id": 32089,
+    "name": "Ethos Genetics Ethos Apex R1 feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-ETCOR2-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32094,
+    "product_id": 32092,
+    "name": "Ethos Genetics Ethos Cookies R2 feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-FUZR1-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32097,
+    "product_id": 32095,
+    "name": "Ethos Genetics Fuego'Z R1 feminisiert – 5 Samen",
+    "ek": "38.98",
+    "b2b_customer": "42.88",
+    "anbauverein": "50.67"
+  },
+  {
+    "sku": "ETHO-GBOFRBX-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32109,
+    "product_id": 32107,
+    "name": "Ethos Genetics Grape Balls of Fire RBx feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-GE1D-FAST-FEM-10",
+    "brand": "Ethos Genetics",
+    "variation_id": 32103,
+    "product_id": 32101,
+    "name": "Ethos Genetics Gen 1 Duet Mix Pack Schnell feminisiert – 10 Samen",
+    "ek": "60",
+    "b2b_customer": "66.00",
+    "anbauverein": "78.00"
+  },
+  {
+    "sku": "ETHO-GRDIR2-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32112,
+    "product_id": 32110,
+    "name": "Ethos Genetics Grape Diamonds R2 feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-GRSTR2-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32106,
+    "product_id": 32104,
+    "name": "Ethos Genetics Grandpa's Stash R2 feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-INZA-AUTO-FEM-6",
+    "brand": "Ethos Genetics",
+    "variation_id": 32115,
+    "product_id": 32113,
+    "name": "Ethos Genetics Inzane Auto feminisiert – 6 Samen",
+    "ek": "38.98",
+    "b2b_customer": "42.88",
+    "anbauverein": "50.67"
+  },
+  {
+    "sku": "ETHO-LCGRF3-AUTO-FEM-6",
+    "brand": "Ethos Genetics",
+    "variation_id": 32121,
+    "product_id": 32119,
+    "name": "Ethos Genetics Lemon Cherry Gelato RF3 Auto feminisiert – 6 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-LCPR1-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32124,
+    "product_id": 32122,
+    "name": "Ethos Genetics Lemon Cherry Pie R1 feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-LEWHIBL-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32127,
+    "product_id": 32125,
+    "name": "Ethos Genetics Lemon Whip Haze IBL feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-LIDIRBX2-AUTO-FEM-50",
+    "brand": "Ethos Genetics",
+    "variation_id": 32132,
+    "product_id": 32128,
+    "name": "Ethos Genetics Lilac Diesel RBX2 Auto feminisiert",
+    "ek": "222.77",
+    "b2b_customer": "245.05",
+    "anbauverein": "289.60"
+  },
+  {
+    "sku": "ETHO-LIDIRBX2-AUTO-FEM-6",
+    "brand": "Ethos Genetics",
+    "variation_id": 32131,
+    "product_id": 32128,
+    "name": "Ethos Genetics Lilac Diesel RBX2 Auto feminisiert",
+    "ek": "38.98",
+    "b2b_customer": "42.88",
+    "anbauverein": "50.67"
+  },
+  {
+    "sku": "ETHO-LIQR1-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32135,
+    "product_id": 32133,
+    "name": "Ethos Genetics Liqueur R1 feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-MCNR1-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32138,
+    "product_id": 32136,
+    "name": "Ethos Genetics M.C. Nuggets R1 feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-MEBERBX1-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32150,
+    "product_id": 32148,
+    "name": "Ethos Genetics Member Berry RBX1 feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-MNJR1-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32141,
+    "product_id": 32139,
+    "name": "Ethos Genetics Mac 'n' Jack R1 feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-MOOB-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32153,
+    "product_id": 32151,
+    "name": "Ethos Genetics Mookie B R1 feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-NUGR1-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32156,
+    "product_id": 32154,
+    "name": "Ethos Genetics Nuggz R1 feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-OGKU-AUTO-FEM-6",
+    "brand": "Ethos Genetics",
+    "variation_id": 32159,
+    "product_id": 32157,
+    "name": "Ethos Genetics OG Kush Auto feminisiert – 6 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-PCIBL-AUTO-FEM-6",
+    "brand": "Ethos Genetics",
+    "variation_id": 32189,
+    "product_id": 32187,
+    "name": "Ethos Genetics Pluto Cookies IBL Auto feminisiert – 6 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-PECR-AUTO-FEM-6",
+    "brand": "Ethos Genetics",
+    "variation_id": 32168,
+    "product_id": 32166,
+    "name": "Ethos Genetics Peach Crescendo RF3 Auto feminisiert – 6 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-PESI-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32171,
+    "product_id": 32169,
+    "name": "Ethos Genetics Pepe Silvia R1 feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-PILR1-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32174,
+    "product_id": 32172,
+    "name": "Ethos Genetics Pillows R1 feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-PINARBX2-AUTO-FEM-6",
+    "brand": "Ethos Genetics",
+    "variation_id": 32180,
+    "product_id": 32178,
+    "name": "Ethos Genetics Piña RBX2 Auto feminisiert – 6 Samen",
+    "ek": "38.98",
+    "b2b_customer": "42.88",
+    "anbauverein": "50.67"
+  },
+  {
+    "sku": "ETHO-PIRU-AUTO-FEM-6",
+    "brand": "Ethos Genetics",
+    "variation_id": 32177,
+    "product_id": 32175,
+    "name": "Ethos Genetics Pineapple Runtz Auto feminisiert – 6 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-PLCURF3-AUTO-FEM-6",
+    "brand": "Ethos Genetics",
+    "variation_id": 32192,
+    "product_id": 32190,
+    "name": "Ethos Genetics Pluto Cut RF3 Auto feminisiert – 6 Samen",
+    "ek": "38.98",
+    "b2b_customer": "42.88",
+    "anbauverein": "50.67"
+  },
+  {
+    "sku": "ETHO-POTG-AUTO-FEM-6",
+    "brand": "Ethos Genetics",
+    "variation_id": 32183,
+    "product_id": 32181,
+    "name": "Ethos Genetics Planet of the Grapes Auto feminisiert – 6 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-POTG-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32186,
+    "product_id": 32184,
+    "name": "Ethos Genetics Planet of the Grapes RBX feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-PSOPR1-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32195,
+    "product_id": 32193,
+    "name": "Ethos Genetics Psy-Op R1 feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-PUSURBX2-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32198,
+    "product_id": 32196,
+    "name": "Ethos Genetics Purple Sunset RBX2 feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-PUTHRBX1-AUTO-FEM-6",
+    "brand": "Ethos Genetics",
+    "variation_id": 32201,
+    "product_id": 32199,
+    "name": "Ethos Genetics Purple Thai RBX1 Auto feminisiert – 6 Samen",
+    "ek": "38.98",
+    "b2b_customer": "42.88",
+    "anbauverein": "50.67"
+  },
+  {
+    "sku": "ETHO-SKHERBX1-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32204,
+    "product_id": 32202,
+    "name": "Ethos Genetics Skunk Hero RBX1 feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-SLHRBX3-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32213,
+    "product_id": 32211,
+    "name": "Ethos Genetics Super Lemon Haze RBX3 feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-SOGR1-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32207,
+    "product_id": 32205,
+    "name": "Ethos Genetics Sour G R1 feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-STCOOGR1-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32210,
+    "product_id": 32208,
+    "name": "Ethos Genetics Strawberry Cookies OG R1 feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-TOASTR1-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32216,
+    "product_id": 32214,
+    "name": "Ethos Genetics Toasted R1 feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-VOIL-AUTO-FEM-6",
+    "brand": "Ethos Genetics",
+    "variation_id": 32219,
+    "product_id": 32217,
+    "name": "Ethos Genetics Voilà Auto RBX5 feminisiert – 6 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-WHWERBX-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32222,
+    "product_id": 32220,
+    "name": "Ethos Genetics White Wedding RBX feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-WRANMP-FEM-6",
+    "brand": "Ethos Genetics",
+    "variation_id": 32225,
+    "product_id": 32223,
+    "name": "Ethos Genetics Wrank Multi-Pack feminisiert – 6 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-WRANS1-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32231,
+    "product_id": 32229,
+    "name": "Ethos Genetics Wrank S1 feminisiert – 5 Samen",
+    "ek": "39",
+    "b2b_customer": "42.90",
+    "anbauverein": "50.70"
+  },
+  {
+    "sku": "ETHO-ZCURBX2-FEM-5",
+    "brand": "Ethos Genetics",
+    "variation_id": 32237,
+    "product_id": 32235,
+    "name": "Ethos Genetics Z Cut RBX2 feminisiert – 5 Samen",
+    "ek": "38.98",
+    "b2b_customer": "42.88",
+    "anbauverein": "50.67"
+  },
+  {
+    "sku": "ETHO-ZPACK-FEM-6",
+    "brand": "Ethos Genetics",
+    "variation_id": 32240,
+    "product_id": 32238,
+    "name": "Ethos Genetics Z Pack Multi-Pack feminisiert – 6 Samen",
+    "ek": "38.98",
+    "b2b_customer": "42.88",
+    "anbauverein": "50.67"
+  },
+  {
+    "sku": "ETHO-ZWEERBX2-AUTO-FEM-6",
+    "brand": "Ethos Genetics",
+    "variation_id": 32246,
+    "product_id": 32244,
+    "name": "Ethos Genetics Zweet RBX2 Auto feminisiert – 6 Samen",
+    "ek": "38.98",
+    "b2b_customer": "42.88",
+    "anbauverein": "50.67"
+  },
+  {
+    "sku": "GDP-GDP-FEM-5",
+    "brand": "Grand Daddy Genetics",
+    "variation_id": 31740,
+    "product_id": 31738,
+    "name": "Grand Daddy Genetics Ken's Original GDP feminisiert – 5 Samen",
+    "ek": "54",
+    "b2b_customer": "59.40",
+    "anbauverein": "70.20"
+  },
+  {
+    "sku": "GDP-GDPBRLRR10",
+    "brand": "Grand Daddy Genetics",
+    "variation_id": 31719,
+    "product_id": 31717,
+    "name": "Grand Daddy Genetics Berry Larry regulär – 10 Samen",
+    "ek": "54",
+    "b2b_customer": "59.40",
+    "anbauverein": "70.20"
+  },
+  {
+    "sku": "GDP-GDPOGR10",
+    "brand": "Grand Daddy Genetics",
+    "variation_id": 31728,
+    "product_id": 31726,
+    "name": "Grand Daddy Genetics Grand Daddy Purple regulär – 10 Samen",
+    "ek": "54",
+    "b2b_customer": "59.40",
+    "anbauverein": "70.20"
+  },
+  {
+    "sku": "JLG-APBZ-REG-3",
+    "brand": "James Loud Genetics",
+    "variation_id": 31752,
+    "product_id": 31750,
+    "name": "James Loud Genetics Apples &amp; Banana Z regulär – 3 Samen",
+    "ek": "32.5",
+    "b2b_customer": "35.75",
+    "anbauverein": "42.25"
+  },
+  {
+    "sku": "JLG-BACO-REG-3",
+    "brand": "James Loud Genetics",
+    "variation_id": 31755,
+    "product_id": 31753,
+    "name": "James Loud Genetics Banana Cough regulär – 3 Samen",
+    "ek": "32.5",
+    "b2b_customer": "35.75",
+    "anbauverein": "42.25"
+  },
+  {
+    "sku": "JLG-BAPG-AUTO-FEM-3",
+    "brand": "James Loud Genetics",
+    "variation_id": 31758,
+    "product_id": 31756,
+    "name": "James Loud Genetics Banana Punch Gelato Auto autoflowering – 3 Samen",
+    "ek": "25",
+    "b2b_customer": "27.50",
+    "anbauverein": "32.50"
+  },
+  {
+    "sku": "JLG-BUKU-FEM-3",
+    "brand": "James Loud Genetics",
+    "variation_id": 31768,
+    "product_id": 31766,
+    "name": "James Loud Genetics Bumpboxx Kush feminisiert – 3 Samen",
+    "ek": "45",
+    "b2b_customer": "49.50",
+    "anbauverein": "58.50"
+  },
+  {
+    "sku": "JLG-CAIS-FEM-3",
+    "brand": "James Loud Genetics",
+    "variation_id": 31771,
+    "product_id": 31769,
+    "name": "James Loud Genetics Candy Island feminisiert – 3 Samen",
+    "ek": "22.5",
+    "b2b_customer": "24.75",
+    "anbauverein": "29.25"
+  },
+  {
+    "sku": "JLG-DRIP-FEM-3",
+    "brand": "James Loud Genetics",
+    "variation_id": 31774,
+    "product_id": 31772,
+    "name": "James Loud Genetics Dripz feminisiert – 3 Samen",
+    "ek": "32.5",
+    "b2b_customer": "35.75",
+    "anbauverein": "42.25"
+  },
+  {
+    "sku": "JLG-FETR-FEM-3",
+    "brand": "James Loud Genetics",
+    "variation_id": 31781,
+    "product_id": 31779,
+    "name": "James Loud Genetics Feel The Rainbow feminisiert – 3 Samen",
+    "ek": "22.5",
+    "b2b_customer": "24.75",
+    "anbauverein": "29.25"
+  },
+  {
+    "sku": "JLG-FOPA-FEM-3",
+    "brand": "James Loud Genetics",
+    "variation_id": 31784,
+    "product_id": 31782,
+    "name": "James Loud Genetics Foam Party feminisiert",
+    "ek": "32.5",
+    "b2b_customer": "35.75",
+    "anbauverein": "42.25"
+  },
+  {
+    "sku": "JLG-FRBI-AUTO-FEM-3",
+    "brand": "James Loud Genetics",
+    "variation_id": 31788,
+    "product_id": 31786,
+    "name": "James Loud Genetics Frosted Biscotti Auto autoflowering – 3 Samen",
+    "ek": "25",
+    "b2b_customer": "27.50",
+    "anbauverein": "32.50"
+  },
+  {
+    "sku": "JLG-GCOG-AUTO-FEM-3",
+    "brand": "James Loud Genetics",
+    "variation_id": 31794,
+    "product_id": 31792,
+    "name": "James Loud Genetics Gorilla Cookies OG Auto autoflowering – 3 Samen",
+    "ek": "25",
+    "b2b_customer": "27.50",
+    "anbauverein": "32.50"
+  },
+  {
+    "sku": "JLG-GEZE-FEM-3",
+    "brand": "James Loud Genetics",
+    "variation_id": 31791,
+    "product_id": 31789,
+    "name": "James Loud Genetics Gee Zee feminisiert – 3 Samen",
+    "ek": "22.5",
+    "b2b_customer": "24.75",
+    "anbauverein": "29.25"
+  },
+  {
+    "sku": "JLG-GUAV-AUTO-FEM-3",
+    "brand": "James Loud Genetics",
+    "variation_id": 31797,
+    "product_id": 31795,
+    "name": "James Loud Genetics Guavalato Auto autoflowering – 3 Samen",
+    "ek": "25",
+    "b2b_customer": "27.50",
+    "anbauverein": "32.50"
+  },
+  {
+    "sku": "JLG-HABA-REG-3",
+    "brand": "James Loud Genetics",
+    "variation_id": 31803,
+    "product_id": 31801,
+    "name": "James Loud Genetics Havana Bandana regulär – 3 Samen",
+    "ek": "32.5",
+    "b2b_customer": "35.75",
+    "anbauverein": "42.25"
+  },
+  {
+    "sku": "JLG-HEAZ-FEM-3",
+    "brand": "James Loud Genetics",
+    "variation_id": 31806,
+    "product_id": 31804,
+    "name": "James Loud Genetics Heavy Z feminisiert – 3 Samen",
+    "ek": "44.5",
+    "b2b_customer": "48.95",
+    "anbauverein": "57.85"
+  },
+  {
+    "sku": "JLG-LODC-FEM-3",
+    "brand": "James Loud Genetics",
+    "variation_id": 31812,
+    "product_id": 31810,
+    "name": "James Loud Genetics Loud Dream Candy feminisiert – 3 Samen",
+    "ek": "32.5",
+    "b2b_customer": "35.75",
+    "anbauverein": "42.25"
+  },
+  {
+    "sku": "JLG-OGKF4IBL-AUTO-FEM-3",
+    "brand": "James Loud Genetics",
+    "variation_id": 31815,
+    "product_id": 31813,
+    "name": "James Loud Genetics OG Kush F4 IBL Auto autoflowering – 3 Samen",
+    "ek": "25",
+    "b2b_customer": "27.50",
+    "anbauverein": "32.50"
+  },
+  {
+    "sku": "JLG-PEPO-FEM-3",
+    "brand": "James Loud Genetics",
+    "variation_id": 31818,
+    "product_id": 31816,
+    "name": "James Loud Genetics Petrol Pop feminisiert – 3 Samen",
+    "ek": "32.5",
+    "b2b_customer": "35.75",
+    "anbauverein": "42.25"
+  },
+  {
+    "sku": "JLG-SOGD-FEM-3",
+    "brand": "James Loud Genetics",
+    "variation_id": 31821,
+    "product_id": 31819,
+    "name": "James Loud Genetics Sour Grape Diesel feminisiert – 3 Samen",
+    "ek": "22.5",
+    "b2b_customer": "24.75",
+    "anbauverein": "29.25"
+  },
+  {
+    "sku": "JLG-TLCH-FEM-3",
+    "brand": "James Loud Genetics",
+    "variation_id": 31824,
+    "product_id": 31822,
+    "name": "James Loud Genetics Triangle Lemon Cherry feminisiert – 3 Samen",
+    "ek": "32.5",
+    "b2b_customer": "35.75",
+    "anbauverein": "42.25"
+  },
+  {
+    "sku": "JLG-ZODI-FEM-3",
+    "brand": "James Loud Genetics",
+    "variation_id": 31827,
+    "product_id": 31825,
+    "name": "James Loud Genetics Zour Diesel feminisiert – 3 Samen",
+    "ek": "22.5",
+    "b2b_customer": "24.75",
+    "anbauverein": "29.25"
+  },
+  {
+    "sku": "LIHE-BETA-FEM-5",
+    "brand": "Lovin' In Her Eyes",
+    "variation_id": 31654,
+    "product_id": 31652,
+    "name": "Lovin' In Her Eyes Berry Taboo feminisiert – 5 Samen",
+    "ek": "49",
+    "b2b_customer": "53.90",
+    "anbauverein": "63.70"
+  },
+  {
+    "sku": "LIHE-BLFU-FEM-5",
+    "brand": "Lovin' In Her Eyes",
+    "variation_id": 31658,
+    "product_id": 31655,
+    "name": "Lovin' In Her Eyes Blueberry Fudge feminisiert – 5 Samen",
+    "ek": "49",
+    "b2b_customer": "53.90",
+    "anbauverein": "63.70"
+  },
+  {
+    "sku": "LIHE-BOBU-FEM-5",
+    "brand": "Lovin' In Her Eyes",
+    "variation_id": 31663,
+    "product_id": 31659,
+    "name": "Lovin' In Her Eyes Boardwalk Bubba feminisiert – 5 Samen",
+    "ek": "49",
+    "b2b_customer": "53.90",
+    "anbauverein": "63.70"
+  },
+  {
+    "sku": "LIHE-FUFU-FEM-5",
+    "brand": "Lovin' In Her Eyes",
+    "variation_id": 31675,
+    "product_id": 31673,
+    "name": "Lovin' In Her Eyes Funky Fuego feminisiert – 5 Samen",
+    "ek": "49",
+    "b2b_customer": "53.90",
+    "anbauverein": "63.70"
+  },
+  {
+    "sku": "LIHE-GRAM-FEM-5",
+    "brand": "Lovin' In Her Eyes",
+    "variation_id": 31679,
+    "product_id": 31676,
+    "name": "Lovin' In Her Eyes Grape Amethyst feminisiert – 5 Samen",
+    "ek": "49",
+    "b2b_customer": "53.90",
+    "anbauverein": "63.70"
+  },
+  {
+    "sku": "LIHE-LERU-FEM-5",
+    "brand": "Lovin' In Her Eyes",
+    "variation_id": 31682,
+    "product_id": 31680,
+    "name": "Lovin' In Her Eyes Lemons &amp; Rubber feminisiert – 5 Samen",
+    "ek": "49",
+    "b2b_customer": "53.90",
+    "anbauverein": "63.70"
+  },
+  {
+    "sku": "LIHE-LOPI-FEM-5",
+    "brand": "Lovin' In Her Eyes",
+    "variation_id": 31685,
+    "product_id": 31683,
+    "name": "Lovin' In Her Eyes Louisiana Pine feminisiert – 5 Samen",
+    "ek": "49",
+    "b2b_customer": "53.90",
+    "anbauverein": "63.70"
+  },
+  {
+    "sku": "LIHE-MEDI-FEM-5",
+    "brand": "Lovin' In Her Eyes",
+    "variation_id": 31688,
+    "product_id": 31686,
+    "name": "Lovin' In Her Eyes Medianoche feminisiert – 5 Samen",
+    "ek": "49",
+    "b2b_customer": "53.90",
+    "anbauverein": "63.70"
+  },
+  {
+    "sku": "LIHE-PUMA-FEM-5",
+    "brand": "Lovin' In Her Eyes",
+    "variation_id": 31694,
+    "product_id": 31692,
+    "name": "Lovin' In Her Eyes Purple Magnolia feminisiert – 5 Samen",
+    "ek": "49",
+    "b2b_customer": "53.90",
+    "anbauverein": "63.70"
+  },
+  {
+    "sku": "LIHE-SPMO-FEM-5",
+    "brand": "Lovin' In Her Eyes",
+    "variation_id": 31698,
+    "product_id": 31695,
+    "name": "Lovin' In Her Eyes Spanish Moon S1 feminisiert – 5 Samen",
+    "ek": "49",
+    "b2b_customer": "53.90",
+    "anbauverein": "63.70"
+  },
+  {
+    "sku": "LIHE-STCA-FEM-5",
+    "brand": "Lovin' In Her Eyes",
+    "variation_id": 31701,
+    "product_id": 31699,
+    "name": "Lovin' In Her Eyes Strawberry Cadillac feminisiert – 5 Samen",
+    "ek": "49",
+    "b2b_customer": "53.90",
+    "anbauverein": "63.70"
+  },
+  {
+    "sku": "SOL-BUBA-FEM-3",
+    "brand": "Solfire Gardens",
+    "variation_id": 31939,
+    "product_id": 31937,
+    "name": "Solfire Gardens Butter Balm feminisiert",
+    "ek": "30",
+    "b2b_customer": "33.00",
+    "anbauverein": "39.00"
+  },
+  {
+    "sku": "SOL-DIDA-FEM-3",
+    "brand": "Solfire Gardens",
+    "variation_id": 31943,
+    "product_id": 31941,
+    "name": "Solfire Gardens Diamond Daggers feminisiert",
+    "ek": "30",
+    "b2b_customer": "33.00",
+    "anbauverein": "39.00"
+  },
+  {
+    "sku": "SOL-DIWA-FEM-3",
+    "brand": "Solfire Gardens",
+    "variation_id": 31947,
+    "product_id": 31945,
+    "name": "Solfire Gardens Dirty Water feminisiert",
+    "ek": "30",
+    "b2b_customer": "33.00",
+    "anbauverein": "39.00"
+  },
+  {
+    "sku": "SOL-GASS-FEM-3",
+    "brand": "Solfire Gardens",
+    "variation_id": 31957,
+    "product_id": 31955,
+    "name": "Solfire Gardens Gasserole feminisiert",
+    "ek": "30",
+    "b2b_customer": "33.00",
+    "anbauverein": "39.00"
+  },
+  {
+    "sku": "SOL-GASS-FEM-6",
+    "brand": "Solfire Gardens",
+    "variation_id": 31958,
+    "product_id": 31955,
+    "name": "Solfire Gardens Gasserole feminisiert",
+    "ek": "50",
+    "b2b_customer": "55.00",
+    "anbauverein": "65.00"
+  },
+  {
+    "sku": "SOL-LEEL-FEM-3",
+    "brand": "Solfire Gardens",
+    "variation_id": 31961,
+    "product_id": 31959,
+    "name": "Solfire Gardens Lemon Elixir feminisiert",
+    "ek": "30",
+    "b2b_customer": "33.00",
+    "anbauverein": "39.00"
+  },
+  {
+    "sku": "SOL-LUVI-FEM-3",
+    "brand": "Solfire Gardens",
+    "variation_id": 31968,
+    "product_id": 31966,
+    "name": "Solfire Gardens Lucid Vision feminisiert",
+    "ek": "30",
+    "b2b_customer": "33.00",
+    "anbauverein": "39.00"
+  },
+  {
+    "sku": "SOL-PIMI-FEM-3",
+    "brand": "Solfire Gardens",
+    "variation_id": 31984,
+    "product_id": 31982,
+    "name": "Solfire Gardens Pink Milk feminisiert",
+    "ek": "30",
+    "b2b_customer": "33.00",
+    "anbauverein": "39.00"
+  },
+  {
+    "sku": "SOL-PUFA-FEM-3",
+    "brand": "Solfire Gardens",
+    "variation_id": 32011,
+    "product_id": 32009,
+    "name": "Solfire Gardens The Pulp Father feminisiert",
+    "ek": "30",
+    "b2b_customer": "33.00",
+    "anbauverein": "39.00"
+  },
+  {
+    "sku": "SOL-RIPE-FEM-3",
+    "brand": "Solfire Gardens",
+    "variation_id": 31988,
+    "product_id": 31986,
+    "name": "Solfire Gardens Ripe feminisiert",
+    "ek": "30",
+    "b2b_customer": "33.00",
+    "anbauverein": "39.00"
+  },
+  {
+    "sku": "SOL-RUBI-FEM-3",
+    "brand": "Solfire Gardens",
+    "variation_id": 31992,
+    "product_id": 31990,
+    "name": "Solfire Gardens Rubicite feminisiert",
+    "ek": "30",
+    "b2b_customer": "33.00",
+    "anbauverein": "39.00"
+  },
+  {
+    "sku": "SOL-SHCA-FEM-6",
+    "brand": "Solfire Gardens",
+    "variation_id": 31996,
+    "product_id": 31994,
+    "name": "Solfire Gardens Shot Caller feminisiert – 6 Samen",
+    "ek": "50",
+    "b2b_customer": "55.00",
+    "anbauverein": "65.00"
+  },
+  {
+    "sku": "SOL-SINF-FEM-3",
+    "brand": "Solfire Gardens",
+    "variation_id": 31999,
+    "product_id": 31997,
+    "name": "Solfire Gardens Sinferno feminisiert",
+    "ek": "30",
+    "b2b_customer": "33.00",
+    "anbauverein": "39.00"
+  },
+  {
+    "sku": "SOL-SWOL-FEM-3",
+    "brand": "Solfire Gardens",
+    "variation_id": 32007,
+    "product_id": 32005,
+    "name": "Solfire Gardens Swolfire feminisiert",
+    "ek": "30",
+    "b2b_customer": "33.00",
+    "anbauverein": "39.00"
+  },
+  {
+    "sku": "SOL-YAPA-FEM-3",
+    "brand": "Solfire Gardens",
+    "variation_id": 32018,
+    "product_id": 32016,
+    "name": "Solfire Gardens Yacht Party feminisiert",
+    "ek": "30",
+    "b2b_customer": "33.00",
+    "anbauverein": "39.00"
+  },
+  {
+    "sku": "CC-001-F6",
+    "brand": "The Cali Connection",
+    "variation_id": 31936,
+    "product_id": 31934,
+    "name": "The Cali Connection Tahoe OG Kush feminisiert – 6 Samen",
+    "ek": "40",
+    "b2b_customer": "44.00",
+    "anbauverein": "52.00"
+  },
+  {
+    "sku": "CC-002-F6",
+    "brand": "The Cali Connection",
+    "variation_id": 31879,
+    "product_id": 31877,
+    "name": "The Cali Connection Deadhead OG feminisiert – 6 Samen",
+    "ek": "40",
+    "b2b_customer": "44.00",
+    "anbauverein": "52.00"
+  },
+  {
+    "sku": "CC-003-F6",
+    "brand": "The Cali Connection",
+    "variation_id": 31864,
+    "product_id": 31862,
+    "name": "The Cali Connection Chem Valley Kush feminisiert – 6 Samen",
+    "ek": "40",
+    "b2b_customer": "44.00",
+    "anbauverein": "52.00"
+  },
+  {
+    "sku": "CC-005-F6",
+    "brand": "The Cali Connection",
+    "variation_id": 31918,
+    "product_id": 31916,
+    "name": "The Cali Connection OGiesel feminisiert – 6 Samen",
+    "ek": "40",
+    "b2b_customer": "44.00",
+    "anbauverein": "52.00"
+  },
+  {
+    "sku": "CC-006-F6",
+    "brand": "The Cali Connection",
+    "variation_id": 31906,
+    "product_id": 31904,
+    "name": "The Cali Connection Larry OG Kush feminisiert – 6 Samen",
+    "ek": "40",
+    "b2b_customer": "44.00",
+    "anbauverein": "52.00"
+  },
+  {
+    "sku": "CC-008-F6",
+    "brand": "The Cali Connection",
+    "variation_id": 31858,
+    "product_id": 31856,
+    "name": "The Cali Connection Chem 4 OG feminisiert – 6 Samen",
+    "ek": "40",
+    "b2b_customer": "44.00",
+    "anbauverein": "52.00"
+  },
+  {
+    "sku": "CC-011-F6",
+    "brand": "The Cali Connection",
+    "variation_id": 31840,
+    "product_id": 31838,
+    "name": "The Cali Connection Black Water feminisiert – 6 Samen",
+    "ek": "40",
+    "b2b_customer": "44.00",
+    "anbauverein": "52.00"
+  },
+  {
+    "sku": "CC-013-F6",
+    "brand": "The Cali Connection",
+    "variation_id": 31924,
+    "product_id": 31922,
+    "name": "The Cali Connection Original Sour Diesel feminisiert – 6 Samen",
+    "ek": "40",
+    "b2b_customer": "44.00",
+    "anbauverein": "52.00"
+  },
+  {
+    "sku": "CC-017-F6",
+    "brand": "The Cali Connection",
+    "variation_id": 31855,
+    "product_id": 31853,
+    "name": "The Cali Connection Buddha Tahoe OG feminisiert – 6 Samen",
+    "ek": "40",
+    "b2b_customer": "44.00",
+    "anbauverein": "52.00"
+  },
+  {
+    "sku": "CC-019-F6",
+    "brand": "The Cali Connection",
+    "variation_id": 31837,
+    "product_id": 31835,
+    "name": "The Cali Connection 818 Headband (aka Sour OG) feminisiert – 6 Samen",
+    "ek": "40",
+    "b2b_customer": "44.00",
+    "anbauverein": "52.00"
+  },
+  {
+    "sku": "CC-021-F6",
+    "brand": "The Cali Connection",
+    "variation_id": 31903,
+    "product_id": 31901,
+    "name": "The Cali Connection LA Affie feminisiert – 6 Samen",
+    "ek": "40",
+    "b2b_customer": "44.00",
+    "anbauverein": "52.00"
+  },
+  {
+    "sku": "CC-022-F6",
+    "brand": "The Cali Connection",
+    "variation_id": 31885,
+    "product_id": 31883,
+    "name": "The Cali Connection Girl Scout Cookies feminisiert – 6 Samen",
+    "ek": "40",
+    "b2b_customer": "44.00",
+    "anbauverein": "52.00"
+  },
+  {
+    "sku": "CC-023-F6",
+    "brand": "The Cali Connection",
+    "variation_id": 31843,
+    "product_id": 31841,
+    "name": "The Cali Connection Blue Dream Haze feminisiert – 6 Samen",
+    "ek": "40",
+    "b2b_customer": "44.00",
+    "anbauverein": "52.00"
+  },
+  {
+    "sku": "CC-024-F6",
+    "brand": "The Cali Connection",
+    "variation_id": 31852,
+    "product_id": 31850,
+    "name": "The Cali Connection Boss Hogg feminisiert – 6 Samen",
+    "ek": "40",
+    "b2b_customer": "44.00",
+    "anbauverein": "52.00"
+  },
+  {
+    "sku": "CC-025-F6",
+    "brand": "The Cali Connection",
+    "variation_id": 31861,
+    "product_id": 31859,
+    "name": "The Cali Connection Chem 91 feminisiert – 6 Samen",
+    "ek": "40",
+    "b2b_customer": "44.00",
+    "anbauverein": "52.00"
+  },
+  {
+    "sku": "CC-026-F6",
+    "brand": "The Cali Connection",
+    "variation_id": 31888,
+    "product_id": 31886,
+    "name": "The Cali Connection Green Crack feminisiert – 6 Samen",
+    "ek": "40",
+    "b2b_customer": "44.00",
+    "anbauverein": "52.00"
+  },
+  {
+    "sku": "CC-027-F6",
+    "brand": "The Cali Connection",
+    "variation_id": 31930,
+    "product_id": 31928,
+    "name": "The Cali Connection Purple Crack feminisiert – 6 Samen",
+    "ek": "40",
+    "b2b_customer": "44.00",
+    "anbauverein": "52.00"
+  },
+  {
+    "sku": "CC-029-F6",
+    "brand": "The Cali Connection",
+    "variation_id": 31915,
+    "product_id": 31913,
+    "name": "The Cali Connection OG CBD feminisiert – 6 Samen",
+    "ek": "40",
+    "b2b_customer": "44.00",
+    "anbauverein": "52.00"
+  },
+  {
+    "sku": "CC-035-F6",
+    "brand": "The Cali Connection",
+    "variation_id": 31933,
+    "product_id": 31931,
+    "name": "The Cali Connection Strawberry OG feminisiert – 6 Samen",
+    "ek": "40",
+    "b2b_customer": "44.00",
+    "anbauverein": "52.00"
+  },
+  {
+    "sku": "CC-037-F6",
+    "brand": "The Cali Connection",
+    "variation_id": 31834,
+    "product_id": 31832,
+    "name": "The Cali Connection 22 feminisiert – 6 Samen",
+    "ek": "40",
+    "b2b_customer": "44.00",
+    "anbauverein": "52.00"
+  },
+  {
+    "sku": "CC-038-F6",
+    "brand": "The Cali Connection",
+    "variation_id": 31909,
+    "product_id": 31907,
+    "name": "The Cali Connection Lemon Tart feminisiert – 6 Samen",
+    "ek": "40",
+    "b2b_customer": "44.00",
+    "anbauverein": "52.00"
+  },
+  {
+    "sku": "CC-BH-AUTO-FEM-6",
+    "brand": "The Cali Connection",
+    "variation_id": 31849,
+    "product_id": 31847,
+    "name": "The Cali Connection Boss Hogg Auto autoflowering – 6 Samen",
+    "ek": "40",
+    "b2b_customer": "44.00",
+    "anbauverein": "52.00"
+  },
+  {
+    "sku": "CC-BOH-CBD-FEM-6",
+    "brand": "The Cali Connection",
+    "variation_id": 31846,
+    "product_id": 31844,
+    "name": "The Cali Connection Boax-Hindu CBD feminisiert – 6 Samen",
+    "ek": "30",
+    "b2b_customer": "33.00",
+    "anbauverein": "39.00"
+  },
+  {
+    "sku": "CC-CLSL-FEM-6",
+    "brand": "The Cali Connection",
+    "variation_id": 31870,
+    "product_id": 31868,
+    "name": "The Cali Connection Clementine Slush feminisiert – 6 Samen",
+    "ek": "40",
+    "b2b_customer": "44.00",
+    "anbauverein": "52.00"
+  },
+  {
+    "sku": "CC-GSC-AUTO-FEM-6",
+    "brand": "The Cali Connection",
+    "variation_id": 31882,
+    "product_id": 31880,
+    "name": "The Cali Connection Girl Scout Cookies Auto autoflowering – 6 Samen",
+    "ek": "40",
+    "b2b_customer": "44.00",
+    "anbauverein": "52.00"
+  },
+  {
+    "sku": "CC-IP-AUTO-FEM-6",
+    "brand": "The Cali Connection",
+    "variation_id": 31891,
+    "product_id": 31889,
+    "name": "The Cali Connection Island Punch Auto autoflowering – 6 Samen",
+    "ek": "40",
+    "b2b_customer": "44.00",
+    "anbauverein": "52.00"
+  },
+  {
+    "sku": "CCG-007-F6",
+    "brand": "The Cali Connection",
+    "variation_id": 31912,
+    "product_id": 31910,
+    "name": "The Cali Connection Mint Milano (Gold Collection) feminisiert – 6 Samen",
+    "ek": "45",
+    "b2b_customer": "49.50",
+    "anbauverein": "58.50"
+  },
+  {
+    "sku": "CCG-008-F6",
+    "brand": "The Cali Connection",
+    "variation_id": 31324,
+    "product_id": 22668,
+    "name": "The Cali Connection Fruit Tree (Gold Collection) feminisiert – 6 Samen",
+    "ek": "45",
+    "b2b_customer": "49.50",
+    "anbauverein": "58.50"
+  }
+]

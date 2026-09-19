@@ -1,0 +1,23 @@
+{
+ "anzahl": 1604,
+ "abdeckung": {
+  "pa_variante": 1603,
+  "pa_genetik": 1520,
+  "pa_aroma": 1196,
+  "pa_effekte": 1102,
+  "pa_bluetezeit-tage": 1005,
+  "pa_typ": 909,
+  "pa_thc-gehalt": 1203,
+  "pa_cbd-gehalt": 344,
+  "pa_terpene": 887,
+  "pa_indica": 667,
+  "pa_sativa": 660,
+  "pa_erntemonat": 550,
+  "pa_wuchshoehe": 340,
+  "pa_ertrag": 285,
+  "pa_anbauumgebung": 321,
+  "pa_schwierigkeitsgrad": 132,
+  "pa_klima": 58,
+  "pa_geschmack": 174
+ }
+}
