@@ -15,9 +15,22 @@ from collections import defaultdict, Counter
 HIER = os.path.dirname(os.path.abspath(__file__))
 ARBEIT = os.environ.get('HJ_ARBEIT', HIER)
 
-# Lagerquellen als Schlagwort. Produkte derselben Quelle werden bevorzugt
-# untereinander verknuepft, weil sie zusammen versandfertig sind.
-LAGERQUELLEN = ['Beilngries', 'Bloomtech', 'Grow In', 'Tiger One', 'Hanfjack']
+# Lagerquellen. Produkte derselben Quelle werden bevorzugt untereinander
+# verknuepft: Beilngries und Hanfjack liegen im eigenen Lager, die anderen
+# kommen aus einer Lieferung und sind zusammen versandfertig.
+#
+# Erkennung:
+#   Beilngries, Hanfjack -> Schlagwort
+#   Bloomtech            -> Artikelnummer 5-stellig numerisch
+#   Grow In              -> Artikelnummer 6-stellig numerisch
+#   Tiger One            -> Marke; die Tiger-One-Nummern haengen an den
+#                           Variationen, die Elternprodukte tragen HJ-SKUs
+LAGERQUELLEN_SCHLAGWORT = ['Beilngries', 'Hanfjack']
+TIGER_ONE_MARKEN = {
+    'Ethos Genetics', 'Ace Seeds', 'The Cali Connection',
+    'Brothers Grimm Seeds', 'Trailer Park Boys', 'James Loud Genetics',
+    'Solfire Gardens', "Lovin' In Her Eyes", 'Grand Daddy Genetics',
+}
 
 # Ergaenzende Kategorien fuer Cross-Sells, Slug -> Ziel-Slugs.
 # Gesucht wird vom tiefsten Zweig aufwaerts, der erste Treffer gilt.
@@ -184,10 +197,21 @@ class Katalog:
 
     def quelle(self, p):
         namen = {t['name'] for t in p.get('tags') or []}
-        for q in LAGERQUELLEN:
+        for q in LAGERQUELLEN_SCHLAGWORT:
             if q in namen:
                 return q
+        sku = (p.get('sku') or '').strip()
+        if re.fullmatch(r'\d{5}', sku):
+            return 'Bloomtech'
+        if re.fullmatch(r'\d{6}', sku):
+            return 'Grow In'
+        if self.marke_name(p) in TIGER_ONE_MARKEN:
+            return 'Tiger One'
         return None
+
+    def marke_name(self, p):
+        b = p.get('brands') or []
+        return b[0].get('name') if b else None
 
     def marke(self, p):
         b = p.get('brands') or []

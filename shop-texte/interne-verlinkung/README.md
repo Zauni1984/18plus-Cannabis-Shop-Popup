@@ -29,12 +29,29 @@ Feuerzeuge, Rolling Trays. Growbox → Lampe, Lüfter, Zeltzubehör. Kleinteile
 unter 3 Euro fallen bei teureren Artikeln heraus, sonst landet eine
 0,29-Euro-Schraube als Vorschlag im Warenkorb.
 
-**Lagerquellen** sind Schlagworte: Beilngries (801 Produkte), Hanfjack (333),
-Bloomtech (18). Produkte einer Quelle werden bevorzugt untereinander
-verknüpft, weil sie zusammen versandfertig sind. Erreicht: 97,8 % / 97,3 % /
-100 % der Upsells bleiben in der eigenen Quelle. **Grow In und Tiger One
-gibt es im Shop nicht** – weder als Schlagwort noch als Marke; Tiger One
-wurde ausgelistet.
+**Lagerquellen** werden gemischt erkannt – Schlagwort für das eigene Lager,
+Artikelnummer bzw. Marke für die Lieferanten:
+
+| Quelle | Erkennung | Produkte | Upsells in der eigenen Quelle |
+|---|---|---:|---:|
+| Beilngries | Schlagwort `Beilngries` | 801 | 96,8 % |
+| Bloomtech | Artikelnummer 5-stellig numerisch | 754 | 96,5 % |
+| Grow In | Artikelnummer 6-stellig numerisch | 315 | 98,9 % |
+| Hanfjack | Schlagwort `Hanfjack` | 244 | 97,3 % |
+| Tiger One | Marke (9 Sortenhäuser) | 222 | 96,4 % |
+
+Die Grow-In- und Bloomtech-Nummern sind die Artikelnummern der Lieferanten und
+überschneiden sich nicht (6- gegen 5-stellig, siehe
+`../b2b-preise/growin-preispruefung.md`). Bei Tiger One hängen die
+Lieferantennummern an den **Variationen** (`CCG-008-F6`, `ACEMIXREGU10`), die
+Elternprodukte tragen HJ-Nummern – deshalb läuft die Erkennung dort über die
+Marke: Ethos Genetics, Ace Seeds, The Cali Connection, Brothers Grimm Seeds,
+Trailer Park Boys, James Loud Genetics, Solfire Gardens, Lovin' In Her Eyes,
+Grand Daddy Genetics.
+
+Schlagwort schlägt Artikelnummer: was in Beilngries liegt, ist tatsächlich
+vorrätig und wird zuerst dorthin verknüpft. 2.131 Produkte gehören keiner
+dieser Quellen an; sie werden nach Kategorie und Marke verknüpft.
 
 Ein Produkt darf höchstens **12-mal** Upsell-Ziel sein (Cross-Sell 40-mal).
 Das verteilt die Links statt sie auf wenige Hubs zu bündeln: 3.334 von 3.340
