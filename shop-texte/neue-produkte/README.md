@@ -345,3 +345,32 @@ angezeigten Preis von 12,00 € ergeben wuerden. Dasselbe steht seit jeher bei
 20190 (79,97 statt 80,00). Das ist kein Fehler dieser Produkte, sondern die
 Folge der Nettospeicherung – deshalb bleibt `price_auto` an, statt hier als
 einzige Artikel einen Handwert einzutragen.
+
+## Black-Leaf-Pollenpressen (22.09.2026)
+
+| | S | L |
+|---|---|---|
+| ID / SKU | 45614 / HJ-7393988 | 45616 / HJ-4134932 |
+| Preis | 6,30 netto = **7,50 brutto** | 7,14 netto = **8,50 brutto** |
+| MPN / EAN | 500203-46 / 4251403331994 | 500205-45 / 4251403331291 |
+| Masse | Ø 21 mm, 60 mm hoch, Aubergine | Ø 35 mm, 68 mm hoch, Amber |
+| Bestand | 4 | 4 |
+
+Quelle: `neardark.de/BL-Pollenpresse-S-Size/500203-46` und `.../L-Size/500205-45`.
+Bei Near Dark haengen mehrere Varianten am Artikel; gelistet ist je Produkt nur
+die eine Variante der jeweiligen Seite, wie beauftragt.
+
+Marke Black Leaf (7321), Hersteller Near Dark GmbH (7425, war schon angelegt -
+die Adresse steht in der Quelle: Bonner Str 11a, 53773 Hennef), Kategorie
+Growshop > Veredeln & Extraktion (16451), wo auch Pollenmaschine und
+Pollenshaker liegen. Schlagworte Beilngries, Pollengewinnung, Aluminium.
+
+**Gewicht bleibt leer** - die Quelle nennt keins, und geraten wird nichts.
+Nachzutragen, sobald die Ware da ist und auf der Waage liegt.
+
+### Falle: brutto gegen netto
+
+Beide Pressen wurden zuerst mit dem Bruttopreis als `regular_price` angelegt
+(7,50 und 8,50) und muessten nachkorrigiert werden. Der Shop speichert
+**netto**: bei 19 % ist `netto = brutto / 1,19`, also 6,30 und 7,14. Das Skript
+rechnet das jetzt selbst, die Vorgabe steht als `brutto` im Datensatz.
