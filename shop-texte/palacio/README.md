@@ -231,3 +231,28 @@ es wiederverwendet statt neu hochzuladen; `hoch()` hat jetzt eine
 Wiederholung mit wachsender Wartezeit.
 
 Kontrolle danach: 0 fehlende Bilder, keine Dubletten in den 27 Galerien.
+
+## PAL1270 nachgelistet (22.09.2026)
+
+| | |
+|---|---|
+| Produkt | PALACIO Hanf-Massagegel mit Panthenol 200 ml |
+| ID / SKU | 45596 / HJ-7763975 |
+| MPN / EAN | PAL1270 / 8595641302825 |
+| Preis | 6,30 EUR brutto, Grundpreis 37,49 EUR je Liter |
+| Bestand | 25, Lieferzeit 1-3 Tage, Paket Standard |
+| Quelle | `cml.palacio.cz/api/products/396?expand=1` |
+
+Der Preis ist **gesetzt wie bei allen anderen 200-ml-Gelen von Palacio im
+Shop** (Cannacool 509, Cannahot 508, Forte Sport Gel 1878/1879 stehen alle auf
+6,30 EUR). Eine Preisvorgabe lag nicht vor - falls der EK dagegen spricht,
+ist das die Stelle zum Nachbessern.
+
+Die Inhaltsstoffe stehen vollstaendig auf Deutsch und kommagetrennt im Text,
+darunter die INCI-Liste im Original: 43 Bestandteile, davon 18 Pflanzenauszuege.
+Die beiden Farbstoffe CI 19140 und CI 42051 stehen als "Farbstoff CI ..." -
+mehr gibt die Herstellerliste nicht her.
+
+Die beiden Herstellerbilder sind angehaengt (Medien 45597, 45598). Verknuepft
+ist es nach dem Muster der internen Verlinkung: Upsells 509, 508, 1879, 19954
+(die uebrigen Palacio-Gele), Cross-Sells 20192 Hanf-Badesalz und 504 Hanfsalbe.
