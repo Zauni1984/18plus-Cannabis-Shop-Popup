@@ -59,3 +59,38 @@ sind **AC Infinity** (IONFRAME EVO3/4/6/8, IONBEAM S11/S16, Advance-Grow-Sets,
 Stecklings-Gewaechshaeuser), **BloomStar** (FLUXshield-Reihe, Wingcommander) und
 eine **Solux**-Leuchte. Die tragen tatsaechlich Samsung-Dioden und sind von der
 Spider-Farmer-Umstellung nicht betroffen – dort bleibt alles stehen.
+
+## Nacharbeit: Attribute und Schlagworte (24.09.2026)
+
+**Attribute** der beiden alten Datensaetze auf den Aufbau der Schwesterprodukte
+gebracht – neun Merkmale, Einzelwerte statt nach Spannung aufgeschluesselter
+Reihen:
+
+| | SF-1000 (16213) | SF-1000-D (16214) |
+|---|---|---|
+| Leistungsaufnahme | `100W±5%@AC120V-277V` → `100 W ± 5 %` | `100W ±5% @AC110-130V` → `100 W ± 5 %` |
+| PPF | `245,6 / 245,7 / 246,3 umol/S` → `249,2 µmol/s` | `199 / 211 μmol/S` → `211 µmol/s` |
+| Spannung | `100-277V AC` → `100–277 V (Wechselstrom)` | `110-130V / 220-240V` → `100–277 V (Wechselstrom)` |
+| Ausgelegte Flaeche | neu: `3 × 3 ft` | `3 × 3 ft` → `2 × 2 ft (rund 60 × 60 cm)` |
+| Abmessungen, Gewicht | neu: `32,5 × 29,0 × 5,9 cm`, `1,92 kg` | unveraendert |
+| Lumen, Amp, Frequenz | entfernt | entfernt |
+
+Lumen, Amp und Frequenz sind bewusst weg: bei der SF-1000 stammten die Werte
+aus dem Samsung-Datenblatt, fuer die SF-1000-D gibt es keine belegten neuen,
+und die Schwesterprodukte fuehren diese Merkmale ohnehin nicht. Fuer eine
+Pflanzenlampe zaehlt PPF, nicht Lumen.
+
+Beim Spektrum bleibt es bei **660–665 nm**. Das aktuelle SF-1000-Datenblatt
+nennt dort 650–665 nm, waehrend SF2000 und SF4000 bei ansonsten identischer
+Tabelle 660–665 nm fuehren – das sieht nach Tippfehler auf Herstellerseite aus,
+und ein Ausreisser ist kein Grund, einen plausiblen Wert zu ueberschreiben.
+
+**Schlagworte** zusammengefuehrt: `Bridgelux LED` (7107), `Bridgelux 3030`
+(11400) und `Bridgelux 3030 LED` (11427) laufen auf `Bridgelux LEDs` (6284),
+elf Produkte umgehaengt, die drei Begriffe geloescht. `Samsung 301H` (6555) war
+leer und ist ebenfalls geloescht. Stand danach: `Bridgelux LEDs` 23 Produkte,
+`Samsung LM301H EVO` 4 Produkte – die vier AC-Infinity-IONFRAME mit echten
+Samsung-Dioden. Der Term bleibt deshalb bestehen.
+
+Die 3030-Angabe steht weiterhin im Text der SF-2000, wo der Hersteller sie
+ausdruecklich nennt.
