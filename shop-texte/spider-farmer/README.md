@@ -46,3 +46,16 @@ steht. Wer beides gleichziehen will, muss die Attribute nachfuehren.
 Fuer dieselbe Sache existieren vier Terms: `Bridgelux LEDs` (6284),
 `Bridgelux LED` (7107), `Bridgelux 3030` (11400), `Bridgelux 3030 LED` (11427).
 Zusammenfuehren waere sinnvoll, ist aber nicht Teil dieses Auftrags.
+
+## Kontrolle nach dem Durchlauf
+
+Alle zwoelf Produkte geschrieben, danach geprueft: kein Samsung-Rest mehr ausser
+den drei beabsichtigten Stellen – SF-1000 und SF-4000 nennen die frueheren
+Samsung LM301H EVO im historischen Nebensatz, die SF-7000 nennt ihre Samsung
+LM301B als aktuelle Bestueckung.
+
+Shopweite Suche nach „Samsung" und „LM301" liefert 20 Produkte. Die 17 anderen
+sind **AC Infinity** (IONFRAME EVO3/4/6/8, IONBEAM S11/S16, Advance-Grow-Sets,
+Stecklings-Gewaechshaeuser), **BloomStar** (FLUXshield-Reihe, Wingcommander) und
+eine **Solux**-Leuchte. Die tragen tatsaechlich Samsung-Dioden und sind von der
+Spider-Farmer-Umstellung nicht betroffen – dort bleibt alles stehen.
