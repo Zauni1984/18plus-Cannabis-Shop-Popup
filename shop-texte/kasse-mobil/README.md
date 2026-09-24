@@ -19,8 +19,10 @@ setzt jede Zeile als Flexzeile: Bezeichnung links, Betrag rechts, Umbruch wenn
 es eng wird. Die Versandzeile bekommt die volle Breite, damit
 „Versandkostenpauschale: 5,95 €" nicht mitten im Wort bricht.
 
-Gemessen danach: Tabelle **351 px** statt 408 px, Hoehe 352 px statt 510 px,
-kein Ueberlauf mehr.
+Dazu 5 px Abstand: als Aussenabstand der Tabelle und als Innenabstand jeder
+Zelle, damit Text und Betraege nicht am Rand kleben.
+
+Gemessen danach: Tabelle **341 px** statt 408 px, kein Ueberlauf mehr.
 
 ## Einbauen
 

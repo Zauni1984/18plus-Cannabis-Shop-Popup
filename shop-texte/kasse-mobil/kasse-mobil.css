@@ -6,6 +6,8 @@
     max-width: 100%;
     table-layout: auto;
     border-collapse: collapse;
+    margin: 5px;
+    width: calc(100% - 10px) !important;
   }
   .woocommerce-checkout table.woocommerce-checkout-review-order-table thead { display: none; }
   .woocommerce-checkout table.woocommerce-checkout-review-order-table tbody,
@@ -17,7 +19,7 @@
     align-items: baseline;
     gap: 4px 12px;
     width: 100%;
-    padding: 10px 0;
+    padding: 5px;
     margin: 0;
     border-bottom: 1px solid rgba(0,0,0,.08);
   }
@@ -26,7 +28,7 @@
     display: block;
     width: auto !important;
     max-width: 100%;
-    padding: 0 !important;
+    padding: 5px !important;
     border: 0 !important;
     box-sizing: border-box;
     overflow-wrap: break-word;
