@@ -1,0 +1,498 @@
+{
+  "marke": "TerpyZ Mutant Genetics",
+  "shop": "hanfjack.de",
+  "pwb_brand_term_id": 16640,
+  "quelle": "Tiger One Katalog (Google-Sheet-Export)",
+  "stand": "2026-09-10",
+  "status_aller_produkte": "draft",
+  "anzahl_produkte": 18,
+  "anzahl_varianten": 19,
+  "preisregel": "regular_price = abrunden(VK_TigerOne x 0,99) auf ganze Euro, Eingabe NETTO (Shop rechnet +7% MwSt.)",
+  "stammdaten": {
+    "tax_status": "taxable",
+    "tax_class": "reduzierter-preis",
+    "shipping_class": "paket-standard",
+    "delivery_time_id": 5417,
+    "attribut": "pa_inhalt (ID 2, global, variantenbildend)",
+    "weight": "0.01",
+    "manage_stock": false,
+    "stock_status": "onbackorder",
+    "backorders": "no"
+  },
+  "packungsgroessen": {
+    "3 Stück": 5,
+    "5 Stück": 1,
+    "10 Stück": 13
+  },
+  "hinweise": [
+    "Die Marke TerpyZ Mutant Genetics war im Shop noch nicht vorhanden. Der pwb-brand-Term wurde neu angelegt (Term-ID 16640) und allen 18 Produkten zugewiesen.",
+    "Alle 19 Artikel kamen im Tiger-One-Export ohne parent_sku. Sie wurden als variable Produkte angelegt; Eltern-SKU = Lieferanten-Artikelnummer, Varianten-SKU = Artikelnummer + '-' + Stueckzahl (z. B. TERP-BUBBLEGPP-REG / TERP-BUBBLEGPP-REG-10). Alle 37 SKUs sind eindeutig.",
+    "17 Artikel haben genau eine Packungsgroesse. Nur Mentha de Croco Fern BX1 F2 feminisiert hat zwei Varianten (3 und 5 Stueck).",
+    "7 Sorten ohne Produktbild im Export - Bilder muessen nachgepflegt werden.",
+    "Keine CBD-Sorten, keine Auslaufartikel, keine fehlenden Preise.",
+    "Keine Dubletten: Im Shop existierten vor dieser Listung keine TerpyZ-Produkte.",
+    "Produkttexte, Tags und SEO wurden bewusst noch nicht gesetzt.",
+    "Lagerstatus steht auf 'onbackorder' bis die Verfuegbarkeitsliste vorliegt."
+  ],
+  "produkte": [
+    {
+      "produkt_id": 44726,
+      "name": "TerpyZ Mutant Genetics Bubblegum GPP regulär",
+      "sku_eltern": "TERP-BUBBLEGPP-REG",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151582_1002896_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "TERP-BUBBLEGPP-REG-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "75",
+          "ek_tigerone": "37.5",
+          "preis_netto": "74",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44728,
+      "name": "TerpyZ Mutant Genetics Feral Fuel ABC regulär",
+      "sku_eltern": "TERP-FFABC-REG",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151578_1002876_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "TERP-FFABC-REG-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "85",
+          "ek_tigerone": "42.5",
+          "preis_netto": "84",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44730,
+      "name": "TerpyZ Mutant Genetics Flo Fusion ABC regulär",
+      "sku_eltern": "TERP-FLOFUS-REG",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151579_1002881_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "TERP-FLOFUS-REG-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "100",
+          "ek_tigerone": "50",
+          "preis_netto": "99",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44731,
+      "name": "TerpyZ Mutant Genetics Gary & Gas feminisiert",
+      "sku_eltern": "TERP-GAGA-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "TERP-GAGA-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "45",
+          "ek_tigerone": "22.5",
+          "preis_netto": "44",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44733,
+      "name": "TerpyZ Mutant Genetics Korean BBQ GPP regulär",
+      "sku_eltern": "TERP-KBBQGPP-REG",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151577_1002871_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "TERP-KBBQGPP-REG-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "85",
+          "ek_tigerone": "42.5",
+          "preis_netto": "84",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44734,
+      "name": "TerpyZ Mutant Genetics Mentha de Croco 'Croco' Bx regulär",
+      "sku_eltern": "TERP-MDCBX-REG",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "TERP-MDCBX-REG-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "120",
+          "ek_tigerone": "66.67",
+          "preis_netto": "118",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44735,
+      "name": "TerpyZ Mutant Genetics Mentha de Croco 'Fern-Type' regulär",
+      "sku_eltern": "TERP-MDCFT-REG",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "TERP-MDCFT-REG-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "100",
+          "ek_tigerone": "50",
+          "preis_netto": "99",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44736,
+      "name": "TerpyZ Mutant Genetics Mentha de Croco Fern BX1 F2 feminisiert",
+      "sku_eltern": "TERP-MDCFT-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "TERP-MDCFT-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "60",
+          "ek_tigerone": "25",
+          "preis_netto": "59",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "TERP-MDCFT-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "85",
+          "ek_tigerone": "42.5",
+          "preis_netto": "84",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44737,
+      "name": "TerpyZ Mutant Genetics Neon Wasabi feminisiert",
+      "sku_eltern": "TERP-NEWA-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "TERP-NEWA-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "45",
+          "ek_tigerone": "22.5",
+          "preis_netto": "44",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44739,
+      "name": "TerpyZ Mutant Genetics Pink Nova regulär",
+      "sku_eltern": "TERP-PNOVA-REG",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151571_1002841_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "TERP-PNOVA-REG-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "100",
+          "ek_tigerone": "50",
+          "preis_netto": "99",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44741,
+      "name": "TerpyZ Mutant Genetics Quackberry Rose regulär",
+      "sku_eltern": "TERP-QBERRY-REG",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151572_1002846_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "TERP-QBERRY-REG-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "95",
+          "ek_tigerone": "47.5",
+          "preis_netto": "94",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44743,
+      "name": "TerpyZ Mutant Genetics Sour Curry AD regulär",
+      "sku_eltern": "TERP-SCURRYAD-REG",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151580_1002886_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "TERP-SCURRYAD-REG-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "85",
+          "ek_tigerone": "42.5",
+          "preis_netto": "84",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44745,
+      "name": "TerpyZ Mutant Genetics Spicy Temptation GPP regulär",
+      "sku_eltern": "TERP-SPTGPP-REG",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151575_1002861_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "TERP-SPTGPP-REG-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "85",
+          "ek_tigerone": "42.5",
+          "preis_netto": "84",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44746,
+      "name": "TerpyZ Mutant Genetics Super Menthol Haze feminisiert",
+      "sku_eltern": "TERP-SUMH-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "TERP-SUMH-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "45",
+          "ek_tigerone": "22.5",
+          "preis_netto": "44",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44748,
+      "name": "TerpyZ Mutant Genetics Variegated Delight regulär",
+      "sku_eltern": "TERP-VARD-REG",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151576_1002866_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "TERP-VARD-REG-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "95",
+          "ek_tigerone": "47.5",
+          "preis_netto": "94",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44750,
+      "name": "TerpyZ Mutant Genetics Zen-X Swag regulär",
+      "sku_eltern": "TERP-ZXSWAG-REG",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151574_1002856_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "TERP-ZXSWAG-REG-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "100",
+          "ek_tigerone": "50",
+          "preis_netto": "99",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44752,
+      "name": "TerpyZ Mutant Genetics Zfuel Swag regulär",
+      "sku_eltern": "TERP-ZFSWAG-REG",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151573_1002851_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "TERP-ZFSWAG-REG-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "95",
+          "ek_tigerone": "47.5",
+          "preis_netto": "94",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44753,
+      "name": "TerpyZ Mutant Genetics Zitro feminisiert",
+      "sku_eltern": "TERP-ZITR-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "TERP-ZITR-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "45",
+          "ek_tigerone": "22.5",
+          "preis_netto": "44",
+          "auslaufartikel": false
+        }
+      ]
+    }
+  ]
+}

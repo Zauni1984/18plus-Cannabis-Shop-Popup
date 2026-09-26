@@ -1,0 +1,2426 @@
+[
+ {
+  "id": 36956,
+  "sku": "113499",
+  "name": "Pure Factory Top Spinner Rotor 19' (48 cm) Blatttrimmer",
+  "ek": "235.00",
+  "b2b": "258.50",
+  "anbau": "305.50"
+ },
+ {
+  "id": 36958,
+  "sku": "113504",
+  "name": "Pure Factory Top Spinner Rotor 24' (60 cm) Blatttrimmer",
+  "ek": "249.00",
+  "b2b": "273.90",
+  "anbau": "323.70"
+ },
+ {
+  "id": 36960,
+  "sku": "109816",
+  "name": "CenturionPro Tabletop Electropolished Wet / Dry, Erntemaschi",
+  "ek": "2428.00",
+  "b2b": "2670.80",
+  "anbau": "3156.40"
+ },
+ {
+  "id": 36965,
+  "sku": "109817",
+  "name": "CenturionPro Tabletop Quantanium Wet / Dry, Erntemaschine, f",
+  "ek": "2703.00",
+  "b2b": "2973.30",
+  "anbau": "3513.90"
+ },
+ {
+  "id": 36970,
+  "sku": "109820",
+  "name": "CenturionPro Mini Electropolished Wet / Dry, Erntemaschine, ",
+  "ek": "3595.00",
+  "b2b": "3954.50",
+  "anbau": "4673.50"
+ },
+ {
+  "id": 36975,
+  "sku": "109821",
+  "name": "CenturionPro Mini Quantanium Wet / Dry, Erntemaschine, für f",
+  "ek": "4095.00",
+  "b2b": "4504.50",
+  "anbau": "5323.50"
+ },
+ {
+  "id": 36980,
+  "sku": "109824",
+  "name": "CenturionPro Original Electropolished Wet / Dry, Erntemaschi",
+  "ek": "3971.00",
+  "b2b": "4368.10",
+  "anbau": "5162.30"
+ },
+ {
+  "id": 36983,
+  "sku": "109825",
+  "name": "CenturionPro Original Quantanium Wet / Dry, Erntemaschine, f",
+  "ek": "4471.00",
+  "b2b": "4918.10",
+  "anbau": "5812.30"
+ },
+ {
+  "id": 36990,
+  "sku": "109832",
+  "name": "CenturionPro Gladiator Electropolished Wet / Dry, Erntemasch",
+  "ek": "7688.00",
+  "b2b": "8456.80",
+  "anbau": "9994.40"
+ },
+ {
+  "id": 36993,
+  "sku": "109833",
+  "name": "CenturionPro Gladiator Quantanium Wet / Dry, Erntemaschine, ",
+  "ek": "8188.00",
+  "b2b": "9006.80",
+  "anbau": "10644.40"
+ },
+ {
+  "id": 37000,
+  "sku": "109836",
+  "name": "CenturionPro 3.0 Electropolished Wet / Dry, Erntemaschine, f",
+  "ek": "12745.00",
+  "b2b": "14019.50",
+  "anbau": "16568.50"
+ },
+ {
+  "id": 37005,
+  "sku": "109837",
+  "name": "CenturionPro 3.0 Quantanium Wet / Dry, Erntemaschine, für fe",
+  "ek": "13245.00",
+  "b2b": "14569.50",
+  "anbau": "17218.50"
+ },
+ {
+  "id": 37010,
+  "sku": "110001",
+  "name": "CenturionPro HP1 - Single High Performance Bucker",
+  "ek": "5316.00",
+  "b2b": "5847.60",
+  "anbau": "6910.80"
+ },
+ {
+  "id": 37012,
+  "sku": "110002",
+  "name": "CenturionPro GC1 - Single Gentle Cut Bucker",
+  "ek": "1579.00",
+  "b2b": "1736.90",
+  "anbau": "2052.70"
+ },
+ {
+  "id": 37014,
+  "sku": "112337",
+  "name": "CenturionPro DBT0 Dry Batch Trimmer",
+  "ek": "1582.00",
+  "b2b": "1740.20",
+  "anbau": "2056.60"
+ },
+ {
+  "id": 37019,
+  "sku": "112641",
+  "name": "Master Trimmer MT Dry 100 LiTE Pollentrommel",
+  "ek": "430.30",
+  "b2b": "473.33",
+  "anbau": "559.39"
+ },
+ {
+  "id": 37021,
+  "sku": "112996",
+  "name": "Master Trimmer MT Tumbler 200 LiTE",
+  "ek": "3500.00",
+  "b2b": "3850.00",
+  "anbau": "4550.00"
+ },
+ {
+  "id": 37026,
+  "sku": "113108",
+  "name": "Master Trimmer MT DRY 100 LiTE Ersatz Klinge",
+  "ek": "25.00",
+  "b2b": "27.50",
+  "anbau": "32.50"
+ },
+ {
+  "id": 37028,
+  "sku": "111656",
+  "name": "Twister T6 Vakuum-Bypass",
+  "ek": "171.60",
+  "b2b": "188.76",
+  "anbau": "223.08"
+ },
+ {
+  "id": 37032,
+  "sku": "113003",
+  "name": "Twister T6 - Spare Standard Tumbler",
+  "ek": "500.00",
+  "b2b": "550.00",
+  "anbau": "650.00"
+ },
+ {
+  "id": 37034,
+  "sku": "110003",
+  "name": "CenturionPro HP3 - Triple High Performance Bucker",
+  "ek": "13195.00",
+  "b2b": "14514.50",
+  "anbau": "17153.50"
+ },
+ {
+  "id": 37036,
+  "sku": "110036",
+  "name": "CenturionPro Reel Bearings, Ersatzteil",
+  "ek": "31.00",
+  "b2b": "34.10",
+  "anbau": "40.30"
+ },
+ {
+  "id": 37038,
+  "sku": "112179",
+  "name": "CenturionPro Tabletop, Ersatzteil, Riemen",
+  "ek": "37.00",
+  "b2b": "40.70",
+  "anbau": "48.10"
+ },
+ {
+  "id": 37040,
+  "sku": "112180",
+  "name": "CenturionPro Tabletop, Ersatzteil, Sammelbeutel",
+  "ek": "87.72",
+  "b2b": "96.49",
+  "anbau": "114.04"
+ },
+ {
+  "id": 37042,
+  "sku": "112181",
+  "name": "CenturionPro Tabletop, Ersatzteil, Bürstwalze",
+  "ek": "113.22",
+  "b2b": "124.54",
+  "anbau": "147.19"
+ },
+ {
+  "id": 37044,
+  "sku": "111171",
+  "name": "Portable Trimmer, Tragbarer Trimmbeutel",
+  "ek": "70.00",
+  "b2b": "77.00",
+  "anbau": "91.00"
+ },
+ {
+  "id": 37051,
+  "sku": "111548",
+  "name": "Master Trimmer MT STANDARD 75",
+  "ek": "2690.00",
+  "b2b": "2959.00",
+  "anbau": "3497.00"
+ },
+ {
+  "id": 37053,
+  "sku": "111549",
+  "name": "Master Trimmer GENTLE 75",
+  "ek": "3850.00",
+  "b2b": "4235.00",
+  "anbau": "5005.00"
+ },
+ {
+  "id": 37055,
+  "sku": "111550",
+  "name": "Master Trimmer PROFESSIONAL 75",
+  "ek": "3925.00",
+  "b2b": "4317.50",
+  "anbau": "5102.50"
+ },
+ {
+  "id": 37057,
+  "sku": "111552",
+  "name": "Master Trimmer MT TUMBLER 200 PRO, variable speed",
+  "ek": "8500.00",
+  "b2b": "9350.00",
+  "anbau": "11050.00"
+ },
+ {
+  "id": 37059,
+  "sku": "111553",
+  "name": "Master Trimmer MT TUMBLER 500 + Sauger",
+  "ek": "9750.00",
+  "b2b": "10725.00",
+  "anbau": "12675.00"
+ },
+ {
+  "id": 37061,
+  "sku": "111554",
+  "name": "Master Trimmer LEAF COLLECTOR MT TUMBLER 500",
+  "ek": "760.00",
+  "b2b": "836.00",
+  "anbau": "988.00"
+ },
+ {
+  "id": 37063,
+  "sku": "111557",
+  "name": "Master Trimmer MT POCKET",
+  "ek": "550.00",
+  "b2b": "605.00",
+  "anbau": "715.00"
+ },
+ {
+  "id": 37065,
+  "sku": "111558",
+  "name": "Master Trimmer MT STANDARD 50",
+  "ek": "1480.00",
+  "b2b": "1628.00",
+  "anbau": "1924.00"
+ },
+ {
+  "id": 37067,
+  "sku": "111560",
+  "name": "Master Trimmer MT PROFESSIONAL 50",
+  "ek": "2590.00",
+  "b2b": "2849.00",
+  "anbau": "3367.00"
+ },
+ {
+  "id": 37069,
+  "sku": "111561",
+  "name": "Master Trimmer MT BUCKER 200",
+  "ek": "4350.00",
+  "b2b": "4785.00",
+  "anbau": "5655.00"
+ },
+ {
+  "id": 37071,
+  "sku": "111562",
+  "name": "Master Trimmer MB BUCKER 500",
+  "ek": "5720.00",
+  "b2b": "6292.00",
+  "anbau": "7436.00"
+ },
+ {
+  "id": 37073,
+  "sku": "111606",
+  "name": "Master Trimmer Ersatztrommel für MT 500, hybrid wet/dry (6,3",
+  "ek": "849.58",
+  "b2b": "934.54",
+  "anbau": "1104.45"
+ },
+ {
+  "id": 37075,
+  "sku": "111881",
+  "name": "Master Trimmer MT DRY 200",
+  "ek": "1810.00",
+  "b2b": "1991.00",
+  "anbau": "2353.00"
+ },
+ {
+  "id": 37077,
+  "sku": "111882",
+  "name": "Master Trimmer, Pollen Extractor Barrel, MTD200",
+  "ek": "648.90",
+  "b2b": "713.79",
+  "anbau": "843.57"
+ },
+ {
+  "id": 37079,
+  "sku": "112086",
+  "name": "Master Trimmer MT DRY 500",
+  "ek": "4295.00",
+  "b2b": "4724.50",
+  "anbau": "5583.50"
+ },
+ {
+  "id": 37081,
+  "sku": "112346",
+  "name": "Master Trimmer MT DRY 100 LiTE",
+  "ek": "930.00",
+  "b2b": "1023.00",
+  "anbau": "1209.00"
+ },
+ {
+  "id": 37083,
+  "sku": "112347",
+  "name": "Master Trimmer MX ICE 200 LITE",
+  "ek": "3600.00",
+  "b2b": "3960.00",
+  "anbau": "4680.00"
+ },
+ {
+  "id": 37085,
+  "sku": "112348",
+  "name": "Master Trimmer MS SORTER 100 LiTE",
+  "ek": "155.25",
+  "b2b": "170.78",
+  "anbau": "201.83"
+ },
+ {
+  "id": 37086,
+  "sku": "112971",
+  "name": "Master Trimmer MB BUCKER 200 LiTE",
+  "ek": "2850.00",
+  "b2b": "3135.00",
+  "anbau": "3705.00"
+ },
+ {
+  "id": 37090,
+  "sku": "112976",
+  "name": "Master Trimmer LIO 40 Freeze Dryer",
+  "ek": "7600.00",
+  "b2b": "8360.00",
+  "anbau": "9880.00"
+ },
+ {
+  "id": 37093,
+  "sku": "103662",
+  "name": "Trimpro Trimbox, Erntemaschine, ohne Gestell, ø 20,3 cm x 22",
+  "ek": "260.00",
+  "b2b": "286.00",
+  "anbau": "338.00"
+ },
+ {
+  "id": 37095,
+  "sku": "103663",
+  "name": "Trimpro Trimbox, Erntemaschine inkl. Workstation, Maße aufge",
+  "ek": "555.00",
+  "b2b": "610.50",
+  "anbau": "721.50"
+ },
+ {
+  "id": 37097,
+  "sku": "103664",
+  "name": "Trimpro Automatik XL, Erntemaschine, mit Gestell, Maße aufge",
+  "ek": "3310.00",
+  "b2b": "3641.00",
+  "anbau": "4303.00"
+ },
+ {
+  "id": 37099,
+  "sku": "103665",
+  "name": "Trimpro Original + Automatik, Ersatzteil, Gummiverschluss TS",
+  "ek": "1.50",
+  "b2b": "1.65",
+  "anbau": "1.95"
+ },
+ {
+  "id": 37101,
+  "sku": "103666",
+  "name": "Trimpro Original, Ersatzteil, Klinge und Nabe TSOGBLST",
+  "ek": "44.00",
+  "b2b": "48.40",
+  "anbau": "57.20"
+ },
+ {
+  "id": 37103,
+  "sku": "103668",
+  "name": "Trimpro Original, Ersatzteil, Gitterrost, 7/16 Zoll + 1/4 Zo",
+  "ek": "32.00",
+  "b2b": "35.20",
+  "anbau": "41.60"
+ },
+ {
+  "id": 37105,
+  "sku": "103669",
+  "name": "Trimpro Original Workstation, Ersatzteil, Gitterrost, 1/4 Zo",
+  "ek": "58.00",
+  "b2b": "63.80",
+  "anbau": "75.40"
+ },
+ {
+  "id": 37107,
+  "sku": "103671",
+  "name": "Trimpro Automatik, Ersatzteil, Beutel mit Befestigungsring",
+  "ek": "54.00",
+  "b2b": "59.40",
+  "anbau": "70.20"
+ },
+ {
+  "id": 37109,
+  "sku": "103672",
+  "name": "Trimpro Automatik, Ersatzteil, Beutel ohne Befestigungsring",
+  "ek": "9.00",
+  "b2b": "9.90",
+  "anbau": "11.70"
+ },
+ {
+  "id": 37111,
+  "sku": "103673",
+  "name": "Trimpro Orignal, Ersatzteil, Tischbeine, 4 Stk.",
+  "ek": "5.50",
+  "b2b": "6.05",
+  "anbau": "7.15"
+ },
+ {
+  "id": 37113,
+  "sku": "103674",
+  "name": "Trimpro Trimbox, Ersatzteil, Klinge TSBXBLST",
+  "ek": "40.00",
+  "b2b": "44.00",
+  "anbau": "52.00"
+ },
+ {
+  "id": 37115,
+  "sku": "103675",
+  "name": "Trimpro Trimbox, Ersatzteil, Gitterrost (7/16 Zoll) TSBXGRLG",
+  "ek": "7.50",
+  "b2b": "8.25",
+  "anbau": "9.75"
+ },
+ {
+  "id": 37117,
+  "sku": "103676",
+  "name": "Trimpro Trimbox Workstation, Aluminiumgestell, Gitterrost au",
+  "ek": "48.00",
+  "b2b": "52.80",
+  "anbau": "62.40"
+ },
+ {
+  "id": 37119,
+  "sku": "103677",
+  "name": "Trimpro Trimbox, Ersatzteil, Motor für Artikel (103662 und 1",
+  "ek": "43.00",
+  "b2b": "47.30",
+  "anbau": "55.90"
+ },
+ {
+  "id": 37121,
+  "sku": "103678",
+  "name": "Trimpro Trimbox, Ersatzteil, Beutel TSBXBGST",
+  "ek": "5.50",
+  "b2b": "6.05",
+  "anbau": "7.15"
+ },
+ {
+  "id": 37123,
+  "sku": "103679",
+  "name": "Trimpro Automatik, Ersatzteil, Motor für Artikel (103661) TS",
+  "ek": "85.00",
+  "b2b": "93.50",
+  "anbau": "110.50"
+ },
+ {
+  "id": 37125,
+  "sku": "103680",
+  "name": "Trimpro Automatik, Ersatzteil, Gitterrost, 1/4 Zoll TSAUGRST",
+  "ek": "42.00",
+  "b2b": "46.20",
+  "anbau": "54.60"
+ },
+ {
+  "id": 37127,
+  "sku": "103682",
+  "name": "Trimpro Automatik, Ersatzteil, Plexiglas, groß TSAUPXLG",
+  "ek": "18.00",
+  "b2b": "19.80",
+  "anbau": "23.40"
+ },
+ {
+  "id": 37129,
+  "sku": "103683",
+  "name": "Trimpro Automatik, Ersatzteil, Plexiglas, klein",
+  "ek": "13.00",
+  "b2b": "14.30",
+  "anbau": "16.90"
+ },
+ {
+  "id": 37131,
+  "sku": "106989",
+  "name": "Trimpro Automatik XL, Ersatzteil, Gitterrost (7/16'), Large ",
+  "ek": "140.00",
+  "b2b": "154.00",
+  "anbau": "182.00"
+ },
+ {
+  "id": 37133,
+  "sku": "107427",
+  "name": "Trimpro Rotor Workstation, Aluminiumgestell für Trimpro Roto",
+  "ek": "38.50",
+  "b2b": "42.35",
+  "anbau": "50.05"
+ },
+ {
+  "id": 37135,
+  "sku": "107428",
+  "name": "Trimpro Rotor mit Workstation, Erntemaschine inkl. Gestell, ",
+  "ek": "1125.00",
+  "b2b": "1237.50",
+  "anbau": "1462.50"
+ },
+ {
+  "id": 37139,
+  "sku": "107639",
+  "name": "Trimpro Rotor, Ersatzteil, Klinge",
+  "ek": "36.00",
+  "b2b": "39.60",
+  "anbau": "46.80"
+ },
+ {
+  "id": 37141,
+  "sku": "107640",
+  "name": "Trimpro Rotor, Ersatzteil, oberer Motor (zusammengebaut)",
+  "ek": "56.00",
+  "b2b": "61.60",
+  "anbau": "72.80"
+ },
+ {
+  "id": 37143,
+  "sku": "108025",
+  "name": "Trimpro Unplugged, Erntemaschine, manuell, Maße aufgebaut 36",
+  "ek": "220.00",
+  "b2b": "242.00",
+  "anbau": "286.00"
+ },
+ {
+  "id": 37145,
+  "sku": "108957",
+  "name": "Trimpro Automatik XL, Ersatzteil, Beutel TSAXBGST",
+  "ek": "36.50",
+  "b2b": "40.15",
+  "anbau": "47.45"
+ },
+ {
+  "id": 37147,
+  "sku": "108961",
+  "name": "Trimpro Automatik XL, Ersatzteil, Abgang gebogen",
+  "ek": "19.00",
+  "b2b": "20.90",
+  "anbau": "24.70"
+ },
+ {
+  "id": 37149,
+  "sku": "108962",
+  "name": "Trimpro Automatik, Ersatzteil, Abgang gerade TSAUEXST",
+  "ek": "7.25",
+  "b2b": "7.98",
+  "anbau": "9.43"
+ },
+ {
+  "id": 37151,
+  "sku": "108963",
+  "name": "Trimpro Automatik XL, Ersatzteil, Abgang gerade",
+  "ek": "19.00",
+  "b2b": "20.90",
+  "anbau": "24.70"
+ },
+ {
+  "id": 37153,
+  "sku": "108965",
+  "name": "Trimpro Rotor XL, Ersatzteil, Beutel",
+  "ek": "24.00",
+  "b2b": "26.40",
+  "anbau": "31.20"
+ },
+ {
+  "id": 37155,
+  "sku": "108966",
+  "name": "Trimpro Automatik, u. Rotor, Ersatzteil, Befestigungsring",
+  "ek": "17.00",
+  "b2b": "18.70",
+  "anbau": "22.10"
+ },
+ {
+  "id": 37157,
+  "sku": "108967",
+  "name": "Trimpro Automatik XL, Ersatzteil, Befestigungsring",
+  "ek": "8.00",
+  "b2b": "8.80",
+  "anbau": "10.40"
+ },
+ {
+  "id": 37159,
+  "sku": "108968",
+  "name": "Trimpro Original, Ersatzteil, Befestigungsring",
+  "ek": "5.50",
+  "b2b": "6.05",
+  "anbau": "7.15"
+ },
+ {
+  "id": 37161,
+  "sku": "108970",
+  "name": "Trimpro Rotor XL, Ersatzteil, Klinge",
+  "ek": "94.00",
+  "b2b": "103.40",
+  "anbau": "122.20"
+ },
+ {
+  "id": 37163,
+  "sku": "108972",
+  "name": "Trimpro Rotor XL, Ersatzteil, Schütte",
+  "ek": "5.80",
+  "b2b": "6.38",
+  "anbau": "7.54"
+ },
+ {
+  "id": 37165,
+  "sku": "108973",
+  "name": "Trimpro Rotor, Ersatzteil, Schütte",
+  "ek": "2.75",
+  "b2b": "3.03",
+  "anbau": "3.58"
+ },
+ {
+  "id": 37167,
+  "sku": "108977",
+  "name": "Trimpro Rotor XL, Ersatzteil, Gummilamellen",
+  "ek": "54.00",
+  "b2b": "59.40",
+  "anbau": "70.20"
+ },
+ {
+  "id": 37169,
+  "sku": "108979",
+  "name": "Trimpro Unplugged, Ersatzteil, Gitterrost, Stahl TSUNGRST",
+  "ek": "30.00",
+  "b2b": "33.00",
+  "anbau": "39.00"
+ },
+ {
+  "id": 37171,
+  "sku": "108980",
+  "name": "Trimpro Automatik XL, Ersatzteil, Gummiverschluss",
+  "ek": "5.00",
+  "b2b": "5.50",
+  "anbau": "6.50"
+ },
+ {
+  "id": 37173,
+  "sku": "108982",
+  "name": "Trimpro Automatik, Ersatzteil, Dichtungsgummi TSAUSLRU",
+  "ek": "2.75",
+  "b2b": "3.03",
+  "anbau": "3.58"
+ },
+ {
+  "id": 37175,
+  "sku": "109108",
+  "name": "Trimpro Automatik XL, Ersatzteil, Motor Drive",
+  "ek": "185.00",
+  "b2b": "203.50",
+  "anbau": "240.50"
+ },
+ {
+  "id": 37177,
+  "sku": "109540",
+  "name": "Trimpro Bucker, inkl. Gestell",
+  "ek": "1850.00",
+  "b2b": "2035.00",
+  "anbau": "2405.00"
+ },
+ {
+  "id": 37180,
+  "sku": "110978",
+  "name": "Trimpro Drypro Erntemaschine, für trockenes Trimmen, 5,44kg/",
+  "ek": "1775.00",
+  "b2b": "1952.50",
+  "anbau": "2307.50"
+ },
+ {
+  "id": 37182,
+  "sku": "103658",
+  "name": "Tumble Trimmer, Erntemaschine, ø 43 cm, H = 45 cm",
+  "ek": "194.16",
+  "b2b": "213.58",
+  "anbau": "252.41"
+ },
+ {
+  "id": 37189,
+  "sku": "107573",
+  "name": "Ersatzschneidemesser für Tumble Trimmer, 5St",
+  "ek": "4.50",
+  "b2b": "4.95",
+  "anbau": "5.85"
+ },
+ {
+  "id": 37191,
+  "sku": "111921",
+  "name": "Ersatzschneidedraht für Tumble Trimmer, 20Stk",
+  "ek": "4.50",
+  "b2b": "4.95",
+  "anbau": "5.85"
+ },
+ {
+  "id": 37193,
+  "sku": "108452",
+  "name": "Twister T2, Erntemaschine & Sauger, für feuchte und trockene",
+  "ek": "14500.00",
+  "b2b": "15950.00",
+  "anbau": "18850.00"
+ },
+ {
+  "id": 37195,
+  "sku": "109534",
+  "name": "Twister T4, Erntemaschine & Sauger, für feuchte und trockene",
+  "ek": "7100.00",
+  "b2b": "7810.00",
+  "anbau": "9230.00"
+ },
+ {
+  "id": 37201,
+  "sku": "109536",
+  "name": "Twister Quality Control Conveyor, Förderband zur Qualitätsko",
+  "ek": "3666.96",
+  "b2b": "4033.66",
+  "anbau": "4767.05"
+ },
+ {
+  "id": 37203,
+  "sku": "109539",
+  "name": "Twister Feed Conveyor, Förderband zur Speisung (vorne)",
+  "ek": "3503.28",
+  "b2b": "3853.61",
+  "anbau": "4554.26"
+ },
+ {
+  "id": 37205,
+  "sku": "109633",
+  "name": "Twister T4, Ersatzteil, Drive Belt, Antriebsriemen",
+  "ek": "25.00",
+  "b2b": "27.50",
+  "anbau": "32.50"
+ },
+ {
+  "id": 37208,
+  "sku": "109634",
+  "name": "Twister T4 Tandem Adapter",
+  "ek": "161.92",
+  "b2b": "178.11",
+  "anbau": "210.50"
+ },
+ {
+  "id": 37210,
+  "sku": "109636",
+  "name": "Twister T4, Standard 40 Slot, Ersatzteil, Tumbler Wet, Rotat",
+  "ek": "686.93",
+  "b2b": "755.62",
+  "anbau": "893.01"
+ },
+ {
+  "id": 37212,
+  "sku": "109637",
+  "name": "Twister T4, Ersatzteil, Leaf Collector, Euro",
+  "ek": "1080.00",
+  "b2b": "1188.00",
+  "anbau": "1404.00"
+ },
+ {
+  "id": 37214,
+  "sku": "109644",
+  "name": "Twister T2, Ersatzteil, Blade V-Belt, grün",
+  "ek": "89.00",
+  "b2b": "97.90",
+  "anbau": "115.70"
+ },
+ {
+  "id": 37216,
+  "sku": "109645",
+  "name": "Twister T2, Ersatzteil, Tumbler V-Belt, schwarz",
+  "ek": "54.56",
+  "b2b": "60.02",
+  "anbau": "70.93"
+ },
+ {
+  "id": 37218,
+  "sku": "109646",
+  "name": "Twister T2, Ersatzteil, Doppelschalter, 2er-Pack",
+  "ek": "124.08",
+  "b2b": "136.49",
+  "anbau": "161.30"
+ },
+ {
+  "id": 37220,
+  "sku": "109648",
+  "name": "Twister T2, Rail Single, Ausrichtungsschiene für ein Gerät",
+  "ek": "507.76",
+  "b2b": "558.54",
+  "anbau": "660.09"
+ },
+ {
+  "id": 37222,
+  "sku": "109649",
+  "name": "Twister T2, Rail Extension, Erweiterung der Ausrichtungsschi",
+  "ek": "285.12",
+  "b2b": "313.63",
+  "anbau": "370.66"
+ },
+ {
+  "id": 37224,
+  "sku": "109650",
+  "name": "Twister T2, Ersatzteil, Tumbler Wet, Rotationstrommel für fe",
+  "ek": "1300.00",
+  "b2b": "1430.00",
+  "anbau": "1690.00"
+ },
+ {
+  "id": 37226,
+  "sku": "109651",
+  "name": "Twister T2, Ersatzteil, Tumbler Dry, Rotationstrommel für tr",
+  "ek": "989.00",
+  "b2b": "1087.90",
+  "anbau": "1285.70"
+ },
+ {
+  "id": 37228,
+  "sku": "109652",
+  "name": "Twister T2, Ersatzteil, Clear Vacuum Bags, Sammelbeutel, 3 x",
+  "ek": "142.56",
+  "b2b": "156.82",
+  "anbau": "185.33"
+ },
+ {
+  "id": 37230,
+  "sku": "109653",
+  "name": "Twister T2, Ersatzteil, Vacuum Bag, Sammelbeutel, 40 Micron ",
+  "ek": "101.00",
+  "b2b": "111.10",
+  "anbau": "131.30"
+ },
+ {
+  "id": 37232,
+  "sku": "109654",
+  "name": "Twister T2, Ersatzteil, Nylon-Bürste",
+  "ek": "231.00",
+  "b2b": "254.10",
+  "anbau": "300.30"
+ },
+ {
+  "id": 37234,
+  "sku": "109655",
+  "name": "Twister T4, Ersatzteil, weiß Filter Bag, 300 Micron Schnittr",
+  "ek": "92.00",
+  "b2b": "101.20",
+  "anbau": "119.60"
+ },
+ {
+  "id": 37237,
+  "sku": "109656",
+  "name": "Twister T4, Ersatzteil, White (Dry) Filter Bag, Sammelbeutel",
+  "ek": "129.00",
+  "b2b": "141.90",
+  "anbau": "167.70"
+ },
+ {
+  "id": 37239,
+  "sku": "109657",
+  "name": "Twister T4, Ersatzteil, Nylon-Bürste",
+  "ek": "169.00",
+  "b2b": "185.90",
+  "anbau": "219.70"
+ },
+ {
+  "id": 37241,
+  "sku": "109658",
+  "name": "Twister T6 Trimmer, Erntemaschine & Sauger, für feuchte und ",
+  "ek": "3675.00",
+  "b2b": "4042.50",
+  "anbau": "4777.50"
+ },
+ {
+  "id": 37243,
+  "sku": "110579",
+  "name": "Twister B4 Bucker & Gestell, 75kg/h",
+  "ek": "18990.00",
+  "b2b": "20889.00",
+  "anbau": "24687.00"
+ },
+ {
+  "id": 37245,
+  "sku": "110979",
+  "name": "Twister T2 Hopper Assy, Einfülltrichter",
+  "ek": "300.00",
+  "b2b": "330.00",
+  "anbau": "390.00"
+ },
+ {
+  "id": 37247,
+  "sku": "111155",
+  "name": "Twister Trimmer, Euro, BatchOne",
+  "ek": "19600.00",
+  "b2b": "21560.00",
+  "anbau": "25480.00"
+ },
+ {
+  "id": 37254,
+  "sku": "111161",
+  "name": "Twister T4, Trim Saver, CS-12E, Euro",
+  "ek": "3333.44",
+  "b2b": "3666.78",
+  "anbau": "4333.47"
+ },
+ {
+  "id": 37258,
+  "sku": "111162",
+  "name": "Twister T2, Trim Saver, CS-18E, Euro",
+  "ek": "5012.24",
+  "b2b": "5513.46",
+  "anbau": "6515.91"
+ },
+ {
+  "id": 37260,
+  "sku": "111163",
+  "name": "Twister T2, Leaf Collector, Euro",
+  "ek": "1404.48",
+  "b2b": "1544.93",
+  "anbau": "1825.82"
+ },
+ {
+  "id": 37262,
+  "sku": "111164",
+  "name": "Twister Tandem T2 Trimming System mit Leaf Collectors, EU-Pl",
+  "ek": "31500.00",
+  "b2b": "34650.00",
+  "anbau": "40950.00"
+ },
+ {
+  "id": 37264,
+  "sku": "111165",
+  "name": "Twister T4 Rails, Triple",
+  "ek": "1596.00",
+  "b2b": "1755.60",
+  "anbau": "2074.80"
+ },
+ {
+  "id": 37266,
+  "sku": "111166",
+  "name": "Twister Tandem T4 Trimming System mit Leaf Collectors",
+  "ek": "20546.55",
+  "b2b": "22601.21",
+  "anbau": "26710.52"
+ },
+ {
+  "id": 37268,
+  "sku": "111167",
+  "name": "Twister T4, Stand Assy",
+  "ek": "396.00",
+  "b2b": "435.60",
+  "anbau": "514.80"
+ },
+ {
+  "id": 37270,
+  "sku": "111168",
+  "name": "Twister Tandem T4 Trimming System mit Trim Savers",
+  "ek": "24918.79",
+  "b2b": "27410.67",
+  "anbau": "32394.43"
+ },
+ {
+  "id": 37272,
+  "sku": "111184",
+  "name": "Twister T4, Ersatzteil-Set",
+  "ek": "822.43",
+  "b2b": "904.67",
+  "anbau": "1069.16"
+ },
+ {
+  "id": 37273,
+  "sku": "111185",
+  "name": "Twister T4 Filter Bag, weiß, 40 Micron",
+  "ek": "220.86",
+  "b2b": "242.95",
+  "anbau": "287.12"
+ },
+ {
+  "id": 37275,
+  "sku": "111186",
+  "name": "Twister T6, Ersatzteil-Set",
+  "ek": "442.97",
+  "b2b": "487.27",
+  "anbau": "575.86"
+ },
+ {
+  "id": 37277,
+  "sku": "111187",
+  "name": "Twister T6, Tumbler, extreme",
+  "ek": "550.00",
+  "b2b": "605.00",
+  "anbau": "715.00"
+ },
+ {
+  "id": 37279,
+  "sku": "111188",
+  "name": "Twister T6, Filter Bag, weiß, 300 Micron",
+  "ek": "69.00",
+  "b2b": "75.90",
+  "anbau": "89.70"
+ },
+ {
+  "id": 37281,
+  "sku": "111189",
+  "name": "Twister T6, Filter Bag, weiß, 40 Micron",
+  "ek": "158.27",
+  "b2b": "174.10",
+  "anbau": "205.75"
+ },
+ {
+  "id": 37283,
+  "sku": "111338",
+  "name": "Twister CHEVRON, DRIVE WHEEL, T4",
+  "ek": "40.50",
+  "b2b": "44.55",
+  "anbau": "52.65"
+ },
+ {
+  "id": 37285,
+  "sku": "112244",
+  "name": "Twister T6, Ersatzteil, Cartridge, Assy, Helix Blade",
+  "ek": "848.00",
+  "b2b": "932.80",
+  "anbau": "1102.40"
+ },
+ {
+  "id": 37286,
+  "sku": "112245",
+  "name": "Twister T6, Ersatzteil, Lid, Assy",
+  "ek": "387.50",
+  "b2b": "426.25",
+  "anbau": "503.75"
+ },
+ {
+  "id": 37287,
+  "sku": "112349",
+  "name": "Twister T2, Ersatzteil-Set",
+  "ek": "1000.56",
+  "b2b": "1100.62",
+  "anbau": "1300.73"
+ },
+ {
+  "id": 37288,
+  "sku": "112694",
+  "name": "Twister Cuff Hose, Left Hand Spiral ,6''",
+  "ek": "55.00",
+  "b2b": "60.50",
+  "anbau": "71.50"
+ },
+ {
+  "id": 37290,
+  "sku": "112723",
+  "name": "Twister T6 Hopper Assy, Einfülltrichter KONSI",
+  "ek": "78.00",
+  "b2b": "85.80",
+  "anbau": "101.40"
+ },
+ {
+  "id": 37292,
+  "sku": "112729",
+  "name": "Twister T2, Erntemaschine für feuchte und trockene Ernte (nu",
+  "ek": "13000.00",
+  "b2b": "14300.00",
+  "anbau": "16900.00"
+ },
+ {
+  "id": 37294,
+  "sku": "112735",
+  "name": "Twister Batchone Go Trimmer",
+  "ek": "1911.00",
+  "b2b": "2102.10",
+  "anbau": "2484.30"
+ },
+ {
+  "id": 37296,
+  "sku": "112956",
+  "name": "Twister T6, Ersatzteil, Gear Box, Assy",
+  "ek": "56.00",
+  "b2b": "61.60",
+  "anbau": "72.80"
+ },
+ {
+  "id": 37298,
+  "sku": "113002",
+  "name": "Twister Cure Puck Generation 2",
+  "ek": "565.00",
+  "b2b": "621.50",
+  "anbau": "734.50"
+ },
+ {
+  "id": 37300,
+  "sku": "113056",
+  "name": "Twister T2 Washer, Flat, 10,.22ID x .44OD, SS",
+  "ek": "4.25",
+  "b2b": "4.68",
+  "anbau": "5.53"
+ },
+ {
+  "id": 37302,
+  "sku": "113063",
+  "name": "Twister T6 Brush, Nylon",
+  "ek": "165.00",
+  "b2b": "181.50",
+  "anbau": "214.50"
+ },
+ {
+  "id": 37304,
+  "sku": "113065",
+  "name": "Twister Cuff, Hose,, 5', FOR RH Spriral Hose",
+  "ek": "69.66",
+  "b2b": "76.63",
+  "anbau": "90.56"
+ },
+ {
+  "id": 37306,
+  "sku": "113070",
+  "name": "Twister T4, Ersatzteile, Tumbler, Standard , Packaged",
+  "ek": "1268.50",
+  "b2b": "1395.35",
+  "anbau": "1649.05"
+ },
+ {
+  "id": 37308,
+  "sku": "113188",
+  "name": "Twister T4, Erntemaschine für feuchte und trockene Ernte, Si",
+  "ek": "6650.00",
+  "b2b": "7315.00",
+  "anbau": "8645.00"
+ },
+ {
+  "id": 37310,
+  "sku": "113304",
+  "name": "Twister Cure Puck Gen1",
+  "ek": "530.00",
+  "b2b": "583.00",
+  "anbau": "689.00"
+ },
+ {
+  "id": 37315,
+  "sku": "102250",
+  "name": "Advanced Hydroponics pH+ Up, 500 ml",
+  "ek": "4.80",
+  "b2b": "5.28",
+  "anbau": "6.24"
+ },
+ {
+  "id": 37317,
+  "sku": "102251",
+  "name": "Advanced Hydroponics pH+ Up, 1 L",
+  "ek": "8.25",
+  "b2b": "9.08",
+  "anbau": "10.73"
+ },
+ {
+  "id": 37319,
+  "sku": "102252",
+  "name": "Advanced Hydroponics pH+ Up, 5 L",
+  "ek": "31.50",
+  "b2b": "34.65",
+  "anbau": "40.95"
+ },
+ {
+  "id": 37321,
+  "sku": "102256",
+  "name": "Advanced Hydroponics pH- Down Bloom, 500 ml",
+  "ek": "4.75",
+  "b2b": "5.23",
+  "anbau": "6.18"
+ },
+ {
+  "id": 37323,
+  "sku": "102257",
+  "name": "Advanced Hydroponics pH- Down Bloom, 1 L",
+  "ek": "7.95",
+  "b2b": "8.75",
+  "anbau": "10.34"
+ },
+ {
+  "id": 37325,
+  "sku": "102258",
+  "name": "Advanced Hydroponics pH- Down Bloom, 5 L",
+  "ek": "31.15",
+  "b2b": "34.27",
+  "anbau": "40.50"
+ },
+ {
+  "id": 37327,
+  "sku": "102259",
+  "name": "Advanced Hydroponics Root Stimulator, 250 ml",
+  "ek": "6.45",
+  "b2b": "7.10",
+  "anbau": "8.39"
+ },
+ {
+  "id": 37329,
+  "sku": "102260",
+  "name": "Advanced Hydroponics Root Stimulator, 500 ml",
+  "ek": "11.55",
+  "b2b": "12.71",
+  "anbau": "15.02"
+ },
+ {
+  "id": 37331,
+  "sku": "102261",
+  "name": "Advanced Hydroponics Root Stimulator, 1 L",
+  "ek": "21.30",
+  "b2b": "23.43",
+  "anbau": "27.69"
+ },
+ {
+  "id": 37333,
+  "sku": "102262",
+  "name": "Advanced Hydroponics Root Stimulator, 5 L",
+  "ek": "74.75",
+  "b2b": "82.23",
+  "anbau": "97.18"
+ },
+ {
+  "id": 37335,
+  "sku": "102263",
+  "name": "Advanced Hydroponics Growth/Bloom Excellarator, 250 ml",
+  "ek": "6.55",
+  "b2b": "7.21",
+  "anbau": "8.52"
+ },
+ {
+  "id": 37337,
+  "sku": "102264",
+  "name": "Advanced Hydroponics Growth/Bloom Excellarator, 0,5 L",
+  "ek": "11.75",
+  "b2b": "12.93",
+  "anbau": "15.28"
+ },
+ {
+  "id": 37339,
+  "sku": "102265",
+  "name": "Advanced Hydroponics Growth/Bloom Excellarator, 1 L",
+  "ek": "21.30",
+  "b2b": "23.43",
+  "anbau": "27.69"
+ },
+ {
+  "id": 37341,
+  "sku": "102266",
+  "name": "Advanced Hydroponics Growth/Bloom Excellerator, 5 L",
+  "ek": "68.50",
+  "b2b": "75.35",
+  "anbau": "89.05"
+ },
+ {
+  "id": 37343,
+  "sku": "102267",
+  "name": "Advanced Hydroponics Final Solution, 250 ml",
+  "ek": "6.00",
+  "b2b": "6.60",
+  "anbau": "7.80"
+ },
+ {
+  "id": 37345,
+  "sku": "102268",
+  "name": "Advanced Hydroponics Final Solution, 500 ml",
+  "ek": "10.75",
+  "b2b": "11.83",
+  "anbau": "13.98"
+ },
+ {
+  "id": 37347,
+  "sku": "102269",
+  "name": "Advanced Hydroponics Final Solution, 1 L",
+  "ek": "19.75",
+  "b2b": "21.73",
+  "anbau": "25.68"
+ },
+ {
+  "id": 37349,
+  "sku": "102270",
+  "name": "Advanced Hydroponics Final Solution, 5 L",
+  "ek": "68.50",
+  "b2b": "75.35",
+  "anbau": "89.05"
+ },
+ {
+  "id": 37351,
+  "sku": "102271",
+  "name": "Advanced Hydroponics Enzymes plus, 250 ml",
+  "ek": "5.85",
+  "b2b": "6.44",
+  "anbau": "7.61"
+ },
+ {
+  "id": 37353,
+  "sku": "102272",
+  "name": "Advanced Hydroponics Enzymes plus, 0,5 L",
+  "ek": "10.75",
+  "b2b": "11.83",
+  "anbau": "13.98"
+ },
+ {
+  "id": 37355,
+  "sku": "102273",
+  "name": "Advanced Hydroponics Enzymes plus, 1 L",
+  "ek": "19.75",
+  "b2b": "21.73",
+  "anbau": "25.68"
+ },
+ {
+  "id": 37357,
+  "sku": "102274",
+  "name": "Advanced Hydroponics Enzymes plus, 5 L",
+  "ek": "68.50",
+  "b2b": "75.35",
+  "anbau": "89.05"
+ },
+ {
+  "id": 37359,
+  "sku": "112308",
+  "name": "Advanced Hydroponics, CalMag, 500 ml",
+  "ek": "5.25",
+  "b2b": "5.78",
+  "anbau": "6.83"
+ },
+ {
+  "id": 37361,
+  "sku": "112309",
+  "name": "Advanced Hydroponics, CalMag, 1 L",
+  "ek": "7.65",
+  "b2b": "8.42",
+  "anbau": "9.95"
+ },
+ {
+  "id": 37363,
+  "sku": "112310",
+  "name": "Advanced Hydroponics, CalMag, 5 L",
+  "ek": "29.50",
+  "b2b": "32.45",
+  "anbau": "38.35"
+ },
+ {
+  "id": 37365,
+  "sku": "113090",
+  "name": "Advanced Hydroponics Silica 60 ml",
+  "ek": "3.35",
+  "b2b": "3.69",
+  "anbau": "4.36"
+ },
+ {
+  "id": 37367,
+  "sku": "113091",
+  "name": "Advanced Hydroponics Silica 100 ml",
+  "ek": "4.40",
+  "b2b": "4.84",
+  "anbau": "5.72"
+ },
+ {
+  "id": 37369,
+  "sku": "113092",
+  "name": "Advanced Hydroponics Silica 250 ml",
+  "ek": "8.60",
+  "b2b": "9.46",
+  "anbau": "11.18"
+ },
+ {
+  "id": 37371,
+  "sku": "113093",
+  "name": "Advanced Hydroponics Silica 500 ml",
+  "ek": "15.45",
+  "b2b": "17.00",
+  "anbau": "20.09"
+ },
+ {
+  "id": 37373,
+  "sku": "113094",
+  "name": "Advanced Hydroponics Silica 1L",
+  "ek": "29.60",
+  "b2b": "32.56",
+  "anbau": "38.48"
+ },
+ {
+  "id": 37375,
+  "sku": "113095",
+  "name": "Advanced Hydroponics Amino 60 ml",
+  "ek": "3.60",
+  "b2b": "3.96",
+  "anbau": "4.68"
+ },
+ {
+  "id": 37377,
+  "sku": "113096",
+  "name": "Advanced Hydroponics Amino 100 ml",
+  "ek": "4.80",
+  "b2b": "5.28",
+  "anbau": "6.24"
+ },
+ {
+  "id": 37379,
+  "sku": "113097",
+  "name": "Advanced Hydroponics Amino 250 ml",
+  "ek": "9.75",
+  "b2b": "10.73",
+  "anbau": "12.68"
+ },
+ {
+  "id": 37381,
+  "sku": "113098",
+  "name": "Advanced Hydroponics Amino 500 ml",
+  "ek": "17.50",
+  "b2b": "19.25",
+  "anbau": "22.75"
+ },
+ {
+  "id": 37383,
+  "sku": "113099",
+  "name": "Advanced Hydroponics Amino 1L",
+  "ek": "31.95",
+  "b2b": "35.15",
+  "anbau": "41.54"
+ },
+ {
+  "id": 37385,
+  "sku": "113100",
+  "name": "Advanced Hydroponics PK 250 ml",
+  "ek": "3.65",
+  "b2b": "4.02",
+  "anbau": "4.75"
+ },
+ {
+  "id": 37387,
+  "sku": "113101",
+  "name": "Advanced Hydroponics PK 500 ml",
+  "ek": "5.25",
+  "b2b": "5.78",
+  "anbau": "6.83"
+ },
+ {
+  "id": 37389,
+  "sku": "113102",
+  "name": "Advanced Hydroponics PK 1L",
+  "ek": "7.65",
+  "b2b": "8.42",
+  "anbau": "9.95"
+ },
+ {
+  "id": 37391,
+  "sku": "113103",
+  "name": "Advanced Hydroponics Flowering Boost 100 ml",
+  "ek": "3.25",
+  "b2b": "3.58",
+  "anbau": "4.23"
+ },
+ {
+  "id": 37393,
+  "sku": "113104",
+  "name": "Advanced Hydroponics Flowering Boost 500 ml",
+  "ek": "10.25",
+  "b2b": "11.28",
+  "anbau": "13.33"
+ },
+ {
+  "id": 37395,
+  "sku": "113105",
+  "name": "Advanced Hydroponics Flowering Boost 1 L",
+  "ek": "18.95",
+  "b2b": "20.85",
+  "anbau": "24.64"
+ },
+ {
+  "id": 37397,
+  "sku": "113106",
+  "name": "Advanced Hydroponics Bacto Force 450 g",
+  "ek": "4.90",
+  "b2b": "5.39",
+  "anbau": "6.37"
+ },
+ {
+  "id": 37399,
+  "sku": "112362",
+  "name": "Biobizz GREEN MYSTIC 250ml - Juju Royal",
+  "ek": "4.16",
+  "b2b": "4.58",
+  "anbau": "5.41"
+ },
+ {
+  "id": 37400,
+  "sku": "112363",
+  "name": "Biobizz GREEN MYSTIC 1 L- Juju Royal",
+  "ek": "11.82",
+  "b2b": "13.00",
+  "anbau": "15.37"
+ },
+ {
+  "id": 37401,
+  "sku": "112364",
+  "name": "Biobizz GREEN MYSTIC 5 L- Juju Royal",
+  "ek": "52.15",
+  "b2b": "57.37",
+  "anbau": "67.80"
+ },
+ {
+  "id": 37402,
+  "sku": "112365",
+  "name": "Biobizz FLOWA BLOOM 250ml - Juju Royal",
+  "ek": "2.57",
+  "b2b": "2.83",
+  "anbau": "3.34"
+ },
+ {
+  "id": 37403,
+  "sku": "112366",
+  "name": "Biobizz FLOWA BLOOM 1 L - Juju Royal",
+  "ek": "8.44",
+  "b2b": "9.28",
+  "anbau": "10.97"
+ },
+ {
+  "id": 37404,
+  "sku": "112367",
+  "name": "Biobizz FLOWA BLOOM 5 L - Juju Royal",
+  "ek": "33.56",
+  "b2b": "36.92",
+  "anbau": "43.63"
+ },
+ {
+  "id": 37405,
+  "sku": "112368",
+  "name": "Biobizz GROW SOLDIER 250ml - Juju Royal",
+  "ek": "2.31",
+  "b2b": "2.54",
+  "anbau": "3.00"
+ },
+ {
+  "id": 37406,
+  "sku": "112369",
+  "name": "Biobizz GROW SOLDIER 1 L - Juju Royal",
+  "ek": "7.28",
+  "b2b": "8.01",
+  "anbau": "9.46"
+ },
+ {
+  "id": 37407,
+  "sku": "112370",
+  "name": "Biobizz GROW SOLDIER 5 L - Juju Royal",
+  "ek": "28.94",
+  "b2b": "31.83",
+  "anbau": "37.62"
+ },
+ {
+  "id": 37408,
+  "sku": "112379",
+  "name": "Biobizz l&l Try Pack - Juju Royal",
+  "ek": "9.24",
+  "b2b": "10.16",
+  "anbau": "12.01"
+ },
+ {
+  "id": 37409,
+  "sku": "111893",
+  "name": "Essentials LAB pH+, 250 ml",
+  "ek": "2.74",
+  "b2b": "3.01",
+  "anbau": "3.56"
+ },
+ {
+  "id": 37411,
+  "sku": "111894",
+  "name": "Essentials LAB pH+, 1 L",
+  "ek": "6.69",
+  "b2b": "7.36",
+  "anbau": "8.70"
+ },
+ {
+  "id": 37413,
+  "sku": "111895",
+  "name": "Essentials LAB pH-, 81% Phoshorsäure, 250 ml",
+  "ek": "3.80",
+  "b2b": "4.18",
+  "anbau": "4.94"
+ },
+ {
+  "id": 37415,
+  "sku": "111896",
+  "name": "Essentials LAB pH-, 81% Phoshorsäure, 1 L",
+  "ek": "10.50",
+  "b2b": "11.55",
+  "anbau": "13.65"
+ },
+ {
+  "id": 37417,
+  "sku": "111897",
+  "name": "Essentials LAB Buffer 4, 250 ml",
+  "ek": "2.19",
+  "b2b": "2.41",
+  "anbau": "2.85"
+ },
+ {
+  "id": 37419,
+  "sku": "111898",
+  "name": "Essentials LAB Buffer 4, 1 L",
+  "ek": "4.21",
+  "b2b": "4.63",
+  "anbau": "5.47"
+ },
+ {
+  "id": 37421,
+  "sku": "111899",
+  "name": "Essentials LAB Buffer 7, 250 ml",
+  "ek": "2.08",
+  "b2b": "2.29",
+  "anbau": "2.70"
+ },
+ {
+  "id": 37423,
+  "sku": "111900",
+  "name": "Essentials LAB Buffer 7, 1 L",
+  "ek": "3.77",
+  "b2b": "4.15",
+  "anbau": "4.90"
+ },
+ {
+  "id": 37425,
+  "sku": "111902",
+  "name": "Essentials LAB EC Meter Eichlösung, 250 ml",
+  "ek": "1.92",
+  "b2b": "2.11",
+  "anbau": "2.50"
+ },
+ {
+  "id": 37427,
+  "sku": "112185",
+  "name": "Essentials PLUS SILICON, 250 ml",
+  "ek": "2.82",
+  "b2b": "3.10",
+  "anbau": "3.67"
+ },
+ {
+  "id": 37429,
+  "sku": "112186",
+  "name": "Essentials PLUS SILICON, 1 L",
+  "ek": "3.94",
+  "b2b": "4.33",
+  "anbau": "5.12"
+ },
+ {
+  "id": 37431,
+  "sku": "112187",
+  "name": "Essentials PLUS SILICON, 5 L",
+  "ek": "13.20",
+  "b2b": "14.52",
+  "anbau": "17.16"
+ },
+ {
+  "id": 37433,
+  "sku": "112189",
+  "name": "Essentials PLUS GREEN UP, 250 ml",
+  "ek": "3.42",
+  "b2b": "3.76",
+  "anbau": "4.45"
+ },
+ {
+  "id": 37435,
+  "sku": "112190",
+  "name": "Essentials PLUS GREEN UP, 1 L",
+  "ek": "6.38",
+  "b2b": "7.02",
+  "anbau": "8.29"
+ },
+ {
+  "id": 37437,
+  "sku": "112191",
+  "name": "Essentials PLUS GREEN UP, 5 L",
+  "ek": "19.97",
+  "b2b": "21.97",
+  "anbau": "25.96"
+ },
+ {
+  "id": 37439,
+  "sku": "112192",
+  "name": "Essentials PLUS OXY 12%, 1 L",
+  "ek": "3.85",
+  "b2b": "4.24",
+  "anbau": "5.01"
+ },
+ {
+  "id": 37441,
+  "sku": "112193",
+  "name": "Essentials PLUS OXY 12%, 5 L",
+  "ek": "13.85",
+  "b2b": "15.24",
+  "anbau": "18.01"
+ },
+ {
+  "id": 37443,
+  "sku": "112194",
+  "name": "Essentials PLUS CALMAG, 250 ml",
+  "ek": "2.82",
+  "b2b": "3.10",
+  "anbau": "3.67"
+ },
+ {
+  "id": 37445,
+  "sku": "112195",
+  "name": "Essentials PLUS CALMAG, 1 L",
+  "ek": "4.82",
+  "b2b": "5.30",
+  "anbau": "6.27"
+ },
+ {
+  "id": 37447,
+  "sku": "112196",
+  "name": "Essentials PLUS CALMAG, 5 L",
+  "ek": "18.82",
+  "b2b": "20.70",
+  "anbau": "24.47"
+ },
+ {
+  "id": 37449,
+  "sku": "112197",
+  "name": "Essentials PLUS CALMAG, 10 L",
+  "ek": "32.00",
+  "b2b": "35.20",
+  "anbau": "41.60"
+ },
+ {
+  "id": 37451,
+  "sku": "112198",
+  "name": "Essentials PLUS PK 13/14, 250 ml",
+  "ek": "2.99",
+  "b2b": "3.29",
+  "anbau": "3.89"
+ },
+ {
+  "id": 37453,
+  "sku": "112199",
+  "name": "Essentials PLUS PK 13/14, 1 L",
+  "ek": "6.82",
+  "b2b": "7.50",
+  "anbau": "8.87"
+ },
+ {
+  "id": 37455,
+  "sku": "112200",
+  "name": "Essentials PLUS NO STRESS, 250 ml",
+  "ek": "15.00",
+  "b2b": "16.50",
+  "anbau": "19.50"
+ },
+ {
+  "id": 37457,
+  "sku": "112201",
+  "name": "Essentials PLUS NO STRESS, 1 L",
+  "ek": "39.00",
+  "b2b": "42.90",
+  "anbau": "50.70"
+ },
+ {
+  "id": 37459,
+  "sku": "112202",
+  "name": "Essentials PLUS FLUSH, 250 ml",
+  "ek": "3.61",
+  "b2b": "3.97",
+  "anbau": "4.69"
+ },
+ {
+  "id": 37461,
+  "sku": "112203",
+  "name": "Essentials PLUS FLUSH, 1 L",
+  "ek": "6.96",
+  "b2b": "7.66",
+  "anbau": "9.05"
+ },
+ {
+  "id": 37463,
+  "sku": "112204",
+  "name": "Essentials PLUS FLUSH, 5 L",
+  "ek": "23.20",
+  "b2b": "25.52",
+  "anbau": "30.16"
+ },
+ {
+  "id": 37465,
+  "sku": "103642",
+  "name": "Pollinator, für bis zu 150 g Pflanzenmaterial",
+  "ek": "287.32",
+  "b2b": "316.05",
+  "anbau": "373.52"
+ },
+ {
+  "id": 37467,
+  "sku": "103643",
+  "name": "Pollinator, für bis zu 500 g Pflanzenmaterial",
+  "ek": "513.66",
+  "b2b": "565.03",
+  "anbau": "667.76"
+ },
+ {
+  "id": 37469,
+  "sku": "103648",
+  "name": "maXtractor Extraktionssieb, 225 µm, Polyamidgewebe, pro lfm ",
+  "ek": "9.64",
+  "b2b": "10.60",
+  "anbau": "12.53"
+ },
+ {
+  "id": 37471,
+  "sku": "103649",
+  "name": "maXtractor Extraktionssieb, 75 µm, Polyamidgewebe, pro lfm (",
+  "ek": "13.45",
+  "b2b": "14.80",
+  "anbau": "17.49"
+ },
+ {
+  "id": 37473,
+  "sku": "103650",
+  "name": "maXtractor Extraktionssieb, 125 µm, Polyamidgewebe, pro lfm ",
+  "ek": "16.25",
+  "b2b": "17.88",
+  "anbau": "21.13"
+ },
+ {
+  "id": 37475,
+  "sku": "103651",
+  "name": "maXtractor Extraktionssieb, 170 µm, Polyamidgewebe, pro lfm ",
+  "ek": "10.25",
+  "b2b": "11.28",
+  "anbau": "13.33"
+ },
+ {
+  "id": 37477,
+  "sku": "103744",
+  "name": "Pyramiden-Sack, klein, Ersatzteil für Bubble Machine Art. 10",
+  "ek": "24.00",
+  "b2b": "26.40",
+  "anbau": "31.20"
+ },
+ {
+  "id": 37479,
+  "sku": "103745",
+  "name": "Bubble Machine, 2x Extraktorbeutel (45+190µm), 1 Pyramidensa",
+  "ek": "80.94",
+  "b2b": "89.03",
+  "anbau": "105.22"
+ },
+ {
+  "id": 37481,
+  "sku": "108588",
+  "name": "maXtractor Extraktorbeutel, 3,8 L, 3er-Set",
+  "ek": "9.00",
+  "b2b": "9.90",
+  "anbau": "11.70"
+ },
+ {
+  "id": 37483,
+  "sku": "108589",
+  "name": "maXtractor Extraktorbeutel, 19 L, 4er-Set, 45, 120, 160 u. 2",
+  "ek": "42.68",
+  "b2b": "46.95",
+  "anbau": "55.48"
+ },
+ {
+  "id": 37485,
+  "sku": "109104",
+  "name": "GIB Industries Polm Shaker 'Shake'n'joy'",
+  "ek": "10.49",
+  "b2b": "11.54",
+  "anbau": "13.64"
+ },
+ {
+  "id": 37487,
+  "sku": "111995",
+  "name": "Magical Butter Machine, Planzenextraktor Set",
+  "ek": "116.78",
+  "b2b": "128.46",
+  "anbau": "151.81"
+ },
+ {
+  "id": 37489,
+  "sku": "103699",
+  "name": "GIB Industries 10-Tonnen-Presse, mit Rahmen, Pressform und 1",
+  "ek": "120.00",
+  "b2b": "132.00",
+  "anbau": "156.00"
+ },
+ {
+  "id": 37491,
+  "sku": "103701",
+  "name": "GIB Industries Verstärkter Pressrahmen, mit Pressform 14 x 6",
+  "ek": "86.98",
+  "b2b": "95.68",
+  "anbau": "113.07"
+ },
+ {
+  "id": 37493,
+  "sku": "106550",
+  "name": "Jack Puck 8 Tonnen-Pressform, viereckig 16,5 x 17 x 7,5 cm J",
+  "ek": "93.00",
+  "b2b": "102.30",
+  "anbau": "120.90"
+ },
+ {
+  "id": 37495,
+  "sku": "108910",
+  "name": "Hydraulikheber für 10-Tonnen-Presse (Art. 103699)",
+  "ek": "35.00",
+  "b2b": "38.50",
+  "anbau": "45.50"
+ },
+ {
+  "id": 37497,
+  "sku": "111563",
+  "name": "Qnubu Press Kompact 2.0 Manual 600 kg, Heißdruckpresse, 6 x ",
+  "ek": "155.00",
+  "b2b": "170.50",
+  "anbau": "201.50"
+ },
+ {
+  "id": 37499,
+  "sku": "111564",
+  "name": "Qnubu Press Bolt Manual 1 Tonne, Heißdruckpresse, 6 x 12 cm ",
+  "ek": "250.00",
+  "b2b": "275.00",
+  "anbau": "325.00"
+ },
+ {
+  "id": 37503,
+  "sku": "111565",
+  "name": "Qnubu Press Pro Hydraulic 2 Tonnen, Heißdruckpresse, 6 x 12 ",
+  "ek": "380.00",
+  "b2b": "418.00",
+  "anbau": "494.00"
+ },
+ {
+  "id": 37508,
+  "sku": "111566",
+  "name": "Qnubu Press Pro Hydraulic 6 Tonnen, Heißdruckpresse, 12 x 12",
+  "ek": "550.00",
+  "b2b": "605.00",
+  "anbau": "715.00"
+ },
+ {
+  "id": 37513,
+  "sku": "111567",
+  "name": "Qnubu Press Pro-Rot 10 Tonnen, Heißdruckpresse, 12 x 12 cm P",
+  "ek": "700.00",
+  "b2b": "770.00",
+  "anbau": "910.00"
+ },
+ {
+  "id": 37515,
+  "sku": "111570",
+  "name": "Qnubu Press Pro Lion Hydraulic 20 Tonnen, Heißdruckpresse, 7",
+  "ek": "900.00",
+  "b2b": "990.00",
+  "anbau": "1170.00"
+ },
+ {
+  "id": 37522,
+  "sku": "111572",
+  "name": "Qnubu Press Auto Lion 20 Tonnen, automatische Heißdruckpress",
+  "ek": "1200.00",
+  "b2b": "1320.00",
+  "anbau": "1560.00"
+ },
+ {
+  "id": 37527,
+  "sku": "111573",
+  "name": "Qnubu Pre-Press, Pressform, 5 x 10 cm",
+  "ek": "35.00",
+  "b2b": "38.50",
+  "anbau": "45.50"
+ },
+ {
+  "id": 37532,
+  "sku": "111574",
+  "name": "Qnubu Vac Sealer, Gerät zum Vakuumieren und Versiegeln, 90 W",
+  "ek": "19.50",
+  "b2b": "21.45",
+  "anbau": "25.35"
+ },
+ {
+  "id": 37540,
+  "sku": "111576",
+  "name": "Qnubu Nitrovac Sealer, 50 cm, Gerät zum Versiegeln und Vakuu",
+  "ek": "750.00",
+  "b2b": "825.00",
+  "anbau": "975.00"
+ },
+ {
+  "id": 37548,
+  "sku": "111577",
+  "name": "Qnubu NitroVac Automatic Sealer, Gerät zum Versiegeln und Va",
+  "ek": "1800.00",
+  "b2b": "1980.00",
+  "anbau": "2340.00"
+ },
+ {
+  "id": 37553,
+  "sku": "111578",
+  "name": "Qnubu Extraction Paper 15 cm, 5 m Rolle",
+  "ek": "1.86",
+  "b2b": "2.05",
+  "anbau": "2.42"
+ },
+ {
+  "id": 37558,
+  "sku": "111579",
+  "name": "Qnubu Extraction Paper 30 cm, 5 m Rolle",
+  "ek": "2.69",
+  "b2b": "2.96",
+  "anbau": "3.50"
+ },
+ {
+  "id": 37564,
+  "sku": "111586",
+  "name": "Qnubu Extraktionsbeutel 15 µm, 11 x 5 cm, 10 St je Pckg",
+  "ek": "4.42",
+  "b2b": "4.86",
+  "anbau": "5.75"
+ },
+ {
+  "id": 37566,
+  "sku": "111587",
+  "name": "Qnubu Extraktionsbeutel 25 µm, 11 x 5 cm, 10 St je Pckg",
+  "ek": "4.42",
+  "b2b": "4.86",
+  "anbau": "5.75"
+ },
+ {
+  "id": 37569,
+  "sku": "111588",
+  "name": "Qnubu Extraktionsbeutel 37 µm, 11 x 5 cm, 10 St je Pckg",
+  "ek": "4.42",
+  "b2b": "4.86",
+  "anbau": "5.75"
+ },
+ {
+  "id": 37572,
+  "sku": "111589",
+  "name": "Qnubu Extraktionsbeutel, 70 µm, 11 x 5 cm, 10 St je Pckg",
+  "ek": "4.42",
+  "b2b": "4.86",
+  "anbau": "5.75"
+ },
+ {
+  "id": 37575,
+  "sku": "111590",
+  "name": "Qnubu Extraktionsbeutel 90 µm, 11 x 5 cm, 10 St je Pckg",
+  "ek": "4.42",
+  "b2b": "4.86",
+  "anbau": "5.75"
+ },
+ {
+  "id": 37579,
+  "sku": "111591",
+  "name": "Qnubu Extraktionsbeutel 120 µm, 11 x 5 cm, 10 St je Pckg",
+  "ek": "4.42",
+  "b2b": "4.86",
+  "anbau": "5.75"
+ },
+ {
+  "id": 37581,
+  "sku": "111592",
+  "name": "Qnubu Extraktionsbeutel 160 µm, 11 x 5 cm, 10 St je Pckg",
+  "ek": "4.42",
+  "b2b": "4.86",
+  "anbau": "5.75"
+ },
+ {
+  "id": 37583,
+  "sku": "111593",
+  "name": "Qnubu Extraktionsbeutel 37 µm,, 11 x 11 cm, 10 St je Pckg",
+  "ek": "6.60",
+  "b2b": "7.26",
+  "anbau": "8.58"
+ },
+ {
+  "id": 37585,
+  "sku": "111594",
+  "name": "Qnubu Extraktionsbeutel 160 µm, 11 x 11 cm, 10 St je Pckg",
+  "ek": "6.60",
+  "b2b": "7.26",
+  "anbau": "8.58"
+ },
+ {
+  "id": 37587,
+  "sku": "111595",
+  "name": "Qnubu Silikonmatte, 21 x 30 cm",
+  "ek": "4.20",
+  "b2b": "4.62",
+  "anbau": "5.46"
+ },
+ {
+  "id": 37590,
+  "sku": "111596",
+  "name": "Qnubu Silikon Einmachglas 6 ml, Display L 70 Unit",
+  "ek": "36.39",
+  "b2b": "40.03",
+  "anbau": "47.31"
+ },
+ {
+  "id": 37595,
+  "sku": "111597",
+  "name": "Mix Qnubu Silikon Display XL",
+  "ek": "101.75",
+  "b2b": "111.93",
+  "anbau": "132.28"
+ },
+ {
+  "id": 37598,
+  "sku": "113006",
+  "name": "Qnubu Zip Bags Smell Proof Black 7g 10 x 16,5cm , 50er Pack",
+  "ek": "5.25",
+  "b2b": "5.78",
+  "anbau": "6.83"
+ },
+ {
+  "id": 37600,
+  "sku": "113007",
+  "name": "Qnubu Zip Bags Smell Proof Black 1g 7,5 x 11cm, 50er Pack",
+  "ek": "3.50",
+  "b2b": "3.85",
+  "anbau": "4.55"
+ },
+ {
+  "id": 37602,
+  "sku": "113197",
+  "name": "Qnubu Beutel aus Aluminiumfolie silberne, verschließbar, 45 ",
+  "ek": "49.00",
+  "b2b": "53.90",
+  "anbau": "63.70"
+ },
+ {
+  "id": 37605,
+  "sku": "107440",
+  "name": "Schraube für Air-Pot - Hellblau (3 bis 39L)",
+  "ek": "0.35",
+  "b2b": "0.39",
+  "anbau": "0.46"
+ },
+ {
+  "id": 37607,
+  "sku": "112808",
+  "name": "Air-Pot® 7- 1 L, ø 10 cm",
+  "ek": "1.17",
+  "b2b": "1.29",
+  "anbau": "1.52"
+ },
+ {
+  "id": 37611,
+  "sku": "112809",
+  "name": "Air-Pot® 7 - 3 L, ø 15 cm",
+  "ek": "2.59",
+  "b2b": "2.85",
+  "anbau": "3.37"
+ },
+ {
+  "id": 37615,
+  "sku": "112810",
+  "name": "Air-Pot® 7 - 5 L, ø 19 cm",
+  "ek": "3.24",
+  "b2b": "3.56",
+  "anbau": "4.21"
+ },
+ {
+  "id": 37619,
+  "sku": "112811",
+  "name": "Air-Pot® 7 - 9 L, ø 22,5 cm",
+  "ek": "5.04",
+  "b2b": "5.54",
+  "anbau": "6.55"
+ },
+ {
+  "id": 37623,
+  "sku": "112812",
+  "name": "Air-Pot® 7 - 12 L, ø 26,5 cm",
+  "ek": "6.06",
+  "b2b": "6.67",
+  "anbau": "7.88"
+ },
+ {
+  "id": 37625,
+  "sku": "112813",
+  "name": "Air-Pot® 7 - 20 L, ø 31,5 cm",
+  "ek": "9.02",
+  "b2b": "9.92",
+  "anbau": "11.73"
+ },
+ {
+  "id": 37631,
+  "sku": "112814",
+  "name": "Air-Pot® 7 - 39 L, ø 38,8 cm",
+  "ek": "15.55",
+  "b2b": "17.11",
+  "anbau": "20.22"
+ },
+ {
+  "id": 37633,
+  "sku": "113202",
+  "name": "Schraube für Air-Pot - Dunkelblau",
+  "ek": "0.35",
+  "b2b": "0.39",
+  "anbau": "0.46"
+ },
+ {
+  "id": 37636,
+  "sku": "111086",
+  "name": "VitaLink CalMag, 1 L",
+  "ek": "6.90",
+  "b2b": "7.59",
+  "anbau": "8.97"
+ },
+ {
+  "id": 37639,
+  "sku": "112141",
+  "name": "VitaLink Buddy, 250 ml",
+  "ek": "8.00",
+  "b2b": "8.80",
+  "anbau": "10.40"
+ },
+ {
+  "id": 37641,
+  "sku": "112142",
+  "name": "VitaLink Buddy, 1 L",
+  "ek": "15.00",
+  "b2b": "16.50",
+  "anbau": "19.50"
+ },
+ {
+  "id": 37643,
+  "sku": "112143",
+  "name": "VitaLink Buddy, 5 L",
+  "ek": "29.00",
+  "b2b": "31.90",
+  "anbau": "37.70"
+ },
+ {
+  "id": 37645,
+  "sku": "112144",
+  "name": "VitaLink Buddy, 10 L",
+  "ek": "571.00",
+  "b2b": "628.10",
+  "anbau": "742.30"
+ },
+ {
+  "id": 37647,
+  "sku": "112145",
+  "name": "VitaLink RootStim, 250 ml",
+  "ek": "9.00",
+  "b2b": "9.90",
+  "anbau": "11.70"
+ },
+ {
+  "id": 37649,
+  "sku": "112146",
+  "name": "VitaLink RootStim, 1 L",
+  "ek": "17.00",
+  "b2b": "18.70",
+  "anbau": "22.10"
+ },
+ {
+  "id": 37651,
+  "sku": "112147",
+  "name": "VitaLink RootStim, 5 L",
+  "ek": "33.00",
+  "b2b": "36.30",
+  "anbau": "42.90"
+ },
+ {
+  "id": 37653,
+  "sku": "112148",
+  "name": "VitaLink RootStim, 10 L",
+  "ek": "65.00",
+  "b2b": "71.50",
+  "anbau": "84.50"
+ },
+ {
+  "id": 37655,
+  "sku": "112149",
+  "name": "VitaLink Turbo+, 250 ml",
+  "ek": "12.00",
+  "b2b": "13.20",
+  "anbau": "15.60"
+ },
+ {
+  "id": 37657,
+  "sku": "112150",
+  "name": "VitaLink Turbo+, 1 L",
+  "ek": "30.00",
+  "b2b": "33.00",
+  "anbau": "39.00"
+ },
+ {
+  "id": 37659,
+  "sku": "112151",
+  "name": "VitaLink Turbo+, 5 L",
+  "ek": "114.00",
+  "b2b": "125.40",
+  "anbau": "148.20"
+ },
+ {
+  "id": 37661,
+  "sku": "112152",
+  "name": "VitaLink Turbo+, 10 L",
+  "ek": "162.00",
+  "b2b": "178.20",
+  "anbau": "210.60"
+ },
+ {
+  "id": 37663,
+  "sku": "109840",
+  "name": "Vitaponix VitaSilica, Pflanzenhilfsmittel, 1 Liter",
+  "ek": "36.25",
+  "b2b": "39.88",
+  "anbau": "47.13"
+ },
+ {
+  "id": 37665,
+  "sku": "109841",
+  "name": "Vitaponix VitaSilica, Pflanzenhilfsmittel, 5 Liter",
+  "ek": "150.00",
+  "b2b": "165.00",
+  "anbau": "195.00"
+ },
+ {
+  "id": 37667,
+  "sku": "109842",
+  "name": "Vitaponix VitaBud, Pflanzenhilfsmittel, 1 Liter",
+  "ek": "26.80",
+  "b2b": "29.48",
+  "anbau": "34.84"
+ },
+ {
+  "id": 37669,
+  "sku": "109843",
+  "name": "Vitaponix VitaBud, Pflanzenhilfsmittel, 5 Liter",
+  "ek": "107.30",
+  "b2b": "118.03",
+  "anbau": "139.49"
+ },
+ {
+  "id": 37671,
+  "sku": "109847",
+  "name": "Vitaponix VitaSweet, Pflanzenhilfsmittel, 5 Liter",
+  "ek": "36.25",
+  "b2b": "39.88",
+  "anbau": "47.13"
+ },
+ {
+  "id": 37673,
+  "sku": "109848",
+  "name": "Vitaponix VitaCal, Pflanzenhilfsmittel, 1 Liter",
+  "ek": "8.90",
+  "b2b": "9.79",
+  "anbau": "11.57"
+ },
+ {
+  "id": 37675,
+  "sku": "109849",
+  "name": "Vitaponix VitaCal, Pflanzenhilfsmittel, 5 Liter",
+  "ek": "36.25",
+  "b2b": "39.88",
+  "anbau": "47.13"
+ },
+ {
+  "id": 37677,
+  "sku": "109850",
+  "name": "Vitaponix VitaRoot, Pflanzenhilfsmittel, 1 Liter",
+  "ek": "26.00",
+  "b2b": "28.60",
+  "anbau": "33.80"
+ },
+ {
+  "id": 37679,
+  "sku": "109851",
+  "name": "Vitaponix VitaRoot, Pflanzenhilfsmittel, 5 Liter",
+  "ek": "65.25",
+  "b2b": "71.78",
+  "anbau": "84.83"
+ },
+ {
+  "id": 37681,
+  "sku": "109854",
+  "name": "Vitaponix VitaFinish, Pflanzenhilfsmittel, 1 Liter",
+  "ek": "13.05",
+  "b2b": "14.36",
+  "anbau": "16.97"
+ }
+]

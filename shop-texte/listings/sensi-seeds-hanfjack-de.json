@@ -1,0 +1,3748 @@
+{
+  "marke": "Sensi Seeds",
+  "shop": "hanfjack.de",
+  "pwb_brand_term_id": 2643,
+  "quelle": "Tiger One Katalog (Google-Sheet-Export)",
+  "stand": "2026-09-10",
+  "status_aller_produkte": "draft",
+  "anzahl_produkte": 100,
+  "anzahl_varianten": 220,
+  "preisregel": "regular_price = abrunden(VK_TigerOne x 0,99) auf ganze Euro, Eingabe NETTO (Shop rechnet +7% MwSt.)",
+  "stammdaten": {
+    "tax_status": "taxable",
+    "tax_class": "reduzierter-preis",
+    "shipping_class": "paket-standard",
+    "delivery_time_id": 5417,
+    "attribut": "pa_inhalt (ID 2, global, variantenbildend)",
+    "weight": "0.01",
+    "manage_stock": false,
+    "stock_status": "onbackorder",
+    "backorders": "no"
+  },
+  "packungsgroessen": {
+    "1 Stück": 1,
+    "3 Stück": 55,
+    "4 Stück": 3,
+    "5 Stück": 58,
+    "7 Stück": 3,
+    "10 Stück": 91,
+    "20 Stück": 1,
+    "25 Stück": 8
+  },
+  "nicht_gelistet": [
+    {
+      "sku": "SEN-ALPD-CBD-AUTO-FEM",
+      "name": "Alpine Delight CBD 30:1 Auto feminisiert",
+      "grund": "Tiger One liefert fuer alle drei Packungsgroessen keinen Preis (N/A)"
+    },
+    {
+      "sku": "SEN-MICH-REG",
+      "name": "Michka regulaer",
+      "grund": "Tiger One liefert keinen Preis (N/A)"
+    }
+  ],
+  "hinweise": [
+    "Die Sub-Marke 'Sensi Seeds Research' (SENR-*) ist unter der Marke Sensi Seeds gelistet - im Shop existiert kein eigener Marken-Term dafuer.",
+    "Aktionspackungen aus dem Export wurden in echte Stueckzahlen umgerechnet: '3+1 Seeds' -> 4 Stueck, '5+2 Seeds' -> 7 Stueck.",
+    "36 Artikel kamen im Export ohne parent_sku (meist Regular-Samen als reine 10er-Packung). Sie wurden als variables Produkt mit genau einer Variante angelegt; Eltern-SKU = Lieferanten-Artikelnummer, Varianten-SKU = Artikelnummer + '-10'.",
+    "2 Sorten ohne Preis wurden nicht gelistet (siehe nicht_gelistet).",
+    "3 Sorten ohne Produktbild im Export: SEN-ATBD-FEM, SEN-PAJE-FEM, SEN-SUPE-FEM - Bild muss nachgepflegt werden.",
+    "24 Sorten sind bei Tiger One als Auslaufartikel markiert und wurden auf Wunsch mitgelistet (Feld auslaufartikel).",
+    "2 CBD-Sorten zusaetzlich in Kategorie CBD Samen (2309): SEN-HIM-CBD-FEM, SEN-SBLD-CBD-FEM.",
+    "Produkttexte, Tags und SEO wurden bewusst noch nicht gesetzt.",
+    "Lagerstatus steht auf 'onbackorder' bis die Verfuegbarkeitsliste vorliegt."
+  ],
+  "dubletten_warnung": {
+    "hinweis": "Im Shop existieren bereits 19 Sensi-Seeds-Produkte mit HJ-SKU (Altbestand). Diese wurden NICHT angefasst. Bei 12 davon gibt es eine gleichnamige Sorte in der neuen Listung - vor dem Veroeffentlichen entscheiden, welche Variante bleibt.",
+    "veroeffentlichte_altprodukte_mit_namensgleichheit": [
+      {
+        "id": 13222,
+        "sku": "HJ-5524785",
+        "name": "Sensi Seeds Chocolate Rainbow XXL 3er Pack",
+        "status": "publish"
+      },
+      {
+        "id": 13242,
+        "sku": "HJ-1186551",
+        "name": "Sensi Seeds Hindu Kush",
+        "status": "publish"
+      },
+      {
+        "id": 13254,
+        "sku": "HJ-5559487",
+        "name": "Sensi Seeds Mexican Sativa",
+        "status": "publish"
+      }
+    ],
+    "private_altprodukte_mit_namensgleichheit": [
+      {
+        "id": 13214,
+        "sku": "HJ-1158813",
+        "name": "Sensi Seeds Atomic Blue Dream"
+      },
+      {
+        "id": 13226,
+        "sku": "HJ-1721696",
+        "name": "Sensi Seeds Cosmic Kiss"
+      },
+      {
+        "id": 13238,
+        "sku": "HJ-1872364",
+        "name": "Sensi Seeds Grapevine Candy"
+      },
+      {
+        "id": 13246,
+        "sku": "HJ-2755469",
+        "name": "Sensi Seeds Jack Herer"
+      },
+      {
+        "id": 13258,
+        "sku": "HJ-1684319",
+        "name": "Sensi Seeds Papaya Jealousy"
+      },
+      {
+        "id": 13262,
+        "sku": "HJ-4385792",
+        "name": "Sensi Seeds Shiva Skunk"
+      },
+      {
+        "id": 13266,
+        "sku": "HJ-3598691",
+        "name": "Sensi Seeds Sunset Peach"
+      },
+      {
+        "id": 13270,
+        "sku": "HJ-9993576",
+        "name": "Sensi Seeds Sweet Cherry Kush"
+      },
+      {
+        "id": 13282,
+        "sku": "HJ-9536992",
+        "name": "Sensi Seeds Hindu Kush Automatic"
+      }
+    ],
+    "altprodukte_ohne_entsprechung": [
+      {
+        "id": 13218,
+        "sku": "HJ-4642554",
+        "name": "Sensi Seeds Chemberries"
+      },
+      {
+        "id": 13230,
+        "sku": "HJ-9349625",
+        "name": "Sensi Seeds Dosimosa"
+      },
+      {
+        "id": 13234,
+        "sku": "HJ-1573598",
+        "name": "Sensi Seeds Girl Scout Cookies"
+      },
+      {
+        "id": 13250,
+        "sku": "HJ-5153288",
+        "name": "Sensi Seeds Master Kush"
+      },
+      {
+        "id": 13274,
+        "sku": "HJ-5321334",
+        "name": "Sensi Seeds Tezla OG"
+      },
+      {
+        "id": 13278,
+        "sku": "HJ-4857457",
+        "name": "Sensi Seeds Vlad the Inhaler"
+      },
+      {
+        "id": 13286,
+        "sku": "HJ-6687718",
+        "name": "Sensi Seeds Sauvignon Blanc Automatic"
+      }
+    ]
+  },
+  "produkte": [
+    {
+      "produkt_id": 43849,
+      "name": "Sensi Seeds Afghani #1 Auto feminisiert",
+      "sku_eltern": "sensi-Afghani1-auto-fem",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149150_2184025_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "sensi-Afghani1-auto-fem-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "27",
+          "ek_tigerone": "11.16",
+          "preis_netto": "26",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-Afghani1-auto-fem-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "42.5",
+          "ek_tigerone": "17.56",
+          "preis_netto": "42",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-Afghani1-auto-fem-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "75",
+          "ek_tigerone": "30.99",
+          "preis_netto": "74",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43851,
+      "name": "Sensi Seeds Afghani #1 feminisiert",
+      "sku_eltern": "sensi-afghan-fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149188_2184061_pimcore_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "sensi-afghan-fem-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "25.5",
+          "ek_tigerone": "10.54",
+          "preis_netto": "25",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-afghan-fem-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "40",
+          "ek_tigerone": "16.53",
+          "preis_netto": "39",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-afghan-fem-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "70",
+          "ek_tigerone": "28.93",
+          "preis_netto": "69",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43853,
+      "name": "Sensi Seeds Afghani #1 regulär",
+      "sku_eltern": "SEN2307",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140122_2180604_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN2307-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "55",
+          "ek_tigerone": "22.73",
+          "preis_netto": "54",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43855,
+      "name": "Sensi Seeds Aloha OG feminisiert",
+      "sku_eltern": "SEN-ALOG-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151290_2185037_pimcore_1_1.png",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "SEN-ALOG-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "25",
+          "ek_tigerone": "10.33",
+          "preis_netto": "24",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-ALOG-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "39.5",
+          "ek_tigerone": "16.32",
+          "preis_netto": "39",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-ALOG-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "75",
+          "ek_tigerone": "30.99",
+          "preis_netto": "74",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43857,
+      "name": "Sensi Seeds American Dream regulär",
+      "sku_eltern": "SEN2320",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140104_2180568_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN2320-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "75",
+          "ek_tigerone": "30.99",
+          "preis_netto": "74",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43858,
+      "name": "Sensi Seeds Atomic Blue Dream feminisiert",
+      "sku_eltern": "SEN-ATBD-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN-ATBD-FEM-4",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "12.4",
+          "preis_netto": "29",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-ATBD-FEM-7",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto": "44",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43860,
+      "name": "Sensi Seeds Banana Kush Cake Auto feminisiert",
+      "sku_eltern": "SEN-BANKC-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150148_2184437_pimcore_1_2.png",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN-BANKC-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "24",
+          "ek_tigerone": "9.92",
+          "preis_netto": "23",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-BANKC-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.7",
+          "preis_netto": "37",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-BANKC-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "73",
+          "ek_tigerone": "30.17",
+          "preis_netto": "72",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43862,
+      "name": "Sensi Seeds Big Bud Auto feminisiert",
+      "sku_eltern": "sensi-bigbud-auto-fem",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149148_2184001_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "sensi-bigbud-auto-fem-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "37.5",
+          "ek_tigerone": "15.5",
+          "preis_netto": "37",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-bigbud-auto-fem-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "60",
+          "ek_tigerone": "24.8",
+          "preis_netto": "59",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-bigbud-auto-fem-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "110",
+          "ek_tigerone": "45.46",
+          "preis_netto": "108",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43864,
+      "name": "Sensi Seeds Big Bud feminisiert",
+      "sku_eltern": "sensi-bb-fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148040_2183677_pimcore_1_5.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "sensi-bb-fem-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "35",
+          "ek_tigerone": "14.46",
+          "preis_netto": "34",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-bb-fem-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "56",
+          "ek_tigerone": "23.14",
+          "preis_netto": "55",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-bb-fem-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "108",
+          "ek_tigerone": "44.63",
+          "preis_netto": "106",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "sensi-bb-fem-25",
+          "inhalt": "25 Stück",
+          "pack_lieferant": "25 Seeds",
+          "vk_tigerone": "235",
+          "ek_tigerone": "97.11",
+          "preis_netto": "232",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43866,
+      "name": "Sensi Seeds Big Bud regulär",
+      "sku_eltern": "SEN335",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140137_2180634_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN335-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "95",
+          "ek_tigerone": "39.26",
+          "preis_netto": "94",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43868,
+      "name": "Sensi Seeds Black Domina feminisiert",
+      "sku_eltern": "sensi-blackdom-fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149017_2183941_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "sensi-blackdom-fem-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "37.5",
+          "ek_tigerone": "15.5",
+          "preis_netto": "37",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-blackdom-fem-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "60",
+          "ek_tigerone": "24.8",
+          "preis_netto": "59",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-blackdom-fem-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "110",
+          "ek_tigerone": "45.46",
+          "preis_netto": "108",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43870,
+      "name": "Sensi Seeds Black Domina regulär",
+      "sku_eltern": "SEN2311",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140140_2180640_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN2311-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "105",
+          "ek_tigerone": "43.39",
+          "preis_netto": "103",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43872,
+      "name": "Sensi Seeds Blue Bullet Auto feminisiert",
+      "sku_eltern": "SEN-BLB-AUTO",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149973_2184349_pimcore_1.png",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "SEN-BLB-AUTO-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "21.5",
+          "ek_tigerone": "8.89",
+          "preis_netto": "21",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-BLB-AUTO-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "34",
+          "ek_tigerone": "14.05",
+          "preis_netto": "33",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-BLB-AUTO-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "65",
+          "ek_tigerone": "26.86",
+          "preis_netto": "64",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43874,
+      "name": "Sensi Seeds Blue Skunk feminisiert",
+      "sku_eltern": "SEN-BLUSK-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151471_2186101_pimcore_1_2.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN-BLUSK-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "22.5",
+          "ek_tigerone": "9.3",
+          "preis_netto": "22",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-BLUSK-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "34.5",
+          "ek_tigerone": "14.26",
+          "preis_netto": "34",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-BLUSK-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "65",
+          "ek_tigerone": "26.86",
+          "preis_netto": "64",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43876,
+      "name": "Sensi Seeds Buttercream Gelato feminisiert",
+      "sku_eltern": "SENR-BCG-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149992_995029_pimcore.png",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "SENR-BCG-FEM-1",
+          "inhalt": "1 Stück",
+          "pack_lieferant": "1 Seed",
+          "vk_tigerone": "7.5",
+          "ek_tigerone": "3.54",
+          "preis_netto": "7",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43878,
+      "name": "Sensi Seeds California Indica feminisiert",
+      "sku_eltern": "sensi-cal-indica-fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149187_2184049_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "sensi-cal-indica-fem-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "21",
+          "ek_tigerone": "8.68",
+          "preis_netto": "20",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-cal-indica-fem-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "32.5",
+          "ek_tigerone": "13.43",
+          "preis_netto": "32",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-cal-indica-fem-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "55",
+          "ek_tigerone": "22.73",
+          "preis_netto": "54",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43880,
+      "name": "Sensi Seeds Californian Indica regulär",
+      "sku_eltern": "SEN2312",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140098_2180556_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN2312-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "48",
+          "ek_tigerone": "19.84",
+          "preis_netto": "47",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43882,
+      "name": "Sensi Seeds Caramellow Kush Auto feminisiert",
+      "sku_eltern": "SEN-CARKU-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151296_2185109_pimcore_1_1.png",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN-CARKU-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "22.5",
+          "ek_tigerone": "9.3",
+          "preis_netto": "22",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-CARKU-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "34.5",
+          "ek_tigerone": "14.26",
+          "preis_netto": "34",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-CARKU-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "65",
+          "ek_tigerone": "26.86",
+          "preis_netto": "64",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43884,
+      "name": "Sensi Seeds Cashew Kush feminisiert",
+      "sku_eltern": "SEN-CASHKUSH-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151286_2184989_pimcore_1_1.png",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "SEN-CASHKUSH-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "32",
+          "ek_tigerone": "13.23",
+          "preis_netto": "31",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-CASHKUSH-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "49",
+          "ek_tigerone": "20.25",
+          "preis_netto": "48",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-CASHKUSH-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "95",
+          "ek_tigerone": "39.26",
+          "preis_netto": "94",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43886,
+      "name": "Sensi Seeds Chocolate Rainbow XXL feminisiert",
+      "sku_eltern": "SEN-CHRBXXL-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/152052_2185665_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN-CHRBXXL-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "18",
+          "ek_tigerone": "7.44",
+          "preis_netto": "17",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-CHRBXXL-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "27",
+          "ek_tigerone": "11.16",
+          "preis_netto": "26",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-CHRBXXL-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "52",
+          "ek_tigerone": "21.49",
+          "preis_netto": "51",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43888,
+      "name": "Sensi Seeds Cobalt Haze feminisiert",
+      "sku_eltern": "SEN-CH-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149965_2184321_pimcore_1_3.png",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "SEN-CH-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "58",
+          "ek_tigerone": "27.36",
+          "preis_netto": "57",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43890,
+      "name": "Sensi Seeds Cosmic Kiss feminisiert",
+      "sku_eltern": "SEN-CKISS-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/152053_2185677_pimcore_1_1.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "SEN-CKISS-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "22",
+          "ek_tigerone": "9.09",
+          "preis_netto": "21",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-CKISS-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "35",
+          "ek_tigerone": "14.47",
+          "preis_netto": "34",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-CKISS-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "66",
+          "ek_tigerone": "27.28",
+          "preis_netto": "65",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43892,
+      "name": "Sensi Seeds Double Kush Cake Auto feminisiert",
+      "sku_eltern": "SENR-DKC-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149993_995034_pimcore.png",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "SENR-DKC-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "60",
+          "ek_tigerone": "24.8",
+          "preis_netto": "59",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43894,
+      "name": "Sensi Seeds Double Kush Cake feminisiert",
+      "sku_eltern": "SENR-DKC-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150150_995823_pimcore.png",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "SENR-DKC-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "30.5",
+          "ek_tigerone": "12.61",
+          "preis_netto": "30",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SENR-DKC-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "58",
+          "ek_tigerone": "23.97",
+          "preis_netto": "57",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43896,
+      "name": "Sensi Seeds Durban feminisiert",
+      "sku_eltern": "sensi-durban-fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149119_2183953_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "sensi-durban-fem-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "27.5",
+          "ek_tigerone": "11.37",
+          "preis_netto": "27",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-durban-fem-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto": "44",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-durban-fem-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "80",
+          "ek_tigerone": "33.06",
+          "preis_netto": "79",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43898,
+      "name": "Sensi Seeds Durban regulär",
+      "sku_eltern": "SEN240",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140186_2180734_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN240-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "61",
+          "ek_tigerone": "25.21",
+          "preis_netto": "60",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43900,
+      "name": "Sensi Seeds Early Girl regulär",
+      "sku_eltern": "SEN239",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140189_2180740_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN239-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "61",
+          "ek_tigerone": "25.21",
+          "preis_netto": "60",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43902,
+      "name": "Sensi Seeds Early Pearl regulär",
+      "sku_eltern": "SEN336",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140183_2180728_pimcore_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN336-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "61",
+          "ek_tigerone": "25.21",
+          "preis_netto": "60",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43904,
+      "name": "Sensi Seeds Early Skunk Auto feminisiert",
+      "sku_eltern": "sensi-earlysk-auto-fem",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149122_2183989_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "sensi-earlysk-auto-fem-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "22.5",
+          "ek_tigerone": "9.3",
+          "preis_netto": "22",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-earlysk-auto-fem-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "37.5",
+          "ek_tigerone": "15.5",
+          "preis_netto": "37",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-earlysk-auto-fem-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "70",
+          "ek_tigerone": "28.93",
+          "preis_netto": "69",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43906,
+      "name": "Sensi Seeds Early Skunk feminisiert",
+      "sku_eltern": "sensi-esk-fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148046_2183681_pimcore_1_4.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "sensi-esk-fem-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "22",
+          "ek_tigerone": "9.09",
+          "preis_netto": "21",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-esk-fem-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "35",
+          "ek_tigerone": "14.46",
+          "preis_netto": "34",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-esk-fem-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "66",
+          "ek_tigerone": "27.28",
+          "preis_netto": "65",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-esk-fem-25",
+          "inhalt": "25 Stück",
+          "pack_lieferant": "25 Seeds",
+          "vk_tigerone": "145",
+          "ek_tigerone": "59.92",
+          "preis_netto": "143",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43908,
+      "name": "Sensi Seeds Early Skunk regulär",
+      "sku_eltern": "SEN2302",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140174_2180710_pimcore_1_2.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN2302-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "36",
+          "ek_tigerone": "14.88",
+          "preis_netto": "35",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43910,
+      "name": "Sensi Seeds Ed Rosenthal Superbud regulär",
+      "sku_eltern": "SEN2321",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140161_2180682_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN2321-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "155",
+          "ek_tigerone": "64.05",
+          "preis_netto": "153",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43912,
+      "name": "Sensi Seeds Fruity Juice regulär",
+      "sku_eltern": "SEN2313",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140110_2180580_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN2313-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "108",
+          "ek_tigerone": "44.63",
+          "preis_netto": "106",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43914,
+      "name": "Sensi Seeds Grapevine Candy feminisiert",
+      "sku_eltern": "SEN-GRVC-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/152051_2185653_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN-GRVC-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "27",
+          "ek_tigerone": "11.16",
+          "preis_netto": "26",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-GRVC-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "41",
+          "ek_tigerone": "16.94",
+          "preis_netto": "40",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-GRVC-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "77",
+          "ek_tigerone": "31.82",
+          "preis_netto": "76",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43916,
+      "name": "Sensi Seeds Guerrilla's Gusto regulär",
+      "sku_eltern": "SEN2319",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140172_2180705_pimcore_2.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN2319-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "11.58",
+          "preis_netto": "27",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43918,
+      "name": "Sensi Seeds Hash Plant regulär",
+      "sku_eltern": "SEN2315",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140149_2180658_pimcore_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN2315-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "132",
+          "ek_tigerone": "54.55",
+          "preis_netto": "130",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43920,
+      "name": "Sensi Seeds Himalayan CBD feminisiert",
+      "sku_eltern": "SEN-HIM-CBD-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548,
+        2309
+      ],
+      "kategorien_namen": [
+        "Feminisiert",
+        "CBD Samen"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149974_2184361_pimcore_1_1.png",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "SEN-HIM-CBD-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "24",
+          "ek_tigerone": "9.92",
+          "preis_netto": "23",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-HIM-CBD-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.7",
+          "preis_netto": "37",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-HIM-CBD-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "73",
+          "ek_tigerone": "30.17",
+          "preis_netto": "72",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43922,
+      "name": "Sensi Seeds Hindu Kush Auto feminisiert",
+      "sku_eltern": "SEN-HK-AUTO",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149014_2183917_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN-HK-AUTO-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "17.5",
+          "ek_tigerone": "7.23",
+          "preis_netto": "17",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-HK-AUTO-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "12.4",
+          "preis_netto": "29",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-HK-AUTO-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "20.66",
+          "preis_netto": "49",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43924,
+      "name": "Sensi Seeds Hindu Kush feminisiert",
+      "sku_eltern": "sensi-hindukush-fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149016_2183929_pimcore_1_2.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "sensi-hindukush-fem-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "15",
+          "ek_tigerone": "6.2",
+          "preis_netto": "14",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-hindukush-fem-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "27.5",
+          "ek_tigerone": "11.37",
+          "preis_netto": "27",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-hindukush-fem-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto": "44",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43926,
+      "name": "Sensi Seeds Hindu Kush regulär",
+      "sku_eltern": "SEN234",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140119_2180598_pimcore_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN234-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "36",
+          "ek_tigerone": "14.88",
+          "preis_netto": "35",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43928,
+      "name": "Sensi Seeds Honey Melon Haze feminisiert",
+      "sku_eltern": "SEN-HMH-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151288_2185013_pimcore_1_2.png",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "SEN-HMH-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "29",
+          "ek_tigerone": "11.99",
+          "preis_netto": "28",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-HMH-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "44",
+          "ek_tigerone": "18.18",
+          "preis_netto": "43",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-HMH-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "85",
+          "ek_tigerone": "35.13",
+          "preis_netto": "84",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43930,
+      "name": "Sensi Seeds Honey Melon Kush Auto feminisiert",
+      "sku_eltern": "SEN-HMK-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151297_2185121_pimcore_1_1.png",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "SEN-HMK-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "22.5",
+          "ek_tigerone": "9.3",
+          "preis_netto": "22",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-HMK-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "34.5",
+          "ek_tigerone": "14.26",
+          "preis_netto": "34",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-HMK-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "65",
+          "ek_tigerone": "26.86",
+          "preis_netto": "64",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43932,
+      "name": "Sensi Seeds Honey Melon Kush feminisiert",
+      "sku_eltern": "SEN-HMK-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151293_2185073_pimcore_1_1.png",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "SEN-HMK-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "25",
+          "ek_tigerone": "10.33",
+          "preis_netto": "24",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-HMK-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "39.5",
+          "ek_tigerone": "16.32",
+          "preis_netto": "39",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-HMK-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "75",
+          "ek_tigerone": "30.99",
+          "preis_netto": "74",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43934,
+      "name": "Sensi Seeds Indoor Mix regulär",
+      "sku_eltern": "SEN2306",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140113_2180586_pimcore_1_1.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "SEN2306-25",
+          "inhalt": "25 Stück",
+          "pack_lieferant": "25 Seeds",
+          "vk_tigerone": "61",
+          "ek_tigerone": "25.21",
+          "preis_netto": "60",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43936,
+      "name": "Sensi Seeds Jack Flash #5 feminisiert",
+      "sku_eltern": "sensi-jf5-fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148043_2183685_pimcore_1_4.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "sensi-jf5-fem-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.7",
+          "preis_netto": "37",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-jf5-fem-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "62",
+          "ek_tigerone": "25.62",
+          "preis_netto": "61",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-jf5-fem-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "120",
+          "ek_tigerone": "49.59",
+          "preis_netto": "118",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43938,
+      "name": "Sensi Seeds Jack Flash regulär",
+      "sku_eltern": "SEN2314",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140143_2180646_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN2314-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "108",
+          "ek_tigerone": "44.63",
+          "preis_netto": "106",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43940,
+      "name": "Sensi Seeds Jack Herer Auto feminisiert",
+      "sku_eltern": "SEN-JH-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/152244_2185853_pimcore_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN-JH-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "12.4",
+          "preis_netto": "29",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-JH-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "48",
+          "ek_tigerone": "19.84",
+          "preis_netto": "47",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43942,
+      "name": "Sensi Seeds Jack Herer feminisiert",
+      "sku_eltern": "sensi-jack-herer-fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149186_2184037_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "sensi-jack-herer-fem-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "60",
+          "ek_tigerone": "24.8",
+          "preis_netto": "59",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-jack-herer-fem-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "95",
+          "ek_tigerone": "39.26",
+          "preis_netto": "94",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-jack-herer-fem-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "175",
+          "ek_tigerone": "72.32",
+          "preis_netto": "173",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43944,
+      "name": "Sensi Seeds Jack Herer regulär",
+      "sku_eltern": "SEN2310",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140158_2180676_pimcore_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN2310-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "163",
+          "ek_tigerone": "67.36",
+          "preis_netto": "161",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43946,
+      "name": "Sensi Seeds Jamaican Pearl feminisiert",
+      "sku_eltern": "sensi-jampearl-fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149120_2183965_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "sensi-jampearl-fem-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "27.5",
+          "ek_tigerone": "11.37",
+          "preis_netto": "27",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-jampearl-fem-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto": "44",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-jampearl-fem-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "80",
+          "ek_tigerone": "33.06",
+          "preis_netto": "79",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43948,
+      "name": "Sensi Seeds Jamaican Pearl regulär",
+      "sku_eltern": "SEN2316",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140180_2180722_pimcore_1_2.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN2316-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "61",
+          "ek_tigerone": "25.21",
+          "preis_netto": "60",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43950,
+      "name": "Sensi Seeds Lockdown Kush feminisiert",
+      "sku_eltern": "SEN-LDK-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151294_2185085_pimcore_1_2.png",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "SEN-LDK-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.27",
+          "preis_netto": "19",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-LDK-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "12.4",
+          "preis_netto": "29",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-LDK-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "55",
+          "ek_tigerone": "22.73",
+          "preis_netto": "54",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43952,
+      "name": "Sensi Seeds Malibu OG Gold feminisiert",
+      "sku_eltern": "SEN-MALGOG-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151287_2185001_pimcore_1_1.png",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "SEN-MALGOG-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "25",
+          "ek_tigerone": "10.33",
+          "preis_netto": "24",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-MALGOG-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "39.5",
+          "ek_tigerone": "16.32",
+          "preis_netto": "39",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-MALGOG-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "75",
+          "ek_tigerone": "30.99",
+          "preis_netto": "74",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43954,
+      "name": "Sensi Seeds Maple Leaf Indica regulär",
+      "sku_eltern": "SEN2309",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140125_2180610_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN2309-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "55",
+          "ek_tigerone": "22.73",
+          "preis_netto": "54",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43956,
+      "name": "Sensi Seeds Mexican Sativa feminisiert",
+      "sku_eltern": "sensi-mexsat-fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149121_2183977_pimcore_1_2.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "sensi-mexsat-fem-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "16.5",
+          "ek_tigerone": "6.82",
+          "preis_netto": "16",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-mexsat-fem-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "25",
+          "ek_tigerone": "10.33",
+          "preis_netto": "24",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-mexsat-fem-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "42.5",
+          "ek_tigerone": "17.56",
+          "preis_netto": "42",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43958,
+      "name": "Sensi Seeds Mexican Sativa regulär",
+      "sku_eltern": "SEN337",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140167_2180694_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN337-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "24",
+          "ek_tigerone": "9.92",
+          "preis_netto": "23",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43960,
+      "name": "Sensi Seeds Michka feminisiert",
+      "sku_eltern": "SEN-MICH-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150263_2184577_pimcore_1.png",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "SEN-MICH-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "21",
+          "ek_tigerone": "8.68",
+          "preis_netto": "20",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-MICH-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "34",
+          "ek_tigerone": "14.05",
+          "preis_netto": "33",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-MICH-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "65",
+          "ek_tigerone": "30.66",
+          "preis_netto": "64",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43962,
+      "name": "Sensi Seeds Mixed feminisiert",
+      "sku_eltern": "SENF0006",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140339_2180752_pimcore_1_2.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SENF0006-20",
+          "inhalt": "20 Stück",
+          "pack_lieferant": "20 Seeds",
+          "vk_tigerone": "80",
+          "ek_tigerone": "33.06",
+          "preis_netto": "79",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43964,
+      "name": "Sensi Seeds Mother's Finest regulär",
+      "sku_eltern": "SEN2318",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140134_2180628_pimcore_1_1.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "SEN2318-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "88",
+          "ek_tigerone": "36.37",
+          "preis_netto": "87",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43966,
+      "name": "Sensi Seeds Mr Nice G13 x Hash Plant regulär",
+      "sku_eltern": "SEN332",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140155_2180670_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN332-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "157",
+          "ek_tigerone": "64.88",
+          "preis_netto": "155",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43968,
+      "name": "Sensi Seeds N13 Kush feminisiert",
+      "sku_eltern": "SENR-N13-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149991_995024_pimcore.png",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "SENR-N13-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "11.57",
+          "preis_netto": "27",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43970,
+      "name": "Sensi Seeds NL#5 x Haze feminisiert",
+      "sku_eltern": "sensi-nl5xh-fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148047_2183693_pimcore_1_3.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "sensi-nl5xh-fem-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "62",
+          "ek_tigerone": "25.62",
+          "preis_netto": "61",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-nl5xh-fem-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "101",
+          "ek_tigerone": "41.74",
+          "preis_netto": "99",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-nl5xh-fem-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "190",
+          "ek_tigerone": "78.52",
+          "preis_netto": "188",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43972,
+      "name": "Sensi Seeds Northern Lights #5 x Haze regulär",
+      "sku_eltern": "SEN2305",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140152_2180664_pimcore_1_3.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN2305-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "150",
+          "ek_tigerone": "61.99",
+          "preis_netto": "148",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43974,
+      "name": "Sensi Seeds Northern Lights Auto feminisiert",
+      "sku_eltern": "SEN-NL-AUTO",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148221_2183673_pimcore_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN-NL-AUTO-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.51",
+          "preis_netto": "22",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-NL-AUTO-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "37",
+          "ek_tigerone": "15.29",
+          "preis_netto": "36",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-NL-AUTO-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "72",
+          "ek_tigerone": "29.75",
+          "preis_netto": "71",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43976,
+      "name": "Sensi Seeds Northern Lights feminisiert",
+      "sku_eltern": "SEN-NL-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148222_2183689_pimcore_1_3.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN-NL-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "41",
+          "ek_tigerone": "16.95",
+          "preis_netto": "40",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-NL-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "68",
+          "ek_tigerone": "28.1",
+          "preis_netto": "67",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-NL-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "130",
+          "ek_tigerone": "53.72",
+          "preis_netto": "128",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43978,
+      "name": "Sensi Seeds Northern Lights regulär",
+      "sku_eltern": "SEN235",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140146_2180652_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN235-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "120",
+          "ek_tigerone": "49.59",
+          "preis_netto": "118",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43980,
+      "name": "Sensi Seeds Outdoor Mix regulär",
+      "sku_eltern": "SEN2301",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140164_2180688_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN2301-25",
+          "inhalt": "25 Stück",
+          "pack_lieferant": "25 Seeds",
+          "vk_tigerone": "48",
+          "ek_tigerone": "19.84",
+          "preis_netto": "47",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43981,
+      "name": "Sensi Seeds Papaya Jealousy feminisiert",
+      "sku_eltern": "SEN-PAJE-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN-PAJE-FEM-4",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "17.41",
+          "ek_tigerone": "12.4",
+          "preis_netto": "17",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-PAJE-FEM-7",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "26.11",
+          "ek_tigerone": "18.6",
+          "preis_netto": "25",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43983,
+      "name": "Sensi Seeds Papi Chulo OG feminisiert",
+      "sku_eltern": "SEN-PCHOG-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151285_2184977_pimcore_1.png",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "SEN-PCHOG-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "25",
+          "ek_tigerone": "10.33",
+          "preis_netto": "24",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-PCHOG-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "39.49",
+          "ek_tigerone": "16.32",
+          "preis_netto": "39",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-PCHOG-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "75",
+          "ek_tigerone": "30.99",
+          "preis_netto": "74",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43985,
+      "name": "Sensi Seeds Pumpkin Spice feminisiert",
+      "sku_eltern": "SEN-PSP-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151289_2185025_pimcore_1_1.png",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "SEN-PSP-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "25",
+          "ek_tigerone": "10.33",
+          "preis_netto": "24",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-PSP-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "39.5",
+          "ek_tigerone": "16.32",
+          "preis_netto": "39",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-PSP-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "75",
+          "ek_tigerone": "30.99",
+          "preis_netto": "74",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43987,
+      "name": "Sensi Seeds Purple Skunk Auto feminisiert",
+      "sku_eltern": "SEN-PURPSK-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150151_2184453_pimcore_1_3.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN-PURPSK-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "24.5",
+          "ek_tigerone": "10.13",
+          "preis_netto": "24",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-PURPSK-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "39",
+          "ek_tigerone": "16.12",
+          "preis_netto": "38",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-PURPSK-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "75",
+          "ek_tigerone": "30.99",
+          "preis_netto": "74",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43989,
+      "name": "Sensi Seeds Ruderalis Indica regulär",
+      "sku_eltern": "SEN236",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140170_2180700_pimcore_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN236-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "24",
+          "ek_tigerone": "9.92",
+          "preis_netto": "23",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43991,
+      "name": "Sensi Seeds Ruderalis Skunk regulär",
+      "sku_eltern": "SEN2304",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140177_2180716_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN2304-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "48",
+          "ek_tigerone": "19.84",
+          "preis_netto": "47",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 43993,
+      "name": "Sensi Seeds Satin Black Domina CBD feminisiert",
+      "sku_eltern": "SEN-SBLD-CBD-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548,
+        2309
+      ],
+      "kategorien_namen": [
+        "Feminisiert",
+        "CBD Samen"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149976_2184385_pimcore_1_2.png",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "SEN-SBLD-CBD-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "39.5",
+          "ek_tigerone": "16.32",
+          "preis_netto": "39",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-SBLD-CBD-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "76",
+          "ek_tigerone": "31.41",
+          "preis_netto": "75",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43995,
+      "name": "Sensi Seeds Screwdriver OG feminisiert",
+      "sku_eltern": "SEN-SCROG-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151292_2185061_pimcore_1_1.png",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "SEN-SCROG-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "25",
+          "ek_tigerone": "10.33",
+          "preis_netto": "24",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-SCROG-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "39.5",
+          "ek_tigerone": "16.32",
+          "preis_netto": "39",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-SCROG-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "75",
+          "ek_tigerone": "30.99",
+          "preis_netto": "74",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43997,
+      "name": "Sensi Seeds Sensi Amnesia Auto feminisiert",
+      "sku_eltern": "SEN-SENAM-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149995_2184401_pimcore_1_1.png",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN-SENAM-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "23.5",
+          "ek_tigerone": "9.71",
+          "preis_netto": "23",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-SENAM-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "37.5",
+          "ek_tigerone": "15.5",
+          "preis_netto": "37",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-SENAM-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "71",
+          "ek_tigerone": "29.34",
+          "preis_netto": "70",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 43999,
+      "name": "Sensi Seeds Sensi Amnesia XXL Auto feminisiert",
+      "sku_eltern": "SEN-SENAMNXXL-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151295_2185097_pimcore_1_1.png",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN-SENAMNXXL-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "27",
+          "ek_tigerone": "11.16",
+          "preis_netto": "26",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-SENAMNXXL-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "42",
+          "ek_tigerone": "17.36",
+          "preis_netto": "41",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-SENAMNXXL-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "80",
+          "ek_tigerone": "33.06",
+          "preis_netto": "79",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44001,
+      "name": "Sensi Seeds Sensi Amnesia feminisiert",
+      "sku_eltern": "SEN-SENAMN-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150140_2184421_pimcore_1_1.png",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN-SENAMN-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "25",
+          "ek_tigerone": "10.33",
+          "preis_netto": "24",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-SENAMN-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "39.5",
+          "ek_tigerone": "16.32",
+          "preis_netto": "39",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-SENAMN-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "76",
+          "ek_tigerone": "31.41",
+          "preis_netto": "75",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44003,
+      "name": "Sensi Seeds Sensi Purple Kush feminisiert",
+      "sku_eltern": "SEN-PURK-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151470_2186089_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN-PURK-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "32",
+          "ek_tigerone": "13.23",
+          "preis_netto": "31",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-PURK-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "49",
+          "ek_tigerone": "20.25",
+          "preis_netto": "48",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-PURK-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "95",
+          "ek_tigerone": "39.26",
+          "preis_netto": "94",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44005,
+      "name": "Sensi Seeds Sensi Skunk Auto feminisiert",
+      "sku_eltern": "SEN-SNSK-AUTO",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148470_2183845_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN-SNSK-AUTO-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "17",
+          "ek_tigerone": "7.03",
+          "preis_netto": "16",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-SNSK-AUTO-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "27",
+          "ek_tigerone": "11.16",
+          "preis_netto": "26",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-SNSK-AUTO-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "48",
+          "ek_tigerone": "19.84",
+          "preis_netto": "47",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44007,
+      "name": "Sensi Seeds Sensi Skunk feminisiert",
+      "sku_eltern": "SEN-SNSK-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148469_2183833_pimcore_1_2.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN-SNSK-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "15",
+          "ek_tigerone": "6.2",
+          "preis_netto": "14",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-SNSK-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.51",
+          "preis_netto": "22",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-SNSK-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "43",
+          "ek_tigerone": "17.77",
+          "preis_netto": "42",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-SNSK-FEM-25",
+          "inhalt": "25 Stück",
+          "pack_lieferant": "25 Seeds",
+          "vk_tigerone": "93",
+          "ek_tigerone": "38.43",
+          "preis_netto": "92",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44009,
+      "name": "Sensi Seeds Sensi Skunk regulär",
+      "sku_eltern": "SEN229",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140087_2180533_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN229-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "29",
+          "ek_tigerone": "11.99",
+          "preis_netto": "28",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44011,
+      "name": "Sensi Seeds Shiva Shanti II regulär",
+      "sku_eltern": "SEN227",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140090_2180539_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN227-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "22",
+          "ek_tigerone": "9.09",
+          "preis_netto": "21",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44013,
+      "name": "Sensi Seeds Shiva Shanti regulär",
+      "sku_eltern": "SEN226",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140116_2180592_pimcore_1_2.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN226-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "36",
+          "ek_tigerone": "14.88",
+          "preis_netto": "35",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44015,
+      "name": "Sensi Seeds Shiva Skunk Auto feminisiert",
+      "sku_eltern": "sensi-shivsk-auto-fem",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149149_2184013_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "sensi-shivsk-auto-fem-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "12.4",
+          "preis_netto": "29",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-shivsk-auto-fem-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "47.5",
+          "ek_tigerone": "19.63",
+          "preis_netto": "47",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-shivsk-auto-fem-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "90",
+          "ek_tigerone": "37.19",
+          "preis_netto": "89",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44017,
+      "name": "Sensi Seeds Shiva Skunk feminisiert",
+      "sku_eltern": "sensi-ssk-fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148045_2183697_pimcore_1_5.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "sensi-ssk-fem-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "11.58",
+          "preis_netto": "27",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-ssk-fem-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "45",
+          "ek_tigerone": "18.6",
+          "preis_netto": "44",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-ssk-fem-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "87",
+          "ek_tigerone": "35.95",
+          "preis_netto": "86",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "sensi-ssk-fem-25",
+          "inhalt": "25 Stück",
+          "pack_lieferant": "25 Seeds",
+          "vk_tigerone": "190",
+          "ek_tigerone": "78.52",
+          "preis_netto": "188",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44019,
+      "name": "Sensi Seeds Shiva Skunk regulär",
+      "sku_eltern": "SEN228",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140101_2180562_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN228-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "73",
+          "ek_tigerone": "30.17",
+          "preis_netto": "72",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44021,
+      "name": "Sensi Seeds Silver Fire feminisiert",
+      "sku_eltern": "SEN-SF-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149972_2184337_pimcore_1_1.png",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "SEN-SF-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "19.5",
+          "ek_tigerone": "8.06",
+          "preis_netto": "19",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-SF-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "30.5",
+          "ek_tigerone": "12.61",
+          "preis_netto": "30",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-SF-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "58",
+          "ek_tigerone": "23.97",
+          "preis_netto": "57",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44023,
+      "name": "Sensi Seeds Silver Haze feminisiert",
+      "sku_eltern": "sensi-sh9-fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148042_2183701_pimcore_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "sensi-sh9-fem-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "35",
+          "ek_tigerone": "14.46",
+          "preis_netto": "34",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-sh9-fem-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "56",
+          "ek_tigerone": "23.14",
+          "preis_netto": "55",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-sh9-fem-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "108",
+          "ek_tigerone": "44.63",
+          "preis_netto": "106",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44025,
+      "name": "Sensi Seeds Silver Haze regulär",
+      "sku_eltern": "SEN232",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140220_2180746_pimcore_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN232-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "95",
+          "ek_tigerone": "39.26",
+          "preis_netto": "94",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44027,
+      "name": "Sensi Seeds Skunk #1 Auto feminisiert",
+      "sku_eltern": "SEN-SK-1-AUTO",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148219_2183665_pimcore_1_3.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN-SK-1-AUTO-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "19",
+          "ek_tigerone": "7.85",
+          "preis_netto": "18",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-SK-1-AUTO-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "12.4",
+          "preis_netto": "29",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-SK-1-AUTO-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "55",
+          "ek_tigerone": "22.73",
+          "preis_netto": "54",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44029,
+      "name": "Sensi Seeds Skunk #1 feminisiert",
+      "sku_eltern": "sensi-sk1-fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148044_2183849_pimcore_1_5.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "sensi-sk1-fem-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "18",
+          "ek_tigerone": "7.44",
+          "preis_netto": "17",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-sk1-fem-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "11.58",
+          "preis_netto": "27",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-sk1-fem-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "49",
+          "ek_tigerone": "20.25",
+          "preis_netto": "48",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-sk1-fem-25",
+          "inhalt": "25 Stück",
+          "pack_lieferant": "25 Seeds",
+          "vk_tigerone": "108",
+          "ek_tigerone": "44.63",
+          "preis_netto": "106",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44031,
+      "name": "Sensi Seeds Skunk #1 regulär",
+      "sku_eltern": "SEN347",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140093_2180545_pimcore_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN347-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "32",
+          "ek_tigerone": "13.23",
+          "preis_netto": "31",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44033,
+      "name": "Sensi Seeds Skunk Kush regulär",
+      "sku_eltern": "SEN233",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140107_2180574_pimcore_1_2.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN233-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "90",
+          "ek_tigerone": "42.45",
+          "preis_netto": "89",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44034,
+      "name": "Sensi Seeds Sunset Peach feminisiert",
+      "sku_eltern": "SEN-SUPE-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN-SUPE-FEM-4",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "31",
+          "ek_tigerone": "12.81",
+          "preis_netto": "30",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-SUPE-FEM-7",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "47.5",
+          "ek_tigerone": "19.63",
+          "preis_netto": "47",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44036,
+      "name": "Sensi Seeds Super Skunk Auto feminisiert",
+      "sku_eltern": "SEN-SS-AUTO",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148220_2183669_pimcore_1_3.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN-SS-AUTO-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "22",
+          "ek_tigerone": "9.09",
+          "preis_netto": "21",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-SS-AUTO-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "35",
+          "ek_tigerone": "14.46",
+          "preis_netto": "34",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-SS-AUTO-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "66",
+          "ek_tigerone": "27.28",
+          "preis_netto": "65",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44038,
+      "name": "Sensi Seeds Super Skunk feminisiert",
+      "sku_eltern": "sensi-ss-fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148041_2183713_pimcore_1_4.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "sensi-ss-fem-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "21",
+          "ek_tigerone": "8.68",
+          "preis_netto": "20",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-ss-fem-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "32",
+          "ek_tigerone": "13.23",
+          "preis_netto": "31",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-ss-fem-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "61",
+          "ek_tigerone": "25.21",
+          "preis_netto": "60",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "sensi-ss-fem-25",
+          "inhalt": "25 Stück",
+          "pack_lieferant": "25 Seeds",
+          "vk_tigerone": "133",
+          "ek_tigerone": "54.96",
+          "preis_netto": "131",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44040,
+      "name": "Sensi Seeds Super Skunk regulär",
+      "sku_eltern": "SEN241",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140095_2180550_pimcore_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN241-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "48",
+          "ek_tigerone": "19.84",
+          "preis_netto": "47",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44042,
+      "name": "Sensi Seeds Sweet Cherry Kush feminisiert",
+      "sku_eltern": "SEN-SWCK-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151473_2186125_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SEN-SWCK-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "22.5",
+          "ek_tigerone": "9.3",
+          "preis_netto": "22",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-SWCK-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "34.5",
+          "ek_tigerone": "14.26",
+          "preis_netto": "34",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "SEN-SWCK-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "65",
+          "ek_tigerone": "26.86",
+          "preis_netto": "64",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44044,
+      "name": "Sensi Seeds Tangerine Sugar feminisiert",
+      "sku_eltern": "SEN-TANS-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151472_2186113_pimcore_1_2.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "SEN-TANS-FEM-3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "22.5",
+          "ek_tigerone": "9.3",
+          "preis_netto": "22",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-TANS-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "34.5",
+          "ek_tigerone": "14.26",
+          "preis_netto": "34",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "SEN-TANS-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "65",
+          "ek_tigerone": "26.86",
+          "preis_netto": "64",
+          "auslaufartikel": true
+        }
+      ]
+    }
+  ]
+}

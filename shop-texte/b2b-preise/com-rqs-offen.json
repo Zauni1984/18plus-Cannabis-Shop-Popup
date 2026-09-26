@@ -1,0 +1,113 @@
+[
+ {
+  "id": 11293,
+  "parent": 11291,
+  "sku": "RO-0526-01",
+  "name": "Royal Queen Seeds Medusa F1-Hybrid",
+  "sorte": "Medusa F1",
+  "groesse": null,
+  "status": "publish",
+  "vk": "30.84",
+  "grund": "Variation ohne Mengen-Attribut"
+ },
+ {
+  "id": 28344,
+  "parent": 11295,
+  "sku": "HJ-5628761",
+  "name": "Royal Queen Seeds Orion F1-Hybrid",
+  "sorte": "Orion F1",
+  "groesse": null,
+  "status": "private",
+  "vk": "55.14",
+  "grund": "Variation ohne Mengen-Attribut"
+ },
+ {
+  "id": 28343,
+  "parent": 11295,
+  "sku": "HJ-5628761",
+  "name": "Royal Queen Seeds Orion F1-Hybrid",
+  "sorte": "Orion F1",
+  "groesse": null,
+  "status": "publish",
+  "vk": "30.84",
+  "grund": "Variation ohne Mengen-Attribut"
+ },
+ {
+  "id": 27192,
+  "parent": 11295,
+  "sku": "HJ-5628761",
+  "name": "Royal Queen Seeds Orion F1-Hybrid",
+  "sorte": "Orion F1",
+  "groesse": null,
+  "status": "private",
+  "vk": "55.14",
+  "grund": "Variation ohne Mengen-Attribut"
+ },
+ {
+  "id": 27191,
+  "parent": 11295,
+  "sku": "HJ-5628761",
+  "name": "Royal Queen Seeds Orion F1-Hybrid",
+  "sorte": "Orion F1",
+  "groesse": null,
+  "status": "publish",
+  "vk": "30.84",
+  "grund": "Variation ohne Mengen-Attribut"
+ },
+ {
+  "id": 22490,
+  "parent": 11295,
+  "sku": "HJ-5628761",
+  "name": "Royal Queen Seeds Orion F1-Hybrid",
+  "sorte": "Orion F1",
+  "groesse": null,
+  "status": "private",
+  "vk": "55.14",
+  "grund": "Variation ohne Mengen-Attribut"
+ },
+ {
+  "id": 22489,
+  "parent": 11295,
+  "sku": "HJ-5628761",
+  "name": "Royal Queen Seeds Orion F1-Hybrid",
+  "sorte": "Orion F1",
+  "groesse": null,
+  "status": "publish",
+  "vk": "30.84",
+  "grund": "Variation ohne Mengen-Attribut"
+ },
+ {
+  "id": 11298,
+  "parent": 11295,
+  "sku": "HJ-5628761",
+  "name": "Royal Queen Seeds Orion F1-Hybrid",
+  "sorte": "Orion F1",
+  "groesse": null,
+  "status": "private",
+  "vk": "55.14",
+  "grund": "Variation ohne Mengen-Attribut"
+ },
+ {
+  "id": 11297,
+  "parent": 11295,
+  "sku": "HJ-5628761",
+  "name": "Royal Queen Seeds Orion F1-Hybrid",
+  "sorte": "Orion F1",
+  "groesse": null,
+  "status": "publish",
+  "vk": "30.84",
+  "grund": "Variation ohne Mengen-Attribut"
+ },
+ {
+  "id": 18329,
+  "parent": 18193,
+  "sku": "HJ-8821858-03",
+  "name": "Royal Queen Seeds Royal Cheese - Fast",
+  "sorte": "Royal Cheese - Fast",
+  "groesse": "10",
+  "status": "publish",
+  "vk": "51.50",
+  "ek": "27.55",
+  "grund": "Rueckrechnung ergibt keinen glatten Betrag"
+ }
+]

@@ -1,0 +1,2532 @@
+[
+ {
+  "id": 41581,
+  "sku": "111894",
+  "name": "Essentials LAB pH+, 1 L",
+  "alt_netto": "9.16",
+  "alt_brutto": "10.90",
+  "liste_brutto": "10.90",
+  "ziel_brutto": "10.80",
+  "neu_netto": "9.0750"
+ },
+ {
+  "id": 41583,
+  "sku": "111896",
+  "name": "Essentials LAB pH-, 1 L",
+  "alt_netto": "18.07",
+  "alt_brutto": "21.50",
+  "liste_brutto": "21.50",
+  "ziel_brutto": "21.40",
+  "neu_netto": "17.9772"
+ },
+ {
+  "id": 41595,
+  "sku": "112186",
+  "name": "Essentials PLUS SILICON, 1 L",
+  "alt_netto": "12.52",
+  "alt_brutto": "14.90",
+  "liste_brutto": "14.90",
+  "ziel_brutto": "14.80",
+  "neu_netto": "12.4350"
+ },
+ {
+  "id": 41596,
+  "sku": "112187",
+  "name": "Essentials PLUS SILICON, 5 L",
+  "alt_netto": "33.53",
+  "alt_brutto": "39.90",
+  "liste_brutto": "39.90",
+  "ziel_brutto": "39.80",
+  "neu_netto": "33.4450"
+ },
+ {
+  "id": 41598,
+  "sku": "112190",
+  "name": "Essentials PLUS GREEN UP, 1 L",
+  "alt_netto": "14.20",
+  "alt_brutto": "16.90",
+  "liste_brutto": "16.90",
+  "ziel_brutto": "16.80",
+  "neu_netto": "14.1150"
+ },
+ {
+  "id": 41599,
+  "sku": "112191",
+  "name": "Essentials PLUS GREEN UP, 5 L",
+  "alt_netto": "50.34",
+  "alt_brutto": "59.90",
+  "liste_brutto": "59.90",
+  "ziel_brutto": "59.80",
+  "neu_netto": "50.2461"
+ },
+ {
+  "id": 41601,
+  "sku": "112193",
+  "name": "Essentials PLUS OXY 12%, 5 L",
+  "alt_netto": "28.49",
+  "alt_brutto": "33.90",
+  "liste_brutto": "33.90",
+  "ziel_brutto": "33.80",
+  "neu_netto": "28.3974"
+ },
+ {
+  "id": 41603,
+  "sku": "112195",
+  "name": "Essentials PLUS CALMAG, 1 L",
+  "alt_netto": "13.36",
+  "alt_brutto": "15.90",
+  "liste_brutto": "15.90",
+  "ziel_brutto": "15.80",
+  "neu_netto": "13.2750"
+ },
+ {
+  "id": 41604,
+  "sku": "112196",
+  "name": "Essentials PLUS CALMAG, 5 L",
+  "alt_netto": "41.93",
+  "alt_brutto": "49.90",
+  "liste_brutto": "49.90",
+  "ziel_brutto": "49.80",
+  "neu_netto": "41.8450"
+ },
+ {
+  "id": 41605,
+  "sku": "112197",
+  "name": "Essentials PLUS CALMAG, 10 L",
+  "alt_netto": "75.55",
+  "alt_brutto": "89.90",
+  "liste_brutto": "89.90",
+  "ziel_brutto": "89.80",
+  "neu_netto": "75.4562"
+ },
+ {
+  "id": 41607,
+  "sku": "112199",
+  "name": "Essentials PLUS PK 13/14, 1 L",
+  "alt_netto": "13.36",
+  "alt_brutto": "15.90",
+  "liste_brutto": "15.90",
+  "ziel_brutto": "15.80",
+  "neu_netto": "13.2750"
+ },
+ {
+  "id": 41608,
+  "sku": "112200",
+  "name": "Essentials PLUS NO STRESS, 250 ml",
+  "alt_netto": "25.13",
+  "alt_brutto": "29.90",
+  "liste_brutto": "29.90",
+  "ziel_brutto": "29.80",
+  "neu_netto": "25.0360"
+ },
+ {
+  "id": 41609,
+  "sku": "112201",
+  "name": "Essentials PLUS NO STRESS, 1 L",
+  "alt_netto": "67.14",
+  "alt_brutto": "79.90",
+  "liste_brutto": "79.90",
+  "ziel_brutto": "79.80",
+  "neu_netto": "67.0550"
+ },
+ {
+  "id": 41664,
+  "sku": "112812",
+  "name": "Air-Pot® 7 - 12 L, ø 26,5 cm",
+  "alt_netto": "9.16",
+  "alt_brutto": "10.90",
+  "liste_brutto": "10.90",
+  "ziel_brutto": "10.80",
+  "neu_netto": "9.0750"
+ },
+ {
+  "id": 41665,
+  "sku": "112813",
+  "name": "Air-Pot® 7 - 20 L, ø 31,5 cm",
+  "alt_netto": "15.88",
+  "alt_brutto": "18.90",
+  "liste_brutto": "18.90",
+  "ziel_brutto": "18.80",
+  "neu_netto": "15.7950"
+ },
+ {
+  "id": 41666,
+  "sku": "112814",
+  "name": "Air-Pot® 7 - 39 L, ø 38,8 cm",
+  "alt_netto": "22.61",
+  "alt_brutto": "26.91",
+  "liste_brutto": "26.90",
+  "ziel_brutto": "26.80",
+  "neu_netto": "22.5150"
+ },
+ {
+  "id": 41668,
+  "sku": "111086",
+  "name": "VitaLink CalMag, 1 L",
+  "alt_netto": "11.98",
+  "alt_brutto": "14.26",
+  "liste_brutto": "14.26",
+  "ziel_brutto": "14.16",
+  "neu_netto": "11.8950"
+ },
+ {
+  "id": 41670,
+  "sku": "112142",
+  "name": "VitaLink Buddy, 1 L",
+  "alt_netto": "14.28",
+  "alt_brutto": "16.99",
+  "liste_brutto": "16.99",
+  "ziel_brutto": "16.89",
+  "neu_netto": "14.1873"
+ },
+ {
+  "id": 41671,
+  "sku": "112143",
+  "name": "VitaLink Buddy, 5 L",
+  "alt_netto": "51.25",
+  "alt_brutto": "60.99",
+  "liste_brutto": "60.99",
+  "ziel_brutto": "60.89",
+  "neu_netto": "51.1650"
+ },
+ {
+  "id": 41672,
+  "sku": "112144",
+  "name": "VitaLink Buddy, 10 L",
+  "alt_netto": "97.47",
+  "alt_brutto": "115.99",
+  "liste_brutto": "115.99",
+  "ziel_brutto": "115.89",
+  "neu_netto": "97.3850"
+ },
+ {
+  "id": 41673,
+  "sku": "112145",
+  "name": "VitaLink RootStim, 250 ml",
+  "alt_netto": "15.30",
+  "alt_brutto": "18.21",
+  "liste_brutto": "18.21",
+  "ziel_brutto": "18.11",
+  "neu_netto": "15.2150"
+ },
+ {
+  "id": 41674,
+  "sku": "112146",
+  "name": "VitaLink RootStim, 1 L",
+  "alt_netto": "33.79",
+  "alt_brutto": "40.21",
+  "liste_brutto": "40.21",
+  "ziel_brutto": "40.11",
+  "neu_netto": "33.7050"
+ },
+ {
+  "id": 41675,
+  "sku": "112147",
+  "name": "VitaLink RootStim, 5 L",
+  "alt_netto": "118.01",
+  "alt_brutto": "140.43",
+  "liste_brutto": "140.43",
+  "ziel_brutto": "140.33",
+  "neu_netto": "117.9211"
+ },
+ {
+  "id": 41676,
+  "sku": "112148",
+  "name": "VitaLink RootStim, 10 L",
+  "alt_netto": "225.86",
+  "alt_brutto": "268.77",
+  "liste_brutto": "268.77",
+  "ziel_brutto": "268.67",
+  "neu_netto": "225.7671"
+ },
+ {
+  "id": 41677,
+  "sku": "112149",
+  "name": "VitaLink Turbo+, 250 ml",
+  "alt_netto": "23.52",
+  "alt_brutto": "27.99",
+  "liste_brutto": "27.99",
+  "ziel_brutto": "27.89",
+  "neu_netto": "23.4350"
+ },
+ {
+  "id": 41678,
+  "sku": "112150",
+  "name": "VitaLink Turbo+, 1 L",
+  "alt_netto": "56.39",
+  "alt_brutto": "67.10",
+  "liste_brutto": "67.10",
+  "ziel_brutto": "67.00",
+  "neu_netto": "56.2965"
+ },
+ {
+  "id": 41679,
+  "sku": "112151",
+  "name": "VitaLink Turbo+, 5 L",
+  "alt_netto": "230.99",
+  "alt_brutto": "274.88",
+  "liste_brutto": "274.88",
+  "ziel_brutto": "274.78",
+  "neu_netto": "230.9050"
+ },
+ {
+  "id": 41680,
+  "sku": "112152",
+  "name": "VitaLink Turbo+, 10 L",
+  "alt_netto": "430.34",
+  "alt_brutto": "512.10",
+  "liste_brutto": "512.11",
+  "ziel_brutto": "512.01",
+  "neu_netto": "430.2550"
+ },
+ {
+  "id": 41681,
+  "sku": "109840",
+  "name": "Vitaponix VitaSilica, Pflanzenhilfsmittel, 1 Liter",
+  "alt_netto": "73.95",
+  "alt_brutto": "88.00",
+  "liste_brutto": "88.00",
+  "ziel_brutto": "87.90",
+  "neu_netto": "73.8650"
+ },
+ {
+  "id": 41682,
+  "sku": "109841",
+  "name": "Vitaponix VitaSilica, Pflanzenhilfsmittel, 5 Liter",
+  "alt_netto": "302.52",
+  "alt_brutto": "360.00",
+  "liste_brutto": "360.00",
+  "ziel_brutto": "359.90",
+  "neu_netto": "302.4350"
+ },
+ {
+  "id": 41683,
+  "sku": "109842",
+  "name": "Vitaponix VitaBud, Pflanzenhilfsmittel, 1 Liter",
+  "alt_netto": "46.22",
+  "alt_brutto": "55.00",
+  "liste_brutto": "55.00",
+  "ziel_brutto": "54.90",
+  "neu_netto": "46.1316"
+ },
+ {
+  "id": 41684,
+  "sku": "109843",
+  "name": "Vitaponix VitaBud, Pflanzenhilfsmittel, 5 Liter",
+  "alt_netto": "184.87",
+  "alt_brutto": "220.00",
+  "liste_brutto": "220.00",
+  "ziel_brutto": "219.90",
+  "neu_netto": "184.7850"
+ },
+ {
+  "id": 41685,
+  "sku": "109847",
+  "name": "Vitaponix VitaSweet, Pflanzenhilfsmittel, 5 Liter",
+  "alt_netto": "82.52",
+  "alt_brutto": "98.20",
+  "liste_brutto": "98.20",
+  "ziel_brutto": "98.10",
+  "neu_netto": "82.4350"
+ },
+ {
+  "id": 41686,
+  "sku": "109848",
+  "name": "Vitaponix VitaCal, Pflanzenhilfsmittel, 1 Liter",
+  "alt_netto": "20.00",
+  "alt_brutto": "23.80",
+  "liste_brutto": "23.80",
+  "ziel_brutto": "23.70",
+  "neu_netto": "19.9150"
+ },
+ {
+  "id": 41687,
+  "sku": "109849",
+  "name": "Vitaponix VitaCal, Pflanzenhilfsmittel, 5 Liter",
+  "alt_netto": "80.00",
+  "alt_brutto": "95.20",
+  "liste_brutto": "95.20",
+  "ziel_brutto": "95.10",
+  "neu_netto": "79.9150"
+ },
+ {
+  "id": 41512,
+  "sku": "113093",
+  "name": "Advanced Hydroponics Silica 500 ml",
+  "alt_netto": "28.20",
+  "alt_brutto": "33.56",
+  "liste_brutto": "33.56",
+  "ziel_brutto": "33.46",
+  "neu_netto": "28.1150"
+ },
+ {
+  "id": 41513,
+  "sku": "113094",
+  "name": "Advanced Hydroponics Silica 1L",
+  "alt_netto": "54.75",
+  "alt_brutto": "65.15",
+  "liste_brutto": "65.15",
+  "ziel_brutto": "65.05",
+  "neu_netto": "54.6579"
+ },
+ {
+  "id": 41544,
+  "sku": "113097",
+  "name": "Advanced Hydroponics Amino 250 ml",
+  "alt_netto": "14.75",
+  "alt_brutto": "17.55",
+  "liste_brutto": "17.55",
+  "ziel_brutto": "17.45",
+  "neu_netto": "14.6579"
+ },
+ {
+  "id": 41545,
+  "sku": "113098",
+  "name": "Advanced Hydroponics Amino 500 ml",
+  "alt_netto": "26.75",
+  "alt_brutto": "31.83",
+  "liste_brutto": "31.83",
+  "ziel_brutto": "31.73",
+  "neu_netto": "26.6579"
+ },
+ {
+  "id": 41546,
+  "sku": "113099",
+  "name": "Advanced Hydroponics Amino 1L",
+  "alt_netto": "49.95",
+  "alt_brutto": "59.44",
+  "liste_brutto": "59.44",
+  "ziel_brutto": "59.34",
+  "neu_netto": "49.8650"
+ },
+ {
+  "id": 41548,
+  "sku": "113101",
+  "name": "Advanced Hydroponics PK 500 ml",
+  "alt_netto": "9.75",
+  "alt_brutto": "11.60",
+  "liste_brutto": "11.60",
+  "ziel_brutto": "11.50",
+  "neu_netto": "9.6579"
+ },
+ {
+  "id": 41549,
+  "sku": "113102",
+  "name": "Advanced Hydroponics PK 1L",
+  "alt_netto": "14.50",
+  "alt_brutto": "17.26",
+  "liste_brutto": "17.26",
+  "ziel_brutto": "17.16",
+  "neu_netto": "14.4150"
+ },
+ {
+  "id": 41552,
+  "sku": "113104",
+  "name": "Advanced Hydroponics Flowering Boost 500 ml",
+  "alt_netto": "18.75",
+  "alt_brutto": "22.31",
+  "liste_brutto": "22.31",
+  "ziel_brutto": "22.21",
+  "neu_netto": "18.6579"
+ },
+ {
+  "id": 41568,
+  "sku": "113105",
+  "name": "Advanced Hydroponics Flowering Boost 1 L",
+  "alt_netto": "33.25",
+  "alt_brutto": "39.57",
+  "liste_brutto": "39.57",
+  "ziel_brutto": "39.47",
+  "neu_netto": "33.1650"
+ },
+ {
+  "id": 41569,
+  "sku": "113106",
+  "name": "Advanced Hydroponics Bacto Force 450 g",
+  "alt_netto": "10.84",
+  "alt_brutto": "12.90",
+  "liste_brutto": "12.90",
+  "ziel_brutto": "12.80",
+  "neu_netto": "10.7550"
+ },
+ {
+  "id": 40933,
+  "sku": "103666",
+  "name": "Trimpro Ersatzteil, Klinge und Nabe",
+  "alt_netto": "363.03",
+  "alt_brutto": "432.01",
+  "liste_brutto": "432.00",
+  "ziel_brutto": "431.90",
+  "neu_netto": "362.9352"
+ },
+ {
+  "id": 40934,
+  "sku": "103668",
+  "name": "Trimpro Ersatzteil, Gitterrost (7/16 Zoll +1/4 Zoll)",
+  "alt_netto": "196.64",
+  "alt_brutto": "234.00",
+  "liste_brutto": "234.00",
+  "ziel_brutto": "233.90",
+  "neu_netto": "196.5527"
+ },
+ {
+  "id": 40935,
+  "sku": "103669",
+  "name": "Trimpro Workstation Ersatzteil, Gitterrost (1/4 Zoll)",
+  "alt_netto": "358.82",
+  "alt_brutto": "427.00",
+  "liste_brutto": "427.00",
+  "ziel_brutto": "426.90",
+  "neu_netto": "358.7350"
+ },
+ {
+  "id": 40936,
+  "sku": "103671",
+  "name": "Trimpro Ersatzteil, Beutel mit Befestigungsring",
+  "alt_netto": "80.67",
+  "alt_brutto": "96.00",
+  "liste_brutto": "96.00",
+  "ziel_brutto": "95.90",
+  "neu_netto": "80.5850"
+ },
+ {
+  "id": 40937,
+  "sku": "103672",
+  "name": "Trimpro Automatik Ersatzteil, Beutel ohne Befestigungsring",
+  "alt_netto": "59.66",
+  "alt_brutto": "71.00",
+  "liste_brutto": "71.00",
+  "ziel_brutto": "70.90",
+  "neu_netto": "59.5750"
+ },
+ {
+  "id": 40938,
+  "sku": "103673",
+  "name": "Trimpro Ersatzteil, Tischbeine, 4 Stk.",
+  "alt_netto": "35.29",
+  "alt_brutto": "42.00",
+  "liste_brutto": "42.00",
+  "ziel_brutto": "41.90",
+  "neu_netto": "35.2050"
+ },
+ {
+  "id": 40939,
+  "sku": "103674",
+  "name": "Trimbox Ersatzteil, Klinge",
+  "alt_netto": "158.82",
+  "alt_brutto": "189.00",
+  "liste_brutto": "189.00",
+  "ziel_brutto": "188.90",
+  "neu_netto": "158.7350"
+ },
+ {
+  "id": 40940,
+  "sku": "103675",
+  "name": "Trimbox Ersatzteil, Gitterrost (7/16 Zoll)",
+  "alt_netto": "47.90",
+  "alt_brutto": "57.00",
+  "liste_brutto": "57.00",
+  "ziel_brutto": "56.90",
+  "neu_netto": "47.8150"
+ },
+ {
+  "id": 40941,
+  "sku": "103676",
+  "name": "Trimbox Workstation, Aluminiumgestell für Trimbox, Gitterrost aus Edelstahl, 1/4 Zoll",
+  "alt_netto": "280.67",
+  "alt_brutto": "334.00",
+  "liste_brutto": "334.00",
+  "ziel_brutto": "333.90",
+  "neu_netto": "280.5850"
+ },
+ {
+  "id": 40942,
+  "sku": "103677",
+  "name": "Trimbox Ersatzteil, Motor",
+  "alt_netto": "259.66",
+  "alt_brutto": "309.00",
+  "liste_brutto": "309.00",
+  "ziel_brutto": "308.90",
+  "neu_netto": "259.5750"
+ },
+ {
+  "id": 40943,
+  "sku": "103678",
+  "name": "Trimbox Ersatzteil, Beutel",
+  "alt_netto": "35.29",
+  "alt_brutto": "42.00",
+  "liste_brutto": "42.00",
+  "ziel_brutto": "41.90",
+  "neu_netto": "35.2050"
+ },
+ {
+  "id": 40944,
+  "sku": "103679",
+  "name": "Trimpro Automatik Ersatzteil, Motor",
+  "alt_netto": "530.25",
+  "alt_brutto": "631.00",
+  "liste_brutto": "631.00",
+  "ziel_brutto": "630.90",
+  "neu_netto": "530.1650"
+ },
+ {
+  "id": 40945,
+  "sku": "103680",
+  "name": "Trimpro Automatik Ersatzteil, Gitterrost, 1/4 Zoll",
+  "alt_netto": "261.34",
+  "alt_brutto": "310.99",
+  "liste_brutto": "311.00",
+  "ziel_brutto": "310.90",
+  "neu_netto": "261.2550"
+ },
+ {
+  "id": 40946,
+  "sku": "103682",
+  "name": "Trimpro Automatik Ersatzteil, Plexiglas, groß",
+  "alt_netto": "80.67",
+  "alt_brutto": "96.00",
+  "liste_brutto": "96.00",
+  "ziel_brutto": "95.90",
+  "neu_netto": "80.5850"
+ },
+ {
+  "id": 40947,
+  "sku": "103683",
+  "name": "Trimpro Automatik Ersatzteil, Plexiglas, klein",
+  "alt_netto": "20.17",
+  "alt_brutto": "24.00",
+  "liste_brutto": "24.00",
+  "ziel_brutto": "23.90",
+  "neu_netto": "20.0790"
+ },
+ {
+  "id": 40948,
+  "sku": "106989",
+  "name": "Trimpro Automatik XL Ersatzteil, Gitterrost (7/16'), Large Slots",
+  "alt_netto": "859.66",
+  "alt_brutto": "1023.00",
+  "liste_brutto": "1023.00",
+  "ziel_brutto": "1022.90",
+  "neu_netto": "859.5750"
+ },
+ {
+  "id": 40949,
+  "sku": "107427",
+  "name": "Aluminiumgestell für Trimpro Rotor Workstation",
+  "alt_netto": "245.38",
+  "alt_brutto": "292.00",
+  "liste_brutto": "292.00",
+  "ziel_brutto": "291.90",
+  "neu_netto": "245.2895"
+ },
+ {
+  "id": 40950,
+  "sku": "107428",
+  "name": "Trimpro Rotor Workstation, Erntemaschine inklusive Aluminiumgestell",
+  "alt_netto": "1626.05",
+  "alt_brutto": "1935.00",
+  "liste_brutto": "1935.00",
+  "ziel_brutto": "1934.90",
+  "neu_netto": "1625.9650"
+ },
+ {
+  "id": 40951,
+  "sku": "107639",
+  "name": "Trimpro Rotor Ersatzteil, Klinge",
+  "alt_netto": "226.89",
+  "alt_brutto": "270.00",
+  "liste_brutto": "270.00",
+  "ziel_brutto": "269.90",
+  "neu_netto": "226.8050"
+ },
+ {
+  "id": 40952,
+  "sku": "107640",
+  "name": "Trimpro Rotor Ersatzteil, oberer Motor (zusammengebaut)",
+  "alt_netto": "351.26",
+  "alt_brutto": "418.00",
+  "liste_brutto": "418.00",
+  "ziel_brutto": "417.90",
+  "neu_netto": "351.1750"
+ },
+ {
+  "id": 40953,
+  "sku": "108025",
+  "name": "Trimpro Unplugged, Maße aufgebaut 36,8 x 35,6 x 38,1 cm, 3,4 kg",
+  "alt_netto": "308.00",
+  "alt_brutto": "366.52",
+  "liste_brutto": "366.52",
+  "ziel_brutto": "366.42",
+  "neu_netto": "307.9150"
+ },
+ {
+  "id": 40954,
+  "sku": "108957",
+  "name": "Trimpro Automatik XL Ersatzteil, Beutel",
+  "alt_netto": "147.06",
+  "alt_brutto": "175.00",
+  "liste_brutto": "175.00",
+  "ziel_brutto": "174.90",
+  "neu_netto": "146.9737"
+ },
+ {
+  "id": 40955,
+  "sku": "108961",
+  "name": "Trimpro Automatik XL Ersatzteil, Abgang gebogen",
+  "alt_netto": "115.97",
+  "alt_brutto": "138.00",
+  "liste_brutto": "138.00",
+  "ziel_brutto": "137.90",
+  "neu_netto": "115.8764"
+ },
+ {
+  "id": 40956,
+  "sku": "108962",
+  "name": "Trimpro Automatik Ersatzteil, Abgang gerade",
+  "alt_netto": "45.38",
+  "alt_brutto": "54.00",
+  "liste_brutto": "54.00",
+  "ziel_brutto": "53.90",
+  "neu_netto": "45.2895"
+ },
+ {
+  "id": 40957,
+  "sku": "108963",
+  "name": "Trimpro Automatik XL Ersatzteil, Abgang gerade",
+  "alt_netto": "115.97",
+  "alt_brutto": "138.00",
+  "liste_brutto": "138.00",
+  "ziel_brutto": "137.90",
+  "neu_netto": "115.8764"
+ },
+ {
+  "id": 41611,
+  "sku": "112203",
+  "name": "Essentials PLUS FLUSH, 1 L",
+  "alt_netto": "13.36",
+  "alt_brutto": "15.90",
+  "liste_brutto": "15.90",
+  "ziel_brutto": "15.80",
+  "neu_netto": "13.2750"
+ },
+ {
+  "id": 41612,
+  "sku": "112204",
+  "name": "Essentials PLUS FLUSH, 5 L",
+  "alt_netto": "41.93",
+  "alt_brutto": "49.90",
+  "liste_brutto": "49.90",
+  "ziel_brutto": "49.80",
+  "neu_netto": "41.8450"
+ },
+ {
+  "id": 41614,
+  "sku": "103642",
+  "name": "Pollinator, der bis zu 150 g Pflanzenmaterial verarbeiten kann",
+  "alt_netto": "377.31",
+  "alt_brutto": "449.00",
+  "liste_brutto": "449.00",
+  "ziel_brutto": "448.90",
+  "neu_netto": "377.2250"
+ },
+ {
+  "id": 41615,
+  "sku": "103643",
+  "name": "Pollinator, der bis zu 500 g Pflanzenmaterial verarbeiten kann",
+  "alt_netto": "621.85",
+  "alt_brutto": "740.00",
+  "liste_brutto": "740.00",
+  "ziel_brutto": "739.90",
+  "neu_netto": "621.7632"
+ },
+ {
+  "id": 41616,
+  "sku": "103648",
+  "name": "Extraktionssieb, 225 µm, Polyamidgewebe, pro lfm (50 m/Rolle), 1 m x 1,15 m",
+  "alt_netto": "31.85",
+  "alt_brutto": "37.90",
+  "liste_brutto": "37.90",
+  "ziel_brutto": "37.80",
+  "neu_netto": "31.7632"
+ },
+ {
+  "id": 41617,
+  "sku": "103649",
+  "name": "Extraktionssieb, 75 µm, Polyamidgewebe, pro lfm (50 m/Rolle), 1 m x 1,15 m",
+  "alt_netto": "46.13",
+  "alt_brutto": "54.89",
+  "liste_brutto": "54.90",
+  "ziel_brutto": "54.80",
+  "neu_netto": "46.0450"
+ },
+ {
+  "id": 41618,
+  "sku": "103650",
+  "name": "Extraktionssieb, 125 µm, Polyamidgewebe, pro lfm (50 m/Rolle), 1 m x 1,15 m",
+  "alt_netto": "16.72",
+  "alt_brutto": "19.90",
+  "liste_brutto": "19.90",
+  "ziel_brutto": "19.80",
+  "neu_netto": "16.6350"
+ },
+ {
+  "id": 41619,
+  "sku": "103651",
+  "name": "Extraktionssieb, 170 µm, Polyamidgewebe, pro lfm (50 m/Rolle), 1 m x 1 m",
+  "alt_netto": "34.37",
+  "alt_brutto": "40.90",
+  "liste_brutto": "40.90",
+  "ziel_brutto": "40.80",
+  "neu_netto": "34.2850"
+ },
+ {
+  "id": 41620,
+  "sku": "103744",
+  "name": "Pyramiden-Sack, klein, Ersatzteil für Bubble Machine Art. 103745",
+  "alt_netto": "36.05",
+  "alt_brutto": "42.90",
+  "liste_brutto": "42.90",
+  "ziel_brutto": "42.80",
+  "neu_netto": "35.9650"
+ },
+ {
+  "id": 41621,
+  "sku": "103745",
+  "name": "Bubble Machine, inkl. 2 Extraktionsbeutel, 1 Pyramidensack",
+  "alt_netto": "136.13",
+  "alt_brutto": "161.99",
+  "liste_brutto": "162.00",
+  "ziel_brutto": "161.90",
+  "neu_netto": "136.0450"
+ },
+ {
+  "id": 41622,
+  "sku": "108588",
+  "name": "maXtractor Extraktorbeutel 3,8 L, 3er-Set",
+  "alt_netto": "83.19",
+  "alt_brutto": "99.00",
+  "liste_brutto": "99.00",
+  "ziel_brutto": "98.90",
+  "neu_netto": "83.1050"
+ },
+ {
+  "id": 41623,
+  "sku": "108589",
+  "name": "maXtractor Extraktorbeutel, 19 L, 4er-Set, 45, 120, 160 u. 220 µ",
+  "alt_netto": "57.90",
+  "alt_brutto": "68.90",
+  "liste_brutto": "68.90",
+  "ziel_brutto": "68.80",
+  "neu_netto": "57.8150"
+ },
+ {
+  "id": 41624,
+  "sku": "109104",
+  "name": "Polm Shaker 'Shake'n'joy', einfaches Gerät zum Trennen von Harzen und Pflanzenmaterial",
+  "alt_netto": "15.04",
+  "alt_brutto": "17.90",
+  "liste_brutto": "17.90",
+  "ziel_brutto": "17.80",
+  "neu_netto": "14.9550"
+ },
+ {
+  "id": 41625,
+  "sku": "111995",
+  "name": "Magical Butter Machine, Planzenextraktor",
+  "alt_netto": "167.98",
+  "alt_brutto": "199.90",
+  "liste_brutto": "199.90",
+  "ziel_brutto": "199.80",
+  "neu_netto": "167.8950"
+ },
+ {
+  "id": 41626,
+  "sku": "103699",
+  "name": "10-Tonnen-Presse, mit Rahmen, Pressform und 10-Tonnen-Hydraulikheber",
+  "alt_netto": "167.23",
+  "alt_brutto": "199.00",
+  "liste_brutto": "199.00",
+  "ziel_brutto": "198.90",
+  "neu_netto": "167.1369"
+ },
+ {
+  "id": 41627,
+  "sku": "103701",
+  "name": "Pressrahmen, verstärkt, mit Pressform, bis 12 Tonnen",
+  "alt_netto": "125.21",
+  "alt_brutto": "149.00",
+  "liste_brutto": "149.00",
+  "ziel_brutto": "148.90",
+  "neu_netto": "125.1250"
+ },
+ {
+  "id": 41628,
+  "sku": "106550",
+  "name": "Jack Puck 8-Tonnen-Pressform, viereckig 16,5 x 17 x 7,5 cm",
+  "alt_netto": "121.85",
+  "alt_brutto": "145.00",
+  "liste_brutto": "145.00",
+  "ziel_brutto": "144.90",
+  "neu_netto": "121.7632"
+ },
+ {
+  "id": 41629,
+  "sku": "108910",
+  "name": "Hydraulikheber für 10-Tonnen-Presse (Art. 103699)",
+  "alt_netto": "69.66",
+  "alt_brutto": "82.90",
+  "liste_brutto": "82.90",
+  "ziel_brutto": "82.80",
+  "neu_netto": "69.5750"
+ },
+ {
+  "id": 41630,
+  "sku": "111563",
+  "name": "Qnubu Press Kompact 2.0 Manual 600 kg, Heißdruckpresse, 6 x 12 cm Platten",
+  "alt_netto": "200.84",
+  "alt_brutto": "239.00",
+  "liste_brutto": "239.00",
+  "ziel_brutto": "238.90",
+  "neu_netto": "200.7550"
+ },
+ {
+  "id": 41631,
+  "sku": "111564",
+  "name": "Qnubu Press Bolt Manual 1 Tonne, Heißdruckpresse, 6 x 12 cm Platten",
+  "alt_netto": "400.00",
+  "alt_brutto": "476.00",
+  "liste_brutto": "476.00",
+  "ziel_brutto": "475.90",
+  "neu_netto": "399.9150"
+ },
+ {
+  "id": 41632,
+  "sku": "111565",
+  "name": "Qnubu Press Pro Hydraulic 2 Tonnen, Heißdruckpresse, 6 x 12 cm Platten",
+  "alt_netto": "569.75",
+  "alt_brutto": "678.00",
+  "liste_brutto": "678.00",
+  "ziel_brutto": "677.90",
+  "neu_netto": "569.6579"
+ },
+ {
+  "id": 41633,
+  "sku": "111566",
+  "name": "Qnubu Press Pro Hydraulic 6 Tonnen, Heißdruckpresse, 12 x 12 cm Platten",
+  "alt_netto": "852.94",
+  "alt_brutto": "1015.00",
+  "liste_brutto": "1015.00",
+  "ziel_brutto": "1014.90",
+  "neu_netto": "852.8550"
+ },
+ {
+  "id": 41635,
+  "sku": "111567",
+  "name": "Qnubu Press Pro-Rot 10 Tonnen, Heißdruckpresse, 12 x 12 cm Platten",
+  "alt_netto": "1150.42",
+  "alt_brutto": "1369.00",
+  "liste_brutto": "1369.00",
+  "ziel_brutto": "1368.90",
+  "neu_netto": "1150.3350"
+ },
+ {
+  "id": 41636,
+  "sku": "111570",
+  "name": "Qnubu Press Pro Lion Hydraulic 20 Tonnen, Heißdruckpresse, 7,6 x 25 cm und 12 x 12 cm Platten",
+  "alt_netto": "1402.52",
+  "alt_brutto": "1669.00",
+  "liste_brutto": "1669.00",
+  "ziel_brutto": "1668.90",
+  "neu_netto": "1402.4350"
+ },
+ {
+  "id": 41637,
+  "sku": "111572",
+  "name": "Qnubu Press Auto Lion 20 Tonnen, automatische Heißdruckpresse, 15 x 20 cm und 7,6 x 25 cm Platten",
+  "alt_netto": "1802.52",
+  "alt_brutto": "2145.00",
+  "liste_brutto": "2145.00",
+  "ziel_brutto": "2144.90",
+  "neu_netto": "1802.4350"
+ },
+ {
+  "id": 41638,
+  "sku": "111573",
+  "name": "Qnubu Pre-Press, Pressform, 5 x 10 cm",
+  "alt_netto": "70.59",
+  "alt_brutto": "84.00",
+  "liste_brutto": "84.00",
+  "ziel_brutto": "83.90",
+  "neu_netto": "70.5000"
+ },
+ {
+  "id": 41639,
+  "sku": "111574",
+  "name": "Qnubu Vac Sealer, Gerät zum Vakuumieren und Versiegeln, 90 W",
+  "alt_netto": "29.83",
+  "alt_brutto": "35.50",
+  "liste_brutto": "35.50",
+  "ziel_brutto": "35.40",
+  "neu_netto": "29.7450"
+ },
+ {
+  "id": 41640,
+  "sku": "111576",
+  "name": "Qnubu Nitrovac Sealer, 50 cm, Gerät zum Versiegeln und Vakuumieren",
+  "alt_netto": "1050.42",
+  "alt_brutto": "1250.00",
+  "liste_brutto": "1250.00",
+  "ziel_brutto": "1249.90",
+  "neu_netto": "1050.3350"
+ },
+ {
+  "id": 41641,
+  "sku": "111577",
+  "name": "Qnubu NitroVac Automatic Sealer, Gerät zum Versiegeln und Vakuumieren",
+  "alt_netto": "2512.61",
+  "alt_brutto": "2990.01",
+  "liste_brutto": "2990.00",
+  "ziel_brutto": "2989.90",
+  "neu_netto": "2512.5150"
+ },
+ {
+  "id": 41644,
+  "sku": "111586",
+  "name": "Qnubu Extraktionsbeutel 15 µm, 11 x 5 cm, 10 St je Pckg",
+  "alt_netto": "9.16",
+  "alt_brutto": "10.90",
+  "liste_brutto": "10.90",
+  "ziel_brutto": "10.80",
+  "neu_netto": "9.0750"
+ },
+ {
+  "id": 41645,
+  "sku": "111587",
+  "name": "Qnubu Extraktionsbeutel 25 µm, 11 x 5 cm, 10 St je Pckg",
+  "alt_netto": "9.16",
+  "alt_brutto": "10.90",
+  "liste_brutto": "10.90",
+  "ziel_brutto": "10.80",
+  "neu_netto": "9.0750"
+ },
+ {
+  "id": 41646,
+  "sku": "111588",
+  "name": "Qnubu Extraktionsbeutel 37 µm, 11 x 5 cm, 10 St je Pckg",
+  "alt_netto": "9.16",
+  "alt_brutto": "10.90",
+  "liste_brutto": "10.90",
+  "ziel_brutto": "10.80",
+  "neu_netto": "9.0750"
+ },
+ {
+  "id": 41647,
+  "sku": "111589",
+  "name": "Qnubu Extraktionsbeutel, 70 µm, 11 x 5 cm, 10 St je Pckg",
+  "alt_netto": "9.16",
+  "alt_brutto": "10.90",
+  "liste_brutto": "10.90",
+  "ziel_brutto": "10.80",
+  "neu_netto": "9.0750"
+ },
+ {
+  "id": 41648,
+  "sku": "111590",
+  "name": "Qnubu Extraktionsbeutel 90 µm, 11 x 5 cm, 10 St je Pckg",
+  "alt_netto": "9.16",
+  "alt_brutto": "10.90",
+  "liste_brutto": "10.90",
+  "ziel_brutto": "10.80",
+  "neu_netto": "9.0750"
+ },
+ {
+  "id": 41649,
+  "sku": "111591",
+  "name": "Qnubu Extraktionsbeutel 120 µm, 11 x 5 cm, 10 St je Pckg",
+  "alt_netto": "9.16",
+  "alt_brutto": "10.90",
+  "liste_brutto": "10.90",
+  "ziel_brutto": "10.80",
+  "neu_netto": "9.0750"
+ },
+ {
+  "id": 41650,
+  "sku": "111592",
+  "name": "Qnubu Extraktionsbeutel 160 µm, 11 x 5 cm, 10 St je Pckg",
+  "alt_netto": "9.16",
+  "alt_brutto": "10.90",
+  "liste_brutto": "10.90",
+  "ziel_brutto": "10.80",
+  "neu_netto": "9.0750"
+ },
+ {
+  "id": 41651,
+  "sku": "111593",
+  "name": "Qnubu Extraktionsbeutel 37 µm,, 11 x 11 cm, 10 St je Pckg",
+  "alt_netto": "10.92",
+  "alt_brutto": "12.99",
+  "liste_brutto": "12.99",
+  "ziel_brutto": "12.89",
+  "neu_netto": "10.8259"
+ },
+ {
+  "id": 41652,
+  "sku": "111594",
+  "name": "Qnubu Extraktionsbeutel 160 µm, 11 x 11 cm, 10 St je Pckg",
+  "alt_netto": "10.91",
+  "alt_brutto": "12.98",
+  "liste_brutto": "12.98",
+  "ziel_brutto": "12.88",
+  "neu_netto": "10.8175"
+ },
+ {
+  "id": 41654,
+  "sku": "111596",
+  "name": "Qnubu Silikonbehälter, 6 ml, Glasgefäß mit 70 Stück",
+  "alt_netto": "73.95",
+  "alt_brutto": "88.00",
+  "liste_brutto": "88.00",
+  "ziel_brutto": "87.90",
+  "neu_netto": "73.8650"
+ },
+ {
+  "id": 41655,
+  "sku": "111597",
+  "name": "Mix Qnubu Silikon Behälter, XL-Display mit 139 Stk.",
+  "alt_netto": "205.88",
+  "alt_brutto": "245.00",
+  "liste_brutto": "245.00",
+  "ziel_brutto": "244.90",
+  "neu_netto": "205.7950"
+ },
+ {
+  "id": 41658,
+  "sku": "113197",
+  "name": "Qnubu Beutel aus Aluminiumfolie silberne, verschließbar, 45 x 60 cm, 50 St je Pckg",
+  "alt_netto": "82.35",
+  "alt_brutto": "98.00",
+  "liste_brutto": "98.00",
+  "ziel_brutto": "97.90",
+  "neu_netto": "82.2650"
+ },
+ {
+  "id": 40983,
+  "sku": "109644",
+  "name": "Ersatzteil Twister T2 Blade V-Belt grün",
+  "alt_netto": "116.81",
+  "alt_brutto": "139.00",
+  "liste_brutto": "139.00",
+  "ziel_brutto": "138.90",
+  "neu_netto": "116.7167"
+ },
+ {
+  "id": 40984,
+  "sku": "109645",
+  "name": "Ersatzteil Twister T2 Tumbler V-Belt schwarz",
+  "alt_netto": "49.58",
+  "alt_brutto": "59.00",
+  "liste_brutto": "59.00",
+  "ziel_brutto": "58.90",
+  "neu_netto": "49.4950"
+ },
+ {
+  "id": 40985,
+  "sku": "109646",
+  "name": "Ersatzteil, Twister T2 Doppelschalter 2er-Pack",
+  "alt_netto": "111.76",
+  "alt_brutto": "132.99",
+  "liste_brutto": "133.00",
+  "ziel_brutto": "132.90",
+  "neu_netto": "111.6750"
+ },
+ {
+  "id": 40986,
+  "sku": "109648",
+  "name": "Ersatzteil Twister T2 Rail (Single), Montageschiene für ein Gerät, höhenverstellbar",
+  "alt_netto": "570.59",
+  "alt_brutto": "679.00",
+  "liste_brutto": "679.00",
+  "ziel_brutto": "678.90",
+  "neu_netto": "570.5000"
+ },
+ {
+  "id": 40987,
+  "sku": "109649",
+  "name": "Ersatzteil Twister T2 Rail Extension, Erweiterung der Montageschiene (Art. 109648)",
+  "alt_netto": "318.49",
+  "alt_brutto": "379.00",
+  "liste_brutto": "379.00",
+  "ziel_brutto": "378.90",
+  "neu_netto": "318.3974"
+ },
+ {
+  "id": 40988,
+  "sku": "109650",
+  "name": "Ersatzteil, Twister T2 Wet Tumbler, Rotationstrommel für feuchte Ernte, 1/4' Slots, 50 Slo ...",
+  "alt_netto": "875.63",
+  "alt_brutto": "1042.00",
+  "liste_brutto": "1042.00",
+  "ziel_brutto": "1041.90",
+  "neu_netto": "875.5450"
+ },
+ {
+  "id": 40989,
+  "sku": "109651",
+  "name": "Ersatzteil, Twister T2 Dry Tumbler, Rotationstrommel für trockene Ernte, 3/16' Slots, 62 S ...",
+  "alt_netto": "1259.66",
+  "alt_brutto": "1499.00",
+  "liste_brutto": "1499.00",
+  "ziel_brutto": "1498.90",
+  "neu_netto": "1259.5750"
+ },
+ {
+  "id": 40990,
+  "sku": "109652",
+  "name": "Ersatzteil, Twister T2 Clear Vacuum Bags, Sammelbeutel, 3 x 10er-Pack, 41' x 30', 5 mil",
+  "alt_netto": "159.66",
+  "alt_brutto": "190.00",
+  "liste_brutto": "190.00",
+  "ziel_brutto": "189.90",
+  "neu_netto": "159.5750"
+ },
+ {
+  "id": 40991,
+  "sku": "109653",
+  "name": "Ersatzteil, Twister T2 Vacuum Bag, Sammelbeutel, 40 Micron (große Strömung)",
+  "alt_netto": "109.24",
+  "alt_brutto": "130.00",
+  "liste_brutto": "130.00",
+  "ziel_brutto": "129.90",
+  "neu_netto": "109.1550"
+ },
+ {
+  "id": 40992,
+  "sku": "109654",
+  "name": "Twister T2 Nylon-Bürste",
+  "alt_netto": "251.26",
+  "alt_brutto": "299.00",
+  "liste_brutto": "299.00",
+  "ziel_brutto": "298.90",
+  "neu_netto": "251.1750"
+ },
+ {
+  "id": 40993,
+  "sku": "109655",
+  "name": "Twister T4, Ersatzteil, weiß Filter Bag, 300 Micron Schnittreste-Sammeltasche",
+  "alt_netto": "86.55",
+  "alt_brutto": "102.99",
+  "liste_brutto": "103.00",
+  "ziel_brutto": "102.90",
+  "neu_netto": "86.4650"
+ },
+ {
+  "id": 40994,
+  "sku": "109656",
+  "name": "Ersatzteil, Twister T4 White (Dry) Filter Bag, Sammelbeutel, 70 Micron",
+  "alt_netto": "138.66",
+  "alt_brutto": "165.01",
+  "liste_brutto": "165.00",
+  "ziel_brutto": "164.90",
+  "neu_netto": "138.5654"
+ },
+ {
+  "id": 40995,
+  "sku": "109657",
+  "name": "Twister T4 Nylon-Bürste",
+  "alt_netto": "184.03",
+  "alt_brutto": "219.00",
+  "liste_brutto": "219.00",
+  "ziel_brutto": "218.90",
+  "neu_netto": "183.9450"
+ },
+ {
+  "id": 41005,
+  "sku": "109658",
+  "name": "Twister T6, Erntemaschine &amp; Sauger, für feuchte und trockene Ernte (Standard )",
+  "alt_netto": "4120.24",
+  "alt_brutto": "4903.09",
+  "liste_brutto": "4903.08",
+  "ziel_brutto": "4902.98",
+  "neu_netto": "4120.1453"
+ },
+ {
+  "id": 41006,
+  "sku": "110579",
+  "name": "Twister B4 Bucker &amp; Gestell, 150 Pfd/h",
+  "alt_netto": "20159.66",
+  "alt_brutto": "23990.00",
+  "liste_brutto": "23990.00",
+  "ziel_brutto": "23989.90",
+  "neu_netto": "20159.5750"
+ },
+ {
+  "id": 41007,
+  "sku": "110979",
+  "name": "Twister T2 Hopper Assy, Einfülltrichter",
+  "alt_netto": "335.29",
+  "alt_brutto": "399.00",
+  "liste_brutto": "399.00",
+  "ziel_brutto": "398.90",
+  "neu_netto": "335.2050"
+ },
+ {
+  "id": 41008,
+  "sku": "111155",
+  "name": "Twister BatchOne Euro Trimmer",
+  "alt_netto": "21000.00",
+  "alt_brutto": "24990.00",
+  "liste_brutto": "24990.00",
+  "ziel_brutto": "24989.90",
+  "neu_netto": "20999.9150"
+ },
+ {
+  "id": 41009,
+  "sku": "111161",
+  "name": "Twister T4, Trim Saver, CS-12E, Euro",
+  "alt_netto": "3529.41",
+  "alt_brutto": "4200.00",
+  "liste_brutto": "4200.00",
+  "ziel_brutto": "4199.90",
+  "neu_netto": "3529.3250"
+ },
+ {
+  "id": 41010,
+  "sku": "111162",
+  "name": "Twister T2, Trim Saver, CS-18E, Euro",
+  "alt_netto": "6546.22",
+  "alt_brutto": "7790.00",
+  "liste_brutto": "7790.00",
+  "ziel_brutto": "7789.90",
+  "neu_netto": "6546.1316"
+ },
+ {
+  "id": 41011,
+  "sku": "111163",
+  "name": "Twister T2, Leaf Collector, Euro",
+  "alt_netto": "1763.87",
+  "alt_brutto": "2099.01",
+  "liste_brutto": "2099.00",
+  "ziel_brutto": "2098.90",
+  "neu_netto": "1763.7755"
+ },
+ {
+  "id": 41012,
+  "sku": "111164",
+  "name": "Twister Tandem T2 Trimming System mit Leaf Collectors, EU-Plug",
+  "alt_netto": "25966.39",
+  "alt_brutto": "30900.00",
+  "liste_brutto": "30900.00",
+  "ziel_brutto": "30899.90",
+  "neu_netto": "25966.2965"
+ },
+ {
+  "id": 41013,
+  "sku": "111165",
+  "name": "Twister T4 Rails, Triple",
+  "alt_netto": "1424.37",
+  "alt_brutto": "1695.00",
+  "liste_brutto": "1695.00",
+  "ziel_brutto": "1694.90",
+  "neu_netto": "1424.2850"
+ },
+ {
+  "id": 41014,
+  "sku": "111166",
+  "name": "Twister Tandem T4 Trimming System mit Leaf Collectors",
+  "alt_netto": "18901.75",
+  "alt_brutto": "22493.08",
+  "liste_brutto": "22493.08",
+  "ziel_brutto": "22492.98",
+  "neu_netto": "18901.6579"
+ },
+ {
+  "id": 41015,
+  "sku": "111167",
+  "name": "Twister T4, Stand Assy",
+  "alt_netto": "419.33",
+  "alt_brutto": "499.00",
+  "liste_brutto": "499.00",
+  "ziel_brutto": "498.90",
+  "neu_netto": "419.2377"
+ },
+ {
+  "id": 41016,
+  "sku": "111168",
+  "name": "Twister Tandem T4 Trimming System mit Trim Savers",
+  "alt_netto": "25579.87",
+  "alt_brutto": "30440.05",
+  "liste_brutto": "30440.04",
+  "ziel_brutto": "30439.94",
+  "neu_netto": "25579.7755"
+ },
+ {
+  "id": 41438,
+  "sku": "102256",
+  "name": "Advanced Hydroponics pH-Down Bloom, 0,5 L",
+  "alt_netto": "8.50",
+  "alt_brutto": "10.12",
+  "liste_brutto": "10.12",
+  "ziel_brutto": "10.02",
+  "neu_netto": "8.4150"
+ },
+ {
+  "id": 41439,
+  "sku": "102257",
+  "name": "Advanced Hydroponics pH-Down Bloom, 1 L",
+  "alt_netto": "14.95",
+  "alt_brutto": "17.79",
+  "liste_brutto": "17.79",
+  "ziel_brutto": "17.69",
+  "neu_netto": "14.8650"
+ },
+ {
+  "id": 41440,
+  "sku": "102258",
+  "name": "Advanced Hydroponics pH-Down Bloom, 5 L",
+  "alt_netto": "56.50",
+  "alt_brutto": "67.24",
+  "liste_brutto": "67.24",
+  "ziel_brutto": "67.14",
+  "neu_netto": "56.4150"
+ },
+ {
+  "id": 41441,
+  "sku": "102259",
+  "name": "Advanced Hydroponics Root Stimulator, 250 ml",
+  "alt_netto": "11.75",
+  "alt_brutto": "13.98",
+  "liste_brutto": "13.98",
+  "ziel_brutto": "13.88",
+  "neu_netto": "11.6579"
+ },
+ {
+  "id": 41442,
+  "sku": "102260",
+  "name": "Advanced Hydroponics Root Stimulator, 500 ml",
+  "alt_netto": "21.25",
+  "alt_brutto": "25.29",
+  "liste_brutto": "25.29",
+  "ziel_brutto": "25.19",
+  "neu_netto": "21.1650"
+ },
+ {
+  "id": 41443,
+  "sku": "102261",
+  "name": "Advanced Hydroponics Root Stimulator, 1 L",
+  "alt_netto": "39.75",
+  "alt_brutto": "47.30",
+  "liste_brutto": "47.30",
+  "ziel_brutto": "47.20",
+  "neu_netto": "39.6579"
+ },
+ {
+  "id": 41444,
+  "sku": "102262",
+  "name": "Advanced Hydroponics Root Stimulator, 5 L",
+  "alt_netto": "137.95",
+  "alt_brutto": "164.16",
+  "liste_brutto": "164.16",
+  "ziel_brutto": "164.06",
+  "neu_netto": "137.8650"
+ },
+ {
+  "id": 41471,
+  "sku": "102263",
+  "name": "Advanced Hydroponics Growth/Bloom Excellerator, 250 ml",
+  "alt_netto": "11.75",
+  "alt_brutto": "13.98",
+  "liste_brutto": "13.98",
+  "ziel_brutto": "13.88",
+  "neu_netto": "11.6579"
+ },
+ {
+  "id": 41472,
+  "sku": "102264",
+  "name": "Advanced Hydroponics Growth/Bloom Excellerator, 500 ml",
+  "alt_netto": "21.25",
+  "alt_brutto": "25.29",
+  "liste_brutto": "25.29",
+  "ziel_brutto": "25.19",
+  "neu_netto": "21.1650"
+ },
+ {
+  "id": 41473,
+  "sku": "102265",
+  "name": "Advanced Hydroponics Growth/Bloom Excellerator, 1 L",
+  "alt_netto": "39.75",
+  "alt_brutto": "47.30",
+  "liste_brutto": "47.30",
+  "ziel_brutto": "47.20",
+  "neu_netto": "39.6579"
+ },
+ {
+  "id": 41474,
+  "sku": "102266",
+  "name": "Advanced Hydroponics Growth/Bloom Excellerator, 5 L",
+  "alt_netto": "126.75",
+  "alt_brutto": "150.83",
+  "liste_brutto": "150.83",
+  "ziel_brutto": "150.73",
+  "neu_netto": "126.6579"
+ },
+ {
+  "id": 41475,
+  "sku": "102267",
+  "name": "Advanced Hydroponics Final Solution, 250 ml",
+  "alt_netto": "10.95",
+  "alt_brutto": "13.03",
+  "liste_brutto": "13.03",
+  "ziel_brutto": "12.93",
+  "neu_netto": "10.8650"
+ },
+ {
+  "id": 41476,
+  "sku": "102268",
+  "name": "Advanced Hydroponics Final Solution, 500 ml",
+  "alt_netto": "19.75",
+  "alt_brutto": "23.50",
+  "liste_brutto": "23.50",
+  "ziel_brutto": "23.40",
+  "neu_netto": "19.6579"
+ },
+ {
+  "id": 41477,
+  "sku": "102269",
+  "name": "Advanced Hydroponics Final Solution, 1 L",
+  "alt_netto": "36.25",
+  "alt_brutto": "43.14",
+  "liste_brutto": "43.14",
+  "ziel_brutto": "43.04",
+  "neu_netto": "36.1650"
+ },
+ {
+  "id": 41478,
+  "sku": "102270",
+  "name": "Advanced Hydroponics Final Solution, 5 L",
+  "alt_netto": "126.75",
+  "alt_brutto": "150.83",
+  "liste_brutto": "150.83",
+  "ziel_brutto": "150.73",
+  "neu_netto": "126.6579"
+ },
+ {
+  "id": 41479,
+  "sku": "102271",
+  "name": "Advanced Hydroponics Enzymes+, 250 ml",
+  "alt_netto": "10.75",
+  "alt_brutto": "12.79",
+  "liste_brutto": "12.79",
+  "ziel_brutto": "12.69",
+  "neu_netto": "10.6579"
+ },
+ {
+  "id": 41480,
+  "sku": "102272",
+  "name": "Advanced Hydroponics Enzymes+, 500 ml",
+  "alt_netto": "19.75",
+  "alt_brutto": "23.50",
+  "liste_brutto": "23.50",
+  "ziel_brutto": "23.40",
+  "neu_netto": "19.6579"
+ },
+ {
+  "id": 41504,
+  "sku": "102273",
+  "name": "Advanced Hydroponics Enzymes+, 1 L",
+  "alt_netto": "36.25",
+  "alt_brutto": "43.14",
+  "liste_brutto": "43.14",
+  "ziel_brutto": "43.04",
+  "neu_netto": "36.1650"
+ },
+ {
+  "id": 41505,
+  "sku": "102274",
+  "name": "Advanced Hydroponics Enzymes+, 5 L",
+  "alt_netto": "126.75",
+  "alt_brutto": "150.83",
+  "liste_brutto": "150.83",
+  "ziel_brutto": "150.73",
+  "neu_netto": "126.6579"
+ },
+ {
+  "id": 41506,
+  "sku": "112308",
+  "name": "Advanced Hydroponics, CalMag, 500 ml",
+  "alt_netto": "9.75",
+  "alt_brutto": "11.60",
+  "liste_brutto": "11.60",
+  "ziel_brutto": "11.50",
+  "neu_netto": "9.6579"
+ },
+ {
+  "id": 41507,
+  "sku": "112309",
+  "name": "Advanced Hydroponics, CalMag, 1 L",
+  "alt_netto": "14.50",
+  "alt_brutto": "17.26",
+  "liste_brutto": "17.26",
+  "ziel_brutto": "17.16",
+  "neu_netto": "14.4150"
+ },
+ {
+  "id": 41508,
+  "sku": "112310",
+  "name": "Advanced Hydroponics, CalMag, 5 L",
+  "alt_netto": "49.95",
+  "alt_brutto": "59.44",
+  "liste_brutto": "59.44",
+  "ziel_brutto": "59.34",
+  "neu_netto": "49.8650"
+ },
+ {
+  "id": 41511,
+  "sku": "113092",
+  "name": "Advanced Hydroponics Silica 250 ml",
+  "alt_netto": "15.95",
+  "alt_brutto": "18.98",
+  "liste_brutto": "18.98",
+  "ziel_brutto": "18.88",
+  "neu_netto": "15.8650"
+ },
+ {
+  "id": 40958,
+  "sku": "108965",
+  "name": "Trimpro Rotor XL Ersatzteil, Beutel",
+  "alt_netto": "140.34",
+  "alt_brutto": "167.00",
+  "liste_brutto": "167.00",
+  "ziel_brutto": "166.90",
+  "neu_netto": "140.2461"
+ },
+ {
+  "id": 40959,
+  "sku": "108966",
+  "name": "Trimpro Automatik und Rotor Ersatzteil, Befestigungsring",
+  "alt_netto": "24.37",
+  "alt_brutto": "29.00",
+  "liste_brutto": "29.00",
+  "ziel_brutto": "28.90",
+  "neu_netto": "24.2850"
+ },
+ {
+  "id": 40960,
+  "sku": "108967",
+  "name": "Trimpro Automatik XL Ersatzteil, Befestigungsring",
+  "alt_netto": "47.06",
+  "alt_brutto": "56.00",
+  "liste_brutto": "56.00",
+  "ziel_brutto": "55.90",
+  "neu_netto": "46.9737"
+ },
+ {
+  "id": 40961,
+  "sku": "108968",
+  "name": "Trimpro Original Ersatzteil, Befestigungsring",
+  "alt_netto": "52.44",
+  "alt_brutto": "62.40",
+  "liste_brutto": "62.40",
+  "ziel_brutto": "62.30",
+  "neu_netto": "52.3469"
+ },
+ {
+  "id": 40962,
+  "sku": "108970",
+  "name": "Trimpro Rotor XL Ersatzteil, Klinge",
+  "alt_netto": "578.99",
+  "alt_brutto": "689.00",
+  "liste_brutto": "689.00",
+  "ziel_brutto": "688.90",
+  "neu_netto": "578.9050"
+ },
+ {
+  "id": 40963,
+  "sku": "108972",
+  "name": "Trimpro Rotor XL Ersatzteil, Schütte",
+  "alt_netto": "36.13",
+  "alt_brutto": "42.99",
+  "liste_brutto": "43.00",
+  "ziel_brutto": "42.90",
+  "neu_netto": "36.0450"
+ },
+ {
+  "id": 40964,
+  "sku": "108973",
+  "name": "Trimpro Rotor Ersatzteil, Schütte",
+  "alt_netto": "16.81",
+  "alt_brutto": "20.00",
+  "liste_brutto": "20.00",
+  "ziel_brutto": "19.90",
+  "neu_netto": "16.7167"
+ },
+ {
+  "id": 40965,
+  "sku": "108977",
+  "name": "Trimpro Rotor XL Ersatzteil, Gummilamellen",
+  "alt_netto": "80.67",
+  "alt_brutto": "96.00",
+  "liste_brutto": "96.00",
+  "ziel_brutto": "95.90",
+  "neu_netto": "80.5850"
+ },
+ {
+  "id": 40966,
+  "sku": "108979",
+  "name": "Trimpro Unplugged Ersatzteil, Gitterrost, Stahl",
+  "alt_netto": "191.60",
+  "alt_brutto": "228.00",
+  "liste_brutto": "228.00",
+  "ziel_brutto": "227.90",
+  "neu_netto": "191.5066"
+ },
+ {
+  "id": 40967,
+  "sku": "108980",
+  "name": "Trimpro Automatik XL Ersatzteil, Gummiverschluss",
+  "alt_netto": "29.41",
+  "alt_brutto": "35.00",
+  "liste_brutto": "35.00",
+  "ziel_brutto": "34.90",
+  "neu_netto": "29.3250"
+ },
+ {
+  "id": 40968,
+  "sku": "108982",
+  "name": "Trimpro Automatik Ersatzteil, Dichtungsgummi",
+  "alt_netto": "15.13",
+  "alt_brutto": "18.00",
+  "liste_brutto": "18.00",
+  "ziel_brutto": "17.90",
+  "neu_netto": "15.0360"
+ },
+ {
+  "id": 40969,
+  "sku": "109108",
+  "name": "Trimpro Automatik XL Ersatzteil, Motor Drive",
+  "alt_netto": "1146.22",
+  "alt_brutto": "1364.00",
+  "liste_brutto": "1364.00",
+  "ziel_brutto": "1363.90",
+  "neu_netto": "1146.1316"
+ },
+ {
+  "id": 40970,
+  "sku": "109540",
+  "name": "Trimpro Bucker &amp; Fuß",
+  "alt_netto": "2352.94",
+  "alt_brutto": "2800.00",
+  "liste_brutto": "2800.00",
+  "ziel_brutto": "2799.90",
+  "neu_netto": "2352.8550"
+ },
+ {
+  "id": 40971,
+  "sku": "110978",
+  "name": "Trimpro Drypro Erntemaschine, für trockenes Trimmen, 5,44 kg/h",
+  "alt_netto": "2484.87",
+  "alt_brutto": "2957.00",
+  "liste_brutto": "2957.00",
+  "ziel_brutto": "2956.90",
+  "neu_netto": "2484.7850"
+ },
+ {
+  "id": 40972,
+  "sku": "103658",
+  "name": "Tumble Trimmer, Erntemaschine, ø 43 cm, H = 45 cm",
+  "alt_netto": "291.51",
+  "alt_brutto": "346.90",
+  "liste_brutto": "346.90",
+  "ziel_brutto": "346.80",
+  "neu_netto": "291.4250"
+ },
+ {
+  "id": 40975,
+  "sku": "108452",
+  "name": "Twister T2 Erntemaschine &amp; Sauger, für feuchte Ernte",
+  "alt_netto": "14873.95",
+  "alt_brutto": "17700.00",
+  "liste_brutto": "17700.00",
+  "ziel_brutto": "17699.90",
+  "neu_netto": "14873.8650"
+ },
+ {
+  "id": 40976,
+  "sku": "109534",
+  "name": "Twister T4, Erntemaschine &amp; Sauger, für feuchte und trockene Ernte (Standard) - SINGLE ...",
+  "alt_netto": "14319.33",
+  "alt_brutto": "17040.00",
+  "liste_brutto": "17040.00",
+  "ziel_brutto": "17039.90",
+  "neu_netto": "14319.2377"
+ },
+ {
+  "id": 40977,
+  "sku": "109536",
+  "name": "Twister Quality Control Conveyor, Förderband zur Qualitätskontrolle",
+  "alt_netto": "3944.40",
+  "alt_brutto": "4693.84",
+  "liste_brutto": "4693.84",
+  "ziel_brutto": "4693.74",
+  "neu_netto": "3944.3150"
+ },
+ {
+  "id": 40978,
+  "sku": "109539",
+  "name": "Twister Feed Conveyor, Förderband zur Speisung",
+  "alt_netto": "3786.69",
+  "alt_brutto": "4506.16",
+  "liste_brutto": "4506.16",
+  "ziel_brutto": "4506.06",
+  "neu_netto": "3786.6050"
+ },
+ {
+  "id": 40979,
+  "sku": "109633",
+  "name": "Twister T4 Antriebsriemen",
+  "alt_netto": "31.09",
+  "alt_brutto": "37.00",
+  "liste_brutto": "37.00",
+  "ziel_brutto": "36.90",
+  "neu_netto": "31.0050"
+ },
+ {
+  "id": 40980,
+  "sku": "109634",
+  "name": "Twister T4 Tandem Adapter",
+  "alt_netto": "184.87",
+  "alt_brutto": "220.00",
+  "liste_brutto": "220.00",
+  "ziel_brutto": "219.90",
+  "neu_netto": "184.7850"
+ },
+ {
+  "id": 40981,
+  "sku": "109636",
+  "name": "Twister T4 Wet Tumbler 1/4' Slots",
+  "alt_netto": "839.50",
+  "alt_brutto": "999.01",
+  "liste_brutto": "999.00",
+  "ziel_brutto": "998.90",
+  "neu_netto": "839.4058"
+ },
+ {
+  "id": 40982,
+  "sku": "109637",
+  "name": "Twister T4 Schnittreste-Sammler Vakuum",
+  "alt_netto": "1163.87",
+  "alt_brutto": "1385.01",
+  "liste_brutto": "1385.00",
+  "ziel_brutto": "1384.90",
+  "neu_netto": "1163.7755"
+ },
+ {
+  "id": 41017,
+  "sku": "111184",
+  "name": "Twister T4, Ersatzteil-Set",
+  "alt_netto": "1002.96",
+  "alt_brutto": "1193.52",
+  "liste_brutto": "1193.52",
+  "ziel_brutto": "1193.42",
+  "neu_netto": "1002.8685"
+ },
+ {
+  "id": 41018,
+  "sku": "111185",
+  "name": "Twister T4 Filter Bag, weiß, 40 Micron",
+  "alt_netto": "294.12",
+  "alt_brutto": "350.00",
+  "liste_brutto": "350.00",
+  "ziel_brutto": "349.90",
+  "neu_netto": "294.0276"
+ },
+ {
+  "id": 41019,
+  "sku": "111186",
+  "name": "Twister T6, Ersatzteil-Set",
+  "alt_netto": "653.60",
+  "alt_brutto": "777.78",
+  "liste_brutto": "777.78",
+  "ziel_brutto": "777.68",
+  "neu_netto": "653.5066"
+ },
+ {
+  "id": 41020,
+  "sku": "111187",
+  "name": "Twister T6, Tumbler, extreme",
+  "alt_netto": "587.39",
+  "alt_brutto": "698.99",
+  "liste_brutto": "699.00",
+  "ziel_brutto": "698.90",
+  "neu_netto": "587.3050"
+ },
+ {
+  "id": 41021,
+  "sku": "111188",
+  "name": "Twister T6, Filter Bag, weiß, 300 Micron",
+  "alt_netto": "74.79",
+  "alt_brutto": "89.00",
+  "liste_brutto": "89.00",
+  "ziel_brutto": "88.90",
+  "neu_netto": "74.7050"
+ },
+ {
+  "id": 41022,
+  "sku": "111189",
+  "name": "Twister T6, Filter Bag, weiß, 40 Micron",
+  "alt_netto": "223.45",
+  "alt_brutto": "265.91",
+  "liste_brutto": "265.90",
+  "ziel_brutto": "265.80",
+  "neu_netto": "223.3553"
+ },
+ {
+  "id": 41023,
+  "sku": "111338",
+  "name": "Twister T4 CHEVRON, Antriebsrad",
+  "alt_netto": "26.89",
+  "alt_brutto": "32.00",
+  "liste_brutto": "32.00",
+  "ziel_brutto": "31.90",
+  "neu_netto": "26.8050"
+ },
+ {
+  "id": 41024,
+  "sku": "112244",
+  "name": "Twister T6, Ersatzteil, Cartridge, Assy, Helix Blade",
+  "alt_netto": "913.87",
+  "alt_brutto": "1087.51",
+  "liste_brutto": "1087.50",
+  "ziel_brutto": "1087.40",
+  "neu_netto": "913.7755"
+ },
+ {
+  "id": 41025,
+  "sku": "112245",
+  "name": "Twister T6, Ersatzteil, Lid, Assy",
+  "alt_netto": "418.49",
+  "alt_brutto": "498.00",
+  "liste_brutto": "498.00",
+  "ziel_brutto": "497.90",
+  "neu_netto": "418.3974"
+ },
+ {
+  "id": 41026,
+  "sku": "112349",
+  "name": "Twister T2, Ersatzteil-Set",
+  "alt_netto": "1056.59",
+  "alt_brutto": "1257.34",
+  "liste_brutto": "1257.34",
+  "ziel_brutto": "1257.24",
+  "neu_netto": "1056.5000"
+ },
+ {
+  "id": 41027,
+  "sku": "112694",
+  "name": "Twister T2 Manschette, 5', für Linksgängigen Spiralschlauch",
+  "alt_netto": "64.35",
+  "alt_brutto": "76.58",
+  "liste_brutto": "76.58",
+  "ziel_brutto": "76.48",
+  "neu_netto": "64.2650"
+ },
+ {
+  "id": 41028,
+  "sku": "112723",
+  "name": "Twister T6 Hopper Assy, Einfülltrichter",
+  "alt_netto": "90.27",
+  "alt_brutto": "107.42",
+  "liste_brutto": "107.42",
+  "ziel_brutto": "107.32",
+  "neu_netto": "90.1843"
+ },
+ {
+  "id": 41029,
+  "sku": "112729",
+  "name": "Twister T2, Erntemaschine für feuchte und trockene Ernte (nur Maschine)",
+  "alt_netto": "15403.00",
+  "alt_brutto": "18329.57",
+  "liste_brutto": "18329.57",
+  "ziel_brutto": "18329.47",
+  "neu_netto": "15402.9150"
+ },
+ {
+  "id": 41030,
+  "sku": "112735",
+  "name": "Twister Trimmer Batchone Go",
+  "alt_netto": "2450.00",
+  "alt_brutto": "2915.50",
+  "liste_brutto": "2915.50",
+  "ziel_brutto": "2915.40",
+  "neu_netto": "2449.9150"
+ },
+ {
+  "id": 41031,
+  "sku": "112956",
+  "name": "Twister T6, Ersatzteil, Gear Box",
+  "alt_netto": "109.24",
+  "alt_brutto": "130.00",
+  "liste_brutto": "130.00",
+  "ziel_brutto": "129.90",
+  "neu_netto": "109.1550"
+ },
+ {
+  "id": 41032,
+  "sku": "113002",
+  "name": "Twister Cure Puck Gen 2",
+  "alt_netto": "747.06",
+  "alt_brutto": "889.00",
+  "liste_brutto": "889.00",
+  "ziel_brutto": "888.90",
+  "neu_netto": "746.9737"
+ },
+ {
+  "id": 41034,
+  "sku": "113063",
+  "name": "Twister T6 Brush, Nylon",
+  "alt_netto": "192.60",
+  "alt_brutto": "229.19",
+  "liste_brutto": "229.19",
+  "ziel_brutto": "229.09",
+  "neu_netto": "192.5066"
+ },
+ {
+  "id": 41035,
+  "sku": "113065",
+  "name": "Twister T4 Manschette, 5', für rechtsgängigen Spiralschlauch",
+  "alt_netto": "85.14",
+  "alt_brutto": "101.32",
+  "liste_brutto": "101.32",
+  "ziel_brutto": "101.22",
+  "neu_netto": "85.0550"
+ },
+ {
+  "id": 41036,
+  "sku": "113070",
+  "name": "Twister T4, Ersatzteile, Tumbler, Standard",
+  "alt_netto": "1546.00",
+  "alt_brutto": "1839.74",
+  "liste_brutto": "1839.74",
+  "ziel_brutto": "1839.64",
+  "neu_netto": "1545.9150"
+ },
+ {
+  "id": 41037,
+  "sku": "113188",
+  "name": "Twister T4, Erntemaschine für feuchte und trockene Ernte, Single Speed",
+  "alt_netto": "6784.14",
+  "alt_brutto": "8073.13",
+  "liste_brutto": "8073.13",
+  "ziel_brutto": "8073.03",
+  "neu_netto": "6784.0550"
+ },
+ {
+  "id": 41038,
+  "sku": "113304",
+  "name": "Twister Cure Puck Gen1",
+  "alt_netto": "663.87",
+  "alt_brutto": "790.01",
+  "liste_brutto": "790.00",
+  "ziel_brutto": "789.90",
+  "neu_netto": "663.7755"
+ },
+ {
+  "id": 41434,
+  "sku": "102250",
+  "name": "Advanced Hydroponics pH Up, 0,5 L",
+  "alt_netto": "8.50",
+  "alt_brutto": "10.12",
+  "liste_brutto": "10.12",
+  "ziel_brutto": "10.02",
+  "neu_netto": "8.4150"
+ },
+ {
+  "id": 41436,
+  "sku": "102251",
+  "name": "Advanced Hydroponics pH Up, 1 L",
+  "alt_netto": "14.95",
+  "alt_brutto": "17.79",
+  "liste_brutto": "17.79",
+  "ziel_brutto": "17.69",
+  "neu_netto": "14.8650"
+ },
+ {
+  "id": 41437,
+  "sku": "102252",
+  "name": "Advanced Hydroponics pH Up, 5 L",
+  "alt_netto": "56.50",
+  "alt_brutto": "67.24",
+  "liste_brutto": "67.24",
+  "ziel_brutto": "67.14",
+  "neu_netto": "56.4150"
+ },
+ {
+  "id": 40851,
+  "sku": "111171",
+  "name": "Tragbarer Trimmbeutel",
+  "alt_netto": "193.61",
+  "alt_brutto": "230.40",
+  "liste_brutto": "230.40",
+  "ziel_brutto": "230.30",
+  "neu_netto": "193.5250"
+ },
+ {
+  "id": 40881,
+  "sku": "111548",
+  "name": "Master Trimmer MT STANDARD 75",
+  "alt_netto": "3149.58",
+  "alt_brutto": "3748.00",
+  "liste_brutto": "3748.00",
+  "ziel_brutto": "3747.90",
+  "neu_netto": "3149.4950"
+ },
+ {
+  "id": 40882,
+  "sku": "111549",
+  "name": "Master Trimmer GENTLE 75",
+  "alt_netto": "4500.00",
+  "alt_brutto": "5355.00",
+  "liste_brutto": "5355.00",
+  "ziel_brutto": "5354.90",
+  "neu_netto": "4499.9150"
+ },
+ {
+  "id": 40883,
+  "sku": "111550",
+  "name": "Master Trimmer PROFESSIONAL 75",
+  "alt_netto": "5702.52",
+  "alt_brutto": "6786.00",
+  "liste_brutto": "6786.00",
+  "ziel_brutto": "6785.90",
+  "neu_netto": "5702.4350"
+ },
+ {
+  "id": 40884,
+  "sku": "111552",
+  "name": "Master Trimmer MT TUMBLER 200 PRO, Geschwindigkeit regelbar",
+  "alt_netto": "10657.53",
+  "alt_brutto": "12682.46",
+  "liste_brutto": "12682.46",
+  "ziel_brutto": "12682.36",
+  "neu_netto": "10657.4450"
+ },
+ {
+  "id": 40885,
+  "sku": "111553",
+  "name": "Master Trimmer MT TUMBLER 500 + Sauger",
+  "alt_netto": "11600.00",
+  "alt_brutto": "13804.00",
+  "liste_brutto": "13804.00",
+  "ziel_brutto": "13803.90",
+  "neu_netto": "11599.9150"
+ },
+ {
+  "id": 40886,
+  "sku": "111554",
+  "name": "LEAF COLLECTOR MT TUMBLER 500",
+  "alt_netto": "903.36",
+  "alt_brutto": "1075.00",
+  "liste_brutto": "1075.00",
+  "ziel_brutto": "1074.90",
+  "neu_netto": "903.2750"
+ },
+ {
+  "id": 40887,
+  "sku": "111557",
+  "name": "Master Trimmer MT POCKET",
+  "alt_netto": "670.59",
+  "alt_brutto": "798.00",
+  "liste_brutto": "798.00",
+  "ziel_brutto": "797.90",
+  "neu_netto": "670.5000"
+ },
+ {
+  "id": 40916,
+  "sku": "111558",
+  "name": "Master Trimmer MT STANDARD 50",
+  "alt_netto": "1651.26",
+  "alt_brutto": "1965.00",
+  "liste_brutto": "1965.00",
+  "ziel_brutto": "1964.90",
+  "neu_netto": "1651.1750"
+ },
+ {
+  "id": 40917,
+  "sku": "111560",
+  "name": "Master Trimmer MT PROFESSIONAL 50",
+  "alt_netto": "2899.16",
+  "alt_brutto": "3450.00",
+  "liste_brutto": "3450.00",
+  "ziel_brutto": "3449.90",
+  "neu_netto": "2899.0750"
+ },
+ {
+  "id": 40918,
+  "sku": "111561",
+  "name": "Master Bucker MB BUCKER 200",
+  "alt_netto": "4600.00",
+  "alt_brutto": "5474.00",
+  "liste_brutto": "5474.00",
+  "ziel_brutto": "5473.90",
+  "neu_netto": "4599.9150"
+ },
+ {
+  "id": 40919,
+  "sku": "111562",
+  "name": "Master Trimmer MB BUCKER 500",
+  "alt_netto": "7150.42",
+  "alt_brutto": "8509.00",
+  "liste_brutto": "8509.00",
+  "ziel_brutto": "8508.90",
+  "neu_netto": "7150.3350"
+ },
+ {
+  "id": 40920,
+  "sku": "111606",
+  "name": "Master Trimmer Ersatztrommel für MT 500, hybrid wet/dry (6,3mm)",
+  "alt_netto": "990.76",
+  "alt_brutto": "1179.00",
+  "liste_brutto": "1179.00",
+  "ziel_brutto": "1178.90",
+  "neu_netto": "990.6663"
+ },
+ {
+  "id": 40921,
+  "sku": "111881",
+  "name": "Master Trimmer MT DRY 200",
+  "alt_netto": "2512.61",
+  "alt_brutto": "2990.01",
+  "liste_brutto": "2990.00",
+  "ziel_brutto": "2989.90",
+  "neu_netto": "2512.5150"
+ },
+ {
+  "id": 40922,
+  "sku": "111882",
+  "name": "Master Trimmer, Pollen Extractor Barrel, MTD200",
+  "alt_netto": "779.75",
+  "alt_brutto": "927.90",
+  "liste_brutto": "927.90",
+  "ziel_brutto": "927.80",
+  "neu_netto": "779.6579"
+ },
+ {
+  "id": 40923,
+  "sku": "112086",
+  "name": "Master Trimmer MT DRY 500",
+  "alt_netto": "6714.29",
+  "alt_brutto": "7990.01",
+  "liste_brutto": "7990.00",
+  "ziel_brutto": "7989.90",
+  "neu_netto": "6714.1957"
+ },
+ {
+  "id": 40924,
+  "sku": "112346",
+  "name": "MT DRY 100 LiTE",
+  "alt_netto": "966.39",
+  "alt_brutto": "1150.00",
+  "liste_brutto": "1150.00",
+  "ziel_brutto": "1149.90",
+  "neu_netto": "966.2965"
+ },
+ {
+  "id": 40925,
+  "sku": "112347",
+  "name": "MX ICE 200 LITE",
+  "alt_netto": "3151.26",
+  "alt_brutto": "3750.00",
+  "liste_brutto": "3750.00",
+  "ziel_brutto": "3749.90",
+  "neu_netto": "3151.1750"
+ },
+ {
+  "id": 40926,
+  "sku": "112348",
+  "name": "MS SORTER 100 LiTE",
+  "alt_netto": "184.87",
+  "alt_brutto": "220.00",
+  "liste_brutto": "220.00",
+  "ziel_brutto": "219.90",
+  "neu_netto": "184.7850"
+ },
+ {
+  "id": 40927,
+  "sku": "112971",
+  "name": "Master Trimmer MB BUCKER 200 LiTE",
+  "alt_netto": "2890.00",
+  "alt_brutto": "3439.10",
+  "liste_brutto": "3439.10",
+  "ziel_brutto": "3439.00",
+  "neu_netto": "2889.9150"
+ },
+ {
+  "id": 40928,
+  "sku": "112976",
+  "name": "Master Trimmer LIO 40 Freeze Dryer",
+  "alt_netto": "7600.00",
+  "alt_brutto": "9044.00",
+  "liste_brutto": "9044.00",
+  "ziel_brutto": "9043.90",
+  "neu_netto": "7599.9150"
+ },
+ {
+  "id": 40929,
+  "sku": "103662",
+  "name": "Trimbox, einzeln, Erntemaschine für den kleinen Bedarf",
+  "alt_netto": "364.00",
+  "alt_brutto": "433.16",
+  "liste_brutto": "433.16",
+  "ziel_brutto": "433.06",
+  "neu_netto": "363.9150"
+ },
+ {
+  "id": 40930,
+  "sku": "103663",
+  "name": "Trimbox, Erntemaschine inkl. Workstation",
+  "alt_netto": "893.28",
+  "alt_brutto": "1063.00",
+  "liste_brutto": "1063.00",
+  "ziel_brutto": "1062.90",
+  "neu_netto": "893.1873"
+ },
+ {
+  "id": 40931,
+  "sku": "103664",
+  "name": "Trimpro Automatik XL",
+  "alt_netto": "4634.00",
+  "alt_brutto": "5514.46",
+  "liste_brutto": "5514.46",
+  "ziel_brutto": "5514.36",
+  "neu_netto": "4633.9150"
+ },
+ {
+  "id": 40932,
+  "sku": "103665",
+  "name": "Trimpro Ersatzteil, Gummiverschluss",
+  "alt_netto": "10.92",
+  "alt_brutto": "12.99",
+  "liste_brutto": "13.00",
+  "ziel_brutto": "12.90",
+  "neu_netto": "10.8350"
+ },
+ {
+  "id": 41688,
+  "sku": "109850",
+  "name": "Vitaponix VitaRoot, Pflanzenhilfsmittel, 1 Liter",
+  "alt_netto": "32.10",
+  "alt_brutto": "38.20",
+  "liste_brutto": "38.20",
+  "ziel_brutto": "38.10",
+  "neu_netto": "32.0150"
+ },
+ {
+  "id": 41689,
+  "sku": "109851",
+  "name": "Vitaponix VitaRoot, Pflanzenhilfsmittel, 5 Liter",
+  "alt_netto": "107.56",
+  "alt_brutto": "128.00",
+  "liste_brutto": "128.00",
+  "ziel_brutto": "127.90",
+  "neu_netto": "107.4750"
+ },
+ {
+  "id": 41690,
+  "sku": "109854",
+  "name": "Vitaponix VitaFinish, Pflanzenhilfsmittel, 1 Liter",
+  "alt_netto": "25.20",
+  "alt_brutto": "29.99",
+  "liste_brutto": "29.99",
+  "ziel_brutto": "29.89",
+  "neu_netto": "25.1150"
+ },
+ {
+  "id": 40773,
+  "sku": "113499",
+  "name": "Pure Factory Top Spinner Rotor 19' (48 cm) Blatttrimmer",
+  "alt_netto": "473.95",
+  "alt_brutto": "564.00",
+  "liste_brutto": "564.00",
+  "ziel_brutto": "563.90",
+  "neu_netto": "473.8650"
+ },
+ {
+  "id": 40774,
+  "sku": "113504",
+  "name": "Pure Factory Top Spinner Rotor 24' (60 cm) Blatttrimmer",
+  "alt_netto": "502.18",
+  "alt_brutto": "597.59",
+  "liste_brutto": "597.60",
+  "ziel_brutto": "597.50",
+  "neu_netto": "502.0950"
+ },
+ {
+  "id": 40775,
+  "sku": "109816",
+  "name": "CenturionPro Tabletop Electropolished Wet / Dry, Erntemaschine, für feuchte und trockene E ...",
+  "alt_netto": "4596.64",
+  "alt_brutto": "5470.00",
+  "liste_brutto": "5470.00",
+  "ziel_brutto": "5469.90",
+  "neu_netto": "4596.5527"
+ },
+ {
+  "id": 40776,
+  "sku": "109817",
+  "name": "CenturionPro Tabletop Quantanium Wet / Dry, Erntemaschine, für feuchte und trockene Ernte",
+  "alt_netto": "5092.44",
+  "alt_brutto": "6060.00",
+  "liste_brutto": "6060.00",
+  "ziel_brutto": "6059.90",
+  "neu_netto": "5092.3469"
+ },
+ {
+  "id": 40777,
+  "sku": "109820",
+  "name": "CenturionPro Mini Electropolished Wet / Dry, Erntemaschine, für feuchte und trockene Ernte ...",
+  "alt_netto": "7697.48",
+  "alt_brutto": "9160.00",
+  "liste_brutto": "9160.00",
+  "ziel_brutto": "9159.90",
+  "neu_netto": "7697.3948"
+ },
+ {
+  "id": 40778,
+  "sku": "109821",
+  "name": "CenturionPro Mini Quantanium Wet / Dry, Erntemaschine, für feuchte und trockene Ernte",
+  "alt_netto": "8369.75",
+  "alt_brutto": "9960.00",
+  "liste_brutto": "9960.00",
+  "ziel_brutto": "9959.90",
+  "neu_netto": "8369.6579"
+ },
+ {
+  "id": 40779,
+  "sku": "109824",
+  "name": "CenturionPro Original Electropolished Wet / Dry, Erntemaschine, für feuchte und trockene E ...",
+  "alt_netto": "10495.80",
+  "alt_brutto": "12490.00",
+  "liste_brutto": "12490.00",
+  "ziel_brutto": "12489.90",
+  "neu_netto": "10495.7106"
+ },
+ {
+  "id": 40807,
+  "sku": "109825",
+  "name": "CenturionPro Original Quantanium Wet / Dry, Erntemaschine, für feuchte und trockene Ernte",
+  "alt_netto": "11193.28",
+  "alt_brutto": "13320.00",
+  "liste_brutto": "13320.00",
+  "ziel_brutto": "13319.90",
+  "neu_netto": "11193.1873"
+ },
+ {
+  "id": 40808,
+  "sku": "109832",
+  "name": "CenturionPro Gladiator Electropolished Wet / Dry, Erntemaschine, für feuchte und trockene ...",
+  "alt_netto": "16991.60",
+  "alt_brutto": "20220.00",
+  "liste_brutto": "20220.00",
+  "ziel_brutto": "20219.90",
+  "neu_netto": "16991.5066"
+ },
+ {
+  "id": 40809,
+  "sku": "109833",
+  "name": "CenturionPro Gladiator Quantanium Wet / Dry, Erntemaschine, für feuchte und trockene Ernte ...",
+  "alt_netto": "18394.96",
+  "alt_brutto": "21890.00",
+  "liste_brutto": "21890.00",
+  "ziel_brutto": "21889.90",
+  "neu_netto": "18394.8685"
+ },
+ {
+  "id": 40810,
+  "sku": "109836",
+  "name": "CenturionPro 3.0 Electropolished Wet / Dry, Erntemaschine, für feuchte und trockene Ernte",
+  "alt_netto": "22994.96",
+  "alt_brutto": "27364.00",
+  "liste_brutto": "27364.00",
+  "ziel_brutto": "27363.90",
+  "neu_netto": "22994.8685"
+ },
+ {
+  "id": 40812,
+  "sku": "109837",
+  "name": "CenturionPro 3.0 Quantanium Wet / Dry, Erntemaschine, für feuchte und trockene Ernte",
+  "alt_netto": "25092.44",
+  "alt_brutto": "29860.00",
+  "liste_brutto": "29860.00",
+  "ziel_brutto": "29859.90",
+  "neu_netto": "25092.3469"
+ },
+ {
+  "id": 40813,
+  "sku": "110001",
+  "name": "CenturionPro Single High Performance Bucker",
+  "alt_netto": "13991.60",
+  "alt_brutto": "16650.00",
+  "liste_brutto": "16650.00",
+  "ziel_brutto": "16649.90",
+  "neu_netto": "13991.5066"
+ },
+ {
+  "id": 40814,
+  "sku": "110002",
+  "name": "CenturionPro Single Gentle Cut Bucker",
+  "alt_netto": "1994.96",
+  "alt_brutto": "2374.00",
+  "liste_brutto": "2374.00",
+  "ziel_brutto": "2373.90",
+  "neu_netto": "1994.8685"
+ },
+ {
+  "id": 40846,
+  "sku": "110003",
+  "name": "CenturionPro Triple High Performance Bucker",
+  "alt_netto": "26994.96",
+  "alt_brutto": "32124.00",
+  "liste_brutto": "32124.00",
+  "ziel_brutto": "32123.90",
+  "neu_netto": "26994.8685"
+ },
+ {
+  "id": 40847,
+  "sku": "110036",
+  "name": "CenturionPro Reel Bearings, Ersatzteil",
+  "alt_netto": "42.02",
+  "alt_brutto": "50.00",
+  "liste_brutto": "50.00",
+  "ziel_brutto": "49.90",
+  "neu_netto": "41.9268"
+ },
+ {
+  "id": 40848,
+  "sku": "112179",
+  "name": "CenturionPro Tabletop, Ersatzteil, Riemen",
+  "alt_netto": "37.82",
+  "alt_brutto": "45.01",
+  "liste_brutto": "45.00",
+  "ziel_brutto": "44.90",
+  "neu_netto": "37.7251"
+ },
+ {
+  "id": 40849,
+  "sku": "112180",
+  "name": "CenturionPro Tabletop, Ersatzteil, Sammelbeutel",
+  "alt_netto": "96.64",
+  "alt_brutto": "115.00",
+  "liste_brutto": "115.00",
+  "ziel_brutto": "114.90",
+  "neu_netto": "96.5527"
+ },
+ {
+  "id": 40850,
+  "sku": "112181",
+  "name": "CenturionPro Tabletop, Ersatzteil, Bürstwalze",
+  "alt_netto": "126.05",
+  "alt_brutto": "150.00",
+  "liste_brutto": "150.00",
+  "ziel_brutto": "149.90",
+  "neu_netto": "125.9650"
+ }
+]

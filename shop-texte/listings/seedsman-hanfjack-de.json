@@ -1,0 +1,4029 @@
+{
+  "marke": "Seedsman",
+  "shop": "hanfjack.de",
+  "pwb_brand_term_id": 16637,
+  "quelle": "Tiger One Katalog (Google Sheet Export)",
+  "stand": "2026-09-10",
+  "status_aller_produkte": "draft",
+  "anzahl_produkte": 97,
+  "anzahl_varianten": 345,
+  "preisregel": "regular_price = abrunden(VK_TigerOne * 0.99) auf ganze Euro, Eingabe NETTO (Shop rechnet +7% MwSt.)",
+  "stammdaten": {
+    "tax_status": "taxable",
+    "tax_class": "reduzierter-preis",
+    "shipping_class": "paket-standard",
+    "delivery_time_id": 5417,
+    "attribut": "pa_inhalt (ID 2, global, variantenbildend)",
+    "weight": "0.01",
+    "manage_stock": false,
+    "stock_status": "onbackorder",
+    "backorders": "no"
+  },
+  "packungsgroessen": {
+    "3 Stück": 91,
+    "5 Stück": 91,
+    "6 Stück": 2,
+    "10 Stück": 92,
+    "25 Stück": 23,
+    "50 Stück": 23,
+    "100 Stück": 23
+  },
+  "hinweise": [
+    "Bulk-Packs 25/50/100 Samen auf ausdrücklichen Wunsch mitgelistet.",
+    "9 CBD-/CBG-/CBDV-/THCV-Sorten zusätzlich in Kategorie CBD Samen (2309).",
+    "21 Sorten ohne Produktbild im Tiger-One-Export – Bild muss nachgepflegt werden.",
+    "1 Auslaufartikel mitgelistet: SMANSTB (Strawberry Banana Grape).",
+    "Aus dem Export ausgeschlossen: PHYTOCERT (Pflanzengesundheitszeugnis, kein Produkt) und FREE-T1-SMAN-OGKU-FEM-1 (Gratis-Aktionssamen ohne Preis).",
+    "Bildfehler: SMAN-DRSEEDS-CBD-FEM – Hauptbild (…152495_2191421_pimcore_1.jpg) liefert 404, stattdessen Bild der 10-Seeds-Zeile verwendet.",
+    "Namensbereinigung: 'Seedsman Seedsman CBG #1' → 'Seedsman CBG #1'; 'Relax Collection Feminised Seeds - (…) - 3 x 1' → 'Seedsman Relax Collection feminisiert'.",
+    "Produkttexte, Tags und SEO wurden bewusst noch nicht gesetzt.",
+    "Lagerstatus steht auf 'onbackorder' bis die Verfügbarkeitsliste vorliegt."
+  ],
+  "produkte": [
+    {
+      "produkt_id": 43329,
+      "name": "Seedsman Alaskan Bananaberry Auto feminisiert",
+      "sku_eltern": "SMAN-ALBA-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151568_2190675_pimcore_1_3.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-ALBA-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-ALBA-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "18.63",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-ALBA-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "31.5",
+          "preis_netto": "70"
+        },
+        {
+          "sku_variante": "SMAN-ALBA-AUTO-FEM-25",
+          "inhalt": "25 Stück",
+          "vk_tigerone": "154.95",
+          "ek_tigerone": "68.8",
+          "preis_netto": "153"
+        },
+        {
+          "sku_variante": "SMAN-ALBA-AUTO-FEM-50",
+          "inhalt": "50 Stück",
+          "vk_tigerone": "262.95",
+          "ek_tigerone": "116.75",
+          "preis_netto": "260"
+        },
+        {
+          "sku_variante": "SMAN-ALBA-AUTO-FEM-100",
+          "inhalt": "100 Stück",
+          "vk_tigerone": "438.95",
+          "ek_tigerone": "194.89",
+          "preis_netto": "434"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43337,
+      "name": "Seedsman Alaskan Diesel Auto feminisiert",
+      "sku_eltern": "SMAN-ALDSL-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150230_2190393_pimcore_1_3.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-ALDSL-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMAN-ALDSL-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "35.95",
+          "ek_tigerone": "15.96",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SMAN-ALDSL-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "62.95",
+          "ek_tigerone": "27.95",
+          "preis_netto": "62"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43339,
+      "name": "Seedsman Alaskan Do-Si-Dos feminisiert",
+      "sku_eltern": "SMAN-ALDSD-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151820_2190759_pimcore_1_3.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-ALDSD-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-ALDSD-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "18.63",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-ALDSD-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "31.5",
+          "preis_netto": "70"
+        },
+        {
+          "sku_variante": "SMAN-ALDSD-FEM-25",
+          "inhalt": "25 Stück",
+          "vk_tigerone": "154.95",
+          "ek_tigerone": "68.8",
+          "preis_netto": "153"
+        },
+        {
+          "sku_variante": "SMAN-ALDSD-FEM-50",
+          "inhalt": "50 Stück",
+          "vk_tigerone": "262.95",
+          "ek_tigerone": "116.75",
+          "preis_netto": "260"
+        },
+        {
+          "sku_variante": "SMAN-ALDSD-FEM-100",
+          "inhalt": "100 Stück",
+          "vk_tigerone": "438.95",
+          "ek_tigerone": "194.89",
+          "preis_netto": "434"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43341,
+      "name": "Seedsman Alaskan Purple Auto feminisiert",
+      "sku_eltern": "SMAN-ALPURP-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149584_2190285_pimcore_1_4.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-ALPURP-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMAN-ALPURP-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "35.95",
+          "ek_tigerone": "15.96",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SMAN-ALPURP-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "62.95",
+          "ek_tigerone": "27.95",
+          "preis_netto": "62"
+        },
+        {
+          "sku_variante": "SMAN-ALPURP-AUTO-FEM-25",
+          "inhalt": "25 Stück",
+          "vk_tigerone": "142.95",
+          "ek_tigerone": "63.47",
+          "preis_netto": "141"
+        },
+        {
+          "sku_variante": "SMAN-ALPURP-AUTO-FEM-50",
+          "inhalt": "50 Stück",
+          "vk_tigerone": "238.95",
+          "ek_tigerone": "106.09",
+          "preis_netto": "236"
+        },
+        {
+          "sku_variante": "SMAN-ALPURP-AUTO-FEM-100",
+          "inhalt": "100 Stück",
+          "vk_tigerone": "398.95",
+          "ek_tigerone": "177.13",
+          "preis_netto": "394"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43343,
+      "name": "Seedsman Alaskan Purple feminisiert",
+      "sku_eltern": "SMAN-ALPURP-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149583_2190281_pimcore_1_4.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-ALPURP-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMAN-ALPURP-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "35.95",
+          "ek_tigerone": "15.96",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SMAN-ALPURP-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "62.95",
+          "ek_tigerone": "27.95",
+          "preis_netto": "62"
+        },
+        {
+          "sku_variante": "SMAN-ALPURP-FEM-25",
+          "inhalt": "25 Stück",
+          "vk_tigerone": "142.95",
+          "ek_tigerone": "63.47",
+          "preis_netto": "141"
+        },
+        {
+          "sku_variante": "SMAN-ALPURP-FEM-50",
+          "inhalt": "50 Stück",
+          "vk_tigerone": "238.95",
+          "ek_tigerone": "106.09",
+          "preis_netto": "236"
+        },
+        {
+          "sku_variante": "SMAN-ALPURP-FEM-100",
+          "inhalt": "100 Stück",
+          "vk_tigerone": "398.95",
+          "ek_tigerone": "177.13",
+          "preis_netto": "394"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43345,
+      "name": "Seedsman Amnesia Auto feminisiert",
+      "sku_eltern": "auto-amnesia",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148435_2190179_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMANAAMNF3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "22.95",
+          "ek_tigerone": "10.19",
+          "preis_netto": "22"
+        },
+        {
+          "sku_variante": "SMANAAMNF5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMANAAMNF10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "54.95",
+          "ek_tigerone": "24.4",
+          "preis_netto": "54"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43347,
+      "name": "Seedsman Amnesia Fast feminisiert",
+      "sku_eltern": "SMANAMNSFAST",
+      "blueh_typ": "Early/fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/152630_2190906_pimcore_1_1.png",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMANAMNSFAST3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "22.95",
+          "ek_tigerone": "10.19",
+          "preis_netto": "22"
+        },
+        {
+          "sku_variante": "SMANAMNSFAST5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMANAMNSFAST10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "54.95",
+          "ek_tigerone": "24.4",
+          "preis_netto": "54"
+        },
+        {
+          "sku_variante": "SMANAMNSFAST25",
+          "inhalt": "25 Stück",
+          "vk_tigerone": "122.95",
+          "ek_tigerone": "54.59",
+          "preis_netto": "121"
+        },
+        {
+          "sku_variante": "SMANAMNSFAST50",
+          "inhalt": "50 Stück",
+          "vk_tigerone": "214.95",
+          "ek_tigerone": "95.44",
+          "preis_netto": "212"
+        },
+        {
+          "sku_variante": "SMANAMNSFAST100",
+          "inhalt": "100 Stück",
+          "vk_tigerone": "358.95",
+          "ek_tigerone": "159.37",
+          "preis_netto": "355"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43349,
+      "name": "Seedsman Amnesia regulär",
+      "sku_eltern": "SMAN-AMNS-REG",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/152798_2190827_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-AMNS-REG-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "19.95",
+          "ek_tigerone": "8.86",
+          "preis_netto": "19"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43351,
+      "name": "Seedsman Badazz Cookies OG feminisiert",
+      "sku_eltern": "SMANBCOG",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149366_2190265_pimcore_1_3.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMANBCOG3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMANBCOG5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "35.95",
+          "ek_tigerone": "15.96",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SMANBCOG10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "62.95",
+          "ek_tigerone": "27.95",
+          "preis_netto": "62"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43353,
+      "name": "Seedsman Badazz OG Cheese feminisiert",
+      "sku_eltern": "SMANBACH",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149357_2190228_pimcore_1_3.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMANBACH3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMANBACH5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "35.95",
+          "ek_tigerone": "15.96",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SMANBACH10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "62.95",
+          "ek_tigerone": "27.95",
+          "preis_netto": "62"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43355,
+      "name": "Seedsman Banana Biscotti F1 feminisiert",
+      "sku_eltern": "SMAN-BABI-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151821_2190763_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-BABI-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "34.95",
+          "ek_tigerone": "15.52",
+          "preis_netto": "34"
+        },
+        {
+          "sku_variante": "SMAN-BABI-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "46.95",
+          "ek_tigerone": "20.85",
+          "preis_netto": "46"
+        },
+        {
+          "sku_variante": "SMAN-BABI-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "78.95",
+          "ek_tigerone": "35.05",
+          "preis_netto": "78"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43357,
+      "name": "Seedsman Banana Jealousy feminisiert",
+      "sku_eltern": "SMAN-BAJE-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151569_2190679_pimcore_1_2.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-BAJE-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-BAJE-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "18.63",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-BAJE-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "31.5",
+          "preis_netto": "70"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43358,
+      "name": "Seedsman Black Sugar 2.0 feminisiert",
+      "sku_eltern": "SMAN-BLS2-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-BLS2-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "34.95",
+          "ek_tigerone": "15.52",
+          "preis_netto": "34"
+        },
+        {
+          "sku_variante": "SMAN-BLS2-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "46.95",
+          "ek_tigerone": "20.85",
+          "preis_netto": "46"
+        },
+        {
+          "sku_variante": "SMAN-BLS2-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "78.95",
+          "ek_tigerone": "35.05",
+          "preis_netto": "78"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43359,
+      "name": "Seedsman Blue Dream Auto feminisiert",
+      "sku_eltern": "SMAN-BLDR-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-BLDR-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-BLDR-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "18.63",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-BLDR-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "31.5",
+          "preis_netto": "70"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43361,
+      "name": "Seedsman Blue Dream Fast feminisiert",
+      "sku_eltern": "SMAN-BLDR-FAST-FEM",
+      "blueh_typ": "Early/fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151271_2190652_pimcore_1_2.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-BLDR-FAST-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-BLDR-FAST-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "18.63",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-BLDR-FAST-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "31.5",
+          "preis_netto": "70"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43363,
+      "name": "Seedsman Blue Dream feminisiert",
+      "sku_eltern": "SMAN-BLDR-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150123_2190371_pimcore_1_3.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-BLDR-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-BLDR-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "18.63",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-BLDR-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "31.5",
+          "preis_netto": "70"
+        },
+        {
+          "sku_variante": "SMAN-BLDR-FEM-25",
+          "inhalt": "25 Stück",
+          "vk_tigerone": "154.95",
+          "ek_tigerone": "68.8",
+          "preis_netto": "153"
+        },
+        {
+          "sku_variante": "SMAN-BLDR-FEM-50",
+          "inhalt": "50 Stück",
+          "vk_tigerone": "262.95",
+          "ek_tigerone": "116.75",
+          "preis_netto": "260"
+        },
+        {
+          "sku_variante": "SMAN-BLDR-FEM-100",
+          "inhalt": "100 Stück",
+          "vk_tigerone": "438.95",
+          "ek_tigerone": "194.89",
+          "preis_netto": "434"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43365,
+      "name": "Seedsman Blueberry Auto feminisiert",
+      "sku_eltern": "auto-blue",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/147981_2190143_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMANAUBL3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "22.95",
+          "ek_tigerone": "10.19",
+          "preis_netto": "22"
+        },
+        {
+          "sku_variante": "SMANAUBL10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "54.95",
+          "ek_tigerone": "24.4",
+          "preis_netto": "54"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43367,
+      "name": "Seedsman Blueberry Pie F1 Fast feminisiert",
+      "sku_eltern": "SMAN-BLPI-FAST-FEM",
+      "blueh_typ": "Early/fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151813_2190720_pimcore_1_3.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-BLPI-FAST-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "34.95",
+          "ek_tigerone": "15.52",
+          "preis_netto": "34"
+        },
+        {
+          "sku_variante": "SMAN-BLPI-FAST-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "46.95",
+          "ek_tigerone": "20.85",
+          "preis_netto": "46"
+        },
+        {
+          "sku_variante": "SMAN-BLPI-FAST-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "78.95",
+          "ek_tigerone": "35.05",
+          "preis_netto": "78"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43369,
+      "name": "Seedsman Blueberry feminisiert",
+      "sku_eltern": "blueberry-fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/152796_2190814_pimcore_1_1.png",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMANBBF3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "22.95",
+          "ek_tigerone": "10.19",
+          "preis_netto": "22"
+        },
+        {
+          "sku_variante": "SMANBBF5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMANBBF10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "54.95",
+          "ek_tigerone": "24.4",
+          "preis_netto": "54"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43371,
+      "name": "Seedsman Bruce Banger Fast feminisiert",
+      "sku_eltern": "SMANBBFAST",
+      "blueh_typ": "Early/fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/152629_2190895_pimcore_1_1.png",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMANBBFAST3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMANBBFAST5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "35.95",
+          "ek_tigerone": "15.96",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SMANBBFAST10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "62.95",
+          "ek_tigerone": "27.95",
+          "preis_netto": "62"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43373,
+      "name": "Seedsman Bruce Banger feminisiert",
+      "sku_eltern": "SMANBB",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149364_2190257_pimcore_1_3.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMANBB3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMANBB5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "35.95",
+          "ek_tigerone": "15.96",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SMANBB10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "62.95",
+          "ek_tigerone": "27.95",
+          "preis_netto": "62"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43375,
+      "name": "Seedsman Bubba Cheesecake feminisiert",
+      "sku_eltern": "SMAN-BCC-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150450_2190408_pimcore_1_4.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-BCC-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-BCC-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "18.63",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-BCC-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "31.5",
+          "preis_netto": "70"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43377,
+      "name": "Seedsman Bubba Kush feminisiert",
+      "sku_eltern": "SMANBUKU",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149361_2190244_pimcore_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMANBUKU3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMANBUKU5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "35.95",
+          "ek_tigerone": "15.96",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SMANBUKU10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "62.95",
+          "ek_tigerone": "27.95",
+          "preis_netto": "62"
+        },
+        {
+          "sku_variante": "SMANBUKU25",
+          "inhalt": "25 Stück",
+          "vk_tigerone": "142.95",
+          "ek_tigerone": "63.47",
+          "preis_netto": "141"
+        },
+        {
+          "sku_variante": "SMANBUKU50",
+          "inhalt": "50 Stück",
+          "vk_tigerone": "238.95",
+          "ek_tigerone": "106.09",
+          "preis_netto": "236"
+        },
+        {
+          "sku_variante": "SMANBUKU100",
+          "inhalt": "100 Stück",
+          "vk_tigerone": "398.95",
+          "ek_tigerone": "177.13",
+          "preis_netto": "394"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43379,
+      "name": "Seedsman C99 x Blueberry Fast feminisiert",
+      "sku_eltern": "SMAN-C99BB-FAST-FEM",
+      "blueh_typ": "Early/fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148953_2190204_pimcore_1_4.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-C99BB-FAST-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMAN-C99BB-FAST-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "35.95",
+          "ek_tigerone": "15.96",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SMAN-C99BB-FAST-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "62.95",
+          "ek_tigerone": "27.95",
+          "preis_netto": "62"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43381,
+      "name": "Seedsman CBDV 1:1 Auto feminisiert",
+      "sku_eltern": "SMAN-CBDV-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547,
+        2309
+      ],
+      "kategorien_namen": [
+        "Automatisch",
+        "CBD Samen"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150160_2190379_pimcore_1_4.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-CBDV-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMAN-CBDV-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "36.95",
+          "ek_tigerone": "16.41",
+          "preis_netto": "36"
+        },
+        {
+          "sku_variante": "SMAN-CBDV-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "61.95",
+          "ek_tigerone": "27.51",
+          "preis_netto": "61"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43383,
+      "name": "Seedsman CBG #1 feminisiert",
+      "sku_eltern": "SMAN-CBG1-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548,
+        2309
+      ],
+      "kategorien_namen": [
+        "Feminisiert",
+        "CBD Samen"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149940_2190343_pimcore_1_4.png",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-CBG1-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.22",
+          "ek_tigerone": "13.43",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SMAN-CBG1-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "44.07",
+          "ek_tigerone": "19.58",
+          "preis_netto": "43"
+        },
+        {
+          "sku_variante": "SMAN-CBG1-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "81.84",
+          "ek_tigerone": "36.37",
+          "preis_netto": "81"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43385,
+      "name": "Seedsman CBG Relief Auto feminisiert",
+      "sku_eltern": "SMAN-CBGR-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547,
+        2309
+      ],
+      "kategorien_namen": [
+        "Automatisch",
+        "CBD Samen"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150264_2190401_pimcore_1_3.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-CBGR-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMAN-CBGR-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "36.95",
+          "ek_tigerone": "16.41",
+          "preis_netto": "36"
+        },
+        {
+          "sku_variante": "SMAN-CBGR-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "61.95",
+          "ek_tigerone": "27.51",
+          "preis_netto": "61"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43387,
+      "name": "Seedsman Cali Critical Mass feminisiert",
+      "sku_eltern": "SMAN-CCM-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151274_2190660_pimcore_1_3.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-CCM-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMAN-CCM-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "35.95",
+          "ek_tigerone": "15.96",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SMAN-CCM-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "62.95",
+          "ek_tigerone": "27.95",
+          "preis_netto": "62"
+        },
+        {
+          "sku_variante": "SMAN-CCM-FEM-25",
+          "inhalt": "25 Stück",
+          "vk_tigerone": "142.95",
+          "ek_tigerone": "63.47",
+          "preis_netto": "141"
+        },
+        {
+          "sku_variante": "SMAN-CCM-FEM-50",
+          "inhalt": "50 Stück",
+          "vk_tigerone": "238.95",
+          "ek_tigerone": "106.09",
+          "preis_netto": "236"
+        },
+        {
+          "sku_variante": "SMAN-CCM-FEM-100",
+          "inhalt": "100 Stück",
+          "vk_tigerone": "398.95",
+          "ek_tigerone": "177.13",
+          "preis_netto": "394"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43388,
+      "name": "Seedsman Chem Cookies Auto feminisiert",
+      "sku_eltern": "SMAN-CHCO-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-CHCO-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-CHCO-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "18.63",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-CHCO-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "31.5",
+          "preis_netto": "70"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43390,
+      "name": "Seedsman Cherry Punch F1 feminisiert",
+      "sku_eltern": "SMAN-CHPU-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151810_2190707_pimcore_1_5.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-CHPU-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "34.95",
+          "ek_tigerone": "15.52",
+          "preis_netto": "34"
+        },
+        {
+          "sku_variante": "SMAN-CHPU-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "46.95",
+          "ek_tigerone": "20.85",
+          "preis_netto": "46"
+        },
+        {
+          "sku_variante": "SMAN-CHPU-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "78.95",
+          "ek_tigerone": "35.05",
+          "preis_netto": "78"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43392,
+      "name": "Seedsman Cookie Apple OG F1 Auto feminisiert",
+      "sku_eltern": "SMAN-COAPOG-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151806_2190689_pimcore_1_6.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-COAPOG-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "34.95",
+          "ek_tigerone": "15.52",
+          "preis_netto": "34"
+        },
+        {
+          "sku_variante": "SMAN-COAPOG-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "46.95",
+          "ek_tigerone": "20.85",
+          "preis_netto": "46"
+        },
+        {
+          "sku_variante": "SMAN-COAPOG-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "78.95",
+          "ek_tigerone": "35.05",
+          "preis_netto": "78"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43394,
+      "name": "Seedsman Cream & Cheese CBD 1:1 feminisiert",
+      "sku_eltern": "SMANCCCBD",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548,
+        2309
+      ],
+      "kategorien_namen": [
+        "Feminisiert",
+        "CBD Samen"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149362_2190249_pimcore_1_4.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMANCCCBD3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMANCCCBD5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "35.95",
+          "ek_tigerone": "15.96",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SMANCCCBD10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "62.95",
+          "ek_tigerone": "27.95",
+          "preis_netto": "62"
+        },
+        {
+          "sku_variante": "SMANCCCBD25",
+          "inhalt": "25 Stück",
+          "vk_tigerone": "142.95",
+          "ek_tigerone": "63.47",
+          "preis_netto": "141"
+        },
+        {
+          "sku_variante": "SMANCCCBD50",
+          "inhalt": "50 Stück",
+          "vk_tigerone": "238.95",
+          "ek_tigerone": "106.09",
+          "preis_netto": "236"
+        },
+        {
+          "sku_variante": "SMANCCCBD100",
+          "inhalt": "100 Stück",
+          "vk_tigerone": "398.95",
+          "ek_tigerone": "177.13",
+          "preis_netto": "394"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43396,
+      "name": "Seedsman Critical Purple Kush feminisiert",
+      "sku_eltern": "SMANCPK",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149358_2190232_pimcore_1_4.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMANCPK3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMANCPK5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "35.95",
+          "ek_tigerone": "15.96",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SMANCPK10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "62.95",
+          "ek_tigerone": "27.95",
+          "preis_netto": "62"
+        },
+        {
+          "sku_variante": "SMANCPK25",
+          "inhalt": "25 Stück",
+          "vk_tigerone": "142.95",
+          "ek_tigerone": "63.47",
+          "preis_netto": "141"
+        },
+        {
+          "sku_variante": "SMANCPK50",
+          "inhalt": "50 Stück",
+          "vk_tigerone": "238.95",
+          "ek_tigerone": "106.09",
+          "preis_netto": "236"
+        },
+        {
+          "sku_variante": "SMANCPK100",
+          "inhalt": "100 Stück",
+          "vk_tigerone": "398.95",
+          "ek_tigerone": "177.13",
+          "preis_netto": "394"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43398,
+      "name": "Seedsman Diet Durban THCV 1:1 feminisiert",
+      "sku_eltern": "SMAN-THCV-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548,
+        2309
+      ],
+      "kategorien_namen": [
+        "Feminisiert",
+        "CBD Samen"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150159_2190375_pimcore_1_4.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-THCV-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMAN-THCV-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "36.95",
+          "ek_tigerone": "16.41",
+          "preis_netto": "36"
+        },
+        {
+          "sku_variante": "SMAN-THCV-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "61.95",
+          "ek_tigerone": "27.51",
+          "preis_netto": "61"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43507,
+      "name": "Seedsman Doctor Seedsman CBD 30:1 feminisiert",
+      "sku_eltern": "SMAN-DRSEEDS-CBD-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548,
+        2309
+      ],
+      "kategorien_namen": [
+        "Feminisiert",
+        "CBD Samen"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/152495_2191421_pimcore_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-DRSEEDS-CBD-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMAN-DRSEEDS-CBD-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "35.95",
+          "ek_tigerone": "15.96",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SMAN-DRSEEDS-CBD-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "62.95",
+          "ek_tigerone": "27.95",
+          "preis_netto": "62"
+        },
+        {
+          "sku_variante": "SMAN-DRSEEDS-CBD-FEM-25",
+          "inhalt": "25 Stück",
+          "vk_tigerone": "142.95",
+          "ek_tigerone": "63.47",
+          "preis_netto": "141"
+        },
+        {
+          "sku_variante": "SMAN-DRSEEDS-CBD-FEM-50",
+          "inhalt": "50 Stück",
+          "vk_tigerone": "238.95",
+          "ek_tigerone": "106.09",
+          "preis_netto": "236"
+        },
+        {
+          "sku_variante": "SMAN-DRSEEDS-CBD-FEM-100",
+          "inhalt": "100 Stück",
+          "vk_tigerone": "398.95",
+          "ek_tigerone": "177.13",
+          "preis_netto": "394"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43400,
+      "name": "Seedsman Fatso GMO F1 Auto feminisiert",
+      "sku_eltern": "SMAN-FAGMO-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151807_2190695_pimcore_1_3.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-FAGMO-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-FAGMO-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "18.63",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-FAGMO-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "31.5",
+          "preis_netto": "70"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43402,
+      "name": "Seedsman Fuel D.OG feminisiert",
+      "sku_eltern": "SMAN-FUELDOG-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150199_2190388_pimcore_1_3.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-FUELDOG-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-FUELDOG-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "18.63",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-FUELDOG-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "31.5",
+          "preis_netto": "70"
+        },
+        {
+          "sku_variante": "SMAN-FUELDOG-FEM-25",
+          "inhalt": "25 Stück",
+          "vk_tigerone": "154.95",
+          "ek_tigerone": "68.8",
+          "preis_netto": "153"
+        },
+        {
+          "sku_variante": "SMAN-FUELDOG-FEM-50",
+          "inhalt": "50 Stück",
+          "vk_tigerone": "262.95",
+          "ek_tigerone": "116.75",
+          "preis_netto": "260"
+        },
+        {
+          "sku_variante": "SMAN-FUELDOG-FEM-100",
+          "inhalt": "100 Stück",
+          "vk_tigerone": "438.95",
+          "ek_tigerone": "194.89",
+          "preis_netto": "434"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43404,
+      "name": "Seedsman Garlic Muffin F1 Auto feminisiert",
+      "sku_eltern": "SMAN-GAMU-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151808_2190699_pimcore_1_3.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-GAMU-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "34.95",
+          "ek_tigerone": "15.52",
+          "preis_netto": "34"
+        },
+        {
+          "sku_variante": "SMAN-GAMU-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "46.95",
+          "ek_tigerone": "20.85",
+          "preis_netto": "46"
+        },
+        {
+          "sku_variante": "SMAN-GAMU-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "78.95",
+          "ek_tigerone": "35.05",
+          "preis_netto": "78"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43406,
+      "name": "Seedsman Gelat.OG Auto feminisiert",
+      "sku_eltern": "SMAN-GEL-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/2/125418_2191375_pimcore_1.png",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-GEL-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMAN-GEL-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "35.95",
+          "ek_tigerone": "15.96",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SMAN-GEL-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "62.95",
+          "ek_tigerone": "27.95",
+          "preis_netto": "62"
+        },
+        {
+          "sku_variante": "SMAN-GEL-AUTO-FEM-25",
+          "inhalt": "25 Stück",
+          "vk_tigerone": "142.95",
+          "ek_tigerone": "63.47",
+          "preis_netto": "141"
+        },
+        {
+          "sku_variante": "SMAN-GEL-AUTO-FEM-50",
+          "inhalt": "50 Stück",
+          "vk_tigerone": "238.95",
+          "ek_tigerone": "106.09",
+          "preis_netto": "236"
+        },
+        {
+          "sku_variante": "SMAN-GEL-AUTO-FEM-100",
+          "inhalt": "100 Stück",
+          "vk_tigerone": "398.95",
+          "ek_tigerone": "177.13",
+          "preis_netto": "394"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43408,
+      "name": "Seedsman Gelat.OG feminisiert",
+      "sku_eltern": "SMANGELOG",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149438_2190277_pimcore_1_3.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMANGELOG3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMANGELOG5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "35.95",
+          "ek_tigerone": "15.96",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SMANGELOG10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "62.95",
+          "ek_tigerone": "27.95",
+          "preis_netto": "62"
+        },
+        {
+          "sku_variante": "SMANGELOG25",
+          "inhalt": "25 Stück",
+          "vk_tigerone": "142.95",
+          "ek_tigerone": "63.47",
+          "preis_netto": "141"
+        },
+        {
+          "sku_variante": "SMANGELOG50",
+          "inhalt": "50 Stück",
+          "vk_tigerone": "238.95",
+          "ek_tigerone": "106.09",
+          "preis_netto": "236"
+        },
+        {
+          "sku_variante": "SMANGELOG100",
+          "inhalt": "100 Stück",
+          "vk_tigerone": "398.95",
+          "ek_tigerone": "177.13",
+          "preis_netto": "394"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43409,
+      "name": "Seedsman Gelato 41 BX Auto feminisiert",
+      "sku_eltern": "SMAN-GE41BX-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-GE41BX-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "34.95",
+          "ek_tigerone": "15.52",
+          "preis_netto": "34"
+        },
+        {
+          "sku_variante": "SMAN-GE41BX-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "46.95",
+          "ek_tigerone": "20.85",
+          "preis_netto": "46"
+        },
+        {
+          "sku_variante": "SMAN-GE41BX-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "78.95",
+          "ek_tigerone": "35.05",
+          "preis_netto": "78"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43411,
+      "name": "Seedsman Gelato 41 BX feminisiert",
+      "sku_eltern": "SMAN-GE41BX-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151570_2190684_pimcore_1_6.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-GE41BX-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "34.95",
+          "ek_tigerone": "15.52",
+          "preis_netto": "34"
+        },
+        {
+          "sku_variante": "SMAN-GE41BX-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "46.95",
+          "ek_tigerone": "20.85",
+          "preis_netto": "46"
+        },
+        {
+          "sku_variante": "SMAN-GE41BX-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "78.95",
+          "ek_tigerone": "35.05",
+          "preis_netto": "78"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43413,
+      "name": "Seedsman Gorilla Candy Auto feminisiert",
+      "sku_eltern": "SMAN-GORCAN-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/152755_2191488_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-GORCAN-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-GORCAN-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "18.63",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-GORCAN-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "31.5",
+          "preis_netto": "70"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43415,
+      "name": "Seedsman Gorilla Gas F1 Fast feminisiert",
+      "sku_eltern": "SMAN-GOGA-FAST-FEM",
+      "blueh_typ": "Early/fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151814_2190725_pimcore_1_4.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-GOGA-FAST-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-GOGA-FAST-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "18.63",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-GOGA-FAST-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "31.5",
+          "preis_netto": "70"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43417,
+      "name": "Seedsman Gorilla Jealousy F1 feminisiert",
+      "sku_eltern": "SMAN-GOJE-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151809_2190703_pimcore_1_3.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-GOJE-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "34.95",
+          "ek_tigerone": "15.52",
+          "preis_netto": "34"
+        },
+        {
+          "sku_variante": "SMAN-GOJE-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "46.95",
+          "ek_tigerone": "20.85",
+          "preis_netto": "46"
+        },
+        {
+          "sku_variante": "SMAN-GOJE-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "78.95",
+          "ek_tigerone": "35.05",
+          "preis_netto": "78"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43418,
+      "name": "Seedsman Gorilla Runtz feminisiert",
+      "sku_eltern": "SMAN-GORU-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-GORU-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "34.95",
+          "ek_tigerone": "15.52",
+          "preis_netto": "34"
+        },
+        {
+          "sku_variante": "SMAN-GORU-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "46.95",
+          "ek_tigerone": "20.85",
+          "preis_netto": "46"
+        },
+        {
+          "sku_variante": "SMAN-GORU-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "78.95",
+          "ek_tigerone": "35.05",
+          "preis_netto": "78"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43419,
+      "name": "Seedsman Grapes & Cream feminisiert",
+      "sku_eltern": "SMAN-GRAP-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-GRAP-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "12.38",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-GRAP-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "16.78",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-GRAP-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "28.38",
+          "preis_netto": "70"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43421,
+      "name": "Seedsman Green Crack Auto feminisiert",
+      "sku_eltern": "SMAN-GRCRK-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150064_2190359_pimcore_1_3.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-GRCRK-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMAN-GRCRK-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "35.95",
+          "ek_tigerone": "15.96",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SMAN-GRCRK-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "62.95",
+          "ek_tigerone": "27.95",
+          "preis_netto": "62"
+        },
+        {
+          "sku_variante": "SMAN-GRCRK-AUTO-FEM-25",
+          "inhalt": "25 Stück",
+          "vk_tigerone": "142.95",
+          "ek_tigerone": "63.47",
+          "preis_netto": "141"
+        },
+        {
+          "sku_variante": "SMAN-GRCRK-AUTO-FEM-50",
+          "inhalt": "50 Stück",
+          "vk_tigerone": "238.95",
+          "ek_tigerone": "106.09",
+          "preis_netto": "236"
+        },
+        {
+          "sku_variante": "SMAN-GRCRK-AUTO-FEM-100",
+          "inhalt": "100 Stück",
+          "vk_tigerone": "398.95",
+          "ek_tigerone": "177.13",
+          "preis_netto": "394"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43422,
+      "name": "Seedsman Green Crack feminisiert",
+      "sku_eltern": "SMAN-GRCRK-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-GRCRK-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-GRCRK-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "18.63",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-GRCRK-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "31.5",
+          "preis_netto": "70"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43423,
+      "name": "Seedsman Guava Root GMO feminisiert",
+      "sku_eltern": "SMAN-GRGMO-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-GRGMO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "34.95",
+          "ek_tigerone": "15.52",
+          "preis_netto": "34"
+        },
+        {
+          "sku_variante": "SMAN-GRGMO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "46.95",
+          "ek_tigerone": "20.85",
+          "preis_netto": "46"
+        },
+        {
+          "sku_variante": "SMAN-GRGMO-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "78.95",
+          "ek_tigerone": "35.05",
+          "preis_netto": "78"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43424,
+      "name": "Seedsman Gush Mintz feminisiert",
+      "sku_eltern": "SMAN-GUMI-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-GUMI-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "12.38",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-GUMI-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "16.78",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-GUMI-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "28.38",
+          "preis_netto": "70"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43425,
+      "name": "Seedsman Ice Dream Cake Fast feminisiert",
+      "sku_eltern": "SMAN-ICDC-FAST-FEM",
+      "blueh_typ": "Fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-ICDC-FAST-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-ICDC-FAST-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "18.63",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-ICDC-FAST-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "31.5",
+          "preis_netto": "70"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43427,
+      "name": "Seedsman Ice Dream Cake feminisiert",
+      "sku_eltern": "SMAN-ICDC-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151818_2190747_pimcore_2.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-ICDC-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "34.95",
+          "ek_tigerone": "15.52",
+          "preis_netto": "34"
+        },
+        {
+          "sku_variante": "SMAN-ICDC-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "46.95",
+          "ek_tigerone": "20.85",
+          "preis_netto": "46"
+        },
+        {
+          "sku_variante": "SMAN-ICDC-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "78.95",
+          "ek_tigerone": "35.05",
+          "preis_netto": "78"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43429,
+      "name": "Seedsman Jack Herer Auto feminisiert",
+      "sku_eltern": "SMAN-JH-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149682_2190303_pimcore_1_6.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-JH-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "22.95",
+          "ek_tigerone": "10.19",
+          "preis_netto": "22"
+        },
+        {
+          "sku_variante": "SMAN-JH-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-JH-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "54.95",
+          "ek_tigerone": "24.4",
+          "preis_netto": "54"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43431,
+      "name": "Seedsman Jack Herer Fast feminisiert",
+      "sku_eltern": "SMAN-JCKHR-FAST-FEM",
+      "blueh_typ": "Early/fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148956_2190208_pimcore_1_4.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-JCKHR-FAST-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "22.95",
+          "ek_tigerone": "10.19",
+          "preis_netto": "22"
+        },
+        {
+          "sku_variante": "SMAN-JCKHR-FAST-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-JCKHR-FAST-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "54.95",
+          "ek_tigerone": "24.4",
+          "preis_netto": "54"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43433,
+      "name": "Seedsman Jack Herer feminisiert",
+      "sku_eltern": "jack-herer-fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148437_2190187_pimcore_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMANJHF3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "22.95",
+          "ek_tigerone": "10.19",
+          "preis_netto": "22"
+        },
+        {
+          "sku_variante": "SMANJHF5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMANJHF10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "54.95",
+          "ek_tigerone": "24.4",
+          "preis_netto": "54"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43434,
+      "name": "Seedsman Jealousy Fast feminisiert",
+      "sku_eltern": "SMAN-JEAL-FAST-FEM",
+      "blueh_typ": "Fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-JEAL-FAST-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-JEAL-FAST-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "18.63",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-JEAL-FAST-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "31.5",
+          "preis_netto": "70"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43435,
+      "name": "Seedsman Jelly Cake feminisiert",
+      "sku_eltern": "SMAN-JECA-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-JECA-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "12.38",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-JECA-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "16.78",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-JECA-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "28.38",
+          "preis_netto": "70"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43437,
+      "name": "Seedsman Juicy Zkittlez Auto feminisiert",
+      "sku_eltern": "SMAN-JUZK-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/152759_2191508_pimcore_1_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-JUZK-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-JUZK-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "18.63",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-JUZK-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "31.5",
+          "preis_netto": "70"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43439,
+      "name": "Seedsman L.A. Peyote Kush feminisiert",
+      "sku_eltern": "SMAN-LAPEYKU-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149962_2190347_pimcore_1_5.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-LAPEYKU-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMAN-LAPEYKU-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "35.95",
+          "ek_tigerone": "15.96",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SMAN-LAPEYKU-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "62.95",
+          "ek_tigerone": "27.95",
+          "preis_netto": "62"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43441,
+      "name": "Seedsman Larry Lemon OG Auto feminisiert",
+      "sku_eltern": "SMAN-LARLEM-OG-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150087_2190363_pimcore_1_4.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-LARLEM-OG-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "35.95",
+          "ek_tigerone": "15.96",
+          "preis_netto": "35"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43443,
+      "name": "Seedsman Lemon Auto feminisiert",
+      "sku_eltern": "auto-lemon",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/147982_2190147_pimcore_1_4.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMANAULM3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "22.95",
+          "ek_tigerone": "10.19",
+          "preis_netto": "22"
+        },
+        {
+          "sku_variante": "SMANAULM5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMANAULM10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "54.95",
+          "ek_tigerone": "24.4",
+          "preis_netto": "54"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43445,
+      "name": "Seedsman Lemonchello Haze feminisiert",
+      "sku_eltern": "SMANLH",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149355_2190220_pimcore_1_3.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMANLH3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMANLH5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "35.95",
+          "ek_tigerone": "15.96",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SMANLH10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "62.95",
+          "ek_tigerone": "27.95",
+          "preis_netto": "62"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43446,
+      "name": "Seedsman Lilac Cookies Auto feminisiert",
+      "sku_eltern": "SMAN-LICO-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-LICO-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-LICO-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "18.63",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-LICO-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "31.5",
+          "preis_netto": "70"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43447,
+      "name": "Seedsman MegaMix Auto feminisiert",
+      "sku_eltern": "SMAN-MEGMIX-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-MEGMIX-AUTO-FEM-6",
+          "inhalt": "6 Stück",
+          "vk_tigerone": "19.95",
+          "ek_tigerone": "8.86",
+          "preis_netto": "19"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43448,
+      "name": "Seedsman MegaMix feminisiert",
+      "sku_eltern": "SMAN-MEGMIX-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-MEGMIX-FEM-6",
+          "inhalt": "6 Stück",
+          "vk_tigerone": "19.95",
+          "ek_tigerone": "8.86",
+          "preis_netto": "19"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43449,
+      "name": "Seedsman Northern Lights 99 feminisiert",
+      "sku_eltern": "SMAN-NL99-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-NL99-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "46.95",
+          "ek_tigerone": "20.85",
+          "preis_netto": "46"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43451,
+      "name": "Seedsman Northern Lights Auto feminisiert",
+      "sku_eltern": "SMAN-NL-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149680_2190295_pimcore_1_4.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-NL-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "22.95",
+          "ek_tigerone": "10.19",
+          "preis_netto": "22"
+        },
+        {
+          "sku_variante": "SMAN-NL-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-NL-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "54.95",
+          "ek_tigerone": "24.4",
+          "preis_netto": "54"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43453,
+      "name": "Seedsman OG Kush Auto feminisiert",
+      "sku_eltern": "SMANOGKRAUT",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149363_2190253_pimcore_1_3.png",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMANOGKRAUT3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMANOGKRAUT5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "35.95",
+          "ek_tigerone": "15.96",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SMANOGKRAUT10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "62.95",
+          "ek_tigerone": "27.95",
+          "preis_netto": "62"
+        },
+        {
+          "sku_variante": "SMANOGKRAUT25",
+          "inhalt": "25 Stück",
+          "vk_tigerone": "142.95",
+          "ek_tigerone": "63.47",
+          "preis_netto": "141"
+        },
+        {
+          "sku_variante": "SMANOGKRAUT50",
+          "inhalt": "50 Stück",
+          "vk_tigerone": "238.95",
+          "ek_tigerone": "106.09",
+          "preis_netto": "236"
+        },
+        {
+          "sku_variante": "SMANOGKRAUT100",
+          "inhalt": "100 Stück",
+          "vk_tigerone": "398.95",
+          "ek_tigerone": "177.13",
+          "preis_netto": "394"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43455,
+      "name": "Seedsman OG Kush feminisiert",
+      "sku_eltern": "SMAN-OGKU-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151836_2190769_pimcore_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-OGKU-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMAN-OGKU-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "35.95",
+          "ek_tigerone": "15.96",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SMAN-OGKU-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "62.95",
+          "ek_tigerone": "27.95",
+          "preis_netto": "62"
+        },
+        {
+          "sku_variante": "SMAN-OGKU-FEM-25",
+          "inhalt": "25 Stück",
+          "vk_tigerone": "142.95",
+          "ek_tigerone": "63.47",
+          "preis_netto": "141"
+        },
+        {
+          "sku_variante": "SMAN-OGKU-FEM-50",
+          "inhalt": "50 Stück",
+          "vk_tigerone": "238.95",
+          "ek_tigerone": "106.09",
+          "preis_netto": "236"
+        },
+        {
+          "sku_variante": "SMAN-OGKU-FEM-100",
+          "inhalt": "100 Stück",
+          "vk_tigerone": "398.95",
+          "ek_tigerone": "177.13",
+          "preis_netto": "394"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43457,
+      "name": "Seedsman Peyote Forum feminisiert",
+      "sku_eltern": "SMAN-PEYF-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149963_2190351_pimcore_1_3.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-PEYF-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMAN-PEYF-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "35.95",
+          "ek_tigerone": "15.96",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SMAN-PEYF-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "62.95",
+          "ek_tigerone": "27.95",
+          "preis_netto": "62"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43459,
+      "name": "Seedsman Peyote Gorilla feminisiert",
+      "sku_eltern": "SMAN-PEYGOR-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/2/125415_2191362_pimcore_1_1.png",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-PEYGOR-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-PEYGOR-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "18.63",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-PEYGOR-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "31.5",
+          "preis_netto": "70"
+        },
+        {
+          "sku_variante": "SMAN-PEYGOR-FEM-25",
+          "inhalt": "25 Stück",
+          "vk_tigerone": "154.95",
+          "ek_tigerone": "68.8",
+          "preis_netto": "153"
+        },
+        {
+          "sku_variante": "SMAN-PEYGOR-FEM-50",
+          "inhalt": "50 Stück",
+          "vk_tigerone": "262.95",
+          "ek_tigerone": "116.75",
+          "preis_netto": "260"
+        },
+        {
+          "sku_variante": "SMAN-PEYGOR-FEM-100",
+          "inhalt": "100 Stück",
+          "vk_tigerone": "438.95",
+          "ek_tigerone": "194.89",
+          "preis_netto": "434"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43461,
+      "name": "Seedsman Peyote Wi-Fi CBD 2:1 feminisiert",
+      "sku_eltern": "SMAN-PEY-CBD-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548,
+        2309
+      ],
+      "kategorien_namen": [
+        "Feminisiert",
+        "CBD Samen"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149939_2190339_pimcore_1_3.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-PEY-CBD-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMAN-PEY-CBD-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "35.95",
+          "ek_tigerone": "15.96",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SMAN-PEY-CBD-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "62.95",
+          "ek_tigerone": "27.95",
+          "preis_netto": "62"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43464,
+      "name": "Seedsman Peyote Wi-Fi feminisiert",
+      "sku_eltern": "SMAN-PEYWIFI-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149794_2190331_pimcore_1_7.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-PEYWIFI-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMAN-PEYWIFI-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "35.95",
+          "ek_tigerone": "15.96",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SMAN-PEYWIFI-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "62.95",
+          "ek_tigerone": "27.95",
+          "preis_netto": "62"
+        },
+        {
+          "sku_variante": "SMAN-PEYWIFI-FEM-25",
+          "inhalt": "25 Stück",
+          "vk_tigerone": "142.95",
+          "ek_tigerone": "63.47",
+          "preis_netto": "141"
+        },
+        {
+          "sku_variante": "SMAN-PEYWIFI-FEM-50",
+          "inhalt": "50 Stück",
+          "vk_tigerone": "238.95",
+          "ek_tigerone": "106.09",
+          "preis_netto": "236"
+        },
+        {
+          "sku_variante": "SMAN-PEYWIFI-FEM-100",
+          "inhalt": "100 Stück",
+          "vk_tigerone": "398.95",
+          "ek_tigerone": "177.13",
+          "preis_netto": "394"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43466,
+      "name": "Seedsman Peyote Zkittlez feminisiert",
+      "sku_eltern": "SMAN-PEYZKIT-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149964_2190355_pimcore_1.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-PEYZKIT-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-PEYZKIT-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "18.63",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-PEYZKIT-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "31.5",
+          "preis_netto": "70"
+        },
+        {
+          "sku_variante": "SMAN-PEYZKIT-FEM-25",
+          "inhalt": "25 Stück",
+          "vk_tigerone": "154.95",
+          "ek_tigerone": "68.8",
+          "preis_netto": "153"
+        },
+        {
+          "sku_variante": "SMAN-PEYZKIT-FEM-50",
+          "inhalt": "50 Stück",
+          "vk_tigerone": "262.95",
+          "ek_tigerone": "116.75",
+          "preis_netto": "260"
+        },
+        {
+          "sku_variante": "SMAN-PEYZKIT-FEM-100",
+          "inhalt": "100 Stück",
+          "vk_tigerone": "438.95",
+          "ek_tigerone": "194.89",
+          "preis_netto": "434"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43468,
+      "name": "Seedsman Pineapple OG Auto feminisiert",
+      "sku_eltern": "SMAN-PINEOG-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151816_2190736_pimcore_1_3.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-PINEOG-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-PINEOG-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "18.63",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-PINEOG-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "31.5",
+          "preis_netto": "70"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43470,
+      "name": "Seedsman Pineapple OG feminisiert",
+      "sku_eltern": "SMAN-PINEOG-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151819_2190753_pimcore_1_3.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-PINEOG-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-PINEOG-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "18.63",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-PINEOG-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "31.5",
+          "preis_netto": "70"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43472,
+      "name": "Seedsman Pink Kush CBD 30:1 Auto feminisiert",
+      "sku_eltern": "SMAN-PINK-CBD-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547,
+        2309
+      ],
+      "kategorien_namen": [
+        "Automatisch",
+        "CBD Samen"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149679_2190289_pimcore_1_7.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-PINK-CBD-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMAN-PINK-CBD-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "35.95",
+          "ek_tigerone": "15.96",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SMAN-PINK-CBD-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "62.95",
+          "ek_tigerone": "27.95",
+          "preis_netto": "62"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43474,
+      "name": "Seedsman Purple Bud regulär",
+      "sku_eltern": "SMAN-PRPB-REG",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148331_2190167_pimcore_1_3.png",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-PRPB-REG-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "19.95",
+          "ek_tigerone": "8.86",
+          "preis_netto": "19"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43476,
+      "name": "Seedsman Purple Ghost Candy feminisiert",
+      "sku_eltern": "SMAN-PGCANDY-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150181_2190383_pimcore_1_5.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-PGCANDY-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-PGCANDY-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "18.63",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-PGCANDY-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "31.5",
+          "preis_netto": "70"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43478,
+      "name": "Seedsman Purple Kush CBD 1:1 Auto feminisiert",
+      "sku_eltern": "SMAN-PURPKU-CBD-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547,
+        2309
+      ],
+      "kategorien_namen": [
+        "Automatisch",
+        "CBD Samen"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149719_2190315_pimcore_1_6.png",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-PURPKU-CBD-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMAN-PURPKU-CBD-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "35.95",
+          "ek_tigerone": "15.96",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SMAN-PURPKU-CBD-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "62.95",
+          "ek_tigerone": "27.95",
+          "preis_netto": "62"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43480,
+      "name": "Seedsman Purple Oreoz F1 feminisiert",
+      "sku_eltern": "SMAN-PUOR-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151811_2190712_pimcore_1_2.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-PUOR-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "34.95",
+          "ek_tigerone": "15.52",
+          "preis_netto": "34"
+        },
+        {
+          "sku_variante": "SMAN-PUOR-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "46.95",
+          "ek_tigerone": "20.85",
+          "preis_netto": "46"
+        },
+        {
+          "sku_variante": "SMAN-PUOR-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "78.95",
+          "ek_tigerone": "35.05",
+          "preis_netto": "78"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43482,
+      "name": "Seedsman Purple Punch F1 Fast feminisiert",
+      "sku_eltern": "SMAN-PUPU-FAST-FEM",
+      "blueh_typ": "Early/fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151815_2190730_pimcore_1_6.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-PUPU-FAST-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-PUPU-FAST-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "18.63",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-PUPU-FAST-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "31.5",
+          "preis_netto": "70"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43483,
+      "name": "Seedsman Relax Collection Feminised Seeds - (Critical Purple Kush, L.A. Peyote Kush, Peyote Gorilla) - 3 x 1 feminisiert",
+      "sku_eltern": "SMAN-COL-REL-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-COL-REL-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "25",
+          "ek_tigerone": "",
+          "preis_netto": "24"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43484,
+      "name": "Seedsman Sherbanger feminisiert",
+      "sku_eltern": "SMAN-SHER-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-SHER-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "12.38",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-SHER-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "16.78",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-SHER-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "28.38",
+          "preis_netto": "70"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43486,
+      "name": "Seedsman Sour Diesel Auto feminisiert",
+      "sku_eltern": "SMAN-SODI-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151817_2190741_pimcore_1_4.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-SODI-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-SODI-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "18.63",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-SODI-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "31.5",
+          "preis_netto": "70"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43487,
+      "name": "Seedsman Sour Diesel feminisiert",
+      "sku_eltern": "SMAN-SODI-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-SODI-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-SODI-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "18.63",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-SODI-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "31.5",
+          "preis_netto": "70"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43489,
+      "name": "Seedsman Strawberry Banana Grape feminisiert",
+      "sku_eltern": "SMANSTB",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149356_2190224_pimcore_1_3.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "SMANSTB3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMANSTB5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "35.95",
+          "ek_tigerone": "15.96",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SMANSTB10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "62.95",
+          "ek_tigerone": "27.95",
+          "preis_netto": "62"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43491,
+      "name": "Seedsman Strawberry Cheesecake Auto feminisiert",
+      "sku_eltern": "SMAN-STRCHCAKE-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150122_2190367_pimcore_1_5.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-STRCHCAKE-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-STRCHCAKE-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "18.63",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-STRCHCAKE-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "31.5",
+          "preis_netto": "70"
+        },
+        {
+          "sku_variante": "SMAN-STRCHCAKE-AUTO-FEM-25",
+          "inhalt": "25 Stück",
+          "vk_tigerone": "154.95",
+          "ek_tigerone": "68.8",
+          "preis_netto": "153"
+        },
+        {
+          "sku_variante": "SMAN-STRCHCAKE-AUTO-FEM-50",
+          "inhalt": "50 Stück",
+          "vk_tigerone": "262.95",
+          "ek_tigerone": "116.75",
+          "preis_netto": "260"
+        },
+        {
+          "sku_variante": "SMAN-STRCHCAKE-AUTO-FEM-100",
+          "inhalt": "100 Stück",
+          "vk_tigerone": "438.95",
+          "ek_tigerone": "194.89",
+          "preis_netto": "434"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43493,
+      "name": "Seedsman Tangerine Snow F1 Fast feminisiert",
+      "sku_eltern": "SMAN-TASN-FAST-FEM",
+      "blueh_typ": "Early/fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151812_2190716_pimcore_1_5.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-TASN-FAST-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-TASN-FAST-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "18.63",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-TASN-FAST-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "31.5",
+          "preis_netto": "70"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43494,
+      "name": "Seedsman Thai Cookies Auto feminisiert",
+      "sku_eltern": "SMAN-THCO-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-THCO-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-THCO-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "18.63",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-THCO-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "31.5",
+          "preis_netto": "70"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43496,
+      "name": "Seedsman The White OG feminisiert",
+      "sku_eltern": "SMANTWR",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149359_2190236_pimcore_1_3.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMANTWR3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMANTWR5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "35.95",
+          "ek_tigerone": "15.96",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SMANTWR10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "62.95",
+          "ek_tigerone": "27.95",
+          "preis_netto": "62"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43497,
+      "name": "Seedsman Wedding Cake Auto feminisiert",
+      "sku_eltern": "SMAN-WECA-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-WECA-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-WECA-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "41.95",
+          "ek_tigerone": "18.63",
+          "preis_netto": "41"
+        },
+        {
+          "sku_variante": "SMAN-WECA-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "70.95",
+          "ek_tigerone": "31.5",
+          "preis_netto": "70"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43499,
+      "name": "Seedsman White Widow Auto feminisiert",
+      "sku_eltern": "auto-white-widow",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148436_2190183_pimcore_1_4.png",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMANAWWF3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "22.95",
+          "ek_tigerone": "10.19",
+          "preis_netto": "22"
+        },
+        {
+          "sku_variante": "SMANAWWF5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMANAWWF10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "54.95",
+          "ek_tigerone": "24.4",
+          "preis_netto": "54"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43501,
+      "name": "Seedsman White Widow Fast feminisiert",
+      "sku_eltern": "SMAN-WW-FAST-FEM",
+      "blueh_typ": "Early/fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148957_2190212_pimcore_1_3.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-WW-FAST-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "22.95",
+          "ek_tigerone": "10.19",
+          "preis_netto": "22"
+        },
+        {
+          "sku_variante": "SMAN-WW-FAST-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMAN-WW-FAST-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "54.95",
+          "ek_tigerone": "24.4",
+          "preis_netto": "54"
+        },
+        {
+          "sku_variante": "SMAN-WW-FAST-FEM-25",
+          "inhalt": "25 Stück",
+          "vk_tigerone": "122.95",
+          "ek_tigerone": "54.59",
+          "preis_netto": "121"
+        },
+        {
+          "sku_variante": "SMAN-WW-FAST-FEM-50",
+          "inhalt": "50 Stück",
+          "vk_tigerone": "214.95",
+          "ek_tigerone": "95.44",
+          "preis_netto": "212"
+        },
+        {
+          "sku_variante": "SMAN-WW-FAST-FEM-100",
+          "inhalt": "100 Stück",
+          "vk_tigerone": "358.95",
+          "ek_tigerone": "159.37",
+          "preis_netto": "355"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43503,
+      "name": "Seedsman White Widow feminisiert",
+      "sku_eltern": "whitewidow",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/152789_2190787_pimcore_1_1.png",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMANWW3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "22.95",
+          "ek_tigerone": "10.19",
+          "preis_netto": "22"
+        },
+        {
+          "sku_variante": "SMANWW5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "30.95",
+          "ek_tigerone": "13.74",
+          "preis_netto": "30"
+        },
+        {
+          "sku_variante": "SMANWW10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "54.95",
+          "ek_tigerone": "24.4",
+          "preis_netto": "54"
+        },
+        {
+          "sku_variante": "SMANWW25",
+          "inhalt": "25 Stück",
+          "vk_tigerone": "122.95",
+          "ek_tigerone": "54.59",
+          "preis_netto": "121"
+        },
+        {
+          "sku_variante": "SMANWW50",
+          "inhalt": "50 Stück",
+          "vk_tigerone": "214.95",
+          "ek_tigerone": "95.44",
+          "preis_netto": "212"
+        },
+        {
+          "sku_variante": "SMANWW100",
+          "inhalt": "100 Stück",
+          "vk_tigerone": "358.95",
+          "ek_tigerone": "159.37",
+          "preis_netto": "355"
+        }
+      ]
+    },
+    {
+      "produkt_id": 43505,
+      "name": "Seedsman Zkittlez Auto feminisiert",
+      "sku_eltern": "SMAN-ZKITT-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/2/125419_2191382_pimcore_1.png",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "SMAN-ZKITT-AUTO-FEM-3",
+          "inhalt": "3 Stück",
+          "vk_tigerone": "26.95",
+          "ek_tigerone": "11.97",
+          "preis_netto": "26"
+        },
+        {
+          "sku_variante": "SMAN-ZKITT-AUTO-FEM-5",
+          "inhalt": "5 Stück",
+          "vk_tigerone": "35.95",
+          "ek_tigerone": "15.96",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SMAN-ZKITT-AUTO-FEM-10",
+          "inhalt": "10 Stück",
+          "vk_tigerone": "62.95",
+          "ek_tigerone": "27.95",
+          "preis_netto": "62"
+        }
+      ]
+    }
+  ]
+}

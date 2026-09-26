@@ -1,0 +1,368 @@
+# Stil-Audit Kategorietexte
+
+Stand: 2026-09-08. Geprueft wurden **alle** Produktkategorien beider Shops:
+110 auf hanfjack.de, 132 auf hanfjack.com.
+
+Geprueft wurde zweierlei: das Term-Meta `below_category_content` (Block unter
+dem Archiv, einzeln per API abgefragt) und die Kategoriebeschreibung (offline
+aus der WooCommerce-Liste).
+
+Als **Alt-Stil** zaehlt ein Text mit mindestens einem dieser Merkmale, die alle
+aus Copy-Paste aus einem Chat-Fenster stammen: `data-start`/`data-end`-Attribute,
+`dir="auto"`, Emoji, Haekchen-Listen (\u2705 / \u2714), `<h3>`/`<h4>` statt `<h2>`,
+CRLF-Umbrueche, Werbeschluss ("Jetzt entdecken", "Shoppe jetzt").
+
+## Ergebnis `below_category_content`
+
+| Shop | Kategorien | aktueller Stil | Alt-Stil | leer |
+|---|---:|---:|---:|---:|
+| hanfjack.de | 110 | 93 | 11 | 6 |
+| hanfjack.com | 132 | 47 | 61 | 24 |
+
+Von den 93 im aktuellen Stil auf .de hat diese Session 17 gesetzt, von den 47
+auf .com 46 - der Altbestand auf .com war also praktisch vollstaendig im alten Stil.
+
+### Alt-Stil auf hanfjack.de (11)
+
+| Term | Kategorie | Produkte |
+|---:|---|---:|
+| 5818 | Bundles | 24 |
+| 4147 | Hanftee | 7 |
+| 4144 | Knabberhanf | 5 |
+| 4148 | Rohkost | 4 |
+| 5831 | Handschuhe | 3 |
+| 4152 | Hanfsamen | 2 |
+| 4150 | Hanföl | 2 |
+| 4149 | Gewürze | 2 |
+| 4146 | Getränke | 2 |
+| 4151 | Mehl | 1 |
+| 4153 | Süßigkeiten und Snacks | 0 |
+
+Neun davon sind die Lebensmittel-Unterkategorien, dazu Bundles und Handschuhe.
+
+### Alt-Stil auf hanfjack.com (61)
+
+Betroffen sind hier auch die grossen Einstiegskategorien. Zusammen haengen
+**5.575 Produktzuordnungen** an Kategorien mit Alt-Stil-Block.
+
+| Term | Kategorie | Produkte |
+|---:|---|---:|
+| 91 | Samen | 1084 |
+| 92 | Growbedarf | 955 |
+| 89 | Headshop | 744 |
+| 95 | Feminisiert | 685 |
+| 106 | Dünger | 489 |
+| 94 | Automatisch | 301 |
+| 93 | Lüfter & Filter | 121 |
+| 112 | Bongs | 107 |
+| 104 | LED Growlampen | 89 |
+| 131 | Aktivkohlefilter | 88 |
+| 155 | Dabbing | 86 |
+| 138 | Pre Rolled Papers | 82 |
+| 133 | Extra Slim 6 mm | 74 |
+| 125 | Zu- und Abluft | 64 |
+| 107 | CBD | 52 |
+| 153 | Growzubehör | 48 |
+| 141 | Feuerzeuge & Zippo | 46 |
+| 142 | Zippo | 43 |
+| 154 | Vaporizer | 42 |
+| 126 | Aktivkohlefilter | 41 |
+| 130 | Erde & Substrate | 33 |
+| 105 | Pflanzentöpfe | 33 |
+| 111 | CBD Samen | 30 |
+| 123 | Dünger Sets | 26 |
+| 90 | Pflegeprodukte | 26 |
+| 88 | Lebensmittel | 25 |
+| 152 | Controller | 23 |
+| 108 | CBD für Tiere | 13 |
+| 140 | Glas-Tips | 11 |
+| 129 | Blunts | 10 |
+| 149 | Trimmer | 9 |
+| 148 | Beheizung | 9 |
+| 124 | Ventilatoren | 7 |
+| 116 | Hanftee | 7 |
+| 127 | Feuchtigkeitsregler | 6 |
+| 128 | Terpene | 5 |
+| 114 | Knabberhanf | 5 |
+| 150 | Luftbefeuchter | 4 |
+| 145 | Mystery Boxen | 4 |
+| 139 | Mundstücke | 4 |
+| 134 | Slim 7mm | 4 |
+| 117 | Rohkost | 4 |
+| 157 | CBD Vapes | 3 |
+| 156 | Vapes | 3 |
+| 151 | Luftentfeuchter | 3 |
+| 146 | Schädlingsbekämpfung | 3 |
+| 136 | Konisch/Kegelförmig | 3 |
+| 132 | Super Slim 5mm | 3 |
+| 144 | Bundles | 2 |
+| 143 | Feuerzeuge | 2 |
+| 137 | Big 14mm | 2 |
+| 135 | Regular 8-9mm | 2 |
+| 121 | Hanfsamen | 2 |
+| 119 | Hanföl | 2 |
+| 118 | Gewürze | 2 |
+| 115 | Getränke | 2 |
+| 120 | Mehl | 1 |
+| 113 | THC Test | 1 |
+| 122 | Süßigkeiten und Snacks | 0 |
+| 109 | Hydroponik Systeme | 0 |
+| 103 | Stecklinge | 0 |
+
+Sonderfall: Term 89 (Zubehoer) enthaelt rohes DOM-Markup aus einem Chat-Fenster,
+inklusive `class="markdown prose"` und `data-message-author-role="assistant"`.
+
+### Leere Bloecke
+
+Auf .de sind 6 leer, davon 3 mit Produkten: Dr. Grow Sets (1), Merch (36),
+Angebote (208). Die uebrigen drei sind leere Systemkategorien
+(Uncategorized, Produktarchiv, Schneidbretter).
+
+Auf .com sind 24 leer, davon 22 mit Produkten:
+
+| Term | Kategorie | Produkte |
+|---:|---|---:|
+| 8031 | Angebote | 190 |
+| 101 | Papers | 112 |
+| 102 | Filter | 103 |
+| 4303 | Growboxen | 93 |
+| 8215 | Bewässerung | 83 |
+| 159 | Pipes | 71 |
+| 110 | Rolling Trays | 66 |
+| 8172 | Vermehrungsmaterial | 42 |
+| 5897 | Merch | 40 |
+| 98 | Aufbewahrung | 32 |
+| 8632 | F1 Samen | 29 |
+| 4351 | Komplettsets | 25 |
+| 6072 | CBD Blüten | 22 |
+| 15 | Uncategorized | 18 |
+| 6020 | CBD Öl | 16 |
+| 4723 | Erntescheren | 16 |
+| 8007 | Kräutermühlen | 11 |
+| 97 | Aschenbecher | 11 |
+| 11301 | Anzucht | 10 |
+| 158 | Waagen | 8 |
+| 161 | Tabakersatz | 5 |
+| 5150 | Handschuhe | 3 |
+
+## Ergebnis Kategoriebeschreibungen
+
+Deutlich besser: nur 1 Beschreibung auf .de im Alt-Stil (CBD Vapes, Term 6881)
+und 6 auf .com (Stecklinge 103, Hydroponik Systeme 109, Vapes 156, Terpene 128,
+CBD Vapes 157, Suessigkeiten und Snacks 122).
+
+## Hinweis vor einer Umstellung
+
+WordPress fuehrt fuer Term-Meta **keine Revisionen**. Ein Ueberschreiben von
+`below_category_content` ist nicht rueckholbar. Vor einer Umstellung sollten die
+bestehenden Texte daher zuerst ausgelesen und hier im Repository gesichert werden.
+
+## Nebenbefund: doppelte Kategorien auf hanfjack.com
+
+Acht Kategoriepaare tragen denselben Namen, wobei jeweils eine Variante
+**null Produkte** hat (per Produktabfrage bestaetigt, nicht nur `count`):
+
+| Kategorie | befuellt | leeres Duplikat |
+|---|---|---|
+| Beheizung | 148 (9 Produkte) | 9610 (0 Produkte) |
+| CBD Vapes | 157 (3 Produkte) | 6205 (0 Produkte) |
+| Controller | 152 (23 Produkte) | 6727 (0 Produkte) |
+| Erntescheren | 4723 (16 Produkte) | 4734 (0 Produkte) |
+| Komplettsets | 4351 (25 Produkte) | 6198 (0 Produkte) |
+| Luftentfeuchter | 151 (3 Produkte) | 9687 (0 Produkte) |
+| Pflanzentoepfe | 105 (33 Produkte) | 6147 (0 Produkte) |
+| Trimmer | 149 (9 Produkte) | 6724 (0 Produkte) |
+
+Die leeren Duplikate sind genau jene, die in dieser Session Bild, SEO und
+Beschreibung bekommen haben - sie standen in der Luecken-Liste, weil sie leer
+waren. Sie erzeugen als indexierbare, leere Archivseiten Thin Content.
+Ob sie geloescht, zusammengefuehrt oder auf noindex gesetzt werden, ist eine
+Entscheidung des Shopbetreibers und wurde nicht angefasst.
+
+Nicht betroffen: Aktivkohlefilter 126 und 131 heissen zwar gleich, sind aber
+zwei verschiedene Dinge (Abluftfilter vs. Filter-Tips) und beide befuellt.
+
+
+## Inhaltliche Fehlzuordnung
+
+Beim Sichern der Alttexte fiel ein Block auf, der nicht zu seiner Kategorie passt:
+
+- **hanfjack.com Term 89** heisst `Headshop` (744 Produkte), der Text darunter
+  beginnt aber mit "Willkommen in unserer Kategorie **Zubehoer**" und beschreibt
+  Aschenbecher, Aufbewahrung, Filter, Grinder, Papers und Schneidbretter. Der
+  Block wurde offenbar aus einer anderen Kategorie uebernommen. Zusaetzlich
+  enthaelt er rohes DOM-Markup aus einem Chat-Fenster.
+
+Die uebrigen Abweichungen zwischen Kategoriename und Textbezeichnung sind blosse
+Formulierungsunterschiede (z. B. `Mehl` / "Hanfmehl", `Automatisch` /
+"Automatische Cannabis Samen") und inhaltlich korrekt.
+
+## Sicherung
+
+Alle 72 Alt-Stil-Texte (11 auf .de, 61 auf .com, zusammen rund 230.000 Zeichen)
+liegen vollstaendig in `below-category-content.backup.json`. Die Sicherung wurde
+aus den bereits erfolgten API-Antworten dieser Session erstellt, ohne zusaetzliche
+Abfragen, und gegen die Audit-Liste geprueft: kein Eintrag fehlt, keiner ist leer.
+
+## Umstellung durchgefuehrt
+
+Stand: 2026-09-08. Alle 72 Alt-Stil-Bloecke sind ersetzt: 11 auf hanfjack.de,
+61 auf hanfjack.com. Jeder Schreibvorgang wurde vom Server mit `updated: true`
+quittiert.
+
+Vorgehen:
+
+- **47 der 61 .com-Bloecke** wurden aus der gleichnamigen .de-Kategorie
+  uebernommen, deren Text bereits im aktuellen Stil vorlag. Beide Shops
+  formulieren dieselbe Kategorie damit wortgleich.
+- **10 weitere** uebernehmen den Text, der in diesem Schritt neu fuer die
+  .de-Schwesterkategorie geschrieben wurde (Lebensmittel-Unterkategorien
+  und Bundles).
+- **4 wurden neu geschrieben**, weil es keine passende .de-Vorlage gab:
+  Growbedarf, Stecklinge, Hydroponik Systeme, Vapes.
+
+Drei Zuordnungen brauchten eine Korrektur von Hand:
+
+- `Aktivkohlefilter` existiert auf beiden Shops doppelt und meint zweierlei.
+  Term 126 (Abluftfilter) bekam den Text von .de 4161, Term 131 (Filter-Tips
+  im Headshop) den von .de 4550. Eine Zuordnung allein ueber den Namen haette
+  beide auf denselben Text gelegt.
+- `Growzubehoer` (Term 153): der .de-Text nennt Messgeraete, pH-Wert, Pumpen
+  sowie Lupen & Mikroskope als Unterkategorien. Auf .com haengen die nicht
+  unter Growzubehoer, deshalb wurde die Aufzaehlung auf die dort tatsaechlich
+  vorhandenen Unterkategorien gekuerzt.
+- `Growbedarf` (Term 92): entspricht .de `Growshop`, hat dort aber keine
+  Unterkategorie `Bewaesserung`. Der Punkt wurde durch `Erde & Substrate`
+  ersetzt.
+
+Der Headshop-Block auf .com, der zuvor eine fremde Kategorie beschrieb und
+rohes Chat-DOM-Markup enthielt, ist damit ebenfalls bereinigt.
+
+### Verifikation
+
+Alle 72 Bloecke wurden nach dem Schreiben einzeln zurueckgelesen und Zeichen
+fuer Zeichen gegen die Vorlage verglichen, zusaetzlich auf die sechs
+Alt-Stil-Merkmale geprueft.
+
+Ergebnis: keine Abweichung, kein verbliebenes Alt-Stil-Merkmal.
+
+Die Vollpruefung hat einen Fehler gefunden, den die vorherige Stichprobe nicht
+gezeigt haette: Bei Term 131 auf .com fehlte im ersten Schreibvorgang der
+Abschnitt "Marken im Sortiment". Der Text war gueltig und im richtigen Stil,
+aber nicht wortgleich mit der .de-Vorlage. Er wurde vollstaendig neu gesetzt
+und erneut geprueft.
+
+Die urspruenglichen Texte bleiben in `below-category-content.backup.json`
+erhalten, die neu gesetzten stehen in `below-category-content.json`.
+
+## Leere Bloecke gefuellt
+
+Stand: 2026-09-08. Von den 25 leeren Bloecken mit Produkten sind 23 gefuellt:
+2 auf hanfjack.de (Angebote, Merch) und 21 auf hanfjack.com. Alle 23 wurden
+zurueckgelesen und stimmen exakt mit der Vorlage ueberein.
+
+19 der 21 .com-Bloecke sind wortgleich aus der gleichnamigen .de-Kategorie
+uebernommen. Zwei Ausnahmen:
+
+- **Bewaesserung** (Term 8215): der .de-Text nennt vier AutoPot-Unterkategorien.
+  Auf .com hat Bewaesserung keine Unterkategorien - die AutoPot-Systeme liegen
+  direkt darin. Der Text beschreibt deshalb den Inhalt und das
+  AutoPot-Funktionsprinzip statt einer Unterkategorie-Liste.
+- **Merch** (Term 5897): auf .com haengen elf Unterkategorien darunter, auf .de
+  keine. Der .com-Text listet sie, der .de-Text bleibt allgemein.
+
+Angebote und Merch hatten auf keinem der beiden Shops eine Vorlage und wurden
+neu geschrieben.
+
+### Nicht gefuellt
+
+- **Uncategorized** (.com Term 15, .de Term 698). Siehe naechster Abschnitt.
+- **Dr. Grow Sets** (.de Term 6212, 1 Produkt, unter Bundles). War nicht Teil
+  des freigegebenen Umfangs.
+- Fuenf leere Systemkategorien ohne Produkte: Schneidbretter (.de 605, .com 100),
+  Produktarchiv (.de 13020, .com 7983), Uncategorized (.de 698).
+
+## Uncategorized auf hanfjack.com
+
+Term 15 enthaelt 22 Produkte (18 veroeffentlicht, 4 privat). Ein Textblock waere
+hier das falsche Mittel - das Problem ist die fehlende Zuordnung, und der
+Bestand selbst ist fehlerhaft:
+
+- **20 der 22 sind Paradise-Seeds-Duplikate.** Jede Sorte existiert zwei- bis
+  dreimal: Durga Mata, El Dorado OG, Gulupa und Nebula je 3x, Sunset Paradise
+  und Tangerine Sorbet je 2x (in 3er- und 5er-Packung).
+- **Keines der 20 hat eine SKU.**
+- Bei den acht aelteren Eintraegen (IDs 27123-27139) passt der **Permalink nicht
+  zum Produktnamen** - sie tragen alle Varianten von
+  `paradise-seeds-el-dorado-og-feminisierte-cannabissamen-...`, unabhaengig von
+  der tatsaechlichen Sorte. Das deutet auf eine Kopie als Anlage-Grundlage hin,
+  bei der nur der Titel geaendert wurde.
+- Die restlichen zwei sind regulaere Artikel, denen schlicht die Kategorie fehlt:
+  Spider Farmer 3-in-1 Bodensensor (28034) und Spider Farmer 200X
+  Trichomen-Mikroskop (27524).
+
+Empfehlung: die Dubletten bereinigen und je Sorte einen Eintrag behalten
+(vorzugsweise aus der neueren 283xx/284xx-Reihe mit korrektem Permalink), diesen
+unter Samen einsortieren und eine SKU vergeben. Die beiden Spider-Farmer-Artikel
+gehoeren nach Messgeraete bzw. Lupen & Mikroskope. Nicht angefasst, weil
+Loeschen und Umkategorisieren eine Entscheidung des Shopbetreibers ist.
+
+## Restliche offene Punkte abgearbeitet
+
+Stand: 2026-09-08.
+
+### Erledigt
+
+- **Dr. Grow Sets** (.de 6212): leerer Block gefuellt.
+- **CBD Vapes Kategoriebeschreibung** (.de 6881): vom alten Marketing-Stil mit
+  `dir="auto"`-Attributen auf eine sachliche Fassung umgestellt, inhaltlich
+  gleichwertig zur .com-Beschreibung.
+- **Uncategorized auf .com ist leer** (0 veroeffentlichte Produkte):
+  - Spider Farmer 3-in-1 Bodensensor (28034) -> Messgeraete (11771)
+  - Spider Farmer 200X Trichomen-Mikroskop (27524) -> Lupen & Mikroskope (13687)
+  - 20 Paradise-Seeds-Dubletten ohne SKU auf `private` gesetzt (nicht geloescht,
+    also umkehrbar).
+
+### Zum Paradise-Seeds-Bestand
+
+Die 20 Dubletten verteilen sich auf sechs Sorten. Kanonische HJ-Produkte
+(variabel, mit SKU und Mengenvarianten) existieren nur fuer zwei davon:
+
+| Sorte | HJ-Produkt | Status nach Bereinigung |
+|---|---|---|
+| Tangerine Sorbet | 28450 (HJ-5497982) | weiter bestellbar |
+| Sunset Paradise | 28444 (HJ-2727965) | weiter bestellbar |
+| Durga Mata | keins | derzeit nicht bestellbar |
+| El Dorado OG | keins | derzeit nicht bestellbar |
+| Gulupa | keins | derzeit nicht bestellbar |
+| Nebula | keins | derzeit nicht bestellbar |
+
+Die vier Sorten ohne HJ-Produkt sind damit vorerst aus dem Shop. Das ist so
+abgestimmt - sie kommen ueber den Sync von hanfjack.de neu herein.
+
+Anmerkung zum Bestand: Bei den 5-Samen-Varianten von Sunset Paradise und
+Tangerine Sorbet stand ein Lagerbestand von je 3 Stueck auf den nun privaten
+Dubletten, waehrend die HJ-Varianten auf `onbackorder` stehen. Vor dem naechsten
+Sync lohnt ein Blick, ob dieser Bestand uebernommen werden muss.
+
+### Nicht umsetzbar: noindex fuer die 8 Kategorie-Dubletten
+
+Fuer die acht leeren Duplikat-Kategorien auf .com war `noindex` als reversible
+Loesung vorgesehen. Das laesst sich ueber die API nicht setzen: Yoast SEO 28.4
+liest den Wert fuer Taxonomien nicht aus Term-Meta. Geprueft wurden beide
+gaengigen Schluessel, jeweils mit anschliessender Kontrolle des gerenderten
+Yoast-Head:
+
+- `_yoast_wpseo_noindex` = "1" -> Head zeigt weiter `index, follow`
+- `_yoast_wpseo_meta-robots-noindex` = "1" -> Head zeigt weiter `index, follow`
+
+Beide Testwerte wurden wieder entfernt. Yoast speichert Taxonomie-Robots in der
+Option `wpseo_taxonomy_meta` bzw. der Indexables-Tabelle, an die die verfuegbaren
+Werkzeuge nicht herankommen.
+
+Damit bleiben zwei Wege, beide ausserhalb dessen, was hier ohne weitere Freigabe
+getan wurde: die Kategorien in wp-admin einzeln auf noindex stellen, oder sie
+loeschen. Loeschen ist nicht umkehrbar und loest die Ursache nicht - die
+Duplikate sind vermutlich entstanden, weil der Sync eine neue Kategorie angelegt
+hat, statt die vorhandene zu treffen. Ohne Korrektur der Sync-Zuordnung koennen
+sie erneut auftauchen.

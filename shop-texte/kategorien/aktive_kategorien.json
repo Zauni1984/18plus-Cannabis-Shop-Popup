@@ -1,0 +1,639 @@
+[
+ {
+  "id": 4161,
+  "name": "Aktivkohlefilter",
+  "slug": "aktivkohlefilter",
+  "parent": 539,
+  "count": 40
+ },
+ {
+  "id": 4550,
+  "name": "Aktivkohlefilter",
+  "slug": "aktivkohlefilter-filter",
+  "parent": 608,
+  "count": 90
+ },
+ {
+  "id": 11795,
+  "name": "Angebote",
+  "slug": "angebote",
+  "parent": 0,
+  "count": 291
+ },
+ {
+  "id": 12713,
+  "name": "Anzucht",
+  "slug": "anzucht",
+  "parent": 538,
+  "count": 7
+ },
+ {
+  "id": 596,
+  "name": "Aschenbecher",
+  "slug": "aschenbecher",
+  "parent": 55,
+  "count": 11
+ },
+ {
+  "id": 598,
+  "name": "Aufbewahrung",
+  "slug": "aufbewahrung",
+  "parent": 55,
+  "count": 41
+ },
+ {
+  "id": 547,
+  "name": "Automatisch",
+  "slug": "automatisch",
+  "parent": 532,
+  "count": 268
+ },
+ {
+  "id": 15557,
+  "name": "AutoPot Komplettsysteme",
+  "slug": "autopot-komplettsysteme",
+  "parent": 1401,
+  "count": 26
+ },
+ {
+  "id": 15560,
+  "name": "AutoPot Tanks &amp; Zubehör",
+  "slug": "autopot-tanks-zubehoer",
+  "parent": 1401,
+  "count": 10
+ },
+ {
+  "id": 15558,
+  "name": "AutoPot Töpfe &amp; Untersetzer",
+  "slug": "autopot-toepfe-untersetzer",
+  "parent": 1401,
+  "count": 8
+ },
+ {
+  "id": 15559,
+  "name": "AutoPot Verrohrung &amp; Ventile",
+  "slug": "autopot-verrohrung-ventile",
+  "parent": 1401,
+  "count": 21
+ },
+ {
+  "id": 6239,
+  "name": "Beheizung",
+  "slug": "beheizung",
+  "parent": 538,
+  "count": 9
+ },
+ {
+  "id": 1401,
+  "name": "Bewässerung",
+  "slug": "bewaesserung",
+  "parent": 538,
+  "count": 83
+ },
+ {
+  "id": 4556,
+  "name": "Big 14mm",
+  "slug": "big-14mm",
+  "parent": 4550,
+  "count": 2
+ },
+ {
+  "id": 4224,
+  "name": "Blunts",
+  "slug": "blunts",
+  "parent": 55,
+  "count": 10
+ },
+ {
+  "id": 3852,
+  "name": "Bongs",
+  "slug": "bongs",
+  "parent": 55,
+  "count": 106
+ },
+ {
+  "id": 5818,
+  "name": "Bundles",
+  "slug": "hanf-bundles-kaufen",
+  "parent": 0,
+  "count": 24
+ },
+ {
+  "id": 1193,
+  "name": "CBD",
+  "slug": "cbd",
+  "parent": 0,
+  "count": 52
+ },
+ {
+  "id": 46,
+  "name": "CBD Blüten",
+  "slug": "cbd-blueten",
+  "parent": 1193,
+  "count": 22
+ },
+ {
+  "id": 1194,
+  "name": "CBD für Tiere",
+  "slug": "cbd-fuer-tiere",
+  "parent": 1193,
+  "count": 13
+ },
+ {
+  "id": 47,
+  "name": "CBD Öl",
+  "slug": "cbd-oel",
+  "parent": 1193,
+  "count": 16
+ },
+ {
+  "id": 2309,
+  "name": "CBD Samen",
+  "slug": "cbd-samen",
+  "parent": 532,
+  "count": 30
+ },
+ {
+  "id": 6243,
+  "name": "Controller",
+  "slug": "controller",
+  "parent": 6523,
+  "count": 21
+ },
+ {
+  "id": 6864,
+  "name": "Dabbing",
+  "slug": "dabbing",
+  "parent": 55,
+  "count": 86
+ },
+ {
+  "id": 6212,
+  "name": "Dr. Grow Sets",
+  "slug": "dr-grow-sets",
+  "parent": 5818,
+  "count": 1
+ },
+ {
+  "id": 1132,
+  "name": "Dünger",
+  "slug": "duenger",
+  "parent": 538,
+  "count": 402
+ },
+ {
+  "id": 4157,
+  "name": "Dünger Sets",
+  "slug": "duenger-sets",
+  "parent": 1132,
+  "count": 25
+ },
+ {
+  "id": 4235,
+  "name": "Erde &amp; Substrate",
+  "slug": "erde-substrate",
+  "parent": 538,
+  "count": 34
+ },
+ {
+  "id": 4225,
+  "name": "Erntescheren",
+  "slug": "erntescheren",
+  "parent": 6523,
+  "count": 10
+ },
+ {
+  "id": 15523,
+  "name": "Ersatzfilter",
+  "slug": "luftfilter-ersatzfilter",
+  "parent": 15521,
+  "count": 12
+ },
+ {
+  "id": 4552,
+  "name": "Extra Slim 6 mm",
+  "slug": "extra-slim-6-mm",
+  "parent": 4550,
+  "count": 75
+ },
+ {
+  "id": 12729,
+  "name": "F1 Samen",
+  "slug": "f1-samen",
+  "parent": 532,
+  "count": 29
+ },
+ {
+  "id": 548,
+  "name": "Feminisiert",
+  "slug": "feminisiert",
+  "parent": 532,
+  "count": 659
+ },
+ {
+  "id": 4220,
+  "name": "Feuchtigkeitsregler",
+  "slug": "feuchtigkeitsregler",
+  "parent": 55,
+  "count": 6
+ },
+ {
+  "id": 5426,
+  "name": "Feuerzeuge",
+  "slug": "feuerzeuge",
+  "parent": 5423,
+  "count": 2
+ },
+ {
+  "id": 5423,
+  "name": "Feuerzeuge &amp; Zippo",
+  "slug": "feuerzeuge-zippo",
+  "parent": 55,
+  "count": 46
+ },
+ {
+  "id": 608,
+  "name": "Filter",
+  "slug": "filter",
+  "parent": 55,
+  "count": 105
+ },
+ {
+  "id": 4146,
+  "name": "Getränke",
+  "slug": "getraenke",
+  "parent": 51,
+  "count": 2
+ },
+ {
+  "id": 4149,
+  "name": "Gewürze",
+  "slug": "gewuerze",
+  "parent": 51,
+  "count": 2
+ },
+ {
+  "id": 5191,
+  "name": "Glas-Tips",
+  "slug": "glas-tips",
+  "parent": 55,
+  "count": 11
+ },
+ {
+  "id": 531,
+  "name": "Growboxen",
+  "slug": "growboxen",
+  "parent": 538,
+  "count": 57
+ },
+ {
+  "id": 538,
+  "name": "Growshop",
+  "slug": "growbedarf",
+  "parent": 0,
+  "count": 937
+ },
+ {
+  "id": 6523,
+  "name": "Growzubehör",
+  "slug": "growzubehoer",
+  "parent": 538,
+  "count": 134
+ },
+ {
+  "id": 5831,
+  "name": "Handschuhe",
+  "slug": "handschuhe",
+  "parent": 6523,
+  "count": 3
+ },
+ {
+  "id": 4150,
+  "name": "Hanföl",
+  "slug": "hanfoel",
+  "parent": 51,
+  "count": 2
+ },
+ {
+  "id": 15,
+  "name": "Hanfprodukte",
+  "slug": "hanfprodukte",
+  "parent": 0,
+  "count": 2
+ },
+ {
+  "id": 4152,
+  "name": "Hanfsamen",
+  "slug": "hanfsamen",
+  "parent": 51,
+  "count": 2
+ },
+ {
+  "id": 4147,
+  "name": "Hanftee",
+  "slug": "hanftee",
+  "parent": 51,
+  "count": 7
+ },
+ {
+  "id": 55,
+  "name": "Headshop",
+  "slug": "headshop",
+  "parent": 0,
+  "count": 803
+ },
+ {
+  "id": 4144,
+  "name": "Knabberhanf",
+  "slug": "knabberhanf",
+  "parent": 51,
+  "count": 5
+ },
+ {
+  "id": 831,
+  "name": "Komplettsets",
+  "slug": "komplettsets",
+  "parent": 538,
+  "count": 22
+ },
+ {
+  "id": 4555,
+  "name": "Konisch/Kegelförmig",
+  "slug": "konisch-kegelfoermig",
+  "parent": 4550,
+  "count": 3
+ },
+ {
+  "id": 599,
+  "name": "Kräutermühlen",
+  "slug": "kraeutermuehlen",
+  "parent": 55,
+  "count": 11
+ },
+ {
+  "id": 51,
+  "name": "Lebensmittel",
+  "slug": "lebensmittel",
+  "parent": 0,
+  "count": 25
+ },
+ {
+  "id": 844,
+  "name": "LED Growlampen",
+  "slug": "led-growlampen",
+  "parent": 538,
+  "count": 75
+ },
+ {
+  "id": 6241,
+  "name": "Luftbefeuchter",
+  "slug": "luftbefeuchter",
+  "parent": 538,
+  "count": 3
+ },
+ {
+  "id": 6242,
+  "name": "Luftentfeuchter",
+  "slug": "luftentfeuchter-growbedarf",
+  "parent": 538,
+  "count": 3
+ },
+ {
+  "id": 539,
+  "name": "Lüfter &amp; Filter",
+  "slug": "luefter-filter",
+  "parent": 538,
+  "count": 118
+ },
+ {
+  "id": 15521,
+  "name": "Luftfilter",
+  "slug": "luftfilter",
+  "parent": 55,
+  "count": 19
+ },
+ {
+  "id": 16087,
+  "name": "Lupen &amp; Mikroskope",
+  "slug": "lupen-mikroskope",
+  "parent": 6523,
+  "count": 11
+ },
+ {
+  "id": 4151,
+  "name": "Mehl",
+  "slug": "mehl",
+  "parent": 51,
+  "count": 1
+ },
+ {
+  "id": 11497,
+  "name": "Merch",
+  "slug": "merch",
+  "parent": 0,
+  "count": 36
+ },
+ {
+  "id": 13408,
+  "name": "Messgeräte",
+  "slug": "messgeraete",
+  "parent": 6523,
+  "count": 16
+ },
+ {
+  "id": 5181,
+  "name": "Mundstücke",
+  "slug": "mundstuecke",
+  "parent": 55,
+  "count": 4
+ },
+ {
+  "id": 5819,
+  "name": "Mystery Boxen",
+  "slug": "mystery-boxen",
+  "parent": 0,
+  "count": 4
+ },
+ {
+  "id": 607,
+  "name": "Papers",
+  "slug": "papers",
+  "parent": 55,
+  "count": 110
+ },
+ {
+  "id": 855,
+  "name": "Pflanzentöpfe",
+  "slug": "pflanzentoepfe",
+  "parent": 6523,
+  "count": 23
+ },
+ {
+  "id": 56,
+  "name": "Pflegeprodukte",
+  "slug": "pflegeprodukte",
+  "parent": 0,
+  "count": 28
+ },
+ {
+  "id": 13023,
+  "name": "ph-Wert",
+  "slug": "ph-wert",
+  "parent": 6523,
+  "count": 18
+ },
+ {
+  "id": 7048,
+  "name": "Pipes",
+  "slug": "pipes",
+  "parent": 55,
+  "count": 71
+ },
+ {
+  "id": 4706,
+  "name": "Pre Rolled Papers",
+  "slug": "pre-rolled-papers",
+  "parent": 607,
+  "count": 80
+ },
+ {
+  "id": 13416,
+  "name": "Pumpen",
+  "slug": "pumpen",
+  "parent": 6523,
+  "count": 7
+ },
+ {
+  "id": 549,
+  "name": "Regular",
+  "slug": "regular",
+  "parent": 532,
+  "count": 68
+ },
+ {
+  "id": 4554,
+  "name": "Regular 8-9mm",
+  "slug": "regular-8-9mm",
+  "parent": 4550,
+  "count": 2
+ },
+ {
+  "id": 4148,
+  "name": "Rohkost",
+  "slug": "rohkost",
+  "parent": 51,
+  "count": 4
+ },
+ {
+  "id": 1974,
+  "name": "Rolling Trays",
+  "slug": "rolling-trays",
+  "parent": 55,
+  "count": 66
+ },
+ {
+  "id": 532,
+  "name": "Samen",
+  "slug": "samen",
+  "parent": 0,
+  "count": 1025
+ },
+ {
+  "id": 5833,
+  "name": "Schädlingsbekämpfung",
+  "slug": "schaedlingsbekaempfung",
+  "parent": 538,
+  "count": 3
+ },
+ {
+  "id": 4553,
+  "name": "Slim 7mm",
+  "slug": "slim-7mm",
+  "parent": 4550,
+  "count": 4
+ },
+ {
+  "id": 4551,
+  "name": "Super Slim 5mm",
+  "slug": "super-slim-5mm",
+  "parent": 4550,
+  "count": 3
+ },
+ {
+  "id": 7645,
+  "name": "Tabakersatz",
+  "slug": "tabakersatz",
+  "parent": 55,
+  "count": 5
+ },
+ {
+  "id": 4223,
+  "name": "Terpene",
+  "slug": "terpene",
+  "parent": 55,
+  "count": 5
+ },
+ {
+  "id": 4127,
+  "name": "THC Test",
+  "slug": "thc-test",
+  "parent": 55,
+  "count": 1
+ },
+ {
+  "id": 6240,
+  "name": "Trimmer",
+  "slug": "trimmer",
+  "parent": 6523,
+  "count": 8
+ },
+ {
+  "id": 15550,
+  "name": "Vapes &amp; Pods",
+  "slug": "vapes-pods",
+  "parent": 55,
+  "count": 40
+ },
+ {
+  "id": 6862,
+  "name": "Vaporizer",
+  "slug": "vaporizer",
+  "parent": 55,
+  "count": 42
+ },
+ {
+  "id": 4159,
+  "name": "Ventilatoren",
+  "slug": "ventilatoren",
+  "parent": 539,
+  "count": 7
+ },
+ {
+  "id": 13458,
+  "name": "Vermehrungsmaterial",
+  "slug": "vermehrungsmaterial",
+  "parent": 0,
+  "count": 43
+ },
+ {
+  "id": 7042,
+  "name": "Waagen",
+  "slug": "waagen",
+  "parent": 55,
+  "count": 3
+ },
+ {
+  "id": 5424,
+  "name": "Zippo",
+  "slug": "zippo",
+  "parent": 5423,
+  "count": 43
+ },
+ {
+  "id": 4160,
+  "name": "Zu- und Abluft",
+  "slug": "zu-und-abluft",
+  "parent": 539,
+  "count": 64
+ }
+]

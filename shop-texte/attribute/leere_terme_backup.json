@@ -1,0 +1,56 @@
+[
+ {
+  "attribut": "pa_genetik",
+  "attribut_id": 16,
+  "id": 19330,
+  "name": "BF Super Auto 1",
+  "slug": "bf-super-auto-1-2",
+  "beschreibung": "",
+  "kanon": "BF Super Auto #1"
+ },
+ {
+  "attribut": "pa_genetik",
+  "attribut_id": 16,
+  "id": 19264,
+  "name": "CBD Charlotte’s Angel",
+  "slug": "cbd-charlottes-angel",
+  "beschreibung": "",
+  "kanon": "CBD Charlotte's Angel"
+ },
+ {
+  "attribut": "pa_genetik",
+  "attribut_id": 16,
+  "id": 16860,
+  "name": "Headbanger",
+  "slug": "headbanger",
+  "beschreibung": "",
+  "kanon": "Head Banger"
+ },
+ {
+  "attribut": "pa_genetik",
+  "attribut_id": 16,
+  "id": 19370,
+  "name": "Lemonpaya)",
+  "slug": "lemonpaya-2",
+  "beschreibung": "",
+  "kanon": "Lemonpaya"
+ },
+ {
+  "attribut": "pa_genetik",
+  "attribut_id": 16,
+  "id": 19219,
+  "name": "Pi’Nana",
+  "slug": "pinana-2",
+  "beschreibung": "",
+  "kanon": "Pinana"
+ },
+ {
+  "attribut": "pa_genetik",
+  "attribut_id": 16,
+  "id": 19050,
+  "name": "Watermelon Z",
+  "slug": "watermelon-z",
+  "beschreibung": "",
+  "kanon": "WatermelonZ"
+ }
+]
