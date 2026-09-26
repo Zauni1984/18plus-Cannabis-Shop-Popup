@@ -53,3 +53,50 @@ per zweitem PUT geheilt worden, bei den Pressen nicht. Jetzt nachgetragen:
 
 **Lehre:** Beim Anlegen gehen `_ts_gtin` und `_ts_mpn` im selben Aufruf
 verloren. Sie brauchen einen eigenen PUT nach dem Anlegen – und eine Kontrolle.
+
+## Synonyme und weitere Keyphrasen (26.09.2026)
+
+Yoast Premium bringt zwei zusaetzliche Felder je Beitrag:
+
+    _yoast_wpseo_keywordsynonyms   JSON-Array mit einer kommagetrennten Zeichenkette
+    _yoast_wpseo_focuskeywords     JSON-Array aus {"keyword": ..., "score": 0}
+
+`keyphrases.py` fuellt beide fuer den ganzen Katalog, gebaut aus Produktname,
+Marke und Kategorie – nichts erfunden.
+
+| | Produkte |
+|---|---|
+| geschrieben | **4.334** |
+| Fokus-Keyphrase ersetzt | 1.342 |
+| Synonyme gesetzt | 4.042 |
+| weitere Keyphrasen | 3.821 |
+| nichts zu tun | 133 |
+
+Stichprobe von 20 nach dem Lauf: keine Abweichung.
+
+### Die Regeln
+
+**Synonym 1** ist dieselbe Sache mit bzw. ohne Markennamen – der Fall
+„Barneys Farm Runtz Auto" neben „Runtz Auto". **Synonym 2** ist die
+gebraeuchliche andere Bezeichnung der Warengruppe: Bong ↔ Wasserpfeife,
+Grinder ↔ Kraeutermuehle, Growlampe ↔ Pflanzenlampe, Duenger ↔
+Pflanzennahrung. **Weitere Keyphrasen** decken Kaufabsicht („… kaufen") und
+Warengruppe ab. Hoechstens zwei je Feld – mehr verwaessert die Analyse.
+
+Ersetzt wurde eine Fokus-Keyphrase nur, wenn sie keine war: leer (308),
+sieben Woerter und mehr (562) oder mit Prozent-, THC- und Massangaben. Aus
+„Legendaere Sweedbar Northern Lights mit 19 % THC und wuerzigem
+Kiefer-Zitronen-Aroma" wird so eine knappe Bezeichnung.
+
+### Was das bringt – und was nicht
+
+Diese drei Felder stehen **nicht im Quelltext**. Sie steuern allein Yoasts
+Analyse im Editor. Der Gewinn ist redaktionell: man sieht je Produkt, ob Text,
+Titel und Meta die Nebenbegriffe abdecken. Rankings bewegen sich erst durch
+die Texte, die man daraufhin anfasst.
+
+### Grenze
+
+Beim Kuerzen auf fuenf Woerter entstehen vereinzelt harte Schnitte („Spider
+Farmer GlowR80 2x tief"). Einzelne Faelle lassen sich im Editor in Sekunden
+nachziehen; ein Skriptlauf dafuer lohnt nicht.
