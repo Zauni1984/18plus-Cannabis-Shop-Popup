@@ -102,3 +102,125 @@ Diese Punkte gehen beim Umzug gern unter und rauben danach wochenlang Nerven:
 Nicht waehrend der laufenden Drosselung anfangen. Erst wenn der Account wieder
 normal antwortet, in Ruhe die Erstkopie ziehen. Das eigentliche Umschalten
 gehoert in eine bestellarme Nacht.
+
+---
+
+# Durchfuehrung auf srv2014751.hstgr.cloud
+
+Stand 27.09.2026. Der VPS steht und ist geprueft: Ubuntu 24.04, KVM 4
+(4 Kerne, 15 GB RAM, 186 GB frei), CloudPanel 6.0.8, NGINX 1.30.4,
+PHP 7.1 bis 8.5, **Percona Server 8.4.11**, Redis antwortet, ufw aktiv,
+rsync und WP-CLI vorhanden.
+
+Quelle: Shared-Paket `u842511985`, Datenbank `u842511985_nccnk`
+(1.458 MB von 9.216 MB, Host `srv1808.hstgr.io`, Port 3306), PHP 8.5.4.
+Der Shop bleibt die ganze Zeit online – alle Schritte bis zum DNS-Wechsel
+lesen die Quelle nur.
+
+## 8. Warum der Dump umgebaut werden muss
+
+Die Quelle ist MariaDB 11.8, das Ziel Percona/MySQL 8.4. MariaDB schreibt
+seit 11.4 Dinge in den Dump, die MySQL nicht kennt:
+
+| in MariaDB 11.8 | auf dem VPS |
+| --- | --- |
+| `/*!999999\- enable the sandbox mode */` | Zeile entfernen |
+| `utf8mb4_uca1400_ai_ci` | `utf8mb4_unicode_ci` |
+| `utf8mb4_uca1400_as_cs` | `utf8mb4_0900_as_cs` |
+| `utf8mb3_uca1400_ai_ci` | `utf8mb3_unicode_ci` |
+| `*_nopad_*` | Variante ohne `nopad` |
+| `ENGINE=Aria` samt `PAGE_CHECKSUM`, `TRANSACTIONAL`, `PAGE_COMPRESSED` | `ENGINE=InnoDB`, Optionen streichen |
+| `DEFINER=` auf Shared-Benutzer | streichen, den Benutzer gibt es hier nicht |
+
+Zeichensatz und Tabellenpraefix bleiben unangetastet: `utf8mb4` behaelt seine
+Schluessellaengen, `utf8mb3` wird **nicht** auf `utf8mb4` hochgezogen – das
+sprengt bei alten Plugin-Tabellen die Indexlaenge. Wer es will, macht es
+spaeter einzeln mit `ALTER TABLE`, nicht im Dump.
+
+Das machen die drei Skripte in diesem Ordner, in dieser Reihenfolge:
+
+```bash
+./01-quelle-pruefen.sh                 # Kollationen, Engines, Groessen protokollieren
+./02-dump-ziehen.sh                    # Dump ziehen und umbauen, mit Nachkontrolle
+ZIELDB=hanfjack ./03-import.sh /root/umzug/hanfjack-vps-*.sql
+```
+
+`02` bricht ab, wenn der Dump keine Schlusszeile hat (abgebrochene Verbindung)
+oder nach dem Umbau noch MariaDB-Eigenheiten drin stehen. `03` vergleicht
+danach Tabellenliste und Zeilenzahlen mit der Quelle.
+
+## 9. Zugangsdaten
+
+Beide Zugangsdateien werden **auf dem Server** angelegt, nie im Chat oder im
+Repository. Das Passwort der Quelle ist das vorhandene Datenbank-Passwort des
+Shared-Pakets: `DB_PASSWORD` in
+`/home/u842511985/domains/hanfjack.de/public_html/wp-config.php`, Benutzer
+`u842511985_nccnk`. Es im hPanel neu zu setzen wuerde hanfjack.de sofort
+lahmlegen, bis `wp-config.php` nachgezogen ist – also abschreiben, nicht
+zuruecksetzen.
+
+```bash
+umask 077
+install -m 600 /dev/null /root/.hj-quelle.cnf
+cat > /root/.hj-quelle.cnf <<'CNF'
+[client]
+host=srv1808.hstgr.io
+port=3306
+user=u842511985_nccnk
+password=DAS_PASSWORT_AUS_WP-CONFIG
+CNF
+mysql --defaults-extra-file=/root/.hj-quelle.cnf -e 'SELECT 1;'   # Probe
+```
+
+Der Fernzugriff auf die Shared-Datenbank ist fuer beide Adressen des VPS
+freigegeben (`2a02:4780:7e:a26d::1` und `179.198.213.117`). **Nach dem Umzug
+beide Regeln wieder entfernen** – hPanel, Datenbanken, Fernzugriff.
+
+## 10. Ziel anlegen (CloudPanel)
+
+PHP 8.4 fuer den vhost: breitere Plugin-Abdeckung als 8.5, und der Sprung von
+8.5.4 zurueck ist unkritisch. Passwoerter erzeugt der Server, sie wandern
+nirgends hin:
+
+```bash
+DBPW=$(openssl rand -base64 24); SITEPW=$(openssl rand -base64 24)
+clpctl site:add:php --domainName=hanfjack.de --phpVersion=8.4 \
+  --vhostTemplate='WordPress' --siteUser=hanfjack --siteUserPassword="$SITEPW"
+clpctl db:add --domainName=hanfjack.de --databaseName=hanfjack \
+  --databaseUserName=hanfjack --databaseUserPassword="$DBPW"
+printf '[client]\nhost=127.0.0.1\nuser=hanfjack\npassword=%s\n' "$DBPW" > /root/.hj-ziel.cnf
+chmod 600 /root/.hj-ziel.cnf
+```
+
+Die Datenbank danach auf `utf8mb4 / utf8mb4_unicode_ci` stellen, damit neue
+Tabellen zur alten Struktur passen:
+
+```sql
+ALTER DATABASE `hanfjack` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+```
+
+## 11. Percona 8.4 auf diese Maschine einstellen
+
+Die Vorgabe von CloudPanel (`innodb_buffer_pool_size = 512M`) ist fuer 15 GB
+RAM und eine 1,5-GB-Datenbank viel zu klein. In
+`/etc/mysql/mysql.conf.d/` eine eigene Datei, damit Panel-Updates sie nicht
+ueberschreiben:
+
+```ini
+[mysqld]
+innodb_buffer_pool_size      = 4G
+innodb_redo_log_capacity     = 1G
+innodb_flush_method          = O_DIRECT
+innodb_flush_neighbors       = 0
+innodb_io_capacity           = 2000
+innodb_io_capacity_max       = 4000
+max_connections              = 150
+tmp_table_size               = 64M
+max_heap_table_size          = 64M
+```
+
+`max_connections = 512` ist bei 4 Kernen keine Reserve, sondern eine Falle:
+so viele gleichzeitige Abfragen bringen die Maschine eher um, als dass sie
+Last abfedern. 150 reicht fuer PHP-FPM mit sinnvoller `pm.max_children`.
+Danach `systemctl restart mysql` und mit
+`SELECT @@innodb_buffer_pool_size;` nachsehen.
