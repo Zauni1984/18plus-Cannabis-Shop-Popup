@@ -105,122 +105,67 @@ gehoert in eine bestellarme Nacht.
 
 ---
 
-# Durchfuehrung auf srv2014751.hstgr.cloud
+# So ist es tatsaechlich gelaufen (27.09.2026, 21:00 bis 23:30)
 
-Stand 27.09.2026. Der VPS steht und ist geprueft: Ubuntu 24.04, KVM 4
-(4 Kerne, 15 GB RAM, 186 GB frei), CloudPanel 6.0.8, NGINX 1.30.4,
-PHP 7.1 bis 8.5, **Percona Server 8.4.11**, Redis antwortet, ufw aktiv,
-rsync und WP-CLI vorhanden.
+Der VPS `srv2014751.hstgr.cloud` (179.198.213.117, KVM 4, Ubuntu 26.04) wurde
+einmal komplett neu aufgesetzt, weil der erste Anlauf mit dem Hostinger-Template
+(Percona 8.4) unuebersichtlich geworden war. Der zweite Anlauf: **reines Ubuntu,
+CloudPanel per Installer mit `DB_ENGINE=MARIADB_11.8`** – dieselbe Version wie
+auf dem Shared-Paket. Damit ging der Dump 1:1 rein, der ganze Umbau aus
+Abschnitt 8 war nicht noetig. `02-dump-ziehen.sh` bleibt als Vorlage fuer den
+Fall liegen, dass ein Ziel doch MySQL/Percona ist.
 
-Quelle: Shared-Paket `u842511985`, Datenbank `u842511985_nccnk`
-(1.458 MB von 9.216 MB, Host `srv1808.hstgr.io`, Port 3306), PHP 8.5.4.
-Der Shop bleibt die ganze Zeit online – alle Schritte bis zum DNS-Wechsel
-lesen die Quelle nur.
+Der Shop war die ganze Zeit erreichbar; nur fuer die letzten zehn Minuten stand
+der alte Shop im Wartungsmodus des hPanels.
 
-## 8. Warum der Dump umgebaut werden muss
+## Reihenfolge
 
-Die Quelle ist MariaDB 11.8, das Ziel Percona/MySQL 8.4. MariaDB schreibt
-seit 11.4 Dinge in den Dump, die MySQL nicht kennt:
+1. hPanel: VPS mit reinem Ubuntu neu installieren.
+2. `apt update && apt -y upgrade && apt -y install curl wget sudo`, dann der
+   CloudPanel-Installer (Pruefsumme aus der CloudPanel-Doku) mit
+   `DB_ENGINE=MARIADB_11.8`. Admin-Konto im Browser anlegen.
+3. `clpctl site:add:php --domainName=hanfjack.de --phpVersion=8.4
+   --vhostTemplate='WordPress' --siteUser=hanfjack` und `clpctl db:add`.
+   Passwoerter per `openssl rand`, abgelegt in `/root/.hj-ziel.cnf` (600).
+4. Fernzugriff auf die Shared-Datenbank fuer IPv4 und IPv6 des VPS freigeben
+   (Hostinger-API), Zugang in `/root/.hj-quelle.cnf`. Achtung: 1045 heisst bei
+   MariaDB sowohl "Passwort falsch" als auch "Adresse nicht freigegeben".
+5. `mariadb-dump --single-transaction --quick --hex-blob
+   --default-character-set=utf8mb4` – 331 MB, 199 Tabellen, 0 Trigger,
+   0 Routinen. Import in 48 Sekunden. Zeilenvergleich aller Tabellen: nur
+   Laufzeit-Tabellen (Sessions, Action Scheduler, Adcell, WP-Rocket) weichen ab.
+6. SSH aufs Shared-Paket (Port 65002) einschalten, als Site-User `hanfjack`
+   Schluessel hinterlegen, `rsync -az --delete` ohne `wp-content/cache/` und
+   `wp-content/litespeed/`: 16 GB, 162.872 Bilder, 4,5 Minuten.
+7. `wp config set` fuer DB_NAME/USER/PASSWORD/HOST; `127.0.0.1 hanfjack.de`
+   in `/etc/hosts` des VPS, damit Loopback-Aufrufe nicht zum alten Server gehen.
+   Test per hosts-Datei am PC – Achtung: Browser mit "sicherem DNS" ignorieren
+   die hosts-Datei.
+8. **Zertifikat vor dem DNS-Wechsel**: `certbot certonly --manual
+   --preferred-challenges dns`, die beiden TXT-Eintraege ueber die Hostinger-API
+   gesetzt, dann `clpctl site:install:certificate` – und **`systemctl reload
+   nginx`**, das macht clpctl nicht von selbst.
+9. `DISABLE_WP_CRON` an (bis zum Umschalten darf die Kopie nichts ausfuehren –
+   echte Kundendaten, M2E, Mails), MariaDB-Tuning in
+   `/etc/mysql/mariadb.conf.d/99-hanfjack.cnf` (CloudPanels `100-cloudpanel.cnf`
+   sortiert davor und wuerde sonst gewinnen), PHP-Werte in CloudPanel.
+10. Umschalten: alter Shop in Wartung → frischer Dump → `DROP/CREATE DATABASE`
+    → Import → Delta-rsync (ohne `wp-config.php` und `.maintenance`) →
+    Cron `*/5 * * * * wp cron event run --due-now` fuer `hanfjack` → DNS.
+11. DNS: der Apex war ein ALIAS auf das Hostinger-CDN. Ein A-Record daneben
+    wird von der API mit 422 abgelehnt, und das Loesch-Werkzeug der API hat
+    keinen Filter. Loesung ohne Luecke: **ALIAS-Ziel auf
+    `srv2014751.hstgr.cloud.` umstellen** (loest auf IPv4 und IPv6 des VPS),
+    `www` als CNAME auf `hanfjack.de.`. Mail-Eintraege unangetastet.
 
-| in MariaDB 11.8 | auf dem VPS |
-| --- | --- |
-| `/*!999999\- enable the sandbox mode */` | Zeile entfernen |
-| `utf8mb4_uca1400_ai_ci` | `utf8mb4_unicode_ci` |
-| `utf8mb4_uca1400_as_cs` | `utf8mb4_0900_as_cs` |
-| `utf8mb3_uca1400_ai_ci` | `utf8mb3_unicode_ci` |
-| `*_nopad_*` | Variante ohne `nopad` |
-| `ENGINE=Aria` samt `PAGE_CHECKSUM`, `TRANSACTIONAL`, `PAGE_COMPRESSED` | `ENGINE=InnoDB`, Optionen streichen |
-| `DEFINER=` auf Shared-Benutzer | streichen, den Benutzer gibt es hier nicht |
+## Offen nach dem Umzug
 
-Zeichensatz und Tabellenpraefix bleiben unangetastet: `utf8mb4` behaelt seine
-Schluessellaengen, `utf8mb3` wird **nicht** auf `utf8mb4` hochgezogen – das
-sprengt bei alten Plugin-Tabellen die Indexlaenge. Wer es will, macht es
-spaeter einzeln mit `ALTER TABLE`, nicht im Dump.
-
-Das machen die drei Skripte in diesem Ordner, in dieser Reihenfolge:
-
-```bash
-./01-quelle-pruefen.sh                 # Kollationen, Engines, Groessen protokollieren
-./02-dump-ziehen.sh                    # Dump ziehen und umbauen, mit Nachkontrolle
-ZIELDB=hanfjack ./03-import.sh /root/umzug/hanfjack-vps-*.sql
-```
-
-`02` bricht ab, wenn der Dump keine Schlusszeile hat (abgebrochene Verbindung)
-oder nach dem Umbau noch MariaDB-Eigenheiten drin stehen. `03` vergleicht
-danach Tabellenliste und Zeilenzahlen mit der Quelle.
-
-## 9. Zugangsdaten
-
-Beide Zugangsdateien werden **auf dem Server** angelegt, nie im Chat oder im
-Repository. Das Passwort der Quelle ist das vorhandene Datenbank-Passwort des
-Shared-Pakets: `DB_PASSWORD` in
-`/home/u842511985/domains/hanfjack.de/public_html/wp-config.php`, Benutzer
-`u842511985_nccnk`. Es im hPanel neu zu setzen wuerde hanfjack.de sofort
-lahmlegen, bis `wp-config.php` nachgezogen ist – also abschreiben, nicht
-zuruecksetzen.
-
-```bash
-umask 077
-install -m 600 /dev/null /root/.hj-quelle.cnf
-cat > /root/.hj-quelle.cnf <<'CNF'
-[client]
-host=srv1808.hstgr.io
-port=3306
-user=u842511985_nccnk
-password=DAS_PASSWORT_AUS_WP-CONFIG
-CNF
-mysql --defaults-extra-file=/root/.hj-quelle.cnf -e 'SELECT 1;'   # Probe
-```
-
-Der Fernzugriff auf die Shared-Datenbank ist fuer beide Adressen des VPS
-freigegeben (`2a02:4780:7e:a26d::1` und `179.198.213.117`). **Nach dem Umzug
-beide Regeln wieder entfernen** – hPanel, Datenbanken, Fernzugriff.
-
-## 10. Ziel anlegen (CloudPanel)
-
-PHP 8.4 fuer den vhost: breitere Plugin-Abdeckung als 8.5, und der Sprung von
-8.5.4 zurueck ist unkritisch. Passwoerter erzeugt der Server, sie wandern
-nirgends hin:
-
-```bash
-DBPW=$(openssl rand -base64 24); SITEPW=$(openssl rand -base64 24)
-clpctl site:add:php --domainName=hanfjack.de --phpVersion=8.4 \
-  --vhostTemplate='WordPress' --siteUser=hanfjack --siteUserPassword="$SITEPW"
-clpctl db:add --domainName=hanfjack.de --databaseName=hanfjack \
-  --databaseUserName=hanfjack --databaseUserPassword="$DBPW"
-printf '[client]\nhost=127.0.0.1\nuser=hanfjack\npassword=%s\n' "$DBPW" > /root/.hj-ziel.cnf
-chmod 600 /root/.hj-ziel.cnf
-```
-
-Die Datenbank danach auf `utf8mb4 / utf8mb4_unicode_ci` stellen, damit neue
-Tabellen zur alten Struktur passen:
-
-```sql
-ALTER DATABASE `hanfjack` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-```
-
-## 11. Percona 8.4 auf diese Maschine einstellen
-
-Die Vorgabe von CloudPanel (`innodb_buffer_pool_size = 512M`) ist fuer 15 GB
-RAM und eine 1,5-GB-Datenbank viel zu klein. In
-`/etc/mysql/mysql.conf.d/` eine eigene Datei, damit Panel-Updates sie nicht
-ueberschreiben:
-
-```ini
-[mysqld]
-innodb_buffer_pool_size      = 4G
-innodb_redo_log_capacity     = 1G
-innodb_flush_method          = O_DIRECT
-innodb_flush_neighbors       = 0
-innodb_io_capacity           = 2000
-innodb_io_capacity_max       = 4000
-max_connections              = 150
-tmp_table_size               = 64M
-max_heap_table_size          = 64M
-```
-
-`max_connections = 512` ist bei 4 Kernen keine Reserve, sondern eine Falle:
-so viele gleichzeitige Abfragen bringen die Maschine eher um, als dass sie
-Last abfedern. 150 reicht fuer PHP-FPM mit sinnvoller `pm.max_children`.
-Danach `systemctl restart mysql` und mit
-`SELECT @@innodb_buffer_pool_size;` nachsehen.
+- Testbestellung mit echter Zahlung (Catalystpay, Crypto Pay), M2E und Adcell
+  auf die neue IP pruefen.
+- Let's Encrypt in CloudPanel auf automatische Verlaengerung (das manuelle
+  Zertifikat verlaengert sich nicht).
+- Redis-Objekt-Cache, danach WP-Rocket-Preload mit kleiner Stapelgroesse.
+- Snapshot im hPanel; CloudPanel sichert die Datenbank taeglich um 3:15.
+- Nach 48 h: alten Shop loeschen, Fernzugriffs-Regeln entfernen, die beiden
+  `_acme-challenge`-TXT-Eintraege loeschen, Shared-DB-Passwort ist verbrannt.
+- `hostinger`-Plugin ist deaktiviert und kann geloescht werden.
