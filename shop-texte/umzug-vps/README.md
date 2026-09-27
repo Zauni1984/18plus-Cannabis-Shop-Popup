@@ -230,3 +230,36 @@ Let's Encrypt in CloudPanel auf Auto-Verlaengerung; robots.txt-Disallow fuer
   `if`-Zeile NGINX beim Reload zu Fall brachte. NGINX-Regeln gehoeren in den
   **Vhost-Editor von CloudPanel** (Sites → Domain → Vhost), dort ueberleben sie.
   `/etc/nginx/conf.d/` wird von CloudPanels nginx.conf nicht eingelesen.
+
+## Cloudflare davor (27.09., 23:20 bis 23:50)
+
+Zone im Free-Plan angelegt, Eintraege aus der Hostinger-Zone uebernommen
+(`A` und `www` proxied, Mail-Eintraege DNS-only), Nameserver ueber die
+Hostinger-API auf `kipp`/`teresa.ns.cloudflare.com` gestellt. DNSSEC war
+aus (keine DS-Eintraege), also nichts zu loesen.
+
+**Stolperstein:** Cloudflare stellt das Edge-Zertifikat erst *nach* der
+Aktivierung der Zone aus. In den Minuten dazwischen antwortet der Proxy mit
+TLS-Handshake-Fehler – der Shop war fuer alle, deren Resolver schon
+umgestellt hatte, nicht erreichbar. Abhilfe: Wolken auf grau (DNS only),
+bis SSL/TLS → Edge Certificates „Active" zeigt, dann orange. Beim naechsten
+Mal: Zone anlegen, Zertifikat abwarten, erst dann Nameserver wechseln.
+Chrome haelt den fehlgeschlagenen Handshake danach noch eine Weile im
+Speicher; Browser komplett neu starten.
+
+Danach von aussen geprueft (`--resolve` auf die Cloudflare-IPs): 200,
+`server: cloudflare`, `cf-ray`, `www` → 301, Filter-Test 429.
+
+Noch offen (28.09.):
+- Cloudflare-Einstellungen bestaetigen: SSL Full (strict), Always HTTPS,
+  Rocket Loader aus, Bot Fight Mode, WAF-Regel
+  `(http.request.uri.query contains "f_" and http.referer eq "")` → Managed
+  Challenge.
+- Echte Besucher-IPs in NGINX: `/etc/nginx/cloudflare/ips` (von CloudPanel
+  taeglich aktualisiert) einbinden plus `real_ip_header CF-Connecting-IP` –
+  im CloudPanel-Vhost-Editor, nicht in der Datei.
+- Ports 80/443 per ufw nur fuer Cloudflare-Bereiche; SSH einschraenken.
+- Testbestellung, Snapshot, MariaDB-Root-Passwort, gezuegeltes Vorladen,
+  robots.txt fuer `?f_`-URLs, WP-Rocket-Cloudflare-Add-on.
+- Nach 48 h: alten Shop und Shared-Datenbank loeschen, Fernzugriffs-Regeln
+  entfernen.
