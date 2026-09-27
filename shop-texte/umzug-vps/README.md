@@ -169,3 +169,47 @@ der alte Shop im Wartungsmodus des hPanels.
 - Nach 48 h: alten Shop loeschen, Fernzugriffs-Regeln entfernen, die beiden
   `_acme-challenge`-TXT-Eintraege loeschen, Shared-DB-Passwort ist verbrannt.
 - `hostinger`-Plugin ist deaktiviert und kann geloescht werden.
+
+## Die erste Stunde nach dem Umschalten (27.09., 22:40 bis 23:30)
+
+Zwanzig Minuten nach dem DNS-Wechsel: "Fehler beim Aufbau einer
+Datenbankverbindung", Load 94 auf 4 Kernen, 1622 x 499 und 1280 x 500 in den
+letzten 3000 Zugriffen. Ursachenkette, in der Reihenfolge der Behebung:
+
+1. **`max_connections = 150` war zu knapp** – CloudPanels PHP-FPM-Pool darf
+   standardmaessig `pm.max_children = 250`, jeder Prozess haelt eine
+   Verbindung. Auf 400 gesetzt; `pm.max_children` in
+   `/etc/php/8.4/fpm/pool.d/hanfjack.de.conf` auf **50** begrenzt – mehr kann
+   die Maschine nicht parallel rechnen, der Rest wartet in der Warteschlange
+   statt alles umzuwerfen. Steckende PHP-Prozesse mit
+   `systemctl restart php8.4-fpm` weggeworfen, kein Reboot noetig.
+2. **Scraper-Netz auf Filter-URLs.** 2860 von 3000 Zugriffen gingen auf
+   `/shop/?f_…`, `/terpene/…`, `/effekte/…` – alle ohne Referer, gefaelschte
+   Mac-Chrome-Kennungen, IPs aus Alibaba-Cloud (43.172/43.173) und tuerkischen
+   Wohnanschluss-Proxys. Filterseiten sind das Teuerste, was WooCommerce
+   rechnet; bisher hatte Hostingers CDN das abgefangen. Regel in NGINX
+   (`map` in `/etc/nginx/conf.d/hanfjack-filterbot.conf`, `if` im vhost):
+   Filter-Parameter ohne Referer → **429**, `adcref=` (Adcell) ausgenommen.
+   Echte Kunden, die einen Filter anklicken, schicken immer einen Referer.
+3. **WP Rocket hat nicht gecacht.** Erst zeigte `advanced-cache.php` auf die
+   absoluten Pfade des alten Servers (`/home/u842511985/…`) – WP Rocket
+   schreibt die Datei beim Aktivieren neu, `wp rocket regenerate` gibt es in
+   3.23 nicht mehr. Danach fehlte `wp-rocket-config/hanfjack.de.php`, die
+   das Deaktivieren geloescht und das Aktivieren nicht neu angelegt hatte;
+   sichtbar nur im PHP-Fehlerlog (`include(): Failed opening`). Erzeugt mit
+   `wp eval 'rocket_generate_config_file();'`. Danach Startseite in 16 ms.
+4. **Redis-Objekt-Cache**: `maxmemory 1gb`, `allkeys-lru`, Plugin
+   `redis-cache` per WP-CLI, `wp redis enable`. Bringt bei ungecachten
+   Archivseiten wenig (die Produktabfrage selbst ist das Teure), entlastet
+   aber Optionen, Terms und Postmeta.
+
+Lehren: Nach einem Umzug **vor** dem DNS-Wechsel pruefen, ob der Seitencache
+tatsaechlich Dateien schreibt und ausliefert (zweiter Aufruf unter 0,1 s),
+PHP-FPM auf die Kerne begrenzen, und einen Bot-Filter vor die Filter-URLs
+setzen, bevor das CDN wegfaellt. Dauerhaft gehoert Cloudflare (oder
+vergleichbares) davor.
+
+Noch offen: MariaDB-Root-Passwort drehen (stand im Chat) – CloudPanel hat
+dafuer keinen Befehl, die Ablage muss vorher gefunden werden;
+Let's Encrypt in CloudPanel auf Auto-Verlaengerung; robots.txt-Disallow fuer
+`?f_`-Parameter; Snapshot; Testbestellung.
