@@ -213,3 +213,20 @@ Noch offen: MariaDB-Root-Passwort drehen (stand im Chat) – CloudPanel hat
 dafuer keinen Befehl, die Ablage muss vorher gefunden werden;
 Let's Encrypt in CloudPanel auf Auto-Verlaengerung; robots.txt-Disallow fuer
 `?f_`-Parameter; Snapshot; Testbestellung.
+
+### Nachtrag 23:10 – zwei Rueckfaelle
+
+- **"Cache leeren und vorladen"** in der WP-Rocket-Adminleiste fuellt die
+  Tabelle `wp_wpr_rocket_cache` mit allen Sitemap-URLs (hier 11.093) und
+  feuert die Aufrufe ohne auf Antworten zu warten – unabhaengig von der
+  Einstellung "Vorladen aktivieren". 50 PHP-Prozesse voll, CPU 0 % idle.
+  Abhilfe: `DELETE FROM wp_wpr_rocket_cache WHERE status='pending'` und
+  PHP-FPM neu starten. Vorladen erst mit gezuegelten Werten
+  (`rocket_preload_cache_pending_jobs_cron_rows_count` 10,
+  `rocket_preload_delay_between_requests` 2 s) wieder anfassen.
+- **CloudPanel schreibt den vhost bei jeder Aktion an der Site neu**
+  (Zertifikat, PHP-Version). Direkt in `/etc/nginx/sites-enabled/` eingebaute
+  Regeln verschwinden dabei – hier samt `map`, so dass die verbliebene
+  `if`-Zeile NGINX beim Reload zu Fall brachte. NGINX-Regeln gehoeren in den
+  **Vhost-Editor von CloudPanel** (Sites → Domain → Vhost), dort ueberleben sie.
+  `/etc/nginx/conf.d/` wird von CloudPanels nginx.conf nicht eingelesen.
