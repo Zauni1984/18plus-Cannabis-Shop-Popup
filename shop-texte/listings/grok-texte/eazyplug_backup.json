@@ -1,0 +1,383 @@
+{
+ "terme": [
+  {
+   "id": 16447,
+   "count": 4,
+   "description": "Eazy Plug stellt Anzuchtwürfel aus einer Mischung von Perlit, Torf und Kokos her.\n\nDie Würfel sind pH-stabil eingestellt und vollständig kompostierbar; sie werden direkt mitgepflanzt, ohne dass die Wurzel gestört wird. Es gibt sie als Trays in mehreren Stückzahlen und als größeren Eazy Block.",
+   "link": "https://hanfjack.de/marke/eazy-plug/",
+   "name": "Eazy Plug",
+   "slug": "eazy-plug",
+   "taxonomy": "pwb-brand",
+   "parent": 0,
+   "meta": {
+    "_yoast_wpseo_title": "Eazy Plug Anzuchtwürfel und Blocks kaufen | Hanfjack",
+    "_yoast_wpseo_metadesc": "Eazy Plug: pH-stabile Anzuchtwürfel aus Perlit, Torf und Kokos, kompostierbar, als Tray oder Block. Bei Hanfjack.",
+    "_yoast_wpseo_focuskw": "Eazy Plug",
+    "_yoast_wpseo_canonical": "",
+    "_yoast_wpseo_bctitle": "",
+    "_yoast_wpseo_meta-robots-noindex": "default",
+    "_yoast_wpseo_is_cornerstone": "0",
+    "_yoast_wpseo_opengraph-title": "",
+    "_yoast_wpseo_opengraph-description": "",
+    "_yoast_wpseo_opengraph-image": "",
+    "_yoast_wpseo_opengraph-image-id": "",
+    "_yoast_wpseo_twitter-title": "",
+    "_yoast_wpseo_twitter-description": "",
+    "_yoast_wpseo_twitter-image": "",
+    "_yoast_wpseo_twitter-image-id": ""
+   },
+   "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.4 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Eazy Plug Anzuchtwürfel und Blocks kaufen | Hanfjack</title>\n<meta name=\"description\" content=\"Eazy Plug: pH-stabile Anzuchtwürfel aus Perlit, Torf und Kokos, kompostierbar, als Tray oder Block. Bei Hanfjack.\" />\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://hanfjack.de/marke/eazy-plug/\" />\n<meta property=\"og:locale\" content=\"de_DE\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Eazy Plug Anzuchtwürfel und Blocks kaufen | Hanfjack\" />\n<meta property=\"og:description\" content=\"Eazy Plug: pH-stabile Anzuchtwürfel aus Perlit, Torf und Kokos, kompostierbar, als Tray oder Block. Bei Hanfjack.\" />\n<meta property=\"og:url\" content=\"https://hanfjack.de/marke/eazy-plug/\" />\n<meta property=\"og:site_name\" content=\"Hanfjack\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<!-- / Yoast SEO plugin. -->",
+   "yoast_head_json": {
+    "title": "Eazy Plug Anzuchtwürfel und Blocks kaufen | Hanfjack",
+    "description": "Eazy Plug: pH-stabile Anzuchtwürfel aus Perlit, Torf und Kokos, kompostierbar, als Tray oder Block. Bei Hanfjack.",
+    "robots": {
+     "index": "index",
+     "follow": "follow",
+     "max-snippet": "max-snippet:-1",
+     "max-image-preview": "max-image-preview:large",
+     "max-video-preview": "max-video-preview:-1"
+    },
+    "canonical": "https://hanfjack.de/marke/eazy-plug/",
+    "og_locale": "de_DE",
+    "og_type": "article",
+    "og_title": "Eazy Plug Anzuchtwürfel und Blocks kaufen | Hanfjack",
+    "og_description": "Eazy Plug: pH-stabile Anzuchtwürfel aus Perlit, Torf und Kokos, kompostierbar, als Tray oder Block. Bei Hanfjack.",
+    "og_url": "https://hanfjack.de/marke/eazy-plug/",
+    "og_site_name": "Hanfjack",
+    "twitter_card": "summary_large_image",
+    "schema": {
+     "@context": "https://schema.org",
+     "@graph": [
+      {
+       "@type": "CollectionPage",
+       "@id": "https://hanfjack.de/marke/eazy-plug/",
+       "url": "https://hanfjack.de/marke/eazy-plug/",
+       "name": "Eazy Plug Anzuchtwürfel und Blocks kaufen | Hanfjack",
+       "isPartOf": {
+        "@id": "https://hanfjack.de/#website"
+       },
+       "description": "Eazy Plug: pH-stabile Anzuchtwürfel aus Perlit, Torf und Kokos, kompostierbar, als Tray oder Block. Bei Hanfjack.",
+       "breadcrumb": {
+        "@id": "https://hanfjack.de/marke/eazy-plug/#breadcrumb"
+       },
+       "inLanguage": "de"
+      },
+      {
+       "@type": "BreadcrumbList",
+       "@id": "https://hanfjack.de/marke/eazy-plug/#breadcrumb",
+       "itemListElement": [
+        {
+         "@type": "ListItem",
+         "position": 1,
+         "name": "Startseite",
+         "item": "https://hanfjack.de/"
+        },
+        {
+         "@type": "ListItem",
+         "position": 2,
+         "name": "Shop",
+         "item": "https://hanfjack.de/shop/"
+        },
+        {
+         "@type": "ListItem",
+         "position": 3,
+         "name": "Eazy Plug"
+        }
+       ]
+      },
+      {
+       "@type": "WebSite",
+       "@id": "https://hanfjack.de/#website",
+       "url": "https://hanfjack.de/",
+       "name": "Hanfjack",
+       "description": "Calm down your mind, elevate your Vibes!",
+       "publisher": {
+        "@id": "https://hanfjack.de/#organization"
+       },
+       "potentialAction": [
+        {
+         "@type": "SearchAction",
+         "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://hanfjack.de/?s={search_term_string}"
+         },
+         "query-input": {
+          "@type": "PropertyValueSpecification",
+          "valueRequired": true,
+          "valueName": "search_term_string"
+         }
+        }
+       ],
+       "inLanguage": "de"
+      },
+      {
+       "@type": "Organization",
+       "@id": "https://hanfjack.de/#organization",
+       "name": "Hanfjack",
+       "alternateName": "Lauwe Zaunreither GbR",
+       "url": "https://hanfjack.de/",
+       "logo": {
+        "@type": "ImageObject",
+        "inLanguage": "de",
+        "@id": "https://hanfjack.de/#/schema/logo/image/",
+        "url": "https://hanfjack.de/wp-content/uploads/2026/04/Hanfjack-Logo-Original-tp192x192-op.png",
+        "contentUrl": "https://hanfjack.de/wp-content/uploads/2026/04/Hanfjack-Logo-Original-tp192x192-op.png",
+        "width": 192,
+        "height": 192,
+        "caption": "Hanfjack"
+       },
+       "image": {
+        "@id": "https://hanfjack.de/#/schema/logo/image/"
+       }
+      }
+     ]
+    }
+   },
+   "_links": {
+    "self": [
+     {
+      "href": "https://hanfjack.de/wp-json/wp/v2/pwb-brand/16447",
+      "targetHints": {
+       "allow": [
+        "GET",
+        "POST",
+        "PUT",
+        "PATCH",
+        "DELETE"
+       ]
+      }
+     }
+    ],
+    "collection": [
+     {
+      "href": "https://hanfjack.de/wp-json/wp/v2/pwb-brand"
+     }
+    ],
+    "about": [
+     {
+      "href": "https://hanfjack.de/wp-json/wp/v2/taxonomies/pwb-brand"
+     }
+    ],
+    "wp:post_type": [
+     {
+      "href": "https://hanfjack.de/wp-json/wp/v2/product?pwb-brand=16447"
+     }
+    ],
+    "curies": [
+     {
+      "name": "wp",
+      "href": "https://api.w.org/{rel}",
+      "templated": true
+     }
+    ]
+   }
+  },
+  {
+   "id": 6531,
+   "count": 2,
+   "description": "Eazy Plug stellt Anzuchtwürfel aus Perlit, Torf und Kokos her, die pH-stabil eingestellt und kompostierbar sind.\n\nUnter diesem Eintrag stehen die Trays in verschiedenen Stückzahlen und Würfelgrößen – von 24 Stück mit 3,5 cm Kantenlänge bis 150 Stück mit 2,5 cm.",
+   "link": "https://hanfjack.de/marke/eazyplug/",
+   "name": "eazyplug",
+   "slug": "eazyplug",
+   "taxonomy": "pwb-brand",
+   "parent": 0,
+   "meta": {
+    "_yoast_wpseo_title": "Eazy Plug Stecklingsblöcke und Trays kaufen | Hanfjack",
+    "_yoast_wpseo_metadesc": "Eazy Plug: Trays mit Anzuchtwürfeln aus Perlit, Torf und Kokos, pH-stabil und kompostierbar. Bei Hanfjack.",
+    "_yoast_wpseo_focuskw": "Eazy Plug",
+    "_yoast_wpseo_canonical": "",
+    "_yoast_wpseo_bctitle": "",
+    "_yoast_wpseo_meta-robots-noindex": "default",
+    "_yoast_wpseo_is_cornerstone": "0",
+    "_yoast_wpseo_opengraph-title": "",
+    "_yoast_wpseo_opengraph-description": "",
+    "_yoast_wpseo_opengraph-image": "",
+    "_yoast_wpseo_opengraph-image-id": "",
+    "_yoast_wpseo_twitter-title": "",
+    "_yoast_wpseo_twitter-description": "",
+    "_yoast_wpseo_twitter-image": "",
+    "_yoast_wpseo_twitter-image-id": ""
+   },
+   "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.4 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Eazy Plug Stecklingsblöcke und Trays kaufen | Hanfjack</title>\n<meta name=\"description\" content=\"Eazy Plug: Trays mit Anzuchtwürfeln aus Perlit, Torf und Kokos, pH-stabil und kompostierbar. Bei Hanfjack.\" />\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://hanfjack.de/marke/eazyplug/\" />\n<meta property=\"og:locale\" content=\"de_DE\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Eazy Plug Stecklingsblöcke und Trays kaufen | Hanfjack\" />\n<meta property=\"og:description\" content=\"Eazy Plug: Trays mit Anzuchtwürfeln aus Perlit, Torf und Kokos, pH-stabil und kompostierbar. Bei Hanfjack.\" />\n<meta property=\"og:url\" content=\"https://hanfjack.de/marke/eazyplug/\" />\n<meta property=\"og:site_name\" content=\"Hanfjack\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<!-- / Yoast SEO plugin. -->",
+   "yoast_head_json": {
+    "title": "Eazy Plug Stecklingsblöcke und Trays kaufen | Hanfjack",
+    "description": "Eazy Plug: Trays mit Anzuchtwürfeln aus Perlit, Torf und Kokos, pH-stabil und kompostierbar. Bei Hanfjack.",
+    "robots": {
+     "index": "index",
+     "follow": "follow",
+     "max-snippet": "max-snippet:-1",
+     "max-image-preview": "max-image-preview:large",
+     "max-video-preview": "max-video-preview:-1"
+    },
+    "canonical": "https://hanfjack.de/marke/eazyplug/",
+    "og_locale": "de_DE",
+    "og_type": "article",
+    "og_title": "Eazy Plug Stecklingsblöcke und Trays kaufen | Hanfjack",
+    "og_description": "Eazy Plug: Trays mit Anzuchtwürfeln aus Perlit, Torf und Kokos, pH-stabil und kompostierbar. Bei Hanfjack.",
+    "og_url": "https://hanfjack.de/marke/eazyplug/",
+    "og_site_name": "Hanfjack",
+    "twitter_card": "summary_large_image",
+    "schema": {
+     "@context": "https://schema.org",
+     "@graph": [
+      {
+       "@type": "CollectionPage",
+       "@id": "https://hanfjack.de/marke/eazyplug/",
+       "url": "https://hanfjack.de/marke/eazyplug/",
+       "name": "Eazy Plug Stecklingsblöcke und Trays kaufen | Hanfjack",
+       "isPartOf": {
+        "@id": "https://hanfjack.de/#website"
+       },
+       "description": "Eazy Plug: Trays mit Anzuchtwürfeln aus Perlit, Torf und Kokos, pH-stabil und kompostierbar. Bei Hanfjack.",
+       "breadcrumb": {
+        "@id": "https://hanfjack.de/marke/eazyplug/#breadcrumb"
+       },
+       "inLanguage": "de"
+      },
+      {
+       "@type": "BreadcrumbList",
+       "@id": "https://hanfjack.de/marke/eazyplug/#breadcrumb",
+       "itemListElement": [
+        {
+         "@type": "ListItem",
+         "position": 1,
+         "name": "Startseite",
+         "item": "https://hanfjack.de/"
+        },
+        {
+         "@type": "ListItem",
+         "position": 2,
+         "name": "Shop",
+         "item": "https://hanfjack.de/shop/"
+        },
+        {
+         "@type": "ListItem",
+         "position": 3,
+         "name": "eazyplug"
+        }
+       ]
+      },
+      {
+       "@type": "WebSite",
+       "@id": "https://hanfjack.de/#website",
+       "url": "https://hanfjack.de/",
+       "name": "Hanfjack",
+       "description": "Calm down your mind, elevate your Vibes!",
+       "publisher": {
+        "@id": "https://hanfjack.de/#organization"
+       },
+       "potentialAction": [
+        {
+         "@type": "SearchAction",
+         "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://hanfjack.de/?s={search_term_string}"
+         },
+         "query-input": {
+          "@type": "PropertyValueSpecification",
+          "valueRequired": true,
+          "valueName": "search_term_string"
+         }
+        }
+       ],
+       "inLanguage": "de"
+      },
+      {
+       "@type": "Organization",
+       "@id": "https://hanfjack.de/#organization",
+       "name": "Hanfjack",
+       "alternateName": "Lauwe Zaunreither GbR",
+       "url": "https://hanfjack.de/",
+       "logo": {
+        "@type": "ImageObject",
+        "inLanguage": "de",
+        "@id": "https://hanfjack.de/#/schema/logo/image/",
+        "url": "https://hanfjack.de/wp-content/uploads/2026/04/Hanfjack-Logo-Original-tp192x192-op.png",
+        "contentUrl": "https://hanfjack.de/wp-content/uploads/2026/04/Hanfjack-Logo-Original-tp192x192-op.png",
+        "width": 192,
+        "height": 192,
+        "caption": "Hanfjack"
+       },
+       "image": {
+        "@id": "https://hanfjack.de/#/schema/logo/image/"
+       }
+      }
+     ]
+    }
+   },
+   "_links": {
+    "self": [
+     {
+      "href": "https://hanfjack.de/wp-json/wp/v2/pwb-brand/6531",
+      "targetHints": {
+       "allow": [
+        "GET",
+        "POST",
+        "PUT",
+        "PATCH",
+        "DELETE"
+       ]
+      }
+     }
+    ],
+    "collection": [
+     {
+      "href": "https://hanfjack.de/wp-json/wp/v2/pwb-brand"
+     }
+    ],
+    "about": [
+     {
+      "href": "https://hanfjack.de/wp-json/wp/v2/taxonomies/pwb-brand"
+     }
+    ],
+    "wp:post_type": [
+     {
+      "href": "https://hanfjack.de/wp-json/wp/v2/product?pwb-brand=6531"
+     }
+    ],
+    "curies": [
+     {
+      "name": "wp",
+      "href": "https://api.w.org/{rel}",
+      "templated": true
+     }
+    ]
+   }
+  }
+ ],
+ "produkte": [
+  {
+   "id": 30830,
+   "status": "publish",
+   "link": "https://hanfjack.de/produkt/eazy-plug-stecklingsbloecke-tray-a-150-stk/",
+   "title": {
+    "rendered": "Eazy Plug®, Stecklingsblöcke, Tray à 150 Stk., 52 x 31 x 3 cm, Würfelgröße 2,5 x 2,5 cm"
+   },
+   "pwb-brand": [
+    6531
+   ]
+  },
+  {
+   "id": 30829,
+   "status": "publish",
+   "link": "https://hanfjack.de/produkt/eazy-plug-stecklingsbloecke-tray-a-24-stk/",
+   "title": {
+    "rendered": "Eazy Plug®, Stecklingsblöcke, Tray à 24 Stk., 30 x 20 x 3 cm, Würfelgröße 3,5 x 3,5 cm"
+   },
+   "pwb-brand": [
+    6531
+   ]
+  },
+  {
+   "id": 17487,
+   "status": "private",
+   "link": "https://hanfjack.de/produkt/eazyplugs-fuer-die-anzucht-von-samen-und-stecklingen/",
+   "title": {
+    "rendered": "Eazyplugs für die Anzucht von Samen und Stecklingen"
+   },
+   "pwb-brand": [
+    6531
+   ]
+  }
+ ]
+}

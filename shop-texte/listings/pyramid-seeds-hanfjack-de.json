@@ -1,0 +1,2098 @@
+{
+  "quelle": "Tiger One Google-Sheet Export (tigerone.csv), Marke 'Pyramid Seeds'",
+  "shop": "hanfjack.de",
+  "stand": "2026-09-10",
+  "anzahl_produkte": 71,
+  "anzahl_varianten": 142,
+  "preisregel": "regular_price = abrunden(VK x 0,99) auf volle Euro, eingetragen als NETTO (Shop zeigt +7% brutto)",
+  "einstellungen": {
+    "status": "draft",
+    "sku": "Eltern = Tiger-One-Basisartikelnummer (parent_sku), Variante = Artikelnummer mit Packungs-Suffix",
+    "steuer": "tax_status=taxable, tax_class=reduzierter-preis (7%)",
+    "versandklasse": "paket-standard (12792)",
+    "lieferzeit": "2-3 Wochen (Term 5417)",
+    "lager": "manage_stock=false, stock_status=onbackorder, backorders=no",
+    "gewicht": "0.01",
+    "attribut": "pa_inhalt (global, variantenbildend) - 4 Stueck und 7 Stueck",
+    "marke": "pwb-brand 'Pyramid Seeds' (Term 2622, existierte bereits)",
+    "hersteller": "bewusst nicht gesetzt"
+  },
+  "hinweise": [
+    "Pyramid Seeds verkauft 3+1 und 5+2 Samen. Im Shop steht die tatsaechliche Stueckzahl: 3+1 = 4 Stueck, 5+2 = 7 Stueck. Das Gratis-Korn gehoert in den Produkttext.",
+    "Die 1er-Packungen (42 Zeilen) wurden wie vereinbart ignoriert.",
+    "18 der 71 Sorten sind im Tiger-One-Export als discontinued markiert (beide Packungsgroessen) - auf Wunsch trotzdem gelistet.",
+    "7 CBD-Sorten liegen zusaetzlich in der Kategorie CBD Samen (2309), analog zu den bestehenden RQS-CBD-Produkten.",
+    "11 Sorten haben im Export kein brauchbares Bild und wurden ohne Bild angelegt.",
+    "Bestandskonflikt: Produkt 20134 'Pyramid Seeds Black Cherry Punch 3er Pack' (SKU HJ-8656193) ist bereits veroeffentlicht, auf Lager und im Angebot. Nicht angefasst. Die neue Sorte PYR-BCP-FEM ueberschneidet sich damit - vor dem Veroeffentlichen entscheiden, welches Produkt bleibt.",
+    "Produkt 7313 'Black Cherry Punch' (HJ-4787917) ist ein Pyramid-Steckling (Vermehrungsmaterial), kein Samen - kein Konflikt.",
+    "Produkttexte, Tags und SEO fehlen noch (bewusst leer angelegt)."
+  ],
+  "produkte": [
+    {
+      "produkt": "Pyramid Seeds Alpujarrena Auto feminisiert",
+      "product_id": 42953,
+      "sku_eltern": "PYR-ALP-AFEM",
+      "kategorien": [
+        547
+      ],
+      "bluetetyp": "Auto",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-ALP-AFEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.18",
+          "preis_netto_hanfjack_de": "19"
+        },
+        {
+          "sku": "PYR-ALP-AFEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "33",
+          "ek_tigerone": "13.64",
+          "preis_netto_hanfjack_de": "32"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Alpujarrena feminisiert",
+      "product_id": 42956,
+      "sku_eltern": "PYR-ALP-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": false,
+      "varianten": [
+        {
+          "sku": "PYR-ALP-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-ALP-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds American Pie Auto feminisiert",
+      "product_id": 42958,
+      "sku_eltern": "PYR-AMP-AFEM",
+      "kategorien": [
+        547
+      ],
+      "bluetetyp": "Auto",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-AMP-AFEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.18",
+          "preis_netto_hanfjack_de": "19"
+        },
+        {
+          "sku": "PYR-AMP-AFEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "33",
+          "ek_tigerone": "13.64",
+          "preis_netto_hanfjack_de": "32"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds American Pie feminisiert",
+      "product_id": 42960,
+      "sku_eltern": "PYR-AMP-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-AMP-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-AMP-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Amnesia Gold Auto feminisiert",
+      "product_id": 42962,
+      "sku_eltern": "PYR-AMG-AFEM",
+      "kategorien": [
+        547
+      ],
+      "bluetetyp": "Auto",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-AMG-AFEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-AMG-AFEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "33",
+          "ek_tigerone": "13.64",
+          "preis_netto_hanfjack_de": "32"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Amnesia Gold feminisiert",
+      "product_id": 42963,
+      "sku_eltern": "PYR-AMG-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": false,
+      "varianten": [
+        {
+          "sku": "PYR-AMG-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-AMG-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Anesthesia Auto feminisiert",
+      "product_id": 42965,
+      "sku_eltern": "PYR-ANE-AFEM",
+      "kategorien": [
+        547
+      ],
+      "bluetetyp": "Auto",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-ANE-AFEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.18",
+          "preis_netto_hanfjack_de": "19"
+        },
+        {
+          "sku": "PYR-ANE-AFEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "33",
+          "ek_tigerone": "13.64",
+          "preis_netto_hanfjack_de": "32"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Anesthesia feminisiert",
+      "product_id": 42966,
+      "sku_eltern": "PYR-ANE-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": false,
+      "varianten": [
+        {
+          "sku": "PYR-ANE-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-ANE-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Anubis Auto feminisiert",
+      "product_id": 42968,
+      "sku_eltern": "PYR-ANU-AFEM",
+      "kategorien": [
+        547
+      ],
+      "bluetetyp": "Auto",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-ANU-AFEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.18",
+          "preis_netto_hanfjack_de": "19"
+        },
+        {
+          "sku": "PYR-ANU-AFEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "33",
+          "ek_tigerone": "13.64",
+          "preis_netto_hanfjack_de": "32"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Anubis feminisiert",
+      "product_id": 42970,
+      "sku_eltern": "PYR-ANU-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-ANU-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-ANU-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Black Cherry Punch Auto feminisiert",
+      "product_id": 42971,
+      "sku_eltern": "PYR-BCP-AUTO-FEM",
+      "kategorien": [
+        547
+      ],
+      "bluetetyp": "Auto",
+      "discontinued": true,
+      "bild": false,
+      "varianten": [
+        {
+          "sku": "PYR-BCP-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-BCP-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Black Cherry Punch feminisiert",
+      "product_id": 42973,
+      "sku_eltern": "PYR-BCP-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-BCP-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "26",
+          "ek_tigerone": "10.91",
+          "preis_netto_hanfjack_de": "25"
+        },
+        {
+          "sku": "PYR-BCP-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "43",
+          "ek_tigerone": "18.18",
+          "preis_netto_hanfjack_de": "42"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Blue Pyramid Auto feminisiert",
+      "product_id": 42975,
+      "sku_eltern": "PYR-BLU-AFEM",
+      "kategorien": [
+        547
+      ],
+      "bluetetyp": "Auto",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-BLU-AFEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.18",
+          "preis_netto_hanfjack_de": "19"
+        },
+        {
+          "sku": "PYR-BLU-AFEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "33",
+          "ek_tigerone": "13.64",
+          "preis_netto_hanfjack_de": "32"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Blue Pyramid feminisiert",
+      "product_id": 42977,
+      "sku_eltern": "PYR-BLU-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-BLU-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-BLU-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Cookies USA Auto feminisiert",
+      "product_id": 42978,
+      "sku_eltern": "PYR-COOKUSA-AUTO-FEM",
+      "kategorien": [
+        547
+      ],
+      "bluetetyp": "Auto",
+      "discontinued": false,
+      "bild": false,
+      "varianten": [
+        {
+          "sku": "PYR-COOKUSA-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-COOKUSA-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Cookies USA feminisiert",
+      "product_id": 42980,
+      "sku_eltern": "PYR-COOKUSA-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-COOKUSA-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-COOKUSA-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Do Si Dos Auto feminisiert",
+      "product_id": 42982,
+      "sku_eltern": "PYR-DSD-AUTO-FEM",
+      "kategorien": [
+        547
+      ],
+      "bluetetyp": "Auto",
+      "discontinued": true,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-DSD-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-DSD-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Do Si Dos feminisiert",
+      "product_id": 42984,
+      "sku_eltern": "PYR-DSD-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-DSD-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "26",
+          "ek_tigerone": "10.91",
+          "preis_netto_hanfjack_de": "25"
+        },
+        {
+          "sku": "PYR-DSD-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "43",
+          "ek_tigerone": "18.18",
+          "preis_netto_hanfjack_de": "42"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Double OG Haze feminisiert",
+      "product_id": 42986,
+      "sku_eltern": "PYR-DOGHAZ-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": true,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-DOGHAZ-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "26",
+          "ek_tigerone": "10.91",
+          "preis_netto_hanfjack_de": "25"
+        },
+        {
+          "sku": "PYR-DOGHAZ-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "43",
+          "ek_tigerone": "18.18",
+          "preis_netto_hanfjack_de": "42"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Fresh Candy Auto feminisiert",
+      "product_id": 42988,
+      "sku_eltern": "PYR-FRE-AFEM",
+      "kategorien": [
+        547
+      ],
+      "bluetetyp": "Auto",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-FRE-AFEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.18",
+          "preis_netto_hanfjack_de": "19"
+        },
+        {
+          "sku": "PYR-FRE-AFEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "33",
+          "ek_tigerone": "13.64",
+          "preis_netto_hanfjack_de": "32"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Fresh Candy feminisiert",
+      "product_id": 42990,
+      "sku_eltern": "PYR-FRE-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-FRE-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-FRE-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Galaxy Auto feminisiert",
+      "product_id": 42992,
+      "sku_eltern": "PYR-GAL-AFEM",
+      "kategorien": [
+        547
+      ],
+      "bluetetyp": "Auto",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-GAL-AFEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-GAL-AFEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Galaxy CBD feminisiert",
+      "product_id": 42994,
+      "sku_eltern": "PYR-GAL-CBD-FEM",
+      "kategorien": [
+        548,
+        2309
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-GAL-CBD-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-GAL-CBD-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Galaxy feminisiert",
+      "product_id": 42996,
+      "sku_eltern": "PYR-GAL-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-GAL-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-GAL-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Gelato Auto feminisiert",
+      "product_id": 42998,
+      "sku_eltern": "PYR-GEL-AUTO-FEM",
+      "kategorien": [
+        547
+      ],
+      "bluetetyp": "Auto",
+      "discontinued": true,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-GEL-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-GEL-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Gelato feminisiert",
+      "product_id": 42999,
+      "sku_eltern": "PYR-GEL-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": true,
+      "bild": false,
+      "varianten": [
+        {
+          "sku": "PYR-GEL-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-GEL-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "43",
+          "ek_tigerone": "18.18",
+          "preis_netto_hanfjack_de": "42"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Gorila Auto feminisiert",
+      "product_id": 43001,
+      "sku_eltern": "PYR-GOR-AUTO-FEM",
+      "kategorien": [
+        547
+      ],
+      "bluetetyp": "Auto",
+      "discontinued": true,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-GOR-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-GOR-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Gorilla feminisiert",
+      "product_id": 43003,
+      "sku_eltern": "PYR-GOR-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-GOR-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-GOR-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Ice Cream feminisiert",
+      "product_id": 43004,
+      "sku_eltern": "PYR-ICEC-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": true,
+      "bild": false,
+      "varianten": [
+        {
+          "sku": "PYR-ICEC-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-ICEC-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "43",
+          "ek_tigerone": "18.18",
+          "preis_netto_hanfjack_de": "42"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Kryptonite Auto feminisiert",
+      "product_id": 43006,
+      "sku_eltern": "PYR-KRY-AFEM",
+      "kategorien": [
+        547
+      ],
+      "bluetetyp": "Auto",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-KRY-AFEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.18",
+          "preis_netto_hanfjack_de": "19"
+        },
+        {
+          "sku": "PYR-KRY-AFEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "33",
+          "ek_tigerone": "13.64",
+          "preis_netto_hanfjack_de": "32"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Kryptonite feminisiert",
+      "product_id": 43008,
+      "sku_eltern": "PYR-KRY-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-KRY-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.18",
+          "preis_netto_hanfjack_de": "19"
+        },
+        {
+          "sku": "PYR-KRY-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "33",
+          "ek_tigerone": "13.64",
+          "preis_netto_hanfjack_de": "32"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Kukulkan feminisiert",
+      "product_id": 43010,
+      "sku_eltern": "PYR-KUL-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-KUL-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-KUL-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Lemon Larry OG feminisiert",
+      "product_id": 43011,
+      "sku_eltern": "PYR-LLOG-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": true,
+      "bild": false,
+      "varianten": [
+        {
+          "sku": "PYR-LLOG-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-LLOG-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "43",
+          "ek_tigerone": "18.18",
+          "preis_netto_hanfjack_de": "42"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Lennon Auto feminisiert",
+      "product_id": 43013,
+      "sku_eltern": "PYR-LEN-AFEM",
+      "kategorien": [
+        547
+      ],
+      "bluetetyp": "Auto",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-LEN-AFEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-LEN-AFEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Lennon feminisiert",
+      "product_id": 43015,
+      "sku_eltern": "PYR-LEN-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-LEN-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "26",
+          "ek_tigerone": "10.91",
+          "preis_netto_hanfjack_de": "25"
+        },
+        {
+          "sku": "PYR-LEN-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "43",
+          "ek_tigerone": "18.18",
+          "preis_netto_hanfjack_de": "42"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Mendocino Purple Kush feminisiert",
+      "product_id": 43016,
+      "sku_eltern": "PYR-MPK-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": true,
+      "bild": false,
+      "varianten": [
+        {
+          "sku": "PYR-MPK-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-MPK-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "43",
+          "ek_tigerone": "18.18",
+          "preis_netto_hanfjack_de": "42"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Nefertiti Auto feminisiert",
+      "product_id": 43018,
+      "sku_eltern": "PYR-NEF-AFEM",
+      "kategorien": [
+        547
+      ],
+      "bluetetyp": "Auto",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-NEF-AFEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-NEF-AFEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Nefertiti feminisiert",
+      "product_id": 43020,
+      "sku_eltern": "PYR-NEF-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-NEF-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "26",
+          "ek_tigerone": "10.91",
+          "preis_netto_hanfjack_de": "25"
+        },
+        {
+          "sku": "PYR-NEF-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "43",
+          "ek_tigerone": "18.18",
+          "preis_netto_hanfjack_de": "42"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds New York City Auto feminisiert",
+      "product_id": 43022,
+      "sku_eltern": "PYR-NYC-AFEM",
+      "kategorien": [
+        547
+      ],
+      "bluetetyp": "Auto",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-NYC-AFEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.18",
+          "preis_netto_hanfjack_de": "19"
+        },
+        {
+          "sku": "PYR-NYC-AFEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "33",
+          "ek_tigerone": "13.64",
+          "preis_netto_hanfjack_de": "32"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds New York City CBD Auto feminisiert",
+      "product_id": 43024,
+      "sku_eltern": "PYR-NYC-CBD-AUTO-FEM",
+      "kategorien": [
+        547,
+        2309
+      ],
+      "bluetetyp": "Auto",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-NYC-CBD-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-NYC-CBD-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds New York City feminisiert",
+      "product_id": 43026,
+      "sku_eltern": "PYR-NYC-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-NYC-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "26",
+          "ek_tigerone": "10.91",
+          "preis_netto_hanfjack_de": "25"
+        },
+        {
+          "sku": "PYR-NYC-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "43",
+          "ek_tigerone": "18.18",
+          "preis_netto_hanfjack_de": "42"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Northern Lights Auto feminisiert",
+      "product_id": 43028,
+      "sku_eltern": "PYR-NL-AFEM",
+      "kategorien": [
+        547
+      ],
+      "bluetetyp": "Auto",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-NL-AFEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-NL-AFEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Northern Lights CBD Auto feminisiert",
+      "product_id": 43030,
+      "sku_eltern": "PYR-NL-CBD-AUTO-FEM",
+      "kategorien": [
+        547,
+        2309
+      ],
+      "bluetetyp": "Auto",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-NL-CBD-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-NL-CBD-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Northern Lights CBD feminisiert",
+      "product_id": 43032,
+      "sku_eltern": "PYR-NL-CBD-FEM",
+      "kategorien": [
+        548,
+        2309
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-NL-CBD-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-NL-CBD-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Northern Lights feminisiert",
+      "product_id": 43034,
+      "sku_eltern": "PYR-NL-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-NL-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "26",
+          "ek_tigerone": "10.91",
+          "preis_netto_hanfjack_de": "25"
+        },
+        {
+          "sku": "PYR-NL-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "43",
+          "ek_tigerone": "18.18",
+          "preis_netto_hanfjack_de": "42"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Olympia Auto feminisiert",
+      "product_id": 43036,
+      "sku_eltern": "PYR-OLY-AUTO-FEM",
+      "kategorien": [
+        547
+      ],
+      "bluetetyp": "Auto",
+      "discontinued": true,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-OLY-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.18",
+          "preis_netto_hanfjack_de": "19"
+        },
+        {
+          "sku": "PYR-OLY-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "33",
+          "ek_tigerone": "13.64",
+          "preis_netto_hanfjack_de": "32"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Olympia feminisiert",
+      "product_id": 43038,
+      "sku_eltern": "PYR-OLY-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": true,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-OLY-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-OLY-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Purple Auto feminisiert",
+      "product_id": 43040,
+      "sku_eltern": "PYR-PURP-AFEM",
+      "kategorien": [
+        547
+      ],
+      "bluetetyp": "Auto",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-PURP-AFEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-PURP-AFEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Purple Urkle feminisiert",
+      "product_id": 43042,
+      "sku_eltern": "PYR-PURK-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-PURK-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "26",
+          "ek_tigerone": "10.91",
+          "preis_netto_hanfjack_de": "25"
+        },
+        {
+          "sku": "PYR-PURK-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "43",
+          "ek_tigerone": "18.18",
+          "preis_netto_hanfjack_de": "42"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Purple feminisiert",
+      "product_id": 43044,
+      "sku_eltern": "PYR-PURP-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-PURP-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-PURP-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Ramses Auto feminisiert",
+      "product_id": 43046,
+      "sku_eltern": "PYR-RAM-AUTO-FEM",
+      "kategorien": [
+        547
+      ],
+      "bluetetyp": "Auto",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-RAM-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.18",
+          "preis_netto_hanfjack_de": "19"
+        },
+        {
+          "sku": "PYR-RAM-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "33",
+          "ek_tigerone": "13.64",
+          "preis_netto_hanfjack_de": "32"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Ramses feminisiert",
+      "product_id": 43048,
+      "sku_eltern": "PYR-RAM-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": true,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-RAM-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "26",
+          "ek_tigerone": "10.91",
+          "preis_netto_hanfjack_de": "25"
+        },
+        {
+          "sku": "PYR-RAM-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "43",
+          "ek_tigerone": "18.18",
+          "preis_netto_hanfjack_de": "42"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Romulan feminisiert",
+      "product_id": 43050,
+      "sku_eltern": "PYR-ROM-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": true,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-ROM-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-ROM-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Shark Auto feminisiert",
+      "product_id": 43052,
+      "sku_eltern": "PYR-SHA-AFEM",
+      "kategorien": [
+        547
+      ],
+      "bluetetyp": "Auto",
+      "discontinued": true,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-SHA-AFEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-SHA-AFEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Shark CBD feminisiert",
+      "product_id": 43053,
+      "sku_eltern": "PYR-SHARK-CBD-FEM",
+      "kategorien": [
+        548,
+        2309
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": true,
+      "bild": false,
+      "varianten": [
+        {
+          "sku": "PYR-SHARK-CBD-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-SHARK-CBD-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Shark feminisiert",
+      "product_id": 43055,
+      "sku_eltern": "PYR-SHA-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": true,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-SHA-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-SHA-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Sunset Sherbet feminisiert",
+      "product_id": 43057,
+      "sku_eltern": "PYR-SUNSHERB-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": true,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-SUNSHERB-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "26",
+          "ek_tigerone": "10.91",
+          "preis_netto_hanfjack_de": "25"
+        },
+        {
+          "sku": "PYR-SUNSHERB-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "43",
+          "ek_tigerone": "18.18",
+          "preis_netto_hanfjack_de": "42"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Super Hash Auto feminisiert",
+      "product_id": 43059,
+      "sku_eltern": "PYR-SUP-AFEM",
+      "kategorien": [
+        547
+      ],
+      "bluetetyp": "Auto",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-SUP-AFEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.18",
+          "preis_netto_hanfjack_de": "19"
+        },
+        {
+          "sku": "PYR-SUP-AFEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "33",
+          "ek_tigerone": "13.64",
+          "preis_netto_hanfjack_de": "32"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Super Hash feminisiert",
+      "product_id": 43061,
+      "sku_eltern": "PYR-SUP-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-SUP-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-SUP-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Super OG Kush Auto feminisiert",
+      "product_id": 43063,
+      "sku_eltern": "PYR-SOG-AUTO-FEM",
+      "kategorien": [
+        547
+      ],
+      "bluetetyp": "Auto",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-SOG-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.18",
+          "preis_netto_hanfjack_de": "19"
+        },
+        {
+          "sku": "PYR-SOG-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "33",
+          "ek_tigerone": "13.64",
+          "preis_netto_hanfjack_de": "32"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Super OG Kush feminisiert",
+      "product_id": 43065,
+      "sku_eltern": "PYR-SOG-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-SOG-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-SOG-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Tahoe Cure feminisiert",
+      "product_id": 43067,
+      "sku_eltern": "PYR-TCURE-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": true,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-TCURE-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "26",
+          "ek_tigerone": "10.91",
+          "preis_netto_hanfjack_de": "25"
+        },
+        {
+          "sku": "PYR-TCURE-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "43",
+          "ek_tigerone": "18.18",
+          "preis_netto_hanfjack_de": "42"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Tutankhamon Auto feminisiert",
+      "product_id": 43069,
+      "sku_eltern": "PYR-TUT-AFEM",
+      "kategorien": [
+        547
+      ],
+      "bluetetyp": "Auto",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-TUT-AFEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-TUT-AFEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Tutankhamon feminisiert",
+      "product_id": 43070,
+      "sku_eltern": "PYR-TUT-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": false,
+      "varianten": [
+        {
+          "sku": "PYR-TUT-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-TUT-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Watermelon Zkittlez feminisiert",
+      "product_id": 43072,
+      "sku_eltern": "PYR-WMZKITT-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-WMZKITT-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "26",
+          "ek_tigerone": "10.91",
+          "preis_netto_hanfjack_de": "25"
+        },
+        {
+          "sku": "PYR-WMZKITT-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "43",
+          "ek_tigerone": "18.18",
+          "preis_netto_hanfjack_de": "42"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Wembley Auto feminisiert",
+      "product_id": 43074,
+      "sku_eltern": "PYR-WEM-AFEM",
+      "kategorien": [
+        547
+      ],
+      "bluetetyp": "Auto",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-WEM-AFEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-WEM-AFEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds Wembley feminisiert",
+      "product_id": 43076,
+      "sku_eltern": "PYR-WEM-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-WEM-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "26",
+          "ek_tigerone": "10.91",
+          "preis_netto_hanfjack_de": "25"
+        },
+        {
+          "sku": "PYR-WEM-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "43",
+          "ek_tigerone": "18.18",
+          "preis_netto_hanfjack_de": "42"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds White Widow Auto feminisiert",
+      "product_id": 43078,
+      "sku_eltern": "PYR-WW-AFEM",
+      "kategorien": [
+        547
+      ],
+      "bluetetyp": "Auto",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-WW-AFEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.18",
+          "preis_netto_hanfjack_de": "19"
+        },
+        {
+          "sku": "PYR-WW-AFEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "33",
+          "ek_tigerone": "13.64",
+          "preis_netto_hanfjack_de": "32"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds White Widow CBD Auto feminisiert",
+      "product_id": 43080,
+      "sku_eltern": "PYR-WW-CBD-AUTO-FEM",
+      "kategorien": [
+        547,
+        2309
+      ],
+      "bluetetyp": "Auto",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-WW-CBD-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-WW-CBD-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds White Widow CBD feminisiert",
+      "product_id": 43082,
+      "sku_eltern": "PYR-WW-CBD-FEM",
+      "kategorien": [
+        548,
+        2309
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-WW-CBD-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-WW-CBD-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    },
+    {
+      "produkt": "Pyramid Seeds White Widow feminisiert",
+      "product_id": 43084,
+      "sku_eltern": "PYR-WW-FEM",
+      "kategorien": [
+        548
+      ],
+      "bluetetyp": "photoperiodisch",
+      "discontinued": false,
+      "bild": true,
+      "varianten": [
+        {
+          "sku": "PYR-WW-FEM-3",
+          "inhalt": "4 Stück",
+          "packung_lieferant": "3+1 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.55",
+          "preis_netto_hanfjack_de": "22"
+        },
+        {
+          "sku": "PYR-WW-FEM-5",
+          "inhalt": "7 Stück",
+          "packung_lieferant": "5+2 Seeds",
+          "vk_tigerone": "38",
+          "ek_tigerone": "15.91",
+          "preis_netto_hanfjack_de": "37"
+        }
+      ]
+    }
+  ]
+}

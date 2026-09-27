@@ -1,0 +1,230 @@
+# Rollenpreise hanfjack.com – HEMPER und Royal Queen Seeds (17.09.2026)
+
+## Aufschlaege
+
+Je Lieferant gilt ein eigener Anbauverein-Satz. Der B2B-Satz ist ueberall
+gleich.
+
+| Lieferant | B2B Kunde | Anbauverein |
+|---|---|---|
+| Fast Buds | EK × 1,10 | EK × 1,40 |
+| Tiger One | EK × 1,10 | EK × 1,30 |
+| **HEMPER** | EK × 1,10 | **EK × 1,35** |
+| **Royal Queen Seeds** | EK × 1,10 | **EK × 1,30** |
+
+Kaufmaennisch auf zwei Nachkommastellen, netto. Meta-Keys
+`_wwpro_price_b2b_customer` und `_wwpro_price_anbauverein`.
+
+---
+
+## HEMPER und Nebenmarken
+
+**Quelle:** Google-Mappe mit elf Reitern, rund 525 Zeilen.
+
+### Die Falle: eine Zeile, drei Preise
+
+Jede Sheet-Zeile nennt bis zu drei Wholesale-Preise – pro Stueck, pro Display
+und pro Karton. Der Shop verkauft **beides unter aehnlichen SKUs**: die Box
+als `HMP-FT-GLASS-10MM-DISPLAY`, das Einzelstueck als
+`HMP-FT-GLASS-10MM-EINZEL`.
+
+Wer nur die SKU vergleicht, schreibt den Stueckpreis auf die Box:
+
+| | EK laut Sheet | richtig? |
+|---|---|---|
+| Stueckpreis | 1,50 € | nein – das ist ein Glasfilter |
+| Displaypreis | 15,00 € | ja – die Box kostet im Shop 25,13 € |
+
+Bei 1,50 € EK stuende auf einer 25-Euro-Box ein B2B-Preis von 1,65 €.
+
+### Warum die Spaltennamen nicht reichen
+
+In den vier grossen Reitern stehen Unit und Display in H und I. Vier weitere
+Reiter haben nur **eine** Wholesale-Spalte, und die bedeutet nicht ueberall
+dasselbe: in `1601411394` ist es der Stueckpreis, in `956249339` der
+Displaypreis. Die Zuordnung laeuft deshalb ueber Arithmetik – Kartonpreis
+geteilt durch Displays je Karton – und faellt nur dort auf die SKU zurueck,
+wo kein Kartonpreis steht.
+
+Gegenprobe an einem Fall, den die Mappe doppelt fuehrt: `DISPLAY-HMP-WICK`
+nennt nur 50,00 €, `DISPLAY-HT-HEMPWICK` dieselbe Ware mit 1,00 € je Stueck
+und 50,00 € je Display. Die aus 50,00 € / 50 Stueck hergeleiteten 1,00 €
+treffen den ausgewiesenen Wert exakt.
+
+### Ergebnis
+
+| | Positionen |
+|---|---:|
+| im Sheet zugeordnet | 300 |
+| davon Displaypreis | 125 |
+| davon Stueckpreis | 175 |
+| **geschrieben** | **296** |
+| zurueckgestellt | 4 |
+| Fehler | 0 |
+
+50 einfache Produkte und 246 Variationen. Jede Position wurde
+zurueckgelesen: `own_price` stimmt, `price == own_price`, `source` steht auf
+`product` bzw. `variation`.
+
+**Zurueckgestellt** (`com-hemper-offen.json`): die vier Geruchsneutralisierer.
+Bei 30,00 € EK und 40,24 € VK ergaebe der Anbauvereinpreis 40,50 € – mehr als
+der Laden-VK. Das Plugin wuerde auf 40,24 € deckeln, der Anbauverein zahlte
+also den vollen Ladenpreis. Entweder steigt der VK oder der Satz passt fuer
+diese Ware nicht.
+
+---
+
+## Royal Queen Seeds
+
+**Quelle:** `RQS_Pricelist_2026_-_Seeds_Wholesale.xlsx`, Blatt „Seeds WS".
+619 SKUs mit EK. Gegenprobe: der ausgewiesene Verbraucherpreis ist bei
+**allen** 619 exakt das Doppelte des EK, und alle 597 Werte, die sich mit der
+im Repo abgelegten Liste ueberschneiden, stimmen zeichengenau.
+
+Das Blatt „Bulk WS" fuehrt 151 Mengenstaffel-SKUs; keine davon existiert im
+Shop.
+
+### Die RQS-Nummern haengen nicht am Produkt
+
+Im Shop tragen die RQS-Artikel `HJ-`-Nummern. Die Zuordnung Produkt → Sorte
+stammt aus `rqs-plan.json`, die Packungsgroesse aus dem Attribut
+„Menge waehlen".
+
+### Zwei EK-Quellen, getrennt gefuehrt
+
+Von 166 offenen Positionen liessen sich nur **3** direkt aus der Liste
+bepreisen. Der Grund ist kein Datenfehler: **RQS fuehrt die uebrigen
+Packungsgroessen nicht mehr.** „Alien OG" gibt es nur noch als 3er, „Biscotti"
+bis 10er – der Shop hat aber 5er, 10er und 25er im Sortiment.
+
+Fuer diese 153 Positionen wurde der EK aus dem Laden-VK zurueckgerechnet. Die
+Grundlage ist die im Katalog durchgaengig verwendete Hausregel
+**brutto = 2 × EK, netto = brutto / 1,07**. Sie trifft 431 der 461 Positionen
+mit bekanntem EK; die 30 Ausnahmen sind F1-Hybride, die der Shop bewusst
+guenstiger anbietet.
+
+Drei Belege, dass die Rueckrechnung den echten EK trifft:
+
+1. **153 von 154** Ergebnissen liegen auf dem Viertel-Euro genau.
+2. Die Preiskurve pro Samen faellt wie in der Liste: Alien OG ergibt 4,50 /
+   4,00 / 3,75 € je Samen fuer 3er / 5er / 10er – dieselbe Form wie Biscotti
+   mit echten Listenpreisen (5,08 / 4,65 / 4,25 €).
+3. Wo Liste und Rueckrechnung sich ueberschneiden, stimmen sie ueberein.
+
+Der eine krumme Fall (Royal Cheese Fast, 10er, ergaebe 27,55 €) bleibt liegen.
+
+**Die 153 hergeleiteten Positionen sind in
+`com-rqs-rollenpreise-2026.json` mit `"herkunft": "herleitung"` markiert** und
+lassen sich damit jederzeit gezielt zuruecknehmen.
+
+### Ergebnis
+
+| | Positionen |
+|---|---:|
+| bereits bepreist | 460 |
+| aus der Preisliste geschrieben | 3 |
+| aus dem VK hergeleitet geschrieben | 153 |
+| **geschrieben** | **156** |
+| zurueckgestellt | 10 |
+| Fehler | 0 |
+
+Alle 156 wurden zurueckgelesen, keine Abweichung.
+
+**Zurueckgestellt** (`com-rqs-offen.json`): neun Variationen ohne
+Mengen-Attribut – acht davon am Orion F1-Hybrid, die alle dieselbe SKU
+`HJ-5628761` tragen und sich dadurch nicht unterscheiden lassen; dazu
+Medusa `RO-0526-01`. Das ist ein kaputter Variationsaufbau, kein Preisproblem.
+
+---
+
+## Dateien
+
+- `com-hemper-rollenpreise.json`, `com-hemper-offen.json`
+- `com-rqs-rollenpreise-2026.json`, `com-rqs-offen.json`
+- `xlsx.py` – minimaler xlsx-Leser (openpyxl fehlt in der Umgebung)
+- `hemper_map.py` – Spalten- und Gebinde-Erkennung, der heikle Teil
+- `hemper_plan.py`, `schreib_hemper.py`
+- `rqs_ek.py`, `rqs_plan.py`, `schreib_rqs.py`, `pruef_rqs.py`
+
+---
+
+## Gesamtstand hanfjack.com nach diesem Lauf
+
+| | Positionen |
+|---|---:|
+| verkaeufliche Positionen (Produkte + Variationen) | 7183 |
+| mit Rollenpreisen | 4270 (59 %) |
+| ohne | 2913 |
+
+Die vollstaendige Liste der offenen Positionen steht in
+`com-offene-rollenpreise.json`, sortiert nach Marke.
+
+### Woran es jeweils fehlt
+
+| Marke | offen | fehlt |
+|---|---:|---|
+| Hanfjack (Merch) | 262 | Eigenware, kein EK hinterlegt |
+| HEMPER | 212 | 208 davon Glas- und Zubehoerteile mit `HJ-`-SKU, die in der Mappe gar nicht vorkommen; 4 sind die zurueckgestellten Sprays |
+| Paradise Seeds | 146 | keine Preisliste im Repo |
+| Sensi Seeds | 138 | keine Preisliste |
+| Dutch Passion | 109 | keine Preisliste |
+| Plagron | 104 | keine Preisliste |
+| PURIZE | 88 | keine Preisliste |
+| Spider Farmer | 86 | keine Preisliste |
+| Atami | 86 | keine Preisliste |
+| 420flow | 79 | keine Preisliste |
+| Nirvana, Sweedbar, Barneys Farm, Wizard Trees, Zippo, Humboldt, SHEESH, G-Rollz, Alge u. a. | je 30–65 | keine Preisliste |
+
+Fuer alles ausser Hanfjack-Merch fehlt schlicht die EK-Quelle. Sobald eine
+Preisliste vorliegt, ist der Ablauf derselbe wie hier: SKU oder Name
+zuordnen, Gebinde pruefen, Aufschlag rechnen, schreiben, zurueckleisen.
+
+**Die 171 Tiger-One-SKUs, die nicht mehr in der Liste stehen** (siehe
+`com-rollenpreise.md`), sind darin enthalten.
+
+---
+
+## Nachtrag: HEMPER ueber die EAN (17.09.2026)
+
+Der Hinweis, HEMPER liesse sich auch ueber EAN oder Titel erkennen, war
+richtig und hat den Lauf mehr als verdoppelt.
+
+**Warum die SKU nicht reicht:** die HEMPER-Artikel im Shop tragen ueberwiegend
+`HJ-`-Nummern, die in der Lieferantenmappe nicht vorkommen. Die EAN steht
+dagegen in beiden Systemen – im Shop als `gtin` (und `_ts_gtin`), in der Mappe
+als `UPC`. 511 der 514 Mappen-Zeilen fuehren eine UPC, 206 der 214 offenen
+Shop-Positionen ein gepflegtes GTIN.
+
+| Zuordnungsweg | Positionen |
+|---|---:|
+| SKU | 296 |
+| GTIN | 203 |
+| Titel | 2 |
+| **Summe** | **501** |
+
+Der Titeltreffer war „HEMPER Forty Ounce Wasserfilter-Glas XL" → `JWP0924`
+(„Forty Ounce XL Bong 9.5"). Abgesichert ueber die 42 Schwesterartikel: alle
+tragen EK 60,00 € und VK 126,04 € – genau den VK dieses Artikels.
+
+Alle 205 Positionen des zweiten und dritten Durchgangs wurden
+zurueckgelesen, keine Abweichung.
+
+### Die Mappe ist damit ausgeschoepft
+
+80 Mappen-Zeilen bleiben unzugeordnet. Sie wurden zusaetzlich gegen **alle**
+4577 Shop-Produkte geprueft – per GTIN und per Titel. Kein einziger Treffer:
+der Shop fuehrt diese Ware nicht (ueberwiegend Hara-Supply-Cones und
+RIPNDIP-Artikel).
+
+### Was bei HEMPER offen bleibt
+
+| Artikel | Grund |
+|---|---|
+| Bubble Wasserfilter-Glas XL (`HJ-9695361`) | EK 149,99 € liegt **ueber** dem VK von 126,04 € |
+| Ash Catcher Plus Ersatzfilter 3er (`HJ-1718932`) | EK 10,00 € liegt ueber dem VK von 8,39 € |
+| Geruchsneutralisierer Spray Fresh und Lemon, je Box und Einzelstueck | Anbauvereinpreis laege ueber dem VK |
+| Quick Tips Thekendisplay (`HJ-6456441`) | kein Verkaufspreis hinterlegt |
+| King Size Cones Teeblatt Sweet, Quick Hitters Etui-Set Grape | kein Verkaufspreis, und der Titeltreffer waere mehrdeutig |
+
+Die ersten beiden sind keine Preisfrage, sondern ein Hinweis: der Shop
+verkauft diese Artikel unter Einkaufspreis.

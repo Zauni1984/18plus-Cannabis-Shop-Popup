@@ -1,0 +1,1288 @@
+{
+  "marke": "Buddha Seeds",
+  "shop": "hanfjack.de",
+  "pwb_brand_term_id": 1443,
+  "quelle": "Tiger One Katalog (Google-Sheet-Export)",
+  "stand": "2026-09-10",
+  "status_aller_produkte": "draft",
+  "anzahl_produkte": 35,
+  "anzahl_varianten": 73,
+  "preisregel": "regular_price = abrunden(VK_TigerOne x 0,99) auf ganze Euro, Eingabe NETTO (Shop rechnet +7% MwSt.)",
+  "stammdaten": {
+    "tax_status": "taxable",
+    "tax_class": "reduzierter-preis",
+    "shipping_class": "paket-standard",
+    "delivery_time_id": 5417,
+    "attribut": "pa_inhalt (ID 2, global, variantenbildend)",
+    "weight": "0.01",
+    "manage_stock": false,
+    "stock_status": "onbackorder",
+    "backorders": "no"
+  },
+  "packungsgroessen": {
+    "3 Stück": 25,
+    "10 Stück": 28,
+    "50 Stück": 20
+  },
+  "hinweise": [
+    "Der pwb-brand-Term 'Buddha Seeds' (1443) existierte bereits im Shop und wurde allen 35 Produkten zugewiesen.",
+    "Namensregel: Bei Sorten, deren Name schon mit 'Buddha' beginnt (Buddha Classics ..., Buddha Cookie, Buddha DoSi2, Buddha Gelato, Buddha Tangie, Buddha Wedding Cheesecake, Buddha Zkittlez), wurde das Markenpraefix weggelassen, um 'Buddha Seeds Buddha ...' zu vermeiden. Alle uebrigen Sorten tragen das Praefix 'Buddha Seeds'. Die Marke haengt ohnehin als pwb-brand am Produkt.",
+    "Neue Packungsgroesse in diesem Shop: 50 Stueck (20 Varianten). Der pa_inhalt-Term war bereits vorhanden.",
+    "Auslaufartikel: 14 Sorten sind komplett als Auslauf markiert, bei 9 weiteren nur einzelne Packungsgroessen (meist die 10er oder 50er). 12 Sorten sind vollstaendig aktiv. Vor der Veroeffentlichung entscheiden, welche Auslaufsorten online gehen.",
+    "Varianten-SKUs wurden aus dem Tiger-One-Export uebernommen. Buddha Seeds fuehrt dort teils voellig andere Varianten-Artikelnummern als die Elternnummer (z. B. Eltern BS-SBSF050002 / Variante BS-BDF3). Alle 108 SKUs sind eindeutig, es musste keine Kollision aufgeloest werden.",
+    "2 CBD-Sorten zusaetzlich in Kategorie CBD Samen (2309): Medikit CBD Auto, Medikit CBD.",
+    "1 Sorte ohne Produktbild: Assorted Mix Auto. Die Bild-URL im Export liefert bei Tiger One einen 404, das Produkt wurde daher ohne Bild angelegt. Bild muss nachgepflegt werden.",
+    "PRUEFEN - moeglicher Datenfehler beim Lieferanten: Zu Quasar, Purple Kush und Medikit CBD gibt es jeweils zwei Artikelnummern - eine mit 'Auto' im Namen (Bluehtyp Autoflowering) und eine ohne (Bluehtyp Photoperiod). Buddha Seeds fuehrt diese Sorten nach eigener Darstellung als Autoflower. Die Kategorie folgt dem Feld seeds_flowering_type aus dem Export; falls es sich um dieselbe Sorte unter zwei Artikelnummern handelt, sind das Dubletten und eine der beiden sollte nicht veroeffentlicht werden.",
+    "Ebenfalls pruefen: 'Kraken' ist im Export als Autoflowering gefuehrt, traegt aber kein 'Auto' im Namen - Kategorie Automatisch (547) wurde entsprechend dem Export gesetzt.",
+    "Deimos Auto gibt es als feminisierte (BS-SBSF050002) und als regulaere Variante (BS-BDR) - beide wurden gelistet.",
+    "Keine fehlenden Preise.",
+    "Produkttexte, Tags und SEO wurden bewusst noch nicht gesetzt.",
+    "Lagerstatus steht auf 'onbackorder' bis die Verfuegbarkeitsliste vorliegt."
+  ],
+  "dubletten_warnung": {
+    "hinweis": "Zwei bestehende Buddha-Seeds-Produkte im Shop tragen HJ-SKUs und wurden laut Vorgabe nicht angefasst. Beide stehen auf 'privat' und sind inhaltliche Dubletten zu neu gelisteten Sorten. Vor der Veroeffentlichung entscheiden.",
+    "produkte": [
+      {
+        "id": 8302,
+        "sku": "HJ-7915139",
+        "name": "Buddha Calamity Jane Auto",
+        "status": "private",
+        "lager": "instock",
+        "preis": "31.78 EUR",
+        "neues_pendant": "BS-CALJ-FEM (ID 44971)"
+      },
+      {
+        "id": 8300,
+        "sku": "HJ-8514688",
+        "name": "Buddha Purple Kush Auto",
+        "status": "private",
+        "lager": "instock",
+        "preis": "31.78 EUR",
+        "neues_pendant": "BS-SBSF050004 (ID 44987)"
+      }
+    ]
+  },
+  "produkte": [
+    {
+      "produkt_id": 44934,
+      "name": "Buddha Classics AK Auto feminisiert",
+      "sku_eltern": "BS-BSBAAKF",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150300_996575_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "BS-BSBAAKF3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "18",
+          "ek_tigerone": "7.5",
+          "preis_netto": "17",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "BS-BSBAAKF10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "52.5",
+          "ek_tigerone": "24.25",
+          "preis_netto": "51",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "BS-BSBAAKF50",
+          "inhalt": "50 Stück",
+          "pack_lieferant": "50 Seeds",
+          "vk_tigerone": "215",
+          "ek_tigerone": "109.13",
+          "preis_netto": "212",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44936,
+      "name": "Buddha Classics AK feminisiert",
+      "sku_eltern": "BS-BSBAKF",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150299_996570_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "BS-BSBAKF3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "18",
+          "ek_tigerone": "7.5",
+          "preis_netto": "17",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "BS-BSBAKF10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "52.5",
+          "ek_tigerone": "24.25",
+          "preis_netto": "51",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "BS-BSBAKF50",
+          "inhalt": "50 Stück",
+          "pack_lieferant": "50 Seeds",
+          "vk_tigerone": "215",
+          "ek_tigerone": "109.13",
+          "preis_netto": "212",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44938,
+      "name": "Buddha Classics Amnesia Auto feminisiert",
+      "sku_eltern": "BS-BSBAAF",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150301_996580_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "BS-BSBAAF3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "19.5",
+          "ek_tigerone": "8.12",
+          "preis_netto": "19",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44940,
+      "name": "Buddha Classics Amnesia feminisiert",
+      "sku_eltern": "BS-BSBAF",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150302_996585_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "BS-BSBAF50",
+          "inhalt": "50 Stück",
+          "pack_lieferant": "50 Seeds",
+          "vk_tigerone": "233",
+          "ek_tigerone": "118.26",
+          "preis_netto": "230",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44942,
+      "name": "Buddha Classics Critical Auto feminisiert",
+      "sku_eltern": "BS-BSBACF",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150304_996595_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "BS-BSBACF3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "18",
+          "ek_tigerone": "7.5",
+          "preis_netto": "17",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44944,
+      "name": "Buddha Classics Critical feminisiert",
+      "sku_eltern": "BS-BSBCF",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150303_996590_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "BS-BSBCF3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "18",
+          "ek_tigerone": "7.5",
+          "preis_netto": "17",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "BS-BSBCF10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "52.5",
+          "ek_tigerone": "24.25",
+          "preis_netto": "51",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "BS-BSBCF50",
+          "inhalt": "50 Stück",
+          "pack_lieferant": "50 Seeds",
+          "vk_tigerone": "215",
+          "ek_tigerone": "109.13",
+          "preis_netto": "212",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44946,
+      "name": "Buddha Classics Diesel feminisiert",
+      "sku_eltern": "BS-BSBDIF",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150305_996600_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "BS-BSBDIF3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "18",
+          "ek_tigerone": "7.5",
+          "preis_netto": "17",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "BS-BSBDIF10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "52.5",
+          "ek_tigerone": "24.25",
+          "preis_netto": "51",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "BS-BSBDIF50",
+          "inhalt": "50 Stück",
+          "pack_lieferant": "50 Seeds",
+          "vk_tigerone": "215",
+          "ek_tigerone": "109.13",
+          "preis_netto": "212",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44948,
+      "name": "Buddha Classics Skunk Auto feminisiert",
+      "sku_eltern": "BS-BSBASKF",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150308_996615_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "BS-BSBASKF3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "16.5",
+          "ek_tigerone": "6.88",
+          "preis_netto": "16",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "BS-BSBASKF50",
+          "inhalt": "50 Stück",
+          "pack_lieferant": "50 Seeds",
+          "vk_tigerone": "197",
+          "ek_tigerone": "100",
+          "preis_netto": "195",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44949,
+      "name": "Buddha Seeds Assorted Mix Auto feminisiert",
+      "sku_eltern": "BS-ASS-AUTO-FEM-MIX",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": null,
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "BS-SBSF100001-AF10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "35",
+          "ek_tigerone": "16.25",
+          "preis_netto": "34",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44951,
+      "name": "Buddha Classics Skunk feminisiert",
+      "sku_eltern": "BS-BSBSKF",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150307_996610_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "BS-BSBSKF10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "48",
+          "ek_tigerone": "22.17",
+          "preis_netto": "47",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "BS-BSBSKF50",
+          "inhalt": "50 Stück",
+          "pack_lieferant": "50 Seeds",
+          "vk_tigerone": "197",
+          "ek_tigerone": "100",
+          "preis_netto": "195",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44953,
+      "name": "Buddha Classics White Widow Auto feminisiert",
+      "sku_eltern": "BS-BSBAWWF",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150310_996625_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "BS-BSBAWWF3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "18",
+          "ek_tigerone": "7.5",
+          "preis_netto": "17",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "BS-BSBAWWF10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "52.5",
+          "ek_tigerone": "24.25",
+          "preis_netto": "51",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "BS-BSBAWWF50",
+          "inhalt": "50 Stück",
+          "pack_lieferant": "50 Seeds",
+          "vk_tigerone": "215",
+          "ek_tigerone": "109.13",
+          "preis_netto": "212",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44955,
+      "name": "Buddha Classics White Widow feminisiert",
+      "sku_eltern": "BS-BSBWWF",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150309_996620_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "BS-BSBWWF3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "18",
+          "ek_tigerone": "7.5",
+          "preis_netto": "17",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "BS-BSBWWF10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "52.5",
+          "ek_tigerone": "24.25",
+          "preis_netto": "51",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "BS-BSBWWF50",
+          "inhalt": "50 Stück",
+          "pack_lieferant": "50 Seeds",
+          "vk_tigerone": "215",
+          "ek_tigerone": "109.13",
+          "preis_netto": "212",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44957,
+      "name": "Buddha Cookie Auto feminisiert",
+      "sku_eltern": "BS-BACKF",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150569_997920_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "BS-BACKF3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "25",
+          "ek_tigerone": "11",
+          "preis_netto": "24",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "BS-BACKF10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "77",
+          "ek_tigerone": "37",
+          "preis_netto": "76",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "BS-BACKF50",
+          "inhalt": "50 Stück",
+          "pack_lieferant": "50 Seeds",
+          "vk_tigerone": "319",
+          "ek_tigerone": "160",
+          "preis_netto": "315",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44959,
+      "name": "Buddha Cookie feminisiert",
+      "sku_eltern": "BS-BCKF",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150572_997935_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "BS-BCKF10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "77",
+          "ek_tigerone": "37",
+          "preis_netto": "76",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "BS-BCKF50",
+          "inhalt": "50 Stück",
+          "pack_lieferant": "50 Seeds",
+          "vk_tigerone": "319",
+          "ek_tigerone": "160",
+          "preis_netto": "315",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44961,
+      "name": "Buddha DoSi2 feminisiert",
+      "sku_eltern": "BS-BD2F",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150570_997925_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "BS-BD2F10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "70",
+          "ek_tigerone": "33",
+          "preis_netto": "69",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "BS-BD2F50",
+          "inhalt": "50 Stück",
+          "pack_lieferant": "50 Seeds",
+          "vk_tigerone": "290",
+          "ek_tigerone": "145",
+          "preis_netto": "287",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44963,
+      "name": "Buddha Gelato feminisiert",
+      "sku_eltern": "BS-BGTF",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150571_997930_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "BS-BGTF10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "74",
+          "ek_tigerone": "35",
+          "preis_netto": "73",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "BS-BGTF50",
+          "inhalt": "50 Stück",
+          "pack_lieferant": "50 Seeds",
+          "vk_tigerone": "305",
+          "ek_tigerone": "152",
+          "preis_netto": "301",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44965,
+      "name": "Buddha Tangie Auto feminisiert",
+      "sku_eltern": "BS-BATF",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150567_997910_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "BS-BATF3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "24",
+          "ek_tigerone": "10",
+          "preis_netto": "23",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "BS-BATF50",
+          "inhalt": "50 Stück",
+          "pack_lieferant": "50 Seeds",
+          "vk_tigerone": "305",
+          "ek_tigerone": "152",
+          "preis_netto": "301",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44967,
+      "name": "Buddha Wedding Cheesecake feminisiert",
+      "sku_eltern": "BS-BWCF",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150574_997945_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "BS-BWCF10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "74",
+          "ek_tigerone": "35",
+          "preis_netto": "73",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "BS-BWCF50",
+          "inhalt": "50 Stück",
+          "pack_lieferant": "50 Seeds",
+          "vk_tigerone": "305",
+          "ek_tigerone": "152",
+          "preis_netto": "301",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44969,
+      "name": "Buddha Zkittlez Auto feminisiert",
+      "sku_eltern": "BS-BAZF",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150568_997915_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "BS-BAZF3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "24",
+          "ek_tigerone": "10",
+          "preis_netto": "23",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "BS-BAZF10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "74",
+          "ek_tigerone": "35",
+          "preis_netto": "73",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "BS-BAZF50",
+          "inhalt": "50 Stück",
+          "pack_lieferant": "50 Seeds",
+          "vk_tigerone": "305",
+          "ek_tigerone": "152",
+          "preis_netto": "301",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44971,
+      "name": "Buddha Seeds Calamity Jane Auto feminisiert",
+      "sku_eltern": "BS-CALJ-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149390_992002_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "BS-BSBCJF3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.95",
+          "preis_netto": "22",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "BS-BSBCJF10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "70",
+          "ek_tigerone": "32.4",
+          "preis_netto": "69",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44973,
+      "name": "Buddha Seeds Deimos Auto feminisiert",
+      "sku_eltern": "BS-SBSF050002",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148364_986821_pimcore.png",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "BS-BDF3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.95",
+          "preis_netto": "22",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "BS-SBSF050002-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "70",
+          "ek_tigerone": "32.4",
+          "preis_netto": "69",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44975,
+      "name": "Buddha Seeds Deimos Auto regulär",
+      "sku_eltern": "BS-BDR",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        549
+      ],
+      "kategorien_namen": [
+        "Regular"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151045_1000289_pimcore.png",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "BS-BDR10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "35",
+          "ek_tigerone": "16.2",
+          "preis_netto": "34",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44977,
+      "name": "Buddha Seeds Gorila feminisiert",
+      "sku_eltern": "BS-BGF",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150573_997940_pimcore.jpg",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "BS-BGF50",
+          "inhalt": "50 Stück",
+          "pack_lieferant": "50 Seeds",
+          "vk_tigerone": "348",
+          "ek_tigerone": "174",
+          "preis_netto": "344",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44979,
+      "name": "Buddha Seeds Kraken feminisiert",
+      "sku_eltern": "BS-KRAK-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148477_987386_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "BS-BKF3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.95",
+          "preis_netto": "22",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "BS-KRAK-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "70",
+          "ek_tigerone": "32.4",
+          "preis_netto": "69",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44981,
+      "name": "Buddha Seeds Magnum Auto feminisiert",
+      "sku_eltern": "BS-SEMBUS05F9000",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148365_986826_pimcore.png",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "BS-BMF3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.95",
+          "preis_netto": "22",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "BS-SEMBUS05F9000-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "70",
+          "ek_tigerone": "32.4",
+          "preis_netto": "69",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "BS-BMF50",
+          "inhalt": "50 Stück",
+          "pack_lieferant": "50 Seeds",
+          "vk_tigerone": "290",
+          "ek_tigerone": "145.8",
+          "preis_netto": "287",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44983,
+      "name": "Buddha Seeds Medikit CBD Auto feminisiert",
+      "sku_eltern": "BS-MK-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547,
+        2309
+      ],
+      "kategorien_namen": [
+        "Automatisch",
+        "CBD Samen"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149481_992457_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "BS-BSBMKAF3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.5",
+          "preis_netto": "19",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "BS-BSBMKAF10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "60",
+          "ek_tigerone": "27.7",
+          "preis_netto": "59",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44985,
+      "name": "Buddha Seeds Medikit CBD feminisiert",
+      "sku_eltern": "BS-MK-Fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548,
+        2309
+      ],
+      "kategorien_namen": [
+        "Feminisiert",
+        "CBD Samen"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149291_991507_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "BS-BSBMKF3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.95",
+          "preis_netto": "22",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "BS-BSBMKF10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "70",
+          "ek_tigerone": "32.4",
+          "preis_netto": "69",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44987,
+      "name": "Buddha Seeds Purple Kush Auto feminisiert",
+      "sku_eltern": "BS-SBSF050004",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148368_986841_pimcore.png",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "BS-BBPKF3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.5",
+          "preis_netto": "19",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "BS-SBSF050004-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "60",
+          "ek_tigerone": "27.7",
+          "preis_netto": "59",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44989,
+      "name": "Buddha Seeds Purple Kush feminisiert",
+      "sku_eltern": "BS-PKUSH-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150112_995630_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "BS-BBPK3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.5",
+          "preis_netto": "19",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "BS-BBPK10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "60",
+          "ek_tigerone": "27.7",
+          "preis_netto": "59",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44991,
+      "name": "Buddha Seeds Quasar Auto feminisiert",
+      "sku_eltern": "BS-SBSF050001",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148370_986851_pimcore.png",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "BS-SBSF050001-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "70",
+          "ek_tigerone": "32.4",
+          "preis_netto": "69",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44993,
+      "name": "Buddha Seeds Quasar feminisiert",
+      "sku_eltern": "BS-QUASAR-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149389_991997_pimcore.png",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "BS-BSBQF3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "23",
+          "ek_tigerone": "9.95",
+          "preis_netto": "22",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44995,
+      "name": "Buddha Seeds Red Dwarf Auto feminisiert",
+      "sku_eltern": "BS-SBS4602",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148366_986831_pimcore.png",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "BS-BRDF3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "18",
+          "ek_tigerone": "7.5",
+          "preis_netto": "17",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "BS-SBS4602-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "52.5",
+          "ek_tigerone": "24.25",
+          "preis_netto": "51",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "BS-BRDF50",
+          "inhalt": "50 Stück",
+          "pack_lieferant": "50 Seeds",
+          "vk_tigerone": "215",
+          "ek_tigerone": "109.13",
+          "preis_netto": "212",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 44997,
+      "name": "Buddha Seeds Syrup Auto feminisiert",
+      "sku_eltern": "BS-SBSF050003",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148367_986836_pimcore.png",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "BS-BSF3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.5",
+          "preis_netto": "19",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "BS-SBSF050003-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "60",
+          "ek_tigerone": "27.7",
+          "preis_netto": "59",
+          "auslaufartikel": false
+        }
+      ]
+    },
+    {
+      "produkt_id": 44999,
+      "name": "Buddha Seeds Vesta Auto feminisiert",
+      "sku_eltern": "BS-VESTA-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149026_990177_pimcore.jpg",
+      "auslaufartikel": false,
+      "varianten": [
+        {
+          "sku_variante": "BS-BSBVF3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.5",
+          "preis_netto": "19",
+          "auslaufartikel": false
+        },
+        {
+          "sku_variante": "BS-BSBVF10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "60",
+          "ek_tigerone": "27.7",
+          "preis_netto": "59",
+          "auslaufartikel": true
+        }
+      ]
+    },
+    {
+      "produkt_id": 45001,
+      "name": "Buddha Seeds White Dwarf Auto feminisiert",
+      "sku_eltern": "BS-SBS3440",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148369_986846_pimcore.png",
+      "auslaufartikel": true,
+      "varianten": [
+        {
+          "sku_variante": "BS-BWDF3",
+          "inhalt": "3 Stück",
+          "pack_lieferant": "3 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "8.5",
+          "preis_netto": "19",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "BS-SBS3440-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "60",
+          "ek_tigerone": "27.7",
+          "preis_netto": "59",
+          "auslaufartikel": true
+        },
+        {
+          "sku_variante": "BS-BWDF50",
+          "inhalt": "50 Stück",
+          "pack_lieferant": "50 Seeds",
+          "vk_tigerone": "245",
+          "ek_tigerone": "124.65",
+          "preis_netto": "242",
+          "auslaufartikel": true
+        }
+      ]
+    }
+  ]
+}

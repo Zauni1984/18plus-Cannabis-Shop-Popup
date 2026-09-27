@@ -1,0 +1,762 @@
+[
+ {
+  "sku": "110002",
+  "name": "CenturionPro GC1 - Single Gentle Cut Bucker",
+  "ek": "1579.00",
+  "b2b_soll": "1736.90",
+  "b2b_wirkt": "1736.90",
+  "anbau_soll": "2052.70",
+  "anbau_wirkt": "1994.87",
+  "vk_netto": "1994.8685"
+ },
+ {
+  "sku": "112179",
+  "name": "CenturionPro Tabletop, Ersatzteil, Riemen",
+  "ek": "37.00",
+  "b2b_soll": "40.70",
+  "b2b_wirkt": "37.73",
+  "anbau_soll": "48.10",
+  "anbau_wirkt": "37.73",
+  "vk_netto": "37.7251"
+ },
+ {
+  "sku": "112180",
+  "name": "CenturionPro Tabletop, Ersatzteil, Sammelbeutel",
+  "ek": "87.72",
+  "b2b_soll": "96.49",
+  "b2b_wirkt": "96.49",
+  "anbau_soll": "114.04",
+  "anbau_wirkt": "96.55",
+  "vk_netto": "96.5527"
+ },
+ {
+  "sku": "112181",
+  "name": "CenturionPro Tabletop, Ersatzteil, Bürstwalze",
+  "ek": "113.22",
+  "b2b_soll": "124.54",
+  "b2b_wirkt": "124.54",
+  "anbau_soll": "147.19",
+  "anbau_wirkt": "125.97",
+  "vk_netto": "125.9650"
+ },
+ {
+  "sku": "111548",
+  "name": "Master Trimmer MT STANDARD 75",
+  "ek": "2690.00",
+  "b2b_soll": "2959.00",
+  "b2b_wirkt": "2959.00",
+  "anbau_soll": "3497.00",
+  "anbau_wirkt": "3149.50",
+  "vk_netto": "3149.4950"
+ },
+ {
+  "sku": "111549",
+  "name": "Master Trimmer GENTLE 75",
+  "ek": "3850.00",
+  "b2b_soll": "4235.00",
+  "b2b_wirkt": "4235.00",
+  "anbau_soll": "5005.00",
+  "anbau_wirkt": "4499.92",
+  "vk_netto": "4499.9150"
+ },
+ {
+  "sku": "111552",
+  "name": "Master Trimmer MT TUMBLER 200 PRO, variable speed",
+  "ek": "8500.00",
+  "b2b_soll": "9350.00",
+  "b2b_wirkt": "9350.00",
+  "anbau_soll": "11050.00",
+  "anbau_wirkt": "10657.45",
+  "vk_netto": "10657.4450"
+ },
+ {
+  "sku": "111553",
+  "name": "Master Trimmer MT TUMBLER 500 + Sauger",
+  "ek": "9750.00",
+  "b2b_soll": "10725.00",
+  "b2b_wirkt": "10725.00",
+  "anbau_soll": "12675.00",
+  "anbau_wirkt": "11599.92",
+  "vk_netto": "11599.9150"
+ },
+ {
+  "sku": "111554",
+  "name": "Master Trimmer LEAF COLLECTOR MT TUMBLER 500",
+  "ek": "760.00",
+  "b2b_soll": "836.00",
+  "b2b_wirkt": "836.00",
+  "anbau_soll": "988.00",
+  "anbau_wirkt": "903.28",
+  "vk_netto": "903.2750"
+ },
+ {
+  "sku": "111557",
+  "name": "Master Trimmer MT POCKET",
+  "ek": "550.00",
+  "b2b_soll": "605.00",
+  "b2b_wirkt": "605.00",
+  "anbau_soll": "715.00",
+  "anbau_wirkt": "670.50",
+  "vk_netto": "670.5000"
+ },
+ {
+  "sku": "111558",
+  "name": "Master Trimmer MT STANDARD 50",
+  "ek": "1480.00",
+  "b2b_soll": "1628.00",
+  "b2b_wirkt": "1628.00",
+  "anbau_soll": "1924.00",
+  "anbau_wirkt": "1651.18",
+  "vk_netto": "1651.1750"
+ },
+ {
+  "sku": "111560",
+  "name": "Master Trimmer MT PROFESSIONAL 50",
+  "ek": "2590.00",
+  "b2b_soll": "2849.00",
+  "b2b_wirkt": "2849.00",
+  "anbau_soll": "3367.00",
+  "anbau_wirkt": "2899.08",
+  "vk_netto": "2899.0750"
+ },
+ {
+  "sku": "111561",
+  "name": "Master Trimmer MT BUCKER 200",
+  "ek": "4350.00",
+  "b2b_soll": "4785.00",
+  "b2b_wirkt": "4599.92",
+  "anbau_soll": "5655.00",
+  "anbau_wirkt": "4599.92",
+  "vk_netto": "4599.9150"
+ },
+ {
+  "sku": "111562",
+  "name": "Master Trimmer MB BUCKER 500",
+  "ek": "5720.00",
+  "b2b_soll": "6292.00",
+  "b2b_wirkt": "6292.00",
+  "anbau_soll": "7436.00",
+  "anbau_wirkt": "7150.34",
+  "vk_netto": "7150.3350"
+ },
+ {
+  "sku": "111606",
+  "name": "Master Trimmer Ersatztrommel für MT 500, hybrid wet/dry (6,3",
+  "ek": "849.58",
+  "b2b_soll": "934.54",
+  "b2b_wirkt": "934.54",
+  "anbau_soll": "1104.45",
+  "anbau_wirkt": "990.67",
+  "vk_netto": "990.6663"
+ },
+ {
+  "sku": "111882",
+  "name": "Master Trimmer, Pollen Extractor Barrel, MTD200",
+  "ek": "648.90",
+  "b2b_soll": "713.79",
+  "b2b_wirkt": "713.79",
+  "anbau_soll": "843.57",
+  "anbau_wirkt": "779.66",
+  "vk_netto": "779.6579"
+ },
+ {
+  "sku": "112346",
+  "name": "Master Trimmer MT DRY 100 LiTE",
+  "ek": "930.00",
+  "b2b_soll": "1023.00",
+  "b2b_wirkt": "966.30",
+  "anbau_soll": "1209.00",
+  "anbau_wirkt": "966.30",
+  "vk_netto": "966.2965"
+ },
+ {
+  "sku": "112347",
+  "name": "Master Trimmer MX ICE 200 LITE",
+  "ek": "3600.00",
+  "b2b_soll": "3960.00",
+  "b2b_wirkt": "3151.18",
+  "anbau_soll": "4680.00",
+  "anbau_wirkt": "3151.18",
+  "vk_netto": "3151.1750"
+ },
+ {
+  "sku": "112348",
+  "name": "Master Trimmer MS SORTER 100 LiTE",
+  "ek": "155.25",
+  "b2b_soll": "170.78",
+  "b2b_wirkt": "170.78",
+  "anbau_soll": "201.83",
+  "anbau_wirkt": "184.79",
+  "vk_netto": "184.7850"
+ },
+ {
+  "sku": "112971",
+  "name": "Master Trimmer MB BUCKER 200 LiTE",
+  "ek": "2850.00",
+  "b2b_soll": "3135.00",
+  "b2b_wirkt": "2889.92",
+  "anbau_soll": "3705.00",
+  "anbau_wirkt": "2889.92",
+  "vk_netto": "2889.9150"
+ },
+ {
+  "sku": "112976",
+  "name": "Master Trimmer LIO 40 Freeze Dryer",
+  "ek": "7600.00",
+  "b2b_soll": "8360.00",
+  "b2b_wirkt": "7599.92",
+  "anbau_soll": "9880.00",
+  "anbau_wirkt": "7599.92",
+  "vk_netto": "7599.9150"
+ },
+ {
+  "sku": "109540",
+  "name": "Trimpro Bucker, inkl. Gestell",
+  "ek": "1850.00",
+  "b2b_soll": "2035.00",
+  "b2b_wirkt": "2035.00",
+  "anbau_soll": "2405.00",
+  "anbau_wirkt": "2352.86",
+  "vk_netto": "2352.8550"
+ },
+ {
+  "sku": "108452",
+  "name": "Twister T2, Erntemaschine & Sauger, für feuchte und trockene",
+  "ek": "14500.00",
+  "b2b_soll": "15950.00",
+  "b2b_wirkt": "14873.87",
+  "anbau_soll": "18850.00",
+  "anbau_wirkt": "14873.87",
+  "vk_netto": "14873.8650"
+ },
+ {
+  "sku": "109536",
+  "name": "Twister Quality Control Conveyor, Förderband zur Qualitätsko",
+  "ek": "3666.96",
+  "b2b_soll": "4033.66",
+  "b2b_wirkt": "3944.32",
+  "anbau_soll": "4767.05",
+  "anbau_wirkt": "3944.32",
+  "vk_netto": "3944.3150"
+ },
+ {
+  "sku": "109539",
+  "name": "Twister Feed Conveyor, Förderband zur Speisung (vorne)",
+  "ek": "3503.28",
+  "b2b_soll": "3853.61",
+  "b2b_wirkt": "3786.61",
+  "anbau_soll": "4554.26",
+  "anbau_wirkt": "3786.61",
+  "vk_netto": "3786.6050"
+ },
+ {
+  "sku": "109633",
+  "name": "Twister T4, Ersatzteil, Drive Belt, Antriebsriemen",
+  "ek": "25.00",
+  "b2b_soll": "27.50",
+  "b2b_wirkt": "27.50",
+  "anbau_soll": "32.50",
+  "anbau_wirkt": "31.01",
+  "vk_netto": "31.0050"
+ },
+ {
+  "sku": "109634",
+  "name": "Twister T4 Tandem Adapter",
+  "ek": "161.92",
+  "b2b_soll": "178.11",
+  "b2b_wirkt": "178.11",
+  "anbau_soll": "210.50",
+  "anbau_wirkt": "184.79",
+  "vk_netto": "184.7850"
+ },
+ {
+  "sku": "109636",
+  "name": "Twister T4, Standard 40 Slot, Ersatzteil, Tumbler Wet, Rotat",
+  "ek": "686.93",
+  "b2b_soll": "755.62",
+  "b2b_wirkt": "755.62",
+  "anbau_soll": "893.01",
+  "anbau_wirkt": "839.41",
+  "vk_netto": "839.4058"
+ },
+ {
+  "sku": "109637",
+  "name": "Twister T4, Ersatzteil, Leaf Collector, Euro",
+  "ek": "1080.00",
+  "b2b_soll": "1188.00",
+  "b2b_wirkt": "1163.78",
+  "anbau_soll": "1404.00",
+  "anbau_wirkt": "1163.78",
+  "vk_netto": "1163.7755"
+ },
+ {
+  "sku": "109645",
+  "name": "Twister T2, Ersatzteil, Tumbler V-Belt, schwarz",
+  "ek": "54.56",
+  "b2b_soll": "60.02",
+  "b2b_wirkt": "49.50",
+  "anbau_soll": "70.93",
+  "anbau_wirkt": "49.50",
+  "vk_netto": "49.4950"
+ },
+ {
+  "sku": "109646",
+  "name": "Twister T2, Ersatzteil, Doppelschalter, 2er-Pack",
+  "ek": "124.08",
+  "b2b_soll": "136.49",
+  "b2b_wirkt": "111.68",
+  "anbau_soll": "161.30",
+  "anbau_wirkt": "111.68",
+  "vk_netto": "111.6750"
+ },
+ {
+  "sku": "109648",
+  "name": "Twister T2, Rail Single, Ausrichtungsschiene für ein Gerät",
+  "ek": "507.76",
+  "b2b_soll": "558.54",
+  "b2b_wirkt": "558.54",
+  "anbau_soll": "660.09",
+  "anbau_wirkt": "570.50",
+  "vk_netto": "570.5000"
+ },
+ {
+  "sku": "109649",
+  "name": "Twister T2, Rail Extension, Erweiterung der Ausrichtungsschi",
+  "ek": "285.12",
+  "b2b_soll": "313.63",
+  "b2b_wirkt": "313.63",
+  "anbau_soll": "370.66",
+  "anbau_wirkt": "318.40",
+  "vk_netto": "318.3974"
+ },
+ {
+  "sku": "109650",
+  "name": "Twister T2, Ersatzteil, Tumbler Wet, Rotationstrommel für fe",
+  "ek": "1300.00",
+  "b2b_soll": "1430.00",
+  "b2b_wirkt": "875.55",
+  "anbau_soll": "1690.00",
+  "anbau_wirkt": "875.55",
+  "vk_netto": "875.5450"
+ },
+ {
+  "sku": "109651",
+  "name": "Twister T2, Ersatzteil, Tumbler Dry, Rotationstrommel für tr",
+  "ek": "989.00",
+  "b2b_soll": "1087.90",
+  "b2b_wirkt": "1087.90",
+  "anbau_soll": "1285.70",
+  "anbau_wirkt": "1259.58",
+  "vk_netto": "1259.5750"
+ },
+ {
+  "sku": "109652",
+  "name": "Twister T2, Ersatzteil, Clear Vacuum Bags, Sammelbeutel, 3 x",
+  "ek": "142.56",
+  "b2b_soll": "156.82",
+  "b2b_wirkt": "156.82",
+  "anbau_soll": "185.33",
+  "anbau_wirkt": "159.58",
+  "vk_netto": "159.5750"
+ },
+ {
+  "sku": "109653",
+  "name": "Twister T2, Ersatzteil, Vacuum Bag, Sammelbeutel, 40 Micron ",
+  "ek": "101.00",
+  "b2b_soll": "111.10",
+  "b2b_wirkt": "109.16",
+  "anbau_soll": "131.30",
+  "anbau_wirkt": "109.16",
+  "vk_netto": "109.1550"
+ },
+ {
+  "sku": "109654",
+  "name": "Twister T2, Ersatzteil, Nylon-Bürste",
+  "ek": "231.00",
+  "b2b_soll": "254.10",
+  "b2b_wirkt": "251.18",
+  "anbau_soll": "300.30",
+  "anbau_wirkt": "251.18",
+  "vk_netto": "251.1750"
+ },
+ {
+  "sku": "109655",
+  "name": "Twister T4, Ersatzteil, weiß Filter Bag, 300 Micron Schnittr",
+  "ek": "92.00",
+  "b2b_soll": "101.20",
+  "b2b_wirkt": "86.47",
+  "anbau_soll": "119.60",
+  "anbau_wirkt": "86.47",
+  "vk_netto": "86.4650"
+ },
+ {
+  "sku": "109656",
+  "name": "Twister T4, Ersatzteil, White (Dry) Filter Bag, Sammelbeutel",
+  "ek": "129.00",
+  "b2b_soll": "141.90",
+  "b2b_wirkt": "138.57",
+  "anbau_soll": "167.70",
+  "anbau_wirkt": "138.57",
+  "vk_netto": "138.5654"
+ },
+ {
+  "sku": "109657",
+  "name": "Twister T4, Ersatzteil, Nylon-Bürste",
+  "ek": "169.00",
+  "b2b_soll": "185.90",
+  "b2b_wirkt": "183.95",
+  "anbau_soll": "219.70",
+  "anbau_wirkt": "183.95",
+  "vk_netto": "183.9450"
+ },
+ {
+  "sku": "109658",
+  "name": "Twister T6 Trimmer, Erntemaschine & Sauger, für feuchte und ",
+  "ek": "3675.00",
+  "b2b_soll": "4042.50",
+  "b2b_wirkt": "4042.50",
+  "anbau_soll": "4777.50",
+  "anbau_wirkt": "4120.15",
+  "vk_netto": "4120.1453"
+ },
+ {
+  "sku": "110579",
+  "name": "Twister B4 Bucker & Gestell, 75kg/h",
+  "ek": "18990.00",
+  "b2b_soll": "20889.00",
+  "b2b_wirkt": "20159.58",
+  "anbau_soll": "24687.00",
+  "anbau_wirkt": "20159.58",
+  "vk_netto": "20159.5750"
+ },
+ {
+  "sku": "110979",
+  "name": "Twister T2 Hopper Assy, Einfülltrichter",
+  "ek": "300.00",
+  "b2b_soll": "330.00",
+  "b2b_wirkt": "330.00",
+  "anbau_soll": "390.00",
+  "anbau_wirkt": "335.21",
+  "vk_netto": "335.2050"
+ },
+ {
+  "sku": "111155",
+  "name": "Twister Trimmer, Euro, BatchOne",
+  "ek": "19600.00",
+  "b2b_soll": "21560.00",
+  "b2b_wirkt": "20999.92",
+  "anbau_soll": "25480.00",
+  "anbau_wirkt": "20999.92",
+  "vk_netto": "20999.9150"
+ },
+ {
+  "sku": "111161",
+  "name": "Twister T4, Trim Saver, CS-12E, Euro",
+  "ek": "3333.44",
+  "b2b_soll": "3666.78",
+  "b2b_wirkt": "3529.33",
+  "anbau_soll": "4333.47",
+  "anbau_wirkt": "3529.33",
+  "vk_netto": "3529.3250"
+ },
+ {
+  "sku": "111163",
+  "name": "Twister T2, Leaf Collector, Euro",
+  "ek": "1404.48",
+  "b2b_soll": "1544.93",
+  "b2b_wirkt": "1544.93",
+  "anbau_soll": "1825.82",
+  "anbau_wirkt": "1763.78",
+  "vk_netto": "1763.7755"
+ },
+ {
+  "sku": "111164",
+  "name": "Twister Tandem T2 Trimming System mit Leaf Collectors, EU-Pl",
+  "ek": "31500.00",
+  "b2b_soll": "34650.00",
+  "b2b_wirkt": "25966.30",
+  "anbau_soll": "40950.00",
+  "anbau_wirkt": "25966.30",
+  "vk_netto": "25966.2965"
+ },
+ {
+  "sku": "111165",
+  "name": "Twister T4 Rails, Triple",
+  "ek": "1596.00",
+  "b2b_soll": "1755.60",
+  "b2b_wirkt": "1424.29",
+  "anbau_soll": "2074.80",
+  "anbau_wirkt": "1424.29",
+  "vk_netto": "1424.2850"
+ },
+ {
+  "sku": "111166",
+  "name": "Twister Tandem T4 Trimming System mit Leaf Collectors",
+  "ek": "20546.55",
+  "b2b_soll": "22601.21",
+  "b2b_wirkt": "18901.66",
+  "anbau_soll": "26710.52",
+  "anbau_wirkt": "18901.66",
+  "vk_netto": "18901.6579"
+ },
+ {
+  "sku": "111167",
+  "name": "Twister T4, Stand Assy",
+  "ek": "396.00",
+  "b2b_soll": "435.60",
+  "b2b_wirkt": "419.24",
+  "anbau_soll": "514.80",
+  "anbau_wirkt": "419.24",
+  "vk_netto": "419.2377"
+ },
+ {
+  "sku": "111168",
+  "name": "Twister Tandem T4 Trimming System mit Trim Savers",
+  "ek": "24918.79",
+  "b2b_soll": "27410.67",
+  "b2b_wirkt": "25579.78",
+  "anbau_soll": "32394.43",
+  "anbau_wirkt": "25579.78",
+  "vk_netto": "25579.7755"
+ },
+ {
+  "sku": "111184",
+  "name": "Twister T4, Ersatzteil-Set",
+  "ek": "822.43",
+  "b2b_soll": "904.67",
+  "b2b_wirkt": "904.67",
+  "anbau_soll": "1069.16",
+  "anbau_wirkt": "1002.87",
+  "vk_netto": "1002.8685"
+ },
+ {
+  "sku": "111187",
+  "name": "Twister T6, Tumbler, extreme",
+  "ek": "550.00",
+  "b2b_soll": "605.00",
+  "b2b_wirkt": "587.31",
+  "anbau_soll": "715.00",
+  "anbau_wirkt": "587.31",
+  "vk_netto": "587.3050"
+ },
+ {
+  "sku": "111188",
+  "name": "Twister T6, Filter Bag, weiß, 300 Micron",
+  "ek": "69.00",
+  "b2b_soll": "75.90",
+  "b2b_wirkt": "74.71",
+  "anbau_soll": "89.70",
+  "anbau_wirkt": "74.71",
+  "vk_netto": "74.7050"
+ },
+ {
+  "sku": "111338",
+  "name": "Twister CHEVRON, DRIVE WHEEL, T4",
+  "ek": "40.50",
+  "b2b_soll": "44.55",
+  "b2b_wirkt": "26.81",
+  "anbau_soll": "52.65",
+  "anbau_wirkt": "26.81",
+  "vk_netto": "26.8050"
+ },
+ {
+  "sku": "112244",
+  "name": "Twister T6, Ersatzteil, Cartridge, Assy, Helix Blade",
+  "ek": "848.00",
+  "b2b_soll": "932.80",
+  "b2b_wirkt": "913.78",
+  "anbau_soll": "1102.40",
+  "anbau_wirkt": "913.78",
+  "vk_netto": "913.7755"
+ },
+ {
+  "sku": "112245",
+  "name": "Twister T6, Ersatzteil, Lid, Assy",
+  "ek": "387.50",
+  "b2b_soll": "426.25",
+  "b2b_wirkt": "418.40",
+  "anbau_soll": "503.75",
+  "anbau_wirkt": "418.40",
+  "vk_netto": "418.3974"
+ },
+ {
+  "sku": "112349",
+  "name": "Twister T2, Ersatzteil-Set",
+  "ek": "1000.56",
+  "b2b_soll": "1100.62",
+  "b2b_wirkt": "1056.50",
+  "anbau_soll": "1300.73",
+  "anbau_wirkt": "1056.50",
+  "vk_netto": "1056.5000"
+ },
+ {
+  "sku": "112694",
+  "name": "Twister Cuff Hose, Left Hand Spiral ,6''",
+  "ek": "55.00",
+  "b2b_soll": "60.50",
+  "b2b_wirkt": "60.50",
+  "anbau_soll": "71.50",
+  "anbau_wirkt": "64.27",
+  "vk_netto": "64.2650"
+ },
+ {
+  "sku": "112723",
+  "name": "Twister T6 Hopper Assy, Einfülltrichter KONSI",
+  "ek": "78.00",
+  "b2b_soll": "85.80",
+  "b2b_wirkt": "85.80",
+  "anbau_soll": "101.40",
+  "anbau_wirkt": "90.18",
+  "vk_netto": "90.1843"
+ },
+ {
+  "sku": "112729",
+  "name": "Twister T2, Erntemaschine für feuchte und trockene Ernte (nu",
+  "ek": "13000.00",
+  "b2b_soll": "14300.00",
+  "b2b_wirkt": "14300.00",
+  "anbau_soll": "16900.00",
+  "anbau_wirkt": "15402.92",
+  "vk_netto": "15402.9150"
+ },
+ {
+  "sku": "112735",
+  "name": "Twister Batchone Go Trimmer",
+  "ek": "1911.00",
+  "b2b_soll": "2102.10",
+  "b2b_wirkt": "2102.10",
+  "anbau_soll": "2484.30",
+  "anbau_wirkt": "2449.92",
+  "vk_netto": "2449.9150"
+ },
+ {
+  "sku": "113056",
+  "name": "Twister T2 Washer, Flat, 10,.22ID x .44OD, SS",
+  "ek": "4.25",
+  "b2b_soll": "4.68",
+  "b2b_wirkt": "4.30",
+  "anbau_soll": "5.53",
+  "anbau_wirkt": "4.30",
+  "vk_netto": "4.30"
+ },
+ {
+  "sku": "113063",
+  "name": "Twister T6 Brush, Nylon",
+  "ek": "165.00",
+  "b2b_soll": "181.50",
+  "b2b_wirkt": "181.50",
+  "anbau_soll": "214.50",
+  "anbau_wirkt": "192.51",
+  "vk_netto": "192.5066"
+ },
+ {
+  "sku": "113065",
+  "name": "Twister Cuff, Hose,, 5', FOR RH Spriral Hose",
+  "ek": "69.66",
+  "b2b_soll": "76.63",
+  "b2b_wirkt": "76.63",
+  "anbau_soll": "90.56",
+  "anbau_wirkt": "85.06",
+  "vk_netto": "85.0550"
+ },
+ {
+  "sku": "113070",
+  "name": "Twister T4, Ersatzteile, Tumbler, Standard , Packaged",
+  "ek": "1268.50",
+  "b2b_soll": "1395.35",
+  "b2b_wirkt": "1395.35",
+  "anbau_soll": "1649.05",
+  "anbau_wirkt": "1545.92",
+  "vk_netto": "1545.9150"
+ },
+ {
+  "sku": "113188",
+  "name": "Twister T4, Erntemaschine für feuchte und trockene Ernte, Si",
+  "ek": "6650.00",
+  "b2b_soll": "7315.00",
+  "b2b_wirkt": "6784.06",
+  "anbau_soll": "8645.00",
+  "anbau_wirkt": "6784.06",
+  "vk_netto": "6784.0550"
+ },
+ {
+  "sku": "113304",
+  "name": "Twister Cure Puck Gen1",
+  "ek": "530.00",
+  "b2b_soll": "583.00",
+  "b2b_wirkt": "583.00",
+  "anbau_soll": "689.00",
+  "anbau_wirkt": "663.78",
+  "vk_netto": "663.7755"
+ },
+ {
+  "sku": "103643",
+  "name": "Pollinator, für bis zu 500 g Pflanzenmaterial",
+  "ek": "513.66",
+  "b2b_soll": "565.03",
+  "b2b_wirkt": "565.03",
+  "anbau_soll": "667.76",
+  "anbau_wirkt": "621.76",
+  "vk_netto": "621.7632"
+ },
+ {
+  "sku": "103650",
+  "name": "maXtractor Extraktionssieb, 125 µm, Polyamidgewebe, pro lfm ",
+  "ek": "16.25",
+  "b2b_soll": "17.88",
+  "b2b_wirkt": "16.64",
+  "anbau_soll": "21.13",
+  "anbau_wirkt": "16.64",
+  "vk_netto": "16.6350"
+ },
+ {
+  "sku": "111563",
+  "name": "Qnubu Press Kompact 2.0 Manual 600 kg, Heißdruckpresse, 6 x ",
+  "ek": "155.00",
+  "b2b_soll": "170.50",
+  "b2b_wirkt": "170.50",
+  "anbau_soll": "201.50",
+  "anbau_wirkt": "200.76",
+  "vk_netto": "200.7550"
+ },
+ {
+  "sku": "112141",
+  "name": "VitaLink Buddy, 250 ml",
+  "ek": "8.00",
+  "b2b_soll": "8.80",
+  "b2b_wirkt": "6.54",
+  "anbau_soll": "10.40",
+  "anbau_wirkt": "6.54",
+  "vk_netto": "6.54"
+ },
+ {
+  "sku": "112142",
+  "name": "VitaLink Buddy, 1 L",
+  "ek": "15.00",
+  "b2b_soll": "16.50",
+  "b2b_wirkt": "14.19",
+  "anbau_soll": "19.50",
+  "anbau_wirkt": "14.19",
+  "vk_netto": "14.1873"
+ },
+ {
+  "sku": "112144",
+  "name": "VitaLink Buddy, 10 L",
+  "ek": "571.00",
+  "b2b_soll": "628.10",
+  "b2b_wirkt": "97.39",
+  "anbau_soll": "742.30",
+  "anbau_wirkt": "97.39",
+  "vk_netto": "97.3850"
+ },
+ {
+  "sku": "109850",
+  "name": "Vitaponix VitaRoot, Pflanzenhilfsmittel, 1 Liter",
+  "ek": "26.00",
+  "b2b_soll": "28.60",
+  "b2b_wirkt": "28.60",
+  "anbau_soll": "33.80",
+  "anbau_wirkt": "32.02",
+  "vk_netto": "32.0150"
+ }
+]

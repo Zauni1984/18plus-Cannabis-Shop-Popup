@@ -1,0 +1,79 @@
+/* Kasse: Bestellübersicht auf schmalen Bildschirmen umbrechen statt abschneiden */
+@media (max-width: 767px) {
+  .woocommerce-checkout table.woocommerce-checkout-review-order-table {
+    display: block;
+    width: 100% !important;
+    max-width: 100%;
+    table-layout: auto;
+    border-collapse: collapse;
+    margin: 5px;
+    width: calc(100% - 10px) !important;
+  }
+  .woocommerce-checkout table.woocommerce-checkout-review-order-table thead { display: none; }
+  .woocommerce-checkout table.woocommerce-checkout-review-order-table tbody,
+  .woocommerce-checkout table.woocommerce-checkout-review-order-table tfoot { display: block; width: 100%; }
+  .woocommerce-checkout table.woocommerce-checkout-review-order-table tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 4px 12px;
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+    border-bottom: 1px solid rgba(0,0,0,.08);
+  }
+  .woocommerce-checkout table.woocommerce-checkout-review-order-table th,
+  .woocommerce-checkout table.woocommerce-checkout-review-order-table td {
+    display: block;
+    width: auto !important;
+    max-width: 100%;
+    padding: 5px !important;
+    border: 0 !important;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+  }
+  .woocommerce-checkout table.woocommerce-checkout-review-order-table th {
+    flex: 1 1 50%;
+    text-align: left !important;
+    font-weight: 600;
+  }
+  .woocommerce-checkout table.woocommerce-checkout-review-order-table td {
+    flex: 1 1 40%;
+    text-align: right !important;
+  }
+  /* Produktzeile: Name über volle Breite, Preis darunter rechts */
+  .woocommerce-checkout table.woocommerce-checkout-review-order-table tr.cart_item td.product-name {
+    flex: 1 1 100%;
+    text-align: left !important;
+  }
+  .woocommerce-checkout table.woocommerce-checkout-review-order-table tr.cart_item td.product-total {
+    flex: 1 1 100%;
+  }
+  /* Versandzeile: langes Etikett bekommt die ganze Breite */
+  .woocommerce-checkout table.woocommerce-checkout-review-order-table tr.woocommerce-shipping-totals td {
+    flex: 1 1 100%;
+  }
+  /* Versandarten: Auswahl und Preis umbrechen lassen */
+  .woocommerce-checkout #shipping_method { margin: 0; padding: 0; list-style: none; }
+  .woocommerce-checkout #shipping_method li {
+    margin: 0 0 6px;
+    padding: 0;
+    text-align: right;
+  }
+  .woocommerce-checkout #shipping_method label {
+    display: inline;
+    overflow-wrap: break-word;
+  }
+  /* Germanized-Zusätze sollen nicht aufblähen */
+  .woocommerce-checkout table.woocommerce-checkout-review-order-table .tax_label,
+  .woocommerce-checkout table.woocommerce-checkout-review-order-table .includes_tax,
+  .woocommerce-checkout table.woocommerce-checkout-review-order-table .wc-gzd-cart-info {
+    display: block;
+    margin: 2px 0 0;
+    font-size: .82em;
+    line-height: 1.35;
+    opacity: .8;
+  }
+  .woocommerce-checkout table.woocommerce-checkout-review-order-table tr.cart_item .wc-gzd-cart-info { text-align: left; }
+}

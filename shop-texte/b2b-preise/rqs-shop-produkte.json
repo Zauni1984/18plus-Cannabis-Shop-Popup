@@ -1,0 +1,1248 @@
+[
+ {
+  "id": 31211,
+  "name": "RQS Starterset F1-Hybride",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31205,
+  "name": "RQS Apollo F1",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31199,
+  "name": "RQS Hyperion F1",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31193,
+  "name": "RQS Cosmos F1",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31187,
+  "name": "RQS Orion F1",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31181,
+  "name": "RQS Titan F1",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31175,
+  "name": "RQS Medusa F1",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31169,
+  "name": "RQS Epsilon F1",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31163,
+  "name": "RQS Milky Way F1",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31158,
+  "name": "RQS Atlas F1",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31153,
+  "name": "RQS Gaia F1",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31148,
+  "name": "RQS Orbital Banana F1",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31143,
+  "name": "RQS Astro Lemonade F1",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31138,
+  "name": "RQS Cosmic Cheddar F1",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31136,
+  "name": "RQS iGrowCan",
+  "sku": "HJ-5516917",
+  "status": "publish",
+  "type": "simple"
+ },
+ {
+  "id": 31134,
+  "name": "RQS Starterset CBD",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31130,
+  "name": "RQS CBD Mix",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31124,
+  "name": "RQS Euphoria",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31118,
+  "name": "RQS Royal Medic",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31112,
+  "name": "RQS Fast Eddy Automatic CBD",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31106,
+  "name": "RQS Stress Killer Automatic CBD",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31100,
+  "name": "RQS Solomatic CBD",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31094,
+  "name": "RQS Joanne’s CBD",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31088,
+  "name": "RQS Purplematic CBD",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31082,
+  "name": "RQS Tatanka Pure CBD",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31076,
+  "name": "RQS Royal CBDV Automatic",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31070,
+  "name": "RQS Royal CBG Automatic",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31064,
+  "name": "RQS Royal THCV",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31058,
+  "name": "RQS Painkiller XL",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31052,
+  "name": "RQS Medical Mass",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31046,
+  "name": "RQS Royal Highness",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31040,
+  "name": "RQS Dance World",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31038,
+  "name": "RQS Starterset Autoflower",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31034,
+  "name": "RQS Autoflowering Mix",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31029,
+  "name": "RQS Royal AK Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31023,
+  "name": "RQS Royal Kush Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31017,
+  "name": "RQS Purple Punch Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31011,
+  "name": "RQS Royal Jack Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 31005,
+  "name": "RQS Do-Si-Dos Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30999,
+  "name": "RQS Amnesia Haze Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30993,
+  "name": "RQS Bubble Kush Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30987,
+  "name": "RQS Diesel Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30981,
+  "name": "RQS Quick One",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30976,
+  "name": "RQS Purple Lemonade Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30970,
+  "name": "RQS Easy Bud",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30965,
+  "name": "RQS Pink Mist Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30959,
+  "name": "RQS Royal Dwarf",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30953,
+  "name": "RQS Wedding Cake Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30947,
+  "name": "RQS Royal Gorilla Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30941,
+  "name": "RQS Purple Queen Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30935,
+  "name": "RQS HulkBerry Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30929,
+  "name": "RQS Sherbet Queen Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30923,
+  "name": "RQS Royal Critical Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30917,
+  "name": "RQS Apple Fritter Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30911,
+  "name": "RQS Watermelon Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30905,
+  "name": "RQS Royal Cookies Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30899,
+  "name": "RQS Royal Runtz Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30893,
+  "name": "RQS Cookies Gelato Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30887,
+  "name": "RQS Fat Banana Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30881,
+  "name": "RQS White Widow Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30875,
+  "name": "RQS Grape Ape Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30869,
+  "name": "RQS Pink Runtz Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30863,
+  "name": "RQS Granddaddy Purple Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30857,
+  "name": "RQS Royal Cheese Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30852,
+  "name": "RQS Tropicana Cookies Purple Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30846,
+  "name": "RQS Trainwreck Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30840,
+  "name": "RQS Cherry Pie Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30834,
+  "name": "RQS Sweet Skunk Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30828,
+  "name": "RQS Sweet ZZ Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30823,
+  "name": "RQS Special Queen 1 Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30817,
+  "name": "RQS Haze Berry Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30811,
+  "name": "RQS Triple G Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30805,
+  "name": "RQS North Thunderfuck Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30799,
+  "name": "RQS Northern Light Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30793,
+  "name": "RQS Green Gelato Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30787,
+  "name": "RQS Royal Creamatic",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30781,
+  "name": "RQS Royal Bluematic",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30775,
+  "name": "RQS Mimosa Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30770,
+  "name": "RQS Mexican Rush Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30764,
+  "name": "RQS Royal Haze Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30758,
+  "name": "RQS Blue Cheese Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 30753,
+  "name": "RQS Sticky Queen Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 28031,
+  "name": "Royal Queen Seeds Einmachglas 400ml",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18221,
+  "name": "Royal Queen Seeds White Widow",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18220,
+  "name": "Royal Queen Seeds Wedding Gelato",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18218,
+  "name": "Royal Queen Seeds Wedding Cake",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18217,
+  "name": "Royal Queen Seeds Watermelon",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18216,
+  "name": "Royal Queen Seeds Tropicana Cookies Purple",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18215,
+  "name": "Royal Queen Seeds Triple G",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18214,
+  "name": "Royal Queen Seeds Trainwreck",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18212,
+  "name": "Royal Queen Seeds Sweet ZZ",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18210,
+  "name": "Royal Queen Seeds Strawberry Cough",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18209,
+  "name": "Royal Queen Seeds Sticky Queen",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18208,
+  "name": "Royal Queen Seeds Speedy Chile – Fast",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18206,
+  "name": "Royal Queen Seeds Special Kush #1",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18203,
+  "name": "Royal Queen Seeds Skunk XL",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18202,
+  "name": "Royal Queen Seeds Shogun",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18200,
+  "name": "Royal Queen Seeds Sherbet Queen",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18199,
+  "name": "Royal Queen Seeds Royal Skywalker",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18198,
+  "name": "Royal Queen Seeds Royal Runtz",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 28625,
+  "name": "Royal Queen Seeds Tatanka Pure CBD – 3 Samen",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 26396,
+  "name": "Royal Queen Seeds Smartphone Mikroskop 100x Vergrößerung",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18219,
+  "name": "Royal Queen Seeds Wedding Crasher",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18213,
+  "name": "Royal Queen Seeds Tangie",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18211,
+  "name": "Royal Queen Seeds Sundae Driver",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18207,
+  "name": "Royal Queen Seeds Special Queen #1",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18205,
+  "name": "Royal Queen Seeds Sour Diesel",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18204,
+  "name": "Royal Queen Seeds Somango XL",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18201,
+  "name": "Royal Queen Seeds Shining Silver Haze",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18197,
+  "name": "Royal Queen Seeds Royal Moby",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18196,
+  "name": "Royal Queen Seeds Royal Gorilla",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18195,
+  "name": "Royal Queen Seeds Royal Domina",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18194,
+  "name": "Royal Queen Seeds Royal Cookies",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18193,
+  "name": "Royal Queen Seeds Royal Cheese – Fast",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18192,
+  "name": "Royal Queen Seeds Royal AK",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18191,
+  "name": "Royal Queen Seeds Purple Queen",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18190,
+  "name": "Royal Queen Seeds Purple Punch",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18189,
+  "name": "Royal Queen Seeds Power Flower",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18188,
+  "name": "Royal Queen Seeds Pink Runtz",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18187,
+  "name": "Royal Queen Seeds Pink Mist",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18186,
+  "name": "Royal Queen Seeds Pink Gorilla",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18185,
+  "name": "Royal Queen Seeds Pineapple Kush",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18184,
+  "name": "Royal Queen Seeds O.G. Kush",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18183,
+  "name": "Royal Queen Seeds Northern Light",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18182,
+  "name": "Royal Queen Seeds North Thunderfuck",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18181,
+  "name": "Royal Queen Seeds Mother Gorilla",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18180,
+  "name": "Royal Queen Seeds Mimosa",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18179,
+  "name": "Royal Queen Seeds Mexican Rush",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18178,
+  "name": "Royal Queen Seeds Lemon Skunk",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18177,
+  "name": "Royal Queen Seeds Lemon Shining Silver Haze",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18176,
+  "name": "Royal Queen Seeds Legendary OG Punch",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18175,
+  "name": "Royal Queen Seeds Larry OG",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18174,
+  "name": "Royal Queen Seeds Kali Dog",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18173,
+  "name": "Royal Queen Seeds Ice",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18172,
+  "name": "Royal Queen Seeds HulkBerry",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18171,
+  "name": "Royal Queen Seeds Honey Cream – Fast",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18170,
+  "name": "Royal Queen Seeds Haze Berry",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18169,
+  "name": "Royal Queen Seeds Gushers",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18168,
+  "name": "Royal Queen Seeds Green Gelato",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18167,
+  "name": "Royal Queen Seeds Green Crack Punch",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18166,
+  "name": "Royal Queen Seeds Grape Ape",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18165,
+  "name": "Royal Queen Seeds Granddaddy Purple",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18164,
+  "name": "Royal Queen Seeds Fruit Spirit",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18163,
+  "name": "Royal Queen Seeds Forbidden Fruit",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18161,
+  "name": "Royal Queen Seeds Fat Banana",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18160,
+  "name": "Royal Queen Seeds El Patron",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18159,
+  "name": "Royal Queen Seeds Do-si-dos",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18158,
+  "name": "Royal Queen Seeds Critical Kush",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18157,
+  "name": "Royal Queen Seeds Critical",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18156,
+  "name": "Royal Queen Seeds Cookies Gelato",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18155,
+  "name": "Royal Queen Seeds Chocolate Haze",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18154,
+  "name": "Royal Queen Seeds Cherry Pie",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18153,
+  "name": "Royal Queen Seeds Cereal Milk",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18152,
+  "name": "Royal Queen Seeds Candy Kush Express – Fast",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18151,
+  "name": "Royal Queen Seeds Bubblegum XL",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18150,
+  "name": "Royal Queen Seeds Bubble Kush",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18149,
+  "name": "Royal Queen Seeds Blue Mystic",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18148,
+  "name": "Royal Queen Seeds Blue Gelato",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18147,
+  "name": "Royal Queen Seeds Blue Cheese",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18146,
+  "name": "Royal Queen Seeds Biscotti",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18145,
+  "name": "Royal Queen Seeds Apple Fritter",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18144,
+  "name": "Royal Queen Seeds Amnesia Haze",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 22580,
+  "name": "Royal Queen Seeds AMG",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 18142,
+  "name": "Royal Queen Seeds Alien OG",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 12648,
+  "name": "Royal Queen Seeds x Tyson Punch Pie",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 12643,
+  "name": "Royal Queen Seeds x Tyson Gelato 44",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 12638,
+  "name": "Royal Queen Seeds x Tyson Dynamite Diesel",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 12633,
+  "name": "Royal Queen Seeds x Tyson NYC Sour D Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 12628,
+  "name": "Royal Queen Seeds x Tyson GOAT’lato Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 12623,
+  "name": "Royal Queen Seeds x Tyson Corkscrew Auto",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 12619,
+  "name": "Royal Queen Seeds Titan F1",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 12615,
+  "name": "Royal Queen Seeds Milky Way F1",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 12611,
+  "name": "Royal Queen Seeds Hyperion F1",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 12607,
+  "name": "Royal Queen Seeds Gaia F1",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 12603,
+  "name": "Royal Queen Seeds Epsilon F1",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 12599,
+  "name": "Royal Queen Seeds Apollo F1",
+  "sku": "HJ-8875145",
+  "status": "publish",
+  "type": "variable"
+ },
+ {
+  "id": 11295,
+  "name": "Royal Queen Seeds Orion F1-Hybrid",
+  "sku": null,
+  "status": null,
+  "type": null
+ },
+ {
+  "id": 11291,
+  "name": "Royal Queen Seeds Medusa F1-Hybrid",
+  "sku": null,
+  "status": null,
+  "type": null
+ }
+]

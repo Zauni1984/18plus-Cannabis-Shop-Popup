@@ -1,0 +1,969 @@
+{
+ "hinweis": "Woo Wholesale Pro deckelt den Rollenpreis auf regular_price. Bei diesen Produkten liegt die Handelsspanne unter dem Aufschlag, der Rollenpreis entspricht daher dem normalen VK. Die Meta-Werte sind gesetzt und greifen, sobald der VK angehoben wird.",
+ "anzahl": 107,
+ "produkte": [
+  {
+   "produkt_id": 35170,
+   "produkt": "AutoPot AQUAvalve5 Top-Float Silikonstopfen",
+   "vk_netto": "0.33",
+   "b2b_soll": "0.33",
+   "b2b_effektiv": "0.33",
+   "anbau_soll": "0.39",
+   "anbau_effektiv": "0.33"
+  },
+  {
+   "produkt_id": 35206,
+   "produkt": "AutoPot Topf 8,5Liter",
+   "vk_netto": "3.85",
+   "b2b_soll": "3.63",
+   "b2b_effektiv": "3.63",
+   "anbau_soll": "4.29",
+   "anbau_effektiv": "3.85"
+  },
+  {
+   "produkt_id": 35225,
+   "produkt": "Wasserfilter 2x Ø16mm",
+   "vk_netto": "8.32",
+   "b2b_soll": "7.15",
+   "b2b_effektiv": "7.15",
+   "anbau_soll": "8.45",
+   "anbau_effektiv": "8.32"
+  },
+  {
+   "produkt_id": 35239,
+   "produkt": "Autopot Schlauch 9mm laufender Meter",
+   "vk_netto": "1.34",
+   "b2b_soll": "1.32",
+   "b2b_effektiv": "1.32",
+   "anbau_soll": "1.56",
+   "anbau_effektiv": "1.34"
+  },
+  {
+   "produkt_id": 35243,
+   "produkt": "Autopot SYSTEM 1Pot 48x 15L 400L Tank",
+   "vk_netto": "1260.42",
+   "b2b_soll": "1081.21",
+   "b2b_effektiv": "1081.21",
+   "anbau_soll": "1277.8",
+   "anbau_effektiv": "1260.42"
+  },
+  {
+   "produkt_id": 35253,
+   "produkt": "Autopot SYSTEM 2Pot 16x 8,5L 100L Tank",
+   "vk_netto": "285.63",
+   "b2b_soll": "250.95",
+   "b2b_effektiv": "250.95",
+   "anbau_soll": "296.58",
+   "anbau_effektiv": "285.63"
+  },
+  {
+   "produkt_id": 35257,
+   "produkt": "Autopot SYSTEM 1Pot 8x 15L 100L Tank",
+   "vk_netto": "252.02",
+   "b2b_soll": "217.92",
+   "b2b_effektiv": "217.92",
+   "anbau_soll": "257.54",
+   "anbau_effektiv": "252.02"
+  },
+  {
+   "produkt_id": 35259,
+   "produkt": "Autopot SYSTEM 1Pot 12x 15L 100L Tank",
+   "vk_netto": "352.94",
+   "b2b_soll": "301.84",
+   "b2b_effektiv": "301.84",
+   "anbau_soll": "356.72",
+   "anbau_effektiv": "352.94"
+  },
+  {
+   "produkt_id": 35265,
+   "produkt": "Autopot SYSTEM 2Pot 60x 15L 225L Tank",
+   "vk_netto": "924.29",
+   "b2b_soll": "869.76",
+   "b2b_effektiv": "869.76",
+   "anbau_soll": "1027.9",
+   "anbau_effektiv": "924.29"
+  },
+  {
+   "produkt_id": 35267,
+   "produkt": "Autopot SYSTEM 2Pot 48x 15L 400L Tank",
+   "vk_netto": "798.24",
+   "b2b_soll": "755.02",
+   "b2b_effektiv": "755.02",
+   "anbau_soll": "892.29",
+   "anbau_effektiv": "798.24"
+  },
+  {
+   "produkt_id": 35273,
+   "produkt": "Autopot SYSTEM 2Pot 16x 15L 225L Tank",
+   "vk_netto": "302.44",
+   "b2b_soll": "282.38",
+   "b2b_effektiv": "282.38",
+   "anbau_soll": "333.72",
+   "anbau_effektiv": "302.44"
+  },
+  {
+   "produkt_id": 35285,
+   "produkt": "Autopot SYSTEM 2Pot 8x 15L 47L Tank",
+   "vk_netto": "134.37",
+   "b2b_soll": "121.31",
+   "b2b_effektiv": "121.31",
+   "anbau_soll": "143.36",
+   "anbau_effektiv": "134.37"
+  },
+  {
+   "produkt_id": 35291,
+   "produkt": "Autopot SYSTEM 2Pot 16x 15L 100L Tank",
+   "vk_netto": "302.44",
+   "b2b_soll": "267.26",
+   "b2b_effektiv": "267.26",
+   "anbau_soll": "315.85",
+   "anbau_effektiv": "302.44"
+  },
+  {
+   "produkt_id": 35356,
+   "produkt": "Terra Aquatica Pro Bloom 60 ml",
+   "vk_netto": "14.20",
+   "b2b_soll": "12.54",
+   "b2b_effektiv": "12.54",
+   "anbau_soll": "14.82",
+   "anbau_effektiv": "14.20"
+  },
+  {
+   "produkt_id": 35370,
+   "produkt": "Terra Aquatica NovaMax Bloom 5 Liter",
+   "vk_netto": "58.74",
+   "b2b_soll": "51.7",
+   "b2b_effektiv": "51.70",
+   "anbau_soll": "61.1",
+   "anbau_effektiv": "58.74"
+  },
+  {
+   "produkt_id": 35373,
+   "produkt": "Terra Aquatica NovaMax Grow 5 Liter",
+   "vk_netto": "58.74",
+   "b2b_soll": "51.7",
+   "b2b_effektiv": "51.70",
+   "anbau_soll": "61.1",
+   "anbau_effektiv": "58.74"
+  },
+  {
+   "produkt_id": 35472,
+   "produkt": "AC Infinity 3-Kammer Grinder schwarz 5 cm",
+   "vk_netto": "17.64",
+   "b2b_soll": "15.14",
+   "b2b_effektiv": "15.14",
+   "anbau_soll": "17.89",
+   "anbau_effektiv": "17.64"
+  },
+  {
+   "produkt_id": 35474,
+   "produkt": "AC Infinity 3-Kammer Grinder schwarz 6,25 cm",
+   "vk_netto": "20.16",
+   "b2b_soll": "17.29",
+   "b2b_effektiv": "17.29",
+   "anbau_soll": "20.44",
+   "anbau_effektiv": "20.16"
+  },
+  {
+   "produkt_id": 35477,
+   "produkt": "AC Infinity Advance Grow Zelt-System 60x120x180",
+   "vk_netto": "696.64",
+   "b2b_soll": "625.3",
+   "b2b_effektiv": "625.30",
+   "anbau_soll": "738.99",
+   "anbau_effektiv": "696.64"
+  },
+  {
+   "produkt_id": 35482,
+   "produkt": "AC Infinity Advance Grow Zelt-System 60x60x180",
+   "vk_netto": "536.97",
+   "b2b_soll": "460.72",
+   "b2b_effektiv": "460.72",
+   "anbau_soll": "544.49",
+   "anbau_effektiv": "536.97"
+  },
+  {
+   "produkt_id": 35487,
+   "produkt": "AC Infinity Advance Grow Zelt-System 90x90x180",
+   "vk_netto": "738.66",
+   "b2b_soll": "663.03",
+   "b2b_effektiv": "663.03",
+   "anbau_soll": "783.58",
+   "anbau_effektiv": "738.66"
+  },
+  {
+   "produkt_id": 35492,
+   "produkt": "AC Infinity Advance Grow Zelt-System PRO 120x120x200",
+   "vk_netto": "1360.50",
+   "b2b_soll": "1203.24",
+   "b2b_effektiv": "1203.24",
+   "anbau_soll": "1422.01",
+   "anbau_effektiv": "1360.50"
+  },
+  {
+   "produkt_id": 35519,
+   "produkt": "AC Infinity CLOUDFORGE T3 Luftbefeuchter 4.5L",
+   "vk_netto": "67.22",
+   "b2b_soll": "60.34",
+   "b2b_effektiv": "60.34",
+   "anbau_soll": "71.31",
+   "anbau_effektiv": "67.22"
+  },
+  {
+   "produkt_id": 35522,
+   "produkt": "AC Infinity CLOUDFORGE T7 Luftbefeuchter 15L",
+   "vk_netto": "167.23",
+   "b2b_soll": "147.9",
+   "b2b_effektiv": "147.90",
+   "anbau_soll": "174.79",
+   "anbau_effektiv": "167.23"
+  },
+  {
+   "produkt_id": 35525,
+   "produkt": "AC Infinity CLOUDLAB 632, Advance Grow Zelt 90x60",
+   "vk_netto": "158.82",
+   "b2b_soll": "140.46",
+   "b2b_effektiv": "140.46",
+   "anbau_soll": "166",
+   "anbau_effektiv": "158.82"
+  },
+  {
+   "produkt_id": 35528,
+   "produkt": "AC Infinity CLOUDLAB 642, Advance Grow Zelt 120x60",
+   "vk_netto": "184.03",
+   "b2b_soll": "162.76",
+   "b2b_effektiv": "162.76",
+   "anbau_soll": "192.35",
+   "anbau_effektiv": "184.03"
+  },
+  {
+   "produkt_id": 35531,
+   "produkt": "AC Infinity CLOUDLAB 722, Advance Grow Zelt 60x60",
+   "vk_netto": "150.42",
+   "b2b_soll": "133.03",
+   "b2b_effektiv": "133.03",
+   "anbau_soll": "157.22",
+   "anbau_effektiv": "150.42"
+  },
+  {
+   "produkt_id": 35536,
+   "produkt": "AC Infinity CLOUDLAB 733, Advance Grow Zelt 90x90",
+   "vk_netto": "184.03",
+   "b2b_soll": "162.76",
+   "b2b_effektiv": "162.76",
+   "anbau_soll": "192.35",
+   "anbau_effektiv": "184.03"
+  },
+  {
+   "produkt_id": 35539,
+   "produkt": "AC Infinity CLOUDLAB 844, Advance Grow Zelt 120x120",
+   "vk_netto": "226.05",
+   "b2b_soll": "199.91",
+   "b2b_effektiv": "199.91",
+   "anbau_soll": "236.26",
+   "anbau_effektiv": "226.05"
+  },
+  {
+   "produkt_id": 35542,
+   "produkt": "AC Infinity CLOUDLAB 866, Advance Grow Zelt 150x150",
+   "vk_netto": "268.07",
+   "b2b_soll": "237.08",
+   "b2b_effektiv": "237.08",
+   "anbau_soll": "280.19",
+   "anbau_effektiv": "268.07"
+  },
+  {
+   "produkt_id": 35545,
+   "produkt": "AC Infinity CLOUDLAB 894, Advance Grow Zelt 240 x120",
+   "vk_netto": "368.91",
+   "b2b_soll": "326.26",
+   "b2b_effektiv": "326.26",
+   "anbau_soll": "385.58",
+   "anbau_effektiv": "368.91"
+  },
+  {
+   "produkt_id": 35547,
+   "produkt": "AC Infinity CLOUDLINE Pro S10 250 mm",
+   "vk_netto": "276.47",
+   "b2b_soll": "244.52",
+   "b2b_effektiv": "244.52",
+   "anbau_soll": "288.98",
+   "anbau_effektiv": "276.47"
+  },
+  {
+   "produkt_id": 35552,
+   "produkt": "AC Infinity CLOUDLINE Pro S12 300 mm",
+   "vk_netto": "377.31",
+   "b2b_soll": "333.7",
+   "b2b_effektiv": "333.70",
+   "anbau_soll": "394.37",
+   "anbau_effektiv": "377.31"
+  },
+  {
+   "produkt_id": 35557,
+   "produkt": "AC Infinity CLOUDLINE Pro S4 100 mm",
+   "vk_netto": "83.19",
+   "b2b_soll": "73.58",
+   "b2b_effektiv": "73.58",
+   "anbau_soll": "86.96",
+   "anbau_effektiv": "83.19"
+  },
+  {
+   "produkt_id": 35567,
+   "produkt": "AC Infinity CLOUDLINE Pro S8 200 mm",
+   "vk_netto": "167.23",
+   "b2b_soll": "147.9",
+   "b2b_effektiv": "147.90",
+   "anbau_soll": "174.79",
+   "anbau_effektiv": "167.23"
+  },
+  {
+   "produkt_id": 35572,
+   "produkt": "AC Infinity CLOUDLINE Pro T4 100 mm",
+   "vk_netto": "125.21",
+   "b2b_soll": "110.74",
+   "b2b_effektiv": "110.74",
+   "anbau_soll": "130.87",
+   "anbau_effektiv": "125.21"
+  },
+  {
+   "produkt_id": 35577,
+   "produkt": "AC Infinity CLOUDLINE Pro T6 150 mm",
+   "vk_netto": "158.82",
+   "b2b_soll": "140.46",
+   "b2b_effektiv": "140.46",
+   "anbau_soll": "166",
+   "anbau_effektiv": "158.82"
+  },
+  {
+   "produkt_id": 35582,
+   "produkt": "AC Infinity CLOUDLINE Pro T8 200 mm",
+   "vk_netto": "209.24",
+   "b2b_soll": "185.05",
+   "b2b_effektiv": "185.05",
+   "anbau_soll": "218.7",
+   "anbau_effektiv": "209.24"
+  },
+  {
+   "produkt_id": 35584,
+   "produkt": "AC Infinity CLOUDRAY A6 manuell schwenkbar",
+   "vk_netto": "50.41",
+   "b2b_soll": "45.25",
+   "b2b_effektiv": "45.25",
+   "anbau_soll": "53.48",
+   "anbau_effektiv": "50.41"
+  },
+  {
+   "produkt_id": 35587,
+   "produkt": "AC Infinity CLOUDRAY S6 automatische Oszillation Gen2",
+   "vk_netto": "58.82",
+   "b2b_soll": "52.79",
+   "b2b_effektiv": "52.79",
+   "anbau_soll": "62.39",
+   "anbau_effektiv": "58.82"
+  },
+  {
+   "produkt_id": 35613,
+   "produkt": "AC Infinity HYDRONE 5 Pflanzen-Luftentfeuchter – 10 Stufen, 2L, Dual-Duct",
+   "vk_netto": "159.58",
+   "b2b_soll": "138.99",
+   "b2b_effektiv": "138.99",
+   "anbau_soll": "164.26",
+   "anbau_effektiv": "159.58"
+  },
+  {
+   "produkt_id": 35624,
+   "produkt": "AC Infinity Luftfilter-Set AC-FKS4 100mm",
+   "vk_netto": "142.02",
+   "b2b_soll": "125.6",
+   "b2b_effektiv": "125.60",
+   "anbau_soll": "148.43",
+   "anbau_effektiv": "142.02"
+  },
+  {
+   "produkt_id": 35627,
+   "produkt": "AC Infinity Luftfilter-Set AC-FKS6 150mm",
+   "vk_netto": "200.84",
+   "b2b_soll": "177.62",
+   "b2b_effektiv": "177.62",
+   "anbau_soll": "209.91",
+   "anbau_effektiv": "200.84"
+  },
+  {
+   "produkt_id": 35633,
+   "produkt": "AC Infinity Luftfilter-Set PRO+ AC-FKT6 150mm",
+   "vk_netto": "276.47",
+   "b2b_soll": "244.52",
+   "b2b_effektiv": "244.52",
+   "anbau_soll": "288.98",
+   "anbau_effektiv": "276.47"
+  },
+  {
+   "produkt_id": 35636,
+   "produkt": "AC Infinity Luftfilter-Set PRO+ AC-FKT8 200mm",
+   "vk_netto": "377.31",
+   "b2b_soll": "333.7",
+   "b2b_effektiv": "333.70",
+   "anbau_soll": "394.37",
+   "anbau_effektiv": "377.31"
+  },
+  {
+   "produkt_id": 35655,
+   "produkt": "AC Infinity UIS Wireless 1-zu-1 Sender &amp; Empfänger",
+   "vk_netto": "36.13",
+   "b2b_soll": "31.94",
+   "b2b_effektiv": "31.94",
+   "anbau_soll": "37.75",
+   "anbau_effektiv": "36.13"
+  },
+  {
+   "produkt_id": 35699,
+   "produkt": "AC Infinity Twist-Spin-Trimmer 43 cm mit Klarsichtkuppel",
+   "vk_netto": "133.61",
+   "b2b_soll": "118.16",
+   "b2b_effektiv": "118.16",
+   "anbau_soll": "139.65",
+   "anbau_effektiv": "133.61"
+  },
+  {
+   "produkt_id": 35701,
+   "produkt": "AC Infinity Twist-Spin-Trimmer 49 cm mit Klarsichtkuppel",
+   "vk_netto": "158.82",
+   "b2b_soll": "140.65",
+   "b2b_effektiv": "140.65",
+   "anbau_soll": "166.22",
+   "anbau_effektiv": "158.82"
+  },
+  {
+   "produkt_id": 35703,
+   "produkt": "AC Infinity CLOUDCOM B1 Smart Thermo-Hygrometer mit 3,6 m Sensorsonde",
+   "vk_netto": "28.56",
+   "b2b_soll": "25.27",
+   "b2b_effektiv": "25.27",
+   "anbau_soll": "29.86",
+   "anbau_effektiv": "28.56"
+  },
+  {
+   "produkt_id": 35705,
+   "produkt": "AC Infinity CLOUDCOM B2 Smart Thermo-Hygrometer mit internem Klimasensor",
+   "vk_netto": "21.84",
+   "b2b_soll": "19.32",
+   "b2b_effektiv": "19.32",
+   "anbau_soll": "22.83",
+   "anbau_effektiv": "21.84"
+  },
+  {
+   "produkt_id": 35707,
+   "produkt": "AC Infinity CLOUDRAY A9 Grow-Zelt-Clip-Ventilator 225 mm manuell",
+   "vk_netto": "60.50",
+   "b2b_soll": "52.04",
+   "b2b_effektiv": "52.04",
+   "anbau_soll": "61.5",
+   "anbau_effektiv": "60.50"
+  },
+  {
+   "produkt_id": 35712,
+   "produkt": "AC Infinity HYDRONE 7 Pflanzen-Luftentfeuchter – 10 Stufen, Dual-Duct, 2 L",
+   "vk_netto": "256.22",
+   "b2b_soll": "239.92",
+   "b2b_effektiv": "239.92",
+   "anbau_soll": "283.54",
+   "anbau_effektiv": "256.22"
+  },
+  {
+   "produkt_id": 35714,
+   "produkt": "AC Infinity Hydroponic Meter PRO Kit pH- und EC-Messgerät",
+   "vk_netto": "158.82",
+   "b2b_soll": "140.65",
+   "b2b_effektiv": "140.65",
+   "anbau_soll": "166.22",
+   "anbau_effektiv": "158.82"
+  },
+  {
+   "produkt_id": 35724,
+   "produkt": "AC Infinity IONBEAM S11 Vollspektrum LED Leiste 27,9 cm 4er-Pack",
+   "vk_netto": "91.60",
+   "b2b_soll": "81.11",
+   "b2b_effektiv": "81.11",
+   "anbau_soll": "95.86",
+   "anbau_effektiv": "91.60"
+  },
+  {
+   "produkt_id": 35726,
+   "produkt": "AC Infinity IONBEAM S16 Vollspektrum LED Leiste 40,7 cm 4er-Pack",
+   "vk_netto": "100.00",
+   "b2b_soll": "88.55",
+   "b2b_effektiv": "88.55",
+   "anbau_soll": "104.65",
+   "anbau_effektiv": "100.00"
+  },
+  {
+   "produkt_id": 35734,
+   "produkt": "AC Infinity SUNCORE H3 Heizmatte 25,4 x 52,7 cm",
+   "vk_netto": "25.20",
+   "b2b_soll": "22.3",
+   "b2b_effektiv": "22.30",
+   "anbau_soll": "26.35",
+   "anbau_effektiv": "25.20"
+  },
+  {
+   "produkt_id": 35736,
+   "produkt": "AC Infinity SUNCORE H5 Heizmatte 50,8 x 52,7 cm",
+   "vk_netto": "36.97",
+   "b2b_soll": "32.69",
+   "b2b_effektiv": "32.69",
+   "anbau_soll": "38.64",
+   "anbau_effektiv": "36.97"
+  },
+  {
+   "produkt_id": 35738,
+   "produkt": "AC Infinity SUNCORE H7 Heizmatte 121,9 x 52,7 cm",
+   "vk_netto": "52.93",
+   "b2b_soll": "46.81",
+   "b2b_effektiv": "46.81",
+   "anbau_soll": "55.32",
+   "anbau_effektiv": "52.93"
+  },
+  {
+   "produkt_id": 35740,
+   "produkt": "AC Infinity SUNCORE S3 Heizmatte 25,4 x 52,7 cm",
+   "vk_netto": "20.16",
+   "b2b_soll": "17.83",
+   "b2b_effektiv": "17.83",
+   "anbau_soll": "21.07",
+   "anbau_effektiv": "20.16"
+  },
+  {
+   "produkt_id": 35742,
+   "produkt": "AC Infinity Stecklings-Gewächshaus LED 5x8",
+   "vk_netto": "73.10",
+   "b2b_soll": "67.54",
+   "b2b_effektiv": "67.54",
+   "anbau_soll": "79.82",
+   "anbau_effektiv": "73.10"
+  },
+  {
+   "produkt_id": 35744,
+   "produkt": "AC Infinity Stecklings-Gewächshaus LED mit Heizmatte 5x8",
+   "vk_netto": "91.60",
+   "b2b_soll": "84.63",
+   "b2b_effektiv": "84.63",
+   "anbau_soll": "100.02",
+   "anbau_effektiv": "91.60"
+  },
+  {
+   "produkt_id": 35754,
+   "produkt": "AC Infinity pH-Meter PRO Kit mit austauschbarer Sonde",
+   "vk_netto": "83.19",
+   "b2b_soll": "73.68",
+   "b2b_effektiv": "73.68",
+   "anbau_soll": "87.07",
+   "anbau_effektiv": "83.19"
+  },
+  {
+   "produkt_id": 35756,
+   "produkt": "Dimlux Xplore Add-on UV",
+   "vk_netto": "75.55",
+   "b2b_soll": "74.64",
+   "b2b_effektiv": "74.64",
+   "anbau_soll": "88.21",
+   "anbau_effektiv": "75.55"
+  },
+  {
+   "produkt_id": 35763,
+   "produkt": "Dimlux Xplore 730 W 9X 3.0",
+   "vk_netto": "335.29",
+   "b2b_soll": "293.48",
+   "b2b_effektiv": "293.48",
+   "anbau_soll": "346.84",
+   "anbau_effektiv": "335.29"
+  },
+  {
+   "produkt_id": 35768,
+   "produkt": "Dimlux Xtreme 550 W NIR MKII",
+   "vk_netto": "839.50",
+   "b2b_soll": "790.63",
+   "b2b_effektiv": "790.63",
+   "anbau_soll": "934.38",
+   "anbau_effektiv": "839.50"
+  },
+  {
+   "produkt_id": 35773,
+   "produkt": "Dimlux Xtreme 800 W NIR MKII",
+   "vk_netto": "1007.56",
+   "b2b_soll": "1005.68",
+   "b2b_effektiv": "1005.68",
+   "anbau_soll": "1188.53",
+   "anbau_effektiv": "1007.56"
+  },
+  {
+   "produkt_id": 35782,
+   "produkt": "Ersatzfilter für Can Zuluftfilter Ø125mm und Ø160mm",
+   "vk_netto": "5.80",
+   "b2b_soll": "5.45",
+   "b2b_effektiv": "5.45",
+   "anbau_soll": "6.44",
+   "anbau_effektiv": "5.80"
+  },
+  {
+   "produkt_id": 35784,
+   "produkt": "Ersatzfilter für Can Zuluftfilter Ø200mm und Ø250mm",
+   "vk_netto": "7.14",
+   "b2b_soll": "6.05",
+   "b2b_effektiv": "6.05",
+   "anbau_soll": "7.15",
+   "anbau_effektiv": "7.14"
+  },
+  {
+   "produkt_id": 35798,
+   "produkt": "Can Zuluftfilter Ø160mm",
+   "vk_netto": "37.73",
+   "b2b_soll": "31.99",
+   "b2b_effektiv": "31.99",
+   "anbau_soll": "37.8",
+   "anbau_effektiv": "37.73"
+  },
+  {
+   "produkt_id": 35801,
+   "produkt": "Can Zuluftfilter Ø125mm",
+   "vk_netto": "37.73",
+   "b2b_soll": "31.99",
+   "b2b_effektiv": "31.99",
+   "anbau_soll": "37.8",
+   "anbau_effektiv": "37.73"
+  },
+  {
+   "produkt_id": 35810,
+   "produkt": "Can-Fan RK Ø125/310m³/h",
+   "vk_netto": "41.93",
+   "b2b_soll": "46.12",
+   "b2b_effektiv": "41.93",
+   "anbau_soll": "54.51",
+   "anbau_effektiv": "41.93"
+  },
+  {
+   "produkt_id": 35812,
+   "produkt": "Can Zuluftfilter Ø200mm",
+   "vk_netto": "41.93",
+   "b2b_soll": "40.81",
+   "b2b_effektiv": "40.81",
+   "anbau_soll": "48.23",
+   "anbau_effektiv": "41.93"
+  },
+  {
+   "produkt_id": 35821,
+   "produkt": "Can Original Filter 9000 200m³/h ohne Anschlussflansch",
+   "vk_netto": "45.29",
+   "b2b_soll": "38.41",
+   "b2b_effektiv": "38.41",
+   "anbau_soll": "45.4",
+   "anbau_effektiv": "45.29"
+  },
+  {
+   "produkt_id": 35829,
+   "produkt": "Can Zuluftfilter Ø250mm",
+   "vk_netto": "50.34",
+   "b2b_soll": "46.28",
+   "b2b_effektiv": "46.28",
+   "anbau_soll": "54.69",
+   "anbau_effektiv": "50.34"
+  },
+  {
+   "produkt_id": 35840,
+   "produkt": "Can-Fan RK Ø250/830m³/h",
+   "vk_netto": "67.14",
+   "b2b_soll": "62.7",
+   "b2b_effektiv": "62.70",
+   "anbau_soll": "74.1",
+   "anbau_effektiv": "67.14"
+  },
+  {
+   "produkt_id": 35846,
+   "produkt": "Can-Fan RK Ø200/820m³/h",
+   "vk_netto": "83.95",
+   "b2b_soll": "75.64",
+   "b2b_effektiv": "75.64",
+   "anbau_soll": "89.39",
+   "anbau_effektiv": "83.95"
+  },
+  {
+   "produkt_id": 35861,
+   "produkt": "Can-Fan Satellite 4A Stufentrafo",
+   "vk_netto": "201.60",
+   "b2b_soll": "171.6",
+   "b2b_effektiv": "171.60",
+   "anbau_soll": "202.8",
+   "anbau_effektiv": "201.60"
+  },
+  {
+   "produkt_id": 35868,
+   "produkt": "Can Original Filter 150BFT 2100m³/h Ø315mm",
+   "vk_netto": "294.03",
+   "b2b_soll": "286",
+   "b2b_effektiv": "286.00",
+   "anbau_soll": "338",
+   "anbau_effektiv": "294.03"
+  },
+  {
+   "produkt_id": 35874,
+   "produkt": "Can-Fan MAX Pro Ø315/3180m³/h 3Speed AC",
+   "vk_netto": "336.05",
+   "b2b_soll": "331.32",
+   "b2b_effektiv": "331.32",
+   "anbau_soll": "391.56",
+   "anbau_effektiv": "336.05"
+  },
+  {
+   "produkt_id": 35880,
+   "produkt": "Can-Fan MAX Pro Ø315/2956m³/h EC Motor",
+   "vk_netto": "545.38",
+   "b2b_soll": "478.24",
+   "b2b_effektiv": "478.24",
+   "anbau_soll": "565.19",
+   "anbau_effektiv": "545.38"
+  },
+  {
+   "produkt_id": 35883,
+   "produkt": "Can-Fan Q-MAX Ø315mm / 2850m³/h EC Motor",
+   "vk_netto": "588.15",
+   "b2b_soll": "534.08",
+   "b2b_effektiv": "534.08",
+   "anbau_soll": "631.19",
+   "anbau_effektiv": "588.15"
+  },
+  {
+   "produkt_id": 35907,
+   "produkt": "Prima Klima PK125EC-THC 0-680m³/h Ø125mm",
+   "vk_netto": "218.40",
+   "b2b_soll": "187",
+   "b2b_effektiv": "187.00",
+   "anbau_soll": "221",
+   "anbau_effektiv": "218.40"
+  },
+  {
+   "produkt_id": 35932,
+   "produkt": "Phonic Trap Ø315mm 1 laufender Meter",
+   "vk_netto": "12.52",
+   "b2b_soll": "11",
+   "b2b_effektiv": "11.00",
+   "anbau_soll": "13",
+   "anbau_effektiv": "12.52"
+  },
+  {
+   "produkt_id": 35934,
+   "produkt": "Phonic Trap Ø127mm 3 Meter Stück",
+   "vk_netto": "15.04",
+   "b2b_soll": "14.08",
+   "b2b_effektiv": "14.08",
+   "anbau_soll": "16.64",
+   "anbau_effektiv": "15.04"
+  },
+  {
+   "produkt_id": 35936,
+   "produkt": "Phonic Trap Ø102mm 3 Meter Stück",
+   "vk_netto": "16.72",
+   "b2b_soll": "14.3",
+   "b2b_effektiv": "14.30",
+   "anbau_soll": "16.9",
+   "anbau_effektiv": "16.72"
+  },
+  {
+   "produkt_id": 35942,
+   "produkt": "Phonic Trap Ø315mm 10 Meter Stück",
+   "vk_netto": "83.95",
+   "b2b_soll": "77",
+   "b2b_effektiv": "77.00",
+   "anbau_soll": "91",
+   "anbau_effektiv": "83.95"
+  },
+  {
+   "produkt_id": 35952,
+   "produkt": "Aluflexschlauch Ø204mm 1 laufender Meter",
+   "vk_netto": "2.52",
+   "b2b_soll": "2.42",
+   "b2b_effektiv": "2.42",
+   "anbau_soll": "2.86",
+   "anbau_effektiv": "2.52"
+  },
+  {
+   "produkt_id": 36133,
+   "produkt": "Canna Rhizotonic 10 Liter",
+   "vk_netto": "184.79",
+   "b2b_soll": "159.09",
+   "b2b_effektiv": "159.09",
+   "anbau_soll": "188.02",
+   "anbau_effektiv": "184.79"
+  },
+  {
+   "produkt_id": 36515,
+   "produkt": "Humintech BioHealth WSG TH BS 1 kg",
+   "vk_netto": "25.13",
+   "b2b_soll": "22.25",
+   "b2b_effektiv": "22.25",
+   "anbau_soll": "26.3",
+   "anbau_effektiv": "25.13"
+  },
+  {
+   "produkt_id": 36569,
+   "produkt": "Jiffy Quelltöpfe Ø41mm",
+   "vk_netto": "0.12",
+   "b2b_soll": "0.11",
+   "b2b_effektiv": "0.11",
+   "anbau_soll": "0.13",
+   "anbau_effektiv": "0.12"
+  },
+  {
+   "produkt_id": 36659,
+   "produkt": "Pollenshaker XL",
+   "vk_netto": "37.73",
+   "b2b_soll": "32.56",
+   "b2b_effektiv": "32.56",
+   "anbau_soll": "38.48",
+   "anbau_effektiv": "37.73"
+  },
+  {
+   "produkt_id": 36679,
+   "produkt": "Nohlex Babywaage NXB-168",
+   "vk_netto": "41.93",
+   "b2b_soll": "43.45",
+   "b2b_effektiv": "41.93",
+   "anbau_soll": "51.35",
+   "anbau_effektiv": "41.93"
+  },
+  {
+   "produkt_id": 36683,
+   "produkt": "Nohlex Paketwaage NSF890",
+   "vk_netto": "41.93",
+   "b2b_soll": "36.19",
+   "b2b_effektiv": "36.19",
+   "anbau_soll": "42.77",
+   "anbau_effektiv": "41.93"
+  },
+  {
+   "produkt_id": 36697,
+   "produkt": "Nohlex Tischwaage NTP500X",
+   "vk_netto": "27.65",
+   "b2b_soll": "24.75",
+   "b2b_effektiv": "24.75",
+   "anbau_soll": "29.25",
+   "anbau_effektiv": "27.65"
+  },
+  {
+   "produkt_id": 36700,
+   "produkt": "Hydroponik leicht gemacht",
+   "vk_netto": "32.69",
+   "b2b_soll": "30.8",
+   "b2b_effektiv": "30.80",
+   "anbau_soll": "36.4",
+   "anbau_effektiv": "32.69"
+  },
+  {
+   "produkt_id": 36707,
+   "produkt": "Cannabis-Anbau mit LED",
+   "vk_netto": "16.64",
+   "b2b_soll": "15.05",
+   "b2b_effektiv": "15.05",
+   "anbau_soll": "17.78",
+   "anbau_effektiv": "16.64"
+  },
+  {
+   "produkt_id": 36709,
+   "produkt": "Deine eigenen Stecklinge",
+   "vk_netto": "10.76",
+   "b2b_soll": "9.85",
+   "b2b_effektiv": "9.85",
+   "anbau_soll": "11.64",
+   "anbau_effektiv": "10.76"
+  },
+  {
+   "produkt_id": 36711,
+   "produkt": "Die Behandlung mit Cannabis",
+   "vk_netto": "21.68",
+   "b2b_soll": "19.8",
+   "b2b_effektiv": "19.80",
+   "anbau_soll": "23.4",
+   "anbau_effektiv": "21.68"
+  },
+  {
+   "produkt_id": 36713,
+   "produkt": "Enzyklopädie der Cannabiszucht",
+   "vk_netto": "37.82",
+   "b2b_soll": "36.52",
+   "b2b_effektiv": "36.52",
+   "anbau_soll": "43.16",
+   "anbau_effektiv": "37.82"
+  },
+  {
+   "produkt_id": 36715,
+   "produkt": "Marihuana Anbaugrundlagen",
+   "vk_netto": "18.45",
+   "b2b_soll": "19.91",
+   "b2b_effektiv": "18.45",
+   "anbau_soll": "23.53",
+   "anbau_effektiv": "18.45"
+  },
+  {
+   "produkt_id": 36717,
+   "produkt": "Marihuana drinnen",
+   "vk_netto": "28.57",
+   "b2b_soll": "26.07",
+   "b2b_effektiv": "26.07",
+   "anbau_soll": "30.81",
+   "anbau_effektiv": "28.57"
+  },
+  {
+   "produkt_id": 36723,
+   "produkt": "Therapeutisches Cannabis",
+   "vk_netto": "13.45",
+   "b2b_soll": "13.75",
+   "b2b_effektiv": "13.45",
+   "anbau_soll": "16.25",
+   "anbau_effektiv": "13.45"
+  },
+  {
+   "produkt_id": 36749,
+   "produkt": "Birchmeier Rückenspritze PR3 Profi-Star 5 Liter",
+   "vk_netto": "199.9",
+   "b2b_soll": "132",
+   "b2b_effektiv": "119.00",
+   "anbau_soll": "156",
+   "anbau_effektiv": "119.00"
+  },
+  {
+   "produkt_id": 36774,
+   "produkt": "Diamond Folie 1,2m x 10m",
+   "vk_netto": "25.13",
+   "b2b_soll": "23.1",
+   "b2b_effektiv": "23.10",
+   "anbau_soll": "27.3",
+   "anbau_effektiv": "25.13"
+  },
+  {
+   "produkt_id": 36782,
+   "produkt": "Schwarz/Weiss Folie 85µm EasyGrow 2m x 10m",
+   "vk_netto": "16.72",
+   "b2b_soll": "15.4",
+   "b2b_effektiv": "15.40",
+   "anbau_soll": "18.2",
+   "anbau_effektiv": "16.72"
+  },
+  {
+   "produkt_id": 36888,
+   "produkt": "Lichtfalle 200mm",
+   "vk_netto": "22.61",
+   "b2b_soll": "19.25",
+   "b2b_effektiv": "19.25",
+   "anbau_soll": "22.75",
+   "anbau_effektiv": "22.61"
+  },
+  {
+   "produkt_id": 36902,
+   "produkt": "Plagron Perlite Palette 39x 60 Liter",
+   "vk_netto": "671.43",
+   "b2b_soll": "605",
+   "b2b_effektiv": "605.00",
+   "anbau_soll": "715",
+   "anbau_effektiv": "671.43"
+  }
+ ]
+}

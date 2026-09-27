@@ -1,0 +1,3037 @@
+{
+  "marke": "Sweet Seeds",
+  "shop": "hanfjack.de",
+  "pwb_brand_term_id": 11573,
+  "quelle": "Tiger One Katalog (Google-Sheet-Export)",
+  "stand": "2026-09-10",
+  "status_aller_produkte": "draft",
+  "anzahl_produkte": 99,
+  "anzahl_varianten": 184,
+  "preisregel": "regular_price = abrunden(VK_TigerOne x 0,99) auf ganze Euro, Eingabe NETTO (Shop rechnet +7% MwSt.)",
+  "stammdaten": {
+    "tax_status": "taxable",
+    "tax_class": "reduzierter-preis",
+    "shipping_class": "paket-standard",
+    "delivery_time_id": 5417,
+    "attribut": "pa_inhalt (ID 2, global, variantenbildend)",
+    "weight": "0.01",
+    "manage_stock": false,
+    "stock_status": "onbackorder",
+    "backorders": "no"
+  },
+  "packungsgroessen": {
+    "4 Stück": 91,
+    "5 Stück": 4,
+    "7 Stück": 87,
+    "10 Stück": 2
+  },
+  "bluehtypen": {
+    "Autoflowering": 56,
+    "Early/fast": 20,
+    "Photoperiod": 22,
+    "k. A.": 1
+  },
+  "nicht_gelistet": [
+    {
+      "sku": "SS-J47XL-AUTO-FEM-25",
+      "name": "Jack 47 XL Auto feminisiert - 25 Seeds",
+      "grund": "Tiger One liefert fuer diese Packungsgroesse keinen Preis (N/A). Das Produkt selbst ist mit 4 und 7 Stueck gelistet."
+    }
+  ],
+  "hinweise": [
+    "Sweet Seeds liefert ausschliesslich feminisierte Samen - es gibt keine Regular-Sorten in diesem Katalog.",
+    "Aktionspackungen wurden in echte Stueckzahlen umgerechnet: '3+1 Seeds' -> 4 Stueck, '5+2 Seeds' -> 7 Stueck.",
+    "Der Bluehtyp 'Early/fast' (20 Sorten, FAST-Versionen) ist photoperiodisch und wurde der Kategorie Feminisiert zugeordnet, nicht Automatisch.",
+    "1 Sorte ohne Bluehtyp-Angabe im Export (Terp Explosion Mix) - als Feminisiert eingeordnet.",
+    "1 Artikel kam ohne parent_sku (Sweet Mix, 10 Seeds). Eltern-SKU = Lieferanten-Artikelnummer SS-MIX-FEM-10, Varianten-SKU = SS-MIX-FEM-10-10.",
+    "19 Sorten ohne Produktbild im Export - Bilder muessen nachgepflegt werden.",
+    "5 CBD-Sorten zusaetzlich in Kategorie CBD Samen (2309).",
+    "Namensbereinigung: 'Green Poison Auto Feminised - 3' -> 'Sweet Seeds Green Poison Auto feminisiert' (Export-Name ohne das Wort 'Seeds', daher manuell korrigiert).",
+    "Keine Auslaufartikel in diesem Katalog.",
+    "Produkttexte, Tags und SEO wurden bewusst noch nicht gesetzt.",
+    "Lagerstatus steht auf 'onbackorder' bis die Verfuegbarkeitsliste vorliegt."
+  ],
+  "dubletten_warnung": {
+    "hinweis": "Im Shop existiert ein aktives Sweet-Seeds-Produkt mit HJ-SKU, das sich mit der neuen Listung ueberschneidet. Es wurde NICHT angefasst - vor dem Veroeffentlichen entscheiden, welche Variante bleibt.",
+    "produkte": [
+      {
+        "id": 30311,
+        "sku": "HJ-9999622",
+        "name": "Sweet Seeds Studio 54 Stardust Auto - 3er Packung +1 Seed gratis",
+        "status": "publish",
+        "lager": "instock, Menge 2",
+        "aktion": "Aktionspreis 18,68 EUR aktiv",
+        "neu": "SS-ST54ST-AUTO-FEM (Sweet Seeds Studio 54 Stardust Auto feminisiert)"
+      }
+    ]
+  },
+  "produkte": [
+    {
+      "produkt_id": 44360,
+      "name": "Sweet Seeds American Pie Mix Auto feminisiert",
+      "sku_eltern": "SS-AMPI-MIX-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": null,
+      "varianten": [
+        {
+          "sku_variante": "SS-AMPI-MIX-AUTO-FEM-4",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "4 Seeds",
+          "vk_tigerone": "25",
+          "ek_tigerone": "11.37",
+          "preis_netto": "24"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44361,
+      "name": "Sweet Seeds Banana Cream Cake XL Auto feminisiert",
+      "sku_eltern": "SS-BCCXL-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": null,
+      "varianten": [
+        {
+          "sku_variante": "SS-BCCXL-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-BCCXL-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44363,
+      "name": "Sweet Seeds Big Devil XL Auto feminisiert",
+      "sku_eltern": "SS-BDXLA-Fem",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148149_2184845_pimcore_1_1.png",
+      "varianten": [
+        {
+          "sku_variante": "SS-BDXLA-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "32",
+          "ek_tigerone": "14.55",
+          "preis_netto": "31"
+        },
+        {
+          "sku_variante": "SS-BDXLA-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "53",
+          "ek_tigerone": "24.09",
+          "preis_netto": "52"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44365,
+      "name": "Sweet Seeds Black Cream Auto feminisiert",
+      "sku_eltern": "SS-BCA-Fem",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148240_2184869_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-BCA-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "12.73",
+          "preis_netto": "27"
+        },
+        {
+          "sku_variante": "SS-BCA-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "46",
+          "ek_tigerone": "20.91",
+          "preis_netto": "45"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44367,
+      "name": "Sweet Seeds Black Jack Auto feminisiert",
+      "sku_eltern": "SS-BJA-Fem",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148063_2184689_pimcore_1_2.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-BJA-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "12.73",
+          "preis_netto": "27"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44369,
+      "name": "Sweet Seeds Black Jack F1 FAST Version feminisiert",
+      "sku_eltern": "SS-BLKJ-FAST-Fem",
+      "blueh_typ": "Early/fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148405_2184905_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-BLKJ-FAST-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "24",
+          "ek_tigerone": "10.91",
+          "preis_netto": "23"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44371,
+      "name": "Sweet Seeds Black Jack feminisiert",
+      "sku_eltern": "SS-BJ-Fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148096_2184753_pimcore_1_3.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-BJ-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "24",
+          "ek_tigerone": "10.91",
+          "preis_netto": "23"
+        },
+        {
+          "sku_variante": "SS-BJ-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "40",
+          "ek_tigerone": "18.18",
+          "preis_netto": "39"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44373,
+      "name": "Sweet Seeds Black Muffin F1 FAST feminisiert",
+      "sku_eltern": "SS-BLMF1-FAST-FEM",
+      "blueh_typ": "Early/fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151867_2185513_pimcore_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-BLMF1-FAST-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-BLMF1-FAST-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44375,
+      "name": "Sweet Seeds Bloody Skunk Auto feminisiert",
+      "sku_eltern": "SS-BS-Auto-Fem",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148338_2184897_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-BS-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "24",
+          "ek_tigerone": "10.91",
+          "preis_netto": "23"
+        },
+        {
+          "sku_variante": "SS-BS-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "40",
+          "ek_tigerone": "18.18",
+          "preis_netto": "39"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44377,
+      "name": "Sweet Seeds Bruce Banner Auto feminisiert",
+      "sku_eltern": "SS-BRBAN-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150169_2184585_pimcore_1_3.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-BRBAN-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-BRBAN-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44379,
+      "name": "Sweet Seeds Cream Caramel Auto feminisiert",
+      "sku_eltern": "SS-CCA-Fem",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148064_2184693_pimcore_1_2.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-CCA-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "24",
+          "ek_tigerone": "10.91",
+          "preis_netto": "23"
+        },
+        {
+          "sku_variante": "SS-CCA-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "40",
+          "ek_tigerone": "18.18",
+          "preis_netto": "39"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44381,
+      "name": "Sweet Seeds Cream Caramel F1 FAST Version feminisiert",
+      "sku_eltern": "SS-CC-FAST-Fem",
+      "blueh_typ": "Early/fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148296_2184885_pimcore_1_2.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-CC-FAST-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "12.73",
+          "preis_netto": "27"
+        },
+        {
+          "sku_variante": "SS-CC-FAST-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "46",
+          "ek_tigerone": "20.91",
+          "preis_netto": "45"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44383,
+      "name": "Sweet Seeds Cream Caramel feminisiert",
+      "sku_eltern": "SS-CC-Fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148099_2184765_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-CC-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "12.73",
+          "preis_netto": "27"
+        },
+        {
+          "sku_variante": "SS-CC-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "46",
+          "ek_tigerone": "20.91",
+          "preis_netto": "45"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44385,
+      "name": "Sweet Seeds Cream Mandarine Auto feminisiert",
+      "sku_eltern": "SS-CMA-Fem",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148150_2184849_pimcore_1_1.png",
+      "varianten": [
+        {
+          "sku_variante": "SS-CMA-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "12.73",
+          "preis_netto": "27"
+        },
+        {
+          "sku_variante": "SS-CMA-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "46",
+          "ek_tigerone": "20.91",
+          "preis_netto": "45"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44387,
+      "name": "Sweet Seeds Cream Mandarine F1 FAST Version feminisiert",
+      "sku_eltern": "SS-CRMR-FAST-Fem",
+      "blueh_typ": "Early/fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148407_2184913_pimcore_1_2.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-CRMR-FAST-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "12.73",
+          "preis_netto": "27"
+        },
+        {
+          "sku_variante": "SS-CRMR-FAST-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "46",
+          "ek_tigerone": "20.91",
+          "preis_netto": "45"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44389,
+      "name": "Sweet Seeds Cream Mandarine XL Auto feminisiert",
+      "sku_eltern": "SS-CRMRXL-Fem",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148490_2184245_pimcore_1_2.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-CRMRXL-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "12.73",
+          "preis_netto": "27"
+        },
+        {
+          "sku_variante": "SS-CRMRXL-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "46",
+          "ek_tigerone": "20.91",
+          "preis_netto": "45"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44391,
+      "name": "Sweet Seeds Crystal Candy F1 Fast Version feminisiert",
+      "sku_eltern": "SS-CRSTLC-FAST-Fem",
+      "blueh_typ": "Early/fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149337_2184493_pimcore_1_2.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-CRSTLC-FAST-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "24",
+          "ek_tigerone": "10.91",
+          "preis_netto": "23"
+        },
+        {
+          "sku_variante": "SS-CRSTLC-FAST-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "40",
+          "ek_tigerone": "18.18",
+          "preis_netto": "39"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44393,
+      "name": "Sweet Seeds Crystal Candy XL Auto feminisiert",
+      "sku_eltern": "SS-CCXL-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149906_2184501_pimcore_1_2.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-CCXL-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "24",
+          "ek_tigerone": "10.91",
+          "preis_netto": "23"
+        },
+        {
+          "sku_variante": "SS-CCXL-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "40",
+          "ek_tigerone": "18.18",
+          "preis_netto": "39"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44395,
+      "name": "Sweet Seeds Crystal Candy feminisiert",
+      "sku_eltern": "SS-CRYC-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148661_2183581_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-CRYC-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "24",
+          "ek_tigerone": "10.91",
+          "preis_netto": "23"
+        },
+        {
+          "sku_variante": "SS-CRYC-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "40",
+          "ek_tigerone": "18.18",
+          "preis_netto": "39"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44397,
+      "name": "Sweet Seeds Dark Devil Auto feminisiert",
+      "sku_eltern": "SS-DDA-Fem",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148241_2184873_pimcore_1_2.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-DDA-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-DDA-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44398,
+      "name": "Sweet Seeds Delicious & Resinous Mix Auto feminisiert",
+      "sku_eltern": "SS-DERE-MIX-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": null,
+      "varianten": [
+        {
+          "sku_variante": "SS-DERE-MIX-AUTO-FEM-4",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "4 Seeds",
+          "vk_tigerone": "25",
+          "ek_tigerone": "11.37",
+          "preis_netto": "24"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44400,
+      "name": "Sweet Seeds Devil Cream Auto feminisiert",
+      "sku_eltern": "SS-DC-Auto-Fem",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148339_2184901_pimcore_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-DC-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "12.73",
+          "preis_netto": "27"
+        },
+        {
+          "sku_variante": "SS-DC-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "46",
+          "ek_tigerone": "20.91",
+          "preis_netto": "45"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44402,
+      "name": "Sweet Seeds Diablo Rojo XL Auto feminisiert",
+      "sku_eltern": "SS-DRXL-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151866_2185505_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-DRXL-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-DRXL-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44403,
+      "name": "Sweet Seeds Diablo's Delight XL Auto feminisiert",
+      "sku_eltern": "SS-DIDEXL-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": null,
+      "varianten": [
+        {
+          "sku_variante": "SS-DIDEXL-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-DIDEXL-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44404,
+      "name": "Sweet Seeds Garlic Icing x Chimera #3 feminisiert",
+      "sku_eltern": "SS-GIXCH3-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "varianten": [
+        {
+          "sku_variante": "SS-GIXCH3-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "25",
+          "ek_tigerone": "11.37",
+          "preis_netto": "24"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44405,
+      "name": "Sweet Seeds Gelonade feminisiert",
+      "sku_eltern": "SS-GELO-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "varianten": [
+        {
+          "sku_variante": "SS-GELO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-GELO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44407,
+      "name": "Sweet Seeds Gorilla Girl F1 FAST feminisiert",
+      "sku_eltern": "SS-GGF1-FAST-FEM",
+      "blueh_typ": "Early/fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149904_2184277_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-GGF1-FAST-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "32",
+          "ek_tigerone": "14.55",
+          "preis_netto": "31"
+        },
+        {
+          "sku_variante": "SS-GGF1-FAST-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "53",
+          "ek_tigerone": "24.09",
+          "preis_netto": "52"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44409,
+      "name": "Sweet Seeds Gorilla Girl XL Auto feminisiert",
+      "sku_eltern": "SS-GGXL-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149901_2184409_pimcore_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-GGXL-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-GGXL-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44411,
+      "name": "Sweet Seeds Gorilla Girl feminisiert",
+      "sku_eltern": "SS-GG-Fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149339_2184085_pimcore_1_2.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-GG-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "36",
+          "ek_tigerone": "16.36",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SS-GG-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "60",
+          "ek_tigerone": "27.27",
+          "preis_netto": "59"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44413,
+      "name": "Sweet Seeds Gorilla Sherbet F1 FAST feminisiert",
+      "sku_eltern": "SS-GOSHF1-FAST-FEM",
+      "blueh_typ": "Early/fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150387_2184681_pimcore_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-GOSHF1-FAST-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-GOSHF1-FAST-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44415,
+      "name": "Sweet Seeds Green Poison Auto feminisiert",
+      "sku_eltern": "SS-GPS-Fem",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148066_2184701_pimcore_1_2.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-GPS-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "12.73",
+          "preis_netto": "27"
+        },
+        {
+          "sku_variante": "SS-GPS-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "46",
+          "ek_tigerone": "20.91",
+          "preis_netto": "45"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44417,
+      "name": "Sweet Seeds Green Poison F1 FAST Version feminisiert",
+      "sku_eltern": "SS-GP-FAST-Fem",
+      "blueh_typ": "Early/fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148218_2184853_pimcore_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-GP-FAST-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "12.73",
+          "preis_netto": "27"
+        },
+        {
+          "sku_variante": "SS-GP-FAST-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "46",
+          "ek_tigerone": "20.91",
+          "preis_netto": "45"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44419,
+      "name": "Sweet Seeds Green Poison XL Auto feminisiert",
+      "sku_eltern": "SS-GPXL-AUTO-Fem",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149344_2184197_pimcore_1_2.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-GPXL-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "12.73",
+          "preis_netto": "27"
+        },
+        {
+          "sku_variante": "SS-GPXL-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "46",
+          "ek_tigerone": "20.91",
+          "preis_netto": "45"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44421,
+      "name": "Sweet Seeds Green Poison feminisiert",
+      "sku_eltern": "SS-GP-Fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148101_2184785_pimcore_1_3.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-GP-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "12.73",
+          "preis_netto": "27"
+        },
+        {
+          "sku_variante": "SS-GP-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "46",
+          "ek_tigerone": "20.91",
+          "preis_netto": "45"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44423,
+      "name": "Sweet Seeds Honey Peach CBD Auto feminisiert",
+      "sku_eltern": "SS-HP-CBD-AUTO-Fem",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547,
+        2309
+      ],
+      "kategorien_namen": [
+        "Automatisch",
+        "CBD Samen"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149341_2184101_pimcore_2.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-HP-CBD-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "12.73",
+          "preis_netto": "27"
+        },
+        {
+          "sku_variante": "SS-HP-CBD-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "46",
+          "ek_tigerone": "20.91",
+          "preis_netto": "45"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44425,
+      "name": "Sweet Seeds Jack 47 F1 FAST Version feminisiert",
+      "sku_eltern": "SS-JCK47-FAST-Fem",
+      "blueh_typ": "Early/fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148408_2184917_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-JCK47-FAST-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "36",
+          "ek_tigerone": "16.36",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SS-JCK47-FAST-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "60",
+          "ek_tigerone": "27.27",
+          "preis_netto": "59"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44427,
+      "name": "Sweet Seeds Jack 47 XL Auto feminisiert",
+      "sku_eltern": "SS-J47XL-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149671_2185337_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-J47XL-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "36",
+          "ek_tigerone": "16.36",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SS-J47XL-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "60",
+          "ek_tigerone": "27.27",
+          "preis_netto": "59"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44429,
+      "name": "Sweet Seeds Jack 47 feminisiert",
+      "sku_eltern": "SS-J47-Fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148103_2184805_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-J47-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "36",
+          "ek_tigerone": "16.36",
+          "preis_netto": "35"
+        },
+        {
+          "sku_variante": "SS-J47-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "60",
+          "ek_tigerone": "27.27",
+          "preis_netto": "59"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44431,
+      "name": "Sweet Seeds Jealousy Z XL Auto feminisiert",
+      "sku_eltern": "SS-JZXL-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151870_2185537_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-JZXL-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-JZXL-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44433,
+      "name": "Sweet Seeds Jet Fuel Mandarine XL Auto feminisiert",
+      "sku_eltern": "SS-JFMXL-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151871_2185545_pimcore_1_2.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-JFMXL-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-JFMXL-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44435,
+      "name": "Sweet Seeds Killer Kush Auto feminisiert",
+      "sku_eltern": "SS-KLK-AUTO-Fem",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148491_2184509_pimcore_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-KLK-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "16.85",
+          "ek_tigerone": "10.91",
+          "preis_netto": "16"
+        },
+        {
+          "sku_variante": "SS-KLK-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "28.07",
+          "ek_tigerone": "18.18",
+          "preis_netto": "27"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44437,
+      "name": "Sweet Seeds Killer Kush F1 FAST Version feminisiert",
+      "sku_eltern": "SS-KLK-FAST-Fem",
+      "blueh_typ": "Early/fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148409_2184921_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-KLK-FAST-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "24",
+          "ek_tigerone": "10.91",
+          "preis_netto": "23"
+        },
+        {
+          "sku_variante": "SS-KLK-FAST-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "40",
+          "ek_tigerone": "18.18",
+          "preis_netto": "39"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44438,
+      "name": "Sweet Seeds Mental Rainbow F1 Fast Version feminisiert",
+      "sku_eltern": "SS-MERAF1-FAST-FEM",
+      "blueh_typ": "Early/fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "varianten": [
+        {
+          "sku_variante": "SS-MERAF1-FAST-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-MERAF1-FAST-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44440,
+      "name": "Sweet Seeds Mimosa Bruce Banner XL Auto feminisiert",
+      "sku_eltern": "SS-MBBXL-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151444_2186025_pimcore_1_2.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-MBBXL-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-MBBXL-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44441,
+      "name": "Sweet Seeds Mimosa x Chimera #3 feminisiert",
+      "sku_eltern": "SS-MIXCH3-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "varianten": [
+        {
+          "sku_variante": "SS-MIXCH3-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "25",
+          "ek_tigerone": "11.37",
+          "preis_netto": "24"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44442,
+      "name": "Sweet Seeds Monster Maker feminisiert",
+      "sku_eltern": "SS-MOMA-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "varianten": [
+        {
+          "sku_variante": "SS-MOMA-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-MOMA-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44444,
+      "name": "Sweet Seeds Orange Apricot Glue XL Auto feminisiert",
+      "sku_eltern": "SS-OAGXL-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151445_2186029_pimcore_1_2.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-OAGXL-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-OAGXL-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44446,
+      "name": "Sweet Seeds Papaya Zoap Auto feminisiert",
+      "sku_eltern": "SS-PZ-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151869_2185529_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-PZ-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-PZ-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44448,
+      "name": "Sweet Seeds Papaya Zoap F1 FAST feminisiert",
+      "sku_eltern": "SS-PZF1-FAST-FEM",
+      "blueh_typ": "Early/fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151868_2185521_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-PZF1-FAST-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-PZF1-FAST-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44449,
+      "name": "Sweet Seeds Permanent Jealousy XL Auto feminisiert",
+      "sku_eltern": "SS-PEJEXL-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": null,
+      "varianten": [
+        {
+          "sku_variante": "SS-PEJEXL-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-PEJEXL-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44450,
+      "name": "Sweet Seeds Permanent Marker XL Auto feminisiert",
+      "sku_eltern": "SS-PEMXL-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": null,
+      "varianten": [
+        {
+          "sku_variante": "SS-PEMXL-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-PEMXL-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44451,
+      "name": "Sweet Seeds Pineapple Fruz feminisiert",
+      "sku_eltern": "SS-PIFR-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "varianten": [
+        {
+          "sku_variante": "SS-PIFR-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "25",
+          "ek_tigerone": "11.37",
+          "preis_netto": "24"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44452,
+      "name": "Sweet Seeds Pink Guava F1 Fast Version feminisiert",
+      "sku_eltern": "SS-PIGUF1-FAST-FEM",
+      "blueh_typ": "Early/fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "varianten": [
+        {
+          "sku_variante": "SS-PIGUF1-FAST-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-PIGUF1-FAST-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44454,
+      "name": "Sweet Seeds Psicodelicia feminisiert",
+      "sku_eltern": "SS-PS-Fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148105_2184813_pimcore_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-PS-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "24",
+          "ek_tigerone": "10.91",
+          "preis_netto": "23"
+        },
+        {
+          "sku_variante": "SS-PS-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "40",
+          "ek_tigerone": "18.18",
+          "preis_netto": "39"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44456,
+      "name": "Sweet Seeds Purple Punch OG XL Auto feminisiert",
+      "sku_eltern": "SS-PPOGXL-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150381_2184633_pimcore_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-PPOGXL-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "32",
+          "ek_tigerone": "14.55",
+          "preis_netto": "31"
+        },
+        {
+          "sku_variante": "SS-PPOGXL-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "53",
+          "ek_tigerone": "24.09",
+          "preis_netto": "52"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44458,
+      "name": "Sweet Seeds Purple Punch OG feminisiert",
+      "sku_eltern": "SS-PPOG-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150173_2184617_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-PPOG-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-PPOG-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44460,
+      "name": "Sweet Seeds Red Gorilla Girl XL Auto feminisiert",
+      "sku_eltern": "SS-REDGG-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150171_2184601_pimcore_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-REDGG-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "32",
+          "ek_tigerone": "14.55",
+          "preis_netto": "31"
+        },
+        {
+          "sku_variante": "SS-REDGG-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "53",
+          "ek_tigerone": "24.09",
+          "preis_netto": "52"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44462,
+      "name": "Sweet Seeds Red Hot Muffin (aka Cookies) feminisiert",
+      "sku_eltern": "SS-RHC-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149907_2184301_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-RHC-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "12.73",
+          "preis_netto": "27"
+        },
+        {
+          "sku_variante": "SS-RHC-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "46",
+          "ek_tigerone": "20.91",
+          "preis_netto": "45"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44464,
+      "name": "Sweet Seeds Red Mandarine F1 FAST feminisiert",
+      "sku_eltern": "SS-RMF1-FAST-FEM",
+      "blueh_typ": "Early/fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149672_2185345_pimcore_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-RMF1-FAST-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "12.73",
+          "preis_netto": "27"
+        },
+        {
+          "sku_variante": "SS-RMF1-FAST-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "46",
+          "ek_tigerone": "20.91",
+          "preis_netto": "45"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44466,
+      "name": "Sweet Seeds Red Mimosa XL Auto feminisiert",
+      "sku_eltern": "SS-RMXL-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151446_2186041_pimcore_1_2.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-RMXL-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-RMXL-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44468,
+      "name": "Sweet Seeds Red Poison Auto feminisiert",
+      "sku_eltern": "SS-RPA-Fem",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148242_2184877_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-RPA-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "12.73",
+          "preis_netto": "27"
+        },
+        {
+          "sku_variante": "SS-RPA-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "46",
+          "ek_tigerone": "20.91",
+          "preis_netto": "45"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44470,
+      "name": "Sweet Seeds Red Pure CBD Auto feminisiert",
+      "sku_eltern": "SS-REDP-CBD-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547,
+        2309
+      ],
+      "kategorien_namen": [
+        "Automatisch",
+        "CBD Samen"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149905_2184285_pimcore_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-REDP-CBD-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "12.73",
+          "preis_netto": "27"
+        },
+        {
+          "sku_variante": "SS-REDP-CBD-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "46",
+          "ek_tigerone": "20.91",
+          "preis_netto": "45"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44472,
+      "name": "Sweet Seeds Red Strawberry Banana Auto feminisiert",
+      "sku_eltern": "SS-REDSTRBAN-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150172_2184609_pimcore_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-REDSTRBAN-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "12.73",
+          "preis_netto": "27"
+        },
+        {
+          "sku_variante": "SS-REDSTRBAN-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "46",
+          "ek_tigerone": "20.91",
+          "preis_netto": "45"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44474,
+      "name": "Sweet Seeds Runtz XL Auto feminisiert",
+      "sku_eltern": "SS-RUNTZXL-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150170_2184593_pimcore_1_3.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-RUNTZXL-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "32",
+          "ek_tigerone": "14.55",
+          "preis_netto": "31"
+        },
+        {
+          "sku_variante": "SS-RUNTZXL-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "53",
+          "ek_tigerone": "24.09",
+          "preis_netto": "52"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44476,
+      "name": "Sweet Seeds S.A.D. Auto feminisiert",
+      "sku_eltern": "SS-SADA-Fem",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148073_2184745_pimcore_1_3.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-SADA-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "9.09",
+          "preis_netto": "19"
+        },
+        {
+          "sku_variante": "SS-SADA-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "33",
+          "ek_tigerone": "15",
+          "preis_netto": "32"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44478,
+      "name": "Sweet Seeds S.A.D. F1 FAST Version feminisiert",
+      "sku_eltern": "SS-SADF1-FAST-Fem",
+      "blueh_typ": "Early/fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148410_2184925_pimcore_1_1.png",
+      "varianten": [
+        {
+          "sku_variante": "SS-SADF1-FAST-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "24",
+          "ek_tigerone": "10.91",
+          "preis_netto": "23"
+        },
+        {
+          "sku_variante": "SS-SADF1-FAST-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "40",
+          "ek_tigerone": "18.18",
+          "preis_netto": "39"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44480,
+      "name": "Sweet Seeds S.A.D. Sweet Afghani Delicious S1 feminisiert",
+      "sku_eltern": "SS-SAD-Fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148114_2184841_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-SAD-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "24",
+          "ek_tigerone": "10.91",
+          "preis_netto": "23"
+        },
+        {
+          "sku_variante": "SS-SAD-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "40",
+          "ek_tigerone": "18.18",
+          "preis_netto": "39"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44482,
+      "name": "Sweet Seeds Skywalker OG Runtz XL Auto feminisiert",
+      "sku_eltern": "SS-SKYOGRXL-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150383_2184649_pimcore_2.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-SKYOGRXL-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "12.73",
+          "preis_netto": "27"
+        },
+        {
+          "sku_variante": "SS-SKYOGRXL-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "46",
+          "ek_tigerone": "20.91",
+          "preis_netto": "45"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44484,
+      "name": "Sweet Seeds Speed + Auto feminisiert",
+      "sku_eltern": "SS-SPA-Fem",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148068_2184709_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-SPA-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "24",
+          "ek_tigerone": "10.91",
+          "preis_netto": "23"
+        },
+        {
+          "sku_variante": "SS-SPA-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "40",
+          "ek_tigerone": "18.18",
+          "preis_netto": "39"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44486,
+      "name": "Sweet Seeds Strawberry Banana Gelato XL Auto feminisiert",
+      "sku_eltern": "SS-SBGXL-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150384_2184657_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-SBGXL-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "12.73",
+          "preis_netto": "27"
+        },
+        {
+          "sku_variante": "SS-SBGXL-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "46",
+          "ek_tigerone": "20.91",
+          "preis_netto": "45"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44488,
+      "name": "Sweet Seeds Strawberry Cola Sherbet F1 Fast Version feminisiert",
+      "sku_eltern": "SS-SCS-FAST-FEM",
+      "blueh_typ": "Early/fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151449_2186065_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-SCS-FAST-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-SCS-FAST-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44489,
+      "name": "Sweet Seeds Studio 54 Stardust Auto feminisiert",
+      "sku_eltern": "SS-ST54ST-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": null,
+      "varianten": [
+        {
+          "sku_variante": "SS-ST54ST-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-ST54ST-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44490,
+      "name": "Sweet Seeds Super Boof XL Auto feminisiert",
+      "sku_eltern": "SS-SUBXL-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": null,
+      "varianten": [
+        {
+          "sku_variante": "SS-SUBXL-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-SUBXL-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44491,
+      "name": "Sweet Seeds Super Boof x RS11 feminisiert",
+      "sku_eltern": "SS-SBXRS11-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "varianten": [
+        {
+          "sku_variante": "SS-SBXRS11-FEM-5",
+          "inhalt": "5 Stück",
+          "pack_lieferant": "5 Seeds",
+          "vk_tigerone": "25",
+          "ek_tigerone": "11.37",
+          "preis_netto": "24"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44493,
+      "name": "Sweet Seeds Sweet Amnesia Haze XL Auto feminisiert",
+      "sku_eltern": "SS-SAHXL-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149902_2184533_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-SAHXL-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "12.73",
+          "preis_netto": "27"
+        },
+        {
+          "sku_variante": "SS-SAHXL-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "46",
+          "ek_tigerone": "20.91",
+          "preis_netto": "45"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44495,
+      "name": "Sweet Seeds Sweet Amnesia Haze feminisiert",
+      "sku_eltern": "SS-SAH-Fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149342_2184233_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-SAH-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "12.73",
+          "preis_netto": "27"
+        },
+        {
+          "sku_variante": "SS-SAH-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "46",
+          "ek_tigerone": "20.91",
+          "preis_netto": "45"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44497,
+      "name": "Sweet Seeds Sweet Cheese Auto feminisiert",
+      "sku_eltern": "SS-SCA-Fem",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148069_2184713_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-SCA-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "9.09",
+          "preis_netto": "19"
+        },
+        {
+          "sku_variante": "SS-SCA-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "33",
+          "ek_tigerone": "15",
+          "preis_netto": "32"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44499,
+      "name": "Sweet Seeds Sweet Cheese F1 FAST Version feminisiert",
+      "sku_eltern": "SS-SC-FAST-Fem",
+      "blueh_typ": "Early/fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148297_2184889_pimcore_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-SC-FAST-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "9.09",
+          "preis_netto": "19"
+        },
+        {
+          "sku_variante": "SS-SC-FAST-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "33",
+          "ek_tigerone": "15",
+          "preis_netto": "32"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44501,
+      "name": "Sweet Seeds Sweet Cheese XL Auto feminisiert",
+      "sku_eltern": "SS-SWCHXL-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149670_2185321_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-SWCHXL-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "24",
+          "ek_tigerone": "10.91",
+          "preis_netto": "23"
+        },
+        {
+          "sku_variante": "SS-SWCHXL-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "40",
+          "ek_tigerone": "18.18",
+          "preis_netto": "39"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44503,
+      "name": "Sweet Seeds Sweet Cheese feminisiert",
+      "sku_eltern": "SS-SC-Fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148107_2184817_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-SC-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "9.09",
+          "preis_netto": "19"
+        },
+        {
+          "sku_variante": "SS-SC-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "33",
+          "ek_tigerone": "15",
+          "preis_netto": "32"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44505,
+      "name": "Sweet Seeds Sweet Cherry Pie feminisiert",
+      "sku_eltern": "SS-SWCHPIE-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150174_2184625_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-SWCHPIE-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-SWCHPIE-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44507,
+      "name": "Sweet Seeds Sweet Gelato Auto feminisiert",
+      "sku_eltern": "SS-SWGEL-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149668_2185305_pimcore_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-SWGEL-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "12.73",
+          "preis_netto": "27"
+        },
+        {
+          "sku_variante": "SS-SWGEL-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "46",
+          "ek_tigerone": "20.91",
+          "preis_netto": "45"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44509,
+      "name": "Sweet Seeds Sweet Mandarine Zkittlez F1 Fast Version feminisiert",
+      "sku_eltern": "SS-SMZ-FAST-FEM",
+      "blueh_typ": "Early/fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151448_2186053_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-SMZ-FAST-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-SMZ-FAST-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44511,
+      "name": "Sweet Seeds Sweet Mandarine Zkittlez XL Auto feminisiert",
+      "sku_eltern": "SS-SMZXL-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/151447_2186049_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-SMZXL-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-SMZXL-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44513,
+      "name": "Sweet Seeds Sweet Mimosa XL Auto feminisiert",
+      "sku_eltern": "SS-SMIMXL-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150382_2184641_pimcore_1_2.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-SMIMXL-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-SMIMXL-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44514,
+      "name": "Sweet Seeds Sweet Mix Auto feminisiert",
+      "sku_eltern": "SS-MIXA-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": null,
+      "varianten": [
+        {
+          "sku_variante": "SS-MIXA-FEM-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "35",
+          "ek_tigerone": "16.2",
+          "preis_netto": "34"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44516,
+      "name": "Sweet Seeds Sweet Mix feminisiert",
+      "sku_eltern": "SS-MIX-FEM-10",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/140990_2180764_pimcore_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-MIX-FEM-10-10",
+          "inhalt": "10 Stück",
+          "pack_lieferant": "10 Seeds",
+          "vk_tigerone": "35",
+          "ek_tigerone": "16.2",
+          "preis_netto": "34"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44518,
+      "name": "Sweet Seeds Sweet Nurse CBD Auto feminisiert",
+      "sku_eltern": "SS-SNCBD-Fem",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547,
+        2309
+      ],
+      "kategorien_namen": [
+        "Automatisch",
+        "CBD Samen"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148964_2183905_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-SNCBD-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "46",
+          "ek_tigerone": "20.91",
+          "preis_netto": "45"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44520,
+      "name": "Sweet Seeds Sweet Pure CBD Auto feminisiert",
+      "sku_eltern": "SS-SWP-CBD-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547,
+        2309
+      ],
+      "kategorien_namen": [
+        "Automatisch",
+        "CBD Samen"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149667_2185297_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-SWP-CBD-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "12.73",
+          "preis_netto": "27"
+        },
+        {
+          "sku_variante": "SS-SWP-CBD-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "46",
+          "ek_tigerone": "20.91",
+          "preis_netto": "45"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44522,
+      "name": "Sweet Seeds Sweet Pure CBD feminisiert",
+      "sku_eltern": "SS-SWP-CBD-Fem",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548,
+        2309
+      ],
+      "kategorien_namen": [
+        "Feminisiert",
+        "CBD Samen"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149345_2184549_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-SWP-CBD-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-SWP-CBD-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44524,
+      "name": "Sweet Seeds Sweet Skunk Auto feminisiert",
+      "sku_eltern": "SS-SWSA-Fem",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148072_2184741_pimcore_1_2.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-SWSA-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "9.09",
+          "preis_netto": "19"
+        },
+        {
+          "sku_variante": "SS-SWSA-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "33",
+          "ek_tigerone": "15",
+          "preis_netto": "32"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44526,
+      "name": "Sweet Seeds Sweet Skunk F1 FAST Version feminisiert",
+      "sku_eltern": "SS-SWSK-FAST-Fem",
+      "blueh_typ": "Early/fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148411_2184929_pimcore_1_3.png",
+      "varianten": [
+        {
+          "sku_variante": "SS-SWSK-FAST-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "20",
+          "ek_tigerone": "9.09",
+          "preis_netto": "19"
+        },
+        {
+          "sku_variante": "SS-SWSK-FAST-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "33",
+          "ek_tigerone": "15",
+          "preis_netto": "32"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44528,
+      "name": "Sweet Seeds Sweet Trainwreck Auto feminisiert",
+      "sku_eltern": "SS-ST-Auto-Fem",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/148337_2184893_pimcore_1_1.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-ST-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "12.73",
+          "preis_netto": "27"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44530,
+      "name": "Sweet Seeds Sweet Zenzation (formerly Sweet Zkittlez) feminisiert",
+      "sku_eltern": "SS-SWZKIT-FEM",
+      "blueh_typ": "Photoperiod",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149903_2184269_pimcore_1_2.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-SWZKIT-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-SWZKIT-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44532,
+      "name": "Sweet Seeds Sweet Zenzation XL Auto feminisiert",
+      "sku_eltern": "SS-SWZXL-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150385_2184665_pimcore_1_2.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-SWZXL-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "53",
+          "ek_tigerone": "24.09",
+          "preis_netto": "52"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44533,
+      "name": "Sweet Seeds Terp Explosion Mix feminisiert",
+      "sku_eltern": "SS-TEEX-MIX-FEM",
+      "blueh_typ": "k. A.",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": null,
+      "varianten": [
+        {
+          "sku_variante": "SS-TEEX-MIX-FEM-4",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "4 Seeds",
+          "vk_tigerone": "25",
+          "ek_tigerone": "11.37",
+          "preis_netto": "24"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44534,
+      "name": "Sweet Seeds Tropicanna Cherry XL Auto feminisiert",
+      "sku_eltern": "SS-TRCXL-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": null,
+      "varianten": [
+        {
+          "sku_variante": "SS-TRCXL-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "30",
+          "ek_tigerone": "13.64",
+          "preis_netto": "29"
+        },
+        {
+          "sku_variante": "SS-TRCXL-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "50",
+          "ek_tigerone": "22.73",
+          "preis_netto": "49"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44536,
+      "name": "Sweet Seeds Tropicanna Poison F1 FAST feminisiert",
+      "sku_eltern": "SS-TRPOISON-FAST-FEM",
+      "blueh_typ": "Early/fast",
+      "kategorien": [
+        548
+      ],
+      "kategorien_namen": [
+        "Feminisiert"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/4/149908_2184309_pimcore_1_2.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-TRPOISON-FAST-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "12.73",
+          "preis_netto": "27"
+        },
+        {
+          "sku_variante": "SS-TRPOISON-FAST-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "46",
+          "ek_tigerone": "20.91",
+          "preis_netto": "45"
+        }
+      ]
+    },
+    {
+      "produkt_id": 44538,
+      "name": "Sweet Seeds Tropicanna Poison XL Auto feminisiert",
+      "sku_eltern": "SS-TRPXL-AUTO-FEM",
+      "blueh_typ": "Autoflowering",
+      "kategorien": [
+        547
+      ],
+      "kategorien_namen": [
+        "Automatisch"
+      ],
+      "bild": "https://www.tiger-one.com/media/catalog/product/1/5/150386_2184673_pimcore_1_2.jpg",
+      "varianten": [
+        {
+          "sku_variante": "SS-TRPXL-AUTO-FEM-3",
+          "inhalt": "4 Stück",
+          "pack_lieferant": "3+1 Seeds",
+          "vk_tigerone": "28",
+          "ek_tigerone": "12.73",
+          "preis_netto": "27"
+        },
+        {
+          "sku_variante": "SS-TRPXL-AUTO-FEM-5",
+          "inhalt": "7 Stück",
+          "pack_lieferant": "5+2 Seeds",
+          "vk_tigerone": "46",
+          "ek_tigerone": "20.91",
+          "preis_netto": "45"
+        }
+      ]
+    }
+  ]
+}
