@@ -127,4 +127,46 @@ class WCIS_Install {
 		dbDelta( $sql_queue );
 		dbDelta( $sql_log );
 	}
+
+	/**
+	 * Reserviert einen Schlüssel ATOMAR (echtes INSERT IGNORE – im Gegensatz zu
+	 * add_option(), das intern „ON DUPLICATE KEY UPDATE" nutzt und daher bei
+	 * parallelen Requests beiden Seiten Erfolg melden kann).
+	 *
+	 * @param string $name  Options-Name.
+	 * @param string $value Wert (z. B. Zeitstempel).
+	 * @return bool true = reserviert, false = existierte bereits.
+	 */
+	public static function claim( $name, $value = '' ) {
+		global $wpdb;
+		$value = '' === (string) $value ? (string) time() : (string) $value;
+		$res   = $wpdb->query( // phpcs:ignore WordPress.DB.DirectDatabaseQuery
+			$wpdb->prepare( "INSERT IGNORE INTO {$wpdb->options} (option_name, option_value, autoload) VALUES (%s, %s, 'no')", $name, $value )
+		);
+		wp_cache_delete( $name, 'options' );
+		wp_cache_delete( 'notoptions', 'options' );
+		return 1 === (int) $res;
+	}
+
+	/**
+	 * Gibt eine Reservierung frei.
+	 *
+	 * @param string $name Options-Name.
+	 */
+	public static function release( $name ) {
+		global $wpdb;
+		$wpdb->delete( $wpdb->options, array( 'option_name' => $name ), array( '%s' ) ); // phpcs:ignore WordPress.DB.DirectDatabaseQuery
+		wp_cache_delete( $name, 'options' );
+	}
+
+	/**
+	 * Liest den Wert einer Reservierung direkt aus der Datenbank (ohne Cache).
+	 *
+	 * @param string $name Options-Name.
+	 * @return string|null
+	 */
+	public static function claimed_value( $name ) {
+		global $wpdb;
+		return $wpdb->get_var( $wpdb->prepare( "SELECT option_value FROM {$wpdb->options} WHERE option_name = %s LIMIT 1", $name ) ); // phpcs:ignore WordPress.DB.DirectDatabaseQuery
+	}
 }

@@ -131,6 +131,17 @@ class WCIS_Shopify {
 	}
 
 	/**
+	 * Liest die Liste frisch aus der Datenbank (vor Schreibvorgängen).
+	 *
+	 * @return array
+	 */
+	protected static function fresh() {
+		self::$cache = null;
+		wp_cache_delete( self::OPT, 'options' );
+		return self::all();
+	}
+
+	/**
 	 * Speichert die Liste.
 	 *
 	 * @param array $list Shops.
@@ -163,7 +174,7 @@ class WCIS_Shopify {
 	 * @return array|WP_Error Shop.
 	 */
 	public static function save_store( array $data, $id = '' ) {
-		$all     = self::all();
+		$all     = self::fresh();
 		$is_new  = ( '' === $id || ! isset( $all[ $id ] ) );
 		$current = $is_new ? self::defaults() : $all[ $id ];
 
@@ -228,7 +239,7 @@ class WCIS_Shopify {
 	 * @param array  $fields Felder.
 	 */
 	public static function update_store( $id, array $fields ) {
-		$all = self::all();
+		$all = self::fresh();
 		if ( ! isset( $all[ $id ] ) ) {
 			return;
 		}
@@ -252,7 +263,7 @@ class WCIS_Shopify {
 		}
 		global $wpdb;
 		$wpdb->query( $wpdb->prepare( "DELETE FROM {$wpdb->postmeta} WHERE meta_key LIKE %s", $wpdb->esc_like( '_wcis_shp_' . $id . '_' ) . '%' ) ); // phpcs:ignore WordPress.DB.DirectDatabaseQuery
-		$all = self::all();
+		$all = self::fresh();
 		unset( $all[ $id ] );
 		self::save_all( $all );
 		WCIS_Logger::info( sprintf( 'Shopify-Shop „%s" entfernt.', $s['name'] ), 'outbound' );
@@ -675,6 +686,15 @@ class WCIS_Shopify {
 	 * Gleicht den Bestand eines Artikels mit einem Shopify-Shop ab
 	 * (Compare-and-Swap, s. Klassenbeschreibung).
 	 *
+	 * Absicherungen:
+	 * - Sperre je Artikel (kein paralleler Abgleich durch Webhook + Push + Queue),
+	 * - „last" wird in jeder Runde frisch aus der Datenbank gelesen,
+	 * - unklarer Schreibvorgang (Antwort verloren) wird beim nächsten Mal mit
+	 *   demselben Idempotenz-Schlüssel wiederholt → Shopify meldet, ob er schon
+	 *   ausgeführt wurde; das „Echo" wird nie als Verkauf gezählt,
+	 * - Produkte ohne Bestandsführung in WooCommerce werden in Shopify ohne
+	 *   Bestandsführung geführt (verkaufbar) bzw. bei „nicht vorrätig" auf 0 gesetzt.
+	 *
 	 * @param array      $s            Shop.
 	 * @param WC_Product $p            Einfaches Produkt oder Variation.
 	 * @param bool       $from_webhook Ausgelöst durch Shopify (Änderung dort)?
@@ -696,49 +716,182 @@ class WCIS_Shopify {
 			return true; // Artikel existiert (noch) nicht in Shopify.
 		}
 
-		$last_raw = get_post_meta( $p->get_id(), self::meta_key( $s, 'last' ), true );
-		$last     = ( '' === $last_raw ) ? null : (int) $last_raw;
-		$master   = self::master_quantity( $p );
+		$lock = 'wcis_shplock_' . $s['id'] . '_' . $p->get_id();
+		if ( ! self::acquire( $lock ) ) {
+			return new WP_Error( 'wcis_shopify_busy', __( 'Artikel wird gerade abgeglichen – wird später wiederholt.', 'blocksocial-woocommerce-sync' ) );
+		}
+		try {
+			// Nach dem Warten auf die Sperre: Produkt frisch laden (Bestand kann sich geändert haben).
+			wp_cache_delete( $p->get_id(), 'post_meta' );
+			$fresh = wc_get_product( $p->get_id() );
+			$p     = $fresh ? $fresh : $p;
+			if ( ! $p->managing_stock() ) {
+				return self::sync_unmanaged( $api, $s, $p, $item );
+			}
+			return self::sync_managed( $api, $s, $p, $item, $from_webhook );
+		} finally {
+			WCIS_Install::release( $lock );
+		}
+	}
 
-		// Schneller Weg: unverändert seit der letzten Übertragung → nichts zu tun.
-		if ( ! $from_webhook && null !== $last && null !== $master && $master === $last ) {
-			return true;
+	/**
+	 * Sperre je Artikel (wartet bis zu 8 s; verwaiste Sperren > 60 s werden gelöst).
+	 *
+	 * @param string $name Sperr-Name.
+	 * @return bool
+	 */
+	protected static function acquire( $name ) {
+		$deadline = microtime( true ) + 8;
+		do {
+			if ( WCIS_Install::claim( $name ) ) {
+				return true;
+			}
+			$since = (int) WCIS_Install::claimed_value( $name );
+			if ( $since && time() - $since > 60 ) {
+				WCIS_Install::release( $name );
+				continue;
+			}
+			usleep( 250000 );
+		} while ( microtime( true ) < $deadline );
+		return false;
+	}
+
+	/**
+	 * Liest einen Meta-Wert direkt aus der Datenbank (ohne Cache – andere
+	 * Prozesse können ihn gerade geändert haben).
+	 *
+	 * @param int    $post_id Post-ID.
+	 * @param string $key     Meta-Key.
+	 * @return string|null
+	 */
+	protected static function meta_fresh( $post_id, $key ) {
+		global $wpdb;
+		return $wpdb->get_var( $wpdb->prepare( "SELECT meta_value FROM {$wpdb->postmeta} WHERE post_id = %d AND meta_key = %s LIMIT 1", (int) $post_id, $key ) ); // phpcs:ignore WordPress.DB.DirectDatabaseQuery
+	}
+
+	/**
+	 * Abgleich für Artikel MIT Bestandsführung.
+	 *
+	 * @param WCIS_Shopify_Api $api          API.
+	 * @param array            $s            Shop.
+	 * @param WC_Product       $p            Artikel.
+	 * @param string           $item         Inventory-Item-GID.
+	 * @param bool             $from_webhook Durch Webhook ausgelöst?
+	 * @return true|WP_Error
+	 */
+	protected static function sync_managed( $api, array $s, $p, $item, $from_webhook ) {
+		$pid      = $p->get_id();
+		$k_last   = self::meta_key( $s, 'last' );
+		$k_pend   = self::meta_key( $s, 'pend' );
+		$set_last = static function ( $v ) use ( $pid, $k_last ) {
+			update_post_meta( $pid, $k_last, (string) (int) $v );
+		};
+
+		// 1) Unklarer früherer Schreibvorgang? Mit demselben Idempotenz-Schlüssel
+		//    wiederholen – Shopify führt ihn höchstens einmal aus.
+		$pend = json_decode( (string) self::meta_fresh( $pid, $k_pend ), true );
+		if ( is_array( $pend ) && isset( $pend['qty'], $pend['key'] ) ) {
+			$r = self::set_available( $api, $s, $item, (int) $pend['qty'], isset( $pend['cmp'] ) ? $pend['cmp'] : null, (string) $pend['key'] );
+			if ( true === $r ) {
+				$set_last( $pend['qty'] );
+				delete_post_meta( $pid, $k_pend );
+			} elseif ( 'stale' === $r || ( is_wp_error( $r ) && 'wcis_shopify_user' === $r->get_error_code() ) ) {
+				delete_post_meta( $pid, $k_pend ); // nicht ausgeführt / Schlüssel abgelaufen → normal weiter.
+			} else {
+				return $r; // Shopify weiterhin nicht erreichbar → später erneut.
+			}
 		}
 
+		$master = self::master_quantity( $p );
 		for ( $round = 0; $round < 3; $round++ ) {
-			$shopify = null;
+			$raw  = self::meta_fresh( $pid, $k_last );
+			$last = ( null === $raw || '' === $raw ) ? null : (int) $raw;
+
+			// Schneller Weg: unverändert seit der letzten Übertragung → nichts zu tun.
+			if ( 0 === $round && ! $from_webhook && null !== $last && $master === $last ) {
+				return true;
+			}
+
+			$compare = $last;
 			if ( $from_webhook || null === $last || $round > 0 ) {
-				$shopify = self::read_available( $api, $s, $item );
-				if ( is_wp_error( $shopify ) ) {
-					return $shopify;
+				$read = self::read_available( $api, $s, $item, true );
+				if ( is_wp_error( $read ) ) {
+					return $read;
+				}
+				$shopify = $read['qty'];
+				if ( $read['activated'] ) {
+					$last = null; // frisch aktivierter Lagerort: keine Differenz ableiten.
 				}
 				// Verkauf/Änderung in Shopify seit unserer letzten Übertragung → auf den Hauptshop buchen.
-				if ( null !== $last && $shopify !== $last && $p->managing_stock() ) {
+				if ( null !== $last && $shopify !== $last ) {
 					$master = self::apply_delta( $s, $p, $shopify - $last );
+					$set_last( $shopify ); // Differenz ist gebucht – nie doppelt.
 				}
-				if ( null === $master || $master === $shopify ) {
-					update_post_meta( $p->get_id(), self::meta_key( $s, 'last' ), (string) $shopify );
+				if ( $master === $shopify ) {
+					$set_last( $shopify );
 					return true;
 				}
 				$from_webhook = false;
-			}
-			if ( null === $master ) {
-				return true;
+				$compare      = $shopify;
 			}
 
-			$compare = null !== $shopify ? $shopify : $last;
-			$res     = self::set_available( $api, $s, $item, $master, $compare );
+			// 2) Schreiben – vorher als „unklar" vormerken (falls die Antwort verloren geht).
+			$key = WCIS_Shopify_Api::uuid();
+			update_post_meta( $pid, $k_pend, wp_json_encode( array( 'qty' => $master, 'cmp' => $compare, 'key' => $key, 't' => time() ) ) );
+			$res = self::set_available( $api, $s, $item, $master, $compare, $key );
 			if ( true === $res ) {
-				update_post_meta( $p->get_id(), self::meta_key( $s, 'last' ), (string) $master );
+				$set_last( $master );
+				delete_post_meta( $pid, $k_pend );
 				return true;
 			}
 			if ( 'stale' !== $res ) {
-				return $res;
+				return $res; // Ergebnis unbekannt → „pend" bleibt für die Wiederholung.
 			}
-			// Shopify-Bestand hat sich parallel geändert → erneut lesen und Differenz buchen.
-			$last = null !== $shopify ? $shopify : $last;
+			delete_post_meta( $pid, $k_pend ); // abgelehnt (Bestand geändert) → neu lesen.
 		}
 		return new WP_Error( 'wcis_shopify_stale', __( 'Shopify-Bestand ändert sich laufend – Abgleich wird später wiederholt.', 'blocksocial-woocommerce-sync' ) );
+	}
+
+	/**
+	 * Abgleich für Artikel OHNE Bestandsführung in WooCommerce: „vorrätig" /
+	 * „Lieferrückstand" → in Shopify ohne Bestandsführung (verkaufbar);
+	 * „nicht vorrätig" → Bestandsführung an, Bestand 0.
+	 *
+	 * @param WCIS_Shopify_Api $api  API.
+	 * @param array            $s    Shop.
+	 * @param WC_Product       $p    Artikel.
+	 * @param string           $item Inventory-Item-GID.
+	 * @return true|WP_Error
+	 */
+	protected static function sync_unmanaged( $api, array $s, $p, $item ) {
+		$state = 'outofstock' === $p->get_stock_status() ? 'out' : 'open';
+		$k     = self::meta_key( $s, 'state' );
+		if ( self::meta_fresh( $p->get_id(), $k ) === $state ) {
+			return true;
+		}
+		if ( 'open' === $state ) {
+			$r = $api->query( 'mutation($id:ID!){ inventoryItemUpdate(id:$id, input:{ tracked: false }){ inventoryItem{ id } userErrors{ field message } } }', array( 'id' => $item ) );
+			if ( is_wp_error( $r ) ) {
+				return $r;
+			}
+		} else {
+			for ( $i = 0; $i < 2; $i++ ) {
+				$read = self::read_available( $api, $s, $item, true );
+				if ( is_wp_error( $read ) ) {
+					return $read;
+				}
+				$r = self::set_available( $api, $s, $item, 0, $read['qty'], WCIS_Shopify_Api::uuid() );
+				if ( true === $r ) {
+					break;
+				}
+				if ( 'stale' !== $r ) {
+					return $r;
+				}
+			}
+		}
+		update_post_meta( $p->get_id(), $k, $state );
+		delete_post_meta( $p->get_id(), self::meta_key( $s, 'last' ) );
+		return true;
 	}
 
 	/**
@@ -827,7 +980,8 @@ class WCIS_Shopify {
 		if ( is_wp_error( $data ) ) {
 			return $data;
 		}
-		foreach ( (array) $data['productVariants']['nodes'] as $n ) {
+		$nodes = isset( $data['productVariants']['nodes'] ) ? (array) $data['productVariants']['nodes'] : array();
+		foreach ( $nodes as $n ) {
 			if ( isset( $n['sku'] ) && (string) $n['sku'] === (string) $sku ) {
 				return $n; // nur exakte Treffer (Shopify-Suche ist unscharf).
 			}
@@ -836,15 +990,16 @@ class WCIS_Shopify {
 	}
 
 	/**
-	 * Liest den verfügbaren Bestand am Lagerort; aktiviert Bestandsführung und
-	 * Lagerort bei Bedarf.
+	 * Liest den verfügbaren Bestand am Lagerort; aktiviert Bestandsführung (nur
+	 * wenn gewünscht) und den Lagerort bei Bedarf.
 	 *
-	 * @param WCIS_Shopify_Api $api  API.
-	 * @param array            $s    Shop.
-	 * @param string           $item Inventory-Item-GID.
-	 * @return int|WP_Error
+	 * @param WCIS_Shopify_Api $api   API.
+	 * @param array            $s     Shop.
+	 * @param string           $item  Inventory-Item-GID.
+	 * @param bool             $track Bestandsführung in Shopify einschalten?
+	 * @return array|WP_Error { qty: int, activated: bool }
 	 */
-	protected static function read_available( $api, array $s, $item ) {
+	protected static function read_available( $api, array $s, $item, $track = true ) {
 		$data = $api->query(
 			'query($id:ID!, $loc:ID!){ inventoryItem(id:$id){ id tracked inventoryLevel(locationId:$loc){ id quantities(names:["available"]){ name quantity } } } }',
 			array(
@@ -858,13 +1013,13 @@ class WCIS_Shopify {
 		if ( empty( $data['inventoryItem'] ) ) {
 			return new WP_Error( 'wcis_shopify_item', __( 'Shopify-Artikel nicht mehr vorhanden.', 'blocksocial-woocommerce-sync' ) );
 		}
-		if ( empty( $data['inventoryItem']['tracked'] ) ) {
+		if ( $track && empty( $data['inventoryItem']['tracked'] ) ) {
 			$r = $api->query( 'mutation($id:ID!){ inventoryItemUpdate(id:$id, input:{ tracked: true }){ inventoryItem{ id } userErrors{ field message } } }', array( 'id' => $item ) );
 			if ( is_wp_error( $r ) ) {
 				return $r;
 			}
 		}
-		$level = $data['inventoryItem']['inventoryLevel'];
+		$level = isset( $data['inventoryItem']['inventoryLevel'] ) ? $data['inventoryItem']['inventoryLevel'] : null;
 		if ( empty( $level ) ) {
 			$r = $api->query(
 				'mutation($item:ID!, $loc:ID!, $key:String!){ inventoryActivate(inventoryItemId:$item, locationId:$loc) @idempotent(key:$key){ inventoryLevel{ id } userErrors{ field message } } }',
@@ -878,14 +1033,14 @@ class WCIS_Shopify {
 				return $r;
 			}
 			$err = WCIS_Shopify_Api::user_errors( isset( $r['inventoryActivate']['userErrors'] ) ? $r['inventoryActivate']['userErrors'] : array() );
-			return $err ? $err : 0;
+			return $err ? $err : array( 'qty' => 0, 'activated' => true );
 		}
-		foreach ( (array) $level['quantities'] as $q ) {
-			if ( 'available' === $q['name'] ) {
-				return (int) $q['quantity'];
+		foreach ( (array) ( isset( $level['quantities'] ) ? $level['quantities'] : array() ) as $q ) {
+			if ( isset( $q['name'] ) && 'available' === $q['name'] ) {
+				return array( 'qty' => (int) $q['quantity'], 'activated' => false );
 			}
 		}
-		return 0;
+		return array( 'qty' => 0, 'activated' => false );
 	}
 
 	/**
@@ -896,9 +1051,10 @@ class WCIS_Shopify {
 	 * @param string           $item    Inventory-Item-GID.
 	 * @param int              $qty     Neuer Bestand.
 	 * @param int|null         $compare Erwarteter aktueller Shopify-Bestand (null = ohne Prüfung).
+	 * @param string           $key     Idempotenz-Schlüssel (gleicher Schlüssel = höchstens einmal ausgeführt).
 	 * @return true|string|WP_Error true, 'stale' oder Fehler.
 	 */
-	protected static function set_available( $api, array $s, $item, $qty, $compare ) {
+	protected static function set_available( $api, array $s, $item, $qty, $compare, $key = '' ) {
 		$data = $api->query(
 			'mutation($input: InventorySetQuantitiesInput!, $key: String!){ inventorySetQuantities(input: $input) @idempotent(key: $key){ inventoryAdjustmentGroup{ id } userErrors{ code field message } } }',
 			array(
@@ -910,12 +1066,12 @@ class WCIS_Shopify {
 						array(
 							'inventoryItemId'    => $item,
 							'locationId'         => $s['location_id'],
-							'quantity'           => (int) $qty,
+							'quantity'           => max( 0, (int) $qty ),
 							'changeFromQuantity' => null === $compare ? null : (int) $compare,
 						),
 					),
 				),
-				'key'   => WCIS_Shopify_Api::uuid(),
+				'key'   => '' !== $key ? $key : WCIS_Shopify_Api::uuid(),
 			)
 		);
 		if ( is_wp_error( $data ) ) {
@@ -923,7 +1079,8 @@ class WCIS_Shopify {
 		}
 		$err = WCIS_Shopify_Api::user_errors( isset( $data['inventorySetQuantities']['userErrors'] ) ? $data['inventorySetQuantities']['userErrors'] : array() );
 		if ( $err ) {
-			$codes = (array) ( isset( $err->get_error_data()['codes'] ) ? $err->get_error_data()['codes'] : array() );
+			$edata = $err->get_error_data();
+			$codes = is_array( $edata ) && isset( $edata['codes'] ) ? (array) $edata['codes'] : array();
 			if ( in_array( 'CHANGE_FROM_QUANTITY_STALE', $codes, true ) || false !== stripos( $err->get_error_message(), 'stale' ) ) {
 				return 'stale';
 			}
@@ -1440,11 +1597,17 @@ class WCIS_Shopify {
 		if ( $err ) {
 			return $err;
 		}
+		if ( empty( $res['productCreate']['product']['id'] ) ) {
+			return new WP_Error( 'wcis_shopify_create', __( 'Shopify hat das Produkt nicht angelegt (keine Produkt-ID erhalten).', 'blocksocial-woocommerce-sync' ) );
+		}
 		$pid = (string) $res['productCreate']['product']['id'];
 		update_post_meta( $product->get_id(), self::meta_key( $s, 'pid' ), $pid );
 
 		if ( empty( $data['options'] ) ) {
 			// Einfaches Produkt: die automatisch angelegte Standard-Variante befüllen.
+			if ( empty( $res['productCreate']['product']['variants']['nodes'][0]['id'] ) ) {
+				return new WP_Error( 'wcis_shopify_create', __( 'Shopify hat keine Standard-Variante angelegt.', 'blocksocial-woocommerce-sync' ) );
+			}
 			$default = $res['productCreate']['product']['variants']['nodes'][0];
 			$v       = $data['variants'][0];
 			$v['input']['id'] = $default['id'];
@@ -1480,8 +1643,17 @@ class WCIS_Shopify {
 	protected static function update_product( array $s, $api, $product, array $data, $pid ) {
 		$input       = $data['product'];
 		$input['id'] = $pid;
-		$res         = $api->query(
-			'mutation($product: ProductUpdateInput!){ productUpdate(product: $product){ product{ id variants(first: 250){ nodes{ id sku inventoryItem{ id } } } } userErrors{ field message } } }',
+		// Status nur beim Anlegen setzen. Bei Updates bleibt die Entscheidung des
+		// Shopify-Betreibers erhalten (veröffentlicht bleibt veröffentlicht); nur
+		// wenn das Produkt im Hauptshop nicht mehr veröffentlicht ist, wird es auch
+		// in Shopify auf Entwurf gesetzt.
+		if ( 'publish' === $product->get_status() ) {
+			unset( $input['status'] );
+		} else {
+			$input['status'] = 'DRAFT';
+		}
+		$res = $api->query(
+			'mutation($product: ProductUpdateInput!){ productUpdate(product: $product){ product{ id } userErrors{ field message } } }',
 			array( 'product' => $input )
 		);
 		if ( is_wp_error( $res ) ) {
@@ -1495,10 +1667,10 @@ class WCIS_Shopify {
 			return 'gone';
 		}
 
-		// Vorhandene Shopify-Varianten nach SKU/ID zuordnen.
-		$remote = array();
-		foreach ( (array) $res['productUpdate']['product']['variants']['nodes'] as $n ) {
-			$remote[ (string) $n['id'] ] = $n;
+		// Vorhandene Shopify-Varianten (alle Seiten) nach SKU/ID zuordnen.
+		$remote = self::remote_variants( $api, $pid );
+		if ( is_wp_error( $remote ) ) {
+			return $remote;
 		}
 		$update = array();
 		$create = array();
@@ -1551,6 +1723,41 @@ class WCIS_Shopify {
 			}
 		}
 		return true;
+	}
+
+	/**
+	 * Alle Varianten eines Shopify-Produkts (seitenweise, je 250).
+	 *
+	 * @param WCIS_Shopify_Api $api API.
+	 * @param string           $pid Produkt-GID.
+	 * @return array|WP_Error Varianten-GID => { id, sku, inventoryItem{id} }.
+	 */
+	protected static function remote_variants( $api, $pid ) {
+		$out    = array();
+		$cursor = null;
+		for ( $page = 0; $page < 20; $page++ ) {
+			$data = $api->query(
+				'query($id:ID!, $after:String){ product(id:$id){ variants(first: 250, after: $after){ nodes{ id sku inventoryItem{ id } } pageInfo{ hasNextPage endCursor } } } }',
+				array(
+					'id'    => $pid,
+					'after' => $cursor,
+				)
+			);
+			if ( is_wp_error( $data ) ) {
+				return $data;
+			}
+			if ( empty( $data['product']['variants'] ) ) {
+				break;
+			}
+			foreach ( (array) $data['product']['variants']['nodes'] as $n ) {
+				$out[ (string) $n['id'] ] = $n;
+			}
+			if ( empty( $data['product']['variants']['pageInfo']['hasNextPage'] ) ) {
+				break;
+			}
+			$cursor = $data['product']['variants']['pageInfo']['endCursor'];
+		}
+		return $out;
 	}
 
 	/**

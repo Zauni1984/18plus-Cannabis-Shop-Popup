@@ -246,12 +246,22 @@ class WCIS_REST_Controller {
 	 * @param array $managed Vorgaben.
 	 */
 	public static function store_managed( array $managed ) {
+		$old   = WCIS_Settings::get( 'managed', array() );
 		$clean = WCIS_Partners::sanitize_policy( $managed );
 		foreach ( array( 'partner_name', 'master_name', 'scope_label' ) as $k ) {
 			$clean[ $k ] = isset( $managed[ $k ] ) ? sanitize_text_field( (string) $managed[ $k ] ) : '';
 		}
 		$clean['updated_at'] = time();
 		WCIS_Settings::update( array( 'managed' => $clean ) );
+
+		// Preisregeln entzogen oder Rahmen verkleinert → bereits angewendete
+		// Auf-/Abschläge im Hintergrund an die neuen Vorgaben anpassen.
+		$was_allowed = ! empty( $old['allow_price_rules'] );
+		if ( $was_allowed && ( empty( $clean['allow_price_rules'] )
+			|| (float) $clean['price_min'] > (float) $old['price_min']
+			|| (float) $clean['price_max'] < (float) $old['price_max'] ) ) {
+			WCIS_Pricing::schedule_background_reprice();
+		}
 	}
 
 	/**

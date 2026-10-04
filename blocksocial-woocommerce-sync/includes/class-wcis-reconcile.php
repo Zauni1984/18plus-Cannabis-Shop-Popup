@@ -152,7 +152,13 @@ class WCIS_Reconcile {
 			foreach ( $peer_maps as $purl => $pmap ) {
 				if ( array_key_exists( $sku, $pmap ) ) {
 					if ( isset( $partner_peers[ $purl ] ) ) {
-						$followers[ $purl ] = $pmap[ $sku ];
+						// Nur Artikel aus dem Sortiment des Partners korrigieren (gleiche SKU
+						// eines partnereigenen Produkts bleibt unangetastet).
+						$lpid = wc_get_product_id_by_sku( $sku );
+						$lprd = $lpid ? wc_get_product( $lpid ) : null;
+						if ( $lprd && WCIS_Partners::url_allows_product( $purl, $lprd ) ) {
+							$followers[ $purl ] = $pmap[ $sku ];
+						}
 					} else {
 						$holders[ $purl ] = $pmap[ $sku ];
 					}

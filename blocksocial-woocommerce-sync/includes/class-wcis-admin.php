@@ -383,7 +383,7 @@ class WCIS_Admin {
 		}
 		$cred = WCIS_Client::credentials_for( $url );
 		if ( '' === $cred['secret'] ) {
-			wp_send_json_error( array( 'message' => __( 'Kein Netzwerk-Secret gesetzt. Bitte zuerst speichern.', 'blocksocial-woocommerce-sync' ) ) );
+			wp_send_json_error( array( 'message' => __( 'Bitte zuerst Netzwerk-Secret und Shop-URL speichern, dann testen (aus Sicherheitsgründen wird nur an gespeicherte Shops signiert).', 'blocksocial-woocommerce-sync' ) ) );
 		}
 
 		$res = WCIS_Client::get( $url, '/ping' );

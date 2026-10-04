@@ -46,17 +46,51 @@ class WCIS_Client {
 				'secret' => $c ? (string) $c['secret'] : '',
 			);
 		}
-		$p = ( '' !== (string) $peer_url ) ? WCIS_Partners::find_by_url( $peer_url ) : null;
-		if ( $p && ! empty( $p['active'] ) ) {
-			return array(
-				'key'    => (string) $p['key'],
-				'secret' => (string) $p['secret'],
-			);
-		}
-		return array(
+		$none = array(
 			'key'    => '',
-			'secret' => (string) WCIS_Settings::get( 'network_secret', '' ),
+			'secret' => '',
 		);
+		$p = ( '' !== (string) $peer_url ) ? WCIS_Partners::find_by_url( $peer_url ) : null;
+		if ( $p ) {
+			// Partner: ausschließlich der persönliche Schlüssel – gesperrte Partner
+			// erhalten gar keine Anfragen (nie Fallback auf das Netzwerk-Secret).
+			return ! empty( $p['active'] )
+				? array(
+					'key'    => (string) $p['key'],
+					'secret' => (string) $p['secret'],
+				)
+				: $none;
+		}
+		// Netzwerk-Secret nur für eingetragene eigene Shops (inkl. Hauptshop) – nie
+		// für beliebige URLs, damit keine gültige Signatur nach außen gelangt.
+		return self::is_network_url( $peer_url )
+			? array(
+				'key'    => '',
+				'secret' => (string) WCIS_Settings::get( 'network_secret', '' ),
+			)
+			: $none;
+	}
+
+	/**
+	 * Ist die URL ein eingetragener eigener Shop (Shop-Liste oder Hauptshop)?
+	 *
+	 * @param string $url URL.
+	 * @return bool
+	 */
+	public static function is_network_url( $url ) {
+		$n = WCIS_Settings::normalize_url( $url );
+		if ( '' === $n ) {
+			return false;
+		}
+		if ( WCIS_Settings::normalize_url( WCIS_Settings::get( 'master_url' ) ) === $n ) {
+			return true;
+		}
+		foreach ( (array) WCIS_Settings::get( 'shops', array() ) as $shop ) {
+			if ( ! empty( $shop['url'] ) && WCIS_Settings::normalize_url( $shop['url'] ) === $n ) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/**
@@ -164,6 +198,15 @@ class WCIS_Client {
 	}
 
 	/**
+	 * Fehler: für dieses Ziel gibt es keine (gültigen) Zugangsdaten.
+	 *
+	 * @return WP_Error
+	 */
+	public static function no_credentials_error() {
+		return new WP_Error( 'wcis_no_credentials', __( 'Keine Zugangsdaten für dieses Ziel (Shop nicht eingetragen/gespeichert oder Partner gesperrt) – Anfrage nicht gesendet.', 'blocksocial-woocommerce-sync' ) );
+	}
+
+	/**
 	 * Absender der aktuellen (verifizierten) Anfrage.
 	 *
 	 * @return array|null
@@ -185,6 +228,9 @@ class WCIS_Client {
 	public static function post( $peer_url, $endpoint, array $payload, $blocking = true, $timeout = null ) {
 		$url  = untrailingslashit( $peer_url ) . '/wp-json/' . WCIS_REST_NS . $endpoint;
 		$body = wp_json_encode( $payload );
+		if ( '' === self::credentials_for( $peer_url )['secret'] ) {
+			return self::no_credentials_error();
+		}
 
 		$eff_timeout = ( null !== $timeout ) ? max( 5, min( 60, (int) $timeout ) ) : self::timeout();
 
@@ -219,6 +265,9 @@ class WCIS_Client {
 	public static function get( $peer_url, $endpoint ) {
 		$url  = untrailingslashit( $peer_url ) . '/wp-json/' . WCIS_REST_NS . $endpoint;
 		$body = ''; // GET signiert einen leeren Body.
+		if ( '' === self::credentials_for( $peer_url )['secret'] ) {
+			return self::no_credentials_error();
+		}
 
 		$response = wp_remote_get(
 			$url,

@@ -62,6 +62,7 @@ class WCIS_Sync_Engine {
 		// Retry-Queue-Verarbeitung per Cron.
 		add_action( 'wcis_process_queue', array( __CLASS__, 'process_queue' ) );
 		add_action( 'wcis_daily_cleanup', array( 'WCIS_Logger', 'cleanup' ) );
+		add_action( 'wcis_daily_cleanup', array( __CLASS__, 'cleanup_events' ) );
 	}
 
 	/**
@@ -286,48 +287,61 @@ class WCIS_Sync_Engine {
 	 * - von Shopify: an alle Shops/Partner und die übrigen Shopify-Shops.
 	 */
 	public static function dispatch_forward() {
-		$jobs          = self::$forward;
-		self::$forward = array();
-		if ( empty( $jobs ) ) {
+		if ( empty( self::$forward ) ) {
 			return;
 		}
-
 		if ( function_exists( 'fastcgi_finish_request' ) ) {
 			@fastcgi_finish_request(); // phpcs:ignore WordPress.PHP.NoSilencedErrors
 		}
 
-		foreach ( $jobs as $job ) {
-			$items = array();
-			foreach ( $job['skus'] as $sku ) {
-				$pid = wc_get_product_id_by_sku( $sku );
-				$prd = $pid ? wc_get_product( $pid ) : null;
-				$it  = $prd ? self::item_from_product( $prd ) : null;
-				if ( $it ) {
-					$items[] = $it;
-				}
+		// Schleife: Während der Weiterleitung können neue Änderungen entstehen (z. B.
+		// ein dabei entdeckter Shopify-Verkauf) – auch diese werden verteilt.
+		$guard = 0;
+		while ( ! empty( self::$forward ) && $guard++ < 10 ) {
+			$jobs          = self::$forward;
+			self::$forward = array();
+			foreach ( $jobs as $job ) {
+				self::forward_job( $job );
 			}
-			if ( empty( $items ) ) {
-				continue;
-			}
-
-			$src_type = isset( $job['source']['type'] ) ? $job['source']['type'] : '';
-			$src_url  = isset( $job['source']['url'] ) ? WCIS_Settings::normalize_url( $job['source']['url'] ) : '';
-
-			foreach ( WCIS_Settings::get_peers() as $peer ) {
-				if ( 'network' === $src_type && 'network' === $peer['type'] ) {
-					continue; // eigene Shops haben die Änderung bereits (Mesh).
-				}
-				if ( 'partner' !== $src_type && '' !== $src_url && WCIS_Settings::normalize_url( $peer['url'] ) === $src_url ) {
-					continue; // nicht an den Absender zurück (außer Partner, s. o.).
-				}
-				self::deliver_items( $peer['url'], $items );
-			}
-
-			WCIS_Shopify::push_skus(
-				wp_list_pluck( $items, 'sku' ),
-				( 'shopify' === $src_type && isset( $job['source']['store'] ) ) ? $job['source']['store'] : ''
-			);
 		}
+	}
+
+	/**
+	 * Leitet einen einzelnen Weiterleitungs-Auftrag weiter.
+	 *
+	 * @param array $job { skus, source }.
+	 */
+	protected static function forward_job( array $job ) {
+		$items = array();
+		foreach ( $job['skus'] as $sku ) {
+			$pid = wc_get_product_id_by_sku( $sku );
+			$prd = $pid ? wc_get_product( $pid ) : null;
+			$it  = $prd ? self::item_from_product( $prd ) : null;
+			if ( $it ) {
+				$items[] = $it;
+			}
+		}
+		if ( empty( $items ) ) {
+			return;
+		}
+
+		$src_type = isset( $job['source']['type'] ) ? $job['source']['type'] : '';
+		$src_url  = isset( $job['source']['url'] ) ? WCIS_Settings::normalize_url( $job['source']['url'] ) : '';
+
+		foreach ( WCIS_Settings::get_peers() as $peer ) {
+			if ( 'network' === $src_type && 'network' === $peer['type'] ) {
+				continue; // eigene Shops haben die Änderung bereits (Mesh).
+			}
+			if ( 'partner' !== $src_type && '' !== $src_url && WCIS_Settings::normalize_url( $peer['url'] ) === $src_url ) {
+				continue; // nicht an den Absender zurück (außer Partner, s. o.).
+			}
+			self::deliver_items( $peer['url'], $items );
+		}
+
+		WCIS_Shopify::push_skus(
+			wp_list_pluck( $items, 'sku' ),
+			( 'shopify' === $src_type && isset( $job['source']['store'] ) ) ? $job['source']['store'] : ''
+		);
 	}
 
 	// -------------------------------------------------------------------------
@@ -353,8 +367,7 @@ class WCIS_Sync_Engine {
 			return;
 		}
 		$delta = (int) $change['to'] - (int) $change['from'];
-		$event = sprintf( 'r:%d:%d:%s', $order ? $order->get_id() : 0, $item ? $item->get_id() : 0, $change['to'] );
-		self::queue_delta( $change['product'], $delta, $event );
+		self::queue_delta( $change['product'], $delta, self::event_id( 'r', $order ) );
 	}
 
 	/**
@@ -367,8 +380,7 @@ class WCIS_Sync_Engine {
 	 */
 	public static function on_order_item_restored( $item, $new_stock, $old_stock, $order ) {
 		$product = $item ? $item->get_product() : null;
-		$event   = sprintf( 'i:%d:%d:%s', $order ? $order->get_id() : 0, $item ? $item->get_id() : 0, $new_stock );
-		self::queue_delta( $product, (int) $new_stock - (int) $old_stock, $event );
+		self::queue_delta( $product, (int) $new_stock - (int) $old_stock, self::event_id( 'i', $order ) );
 	}
 
 	/**
@@ -382,8 +394,21 @@ class WCIS_Sync_Engine {
 	 */
 	public static function on_refund_restocked( $product_id, $old_stock, $new_stock, $order = null, $product = null ) {
 		$product = $product instanceof WC_Product ? $product : wc_get_product( $product_id );
-		$event   = sprintf( 'f:%d:%d:%s', $order ? $order->get_id() : 0, (int) $product_id, $new_stock );
-		self::queue_delta( $product, (int) $new_stock - (int) $old_stock, $event );
+		self::queue_delta( $product, (int) $new_stock - (int) $old_stock, self::event_id( 'f', $order ) );
+	}
+
+	/**
+	 * Eindeutige Ereignis-ID je Bestandsereignis. Wird einmal beim Ereignis
+	 * erzeugt und bei Wiederholungen (Retry-Queue) unverändert mitgesendet –
+	 * dadurch zählt der Hauptshop jedes Ereignis genau einmal, auch wenn eine
+	 * Bestellung mehrfach storniert und wieder reduziert wird.
+	 *
+	 * @param string   $type  r (Verkauf) | i (Storno) | f (Erstattung).
+	 * @param WC_Order $order Bestellung.
+	 * @return string
+	 */
+	protected static function event_id( $type, $order ) {
+		return $type . ':' . ( $order ? (int) $order->get_id() : 0 ) . ':' . wp_generate_uuid4();
 	}
 
 	/**
@@ -475,8 +500,18 @@ class WCIS_Sync_Engine {
 				continue;
 			}
 
+			// Plausibilitätsgrenze je Meldung (schützt vor fehlerhaften/manipulierten Riesenmengen).
+			$max = (int) apply_filters( 'wcis_partner_max_delta', 1000, $partner );
+			if ( abs( $delta ) > $max ) {
+				WCIS_Logger::error( sprintf( 'Bestandsmeldung von Partner „%s" für SKU %s abgelehnt: Menge %d über der Obergrenze %d.', $partner['name'], $sku, $delta, $max ), 'inbound' );
+				$stats['skipped']++;
+				continue;
+			}
+
+			// Ereignis ATOMAR reservieren (add_option schlägt fehl, wenn es existiert) –
+			// verhindert Doppelbuchung, auch wenn eine Wiederholung parallel eintrifft.
 			$event_key = 'wcis_evt_' . md5( $partner['key'] . '|' . $event . '|' . $sku );
-			if ( get_transient( $event_key ) ) {
+			if ( ! WCIS_Install::claim( $event_key ) ) {
 				$stats['skipped']++; // bereits verarbeitet (Wiederholung aus der Retry-Queue).
 				continue;
 			}
@@ -493,8 +528,9 @@ class WCIS_Sync_Engine {
 			}
 			if ( $delta > 0 && ! empty( $policy['stock_decrease_only'] ) ) {
 				WCIS_Logger::info( sprintf( 'Bestandserhöhung von Partner „%s" für SKU %s ignoriert (nur Verringerungen erlaubt).', $partner['name'], $sku ), 'inbound' );
-				set_transient( $event_key, 1, 14 * DAY_IN_SECONDS );
 				$stats['skipped']++;
+				// Partner erhält sofort wieder den maßgeblichen Bestand (Weiterleitung inkl. Absender).
+				$stats['applied_skus'][] = $sku;
 				continue;
 			}
 
@@ -505,16 +541,30 @@ class WCIS_Sync_Engine {
 				self::$suppress = false;
 			}
 			if ( is_wp_error( $res ) || false === $res ) {
+				WCIS_Install::release( $event_key ); // nicht angewendet → Wiederholung erlauben.
 				$stats['skipped']++;
 				continue;
 			}
 
-			set_transient( $event_key, 1, 14 * DAY_IN_SECONDS );
 			$stats['applied']++;
 			$stats['applied_skus'][] = $sku;
 		}
 
 		return $stats;
+	}
+
+	/**
+	 * Entfernt Ereignis-Marker gemeldeter Partner-Verkäufe, die älter als 30 Tage sind.
+	 */
+	public static function cleanup_events() {
+		global $wpdb;
+		$wpdb->query( // phpcs:ignore WordPress.DB.DirectDatabaseQuery
+			$wpdb->prepare(
+				"DELETE FROM {$wpdb->options} WHERE option_name LIKE %s AND CAST(option_value AS UNSIGNED) < %d",
+				$wpdb->esc_like( 'wcis_evt_' ) . '%',
+				time() - 30 * DAY_IN_SECONDS
+			)
+		);
 	}
 
 	/**

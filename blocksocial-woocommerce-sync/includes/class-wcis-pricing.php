@@ -242,8 +242,8 @@ class WCIS_Pricing {
 		if ( '' === (string) $base || ! is_numeric( $base ) ) {
 			return (string) $base;
 		}
-		if ( 0.0 === (float) $percent ) {
-			return (string) $base; // 0 % = Originalpreis, unverändert (auch ohne Rundung).
+		if ( 0.0 === (float) $percent || 0.0 === (float) $base ) {
+			return (string) $base; // 0 % = Originalpreis; Gratis-Artikel bleiben gratis (keine Rundung auf 0,99).
 		}
 		$v   = (float) $base * ( 1 + (float) $percent / 100 );
 		$v   = max( 0.0, $v );
@@ -285,7 +285,9 @@ class WCIS_Pricing {
 		$base  = 'sale' === $which ? self::META_BASE_SALE : self::META_BASE_REGULAR;
 		$final = 'sale' === $which ? self::META_FINAL_SALE : self::META_FINAL_REGULAR;
 		$product->update_meta_data( $base, (string) $value );
-		$product->delete_meta_data( $final ); // neue Basis ist maßgeblich (keine Fehl-Erkennung als manuelle Änderung).
+		// Der eingehende Preis ist zugleich der aktuell gesetzte Preis: als „zuletzt
+		// gesetzt" merken, damit spätere manuelle Änderungen im Shop erkannt werden.
+		$product->update_meta_data( $final, (string) $value );
 	}
 
 	/**
@@ -370,7 +372,9 @@ class WCIS_Pricing {
 	 */
 	public static function reprice_product( $product_id, $force = false ) {
 		if ( ! self::is_available() ) {
-			return null;
+			// Regeln (nicht mehr) erlaubt: bei erzwungenem Lauf früher angewendete
+			// Auf-/Abschläge entfernen (zurück auf den Basispreis).
+			return $force ? self::revert_product( $product_id ) : null;
 		}
 		$rules = self::rules();
 		if ( ! $force && ! self::has_active_rules( $rules ) ) {
@@ -412,6 +416,84 @@ class WCIS_Pricing {
 			WCIS_Sync_Engine::set_suppress( false );
 		}
 		return $changed;
+	}
+
+	/**
+	 * Setzt ein Produkt (inkl. Variationen) auf die gespeicherten Basispreise zurück.
+	 *
+	 * @param int $product_id Produkt-ID.
+	 * @return bool|null
+	 */
+	public static function revert_product( $product_id ) {
+		$product = wc_get_product( (int) $product_id );
+		if ( ! $product || ( ! $product->is_type( 'simple' ) && ! $product->is_type( 'variable' ) ) ) {
+			return null;
+		}
+		$targets = $product->is_type( 'variable' ) ? array_filter( array_map( 'wc_get_product', $product->get_children() ) ) : array( $product );
+		$changed = false;
+		WCIS_Product_Sync::set_suppress( true );
+		WCIS_Sync_Engine::set_suppress( true );
+		try {
+			foreach ( $targets as $t ) {
+				if ( ! $t instanceof WC_Product || ! $t->meta_exists( self::META_BASE_REGULAR ) ) {
+					continue;
+				}
+				$did     = self::reprice_one( $t, 0.0, 'none' );
+				$t->save();
+				$changed = $changed || $did;
+			}
+			if ( $product->is_type( 'variable' ) && $changed ) {
+				WC_Product_Variable::sync( $product->get_id() );
+				wc_delete_product_transients( $product->get_id() );
+			}
+		} finally {
+			WCIS_Product_Sync::set_suppress( false );
+			WCIS_Sync_Engine::set_suppress( false );
+		}
+		return $changed;
+	}
+
+	/**
+	 * Partner-Plugin: Vorgaben zu Preisregeln haben sich geändert (entzogen oder
+	 * Rahmen verkleinert) → alle Preise im Hintergrund neu berechnen.
+	 */
+	public static function schedule_background_reprice() {
+		update_option( 'wcis_reprice_offset', 0, false );
+		if ( ! wp_next_scheduled( 'wcis_reprice_batch' ) ) {
+			wp_schedule_single_event( time() + 5, 'wcis_reprice_batch' );
+		}
+	}
+
+	/**
+	 * Cron: verarbeitet den nächsten Block von Produkten (je 100, plant sich neu).
+	 */
+	public static function background_reprice_batch() {
+		$offset = (int) get_option( 'wcis_reprice_offset', 0 );
+		$ids    = get_posts(
+			array(
+				'post_type'      => 'product',
+				'post_status'    => array( 'publish', 'private', 'draft', 'pending' ),
+				'posts_per_page' => 100,
+				'offset'         => $offset,
+				'fields'         => 'ids',
+				'orderby'        => 'ID',
+				'order'          => 'ASC',
+			)
+		);
+		foreach ( $ids as $pid ) {
+			try {
+				self::reprice_product( (int) $pid, true );
+			} catch ( \Throwable $e ) {
+				WCIS_Logger::error( sprintf( 'Preis-Neuberechnung für Produkt-ID %d fehlgeschlagen: %s', (int) $pid, $e->getMessage() ), 'local' );
+			}
+		}
+		if ( count( $ids ) === 100 ) {
+			update_option( 'wcis_reprice_offset', $offset + 100, false );
+			wp_schedule_single_event( time() + 5, 'wcis_reprice_batch' );
+		} else {
+			delete_option( 'wcis_reprice_offset' );
+			WCIS_Logger::info( 'Preise nach geänderten Vorgaben des Hauptshops neu berechnet.', 'local' );
+		}
 	}
 
 	/**

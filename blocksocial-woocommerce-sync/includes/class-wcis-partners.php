@@ -125,6 +125,19 @@ class WCIS_Partners {
 	}
 
 	/**
+	 * Liest die Partnerliste frisch aus der Datenbank (vor Schreibvorgängen, damit
+	 * parallele Requests – z. B. „letzter Kontakt" – keine Admin-Änderungen
+	 * wie Sperren oder Schlüsselwechsel überschreiben).
+	 *
+	 * @return array
+	 */
+	protected static function fresh() {
+		self::$cache = null;
+		wp_cache_delete( self::OPT, 'options' );
+		return self::all();
+	}
+
+	/**
 	 * Speichert die Partnerliste.
 	 *
 	 * @param array $list Partner.
@@ -210,7 +223,7 @@ class WCIS_Partners {
 		}
 
 		$key = self::new_key_id();
-		$all = self::all();
+		$all = self::fresh();
 
 		$all[ $key ] = array(
 			'key'          => $key,
@@ -238,7 +251,7 @@ class WCIS_Partners {
 	 * @return bool
 	 */
 	public static function update( $key, array $fields ) {
-		$all = self::all();
+		$all = self::fresh();
 		if ( ! isset( $all[ $key ] ) ) {
 			return false;
 		}
@@ -269,7 +282,7 @@ class WCIS_Partners {
 	 * @param string $key Key-ID.
 	 */
 	public static function delete( $key ) {
-		$all = self::all();
+		$all = self::fresh();
 		if ( isset( $all[ $key ] ) ) {
 			WCIS_Logger::info( sprintf( 'Partner „%s" entfernt.', $all[ $key ]['name'] ), 'outbound' );
 			unset( $all[ $key ] );
@@ -284,7 +297,7 @@ class WCIS_Partners {
 	 * @return array|null Partner mit neuem Schlüssel.
 	 */
 	public static function rotate( $key ) {
-		$all = self::all();
+		$all = self::fresh();
 		if ( ! isset( $all[ $key ] ) ) {
 			return null;
 		}

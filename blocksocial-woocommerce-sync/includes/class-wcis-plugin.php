@@ -52,6 +52,9 @@ class WCIS_Plugin {
 		// Optionaler Produkt-Sync (neue Produkte 1:1 übertragen).
 		WCIS_Product_Sync::init();
 
+		// Preis-Neuberechnung im Hintergrund (nach geänderten Vorgaben).
+		add_action( 'wcis_reprice_batch', array( 'WCIS_Pricing', 'background_reprice_batch' ) );
+
 		// Partner-Plugin: Vorgaben täglich beim Hauptshop auffrischen.
 		if ( WCIS_Edition::is_partner() ) {
 			add_action( 'wcis_daily_cleanup', array( 'WCIS_Partners', 'refresh_from_master' ) );
