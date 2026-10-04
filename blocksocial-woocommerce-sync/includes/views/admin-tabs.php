@@ -411,3 +411,168 @@ $wcis_show_code = isset( $_GET['wcis_show_code'] ) ? sanitize_key( wp_unslash( $
 <section class="wcis-tab" data-tab="pricing">
 	<?php WCIS_View::pricing_card(); ?>
 </section>
+
+<!-- TAB: CSV-Feeds -->
+<section class="wcis-tab" data-tab="feeds">
+	<?php
+	$wcis_feeds = WCIS_Feeds::all();
+
+	/**
+	 * Formularfelder eines CSV-Feeds.
+	 *
+	 * @param array $fd Feed.
+	 */
+	$wcis_feed_form = static function ( array $fd ) {
+		$is_new = '' === $fd['id'];
+		?>
+		<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
+			<input type="hidden" name="action" value="wcis_feed_save" />
+			<input type="hidden" name="feed_id" value="<?php echo esc_attr( $fd['id'] ); ?>" />
+			<?php wp_nonce_field( 'wcis_feed_save' ); ?>
+			<div class="wcis-grid">
+				<div class="wcis-field">
+					<label><?php esc_html_e( 'Name', 'blocksocial-woocommerce-sync' ); ?></label>
+					<input type="text" name="feed_name" value="<?php echo esc_attr( $fd['name'] ); ?>" placeholder="<?php esc_attr_e( 'z. B. Feed für Jimdo-Shop XY', 'blocksocial-woocommerce-sync' ); ?>" />
+				</div>
+				<div class="wcis-field">
+					<label><?php esc_html_e( 'Preise', 'blocksocial-woocommerce-sync' ); ?></label>
+					<select name="feed_prices">
+						<option value="gross" <?php selected( $fd['prices'], 'gross' ); ?>><?php esc_html_e( 'Brutto (inkl. MwSt.)', 'blocksocial-woocommerce-sync' ); ?></option>
+						<option value="net" <?php selected( $fd['prices'], 'net' ); ?>><?php esc_html_e( 'Netto (zzgl. MwSt.)', 'blocksocial-woocommerce-sync' ); ?></option>
+					</select>
+				</div>
+				<div class="wcis-field">
+					<label><?php esc_html_e( 'Trennzeichen', 'blocksocial-woocommerce-sync' ); ?></label>
+					<select name="feed_delimiter">
+						<option value=";" <?php selected( $fd['delimiter'], ';' ); ?>><?php esc_html_e( 'Semikolon ; (Excel Deutschland)', 'blocksocial-woocommerce-sync' ); ?></option>
+						<option value="," <?php selected( $fd['delimiter'], ',' ); ?>><?php esc_html_e( 'Komma ,', 'blocksocial-woocommerce-sync' ); ?></option>
+						<option value="tab" <?php selected( $fd['delimiter'], 'tab' ); ?>><?php esc_html_e( 'Tabulator', 'blocksocial-woocommerce-sync' ); ?></option>
+					</select>
+				</div>
+			</div>
+			<?php
+			$sw = array(
+				'feed_active'       => array( 'active', __( 'Aktiv', 'blocksocial-woocommerce-sync' ), __( 'Feed ist über die Abruf-URL erreichbar.', 'blocksocial-woocommerce-sync' ) ),
+				'feed_only_instock' => array( 'only_instock', __( 'Nur lieferbare Artikel', 'blocksocial-woocommerce-sync' ), __( 'Artikel mit Status „nicht vorrätig" weglassen.', 'blocksocial-woocommerce-sync' ) ),
+				'feed_parents'      => array( 'parents', __( 'Eltern-Zeilen variabler Produkte', 'blocksocial-woocommerce-sync' ), __( 'Zusätzlich eine Zeile je variablem Produkt (type „variable"); Varianten verweisen per parent_sku darauf.', 'blocksocial-woocommerce-sync' ) ),
+				'feed_descriptions' => array( 'descriptions', __( 'Beschreibungen mitliefern', 'blocksocial-woocommerce-sync' ), __( 'Kurz- und Langbeschreibung (HTML). Ausschalten für kleinere Dateien.', 'blocksocial-woocommerce-sync' ) ),
+				'feed_bom'          => array( 'bom', __( 'UTF-8-BOM', 'blocksocial-woocommerce-sync' ), __( 'Damit Excel Umlaute korrekt anzeigt. Für reine Import-Schnittstellen ggf. ausschalten.', 'blocksocial-woocommerce-sync' ) ),
+			);
+			foreach ( $sw as $name => $def ) :
+				?>
+				<div class="wcis-field wcis-field--switch">
+					<div class="wcis-field-main">
+						<label class="wcis-switch"><input type="checkbox" name="<?php echo esc_attr( $name ); ?>" value="1" <?php checked( ! empty( $fd[ $def[0] ] ) ); ?> /><span class="wcis-slider"></span></label>
+						<div><strong><?php echo esc_html( $def[1] ); ?></strong><p><?php echo esc_html( $def[2] ); ?></p></div>
+					</div>
+				</div>
+			<?php endforeach; ?>
+			<div class="wcis-field">
+				<label><?php esc_html_e( 'Sortiment', 'blocksocial-woocommerce-sync' ); ?></label>
+				<label class="wcis-radio"><input type="radio" name="feed_scope" value="all" <?php checked( $fd['scope'], 'all' ); ?> /> <span><?php esc_html_e( 'Gesamtes Sortiment (veröffentlichte Produkte)', 'blocksocial-woocommerce-sync' ); ?></span></label>
+				<label class="wcis-radio"><input type="radio" name="feed_scope" value="categories" <?php checked( $fd['scope'], 'categories' ); ?> /> <span><?php esc_html_e( 'Nur diese Kategorien (inkl. Unterkategorien):', 'blocksocial-woocommerce-sync' ); ?></span></label>
+				<?php WCIS_View::category_multiselect( 'feed_categories', $fd['categories'] ); ?>
+			</div>
+			<details class="wcis-details" <?php echo WCIS_Pricing::has_active_rules( WCIS_Pricing::sanitize_rules( $fd['price_rules'] ) ) ? 'open' : ''; ?>>
+				<summary><?php esc_html_e( 'Preisregeln für diesen Feed', 'blocksocial-woocommerce-sync' ); ?></summary>
+				<p class="wcis-hint"><?php esc_html_e( 'Auf-/Abschläge gelten nur für die Preise in diesem Feed – die Preise im Shop bleiben unverändert.', 'blocksocial-woocommerce-sync' ); ?></p>
+				<?php WCIS_View::rules_editor( $fd['price_rules'] ); ?>
+			</details>
+			<p><button type="submit" class="wcis-btn wcis-btn--primary"><?php echo $is_new ? esc_html__( 'Feed anlegen', 'blocksocial-woocommerce-sync' ) : esc_html__( 'Speichern', 'blocksocial-woocommerce-sync' ); ?></button></p>
+		</form>
+		<?php
+	};
+	?>
+
+	<div class="wcis-card">
+		<div class="wcis-card-head"><h2><?php esc_html_e( 'CSV-Produktfeeds', 'blocksocial-woocommerce-sync' ); ?></h2>
+			<p><?php esc_html_e( 'Für Shops und Systeme ohne Plugin (z. B. Jimdo, Marktplätze, Warenwirtschaft): Jeder Feed hat eine eigene, geheime Abruf-URL. Die CSV aktualisiert sich automatisch, sobald sich Bestand, Preis oder Produktdaten ändern – Abrufer erhalten immer den aktuellen Stand.', 'blocksocial-woocommerce-sync' ); ?></p></div>
+		<div class="wcis-card-body">
+			<?php if ( empty( $wcis_feeds ) ) : ?>
+				<p class="wcis-empty"><?php esc_html_e( 'Noch kein Feed angelegt.', 'blocksocial-woocommerce-sync' ); ?></p>
+			<?php endif; ?>
+			<?php foreach ( $wcis_feeds as $wcis_fd ) : ?>
+				<div class="wcis-store">
+					<div class="wcis-store-head">
+						<div>
+							<strong><?php echo esc_html( $wcis_fd['name'] ); ?></strong>
+							<?php if ( empty( $wcis_fd['active'] ) ) : ?>
+								<span class="wcis-lvl wcis-lvl-error"><?php esc_html_e( 'inaktiv', 'blocksocial-woocommerce-sync' ); ?></span>
+							<?php endif; ?>
+							<br /><small>
+								<?php
+								$wcis_pending = WCIS_Feeds::pending( $wcis_fd['id'] );
+								if ( ! empty( $wcis_fd['built_at'] ) ) {
+									echo esc_html(
+										sprintf(
+											/* translators: 1: Produkte, 2: Status */
+											__( '%1$d Produkte · %2$s', 'blocksocial-woocommerce-sync' ),
+											WCIS_Feeds::product_count( $wcis_fd['id'] ),
+											$wcis_pending ? sprintf( __( '%d Änderung(en) werden beim nächsten Abruf übernommen', 'blocksocial-woocommerce-sync' ), $wcis_pending ) : __( 'aktuell', 'blocksocial-woocommerce-sync' )
+										)
+									);
+								} else {
+									echo esc_html( sprintf( __( 'Wird im Hintergrund aufgebaut … (%d Produkte offen)', 'blocksocial-woocommerce-sync' ), $wcis_pending ) );
+								}
+								if ( ! empty( $wcis_fd['last_access'] ) ) {
+									echo ' · ' . esc_html( sprintf( __( 'zuletzt abgerufen vor %1$s (%2$d×)', 'blocksocial-woocommerce-sync' ), human_time_diff( (int) $wcis_fd['last_access'], time() ), (int) $wcis_fd['access_count'] ) );
+								}
+								if ( ! empty( $wcis_fd['last_error'] ) ) {
+									echo '<br /><span class="wcis-err-text">' . esc_html( $wcis_fd['last_error'] ) . '</span>';
+								}
+								?>
+							</small>
+						</div>
+						<div class="wcis-store-actions">
+							<?php
+							$wcis_feed_actions = array(
+								'download'   => array( __( 'Herunterladen', 'blocksocial-woocommerce-sync' ), '' ),
+								'regenerate' => array( __( 'Komplett neu aufbauen', 'blocksocial-woocommerce-sync' ), '' ),
+								'rotate'     => array( __( 'Neue URL', 'blocksocial-woocommerce-sync' ), __( 'Neue Abruf-URL erzeugen? Die bisherige URL funktioniert danach nicht mehr.', 'blocksocial-woocommerce-sync' ) ),
+								'delete'     => array( __( 'Löschen', 'blocksocial-woocommerce-sync' ), __( 'Feed löschen? Die Abruf-URL funktioniert danach nicht mehr.', 'blocksocial-woocommerce-sync' ) ),
+							);
+							foreach ( $wcis_feed_actions as $wcis_do => $wcis_def ) :
+								?>
+								<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" class="wcis-inline-form" <?php echo $wcis_def[1] ? 'data-confirm="' . esc_attr( $wcis_def[1] ) . '"' : ''; ?>>
+									<input type="hidden" name="action" value="wcis_feed_action" />
+									<input type="hidden" name="feed_id" value="<?php echo esc_attr( $wcis_fd['id'] ); ?>" />
+									<input type="hidden" name="feed_do" value="<?php echo esc_attr( $wcis_do ); ?>" />
+									<?php wp_nonce_field( 'wcis_feed_action' ); ?>
+									<button type="submit" class="wcis-btn wcis-btn--ghost<?php echo 'delete' === $wcis_do ? ' wcis-btn--danger' : ''; ?>"><?php echo esc_html( $wcis_def[0] ); ?></button>
+								</form>
+							<?php endforeach; ?>
+						</div>
+					</div>
+					<div class="wcis-field">
+						<label><?php esc_html_e( 'Abruf-URL (geheim halten – wer sie kennt, kann den Feed lesen)', 'blocksocial-woocommerce-sync' ); ?></label>
+						<div class="wcis-inline">
+							<input type="text" class="code wcis-feed-url" id="wcis-feed-url-<?php echo esc_attr( $wcis_fd['id'] ); ?>" value="<?php echo esc_attr( WCIS_Feeds::url( $wcis_fd ) ); ?>" readonly />
+							<button type="button" class="wcis-btn wcis-btn--ghost wcis-copy" data-target="#wcis-feed-url-<?php echo esc_attr( $wcis_fd['id'] ); ?>"><?php esc_html_e( 'Kopieren', 'blocksocial-woocommerce-sync' ); ?></button>
+						</div>
+					</div>
+					<details class="wcis-details">
+						<summary><?php esc_html_e( 'Einstellungen bearbeiten', 'blocksocial-woocommerce-sync' ); ?></summary>
+						<?php $wcis_feed_form( $wcis_fd ); ?>
+					</details>
+				</div>
+			<?php endforeach; ?>
+		</div>
+	</div>
+
+	<div class="wcis-card">
+		<div class="wcis-card-head"><h2><?php esc_html_e( 'Neuen CSV-Feed anlegen', 'blocksocial-woocommerce-sync' ); ?></h2></div>
+		<div class="wcis-card-body">
+			<?php $wcis_feed_form( WCIS_Feeds::defaults() ); ?>
+			<details class="wcis-details">
+				<summary><?php esc_html_e( 'Spalten der CSV', 'blocksocial-woocommerce-sync' ); ?></summary>
+				<table class="wcis-kv">
+					<?php foreach ( WCIS_Feeds::columns() as $wcis_col => $wcis_desc ) : ?>
+						<tr><th><code><?php echo esc_html( $wcis_col ); ?></code></th><td><?php echo esc_html( $wcis_desc ); ?></td></tr>
+					<?php endforeach; ?>
+				</table>
+				<p class="wcis-hint"><?php esc_html_e( 'Eine Zeile je Artikel (einfache Produkte und Varianten). Zuordnung beim Import am besten über die SKU. Abrufer können „If-Modified-Since"/ETag nutzen – unveränderte Feeds werden dann mit HTTP 304 beantwortet.', 'blocksocial-woocommerce-sync' ); ?></p>
+				<p class="wcis-hint"><?php esc_html_e( 'Effizient: Es wird keine Datei ständig neu geschrieben. Jede Produktzeile ist einzeln gespeichert; ändert sich ein Bestand oder Preis, wird nur die Zeile dieses Produkts neu berechnet. Beim Abruf wird die CSV direkt aus den gespeicherten Zeilen ausgeliefert. „Komplett neu aufbauen" ist nur nötig, wenn sich z. B. Steuersätze oder Kategorienamen geändert haben.', 'blocksocial-woocommerce-sync' ); ?></p>
+			</details>
+		</div>
+	</div>
+</section>

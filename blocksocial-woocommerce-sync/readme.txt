@@ -28,6 +28,7 @@ Es gibt zwei Plugins aus demselben Code:
 * Kopplung beliebig vieler eigener Shops über die REST-API mit HMAC-signierten Anfragen (gemeinsames Netzwerk-Secret).
 * Partnershops mit persönlichem Zugangsschlüssel: Partner erhalten Produkte und Bestände, melden Verkäufe – können aber weder Produkte, Preise, Bestände (außer echten Verkäufen) noch Einstellungen des Verbunds verändern. Sperren, Schlüssel erneuern und Sortiment je Partner (Kategorien) jederzeit möglich.
 * Shopify-Anbindung (Admin GraphQL API): Produkte anlegen/aktualisieren, Bestände in Echtzeit, Verkäufe in Shopify per Webhook zurück – mit eigenen Preisregeln je Shopify-Shop und automatischer Brutto/Netto-Erkennung.
+* CSV-Produktfeeds für Shops ohne Plugin (z. B. Jimdo, Marktplätze, Warenwirtschaft): eigene geheime Abruf-URL je Feed, immer aktueller Bestand, eigenes Sortiment, brutto/netto und Preisregeln je Feed, Download-Button.
 * Preisregeln für Empfänger-Shops: Preise nach dem Einspielen in % anpassen – nach oben oder unten, für alle Produkte oder je Kategorie, optional mit Rundung (z. B. auf ,99), mit Vorschau und Fortschrittsbalken. Bleibt bei Preis-Updates des Hauptshops erhalten.
 * Ein wählbarer Hauptshop (Master) – jederzeit änderbar; der Hauptshop verteilt Änderungen an Partner und Shopify weiter.
 * Nahezu Echtzeit-Push bei jeder Bestandsänderung (Bestellung, Storno, manuelle Änderung).
@@ -43,8 +44,9 @@ Es gibt zwei Plugins aus demselben Code:
 1. Admin-Plugin im Hauptshop und in allen eigenen Shops installieren und aktivieren.
 2. Im Hauptshop unter *WooCommerce → BlockSocial Sync → Netzwerk* ein Netzwerk-Secret erzeugen, in allen eigenen Shops eintragen, Shop-URLs hinterlegen und den Hauptshop wählen.
 3. Partner: im Hauptshop unter *Partner* anlegen → Verbindungscode an den Partner geben. Der Partner installiert das Partner-Plugin und fügt den Code ein.
-4. Shopify: im Hauptshop unter *Shopify* den Shop mit Client-ID/Client-Secret (Dev-Dashboard-App) anbinden, Verbindung testen, Übertragung starten.
-5. Verbindung testen und anschließend im Hauptshop die erste Voll-Synchronisation starten.
+4. CSV-Feeds: im Hauptshop unter *CSV-Feeds* einen Feed anlegen und die Abruf-URL im Zielsystem hinterlegen.
+5. Shopify: im Hauptshop unter *Shopify* den Shop mit Client-ID/Client-Secret (Dev-Dashboard-App) anbinden, Verbindung testen, Übertragung starten.
+6. Verbindung testen und anschließend im Hauptshop die erste Voll-Synchronisation starten.
 
 Admin- und Partner-Plugin dürfen nicht gleichzeitig im selben Shop aktiv sein.
 
@@ -65,6 +67,7 @@ Umbenennung von „WC Inventory Sync" zu „BlockSocial WooCommerce Sync". Inter
 * NEU: Hauptshop als Verteil-Zentrale: Änderungen eigener Neben-Shops, von Partnern und aus Shopify werden an alle übrigen Empfänger weitergereicht. Der Abgleich korrigiert Partnershops, ohne dass deren Bestände den Sollwert beeinflussen.
 * NEU: Preisregeln für Empfänger-Shops (Neben- und Partnershops): Auf-/Abschlag in % für alle Produkte und/oder je Kategorie (spezifischste Kategorie gewinnt), Rundung (,99 / ,95 / ,90 / 10 Cent / volle Euro), Vorschau, Massen-Anwendung mit Fortschrittsbalken, Zurücksetzen auf Originalpreise. Basispreise werden gespeichert – kein Aufschlag auf den Aufschlag; neue Preise vom Hauptshop werden automatisch mit der Regel versehen.
 * NEU: Shopify-Anbindung (Admin GraphQL API 2026-10): Zugang per Dev-Dashboard-App (Client-ID/Secret, Token-Erneuerung automatisch) oder Legacy-Custom-App-Token; Produkte (inkl. Varianten, EAN, Gewicht, Bilder beim Anlegen) anlegen und aktualisieren, ohne Bilder/Varianten in Shopify zu löschen; Bestände in Echtzeit mit Compare-and-Swap (keine verlorenen Verkäufe bei gleichzeitigen Verkäufen); Verkäufe in Shopify per signiertem Webhook zurück; eigene Preisregeln und Sortiment je Shopify-Shop; automatische Brutto/Netto-Erkennung; Übertragungs-Jobs mit Fortschrittsbalken; Retry-Queue.
+* NEU: CSV-Produktfeeds (Reiter „CSV-Feeds") für Shops und Systeme ohne Plugin: geheime Abruf-URL je Feed (jederzeit erneuerbar), eine Zeile je Artikel (einfache Produkte, Varianten, optional Eltern-Zeilen) mit SKU, EAN, Preisen (brutto/netto, eigene Preisregeln je Feed), Bestand, Lagerstatus, Lieferzeit, Grundpreis, Kategorien, Marke, Hersteller, Bildern und Beschreibungen; Trennzeichen ; , oder Tab, UTF-8-BOM, nur lieferbare Artikel, Sortiment je Feed. Kein ständiges Neuschreiben einer Datei: Jede Produktzeile ist einzeln gespeichert und wird nur bei einer Änderung dieses Produkts neu berechnet; die CSV wird beim Abruf direkt daraus ausgeliefert (inkl. ETag/HTTP 304). Schutz vor CSV-Formel-Injektion.
 * Verbessert: Preisänderungen werden jetzt exakt beim Speichern erkannt – auch die erste Preisänderung eines Produkts nach der Aktivierung wird zuverlässig verteilt.
 * Verbessert: Neue Variationen an bestehenden variablen Produkten werden automatisch an alle Shops (und Shopify) übertragen.
 * Verbessert: Deinstallation entfernt die Daten nur, wenn keine andere Edition mehr installiert ist.

@@ -426,3 +426,10 @@
 	flex-wrap: wrap;
 	gap: 8px;
 }
+.wcis-app .wcis-feed-url {
+	width: 100%;
+	font-size: 12px;
+}
+.wcis-app .wcis-store .wcis-field {
+	margin-top: 10px;
+}

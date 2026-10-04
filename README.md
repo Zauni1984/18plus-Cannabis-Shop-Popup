@@ -49,6 +49,7 @@ Admin- und Partner-Plugin dürfen nicht gleichzeitig im selben Shop aktiv sein.
 | Partnershops, die nichts kaputtmachen können | **Partner-Plugin** mit persönlichem Schlüssel, Rechteprüfung je Endpunkt und vom Hauptshop erzwungenen Vorgaben |
 | Preise nach dem Einspielen anpassen | **Preisregeln** in % (hoch/runter), für alle Produkte oder je Kategorie, mit Rundung, Vorschau und Fortschrittsbalken |
 | Shopify-Shops anbinden | **Shopify-Connector** (Admin GraphQL API): Produkte, Bestände in Echtzeit, Verkäufe per Webhook zurück |
+| Shops ohne Plugin beliefern | **CSV-Produktfeeds** mit geheimer Abruf-URL, immer aktuellem Bestand und eigenen Preisregeln |
 
 ## Funktionsweise
 
@@ -213,6 +214,17 @@ beliefert – in Shopify ist kein Plugin nötig.
 - **Bestände**: Echtzeit mit Compare-and-Swap (`changeFromQuantity`) – Verkäufe in Shopify gehen auch bei gleichzeitigen Verkäufen nicht verloren; Webhooks werden per HMAC geprüft und dedupliziert.
 - Erstbefüllung/Abgleich über Jobs mit Fortschrittsbalken; Fehler landen in der Retry-Queue.
 
+## CSV-Produktfeeds (Shops ohne Plugin)
+
+Reiter **CSV-Feeds** (Admin-Plugin): Für Shops und Systeme, die kein Plugin installieren können
+(z. B. Jimdo, Marktplätze, Warenwirtschaft), stellt der Shop CSV-Feeds bereit.
+
+- Jeder Feed hat eine **eigene geheime Abruf-URL** (`https://shop.de/?blocksocial_feed=<id>&key=<token>`), jederzeit erneuerbar; zusätzlich **Download-Button**.
+- Eine Zeile je Artikel (einfache Produkte, Varianten mit `parent_sku`, optional Eltern-Zeilen): SKU, EAN, Preise (**brutto/netto**, eigene **Preisregeln je Feed**), Bestand, Lagerstatus, Lieferrückstand, Lieferzeit, Grundpreis, Kategorien, Marke, Hersteller, Gewicht, Bilder, Produkt-URL, Beschreibungen.
+- Optionen je Feed: Sortiment (Kategorien), nur lieferbare Artikel, Trennzeichen `;` / `,` / Tab, UTF-8-BOM, Beschreibungen ein/aus.
+- **Immer aktuell, ohne ständiges Neuschreiben einer Datei:** Jede Produktzeile ist einzeln gespeichert (Tabelle `wcis_feed_rows`). Ändert sich Bestand, Preis oder ein Produkt – auch durch Verkäufe in anderen Shops –, wird **nur die Zeile dieses Produkts** neu berechnet. Beim Abruf wird die CSV direkt aus den gespeicherten Zeilen ausgeliefert. `ETag`/`If-Modified-Since` werden unterstützt (unverändert → HTTP 304).
+- Sicherheit: Token-Prüfung mit `hash_equals`, `noindex`, Schutz vor CSV-Formel-Injektion in Textfeldern.
+
 ## Hauptshop wechseln
 
 1. In einem Shop unter „Hauptshop (Master)" den neuen Shop auswählen und speichern.
@@ -260,6 +272,7 @@ blocksocial-woocommerce-sync/
 │   ├── class-wcis-pricing.php     # Preisregeln + Massen-Anwendung
 │   ├── class-wcis-shopify.php     # Shopify: Bestand (CAS), Produkte, Webhooks, Jobs
 │   ├── class-wcis-shopify-api.php # Shopify GraphQL-Client (Token, Drosselung)
+│   ├── class-wcis-feeds.php       # CSV-Produktfeeds (Zeilen-Cache, Auslieferung)
 │   ├── class-wcis-view.php        # Darstellungs-Helfer
 │   └── views/                     # settings-page.php, admin-tabs.php, partner-page.php
 ├── partner/                       # Haupt-Datei + readme des Partner-Plugins

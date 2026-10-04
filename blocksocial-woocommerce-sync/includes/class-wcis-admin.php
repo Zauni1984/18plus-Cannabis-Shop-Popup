@@ -94,6 +94,10 @@ class WCIS_Admin {
 		add_action( 'wp_ajax_wcis_shopify_start', array( $this, 'ajax_shopify_start' ) );
 		add_action( 'wp_ajax_wcis_shopify_tick', array( $this, 'ajax_shopify_tick' ) );
 		add_action( 'wp_ajax_wcis_shopify_cancel', array( $this, 'ajax_shopify_cancel' ) );
+
+		// Admin-Plugin: CSV-Feeds.
+		add_action( 'admin_post_wcis_feed_save', array( $this, 'handle_feed_save' ) );
+		add_action( 'admin_post_wcis_feed_action', array( $this, 'handle_feed_action' ) );
 	}
 
 	/**
@@ -1019,5 +1023,82 @@ class WCIS_Admin {
 			)
 		);
 		$this->redirect_tab( 'saved', 'products' );
+	}
+
+	// -------------------------------------------------------------------------
+	// CSV-Feeds (Admin-Plugin)
+	// -------------------------------------------------------------------------
+
+	/**
+	 * Speichert (neu/bearbeitet) einen CSV-Feed.
+	 */
+	public function handle_feed_save() {
+		$this->require_cap();
+		check_admin_referer( 'wcis_feed_save' );
+		$id   = isset( $_POST['feed_id'] ) ? sanitize_key( wp_unslash( $_POST['feed_id'] ) ) : '';
+		$cats = array();
+		$ids  = isset( $_POST['rule_cat'] ) ? array_map( 'intval', (array) wp_unslash( $_POST['rule_cat'] ) ) : array();
+		$pcts = isset( $_POST['rule_pct'] ) ? array_map( 'sanitize_text_field', (array) wp_unslash( $_POST['rule_pct'] ) ) : array();
+		foreach ( $ids as $i => $tid ) {
+			if ( $tid > 0 && isset( $pcts[ $i ] ) && '' !== trim( $pcts[ $i ] ) ) {
+				$cats[ $tid ] = $pcts[ $i ];
+			}
+		}
+		WCIS_Feeds::save_feed(
+			array(
+				'name'         => isset( $_POST['feed_name'] ) ? sanitize_text_field( wp_unslash( $_POST['feed_name'] ) ) : '',
+				'active'       => ! empty( $_POST['feed_active'] ),
+				'scope'        => isset( $_POST['feed_scope'] ) ? sanitize_key( wp_unslash( $_POST['feed_scope'] ) ) : 'all',
+				'categories'   => isset( $_POST['feed_categories'] ) ? array_map( 'intval', (array) wp_unslash( $_POST['feed_categories'] ) ) : array(),
+				'prices'       => isset( $_POST['feed_prices'] ) ? sanitize_key( wp_unslash( $_POST['feed_prices'] ) ) : 'gross',
+				'delimiter'    => isset( $_POST['feed_delimiter'] ) ? sanitize_text_field( wp_unslash( $_POST['feed_delimiter'] ) ) : ';',
+				'bom'          => ! empty( $_POST['feed_bom'] ),
+				'only_instock' => ! empty( $_POST['feed_only_instock'] ),
+				'parents'      => ! empty( $_POST['feed_parents'] ),
+				'descriptions' => ! empty( $_POST['feed_descriptions'] ),
+				'price_rules'  => array(
+					'global'     => isset( $_POST['rule_global'] ) ? sanitize_text_field( wp_unslash( $_POST['rule_global'] ) ) : 0,
+					'categories' => $cats,
+					'rounding'   => isset( $_POST['rule_rounding'] ) ? sanitize_key( wp_unslash( $_POST['rule_rounding'] ) ) : 'none',
+				),
+			),
+			$id
+		);
+		$this->redirect_tab( 'feed_saved', 'feeds' );
+	}
+
+	/**
+	 * CSV-Feed-Aktionen: herunterladen, neu erzeugen, neuer Schlüssel, löschen.
+	 */
+	public function handle_feed_action() {
+		$this->require_cap();
+		check_admin_referer( 'wcis_feed_action' );
+		$id = isset( $_POST['feed_id'] ) ? sanitize_key( wp_unslash( $_POST['feed_id'] ) ) : '';
+		$do = isset( $_POST['feed_do'] ) ? sanitize_key( wp_unslash( $_POST['feed_do'] ) ) : '';
+		$f  = WCIS_Feeds::get( $id );
+		if ( ! $f ) {
+			$this->redirect_tab( 'feed_missing', 'feeds' );
+		}
+		switch ( $do ) {
+			case 'download':
+				WCIS_Feeds::download( $id ); // beendet den Request.
+				break;
+			case 'regenerate':
+				// Kompletter Neuaufbau: alle Zeilen neu berechnen (jetzt soweit möglich, Rest im Hintergrund).
+				WCIS_Feeds::reset_rows( $id );
+				WCIS_Feeds::refresh( WCIS_Feeds::get( $id ), 20.0 );
+				wp_schedule_single_event( time(), 'wcis_feed_build' );
+				$this->redirect_tab( 'feed_generated', 'feeds' );
+				break;
+			case 'rotate':
+				WCIS_Feeds::rotate( $id );
+				$this->redirect_tab( 'feed_rotated', 'feeds' );
+				break;
+			case 'delete':
+				WCIS_Feeds::delete( $id );
+				$this->redirect_tab( 'feed_deleted', 'feeds' );
+				break;
+		}
+		$this->redirect_tab( '', 'feeds' );
 	}
 }

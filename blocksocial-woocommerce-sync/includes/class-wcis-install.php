@@ -25,6 +25,11 @@ class WCIS_Install {
 	const LOG_TABLE = 'wcis_log';
 
 	/**
+	 * Zeilen-Cache der CSV-Feeds (eine Zeile je Feed und Produkt).
+	 */
+	const FEED_TABLE = 'wcis_feed_rows';
+
+	/**
 	 * Gibt den vollständigen Tabellennamen zurück.
 	 *
 	 * @param string $name Kurzname der Tabelle.
@@ -124,8 +129,20 @@ class WCIS_Install {
 			KEY created_at (created_at)
 		) {$charset_collate};";
 
+		$feed     = self::table( self::FEED_TABLE );
+		$sql_feed = "CREATE TABLE {$feed} (
+			feed_id VARCHAR(40) NOT NULL,
+			product_id BIGINT UNSIGNED NOT NULL,
+			dirty BIGINT UNSIGNED NOT NULL DEFAULT 0,
+			rev BIGINT UNSIGNED NOT NULL DEFAULT 0,
+			rows_csv LONGTEXT NULL,
+			PRIMARY KEY  (feed_id,product_id),
+			KEY dirty (feed_id,dirty)
+		) {$charset_collate};";
+
 		dbDelta( $sql_queue );
 		dbDelta( $sql_log );
+		dbDelta( $sql_feed );
 	}
 
 	/**

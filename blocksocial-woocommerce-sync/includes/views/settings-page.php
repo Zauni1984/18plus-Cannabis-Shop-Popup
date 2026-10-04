@@ -52,6 +52,7 @@ $wcis_icon = static function ( $name ) {
 		'partners'  => '<circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.2c3 .2 5.5 2.6 5.5 5.8"/>',
 		'shopify'   => '<path d="M5 7h14l-1.2 13H6.2L5 7z"/><path d="M9 7V5.5a3 3 0 0 1 6 0V7"/>',
 		'pricing'   => '<path d="M3 12V4h8l10 10-8 8L3 12z"/><circle cx="7.5" cy="8.5" r="1.5"/>',
+		'feeds'     => '<path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5"/><path d="M9 13h7M9 17h7"/>',
 	);
 	$d = isset( $p[ $name ] ) ? $p[ $name ] : '';
 	return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' . $d . '</svg>';
@@ -65,6 +66,7 @@ $wcis_tabs = array(
 	'reconcile' => __( 'Abgleich', 'blocksocial-woocommerce-sync' ),
 	'product'   => __( 'Produkt-Sync', 'blocksocial-woocommerce-sync' ),
 	'pricing'   => __( 'Preise', 'blocksocial-woocommerce-sync' ),
+	'feeds'     => __( 'CSV-Feeds', 'blocksocial-woocommerce-sync' ),
 	'filter'    => __( 'Sync-Filter', 'blocksocial-woocommerce-sync' ),
 	'actions'   => __( 'Aktionen', 'blocksocial-woocommerce-sync' ),
 	'log'       => __( 'Protokoll', 'blocksocial-woocommerce-sync' ),
@@ -136,8 +138,14 @@ $wcis_tabs = array(
 			'shopify_saved'     => array( 'ok', __( 'Shopify-Shop gespeichert. Jetzt „Verbindung testen" ausführen.', 'blocksocial-woocommerce-sync' ) ),
 			'shopify_deleted'   => array( 'ok', __( 'Shopify-Shop entfernt.', 'blocksocial-woocommerce-sync' ) ),
 			'shopify_error'     => array( 'err', __( 'Shopify-Shop konnte nicht gespeichert werden.', 'blocksocial-woocommerce-sync' ) ),
+			'feed_saved'        => array( 'ok', __( 'CSV-Feed gespeichert. Die Abruf-URL steht in der Liste.', 'blocksocial-woocommerce-sync' ) ),
+			'feed_generated'    => array( 'ok', __( 'CSV-Feed wird komplett neu aufgebaut.', 'blocksocial-woocommerce-sync' ) ),
+			'feed_rotated'      => array( 'ok', __( 'Neue Abruf-URL erzeugt – die alte ist ungültig.', 'blocksocial-woocommerce-sync' ) ),
+			'feed_deleted'      => array( 'ok', __( 'CSV-Feed gelöscht.', 'blocksocial-woocommerce-sync' ) ),
+			'feed_missing'      => array( 'err', __( 'CSV-Feed nicht gefunden.', 'blocksocial-woocommerce-sync' ) ),
+			'feed_error'        => array( 'err', __( 'CSV-Feed konnte nicht erzeugt werden.', 'blocksocial-woocommerce-sync' ) ),
 		);
-		if ( in_array( $wcis_notice, array( 'partner_error', 'shopify_error' ), true ) ) {
+		if ( in_array( $wcis_notice, array( 'partner_error', 'shopify_error', 'feed_error' ), true ) ) {
 			$wcis_err = get_transient( 'wcis_admin_error_' . get_current_user_id() );
 			if ( $wcis_err ) {
 				$wcis_messages[ $wcis_notice ][1] .= ' ' . $wcis_err;

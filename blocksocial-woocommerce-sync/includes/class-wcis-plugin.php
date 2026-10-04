@@ -60,9 +60,11 @@ class WCIS_Plugin {
 			add_action( 'wcis_daily_cleanup', array( 'WCIS_Partners', 'refresh_from_master' ) );
 		}
 
-		// Shopify-Anbindung (nur Admin-Plugin; wirksam auf dem Hauptshop).
+		// Shopify-Anbindung (nur Admin-Plugin; wirksam auf dem Hauptshop) und
+		// CSV-Produktfeeds für Shops ohne Plugin.
 		if ( WCIS_Edition::is_admin_edition() ) {
 			WCIS_Shopify::init();
+			WCIS_Feeds::init();
 		}
 
 		// REST-Routen.

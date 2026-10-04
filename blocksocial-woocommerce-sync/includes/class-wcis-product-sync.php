@@ -1635,7 +1635,7 @@ class WCIS_Product_Sync {
 	 * @param string $tax_class Steuerklassen-Slug ('' = Standard).
 	 * @return float|null Prozentsatz oder null, wenn nicht ermittelbar.
 	 */
-	protected static function tax_rate_for_class( $tax_class ) {
+	public static function tax_rate_for_class( $tax_class ) {
 		if ( ! class_exists( 'WC_Tax' ) ) {
 			return null;
 		}
