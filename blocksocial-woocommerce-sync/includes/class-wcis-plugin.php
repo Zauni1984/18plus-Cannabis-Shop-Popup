@@ -52,6 +52,16 @@ class WCIS_Plugin {
 		// Optionaler Produkt-Sync (neue Produkte 1:1 übertragen).
 		WCIS_Product_Sync::init();
 
+		// Partner-Plugin: Vorgaben täglich beim Hauptshop auffrischen.
+		if ( WCIS_Edition::is_partner() ) {
+			add_action( 'wcis_daily_cleanup', array( 'WCIS_Partners', 'refresh_from_master' ) );
+		}
+
+		// Shopify-Anbindung (nur Admin-Plugin; wirksam auf dem Hauptshop).
+		if ( WCIS_Edition::is_admin_edition() ) {
+			WCIS_Shopify::init();
+		}
+
 		// REST-Routen.
 		add_action( 'rest_api_init', array( 'WCIS_REST_Controller', 'register_routes' ) );
 

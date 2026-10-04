@@ -25,42 +25,87 @@ class WCIS_Client {
 	}
 
 	/**
-	 * Erzeugt die Signatur-Header für einen Request.
+	 * Absender der aktuell verarbeiteten, verifizierten Anfrage.
 	 *
-	 * Signatur = HMAC-SHA256( secret, timestamp . "." . body ).
-	 *
-	 * @param string $body Roher Request-Body.
-	 * @return array Header-Array.
+	 * @var array|null { type: 'network'|'partner'|'master', key?, url?, name? }
 	 */
-	public static function sign_headers( $body ) {
-		$secret    = WCIS_Settings::secret();
-		$timestamp = (string) time();
-		$signature = hash_hmac( 'sha256', $timestamp . '.' . $body, $secret );
+	protected static $caller = null;
 
+	/**
+	 * Zugangsdaten für ein Ziel: persönlicher Partner-Schlüssel (Partner bzw.
+	 * Hauptshop→Partner) oder gemeinsames Netzwerk-Secret (eigene Shops).
+	 *
+	 * @param string $peer_url Ziel-URL.
+	 * @return array { key: string ('' = Netzwerk), secret: string }
+	 */
+	public static function credentials_for( $peer_url ) {
+		if ( WCIS_Edition::is_partner() ) {
+			$c = WCIS_Settings::partner_conn();
+			return array(
+				'key'    => $c ? (string) $c['key'] : '',
+				'secret' => $c ? (string) $c['secret'] : '',
+			);
+		}
+		$p = ( '' !== (string) $peer_url ) ? WCIS_Partners::find_by_url( $peer_url ) : null;
+		if ( $p && ! empty( $p['active'] ) ) {
+			return array(
+				'key'    => (string) $p['key'],
+				'secret' => (string) $p['secret'],
+			);
+		}
 		return array(
-			'Content-Type'      => 'application/json',
-			'X-WCIS-Timestamp'  => $timestamp,
-			'X-WCIS-Signature'  => $signature,
-			'X-WCIS-From'       => WCIS_Settings::this_url(),
+			'key'    => '',
+			'secret' => (string) WCIS_Settings::get( 'network_secret', '' ),
 		);
 	}
 
 	/**
-	 * Prüft die Signatur eines eingehenden Requests.
+	 * Erzeugt die Signatur-Header für einen Request.
+	 *
+	 * Signatur = HMAC-SHA256( secret, timestamp . "." . body ). Bei Partner-
+	 * Verbindungen wird zusätzlich die Key-ID (X-WCIS-Key) mitgesendet, damit der
+	 * Empfänger das passende Secret wählt.
+	 *
+	 * @param string $body     Roher Request-Body.
+	 * @param string $peer_url Ziel-URL (bestimmt die Zugangsdaten).
+	 * @return array Header-Array.
+	 */
+	public static function sign_headers( $body, $peer_url = '' ) {
+		$cred      = self::credentials_for( $peer_url );
+		$timestamp = (string) time();
+		$signature = hash_hmac( 'sha256', $timestamp . '.' . $body, $cred['secret'] );
+
+		$headers = array(
+			'Content-Type'     => 'application/json',
+			'X-WCIS-Timestamp' => $timestamp,
+			'X-WCIS-Signature' => $signature,
+			'X-WCIS-From'      => WCIS_Settings::this_url(),
+			'X-WCIS-Version'   => WCIS_VERSION,
+		);
+		if ( '' !== $cred['key'] ) {
+			$headers['X-WCIS-Key'] = $cred['key'];
+		}
+		return $headers;
+	}
+
+	/**
+	 * Prüft die Signatur eines eingehenden Requests und ermittelt den Absender.
+	 *
+	 * - Admin-Edition: mit Key-ID → nur der passende, aktive Partner;
+	 *   ohne Key-ID → eigener Netzwerk-Shop (gemeinsames Secret).
+	 * - Partner-Edition: ausschließlich der Hauptshop mit dem eigenen Schlüssel.
 	 *
 	 * @param WP_REST_Request $request Request-Objekt.
 	 * @return bool
 	 */
 	public static function verify_request( $request ) {
-		$secret = WCIS_Settings::secret();
-		if ( '' === $secret ) {
-			return false;
-		}
+		self::$caller = null;
 
-		$timestamp = $request->get_header( 'x_wcis_timestamp' );
-		$signature = $request->get_header( 'x_wcis_signature' );
+		$timestamp = (string) $request->get_header( 'x_wcis_timestamp' );
+		$signature = (string) $request->get_header( 'x_wcis_signature' );
+		$key       = sanitize_key( (string) $request->get_header( 'x_wcis_key' ) );
 
-		if ( empty( $timestamp ) || empty( $signature ) ) {
+		if ( '' === $timestamp || '' === $signature ) {
 			return false;
 		}
 
@@ -69,10 +114,62 @@ class WCIS_Client {
 			return false;
 		}
 
-		$body     = $request->get_body();
-		$expected = hash_hmac( 'sha256', $timestamp . '.' . $body, $secret );
+		$caller = null;
+		$secret = '';
 
-		return hash_equals( $expected, (string) $signature );
+		if ( WCIS_Edition::is_partner() ) {
+			$c = WCIS_Settings::partner_conn();
+			if ( ! $c || '' === $key || ! hash_equals( (string) $c['key'], $key ) ) {
+				return false; // Partner sprechen nur mit ihrem Hauptshop.
+			}
+			$secret = (string) $c['secret'];
+			$caller = array(
+				'type' => 'master',
+				'url'  => (string) $c['master_url'],
+			);
+		} elseif ( '' !== $key ) {
+			$p = WCIS_Partners::get( $key );
+			if ( ! $p || empty( $p['active'] ) ) {
+				return false; // unbekannter oder gesperrter Partner.
+			}
+			$secret = (string) $p['secret'];
+			$caller = array(
+				'type' => 'partner',
+				'key'  => $p['key'],
+				'url'  => $p['url'],
+				'name' => $p['name'],
+			);
+		} else {
+			$secret = (string) WCIS_Settings::get( 'network_secret', '' );
+			$caller = array(
+				'type' => 'network',
+				'url'  => esc_url_raw( (string) $request->get_header( 'x_wcis_from' ) ),
+			);
+		}
+
+		if ( '' === $secret ) {
+			return false;
+		}
+
+		$expected = hash_hmac( 'sha256', $timestamp . '.' . $request->get_body(), $secret );
+		if ( ! hash_equals( $expected, $signature ) ) {
+			return false;
+		}
+
+		self::$caller = $caller;
+		if ( 'partner' === $caller['type'] ) {
+			WCIS_Partners::touch( $caller['key'], (string) $request->get_header( 'x_wcis_version' ) );
+		}
+		return true;
+	}
+
+	/**
+	 * Absender der aktuellen (verifizierten) Anfrage.
+	 *
+	 * @return array|null
+	 */
+	public static function caller() {
+		return self::$caller;
 	}
 
 	/**
@@ -94,7 +191,7 @@ class WCIS_Client {
 		$response = wp_remote_post(
 			$url,
 			array(
-				'headers'   => self::sign_headers( $body ),
+				'headers'   => self::sign_headers( $body, $peer_url ),
 				'body'      => $body,
 				'timeout'   => $blocking ? $eff_timeout : 0.01,
 				'blocking'  => $blocking,
@@ -126,7 +223,7 @@ class WCIS_Client {
 		$response = wp_remote_get(
 			$url,
 			array(
-				'headers'   => self::sign_headers( $body ),
+				'headers'   => self::sign_headers( $body, $peer_url ),
 				'timeout'   => self::timeout(),
 				'sslverify' => apply_filters( 'wcis_sslverify', true ),
 			)
