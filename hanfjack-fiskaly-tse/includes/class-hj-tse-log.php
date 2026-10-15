@@ -6,7 +6,7 @@ defined( 'ABSPATH' ) || exit;
  */
 class HJ_TSE_Log {
 
-	const DB_VERSION = '2';
+	const DB_VERSION = '3';
 
 	public static function table(): string {
 		global $wpdb;
@@ -69,6 +69,10 @@ class HJ_TSE_Log {
 			KEY state (state)
 		) {$charset};";
 		dbDelta( $sql2 );
+		// Backfill the kind column for rows written by plugin versions before 0.2.0.
+		$wpdb->query( "UPDATE {$table} SET kind = 'refund' WHERE kind = '' AND refund_id > 0 AND state IN ('FINISHED','ERROR')" ); // phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared
+		$wpdb->query( "UPDATE {$table} SET kind = 'abort' WHERE kind = '' AND receipt_type = 'ABORT' AND state = 'FINISHED'" ); // phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared
+		$wpdb->query( "UPDATE {$table} SET kind = 'sale' WHERE kind = '' AND refund_id = 0 AND order_id > 0 AND receipt_type = 'RECEIPT' AND state = 'FINISHED'" ); // phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared
 		update_option( 'hj_tse_db_version', self::DB_VERSION, false );
 	}
 
