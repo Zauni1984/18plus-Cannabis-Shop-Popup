@@ -20,7 +20,7 @@ class HJ_TSE_Amounts {
 	);
 
 	/** Cash gateways; everything else counts as NON_CASH. */
-	const CASH_GATEWAYS = array( 'pos_cash', 'cod' );
+	const CASH_GATEWAYS = array( 'pos_cash', 'cod', 'invoice' );
 
 	/**
 	 * Build the standard_v1 receipt body.

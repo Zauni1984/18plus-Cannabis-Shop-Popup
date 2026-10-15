@@ -3,7 +3,7 @@
  * Plugin Name: Hanfjack TSE (fiskaly) für WCPOS
  * Plugin URI:  https://hanfjack.de
  * Description: KassenSichV-konforme Signatur von WCPOS-Kassenbelegen über die fiskaly Cloud-TSE (SIGN DE v2): Transaktionen starten/abschließen, Stornos, Belegdaten für den Bon, TSE-Export.
- * Version:     0.2.1
+ * Version:     0.2.2
  * Author:      Hanfjack
  * Requires at least: 6.4
  * Requires PHP: 8.1
@@ -13,7 +13,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'HJ_TSE_VERSION', '0.2.1' );
+define( 'HJ_TSE_VERSION', '0.2.2' );
 define( 'HJ_TSE_FILE', __FILE__ );
 define( 'HJ_TSE_DIR', plugin_dir_path( __FILE__ ) );
 define( 'HJ_TSE_OPTION', 'hj_tse_settings' );

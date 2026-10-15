@@ -32,10 +32,18 @@ class HJ_TSE_Orders {
 		if ( '' !== (string) $order->get_meta( '_woocommerce_pos_uuid' ) ) {
 			return true;
 		}
-		if ( '' !== (string) $order->get_meta( '_pos' ) ) {
-			return true;
+		if ( '' !== (string) $order->get_meta( '_pos' ) || '' !== (string) $order->get_meta( '_pos_user' ) ) {
+			return true; // Online order that was taken over and paid at the POS.
+		}
+		if ( in_array( (string) $order->get_payment_method(), self::pos_gateways(), true ) ) {
+			return true; // Cash collected in the store ("Bar (nur für Laden)") or POS gateways.
 		}
 		return (bool) apply_filters( 'hj_tse_is_pos_order', false, $order );
+	}
+
+	/** Gateways whose payment happens at the counter and therefore belongs into the cash register. */
+	public static function pos_gateways(): array {
+		return (array) apply_filters( 'hj_tse_pos_gateways', array( 'pos_cash', 'pos_card', 'sumup_terminal_for_woocommerce', 'invoice' ) );
 	}
 
 	public static function meta( WC_Abstract_Order $order, string $key, $default = '' ) {

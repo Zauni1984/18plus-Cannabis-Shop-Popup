@@ -13,6 +13,8 @@ WordPress-Plugin, das Kassenbelege aus **WCPOS Pro** über die **fiskaly Cloud-T
 | Bon-Druck (WCPOS) | Filter `woocommerce_pos_receipt_data`: QR-Code und Klartextfelder im Abschnitt `fiscal` |
 | TSE-Ausfall | Verkauf läuft weiter, Beleg trägt den Hinweis „TSE ausgefallen“, Fehler wird protokolliert |
 
+Als Kassenvorgang gelten: Bestellungen aus dem POS, Online-Bestellungen, die im POS übernommen und bezahlt wurden (`_pos_user`), und Bestellungen mit den Zahlarten Bar/Karte der Kasse, SumUp Terminal oder „Bar (nur für Laden)“ (Filter `hj_tse_pos_gateways`).
+
 Alle Vorgänge landen zusätzlich in der Tabelle `wp_hj_tse_log` (Grundlage für den DSFinV-K-Export).
 
 ## Einrichtung
