@@ -13,7 +13,7 @@ class HJ_TSE_Settings {
 			'api_secret'    => '',
 			'tss_id'        => '',
 			'client_id'     => '',
-			'client_serial' => 'HANFJACK-BEILNGRIES-KASSE-1',
+			'client_serial' => 'HANFJACK-INGOLSTADT-KASSE-1',
 			'admin_pin'     => '',
 			'admin_puk'     => '',
 			'timeout_tx'    => 5,

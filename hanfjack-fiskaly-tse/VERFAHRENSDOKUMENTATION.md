@@ -1,6 +1,6 @@
-# Verfahrensdokumentation Ladenkasse Hanfjack Beilngries
+# Verfahrensdokumentation Ladenkasse Hanfjack Ingolstadt
 
-Stand: Oktober 2026 · Betreiber: siehe Impressum hanfjack.de · Betriebsstätte: Kratzmühlstraße 14, 92339 Beilngries
+Stand: Oktober 2026 · Betreiber: siehe Impressum hanfjack.de · Betriebsstätte: Ladengeschäft Ingolstadt (Anschrift siehe Impressum)
 
 ## 1. Systemübersicht
 
@@ -14,7 +14,7 @@ Stand: Oktober 2026 · Betreiber: siehe Impressum hanfjack.de · Betriebsstätte
 | TSE-Anbindung | Plugin „Hanfjack TSE (fiskaly) für WCPOS“ | Start/Abschluss der Transaktionen, Belegdaten, Kassenbuch, Kassenabschluss, DSFinV-K |
 | DSFinV-K / Archiv | fiskaly DSFINVK DE | Tägliche Kassenabschlüsse, Export für Kassen-Nachschau und Betriebsprüfung |
 
-Kassen-ID (Seriennummer des Aufzeichnungssystems): `HANFJACK-BEILNGRIES-KASSE-1`. TSE-Seriennummer: siehe WooCommerce → TSE (fiskaly).
+Kassen-ID (Seriennummer des Aufzeichnungssystems): `HANFJACK-INGOLSTADT-KASSE-1`. TSE-Seriennummer: siehe WooCommerce → TSE (fiskaly).
 
 ## 2. Ablauf eines Verkaufs
 

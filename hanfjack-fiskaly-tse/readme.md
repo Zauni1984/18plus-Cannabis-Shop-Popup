@@ -30,7 +30,7 @@ Mit einem `test_…`-Key läuft alles gegen die fiskaly-Sandbox, der Bon trägt 
 ```
 GET  /wp-json/hj-tse/v1/status?remote=yes
 POST /wp-json/hj-tse/v1/settings        {"api_key":"…","api_secret":"…"}
-POST /wp-json/hj-tse/v1/setup           {"client_serial":"HANFJACK-BEILNGRIES-KASSE-1"}
+POST /wp-json/hj-tse/v1/setup           {"client_serial":"HANFJACK-INGOLSTADT-KASSE-1"}
 POST /wp-json/hj-tse/v1/sign/{order_id} (Nachsignieren nach Ausfall)
 GET  /wp-json/hj-tse/v1/order/{order_id}
 GET  /wp-json/hj-tse/v1/log?limit=100
