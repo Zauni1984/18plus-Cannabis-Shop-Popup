@@ -214,6 +214,7 @@ class HJ_TSE_Orders {
 	/* ---------- persistence ---------- */
 
 	private static function store_signature( WC_Abstract_Order $obj, array $res, int $revision, string $receipt_type, array $receipt, float $total, int $order_id = 0, int $refund_id = 0 ): void {
+		$kind = $refund_id ? 'refund' : ( 'ABORT' === $receipt_type ? 'abort' : 'sale' );
 		$sig = $res['signature'] ?? array();
 		self::set_meta(
 			$obj,
@@ -257,6 +258,7 @@ class HJ_TSE_Orders {
 				'qr_code_data'      => (string) ( $res['qr_code_data'] ?? '' ),
 				'client_serial'     => (string) ( $res['client_serial_number'] ?? '' ),
 				'tss_serial'        => (string) ( $res['tss_serial_number'] ?? '' ),
+				'kind'              => $kind,
 			)
 		);
 	}
@@ -280,6 +282,7 @@ class HJ_TSE_Orders {
 				'state'     => 'ERROR',
 				'error'     => $msg,
 				'total'     => (float) $obj->get_total(),
+				'kind'      => 'finish' === $phase ? 'sale' : ( 'refund' === $phase ? 'refund' : '' ),
 			)
 		);
 		$note_target = $parent ?? ( $obj instanceof WC_Order ? $obj : null );

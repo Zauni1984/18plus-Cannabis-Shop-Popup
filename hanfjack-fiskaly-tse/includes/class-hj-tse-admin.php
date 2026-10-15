@@ -11,6 +11,9 @@ class HJ_TSE_Admin {
 		add_action( 'admin_post_hj_tse_save', array( __CLASS__, 'save' ) );
 		add_action( 'admin_post_hj_tse_setup', array( __CLASS__, 'setup' ) );
 		add_action( 'admin_post_hj_tse_export', array( __CLASS__, 'export' ) );
+		add_action( 'admin_post_hj_tse_cashbook', array( __CLASS__, 'cashbook' ) );
+		add_action( 'admin_post_hj_tse_closing', array( __CLASS__, 'closing' ) );
+		add_action( 'admin_post_hj_tse_dsfinvk_export', array( __CLASS__, 'dsfinvk_export' ) );
 		add_action( 'add_meta_boxes', array( __CLASS__, 'meta_box' ) );
 	}
 
@@ -90,12 +93,132 @@ class HJ_TSE_Admin {
 		}
 	}
 
+	public static function cashbook(): void {
+		check_admin_referer( 'hj_tse_cashbook' );
+		if ( ! current_user_can( 'manage_woocommerce' ) ) {
+			wp_die( 'Keine Berechtigung.' );
+		}
+		$amount = isset( $_POST['amount'] ) ? (float) str_replace( ',', '.', sanitize_text_field( wp_unslash( $_POST['amount'] ) ) ) : 0.0;
+		$dir    = isset( $_POST['direction'] ) && 'out' === $_POST['direction'] ? -1 : 1;
+		$reason = isset( $_POST['reason'] ) ? sanitize_text_field( wp_unslash( $_POST['reason'] ) ) : '';
+		$text   = isset( $_POST['text'] ) ? sanitize_text_field( wp_unslash( $_POST['text'] ) ) : '';
+		try {
+			$res = HJ_TSE_Cashbook::book( abs( $amount ) * $dir, $reason, $text, get_current_user_id() );
+			self::redirect( sprintf( 'Kassenbuchung signiert: %s %s €, Transaktion %d.', $reason, number_format( $res['amount'], 2, ',', '.' ), $res['tx_number'] ) );
+		} catch ( HJ_TSE_Exception $e ) {
+			self::redirect( 'Kassenbuchung fehlgeschlagen: ' . $e->getMessage(), 'error' );
+		}
+	}
+
+	public static function closing(): void {
+		check_admin_referer( 'hj_tse_closing' );
+		if ( ! current_user_can( 'manage_woocommerce' ) ) {
+			wp_die( 'Keine Berechtigung.' );
+		}
+		$date = isset( $_POST['business_date'] ) ? sanitize_text_field( wp_unslash( $_POST['business_date'] ) ) : HJ_TSE_Closing::today();
+		try {
+			$row = HJ_TSE_Closing::create_for_date( $date );
+			if ( null === $row ) {
+				self::redirect( 'Keine offenen Vorgänge für ' . $date . ', kein Abschluss nötig.' );
+			}
+			self::redirect( sprintf( 'Kassenabschluss %s erstellt (Nr. %d, %d Vorgänge), Status bei fiskaly: %s.', $date, (int) $row['export_id'], (int) $row['tx_count'], $row['state'] ), 'ERROR' === $row['state'] ? 'error' : 'updated' );
+		} catch ( HJ_TSE_Exception $e ) {
+			self::redirect( 'Kassenabschluss fehlgeschlagen: ' . $e->getMessage(), 'error' );
+		}
+	}
+
+	public static function dsfinvk_export(): void {
+		check_admin_referer( 'hj_tse_dsfinvk_export' );
+		if ( ! current_user_can( 'manage_woocommerce' ) ) {
+			wp_die( 'Keine Berechtigung.' );
+		}
+		$start = isset( $_POST['start_date'] ) ? sanitize_text_field( wp_unslash( $_POST['start_date'] ) ) : '';
+		$end   = isset( $_POST['end_date'] ) ? sanitize_text_field( wp_unslash( $_POST['end_date'] ) ) : '';
+		try {
+			$res = HJ_TSE_Closing::trigger_export( $start, $end );
+			self::redirect( 'DSFinV-K-Export angestoßen (ID ' . $res['export_id'] . '). Status und Download unten.' );
+		} catch ( HJ_TSE_Exception $e ) {
+			self::redirect( 'DSFinV-K-Export fehlgeschlagen: ' . $e->getMessage(), 'error' );
+		}
+	}
+
+	private static function render_closing_detail( int $id ): void {
+		$row = HJ_TSE_Log::get_closing( $id );
+		if ( ! $row ) {
+			echo '<p>Abschluss nicht gefunden.</p>';
+			return;
+		}
+		$totals = json_decode( (string) $row['totals_json'], true ) ?: array();
+		$body   = json_decode( (string) $row['body_json'], true ) ?: array();
+		$s      = HJ_TSE_Settings::all();
+		$vat_names = array( 1 => '19 %', 2 => '7 %', 3 => '10,7 %', 4 => '5,5 %', 5 => '0 %', 6 => '0 % (n. erhebbar)', 7 => '16 %', 8 => '5 %' );
+		?>
+		<div class="wrap" id="hj-tse-zbericht">
+			<style>@media print { #adminmenumain, #wpadminbar, #wpfooter, .notice, .hj-noprint { display:none !important; } #wpcontent { margin-left:0 !important; } }</style>
+			<p class="hj-noprint"><a href="<?php echo esc_url( admin_url( 'admin.php?page=hj-tse' ) ); ?>">&larr; zurück</a> &nbsp; <button class="button" onclick="window.print()">Drucken</button></p>
+			<h1>Kassenabschluss (Z-Bericht) Nr. <?php echo (int) $row['export_id']; ?> – <?php echo esc_html( $row['business_date'] ); ?></h1>
+			<p><?php echo esc_html( get_bloginfo( 'name' ) ); ?> · Kassen-ID <?php echo esc_html( $s['client_serial'] ); ?> · Status fiskaly: <strong><?php echo esc_html( $row['state'] ); ?></strong> · erstellt <?php echo esc_html( $row['created_gmt'] ); ?> UTC
+			<?php if ( 'TEST' === HJ_TSE_Settings::environment() ) : ?> · <span style="color:#b32d2e">TESTUMGEBUNG</span><?php endif; ?></p>
+			<?php if ( ! empty( $row['error'] ) ) : ?><div class="notice notice-error inline"><p><?php echo esc_html( $row['error'] ); ?></p></div><?php endif; ?>
+			<table class="widefat striped" style="max-width:700px">
+				<tbody>
+				<tr><th>Belege (Verkäufe)</th><td><?php echo (int) ( $totals['sales'] ?? 0 ); ?></td></tr>
+				<tr><th>Stornos / Rückerstattungen</th><td><?php echo (int) ( $totals['refunds'] ?? 0 ); ?></td></tr>
+				<tr><th>Abgebrochene Vorgänge</th><td><?php echo (int) ( $totals['aborts'] ?? 0 ); ?></td></tr>
+				<tr><th>Kassenbuchungen (Einlagen/Entnahmen)</th><td><?php echo (int) ( $totals['transfers'] ?? 0 ); ?></td></tr>
+				<tr><th>Belege ohne TSE-Signatur</th><td><?php echo (int) ( $totals['unsigned'] ?? 0 ); ?></td></tr>
+				<tr><th><strong>Umsatz brutto (Belege inkl. Stornos)</strong></th><td><strong><?php echo esc_html( number_format( (float) ( $totals['revenue'] ?? 0 ), 2, ',', '.' ) ); ?> €</strong></td></tr>
+				<?php foreach ( (array) ( $totals['by_vat'] ?? array() ) as $vid => $amt ) : ?>
+					<tr><th>&nbsp;&nbsp;davon MwSt-Satz <?php echo esc_html( $vat_names[ (int) $vid ] ?? $vid ); ?></th><td><?php echo esc_html( number_format( (float) $amt, 2, ',', '.' ) ); ?> €</td></tr>
+				<?php endforeach; ?>
+				<?php foreach ( (array) ( $totals['by_payment'] ?? array() ) as $name => $amt ) : ?>
+					<tr><th>&nbsp;&nbsp;Zahlart <?php echo esc_html( $name ); ?></th><td><?php echo esc_html( number_format( (float) $amt, 2, ',', '.' ) ); ?> €</td></tr>
+				<?php endforeach; ?>
+				<tr><th>Bareinlagen</th><td><?php echo esc_html( number_format( (float) ( $totals['cash_in'] ?? 0 ), 2, ',', '.' ) ); ?> €</td></tr>
+				<tr><th>Barentnahmen</th><td><?php echo esc_html( number_format( (float) ( $totals['cash_out'] ?? 0 ), 2, ',', '.' ) ); ?> €</td></tr>
+				<tr><th><strong>Barbewegung gesamt</strong></th><td><strong><?php echo esc_html( number_format( (float) ( $totals['cash_net'] ?? 0 ), 2, ',', '.' ) ); ?> €</strong></td></tr>
+				</tbody>
+			</table>
+			<h2>Vorgänge</h2>
+			<table class="widefat striped">
+				<thead><tr><th>Nr.</th><th>Typ</th><th>Zeit</th><th>Zahlart</th><th>Betrag</th><th>TSE</th></tr></thead>
+				<tbody>
+				<?php foreach ( (array) ( $body['transactions'] ?? array() ) as $t ) : ?>
+					<tr>
+						<td><?php echo esc_html( $t['head']['transaction_export_id'] ?? '' ); ?></td>
+						<td><?php echo esc_html( $t['head']['type'] ?? '' ); ?></td>
+						<td><?php echo esc_html( wp_date( 'd.m.Y H:i:s', (int) ( $t['head']['timestamp_end'] ?? 0 ) ) ); ?></td>
+						<td><?php echo esc_html( $t['data']['payment_types'][0]['name'] ?? '' ); ?></td>
+						<td><?php echo esc_html( number_format( (float) ( $t['data']['full_amount_incl_vat'] ?? 0 ), 2, ',', '.' ) ); ?> €</td>
+						<td><?php echo isset( $t['security']['tss_tx_id'] ) ? 'signiert' : '<span style="color:#b32d2e">' . esc_html( $t['security']['error_message'] ?? 'ohne Signatur' ) . '</span>'; ?></td>
+					</tr>
+				<?php endforeach; ?>
+				</tbody>
+			</table>
+		</div>
+		<?php
+	}
+
 	public static function page(): void {
 		if ( ! current_user_can( 'manage_woocommerce' ) ) {
 			return;
 		}
+		if ( isset( $_GET['closing'] ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Recommended
+			self::render_closing_detail( (int) $_GET['closing'] ); // phpcs:ignore WordPress.Security.NonceVerification.Recommended
+			return;
+		}
+		HJ_TSE_Closing::poll_pending();
 		$s      = HJ_TSE_Settings::all();
 		$counts = HJ_TSE_Log::counts();
+		$last_dsfinvk = get_option( 'hj_tse_last_dsfinvk_export' );
+		$dsfinvk_info = null;
+		if ( is_array( $last_dsfinvk ) && ! empty( $last_dsfinvk['id'] ) && HJ_TSE_Settings::is_configured() ) {
+			try {
+				$dsfinvk_info = HJ_TSE_Closing::export_status( $last_dsfinvk['id'], false );
+			} catch ( HJ_TSE_Exception $e ) {
+				$dsfinvk_info = array( 'state' => 'FEHLER', 'error' => $e->getMessage() );
+			}
+		}
 		$remote = null;
 		$remote_error = '';
 		if ( HJ_TSE_Settings::is_configured() ) {
@@ -183,6 +306,66 @@ class HJ_TSE_Admin {
 					– Download über die REST-Schnittstelle: <code>GET /wp-json/hj-tse/v1/export/<?php echo esc_html( $last_export['id'] ); ?>?download=yes</code> (Datei landet unter wp-content/uploads/hj-tse-exports).
 				<?php elseif ( ! empty( $export_info['error'] ) ) : ?>
 					– <?php echo esc_html( is_array( $export_info['error'] ) ? wp_json_encode( $export_info['error'] ) : $export_info['error'] ); ?>
+				<?php endif; ?>
+				</p>
+			<?php endif; ?>
+
+			<h2>Kassenbuch (Einlage / Entnahme)</h2>
+			<p>Jede Barbewegung ohne Verkauf wird als TSE-Vorgang signiert und in den Kassenabschluss übernommen.</p>
+			<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
+				<?php wp_nonce_field( 'hj_tse_cashbook' ); ?>
+				<input type="hidden" name="action" value="hj_tse_cashbook" />
+				<select name="direction"><option value="in">Einlage (Geld in die Kasse)</option><option value="out">Entnahme (Geld aus der Kasse)</option></select>
+				<input type="text" name="amount" placeholder="Betrag, z. B. 150,00" size="12" required />
+				<select name="reason">
+					<?php foreach ( HJ_TSE_Cashbook::REASONS as $k => $label ) : ?>
+						<option value="<?php echo esc_attr( $k ); ?>"><?php echo esc_html( $label ); ?></option>
+					<?php endforeach; ?>
+				</select>
+				<input type="text" name="text" placeholder="Bemerkung" size="30" />
+				<?php submit_button( 'Buchen und signieren', 'secondary', 'submit', false ); ?>
+			</form>
+
+			<h2>Kassenabschluss (Tagesabschluss / Z-Bericht)</h2>
+			<p>Läuft automatisch jeden Tag um 23:58 Uhr für alle Tage mit Vorgängen und wird an fiskaly DSFinV-K übermittelt. Hier kann ein Tag auch manuell abgeschlossen werden.</p>
+			<?php $open = HJ_TSE_Log::open_days( HJ_TSE_Closing::today() ); ?>
+			<?php if ( $open ) : ?><div class="notice notice-warning inline"><p>Offene Tage ohne Abschluss: <?php echo esc_html( implode( ', ', $open ) ); ?></p></div><?php endif; ?>
+			<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
+				<?php wp_nonce_field( 'hj_tse_closing' ); ?>
+				<input type="hidden" name="action" value="hj_tse_closing" />
+				Geschäftstag <input type="date" name="business_date" value="<?php echo esc_attr( HJ_TSE_Closing::today() ); ?>" />
+				<?php submit_button( 'Abschluss jetzt erstellen', 'secondary', 'submit', false ); ?>
+			</form>
+			<table class="widefat striped" style="margin-top:10px">
+				<thead><tr><th>Nr.</th><th>Geschäftstag</th><th>Vorgänge</th><th>Umsatz</th><th>Status fiskaly</th><th>Erstellt (UTC)</th><th></th></tr></thead>
+				<tbody>
+				<?php foreach ( HJ_TSE_Log::closings( 40 ) as $c ) : $t = json_decode( (string) $c['totals_json'], true ) ?: array(); ?>
+					<tr>
+						<td><?php echo (int) $c['export_id']; ?></td>
+						<td><?php echo esc_html( $c['business_date'] ); ?></td>
+						<td><?php echo (int) $c['tx_count']; ?></td>
+						<td><?php echo esc_html( number_format( (float) ( $t['revenue'] ?? 0 ), 2, ',', '.' ) ); ?> €</td>
+						<td><?php echo esc_html( $c['state'] ); ?><?php echo $c['error'] ? ' – ' . esc_html( mb_substr( (string) $c['error'], 0, 120 ) ) : ''; ?></td>
+						<td><?php echo esc_html( $c['created_gmt'] ); ?></td>
+						<td><a href="<?php echo esc_url( admin_url( 'admin.php?page=hj-tse&closing=' . (int) $c['id'] ) ); ?>">Z-Bericht</a></td>
+					</tr>
+				<?php endforeach; ?>
+				</tbody>
+			</table>
+
+			<h2>DSFinV-K-Export (für Kassen-Nachschau / Betriebsprüfung)</h2>
+			<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
+				<?php wp_nonce_field( 'hj_tse_dsfinvk_export' ); ?>
+				<input type="hidden" name="action" value="hj_tse_dsfinvk_export" />
+				Geschäftstage von <input type="date" name="start_date" required /> bis <input type="date" name="end_date" required />
+				<?php submit_button( 'DSFinV-K-Export anstoßen', 'secondary', 'submit', false ); ?>
+			</form>
+			<?php if ( $dsfinvk_info ) : ?>
+				<p>Letzter DSFinV-K-Export: Status <strong><?php echo esc_html( $dsfinvk_info['state'] ?? '' ); ?></strong>
+				<?php if ( 'COMPLETED' === ( $dsfinvk_info['state'] ?? '' ) ) : ?>
+					– <?php echo count( (array) ( $dsfinvk_info['cash_point_closings'] ?? array() ) ); ?> Abschlüsse. Download: <code>GET /wp-json/hj-tse/v1/dsfinvk-export/<?php echo esc_html( $last_dsfinvk['id'] ); ?>?download=yes</code> (ZIP landet unter wp-content/uploads/hj-tse-exports).
+				<?php elseif ( ! empty( $dsfinvk_info['error'] ) ) : ?>
+					– <?php echo esc_html( is_array( $dsfinvk_info['error'] ) ? wp_json_encode( $dsfinvk_info['error'] ) : $dsfinvk_info['error'] ); ?>
 				<?php endif; ?>
 				</p>
 			<?php endif; ?>

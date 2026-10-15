@@ -26,6 +26,82 @@ class HJ_TSE_Rest {
 		register_rest_route( $ns, '/export', array( 'methods' => 'POST', 'callback' => array( __CLASS__, 'export' ), 'permission_callback' => $p ) );
 		register_rest_route( $ns, '/export/(?P<id>[a-f0-9-]+)', array( 'methods' => 'GET', 'callback' => array( __CLASS__, 'export_status' ), 'permission_callback' => $p ) );
 		register_rest_route( $ns, '/wcpos-template/(?P<id>\d+)/inject', array( 'methods' => 'POST', 'callback' => array( __CLASS__, 'inject_template' ), 'permission_callback' => $p ) );
+		register_rest_route( $ns, '/cashbook', array( 'methods' => 'POST', 'callback' => array( __CLASS__, 'cashbook' ), 'permission_callback' => $p ) );
+		register_rest_route( $ns, '/closings', array( 'methods' => 'GET', 'callback' => array( __CLASS__, 'closings' ), 'permission_callback' => $p ) );
+		register_rest_route( $ns, '/closings', array( 'methods' => 'POST', 'callback' => array( __CLASS__, 'create_closing' ), 'permission_callback' => $p ) );
+		register_rest_route( $ns, '/closings/(?P<id>\d+)', array( 'methods' => 'GET', 'callback' => array( __CLASS__, 'closing' ), 'permission_callback' => $p ) );
+		register_rest_route( $ns, '/closings/(?P<id>\d+)/refresh', array( 'methods' => 'POST', 'callback' => array( __CLASS__, 'refresh_closing' ), 'permission_callback' => $p ) );
+		register_rest_route( $ns, '/cash-register', array( 'methods' => 'POST', 'callback' => array( __CLASS__, 'cash_register' ), 'permission_callback' => $p ) );
+		register_rest_route( $ns, '/dsfinvk-export', array( 'methods' => 'POST', 'callback' => array( __CLASS__, 'dsfinvk_export' ), 'permission_callback' => $p ) );
+		register_rest_route( $ns, '/dsfinvk-export/(?P<id>[a-f0-9-]+)', array( 'methods' => 'GET', 'callback' => array( __CLASS__, 'dsfinvk_export_status' ), 'permission_callback' => $p ) );
+	}
+
+	public static function cashbook( WP_REST_Request $r ) {
+		try {
+			$res = HJ_TSE_Cashbook::book( (float) $r->get_param( 'amount' ), (string) $r->get_param( 'reason' ), (string) ( $r->get_param( 'text' ) ?? '' ), get_current_user_id() );
+			return rest_ensure_response( $res );
+		} catch ( HJ_TSE_Exception $e ) {
+			return self::error( $e );
+		}
+	}
+
+	public static function closings( WP_REST_Request $r ) {
+		return rest_ensure_response( array( 'closings' => HJ_TSE_Log::closings( 100 ), 'open_days' => HJ_TSE_Log::open_days( HJ_TSE_Closing::today() ), 'today' => HJ_TSE_Closing::today() ) );
+	}
+
+	public static function create_closing( WP_REST_Request $r ) {
+		$date = (string) ( $r->get_param( 'business_date' ) ?: HJ_TSE_Closing::today() );
+		try {
+			$row = HJ_TSE_Closing::create_for_date( $date );
+			if ( null === $row ) {
+				return rest_ensure_response( array( 'created' => false, 'message' => 'Keine offenen Vorgänge für ' . $date . '.' ) );
+			}
+			unset( $row['body_json'] );
+			return rest_ensure_response( array( 'created' => true, 'closing' => $row ) );
+		} catch ( HJ_TSE_Exception $e ) {
+			return self::error( $e );
+		}
+	}
+
+	public static function closing( WP_REST_Request $r ) {
+		$row = HJ_TSE_Log::get_closing( (int) $r['id'] );
+		if ( ! $row ) {
+			return new WP_Error( 'hj_tse_closing', 'Abschluss nicht gefunden.', array( 'status' => 404 ) );
+		}
+		if ( 'yes' !== (string) $r->get_param( 'body' ) ) {
+			unset( $row['body_json'] );
+		}
+		return rest_ensure_response( $row );
+	}
+
+	public static function refresh_closing( WP_REST_Request $r ) {
+		return rest_ensure_response( array( 'state' => HJ_TSE_Closing::refresh( (int) $r['id'] ) ) );
+	}
+
+	public static function cash_register( WP_REST_Request $r ) {
+		try {
+			delete_option( 'hj_tse_cash_register_registered' );
+			HJ_TSE_Closing::ensure_cash_register();
+			return rest_ensure_response( ( new HJ_TSE_Dsfinvk() )->get_cash_register() );
+		} catch ( HJ_TSE_Exception $e ) {
+			return self::error( $e );
+		}
+	}
+
+	public static function dsfinvk_export( WP_REST_Request $r ) {
+		try {
+			return rest_ensure_response( HJ_TSE_Closing::trigger_export( (string) $r->get_param( 'start_date' ), (string) $r->get_param( 'end_date' ) ) );
+		} catch ( HJ_TSE_Exception $e ) {
+			return self::error( $e );
+		}
+	}
+
+	public static function dsfinvk_export_status( WP_REST_Request $r ) {
+		try {
+			return rest_ensure_response( HJ_TSE_Closing::export_status( (string) $r['id'], 'yes' === (string) $r->get_param( 'download' ) ) );
+		} catch ( HJ_TSE_Exception $e ) {
+			return self::error( $e );
+		}
 	}
 
 	/**

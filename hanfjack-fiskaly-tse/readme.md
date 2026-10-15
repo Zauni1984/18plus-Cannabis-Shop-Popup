@@ -38,8 +38,15 @@ POST /wp-json/hj-tse/v1/export          {"start_date":1760000000,"end_date":1760
 GET  /wp-json/hj-tse/v1/export/{export_id}?download=yes
 ```
 
-## Noch offen (Phase 2)
+## Phase 2: Kassenabschluss, Kassenbuch, DSFinV-K
 
-- Täglicher Kassenabschluss und DSFinV-K-Export über die fiskaly DSFINVK-API.
-- Kassenbuch-Funktionen (Einlage/Entnahme) als TSE-Vorgänge PAY_IN/PAY_OUT.
-- ELSTER-Meldung der Kasse (manuell über „Mein ELSTER“ mit TSE-Seriennummer und Kassen-ID).
+- **Kassenbuch:** Einlagen und Entnahmen (Anfangsbestand, Privateinlage, Privatentnahme, Geldtransit, Auszahlung, Einzahlung) werden als TSE-Vorgang `TRANSFER` signiert und im Abschluss als `AVTransfer` geführt.
+- **Kassenabschluss:** WP-Cron erstellt täglich um 23:58 Uhr (Shop-Zeitzone) für jeden Geschäftstag mit Vorgängen einen Abschluss und übermittelt ihn an die fiskaly DSFINVK-API (`PUT /cash_point_closings/{id}`). Beinhaltet Belege, Stornos (negative Beträge), Vorgangsabbrüche, Kassenbuchungen und unsignierte Belege (`security.error_message`). Manuell: Admin-Seite oder `POST /wp-json/hj-tse/v1/closings {"business_date":"YYYY-MM-DD"}`.
+- **Z-Bericht:** Jeder Abschluss hat eine druckbare Ansicht (Umsatz je MwSt-Satz und Zahlart, Einlagen/Entnahmen, Vorgangsliste).
+- **DSFinV-K-Export:** Admin-Seite oder `POST /wp-json/hj-tse/v1/dsfinvk-export {"start_date":"YYYY-MM-DD","end_date":"YYYY-MM-DD"}`, Status/Download über `GET /wp-json/hj-tse/v1/dsfinvk-export/{id}?download=yes` (ZIP mit index.xml, transactions.csv, tse.csv …).
+- **Kassenregistrierung:** Beim ersten Abschluss wird die Kasse bei DSFinV-K als MASTER mit der TSS verknüpft (`PUT /cash_registers/{client_id}`).
+
+## Noch manuell
+
+- ELSTER-Meldung der Kasse über „Mein ELSTER“ (Formular „Mitteilung über elektronische Aufzeichnungssysteme (§ 146a Abs. 4 AO)“) mit TSE-Seriennummer, Kassen-ID und Anschaffungsdatum, innerhalb eines Monats nach Inbetriebnahme.
+- Verfahrensdokumentation siehe `VERFAHRENSDOKUMENTATION.md`.
