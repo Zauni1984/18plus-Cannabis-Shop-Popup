@@ -1,6 +1,6 @@
 # Verfahrensdokumentation Ladenkasse Hanfjack Ingolstadt
 
-Stand: Oktober 2026 · Betreiber: siehe Impressum hanfjack.de · Betriebsstätte: Ladengeschäft Ingolstadt (Anschrift siehe Impressum)
+Stand: Oktober 2026 · Betreiber: siehe Impressum hanfjack.de · Betriebsstätte: Harderstraße 1, 85049 Ingolstadt · Rechtsträger: SZM Trade & IT Solutions e.K.
 
 ## 1. Systemübersicht
 
