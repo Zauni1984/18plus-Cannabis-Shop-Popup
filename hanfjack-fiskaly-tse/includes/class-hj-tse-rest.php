@@ -25,6 +25,53 @@ class HJ_TSE_Rest {
 		register_rest_route( $ns, '/log', array( 'methods' => 'GET', 'callback' => array( __CLASS__, 'log' ), 'permission_callback' => $p ) );
 		register_rest_route( $ns, '/export', array( 'methods' => 'POST', 'callback' => array( __CLASS__, 'export' ), 'permission_callback' => $p ) );
 		register_rest_route( $ns, '/export/(?P<id>[a-f0-9-]+)', array( 'methods' => 'GET', 'callback' => array( __CLASS__, 'export_status' ), 'permission_callback' => $p ) );
+		register_rest_route( $ns, '/wcpos-template/(?P<id>\d+)/inject', array( 'methods' => 'POST', 'callback' => array( __CLASS__, 'inject_template' ), 'permission_callback' => $p ) );
+	}
+
+	/**
+	 * Insert (or remove) the TSE block in a WCPOS thermal template (post type wcpos_template).
+	 */
+	public static function inject_template( WP_REST_Request $r ) {
+		$post_id = (int) $r['id'];
+		$post    = get_post( $post_id );
+		if ( ! $post || 'wcpos_template' !== $post->post_type ) {
+			return new WP_Error( 'hj_tse_template', 'Keine WCPOS-Vorlage.', array( 'status' => 404 ) );
+		}
+		$block   = file_get_contents( HJ_TSE_DIR . 'templates/wcpos-thermal-tse-block.xml' ); // phpcs:ignore WordPress.WP.AlternativeFunctions
+		$content = (string) $post->post_content;
+		$has     = str_contains( $content, 'TSE-Daten' );
+		if ( 'yes' === (string) $r->get_param( 'remove' ) ) {
+			if ( ! $has ) {
+				return rest_ensure_response( array( 'changed' => false, 'present' => false ) );
+			}
+			$new = str_replace( $block . "\n", '', $content );
+			$new = str_replace( $block, '', $new );
+		} else {
+			if ( $has ) {
+				return rest_ensure_response( array( 'changed' => false, 'present' => true ) );
+			}
+			$marker = (string) ( $r->get_param( 'marker' ) ?: '<!-- ── Order barcode' );
+			$pos    = strpos( $content, $marker );
+			if ( false === $pos ) {
+				$marker = '<feed lines="3" />';
+				$pos    = strrpos( $content, $marker );
+			}
+			if ( false === $pos ) {
+				return new WP_Error( 'hj_tse_marker', 'Einfügemarke nicht gefunden.', array( 'status' => 422 ) );
+			}
+			$line_start = strrpos( substr( $content, 0, $pos ), "\n" );
+			$line_start = false === $line_start ? 0 : $line_start + 1;
+			$new        = substr( $content, 0, $line_start ) . $block . "\n" . substr( $content, $line_start );
+		}
+		$saved = false;
+		if ( class_exists( '\WCPOS\WooCommercePOS\Templates' ) && method_exists( '\WCPOS\WooCommercePOS\Templates', 'save_raw_post_content' ) ) {
+			$saved = (bool) \WCPOS\WooCommercePOS\Templates::save_raw_post_content( $post_id, $new );
+		}
+		if ( ! $saved ) {
+			$saved = ! is_wp_error( wp_update_post( array( 'ID' => $post_id, 'post_content' => $new ), true ) );
+		}
+		clean_post_cache( $post_id );
+		return rest_ensure_response( array( 'changed' => $saved, 'present' => str_contains( $new, 'TSE-Daten' ), 'length' => strlen( $new ) ) );
 	}
 
 	private static function error( HJ_TSE_Exception $e ): WP_Error {
