@@ -202,7 +202,15 @@ class HJ_TSE_Closing {
 		if ( 'pos_card' === $gateway ) {
 			return array( 'Unbar', 'Kartenzahlung' );
 		}
-		return array( 'Unbar', $gateway );
+		if ( str_contains( $gateway, 'crypto' ) ) {
+			return array( 'Unbar', 'Kryptowährung' );
+		}
+		if ( in_array( $gateway, array( 'paypal', 'ppcp-gateway', 'stripe', 'klarna' ), true ) ) {
+			return array( 'ElZahlungsdienstleister', $gateway );
+		}
+		$titles = function_exists( 'WC' ) ? WC()->payment_gateways()->payment_gateways() : array();
+		$title  = isset( $titles[ $gateway ] ) ? (string) $titles[ $gateway ]->get_title() : $gateway;
+		return array( 'Unbar', $title );
 	}
 
 	private static function user_for( ?WC_Order $order, array $row ): array {
