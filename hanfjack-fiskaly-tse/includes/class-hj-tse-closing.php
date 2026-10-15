@@ -351,6 +351,7 @@ class HJ_TSE_Closing {
 				$totals[ 'refund' === $kind ? 'refunds' : 'sales' ]++;
 				$totals['revenue'] += $full;
 				$full_amount       += $full;
+				$bc_agg['Umsatz'] = $bc_agg['Umsatz'] ?? array();
 				foreach ( $agg as $vid => $v ) {
 					self::add_vat( $bc_agg['Umsatz'], (int) $vid, $v[0], $v[1], $v[2] );
 					$totals['by_vat'][ $vid ] = round( ( $totals['by_vat'][ $vid ] ?? 0 ) + $v[0], 2 );
@@ -392,6 +393,7 @@ class HJ_TSE_Closing {
 				} else {
 					$totals['cash_out'] += abs( $amount );
 				}
+				$bc_agg[ $reason ] = $bc_agg[ $reason ] ?? array();
 				self::add_vat( $bc_agg[ $reason ], 5, $amount, $amount, 0.0 );
 				$pay_agg['Bar|Bar'] = ( $pay_agg['Bar|Bar'] ?? 0 ) + $amount;
 				$cash_amount       += $amount;
