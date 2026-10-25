@@ -28,7 +28,8 @@ define( 'BSLS_REST_NS', 'bsls/v1' );
 
 spl_autoload_register(
 	static function ( $class ) {
-		if ( 0 !== strpos( $class, 'BSLS_' ) ) {
+		// Nur eigene Klassen mit reinem Namen (kein Pfad-Anteil möglich).
+		if ( ! preg_match( '/^BSLS_[A-Za-z0-9_]+$/', $class ) ) {
 			return;
 		}
 		$file = BSLS_PATH . 'includes/class-' . strtolower( str_replace( '_', '-', $class ) ) . '.php';

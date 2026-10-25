@@ -171,6 +171,12 @@ class BSLS_Orders {
 		if ( empty( $_GET['bsls_action'] ) || empty( $_GET['bsls_key'] ) || ! function_exists( 'WC' ) || ! WC()->cart ) {
 			return;
 		}
+		// Nur einfache Werte annehmen (manipulierte Listen-Parameter ignorieren).
+		foreach ( array( 'bsls_action', 'bsls_key', 'bsls_to', '_wpnonce' ) as $k ) {
+			if ( isset( $_GET[ $k ] ) && ! is_string( $_GET[ $k ] ) ) {
+				return;
+			}
+		}
 		$action = sanitize_key( wp_unslash( $_GET['bsls_action'] ) );
 		$key    = strtoupper( sanitize_text_field( wp_unslash( $_GET['bsls_key'] ) ) );
 		$to     = isset( $_GET['bsls_to'] ) ? (int) $_GET['bsls_to'] : 0;

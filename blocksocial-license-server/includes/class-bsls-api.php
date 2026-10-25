@@ -33,11 +33,64 @@ class BSLS_Api {
 		$open = static function () {
 			return true; // Authentifizierung über Lizenzschlüssel/Signatur in den Handlern.
 		};
-		register_rest_route( BSLS_REST_NS, '/activate', array( 'methods' => 'POST', 'callback' => array( __CLASS__, 'activate' ), 'permission_callback' => $open ) );
-		register_rest_route( BSLS_REST_NS, '/deactivate', array( 'methods' => 'POST', 'callback' => array( __CLASS__, 'deactivate' ), 'permission_callback' => $open ) );
-		register_rest_route( BSLS_REST_NS, '/check', array( 'methods' => 'POST', 'callback' => array( __CLASS__, 'check' ), 'permission_callback' => $open ) );
-		register_rest_route( BSLS_REST_NS, '/info', array( 'methods' => 'GET', 'callback' => array( __CLASS__, 'info' ), 'permission_callback' => $open ) );
-		register_rest_route( BSLS_REST_NS, '/download', array( 'methods' => 'GET', 'callback' => array( __CLASS__, 'download' ), 'permission_callback' => $open ) );
+		// Strikte Eingabe-Schemas: WordPress lehnt falsche Typen/Längen mit 400 ab,
+		// bevor ein Handler läuft (keine Warnungen/Fehler durch manipulierte Anfragen).
+		$str   = static function ( $max, $required = false ) {
+			return array( 'type' => 'string', 'maxLength' => $max, 'required' => $required );
+		};
+		$shops = array(
+			'type'     => 'array',
+			'maxItems' => 1000,
+			'items'    => array(
+				'type'                 => 'object',
+				'properties'           => array(
+					'url'  => array( 'type' => 'string', 'maxLength' => 500 ),
+					'role' => array( 'type' => 'string', 'maxLength' => 20 ),
+				),
+				'additionalProperties' => false,
+			),
+		);
+		$lic   = array(
+			'license_key' => $str( 64, true ),
+			'site'        => $str( 500, true ),
+			'product'     => $str( 64 ),
+			'version'     => $str( 20 ),
+			'shops'       => $shops,
+		);
+		register_rest_route( BSLS_REST_NS, '/activate', array( 'methods' => 'POST', 'callback' => array( __CLASS__, 'activate' ), 'permission_callback' => $open, 'args' => $lic ) );
+		register_rest_route( BSLS_REST_NS, '/deactivate', array( 'methods' => 'POST', 'callback' => array( __CLASS__, 'deactivate' ), 'permission_callback' => $open, 'args' => array( 'license_key' => $str( 64, true ), 'site' => $str( 500, true ) ) ) );
+		register_rest_route( BSLS_REST_NS, '/check', array( 'methods' => 'POST', 'callback' => array( __CLASS__, 'check' ), 'permission_callback' => $open, 'args' => $lic ) );
+		register_rest_route(
+			BSLS_REST_NS,
+			'/info',
+			array(
+				'methods'             => 'GET',
+				'callback'            => array( __CLASS__, 'info' ),
+				'permission_callback' => $open,
+				'args'                => array(
+					'product'     => $str( 64, true ),
+					'site'        => $str( 500 ),
+					'license_key' => $str( 64 ),
+					'master'      => $str( 500 ),
+					'version'     => $str( 20 ),
+				),
+			)
+		);
+		register_rest_route(
+			BSLS_REST_NS,
+			'/download',
+			array(
+				'methods'             => 'GET',
+				'callback'            => array( __CLASS__, 'download' ),
+				'permission_callback' => $open,
+				'args'                => array(
+					'slug' => $str( 64, true ),
+					'lic'  => array( 'type' => 'integer', 'minimum' => 1, 'required' => true ),
+					'exp'  => array( 'type' => 'integer', 'minimum' => 0, 'required' => true ),
+					'sig'  => array( 'type' => 'string', 'pattern' => '^[a-f0-9]{64}$', 'required' => true ),
+				),
+			)
+		);
 	}
 
 	/**

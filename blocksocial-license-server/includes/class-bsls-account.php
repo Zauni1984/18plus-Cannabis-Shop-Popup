@@ -124,7 +124,7 @@ class BSLS_Account {
 	 * Formular-Aktionen (Hauptshop freigeben).
 	 */
 	public static function handle_post() {
-		if ( empty( $_POST['bsls_release'] ) || ! is_user_logged_in() ) { // phpcs:ignore WordPress.Security.NonceVerification.Missing
+		if ( empty( $_POST['bsls_release'] ) || ! is_string( $_POST['bsls_release'] ) || ! is_user_logged_in() ) { // phpcs:ignore WordPress.Security.NonceVerification.Missing
 			return;
 		}
 		$id = (int) $_POST['bsls_release']; // phpcs:ignore WordPress.Security.NonceVerification.Missing
@@ -142,7 +142,7 @@ class BSLS_Account {
 	 * Ausgabe.
 	 */
 	public static function render() {
-		$detail = isset( $_GET['lizenz'] ) ? self::own( (int) $_GET['lizenz'] ) : null; // phpcs:ignore WordPress.Security.NonceVerification.Recommended
+		$detail = ( isset( $_GET['lizenz'] ) && is_string( $_GET['lizenz'] ) ) ? self::own( (int) $_GET['lizenz'] ) : null; // phpcs:ignore WordPress.Security.NonceVerification.Recommended
 		if ( $detail ) {
 			self::render_detail( $detail );
 			return;

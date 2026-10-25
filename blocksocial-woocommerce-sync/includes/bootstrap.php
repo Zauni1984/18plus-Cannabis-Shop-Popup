@@ -40,7 +40,8 @@ add_action(
 // -----------------------------------------------------------------------------
 spl_autoload_register(
 	static function ( $class ) {
-		if ( strpos( $class, 'WCIS_' ) !== 0 ) {
+		// Nur eigene Klassen mit reinem Namen (kein Pfad-Anteil möglich).
+		if ( ! preg_match( '/^WCIS_[A-Za-z0-9_]+$/', $class ) ) {
 			return;
 		}
 		$file = 'class-' . strtolower( str_replace( '_', '-', $class ) ) . '.php';
